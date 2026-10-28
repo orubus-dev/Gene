@@ -63,7 +63,7 @@ def parse(text):
 
     m = re.match(r"^(?:what is|what are|whats|who is)\s+(.+)$", low)
     if m:
-        return {"intent": "query", "subject": m.group(1).replace(" ", "_")}
+        return {"intent": "query", "subject": _strip_article(m.group(1)).replace(" ", "_")}
 
     m = re.match(r"^does\s+(.+?)\s+have\s+(.+)$", low)
     if m:
@@ -77,8 +77,8 @@ def parse(text):
 
     m = re.match(r"^(?:an?\s+)?(.+?)\s+is\s+(?:an?\s+)?(.+)$", low)
     if m:
-        return {"intent": "fact", "subject": m.group(1).replace(" ", "_"),
-                "object": m.group(2).replace(" ", "_")}
+        return {"intent": "fact", "subject": _strip_article(m.group(1)).replace(" ", "_"),
+                "object": _strip_article(m.group(2)).replace(" ", "_")}
 
     m = re.match(r"^(?:compute|calculate)\s+(.+)$", low)
     if m:
