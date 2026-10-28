@@ -38,5 +38,6 @@ jobs:
             echo "pool unchanged"
           else
             git commit -m "[gene:evolve] selection over gene pool $(date -u +%FT%TZ)"
-            git push
+            git pull --rebase origin main || (git rebase --abort && echo "concurrent growth; skipping push")
+            git push || echo "push skipped: remote moved"
           fi

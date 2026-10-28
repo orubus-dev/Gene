@@ -43,5 +43,6 @@ jobs:
             echo "no growth tonight"
           else
             git commit -m "[gene:sleep] consolidation — mind snapshot $(date -u +%FT%TZ)"
-            git push
+            git pull --rebase origin main || (git rebase --abort && echo "concurrent growth; skipping push")
+            git push || echo "push skipped: remote moved"
           fi
