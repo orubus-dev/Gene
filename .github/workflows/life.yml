@@ -29,10 +29,10 @@ jobs:
         run: |
           git config user.name "gene-life"
           git config user.email "orubus-dev@users.noreply.github.com"
+          git pull --rebase --autostash origin main || true
           git add mind/ curriculum/
           git commit -m "[life] cycle: train + sleep + evolve — mind state advanced" || echo "no changes to mind"
-          git pull --rebase --autostash origin main || true
-          git push
+          git push || echo "push skipped: remote moved (another life cycle grew first)"
       - name: Upload progress artifact
         uses: actions/upload-artifact@v4
         with:
