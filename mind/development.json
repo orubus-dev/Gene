@@ -1,13 +1,13 @@
 {
  "stage": "language",
  "wins": {
-  "string": 4,
-  "number": 4,
-  "code": 4,
-  "list": 4,
-  "sequence": 4
+  "string": 6,
+  "number": 6,
+  "code": 6,
+  "list": 6,
+  "sequence": 6
  },
- "total_wins": 20,
+ "total_wins": 30,
  "milestones": [
   {
    "stage": "skills",

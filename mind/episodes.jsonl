@@ -392,3 +392,123 @@
 {"t": 1793222163.023, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 + 3", "solved": true, "tries": 24, "coactive": ["number", "skill", "success"]}}
 {"t": 1793222163.023, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 9, "coactive": ["sequence", "skill", "success"]}}
 {"t": 1793222163.024, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 24, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.445, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 35, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.446, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 10, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.446, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 12, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.446, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 4, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.446, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 2, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.447, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 + 3", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.447, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 25, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.447, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.448, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 12, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.448, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 6, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.448, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 + 1", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.448, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 2, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.449, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 10, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.449, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 - 3", "solved": true, "tries": 11, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.449, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.449, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 + 0", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.45, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 20, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.45, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 - 3", "solved": true, "tries": 11, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.45, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 26, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222401.45, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 - 2", "solved": true, "tries": 11, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.451, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 26, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222401.451, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 13, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.451, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 3, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.452, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 4, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.452, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 3, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.452, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 31, "coactive": ["code", "failure"]}}
+{"t": 1793222401.453, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 + 6", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.453, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222401.453, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 12, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.453, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 31, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.454, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.454, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 35, "coactive": ["code", "failure"]}}
+{"t": 1793222401.454, "kind": "task", "data": {"domain": "number", "prompt": "compute 3 + 0", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.455, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 12, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222401.455, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 37, "coactive": ["code", "failure"]}}
+{"t": 1793222401.455, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 12, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222401.456, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 6, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.456, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 6, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.456, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.456, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 + 4", "solved": true, "tries": 1, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.457, "kind": "task", "data": {"domain": "number", "prompt": "compute 9 - 0", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.457, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 - 1", "solved": true, "tries": 11, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.457, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 12, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222401.457, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 20, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.458, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 - 6", "solved": true, "tries": 11, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.458, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 3, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.458, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 7, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.458, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 + 3", "solved": true, "tries": 1, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.458, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 3, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.459, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.459, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 12, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.459, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 3, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.459, "kind": "task", "data": {"domain": "number", "prompt": "compute 2 + 4", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.46, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 3, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.46, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 31, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.46, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 35, "coactive": ["code", "failure"]}}
+{"t": 1793222401.461, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 1, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222401.461, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.461, "kind": "task", "data": {"domain": "number", "prompt": "compute 0 + 3", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.461, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 20, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.497, "kind": "task", "data": {"domain": "list", "prompt": "sort", "solved": true, "tries": 26, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.498, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 11, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.498, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 x 9", "solved": true, "tries": 26, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.498, "kind": "task", "data": {"domain": "number", "prompt": "compute 12 - 0", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.499, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 33, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.499, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 16, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222401.499, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 3, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.5, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 28, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222401.5, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 7, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.5, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 10, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.501, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 32, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.501, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 6, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.501, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 12, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.502, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 35, "coactive": ["code", "failure"]}}
+{"t": 1793222401.502, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 2, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.502, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 14, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.503, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 12, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.503, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 22, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.503, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 7, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.504, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222401.504, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 32, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.504, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 3, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.504, "kind": "task", "data": {"domain": "number", "prompt": "compute 12 + 6", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.505, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 3, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.505, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.505, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 x 7", "solved": true, "tries": 21, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.505, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 4, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.506, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 26, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.506, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 x 0", "solved": true, "tries": 15, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.506, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 14, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.507, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 12, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.507, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 40, "coactive": ["code", "failure"]}}
+{"t": 1793222401.507, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 16, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222401.508, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 + 16", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.508, "kind": "task", "data": {"domain": "number", "prompt": "compute 2 + 18", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.508, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.508, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 16, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222401.509, "kind": "task", "data": {"domain": "number", "prompt": "compute 0 + 3", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.509, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 7, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.509, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 x 2", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.509, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 10, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.51, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 14, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.51, "kind": "task", "data": {"domain": "list", "prompt": "sort", "solved": true, "tries": 18, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.51, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 16, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222401.511, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222401.511, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 4, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.511, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 14, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.512, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 32, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.512, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.512, "kind": "task", "data": {"domain": "number", "prompt": "compute 14 - 8", "solved": true, "tries": 11, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.512, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 - 5", "solved": true, "tries": 11, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.513, "kind": "task", "data": {"domain": "number", "prompt": "compute 17 + 10", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.513, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.513, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 x 1", "solved": true, "tries": 7, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222401.513, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 30, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.514, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 5, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222401.514, "kind": "task", "data": {"domain": "list", "prompt": "sort", "solved": true, "tries": 18, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.515, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 32, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222401.515, "kind": "task", "data": {"domain": "list", "prompt": "min", "solved": true, "tries": 27, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222401.515, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 12, "coactive": ["string", "skill", "success"]}}
