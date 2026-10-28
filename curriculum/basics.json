@@ -1,0 +1,22 @@
+{
+  "lesson": "basics — a small is-a lattice to exercise observation and inference",
+  "concepts": [
+    {"id": "living_thing", "kind": "entity", "words": ["living thing", "life"],
+     "attrs": {"made_of": "cells", "grows": "yes"}},
+    {"id": "animal", "kind": "entity", "words": ["animal"],
+     "relations": [{"to": "living_thing", "rel": "is-a"}]},
+    {"id": "plant", "kind": "entity", "words": ["plant"],
+     "relations": [{"to": "living_thing", "rel": "is-a"}]},
+    {"id": "dog", "kind": "entity", "words": ["dog"],
+     "relations": [{"to": "animal", "rel": "is-a"}]},
+    {"id": "bird", "kind": "entity", "words": ["bird"],
+     "relations": [{"to": "animal", "rel": "is-a"}]},
+    {"id": "tree", "kind": "entity", "words": ["tree"],
+     "relations": [{"to": "plant", "rel": "is-a"}]},
+    {"id": "cause_fire", "kind": "entity", "words": ["fire"],
+     "attrs": {"hot": "yes"},
+     "relations": [{"to": "smoke", "rel": "causes"}]},
+    {"id": "smoke", "kind": "entity", "words": ["smoke"]}
+  ],
+  "examples": []
+}

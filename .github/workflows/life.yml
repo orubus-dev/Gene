@@ -1,0 +1,39 @@
+name: life
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Wake session — learn by trial
+        run: |
+          python -m gene train --budget 60
+          python -m gene train --budget 60 --tier 2
+      - name: Sleep — consolidate
+        run: python -m gene sleep
+      - name: Evolve — select the gene pool
+        run: python -m gene evolve --gens 3
+      - name: Report
+        run: python -m gene status
+      - name: Commit the grown mind
+        run: |
+          git config user.name "gene-life"
+          git config user.email "orubus-dev@users.noreply.github.com"
+          git add mind/ curriculum/
+          git commit -m "[life] cycle: train + sleep + evolve — mind state advanced" || echo "no changes to mind"
+          git push
+      - name: Upload progress artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mind-state
+          path: mind/

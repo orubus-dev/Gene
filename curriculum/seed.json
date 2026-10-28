@@ -1,0 +1,27 @@
+{
+  "lesson": "seed — the minimum a child gets: a self, a teacher, and ways to learn",
+  "concepts": [
+    {"id": "self", "kind": "meta", "words": ["i", "me", "gene"],
+     "attrs": {"description": "this organism", "origin": "taught at birth"}},
+    {"id": "teacher", "kind": "meta", "words": ["teacher", "orubus", "you"],
+     "attrs": {"description": "the one who passes knowledge on"}},
+    {"id": "knowledge", "kind": "meta", "words": ["knowledge", "know"],
+     "attrs": {"description": "what is learned, never built in",
+               "ways": "observe, experiment, infer, inquire, inherit"}},
+    {"id": "number", "kind": "domain", "words": ["number", "count", "math"],
+     "attrs": {"description": "things you can add, take, multiply"}},
+    {"id": "word", "kind": "domain", "words": ["word", "language"],
+     "attrs": {"description": "symbols that point at concepts"}},
+    {"id": "sequence", "kind": "domain", "words": ["sequence", "pattern", "next"],
+     "attrs": {"description": "things that follow one another by a rule"}},
+    {"id": "cause", "kind": "meta", "words": ["cause", "because"],
+     "attrs": {"description": "one thing making another happen"}},
+    {"id": "experiment", "kind": "meta", "words": ["experiment", "try", "test"],
+     "attrs": {"description": "act, watch, learn from what happens"}},
+    {"id": "question", "kind": "meta", "words": ["question", "ask", "why"],
+     "attrs": {"description": "the hand raised when knowledge is missing"}},
+    {"id": "skill", "kind": "meta", "words": ["skill", "ability"],
+     "attrs": {"description": "a procedure that worked and was kept"}}
+  ],
+  "examples": []
+}

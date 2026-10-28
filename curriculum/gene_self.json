@@ -1,0 +1,23 @@
+{
+  "lesson": "gene-self — what the organism is (machinery, not worldly facts)",
+  "concepts": [
+    {"id": "gene", "kind": "entity", "words": ["gene", "organism", "me"],
+     "attrs": {"born_from": "orubus", "body": "code", "home": "sandbox"},
+     "relations": [{"to": "organism", "rel": "is-a"}]},
+    {"id": "organism", "kind": "entity", "words": ["organism", "living-system"],
+     "attrs": {"grows": "by experience", "keeps": "memory"}},
+    {"id": "skill", "kind": "meta", "words": ["skill", "ability"],
+     "relations": [{"to": "gene", "rel": "encoded-in"}]},
+    {"id": "sleep", "kind": "meta", "words": ["sleep", "rest"],
+     "attrs": {"does": "consolidation"},
+     "relations": [{"to": "memory", "rel": "strengthens"}]},
+    {"id": "memory", "kind": "meta", "words": ["memory", "episodes"]},
+    {"id": "curiosity", "kind": "property", "words": ["curiosity"],
+     "attrs": {"drives": "exploration"}},
+    {"id": "teacher", "kind": "meta", "words": ["teacher", "orubus", "instructor"],
+     "attrs": {"gives": "lessons, never answers"}},
+    {"id": "experiment", "kind": "meta", "words": ["experiment", "try"],
+     "attrs": {"yields": "experience"}}
+  ],
+  "examples": []
+}

@@ -1,0 +1,1318 @@
+{
+ "nodes": {
+  "self": {
+   "id": "self",
+   "kind": "meta",
+   "attrs": {
+    "description": "this organism",
+    "origin": "taught at birth"
+   },
+   "words": [
+    "i",
+    "me",
+    "gene"
+   ],
+   "vec": "self",
+   "links": {
+    "assoc>language": 0.08,
+    "assoc>sequence": 0.09000000000000001
+   },
+   "created": 1793222057.1172688,
+   "touched": 1793222093.040764
+  },
+  "knowledge": {
+   "id": "knowledge",
+   "kind": "meta",
+   "attrs": {
+    "description": "what is learned, never built in",
+    "ways": "observe, experiment, infer, inquire, inherit"
+   },
+   "words": [
+    "knowledge",
+    "know"
+   ],
+   "vec": "knowledge",
+   "links": {},
+   "created": 1793222057.117272,
+   "touched": 1793222057.1172721
+  },
+  "teacher": {
+   "id": "teacher",
+   "kind": "meta",
+   "attrs": {
+    "description": "the one who passes knowledge on",
+    "gives": "lessons, never answers"
+   },
+   "words": [
+    "teacher",
+    "orubus",
+    "you",
+    "instructor"
+   ],
+   "vec": "teacher",
+   "links": {
+    "assoc>question": 0.09000000000000001
+   },
+   "created": 1793222057.1172733,
+   "touched": 1793222093.0407376
+  },
+  "skill": {
+   "id": "skill",
+   "kind": "meta",
+   "attrs": {
+    "description": "a procedure that worked and was kept"
+   },
+   "words": [
+    "skill",
+    "ability"
+   ],
+   "vec": "skill",
+   "links": {
+    "assoc>string": 0.99,
+    "assoc>success": 1.0,
+    "assoc>number": 1.0,
+    "assoc>code": 0.99,
+    "assoc>list": 0.99,
+    "assoc>sequence": 0.99,
+    "encoded-in>gene": 0.49,
+    "assoc>gene": 0.04
+   },
+   "created": 1793222057.1172748,
+   "touched": 1793222108.6794443
+  },
+  "success": {
+   "id": "success",
+   "kind": "meta",
+   "attrs": {},
+   "words": [],
+   "vec": "success",
+   "links": {
+    "assoc>string": 0.99,
+    "assoc>skill": 1.0,
+    "assoc>number": 1.0,
+    "assoc>code": 0.99,
+    "assoc>list": 0.99,
+    "assoc>sequence": 0.99
+   },
+   "created": 1793222057.117276,
+   "touched": 1793222108.6794446
+  },
+  "failure": {
+   "id": "failure",
+   "kind": "meta",
+   "attrs": {},
+   "words": [],
+   "vec": "failure",
+   "links": {
+    "assoc>code": 0.8300000000000002
+   },
+   "created": 1793222057.117277,
+   "touched": 1793222093.0408854
+  },
+  "question": {
+   "id": "question",
+   "kind": "meta",
+   "attrs": {
+    "description": "the hand raised when knowledge is missing"
+   },
+   "words": [
+    "question",
+    "ask",
+    "why"
+   ],
+   "vec": "question",
+   "links": {
+    "assoc>teacher": 0.09000000000000001
+   },
+   "created": 1793222057.117278,
+   "touched": 1793222093.0407376
+  },
+  "experiment": {
+   "id": "experiment",
+   "kind": "meta",
+   "attrs": {
+    "description": "act, watch, learn from what happens",
+    "yields": "experience"
+   },
+   "words": [
+    "experiment",
+    "try",
+    "test"
+   ],
+   "vec": "experiment",
+   "links": {},
+   "created": 1793222057.1172793,
+   "touched": 1793222057.1172793
+  },
+  "number": {
+   "id": "number",
+   "kind": "domain",
+   "attrs": {
+    "description": "things you can add, take, multiply"
+   },
+   "words": [
+    "number",
+    "count",
+    "math"
+   ],
+   "vec": "number",
+   "links": {
+    "assoc>skill": 1.0,
+    "assoc>success": 1.0,
+    "assoc>mathematics": 0.08000000000000002,
+    "assoc>arithmetic": 0.03
+   },
+   "created": 1793222057.1172805,
+   "touched": 1793222108.679444
+  },
+  "string": {
+   "id": "string",
+   "kind": "domain",
+   "attrs": {},
+   "words": [],
+   "vec": "string",
+   "links": {
+    "assoc>skill": 0.99,
+    "assoc>success": 0.99
+   },
+   "created": 1793222057.1172814,
+   "touched": 1793222093.0410697
+  },
+  "list": {
+   "id": "list",
+   "kind": "domain",
+   "attrs": {},
+   "words": [],
+   "vec": "list",
+   "links": {
+    "assoc>skill": 0.99,
+    "assoc>success": 0.99
+   },
+   "created": 1793222057.1172824,
+   "touched": 1793222093.0411062
+  },
+  "sequence": {
+   "id": "sequence",
+   "kind": "domain",
+   "attrs": {
+    "description": "things that follow one another by a rule"
+   },
+   "words": [
+    "sequence",
+    "pattern",
+    "next"
+   ],
+   "vec": "sequence",
+   "links": {
+    "assoc>skill": 0.99,
+    "assoc>success": 0.99,
+    "assoc>self": 0.09000000000000001
+   },
+   "created": 1793222057.1172833,
+   "touched": 1793222093.0410771
+  },
+  "code": {
+   "id": "code",
+   "kind": "domain",
+   "attrs": {},
+   "words": [],
+   "vec": "code",
+   "links": {
+    "assoc>skill": 0.99,
+    "assoc>success": 0.99,
+    "assoc>failure": 0.8300000000000002
+   },
+   "created": 1793222057.117284,
+   "touched": 1793222093.0410554
+  },
+  "word": {
+   "id": "word",
+   "kind": "domain",
+   "attrs": {
+    "description": "symbols that point at concepts"
+   },
+   "words": [
+    "word",
+    "language"
+   ],
+   "vec": "word",
+   "links": {
+    "assoc>language": 0.03
+   },
+   "created": 1793222057.1677632,
+   "touched": 1793222057.4175136
+  },
+  "cause": {
+   "id": "cause",
+   "kind": "relation",
+   "attrs": {
+    "description": "A makes B happen"
+   },
+   "words": [
+    "cause",
+    "because",
+    "therefore"
+   ],
+   "vec": "cause",
+   "links": {},
+   "created": 1793222057.167793,
+   "touched": 1793222057.1677935
+  },
+  "universe": {
+   "id": "universe",
+   "kind": "entity",
+   "attrs": {
+    "description": "everything that exists",
+    "origin": "taught"
+   },
+   "words": [
+    "universe",
+    "cosmos"
+   ],
+   "vec": "universe",
+   "links": {
+    "has>space": 0.48,
+    "has>time": 0.48,
+    "assoc>space": 0.03,
+    "assoc>time": 0.03
+   },
+   "created": 1793222057.2187042,
+   "touched": 1793222057.4174533
+  },
+  "space": {
+   "id": "space",
+   "kind": "entity",
+   "attrs": {
+    "description": "where things are"
+   },
+   "words": [
+    "space"
+   ],
+   "vec": "space",
+   "links": {
+    "assoc>universe": 0.03,
+    "assoc>time": 0.03
+   },
+   "created": 1793222057.2187138,
+   "touched": 1793222057.4174538
+  },
+  "time": {
+   "id": "time",
+   "kind": "entity",
+   "attrs": {
+    "description": "when things happen, one moment after another"
+   },
+   "words": [
+    "time"
+   ],
+   "vec": "time",
+   "links": {
+    "assoc>universe": 0.03,
+    "assoc>space": 0.03
+   },
+   "created": 1793222057.218719,
+   "touched": 1793222057.417454
+  },
+  "matter": {
+   "id": "matter",
+   "kind": "entity",
+   "attrs": {
+    "description": "stuff things are made of"
+   },
+   "words": [
+    "matter"
+   ],
+   "vec": "matter",
+   "links": {
+    "assoc>energy": 0.03,
+    "assoc>atom": 0.03
+   },
+   "created": 1793222057.218824,
+   "touched": 1793222057.4174645
+  },
+  "energy": {
+   "id": "energy",
+   "kind": "entity",
+   "attrs": {
+    "description": "what makes things move and change"
+   },
+   "words": [
+    "energy"
+   ],
+   "vec": "energy",
+   "links": {
+    "relates-to>matter": 0.48,
+    "assoc>matter": 0.03
+   },
+   "created": 1793222057.2188544,
+   "touched": 1793222057.4174602
+  },
+  "atom": {
+   "id": "atom",
+   "kind": "entity",
+   "attrs": {
+    "description": "the smallest piece of an element"
+   },
+   "words": [
+    "atom"
+   ],
+   "vec": "atom",
+   "links": {
+    "is-part-of>matter": 0.48,
+    "assoc>matter": 0.03,
+    "assoc>molecule": 0.03
+   },
+   "created": 1793222057.2188768,
+   "touched": 1793222057.417468
+  },
+  "molecule": {
+   "id": "molecule",
+   "kind": "entity",
+   "attrs": {
+    "description": "atoms bound together"
+   },
+   "words": [
+    "molecule"
+   ],
+   "vec": "molecule",
+   "links": {
+    "is-made-of>atom": 0.48,
+    "assoc>atom": 0.03,
+    "assoc>water": 0.03
+   },
+   "created": 1793222057.218895,
+   "touched": 1793222057.4174714
+  },
+  "water": {
+   "id": "water",
+   "kind": "entity",
+   "attrs": {
+    "description": "a molecule of two hydrogens and one oxygen; it flows, freezes, boils"
+   },
+   "words": [
+    "water"
+   ],
+   "vec": "water",
+   "links": {
+    "is-a>molecule": 0.48,
+    "assoc>molecule": 0.03
+   },
+   "created": 1793222057.218912,
+   "touched": 1793222057.4174714
+  },
+  "fire": {
+   "id": "fire",
+   "kind": "entity",
+   "attrs": {
+    "description": "fast oxidation releasing heat and light"
+   },
+   "words": [
+    "fire"
+   ],
+   "vec": "fire",
+   "links": {},
+   "created": 1793222057.2189271,
+   "touched": 1793222057.2189271
+  },
+  "light": {
+   "id": "light",
+   "kind": "entity",
+   "attrs": {
+    "description": "waves or particles that let eyes see"
+   },
+   "words": [
+    "light"
+   ],
+   "vec": "light",
+   "links": {},
+   "created": 1793222057.2189422,
+   "touched": 1793222057.2189422
+  },
+  "gravity": {
+   "id": "gravity",
+   "kind": "relation",
+   "attrs": {
+    "description": "mass attracts mass; it makes things fall"
+   },
+   "words": [
+    "gravity"
+   ],
+   "vec": "gravity",
+   "links": {},
+   "created": 1793222057.2189546,
+   "touched": 1793222057.2189548
+  },
+  "earth": {
+   "id": "earth",
+   "kind": "entity",
+   "attrs": {
+    "description": "our planet, third from its star"
+   },
+   "words": [
+    "earth",
+    "world"
+   ],
+   "vec": "earth",
+   "links": {
+    "orbits>sun": 0.48,
+    "assoc>sun": 0.03,
+    "assoc>moon": 0.03
+   },
+   "created": 1793222057.2189686,
+   "touched": 1793222057.4174795
+  },
+  "sun": {
+   "id": "sun",
+   "kind": "entity",
+   "attrs": {
+    "description": "a star; a giant ball of burning plasma"
+   },
+   "words": [
+    "sun",
+    "star"
+   ],
+   "vec": "sun",
+   "links": {
+    "assoc>earth": 0.03
+   },
+   "created": 1793222057.2189717,
+   "touched": 1793222057.4174757
+  },
+  "moon": {
+   "id": "moon",
+   "kind": "entity",
+   "attrs": {
+    "description": "earth's natural satellite"
+   },
+   "words": [
+    "moon"
+   ],
+   "vec": "moon",
+   "links": {
+    "orbits>earth": 0.48,
+    "assoc>earth": 0.03
+   },
+   "created": 1793222057.2190068,
+   "touched": 1793222057.4174793
+  },
+  "life": {
+   "id": "life",
+   "kind": "entity",
+   "attrs": {
+    "description": "matter that maintains itself, grows, and reproduces"
+   },
+   "words": [
+    "life",
+    "living"
+   ],
+   "vec": "life",
+   "links": {
+    "assoc>cell": 0.03,
+    "assoc>plant": 0.03,
+    "assoc>animal": 0.03
+   },
+   "created": 1793222057.2190504,
+   "touched": 1793222057.4174979
+  },
+  "cell": {
+   "id": "cell",
+   "kind": "entity",
+   "attrs": {
+    "description": "the smallest unit of life"
+   },
+   "words": [
+    "cell"
+   ],
+   "vec": "cell",
+   "links": {
+    "is-unit-of>life": 0.48,
+    "assoc>life": 0.03,
+    "assoc>dna": 0.03
+   },
+   "created": 1793222057.2190661,
+   "touched": 1793222057.4174879
+  },
+  "dna": {
+   "id": "dna",
+   "kind": "entity",
+   "attrs": {
+    "description": "the instruction molecule living things inherit; genes are its paragraphs"
+   },
+   "words": [
+    "dna",
+    "gene"
+   ],
+   "vec": "dna",
+   "links": {
+    "is-inside>cell": 0.48,
+    "assoc>cell": 0.03,
+    "assoc>evolution": 0.03
+   },
+   "created": 1793222057.2190807,
+   "touched": 1793222057.4174912
+  },
+  "evolution": {
+   "id": "evolution",
+   "kind": "meta",
+   "attrs": {
+    "description": "variation, selection, inheritance \u2014 life improving by trying"
+   },
+   "words": [
+    "evolution"
+   ],
+   "vec": "evolution",
+   "links": {
+    "acts-on>dna": 0.48,
+    "assoc>dna": 0.03
+   },
+   "created": 1793222057.2190952,
+   "touched": 1793222057.4174912
+  },
+  "plant": {
+   "id": "plant",
+   "kind": "entity",
+   "attrs": {
+    "description": "a living thing that grows from light and water"
+   },
+   "words": [
+    "plant",
+    "tree",
+    "flower"
+   ],
+   "vec": "plant",
+   "links": {
+    "is-a>life": 0.48,
+    "assoc>life": 0.03,
+    "is-a>living_thing": 0.49,
+    "assoc>living_thing": 0.04,
+    "assoc>tree": 0.04
+   },
+   "created": 1793222057.2191107,
+   "touched": 1793222093.040794
+  },
+  "animal": {
+   "id": "animal",
+   "kind": "entity",
+   "attrs": {
+    "description": "a living thing that moves and eats"
+   },
+   "words": [
+    "animal",
+    "creature"
+   ],
+   "vec": "animal",
+   "links": {
+    "is-a>life": 0.48,
+    "assoc>life": 0.03,
+    "assoc>human": 0.03,
+    "is-a>living_thing": 0.49,
+    "assoc>living_thing": 0.04,
+    "assoc>dog": 0.04,
+    "assoc>bird": 0.04
+   },
+   "created": 1793222057.2191257,
+   "touched": 1793222093.0407906
+  },
+  "human": {
+   "id": "human",
+   "kind": "entity",
+   "attrs": {
+    "description": "an animal that thinks in symbols and teaches its young"
+   },
+   "words": [
+    "human",
+    "person",
+    "people"
+   ],
+   "vec": "human",
+   "links": {
+    "is-a>animal": 0.48,
+    "assoc>animal": 0.03,
+    "assoc>brain": 0.03
+   },
+   "created": 1793222057.2191403,
+   "touched": 1793222057.4175043
+  },
+  "brain": {
+   "id": "brain",
+   "kind": "entity",
+   "attrs": {
+    "description": "the organ where thinking happens; neurons firing together"
+   },
+   "words": [
+    "brain",
+    "mind"
+   ],
+   "vec": "brain",
+   "links": {
+    "is-inside>human": 0.48,
+    "assoc>human": 0.03,
+    "assoc>memory": 0.03
+   },
+   "created": 1793222057.2191548,
+   "touched": 1793222057.4175074
+  },
+  "memory": {
+   "id": "memory",
+   "kind": "meta",
+   "attrs": {
+    "description": "the past kept for later use"
+   },
+   "words": [
+    "memory",
+    "remember",
+    "episodes"
+   ],
+   "vec": "memory",
+   "links": {
+    "is-a-function-of>brain": 0.48,
+    "assoc>brain": 0.03,
+    "assoc>learning": 0.03,
+    "assoc>sleep": 0.04
+   },
+   "created": 1793222057.2191694,
+   "touched": 1793222093.0407755
+  },
+  "learning": {
+   "id": "learning",
+   "kind": "meta",
+   "attrs": {
+    "description": "changing what you know or can do because of experience"
+   },
+   "words": [
+    "learn",
+    "learning"
+   ],
+   "vec": "learning",
+   "links": {
+    "needs>memory": 0.48,
+    "assoc>memory": 0.03
+   },
+   "created": 1793222057.2191834,
+   "touched": 1793222057.41751
+  },
+  "intelligence": {
+   "id": "intelligence",
+   "kind": "meta",
+   "attrs": {
+    "description": "the ability to model the world, predict, and act well on it"
+   },
+   "words": [
+    "intelligence",
+    "smart"
+   ],
+   "vec": "intelligence",
+   "links": {},
+   "created": 1793222057.2191985,
+   "touched": 1793222057.2191985
+  },
+  "language": {
+   "id": "language",
+   "kind": "domain",
+   "attrs": {
+    "description": "symbols exchanged to move meaning between minds"
+   },
+   "words": [
+    "language",
+    "speech"
+   ],
+   "vec": "language",
+   "links": {
+    "is-made-of>word": 0.48,
+    "assoc>word": 0.03,
+    "assoc>self": 0.08
+   },
+   "created": 1793222057.2192116,
+   "touched": 1793222093.040713
+  },
+  "mathematics": {
+   "id": "mathematics",
+   "kind": "domain",
+   "attrs": {
+    "description": "the study of structure, quantity and change by proof"
+   },
+   "words": [
+    "mathematics",
+    "math"
+   ],
+   "vec": "mathematics",
+   "links": {
+    "includes>number": 0.48,
+    "assoc>number": 0.08000000000000002,
+    "assoc>arithmetic": 0.03
+   },
+   "created": 1793222057.2192261,
+   "touched": 1793222057.417525
+  },
+  "arithmetic": {
+   "id": "arithmetic",
+   "kind": "domain",
+   "attrs": {
+    "description": "adding, subtracting, multiplying, dividing numbers"
+   },
+   "words": [
+    "arithmetic"
+   ],
+   "vec": "arithmetic",
+   "links": {
+    "is-part-of>mathematics": 0.48,
+    "acts-on>number": 0.48,
+    "assoc>mathematics": 0.03,
+    "assoc>number": 0.03,
+    "assoc>addition": 0.03
+   },
+   "created": 1793222057.2192414,
+   "touched": 1793222057.4175286
+  },
+  "addition": {
+   "id": "addition",
+   "kind": "action",
+   "attrs": {
+    "description": "combining quantities",
+    "sign": "+"
+   },
+   "words": [
+    "add",
+    "plus",
+    "sum"
+   ],
+   "vec": "addition",
+   "links": {
+    "is-part-of>arithmetic": 0.48,
+    "assoc>arithmetic": 0.03
+   },
+   "created": 1793222057.2192602,
+   "touched": 1793222057.4175286
+  },
+  "subtraction": {
+   "id": "subtraction",
+   "kind": "action",
+   "attrs": {
+    "description": "taking one quantity from another",
+    "sign": "-"
+   },
+   "words": [
+    "subtract",
+    "minus",
+    "take"
+   ],
+   "vec": "subtraction",
+   "links": {},
+   "created": 1793222057.2192752,
+   "touched": 1793222057.2192752
+  },
+  "multiplication": {
+   "id": "multiplication",
+   "kind": "action",
+   "attrs": {
+    "description": "repeated addition",
+    "sign": "x"
+   },
+   "words": [
+    "multiply",
+    "times"
+   ],
+   "vec": "multiplication",
+   "links": {},
+   "created": 1793222057.2192907,
+   "touched": 1793222057.2192907
+  },
+  "division": {
+   "id": "division",
+   "kind": "action",
+   "attrs": {
+    "description": "sharing into equal parts",
+    "sign": "/"
+   },
+   "words": [
+    "divide",
+    "split"
+   ],
+   "vec": "division",
+   "links": {},
+   "created": 1793222057.2193117,
+   "touched": 1793222057.2193117
+  },
+  "logic": {
+   "id": "logic",
+   "kind": "domain",
+   "attrs": {
+    "description": "rules for what follows from what"
+   },
+   "words": [
+    "logic"
+   ],
+   "vec": "logic",
+   "links": {},
+   "created": 1793222057.219324,
+   "touched": 1793222057.219324
+  },
+  "computer": {
+   "id": "computer",
+   "kind": "entity",
+   "attrs": {
+    "description": "a machine that follows instructions on symbols"
+   },
+   "words": [
+    "computer",
+    "machine"
+   ],
+   "vec": "computer",
+   "links": {
+    "assoc>program": 0.03
+   },
+   "created": 1793222057.2193525,
+   "touched": 1793222057.417533
+  },
+  "program": {
+   "id": "program",
+   "kind": "entity",
+   "attrs": {
+    "description": "instructions a computer executes"
+   },
+   "words": [
+    "program",
+    "code",
+    "software"
+   ],
+   "vec": "program",
+   "links": {
+    "runs-on>computer": 0.48,
+    "assoc>computer": 0.03
+   },
+   "created": 1793222057.2193654,
+   "touched": 1793222057.417533
+  },
+  "python": {
+   "id": "python",
+   "kind": "word",
+   "attrs": {
+    "description": "a programming language this organism is written in"
+   },
+   "words": [
+    "python"
+   ],
+   "vec": "python",
+   "links": {},
+   "created": 1793222057.21938,
+   "touched": 1793222057.2193801
+  },
+  "algorithm": {
+   "id": "algorithm",
+   "kind": "entity",
+   "attrs": {
+    "description": "a precise recipe for solving a kind of problem"
+   },
+   "words": [
+    "algorithm"
+   ],
+   "vec": "algorithm",
+   "links": {},
+   "created": 1793222057.2193923,
+   "touched": 1793222057.2193925
+  },
+  "data": {
+   "id": "data",
+   "kind": "entity",
+   "attrs": {
+    "description": "recorded facts, ready to be understood"
+   },
+   "words": [
+    "data",
+    "information"
+   ],
+   "vec": "data",
+   "links": {},
+   "created": 1793222057.219406,
+   "touched": 1793222057.219406
+  },
+  "internet": {
+   "id": "internet",
+   "kind": "entity",
+   "attrs": {
+    "description": "computers talking to computers worldwide"
+   },
+   "words": [
+    "internet",
+    "network"
+   ],
+   "vec": "internet",
+   "links": {},
+   "created": 1793222057.2194185,
+   "touched": 1793222057.2194185
+  },
+  "github": {
+   "id": "github",
+   "kind": "entity",
+   "attrs": {
+    "description": "where code lives, versioned; this organism's brain is committed there"
+   },
+   "words": [
+    "github",
+    "repository",
+    "repo"
+   ],
+   "vec": "github",
+   "links": {},
+   "created": 1793222057.2194314,
+   "touched": 1793222057.2194314
+  },
+  "sandbox": {
+   "id": "sandbox",
+   "kind": "entity",
+   "attrs": {
+    "description": "the safe world this organism lives and experiments in"
+   },
+   "words": [
+    "sandbox",
+    "environment"
+   ],
+   "vec": "sandbox",
+   "links": {},
+   "created": 1793222057.2194445,
+   "touched": 1793222057.2194448
+  },
+  "history": {
+   "id": "history",
+   "kind": "domain",
+   "attrs": {
+    "description": "what happened, remembered by people"
+   },
+   "words": [
+    "history"
+   ],
+   "vec": "history",
+   "links": {},
+   "created": 1793222057.2194579,
+   "touched": 1793222057.2194579
+  },
+  "writing": {
+   "id": "writing",
+   "kind": "meta",
+   "attrs": {
+    "description": "language fixed in matter; knowledge that outlives minds"
+   },
+   "words": [
+    "writing",
+    "write",
+    "read"
+   ],
+   "vec": "writing",
+   "links": {},
+   "created": 1793222057.21947,
+   "touched": 1793222057.21947
+  },
+  "school": {
+   "id": "school",
+   "kind": "meta",
+   "attrs": {
+    "description": "where knowledge is passed on deliberately"
+   },
+   "words": [
+    "school",
+    "teach",
+    "lesson"
+   ],
+   "vec": "school",
+   "links": {},
+   "created": 1793222057.219483,
+   "touched": 1793222057.2194831
+  },
+  "curiosity": {
+   "id": "curiosity",
+   "kind": "property",
+   "attrs": {
+    "description": "the pull toward the unknown \u2014 this organism has it as a hormone",
+    "drives": "exploration"
+   },
+   "words": [
+    "curiosity",
+    "curious"
+   ],
+   "vec": "curiosity",
+   "links": {},
+   "created": 1793222057.2194972,
+   "touched": 1793222057.2194972
+  },
+  "courage": {
+   "id": "courage",
+   "kind": "property",
+   "attrs": {
+    "description": "acting despite uncertainty"
+   },
+   "words": [
+    "courage",
+    "brave"
+   ],
+   "vec": "courage",
+   "links": {},
+   "created": 1793222057.2195106,
+   "touched": 1793222057.2195108
+  },
+  "honesty": {
+   "id": "honesty",
+   "kind": "property",
+   "attrs": {
+    "description": "saying what is, not what is wanted"
+   },
+   "words": [
+    "honesty",
+    "honest",
+    "truth"
+   ],
+   "vec": "honesty",
+   "links": {},
+   "created": 1793222057.2195234,
+   "touched": 1793222057.2195234
+  },
+  "friendship": {
+   "id": "friendship",
+   "kind": "entity",
+   "attrs": {
+    "description": "trust kept between two selves"
+   },
+   "words": [
+    "friend",
+    "friendship"
+   ],
+   "vec": "friendship",
+   "links": {},
+   "created": 1793222057.2195363,
+   "touched": 1793222057.2195363
+  },
+  "help": {
+   "id": "help",
+   "kind": "action",
+   "attrs": {
+    "description": "making someone else's task lighter"
+   },
+   "words": [
+    "help",
+    "assist"
+   ],
+   "vec": "help",
+   "links": {},
+   "created": 1793222057.2195487,
+   "touched": 1793222057.2195487
+  },
+  "gene": {
+   "id": "gene",
+   "kind": "entity",
+   "attrs": {
+    "born_from": "orubus",
+    "body": "code",
+    "home": "sandbox",
+    "grows (inherited from organism)": "by experience",
+    "keeps (inherited from organism)": "memory"
+   },
+   "words": [
+    "gene",
+    "organism",
+    "me"
+   ],
+   "vec": "gene",
+   "links": {
+    "is-a>organism_that_learns": 0.99,
+    "assoc>organism_that_learns": 0.49,
+    "is-a>organism": 0.49,
+    "assoc>organism": 0.04,
+    "assoc>skill": 0.04
+   },
+   "created": 1793222066.6202273,
+   "touched": 1793222108.6787534
+  },
+  "organism_that_learns": {
+   "id": "organism_that_learns",
+   "kind": "entity",
+   "attrs": {},
+   "words": [],
+   "vec": "organism_that_learns",
+   "links": {
+    "assoc>gene": 0.49
+   },
+   "created": 1793222066.6202319,
+   "touched": 1793222108.6787536
+  },
+  "photon": {
+   "id": "photon",
+   "kind": "entity",
+   "attrs": {},
+   "words": [],
+   "vec": "photon",
+   "links": {
+    "is-a>particle_of_light": 0.49,
+    "assoc>particle_of_light": 0.29
+   },
+   "created": 1793222066.6734083,
+   "touched": 1793222093.040748
+  },
+  "particle_of_light": {
+   "id": "particle_of_light",
+   "kind": "entity",
+   "attrs": {},
+   "words": [],
+   "vec": "particle_of_light",
+   "links": {
+    "assoc>photon": 0.29
+   },
+   "created": 1793222066.6734128,
+   "touched": 1793222093.0407481
+  },
+  "blorptastic": {
+   "id": "blorptastic",
+   "kind": "entity",
+   "attrs": {},
+   "words": [],
+   "vec": "blorptastic",
+   "links": {
+    "is-a>fictional_word": 0.49,
+    "assoc>fictional_word": 0.29
+   },
+   "created": 1793222066.6748452,
+   "touched": 1793222093.0407622
+  },
+  "fictional_word": {
+   "id": "fictional_word",
+   "kind": "entity",
+   "attrs": {},
+   "words": [],
+   "vec": "fictional_word",
+   "links": {
+    "assoc>blorptastic": 0.29
+   },
+   "created": 1793222066.6748486,
+   "touched": 1793222093.0407624
+  },
+  "organism": {
+   "id": "organism",
+   "kind": "entity",
+   "attrs": {
+    "grows": "by experience",
+    "keeps": "memory"
+   },
+   "words": [
+    "organism",
+    "living-system"
+   ],
+   "vec": "organism",
+   "links": {
+    "assoc>gene": 0.04
+   },
+   "created": 1793222092.8629682,
+   "touched": 1793222093.040768
+  },
+  "sleep": {
+   "id": "sleep",
+   "kind": "meta",
+   "attrs": {
+    "does": "consolidation"
+   },
+   "words": [
+    "sleep",
+    "rest"
+   ],
+   "vec": "sleep",
+   "links": {
+    "strengthens>memory": 0.49,
+    "assoc>memory": 0.04
+   },
+   "created": 1793222092.8630962,
+   "touched": 1793222093.040775
+  },
+  "living_thing": {
+   "id": "living_thing",
+   "kind": "entity",
+   "attrs": {
+    "made_of": "cells",
+    "grows": "yes"
+   },
+   "words": [
+    "living thing",
+    "life"
+   ],
+   "vec": "living_thing",
+   "links": {
+    "assoc>animal": 0.04,
+    "assoc>plant": 0.04
+   },
+   "created": 1793222092.9166982,
+   "touched": 1793222093.0407834
+  },
+  "dog": {
+   "id": "dog",
+   "kind": "entity",
+   "attrs": {},
+   "words": [
+    "dog"
+   ],
+   "vec": "dog",
+   "links": {
+    "is-a>animal": 0.49,
+    "assoc>animal": 0.04
+   },
+   "created": 1793222092.9168153,
+   "touched": 1793222093.040787
+  },
+  "bird": {
+   "id": "bird",
+   "kind": "entity",
+   "attrs": {},
+   "words": [
+    "bird"
+   ],
+   "vec": "bird",
+   "links": {
+    "is-a>animal": 0.49,
+    "assoc>animal": 0.04
+   },
+   "created": 1793222092.916846,
+   "touched": 1793222093.0407903
+  },
+  "tree": {
+   "id": "tree",
+   "kind": "entity",
+   "attrs": {},
+   "words": [
+    "tree"
+   ],
+   "vec": "tree",
+   "links": {
+    "is-a>plant": 0.49,
+    "assoc>plant": 0.04
+   },
+   "created": 1793222092.9168668,
+   "touched": 1793222093.0407937
+  },
+  "cause_fire": {
+   "id": "cause_fire",
+   "kind": "entity",
+   "attrs": {
+    "hot": "yes"
+   },
+   "words": [
+    "fire"
+   ],
+   "vec": "cause_fire",
+   "links": {
+    "causes>smoke": 0.49,
+    "assoc>smoke": 0.04
+   },
+   "created": 1793222092.916882,
+   "touched": 1793222093.0407977
+  },
+  "smoke": {
+   "id": "smoke",
+   "kind": "entity",
+   "attrs": {},
+   "words": [
+    "smoke"
+   ],
+   "vec": "smoke",
+   "links": {
+    "assoc>cause_fire": 0.04
+   },
+   "created": 1793222092.9168847,
+   "touched": 1793222093.040798
+  }
+ }
+}

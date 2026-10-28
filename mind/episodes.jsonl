@@ -1,0 +1,278 @@
+{"t": 1793222057.168, "kind": "observe", "data": {"subject": "self", "coactive": ["self"]}}
+{"t": 1793222057.168, "kind": "observe", "data": {"subject": "teacher", "coactive": ["teacher"]}}
+{"t": 1793222057.168, "kind": "observe", "data": {"subject": "knowledge", "coactive": ["knowledge"]}}
+{"t": 1793222057.168, "kind": "observe", "data": {"subject": "number", "coactive": ["number"]}}
+{"t": 1793222057.168, "kind": "observe", "data": {"subject": "word", "coactive": ["word"]}}
+{"t": 1793222057.168, "kind": "observe", "data": {"subject": "sequence", "coactive": ["sequence"]}}
+{"t": 1793222057.168, "kind": "observe", "data": {"subject": "cause", "coactive": ["cause"]}}
+{"t": 1793222057.168, "kind": "observe", "data": {"subject": "experiment", "coactive": ["experiment"]}}
+{"t": 1793222057.168, "kind": "observe", "data": {"subject": "question", "coactive": ["question"]}}
+{"t": 1793222057.168, "kind": "observe", "data": {"subject": "skill", "coactive": ["skill"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "universe", "coactive": ["universe", "space", "time"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "space", "coactive": ["space"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "time", "coactive": ["time"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "matter", "coactive": ["matter"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "energy", "coactive": ["energy", "matter"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "atom", "coactive": ["atom", "matter"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "molecule", "coactive": ["molecule", "atom"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "water", "coactive": ["water", "molecule"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "fire", "coactive": ["fire"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "light", "coactive": ["light"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "gravity", "coactive": ["gravity"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "earth", "coactive": ["earth", "sun"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "sun", "coactive": ["sun"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "moon", "coactive": ["moon", "earth"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "life", "coactive": ["life"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "cell", "coactive": ["cell", "life"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "dna", "coactive": ["dna", "cell"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "evolution", "coactive": ["evolution", "dna"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "plant", "coactive": ["plant", "life"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "animal", "coactive": ["animal", "life"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "human", "coactive": ["human", "animal"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "brain", "coactive": ["brain", "human"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "memory", "coactive": ["memory", "brain"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "learning", "coactive": ["learning", "memory"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "intelligence", "coactive": ["intelligence"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "language", "coactive": ["language", "word"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "mathematics", "coactive": ["mathematics", "number"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "arithmetic", "coactive": ["arithmetic", "mathematics", "number"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "addition", "coactive": ["addition", "arithmetic"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "subtraction", "coactive": ["subtraction"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "multiplication", "coactive": ["multiplication"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "division", "coactive": ["division"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "logic", "coactive": ["logic"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "cause", "coactive": ["cause"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "computer", "coactive": ["computer"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "program", "coactive": ["program", "computer"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "python", "coactive": ["python"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "algorithm", "coactive": ["algorithm"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "data", "coactive": ["data"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "internet", "coactive": ["internet"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "github", "coactive": ["github"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "sandbox", "coactive": ["sandbox"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "history", "coactive": ["history"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "writing", "coactive": ["writing"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "school", "coactive": ["school"]}}
+{"t": 1793222057.219, "kind": "observe", "data": {"subject": "curiosity", "coactive": ["curiosity"]}}
+{"t": 1793222057.22, "kind": "observe", "data": {"subject": "courage", "coactive": ["courage"]}}
+{"t": 1793222057.22, "kind": "observe", "data": {"subject": "honesty", "coactive": ["honesty"]}}
+{"t": 1793222057.22, "kind": "observe", "data": {"subject": "friendship", "coactive": ["friendship"]}}
+{"t": 1793222057.22, "kind": "observe", "data": {"subject": "help", "coactive": ["help"]}}
+{"t": 1793222057.271, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 2, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.271, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 + 7", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.272, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 23, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.272, "kind": "task", "data": {"domain": "number", "prompt": "compute 9 - 5", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.272, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 6, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.272, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 - 2", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.273, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 10, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.273, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 11, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.273, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 1, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.273, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 17, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.273, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 + 4", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.274, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 16, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.274, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 2, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.274, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 2, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.274, "kind": "task", "data": {"domain": "number", "prompt": "compute 2 + 1", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.275, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 + 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.275, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 1, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.275, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 1, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.275, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 3, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.275, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 20, "coactive": ["code", "failure"]}}
+{"t": 1793222057.276, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 24, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.276, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 - 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.276, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 12, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.277, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 27, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.277, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 29, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.278, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 25, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.278, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 28, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.278, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 25, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.279, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 12, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.279, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 34, "coactive": ["code", "failure"]}}
+{"t": 1793222057.279, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 1, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.28, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 32, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.28, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 5, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.281, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 10, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.281, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 + 9", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.281, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 25, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.281, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 25, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.282, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 1, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.282, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 26, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.282, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 - 7", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.283, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 - 5", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.283, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 - 3", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.283, "kind": "task", "data": {"domain": "number", "prompt": "compute 0 + 7", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.283, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 10, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.284, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 32, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.284, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 32, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.285, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 23, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.285, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 2, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.285, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 1, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.286, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 33, "coactive": ["code", "failure"]}}
+{"t": 1793222057.286, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 42, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.286, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 - 5", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.287, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 26, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.287, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 + 7", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.287, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 - 2", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.287, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 3, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.288, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 12, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.288, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 25, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.288, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 - 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.289, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 10, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.289, "kind": "development", "data": {"stage": "skills", "coactive": ["self", "growth", "skills"]}}
+{"t": 1793222057.343, "kind": "task", "data": {"domain": "number", "prompt": "compute 12 - 8", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.343, "kind": "task", "data": {"domain": "number", "prompt": "compute 15 - 7", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.343, "kind": "task", "data": {"domain": "list", "prompt": "min", "solved": true, "tries": 20, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.344, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 5, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.344, "kind": "task", "data": {"domain": "list", "prompt": "unique", "solved": true, "tries": 30, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.345, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 43, "coactive": ["code", "failure"]}}
+{"t": 1793222057.345, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 30, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.345, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 6, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.346, "kind": "task", "data": {"domain": "list", "prompt": "min", "solved": true, "tries": 20, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.346, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 13, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.346, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 16, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.347, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 13, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.347, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.347, "kind": "task", "data": {"domain": "number", "prompt": "compute 0 x 4", "solved": true, "tries": 20, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.348, "kind": "task", "data": {"domain": "number", "prompt": "compute 17 - 16", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.348, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 27, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.348, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 17, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.349, "kind": "task", "data": {"domain": "number", "prompt": "compute 3 x 3", "solved": true, "tries": 26, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.349, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 x 4", "solved": true, "tries": 26, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.35, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 27, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.35, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 13, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.351, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 30, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.351, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 12, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.351, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 27, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.352, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 23, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.352, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 6, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.353, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 33, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.353, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 - 0", "solved": true, "tries": 1, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.353, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 41, "coactive": ["code", "failure"]}}
+{"t": 1793222057.353, "kind": "task", "data": {"domain": "number", "prompt": "compute 2 + 15", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.354, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 17, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.354, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 16, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.355, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 16, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.355, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 16, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.355, "kind": "task", "data": {"domain": "number", "prompt": "compute 17 - 8", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.355, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 11, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.356, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 17, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.356, "kind": "task", "data": {"domain": "list", "prompt": "sort", "solved": true, "tries": 22, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.356, "kind": "task", "data": {"domain": "number", "prompt": "compute 12 + 8", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.357, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 - 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.357, "kind": "task", "data": {"domain": "list", "prompt": "length", "solved": true, "tries": 28, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.357, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 1, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.357, "kind": "task", "data": {"domain": "number", "prompt": "compute 11 + 2", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.358, "kind": "task", "data": {"domain": "list", "prompt": "min", "solved": true, "tries": 20, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.358, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 17, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.358, "kind": "task", "data": {"domain": "number", "prompt": "compute 12 + 5", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.359, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 31, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.359, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 5, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.359, "kind": "task", "data": {"domain": "number", "prompt": "compute 11 - 7", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.36, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 3, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.36, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 2, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.36, "kind": "task", "data": {"domain": "number", "prompt": "compute 15 - 13", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.36, "kind": "task", "data": {"domain": "number", "prompt": "compute 16 - 4", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.361, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 14, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222057.361, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 - 5", "solved": true, "tries": 1, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.361, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 32, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222057.362, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 + 3", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222057.362, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222057.362, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 13, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.362, "kind": "task", "data": {"domain": "list", "prompt": "unique", "solved": true, "tries": 22, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222057.363, "kind": "development", "data": {"stage": "language", "coactive": ["self", "growth", "language"]}}
+{"t": 1793222066.62, "kind": "utterance", "data": {"text": "what is gene", "intent": "query", "coactive": ["self", "query"]}}
+{"t": 1793222066.62, "kind": "inquire", "data": {"q": "What is gene?", "coactive": ["teacher", "question"]}}
+{"t": 1793222066.62, "kind": "utterance", "data": {"text": "gene is an organism that learns", "intent": "fact", "coactive": ["self", "fact"]}}
+{"t": 1793222066.62, "kind": "observe", "data": {"subject": "gene", "coactive": ["gene", "organism_that_learns"]}}
+{"t": 1793222066.62, "kind": "infer", "data": {"subject": "gene", "gained": ["is-a"], "coactive": ["gene", "organism_that_learns", "organism_that_learns"]}}
+{"t": 1793222066.62, "kind": "utterance", "data": {"text": "what is gene", "intent": "query", "coactive": ["self", "query"]}}
+{"t": 1793222066.621, "kind": "utterance", "data": {"text": "compute 7 plus 5", "intent": "compute", "coactive": ["self", "compute"]}}
+{"t": 1793222066.621, "kind": "utterance", "data": {"text": "next in 2 4 6 8 10", "intent": "sequence", "coactive": ["self", "sequence"]}}
+{"t": 1793222066.622, "kind": "utterance", "data": {"text": "sum 3 9 4", "intent": "listop", "coactive": ["self", "listop"]}}
+{"t": 1793222066.622, "kind": "utterance", "data": {"text": "reverse helix", "intent": "strop", "coactive": ["self", "strop"]}}
+{"t": 1793222066.623, "kind": "utterance", "data": {"text": "what is a zorp", "intent": "query", "coactive": ["self", "query"]}}
+{"t": 1793222066.623, "kind": "inquire", "data": {"q": "What is a_zorp?", "coactive": ["teacher", "question"]}}
+{"t": 1793222066.623, "kind": "utterance", "data": {"text": "how do you know gene", "intent": "provenance", "coactive": ["self", "provenance"]}}
+{"t": 1793222066.623, "kind": "utterance", "data": {"text": "status", "intent": "status", "coactive": ["self", "status"]}}
+{"t": 1793222066.673, "kind": "utterance", "data": {"text": "a photon is a particle of light", "intent": "fact", "coactive": ["self", "fact"]}}
+{"t": 1793222066.673, "kind": "observe", "data": {"subject": "photon", "coactive": ["photon", "particle_of_light"]}}
+{"t": 1793222066.673, "kind": "infer", "data": {"subject": "photon", "gained": ["is-a"], "coactive": ["photon", "particle_of_light", "particle_of_light"]}}
+{"t": 1793222066.674, "kind": "utterance", "data": {"text": "what is photon", "intent": "query", "coactive": ["self", "query"]}}
+{"t": 1793222066.674, "kind": "utterance", "data": {"text": "does water have description", "intent": "query_attr", "coactive": ["self", "query_attr"]}}
+{"t": 1793222066.674, "kind": "utterance", "data": {"text": "compute 12 x 9", "intent": "compute", "coactive": ["self", "compute"]}}
+{"t": 1793222066.674, "kind": "utterance", "data": {"text": "next in 3 6 12 24", "intent": "sequence", "coactive": ["self", "sequence"]}}
+{"t": 1793222066.675, "kind": "utterance", "data": {"text": "what is gravity", "intent": "query", "coactive": ["self", "query"]}}
+{"t": 1793222066.675, "kind": "utterance", "data": {"text": "blorptastic is a fictional word", "intent": "fact", "coactive": ["self", "fact"]}}
+{"t": 1793222066.675, "kind": "observe", "data": {"subject": "blorptastic", "coactive": ["blorptastic", "fictional_word"]}}
+{"t": 1793222066.675, "kind": "infer", "data": {"subject": "blorptastic", "gained": ["is-a"], "coactive": ["blorptastic", "fictional_word", "fictional_word"]}}
+{"t": 1793222066.675, "kind": "utterance", "data": {"text": "what is blorptastic", "intent": "query", "coactive": ["self", "query"]}}
+{"t": 1793222066.675, "kind": "utterance", "data": {"text": "how do you know photon", "intent": "provenance", "coactive": ["self", "provenance"]}}
+{"t": 1793222092.863, "kind": "observe", "data": {"subject": "gene", "coactive": ["gene", "organism"]}}
+{"t": 1793222092.863, "kind": "observe", "data": {"subject": "organism", "coactive": ["organism"]}}
+{"t": 1793222092.863, "kind": "observe", "data": {"subject": "skill", "coactive": ["skill", "gene"]}}
+{"t": 1793222092.863, "kind": "observe", "data": {"subject": "sleep", "coactive": ["sleep", "memory"]}}
+{"t": 1793222092.863, "kind": "observe", "data": {"subject": "memory", "coactive": ["memory"]}}
+{"t": 1793222092.863, "kind": "observe", "data": {"subject": "curiosity", "coactive": ["curiosity"]}}
+{"t": 1793222092.863, "kind": "observe", "data": {"subject": "teacher", "coactive": ["teacher"]}}
+{"t": 1793222092.863, "kind": "observe", "data": {"subject": "experiment", "coactive": ["experiment"]}}
+{"t": 1793222092.917, "kind": "observe", "data": {"subject": "living_thing", "coactive": ["living_thing"]}}
+{"t": 1793222092.917, "kind": "observe", "data": {"subject": "animal", "coactive": ["animal", "living_thing"]}}
+{"t": 1793222092.917, "kind": "observe", "data": {"subject": "plant", "coactive": ["plant", "living_thing"]}}
+{"t": 1793222092.917, "kind": "observe", "data": {"subject": "dog", "coactive": ["dog", "animal"]}}
+{"t": 1793222092.917, "kind": "observe", "data": {"subject": "bird", "coactive": ["bird", "animal"]}}
+{"t": 1793222092.917, "kind": "observe", "data": {"subject": "tree", "coactive": ["tree", "plant"]}}
+{"t": 1793222092.917, "kind": "observe", "data": {"subject": "cause_fire", "coactive": ["cause_fire", "smoke"]}}
+{"t": 1793222092.917, "kind": "observe", "data": {"subject": "smoke", "coactive": ["smoke"]}}
+{"t": 1793222092.971, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 13, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222092.972, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 13, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222092.972, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 8, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222092.972, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 29, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222092.973, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 13, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222092.973, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 13, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222092.973, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 26, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222092.974, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 - 7", "solved": true, "tries": 26, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222092.974, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 10, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222092.974, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 - 6", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222092.975, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 39, "coactive": ["code", "failure"]}}
+{"t": 1793222092.975, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 27, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222092.976, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 + 2", "solved": true, "tries": 5, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222092.976, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 11, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222092.976, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 + 8", "solved": true, "tries": 11, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222092.977, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 8, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222092.977, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 31, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222092.977, "kind": "task", "data": {"domain": "number", "prompt": "compute 3 - 2", "solved": true, "tries": 21, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222092.978, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 20, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222092.978, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 1, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222092.978, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 27, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222092.979, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 + 7", "solved": true, "tries": 11, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222092.979, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 27, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222092.98, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 31, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222092.98, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 33, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222092.98, "kind": "task", "data": {"domain": "number", "prompt": "compute 9 - 8", "solved": true, "tries": 21, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222092.981, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 13, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222092.981, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 1, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222092.981, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 13, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222092.982, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 13, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222092.982, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 11, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222092.982, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 13, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222092.983, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 17, "coactive": ["code", "skill", "success"]}}
+{"t": 1793222092.983, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 + 1", "solved": true, "tries": 5, "coactive": ["number", "skill", "success"]}}
+{"t": 1793222092.983, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 13, "coactive": ["string", "skill", "success"]}}
+{"t": 1793222092.984, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 32, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793222092.984, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 9, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222092.984, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 2, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222092.984, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 9, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222092.985, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 9, "coactive": ["list", "skill", "success"]}}
+{"t": 1793222108.678, "kind": "utterance", "data": {"text": "what is gene", "intent": "query", "coactive": ["self", "query"]}}
+{"t": 1793222108.679, "kind": "utterance", "data": {"text": "gene is an organism that learns", "intent": "fact", "coactive": ["self", "fact"]}}
+{"t": 1793222108.679, "kind": "observe", "data": {"subject": "gene", "coactive": ["gene", "organism_that_learns"]}}
+{"t": 1793222108.679, "kind": "infer", "data": {"subject": "gene", "gained": ["is-a", "grows", "keeps"], "coactive": ["gene", "organism_that_learns", "organism_that_learns", "organism", "organism", "skill"]}}
+{"t": 1793222108.679, "kind": "utterance", "data": {"text": "what is gene", "intent": "query", "coactive": ["self", "query"]}}
+{"t": 1793222108.679, "kind": "utterance", "data": {"text": "compute 7 plus 5", "intent": "compute", "coactive": ["self", "compute"]}}
+{"t": 1793222108.68, "kind": "utterance", "data": {"text": "next in 2 4 6 8 10", "intent": "sequence", "coactive": ["self", "sequence"]}}
+{"t": 1793222108.68, "kind": "utterance", "data": {"text": "sum 3 9 4", "intent": "listop", "coactive": ["self", "listop"]}}
+{"t": 1793222108.681, "kind": "utterance", "data": {"text": "reverse helix", "intent": "strop", "coactive": ["self", "strop"]}}
+{"t": 1793222108.681, "kind": "utterance", "data": {"text": "what is a zorp", "intent": "query", "coactive": ["self", "query"]}}
+{"t": 1793222108.681, "kind": "inquire", "data": {"q": "What is a_zorp?", "coactive": ["teacher", "question"]}}
+{"t": 1793222108.681, "kind": "utterance", "data": {"text": "how do you know gene", "intent": "provenance", "coactive": ["self", "provenance"]}}
+{"t": 1793222108.681, "kind": "utterance", "data": {"text": "status", "intent": "status", "coactive": ["self", "status"]}}

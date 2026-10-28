@@ -1,0 +1,42 @@
+name: evolve
+
+# Evolution generations: tournament selection, mutation, crossover over
+# the gene pool, then commit the evolved genome.
+
+on:
+  workflow_dispatch:
+    inputs:
+      gens:
+        description: "generations to run"
+        default: "3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gene-evolve
+  cancel-in-progress: false
+
+jobs:
+  evolve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: run evolution
+        run: |
+          python -m gene evolve --gens "${{ github.event.inputs.gens || '3' }}"
+          python -m gene status
+      - name: commit evolved genome
+        run: |
+          git config user.name "gene-organism"
+          git config user.email "gene@orubus.ai"
+          git add mind/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "pool unchanged"
+          else
+            git commit -m "[gene:evolve] selection over gene pool $(date -u +%FT%TZ)"
+            git push
+          fi

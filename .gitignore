@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+mind/episodes.jsonl.archive.jsonl
+.gene-scratch/
+mind/*.archive.jsonl

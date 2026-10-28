@@ -1,0 +1,21 @@
+{
+ "stage": "language",
+ "wins": {
+  "string": 3,
+  "number": 3,
+  "code": 3,
+  "list": 3,
+  "sequence": 3
+ },
+ "total_wins": 15,
+ "milestones": [
+  {
+   "stage": "skills",
+   "wins": 5
+  },
+  {
+   "stage": "language",
+   "wins": 10
+  }
+ ]
+}

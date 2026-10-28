@@ -1,0 +1,47 @@
+name: sleep
+
+# Nightly consolidation: the organism trains, sleeps (replays episodes,
+# wires the cortex, prunes), evolves one generation, and the updated brain
+# state is committed back to the repo. The repo is the persistent mind.
+
+on:
+  schedule:
+    - cron: "0 2 * * *"   # 02:00 UTC every night
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gene-sleep
+  cancel-in-progress: false
+
+jobs:
+  night:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: wake, train, sleep, evolve
+        run: |
+          python -m gene awaken
+          for pack in curriculum/*.json; do python -m gene teach "$pack"; done
+          python -m gene train --budget 40
+          python -m gene sleep
+          python -m gene evolve --gens 1
+          python -m gene status
+      - name: commit the grown mind
+        run: |
+          git config user.name "gene-organism"
+          git config user.email "gene@orubus.ai"
+          git add mind/ curriculum/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "no growth tonight"
+          else
+            git commit -m "[gene:sleep] consolidation — mind snapshot $(date -u +%FT%TZ)"
+            git push
+          fi

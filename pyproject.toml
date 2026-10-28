@@ -1,0 +1,11 @@
+[project]
+name = "gene-organism"
+version = "0.1.0"
+description = "Gene — an in-house organism-style cognitive architecture: world model, no tokenizer, no gradients"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Orubus / Velocity Labs" }]
+dependencies = []
+
+[project.scripts]
+gene = "gene.life:main"
