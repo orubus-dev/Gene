@@ -31,6 +31,7 @@ jobs:
           git config user.email "orubus-dev@users.noreply.github.com"
           git add mind/ curriculum/
           git commit -m "[life] cycle: train + sleep + evolve — mind state advanced" || echo "no changes to mind"
+          git pull --rebase --autostash origin main || true
           git push
       - name: Upload progress artifact
         uses: actions/upload-artifact@v4
