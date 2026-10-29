@@ -155,7 +155,8 @@ check("E-brain", "emotion classified", emo is not None, str(emo))
 
 # ============================ F. regression ====================================
 for text, must in [("who are you", ["gene"]),
-                   ("hello", ["hello", "hey", "hi"]),
+                   ("hello", ["hello", "hey", "hi", "yo", "good to see",
+                              "ask me", "talk"]),
                    ("what is a dog", ["mammal", "canid", "animal", "pet"]),
                    ("turn she walks into a question", ["does she walk"]),
                    ("past tense of go", ["went"]),

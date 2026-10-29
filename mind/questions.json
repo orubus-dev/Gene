@@ -1,802 +1,802 @@
 [
  {
-  "t": 1793276733.706238,
+  "t": 1793277329.5093799,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277329.510965,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277329.732964,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277329.7347565,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277329.9880223,
+  "q": "meaning of: about"
+ },
+ {
+  "t": 1793277329.9902763,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277329.9919028,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277330.4708455,
+  "q": "meaning of: grick"
+ },
+ {
+  "t": 1793277330.4848373,
+  "q": "meaning of: grick"
+ },
+ {
+  "t": 1793277331.3764281,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277331.7177718,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277332.5004034,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277333.3251958,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277334.1005015,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277334.6373732,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277335.2072902,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277335.985933,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277336.3512685,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277336.3529022,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277336.7811007,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277336.7850914,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277336.7865758,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277336.8039784,
+  "q": "meaning of: grick"
+ },
+ {
+  "t": 1793277337.080298,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277338.7529054,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277340.145411,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277340.731018,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277341.5420723,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277342.304903,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277342.571595,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277343.2883208,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277343.7966464,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277344.4878874,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277344.749876,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277345.002226,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277345.7531042,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277346.3243873,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277346.896098,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277347.9603405,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277348.2291653,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277348.4795878,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277349.1609461,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277349.6465042,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277349.6630387,
+  "q": "meaning of: grick"
+ },
+ {
+  "t": 1793277350.2849815,
+  "q": "meaning of: grick"
+ },
+ {
+  "t": 1793277351.2098172,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277351.9048476,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277352.5904143,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277353.0982177,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277353.7951584,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277354.54718,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277355.3031716,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277356.338899,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277357.3504722,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277357.6888266,
   "q": "meaning of: zorpus"
  },
  {
-  "t": 1793276733.7097213,
-  "q": "compose word: flurg"
- },
- {
-  "t": 1793276734.506979,
-  "q": "memory recall miss: do you remember dogs?"
- },
- {
-  "t": 1793276734.5094087,
-  "q": "memory recall miss: do you remember dogs?"
- },
- {
-  "t": 1793276735.8292673,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276737.0853164,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276737.67252,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276738.4513798,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276739.2136374,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276739.6647549,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276740.153008,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276740.6054904,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276741.3964217,
-  "q": "meaning of: would you bet a qwumble"
- },
- {
-  "t": 1793276741.9174812,
-  "q": "meaning of: would you bet a qwumble"
- },
- {
-  "t": 1793276742.0897398,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793276742.0913808,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793276742.3486035,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793276742.5305572,
-  "q": "meaning of: grick"
- },
- {
-  "t": 1793276742.7307165,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793276744.1541479,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276744.5913413,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276745.1009855,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276746.3363912,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276746.7735345,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276747.5161526,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276748.2029998,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276748.8974936,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276749.454845,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276750.2244384,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276750.8013363,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276751.8278704,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276752.3956885,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276752.9873295,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276753.330687,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276753.9099174,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276756.6158469,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276757.30698,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276757.8134563,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276758.2506752,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276758.2690244,
-  "q": "meaning of: grick"
- },
- {
-  "t": 1793276758.5232444,
-  "q": "meaning of: would you bet a qwumble"
- },
- {
-  "t": 1793276758.5379364,
-  "q": "meaning of: grick"
- },
- {
-  "t": 1793276759.6726632,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276760.4260774,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276760.866639,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276761.112603,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793276761.873448,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276762.4897945,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276763.2581813,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276763.5860205,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276763.6001852,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793276763.6088324,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793276763.6102948,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793276763.6120484,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793276763.613437,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793276764.7838094,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276765.7955315,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276766.158983,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276766.4871178,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793276766.5162475,
-  "q": "meaning of: grick"
- },
- {
-  "t": 1793276766.9318748,
-  "q": "meaning of: zorpus"
- },
- {
-  "t": 1793276766.9467697,
+  "t": 1793277357.7027087,
   "q": "meaning of: blimp"
  },
  {
-  "t": 1793276767.950243,
+  "t": 1793277358.8972666,
   "q": "meaning of: zorp"
  },
  {
-  "t": 1793276767.9877412,
+  "t": 1793277358.9303396,
   "q": "meaning of: zorp"
  },
  {
-  "t": 1793276767.9987495,
+  "t": 1793277358.9413867,
   "q": "meaning of: zorp"
  },
  {
-  "t": 1793276768.034703,
+  "t": 1793277358.9756646,
   "q": "meaning of: zorp"
  },
  {
-  "t": 1793277101.5881257,
-  "q": "meaning of: mitochondrion"
+  "t": 1793277362.2161055,
+  "q": "meaning of: busiest"
  },
  {
-  "t": 1793277101.608059,
-  "q": "meaning of: function of the heart"
+  "t": 1793277362.7940204,
+  "q": "meaning of: busiest"
  },
  {
-  "t": 1793277182.026098,
+  "t": 1793277363.1417453,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277363.6813545,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277363.7503746,
+  "q": "meaning of: grick"
+ },
+ {
+  "t": 1793277364.1055412,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277364.880973,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277365.6844442,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277366.0190175,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277367.3976233,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277367.7051084,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277367.719175,
+  "q": "meaning of: grick"
+ },
+ {
+  "t": 1793277367.859544,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277367.8611941,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277368.1953688,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277368.7789485,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277369.1232586,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277369.648516,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277370.032203,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277371.116176,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277371.6917603,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277372.4918199,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277373.3164518,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277374.9699059,
+  "q": "meaning of: grick"
+ },
+ {
+  "t": 1793277376.343081,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277377.0198994,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277377.2804487,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277377.7746005,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277378.469048,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277379.1550808,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277379.4000175,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277379.8977108,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277380.1754057,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277380.7854443,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277381.3555782,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277382.1607947,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277382.9620984,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277382.9764879,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277384.4542027,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277385.289716,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277386.3228936,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277387.0701349,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277388.068847,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277388.8997512,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277389.4954317,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277390.2832205,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277391.028507,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277391.2742512,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277391.7777035,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277392.0264895,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277392.0300505,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277392.0316145,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277392.2829678,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277392.5467582,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277393.0313215,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277393.548106,
+  "q": "meaning of: zorpus"
+ },
+ {
+  "t": 1793277393.551849,
+  "q": "compose word: flurg"
+ },
+ {
+  "t": 1793277396.6129217,
   "q": "meaning of: volcanoes"
  },
  {
-  "t": 1793277185.1755798,
+  "t": 1793277397.8688293,
   "q": "meaning of: zorpus"
  },
  {
-  "t": 1793277185.467291,
+  "t": 1793277398.1484485,
   "q": "meaning of: zorpus"
  },
  {
-  "t": 1793277185.4821007,
+  "t": 1793277398.1639152,
   "q": "meaning of: flurg"
  },
  {
-  "t": 1793277185.6492033,
+  "t": 1793277398.317581,
   "q": "meaning of: blorp"
  },
  {
-  "t": 1793277185.6610122,
+  "t": 1793277398.3295286,
   "q": "meaning of: zorp"
  },
  {
-  "t": 1793277185.6769671,
+  "t": 1793277398.3458145,
   "q": "meaning of: seacow"
  },
  {
-  "t": 1793277191.1804926,
+  "t": 1793277404.3379433,
   "q": "meaning of: zorp"
  },
  {
-  "t": 1793277191.1961849,
+  "t": 1793277404.3538413,
   "q": "meaning of: zorp"
  },
  {
-  "t": 1793277191.2097998,
+  "t": 1793277404.3674212,
   "q": "meaning of: zorp"
  },
  {
-  "t": 1793277191.2385502,
+  "t": 1793277404.397121,
   "q": "meaning of: blimps"
  },
  {
-  "t": 1793277191.5009606,
+  "t": 1793277404.8542519,
   "q": "meaning of: blimps"
  },
  {
-  "t": 1793277191.527052,
+  "t": 1793277404.8813214,
   "q": "meaning of: blimps"
  },
  {
-  "t": 1793277191.5565841,
+  "t": 1793277404.911511,
   "q": "meaning of: zorp"
  },
  {
-  "t": 1793277192.0296934,
+  "t": 1793277405.3792422,
   "q": "meaning of: blimps"
  },
  {
-  "t": 1793277192.0713308,
+  "t": 1793277405.9195633,
   "q": "meaning of: blimps"
  },
  {
-  "t": 1793277192.2871523,
+  "t": 1793277406.872158,
   "q": "meaning of: zorp"
  },
  {
-  "t": 1793277193.0495868,
+  "t": 1793277407.1463115,
   "q": "meaning of: blimps"
  },
  {
-  "t": 1793277193.5773804,
-  "q": "memory recall miss: do you remember dogs?"
- },
- {
-  "t": 1793277193.5800226,
-  "q": "memory recall miss: do you remember dogs?"
- },
- {
-  "t": 1793277194.920245,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277196.1843622,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277196.7708747,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277197.529901,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277198.277746,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277198.7060227,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277199.2249863,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277199.6602974,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277200.5267198,
+  "t": 1793277408.810723,
   "q": "meaning of: would you bet a qwumble"
  },
  {
-  "t": 1793277201.0615964,
+  "t": 1793277409.8656895,
   "q": "meaning of: would you bet a qwumble"
  },
  {
-  "t": 1793277201.2305949,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793277201.2324278,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793277201.4887917,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793277201.6939373,
-  "q": "meaning of: grick"
- },
- {
-  "t": 1793277201.8652275,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793277203.2720013,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277203.717396,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277204.2565172,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277205.4744637,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277205.9137657,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277206.6612263,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277207.3584783,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277208.0475147,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277208.5605748,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277209.3341882,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277209.912929,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277210.9477727,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277211.5225801,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277212.1074982,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277212.4439619,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277213.0209732,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277215.7905378,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277216.4945862,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277217.0065036,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277217.4529116,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277217.472385,
-  "q": "meaning of: grick"
- },
- {
-  "t": 1793277217.7284074,
+  "t": 1793277410.6224246,
   "q": "meaning of: would you bet a qwumble"
  },
  {
-  "t": 1793277217.7438755,
+  "t": 1793277410.634417,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277410.8283172,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277410.8314798,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277410.833174,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277411.040117,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277411.0422063,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277411.2957325,
+  "q": "meaning of: about"
+ },
+ {
+  "t": 1793277411.2979634,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277411.2996252,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277411.8178337,
   "q": "meaning of: grick"
  },
  {
-  "t": 1793277218.884009,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277219.6298606,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277220.1038992,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277220.3989005,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277221.1753674,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277221.7610407,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277222.5251615,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277222.8595748,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277222.8743348,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793277222.8842134,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793277222.8858025,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793277222.887615,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793277222.8891835,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793277224.0628896,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277225.062827,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277225.4233725,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277225.7625139,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277225.7925487,
+  "t": 1793277411.8333783,
   "q": "meaning of: grick"
  },
  {
-  "t": 1793277226.121186,
+  "t": 1793277412.725436,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277413.0577095,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277413.8159456,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277414.6399603,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277415.4133508,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277415.9415448,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277416.527072,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277417.3017898,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277417.6744323,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277417.6760597,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277418.1142032,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277418.118165,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277418.1197305,
+  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
+ },
+ {
+  "t": 1793277418.1374571,
+  "q": "meaning of: grick"
+ },
+ {
+  "t": 1793277418.3993194,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277420.0306475,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277421.43826,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277422.0114453,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277422.7779381,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277423.5466468,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277423.8133163,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277424.5050712,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277425.020583,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277425.7091763,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277425.974803,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277426.2358274,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277426.9861386,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277427.5737562,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277428.1629221,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277429.2130775,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277429.4918935,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277429.7568169,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277430.4534378,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277430.9463573,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277430.9629056,
+  "q": "meaning of: grick"
+ },
+ {
+  "t": 1793277431.566404,
+  "q": "meaning of: grick"
+ },
+ {
+  "t": 1793277432.4503505,
+  "q": "meaning of: would you bet a qwumble"
+ },
+ {
+  "t": 1793277433.142924,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277433.8151538,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277434.3135445,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277434.9978373,
+  "q": "meaning of: what's"
+ },
+ {
+  "t": 1793277435.7565732,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277436.5213552,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277437.532081,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277438.5249696,
+  "q": "meaning of: busiest"
+ },
+ {
+  "t": 1793277438.8800714,
   "q": "meaning of: zorpus"
  },
  {
-  "t": 1793277226.135962,
+  "t": 1793277438.8942425,
   "q": "meaning of: blimp"
  },
  {
-  "t": 1793277227.1723716,
+  "t": 1793277440.0677457,
   "q": "meaning of: zorp"
  },
  {
-  "t": 1793277227.2111034,
+  "t": 1793277440.1092806,
   "q": "meaning of: zorp"
  },
  {
-  "t": 1793277227.2225559,
+  "t": 1793277440.122168,
   "q": "meaning of: zorp"
  },
  {
-  "t": 1793277227.2607894,
+  "t": 1793277440.157035,
   "q": "meaning of: zorp"
- },
- {
-  "t": 1793277232.4254293,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277233.1189122,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277233.6218626,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277234.077299,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277235.3098981,
-  "q": "meaning of: grick"
- },
- {
-  "t": 1793277235.8496242,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277236.3307576,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277236.8213472,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277237.0750613,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277238.3123899,
-  "q": "meaning of: grick"
- },
- {
-  "t": 1793277238.6172502,
-  "q": "meaning of: would you bet a qwumble"
- },
- {
-  "t": 1793277238.633544,
-  "q": "meaning of: grick"
- },
- {
-  "t": 1793277239.1406338,
-  "q": "meaning of: grick"
- },
- {
-  "t": 1793277240.0830913,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277241.045331,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277241.4903905,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277242.4643366,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277243.6667023,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277244.2436073,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277244.5720863,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277245.099749,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277245.6098871,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277245.86638,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277246.110325,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277246.6163607,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277246.9556868,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793277246.9575155,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793277247.3988903,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793277247.6663806,
-  "q": "meaning of: would you bet a qwumble"
- },
- {
-  "t": 1793277248.187563,
-  "q": "meaning of: would you bet a qwumble"
- },
- {
-  "t": 1793277249.4322255,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277250.0061412,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277250.5925753,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277250.93611,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277250.9536333,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793277251.1536484,
-  "q": "meaning of: grick"
- },
- {
-  "t": 1793277252.2700071,
-  "q": "meaning of: would you bet a qwumble"
- },
- {
-  "t": 1793277252.521879,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277253.2087517,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277253.7152627,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277254.6930423,
-  "q": "meaning of: what's"
- },
- {
-  "t": 1793277255.0623553,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277255.6318061,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277256.2076254,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277256.786746,
-  "q": "meaning of: busiest"
- },
- {
-  "t": 1793277257.0679822,
-  "q": "meaning of: would you bet a qwumble"
- },
- {
-  "t": 1793277257.7886758,
-  "q": "meaning of: would you bet a qwumble"
- },
- {
-  "t": 1793277258.4802828,
-  "q": "memory recall miss: do you remember failing at something hard? tell me about it"
- },
- {
-  "t": 1793277259.0360472,
-  "q": "meaning of: zorpus"
- },
- {
-  "t": 1793277259.0394628,
-  "q": "compose word: flurg"
  }
 ]
