@@ -838,3 +838,119 @@
 {"t": 1793276768.668, "kind": "chat", "data": {"intent": "compliment", "text": "ok cool", "reply": "Thank you — made my day.", "coactive": ["self", "compliment", "conversation"]}}
 {"t": 1793276768.668, "kind": "utterance", "data": {"text": "125+6", "intent": "compute", "coactive": ["self", "compute"]}}
 {"t": 1793276768.668, "kind": "task", "data": {"domain": "number", "prompt": "125 add 6", "solved": true, "tries": 1, "coactive": ["number", "skill", "success"]}}
+{"t": 1793276873.997, "kind": "task", "data": {"domain": "chem", "prompt": "symbol of iron", "solved": true, "tries": 1, "coactive": ["chem", "skill", "success"]}}
+{"t": 1793276873.998, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793276873.999, "kind": "task", "data": {"domain": "chem", "prompt": "sodium + chlorine -> ?", "solved": true, "tries": 1, "coactive": ["chem", "skill", "success"]}}
+{"t": 1793276874.001, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 27, "coactive": ["string", "skill", "success"]}}
+{"t": 1793276874.002, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 8, "coactive": ["list", "skill", "success"]}}
+{"t": 1793276874.003, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_quot", "solved": true, "tries": 26, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793276874.007, "kind": "task", "data": {"domain": "sentence", "prompt": "neg: they are round", "solved": false, "tries": 27, "coactive": ["sentence", "failure"]}}
+{"t": 1793276874.008, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 1, "coactive": ["list", "skill", "success"]}}
+{"t": 1793276874.008, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 + 4", "solved": true, "tries": 1, "coactive": ["number", "skill", "success"]}}
+{"t": 1793276874.009, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793276874.01, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_ohm", "solved": true, "tries": 26, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793276874.01, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793276874.011, "kind": "task", "data": {"domain": "sentence", "prompt": "ynq: they climb", "solved": true, "tries": 26, "coactive": ["sentence", "skill", "success"]}}
+{"t": 1793276874.012, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 11, "coactive": ["code", "skill", "success"]}}
+{"t": 1793276874.013, "kind": "task", "data": {"domain": "grammar", "prompt": "past of have", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793276874.018, "kind": "task", "data": {"domain": "taxonomy", "prompt": "parent of comic", "solved": true, "tries": 26, "coactive": ["taxonomy", "skill", "success"]}}
+{"t": 1793276874.019, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 - 1", "solved": true, "tries": 10, "coactive": ["number", "skill", "success"]}}
+{"t": 1793276874.019, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 - 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793276874.019, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 - 4", "solved": true, "tries": 11, "coactive": ["number", "skill", "success"]}}
+{"t": 1793276874.02, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 20, "coactive": ["string", "skill", "success"]}}
+{"t": 1793276874.021, "kind": "task", "data": {"domain": "sentence", "prompt": "ynq: a horse opens", "solved": true, "tries": 26, "coactive": ["sentence", "skill", "success"]}}
+{"t": 1793276874.022, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 1, "coactive": ["list", "skill", "success"]}}
+{"t": 1793276874.022, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793276874.023, "kind": "task", "data": {"domain": "taxonomy", "prompt": "parent of dominant", "solved": true, "tries": 26, "coactive": ["taxonomy", "skill", "success"]}}
+{"t": 1793276874.024, "kind": "task", "data": {"domain": "grammar", "prompt": "past of visit", "solved": true, "tries": 27, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793276874.024, "kind": "task", "data": {"domain": "taxonomy", "prompt": "parent of flea", "solved": true, "tries": 26, "coactive": ["taxonomy", "skill", "success"]}}
+{"t": 1793276874.025, "kind": "task", "data": {"domain": "chem", "prompt": "sodium + chlorine -> ?", "solved": true, "tries": 1, "coactive": ["chem", "skill", "success"]}}
+{"t": 1793276874.026, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 33, "coactive": ["code", "failure"]}}
+{"t": 1793276874.027, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_charge", "solved": true, "tries": 26, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793276874.028, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_density", "solved": true, "tries": 26, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793276874.029, "kind": "task", "data": {"domain": "sentence", "prompt": "neg: i multiply", "solved": true, "tries": 26, "coactive": ["sentence", "skill", "success"]}}
+{"t": 1793276874.03, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_work", "solved": true, "tries": 26, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793276874.031, "kind": "task", "data": {"domain": "taxonomy", "prompt": "parent of snake", "solved": true, "tries": 26, "coactive": ["taxonomy", "skill", "success"]}}
+{"t": 1793276874.031, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 20, "coactive": ["list", "skill", "success"]}}
+{"t": 1793276874.032, "kind": "task", "data": {"domain": "grammar", "prompt": "past of come", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793276874.033, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 1, "coactive": ["code", "skill", "success"]}}
+{"t": 1793276874.033, "kind": "task", "data": {"domain": "taxonomy", "prompt": "parent of eel", "solved": true, "tries": 26, "coactive": ["taxonomy", "skill", "success"]}}
+{"t": 1793276874.034, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 1, "coactive": ["list", "skill", "success"]}}
+{"t": 1793276874.034, "kind": "task", "data": {"domain": "taxonomy", "prompt": "parent of rake", "solved": true, "tries": 26, "coactive": ["taxonomy", "skill", "success"]}}
+{"t": 1793276874.035, "kind": "task", "data": {"domain": "chem", "prompt": "symbol of iodine", "solved": true, "tries": 1, "coactive": ["chem", "skill", "success"]}}
+{"t": 1793276874.036, "kind": "task", "data": {"domain": "grammar", "prompt": "past of wait", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793276874.037, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 39, "coactive": ["code", "failure"]}}
+{"t": 1793276874.037, "kind": "task", "data": {"domain": "grammar", "prompt": "past of have", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793276874.038, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 12, "coactive": ["list", "skill", "success"]}}
+{"t": 1793276874.039, "kind": "task", "data": {"domain": "sentence", "prompt": "neg: you are dirty", "solved": true, "tries": 29, "coactive": ["sentence", "skill", "success"]}}
+{"t": 1793276874.039, "kind": "task", "data": {"domain": "chem", "prompt": "sodium + chlorine -> ?", "solved": true, "tries": 1, "coactive": ["chem", "skill", "success"]}}
+{"t": 1793276874.04, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793276874.041, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_momentum", "solved": true, "tries": 26, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793276874.042, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 27, "coactive": ["string", "skill", "success"]}}
+{"t": 1793276874.042, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793276874.043, "kind": "task", "data": {"domain": "grammar", "prompt": "plural of cat", "solved": true, "tries": 21, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793276874.043, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793276874.043, "kind": "task", "data": {"domain": "chem", "prompt": "symbol of gold", "solved": true, "tries": 1, "coactive": ["chem", "skill", "success"]}}
+{"t": 1793276874.044, "kind": "task", "data": {"domain": "grammar", "prompt": "past of wait", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793276874.045, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_density", "solved": true, "tries": 26, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793276874.045, "kind": "task", "data": {"domain": "chem", "prompt": "symbol of hydrogen", "solved": true, "tries": 1, "coactive": ["chem", "skill", "success"]}}
+{"t": 1793276874.046, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793276874.046, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 12, "coactive": ["list", "skill", "success"]}}
+{"t": 1793276874.047, "kind": "task", "data": {"domain": "chem", "prompt": "hydrogen + oxygen -> ?", "solved": true, "tries": 1, "coactive": ["chem", "skill", "success"]}}
+{"t": 1793276874.048, "kind": "task", "data": {"domain": "grammar", "prompt": "past of use", "solved": true, "tries": 28, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793276874.479, "kind": "task", "data": {"domain": "list", "prompt": "length", "solved": true, "tries": 28, "coactive": ["list", "skill", "success"]}}
+{"t": 1793276874.479, "kind": "task", "data": {"domain": "number", "prompt": "compute 17 + 4", "solved": true, "tries": 1, "coactive": ["number", "skill", "success"]}}
+{"t": 1793276874.485, "kind": "task", "data": {"domain": "sentence", "prompt": "imp: you seek", "solved": true, "tries": 26, "coactive": ["sentence", "skill", "success"]}}
+{"t": 1793276874.486, "kind": "task", "data": {"domain": "grammar", "prompt": "past of have", "solved": true, "tries": 1, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793276874.487, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 20, "coactive": ["string", "skill", "success"]}}
+{"t": 1793276874.487, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793276874.487, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793276874.488, "kind": "task", "data": {"domain": "grammar", "prompt": "plural of box", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793276874.489, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 36, "coactive": ["code", "failure"]}}
+{"t": 1793276874.49, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 36, "coactive": ["code", "failure"]}}
+{"t": 1793276874.491, "kind": "task", "data": {"domain": "grammar", "prompt": "past of look", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793276874.532, "kind": "task", "data": {"domain": "taxonomy", "prompt": "clues: growing plants under glass, building", "solved": true, "tries": 26, "coactive": ["taxonomy", "skill", "success"]}}
+{"t": 1793276874.534, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 + 15", "solved": true, "tries": 1, "coactive": ["number", "skill", "success"]}}
+{"t": 1793276874.534, "kind": "task", "data": {"domain": "number", "prompt": "compute 0 x 8", "solved": true, "tries": 1, "coactive": ["number", "skill", "success"]}}
+{"t": 1793276874.535, "kind": "task", "data": {"domain": "chem", "prompt": "iron + oxygen -> ?", "solved": true, "tries": 1, "coactive": ["chem", "skill", "success"]}}
+{"t": 1793276874.536, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 28, "coactive": ["code", "skill", "success"]}}
+{"t": 1793276874.537, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793276874.537, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 1, "coactive": ["string", "skill", "success"]}}
+{"t": 1793276874.538, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 4, "coactive": ["string", "skill", "success"]}}
+{"t": 1793276874.538, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 35, "coactive": ["code", "failure"]}}
+{"t": 1793276874.539, "kind": "task", "data": {"domain": "grammar", "prompt": "past of run", "solved": false, "tries": 31, "coactive": ["grammar", "failure"]}}
+{"t": 1793276874.54, "kind": "task", "data": {"domain": "sentence", "prompt": "imp: you laugh", "solved": true, "tries": 26, "coactive": ["sentence", "skill", "success"]}}
+{"t": 1793276874.541, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 12, "coactive": ["list", "skill", "success"]}}
+{"t": 1793276874.541, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 x 3", "solved": true, "tries": 15, "coactive": ["number", "skill", "success"]}}
+{"t": 1793276874.542, "kind": "task", "data": {"domain": "taxonomy", "prompt": "parent of lighter", "solved": true, "tries": 26, "coactive": ["taxonomy", "skill", "success"]}}
+{"t": 1793276874.543, "kind": "task", "data": {"domain": "grammar", "prompt": "past of get", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793276874.543, "kind": "task", "data": {"domain": "chem", "prompt": "symbol of tin", "solved": true, "tries": 1, "coactive": ["chem", "skill", "success"]}}
+{"t": 1793276874.543, "kind": "task", "data": {"domain": "chem", "prompt": "symbol of argon", "solved": true, "tries": 1, "coactive": ["chem", "skill", "success"]}}
+{"t": 1793276874.544, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_square", "solved": true, "tries": 26, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793276874.545, "kind": "task", "data": {"domain": "list", "prompt": "length", "solved": true, "tries": 28, "coactive": ["list", "skill", "success"]}}
+{"t": 1793276874.546, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_ohm", "solved": true, "tries": 26, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793276874.547, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 35, "coactive": ["code", "failure"]}}
+{"t": 1793276874.548, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793276874.549, "kind": "task", "data": {"domain": "list", "prompt": "length", "solved": true, "tries": 28, "coactive": ["list", "skill", "success"]}}
+{"t": 1793276874.55, "kind": "task", "data": {"domain": "sentence", "prompt": "neg: we are straight", "solved": true, "tries": 29, "coactive": ["sentence", "skill", "success"]}}
+{"t": 1793276874.551, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_square", "solved": true, "tries": 26, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793276874.552, "kind": "task", "data": {"domain": "taxonomy", "prompt": "parent of matches", "solved": true, "tries": 26, "coactive": ["taxonomy", "skill", "success"]}}
+{"t": 1793276874.552, "kind": "task", "data": {"domain": "list", "prompt": "unique", "solved": true, "tries": 5, "coactive": ["list", "skill", "success"]}}
+{"t": 1793276874.552, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793276874.553, "kind": "task", "data": {"domain": "taxonomy", "prompt": "parent of clownfish", "solved": true, "tries": 26, "coactive": ["taxonomy", "skill", "success"]}}
+{"t": 1793276874.553, "kind": "task", "data": {"domain": "chem", "prompt": "symbol of mercury", "solved": true, "tries": 1, "coactive": ["chem", "skill", "success"]}}
+{"t": 1793276874.554, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 28, "coactive": ["code", "skill", "success"]}}
+{"t": 1793276874.555, "kind": "task", "data": {"domain": "taxonomy", "prompt": "parent of bus", "solved": true, "tries": 26, "coactive": ["taxonomy", "skill", "success"]}}
+{"t": 1793276874.557, "kind": "task", "data": {"domain": "taxonomy", "prompt": "clues: frying on heat, a long handle", "solved": true, "tries": 26, "coactive": ["taxonomy", "skill", "success"]}}
+{"t": 1793276874.558, "kind": "task", "data": {"domain": "list", "prompt": "length", "solved": true, "tries": 28, "coactive": ["list", "skill", "success"]}}
+{"t": 1793276874.559, "kind": "task", "data": {"domain": "chem", "prompt": "symbol of titanium", "solved": true, "tries": 1, "coactive": ["chem", "skill", "success"]}}
+{"t": 1793276874.559, "kind": "task", "data": {"domain": "number", "prompt": "compute 3 + 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793276874.56, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 28, "coactive": ["code", "skill", "success"]}}
+{"t": 1793276874.563, "kind": "task", "data": {"domain": "sentence", "prompt": "neg: they are happy", "solved": true, "tries": 29, "coactive": ["sentence", "skill", "success"]}}
+{"t": 1793276874.564, "kind": "task", "data": {"domain": "grammar", "prompt": "plural of door", "solved": true, "tries": 21, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793276874.565, "kind": "task", "data": {"domain": "chem", "prompt": "methane + oxygen -> ?", "solved": true, "tries": 1, "coactive": ["chem", "skill", "success"]}}
+{"t": 1793276874.567, "kind": "task", "data": {"domain": "sentence", "prompt": "ynq: he owes", "solved": true, "tries": 26, "coactive": ["sentence", "skill", "success"]}}
+{"t": 1793276874.568, "kind": "task", "data": {"domain": "number", "prompt": "compute 9 x 4", "solved": true, "tries": 15, "coactive": ["number", "skill", "success"]}}
+{"t": 1793276874.568, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793276874.569, "kind": "task", "data": {"domain": "grammar", "prompt": "past of have", "solved": true, "tries": 1, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793276874.571, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": false, "tries": 35, "coactive": ["code", "failure"]}}

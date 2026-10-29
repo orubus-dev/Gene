@@ -1,72 +1,54 @@
 {
- "attempts": 8342204,
- "solved": 824894,
+ "attempts": 8344137,
+ "solved": 825001,
  "by_domain": {
   "chat": {
    "tasks": 50370,
    "solved": 46325
   },
   "sequence": {
-   "tasks": 24216,
-   "solved": 14213
+   "tasks": 24224,
+   "solved": 14221
   },
   "list": {
-   "tasks": 24095,
-   "solved": 23331
+   "tasks": 24108,
+   "solved": 23344
   },
   "number": {
-   "tasks": 23916,
-   "solved": 23916
+   "tasks": 23926,
+   "solved": 23926
   },
   "string": {
-   "tasks": 24200,
-   "solved": 24200
+   "tasks": 24212,
+   "solved": 24212
   },
   "code": {
-   "tasks": 24068,
-   "solved": 11762
+   "tasks": 24080,
+   "solved": 11767
   },
   "grammar": {
-   "tasks": 103293,
-   "solved": 102968
+   "tasks": 103308,
+   "solved": 102982
   },
   "sentence": {
-   "tasks": 158493,
-   "solved": 158273
+   "tasks": 158503,
+   "solved": 158282
   },
   "taxonomy": {
-   "tasks": 211256,
-   "solved": 175054
+   "tasks": 211268,
+   "solved": 175066
   },
   "maths": {
-   "tasks": 165017,
-   "solved": 165016
+   "tasks": 165027,
+   "solved": 165026
   },
   "chem": {
-   "tasks": 86632,
-   "solved": 76341
+   "tasks": 86646,
+   "solved": 76355
   }
  },
- "cycles": 169,
+ "cycles": 171,
  "history": [
-  {
-   "cycle": 140,
-   "rates": {
-    "string": 1.0,
-    "sequence": 0.422,
-    "code": 0.422,
-    "list": 0.96,
-    "number": 1.0
-   }
-  },
-  {
-   "cycle": 141,
-   "rates": {
-    "maths": 1.0,
-    "taxonomy": 0.818,
-    "sentence": 0.996
-   }
-  },
   {
    "cycle": 142,
    "rates": {
@@ -280,6 +262,36 @@
    "cycle": 169,
    "rates": {
     "chat": 0.758
+   }
+  },
+  {
+   "cycle": 170,
+   "rates": {
+    "chem": 1.0,
+    "string": 1.0,
+    "list": 1.0,
+    "maths": 1.0,
+    "sentence": 0.8,
+    "number": 1.0,
+    "sequence": 1.0,
+    "code": 0.5,
+    "grammar": 1.0,
+    "taxonomy": 1.0
+   }
+  },
+  {
+   "cycle": 171,
+   "rates": {
+    "list": 1.0,
+    "number": 1.0,
+    "sentence": 1.0,
+    "grammar": 0.857,
+    "string": 1.0,
+    "sequence": 1.0,
+    "code": 0.375,
+    "taxonomy": 1.0,
+    "chem": 1.0,
+    "maths": 1.0
    }
   }
  ],
