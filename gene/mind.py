@@ -9,8 +9,8 @@ import os
 import random
 import time
 
-from . import concepts, endocrine, evolution, hdc, immune, knowledge, linguistics
-from . import memory, reflex, trainer, world
+from . import concepts, conversation, endocrine, evolution, hdc, immune, knowledge
+from . import linguistics, memory, reflex, trainer, world
 from . import development
 from . import genome as G
 
@@ -34,6 +34,7 @@ class Mind:
         self.dev = development.Development(self._p("development.json"))
         self.dev.load_dict(self._load("development.json", None))
         self.rng = random.Random(int(self._load("rng.json", {"seed": 1337})["seed"]))
+        self.convo = conversation.Conversation(self)
         self.progress = self._load("progress.json", {"attempts": 0, "solved": 0,
                                                      "by_domain": {}, "cycles": 0})
         self.meta = self._load("meta.json", {"born": time.time(), "name": "gene"})
@@ -45,9 +46,10 @@ class Mind:
         for cid, kind in (("self", "meta"), ("knowledge", "meta"),
                           ("teacher", "meta"), ("skill", "meta"),
                           ("success", "meta"), ("failure", "meta"),
-                          ("question", "meta"), ("experiment", "meta")):
+                          ("question", "meta"), ("experiment", "meta"),
+                          ("conversation", "idea")):
             self.graph.ensure(cid, kind=kind)
-        for dom in ("number", "string", "list", "sequence", "code"):
+        for dom in ("number", "string", "list", "sequence", "code", "chat"):
             self.graph.ensure(dom, kind="domain")
 
     # ---------- persistence ----------------------------------------------------
@@ -131,6 +133,63 @@ class Mind:
         report["pool"] = len(self.genes)
         return report
 
+    def train_chat(self, budget=60, start_tier=1):
+        """One conversational waking block: boolean-only, escalating tiers.
+        Failed tasks make the NEXT task harder (never easier, never revealed)."""
+        from . import lang_trainer as LT
+        report = {"tasks": 0, "solved": 0, "by_intent": {}, "tiers": {},
+                  "escalations": 0, "max_tier": start_tier}
+        tier = start_tier
+        queue = []
+        for i in range(budget):
+            if queue:
+                task = queue.pop(0)          # escalated retry from a failure
+            else:
+                task = LT.gen_chat_task(self.rng, tier)
+            outcome = LT.train_chat_task(task, self.convo, self.genes,
+                                         self.reflexes, self.predictor,
+                                         self.hormones, self.rng, now=time.time())
+            report["tasks"] += 1
+            it = task["intent"]
+            report["by_intent"].setdefault(it, {"tasks": 0, "solved": 0})
+            report["by_intent"][it]["tasks"] += 1
+            report["tiers"][str(task["tier"])] = report["tiers"].get(str(task["tier"]), 0) + 1
+            self.progress["attempts"] += len(outcome["attempts"])
+            self.episodes.record("chat_task", {"intent": it, "tier": task["tier"],
+                                               "stimulus": task["input"][:80],
+                                               "solved": outcome["solved"],
+                                               "tries": len(outcome["attempts"]),
+                                               "coactive": outcome["coactive"]})
+            self.graph.hebbian(outcome["coactive"], 0.05)
+            if outcome["solved"]:
+                report["solved"] += 1
+                report["by_intent"][it]["solved"] += 1
+                self.progress["solved"] += 1
+                if outcome["gene"] and not any(
+                        g["steps"] == outcome["gene"]["steps"] and g.get("domain") == "chat"
+                        for g in self.genes):
+                    if outcome["gene"]["id"] is None:
+                        outcome["gene"]["id"] = "c%05d" % self.rng.randint(0, 99999)
+                    self.genes.append(outcome["gene"])
+                self.graph.relate("chat", "skill", strength=0.1)
+                tier = max(start_tier, task["tier"])          # hold the hard-won level
+            else:
+                # ESCALATION LAW: failure -> harder next, answer never shown
+                esc = dict(task)
+                esc["tier"] = min(4, task["tier"] + 1)
+                esc["input"] = task["input"]
+                queue.append(esc)
+                report["escalations"] += 1
+                tier = min(4, max(tier, esc["tier"]))
+                self.episodes.record("escalation", {"intent": it,
+                                                    "tier": esc["tier"],
+                                                    "coactive": ["chat", "failure", "harder"]})
+            report["max_tier"] = max(report["max_tier"], tier)
+        self.progress["cycles"] += 1
+        self.genes = trainer.dedupe_genes(self.genes)
+        self.dev.record_win("chat") if report["solved"] else None
+        return report
+
     def sleep(self):
         """Consolidation: replay episodes, hebbian wiring, decay, apoptosis."""
         report = memory.sleep_cycle(self.graph, self.episodes)
@@ -173,7 +232,12 @@ class Mind:
         return None
 
     def handle_text(self, text):
-        """The live loop: parse -> reflex -> know/reason/act -> seek knowledge."""
+        """The live loop: social layer -> parse -> reflex -> know/reason/act."""
+        # social/conversational layer first (identity, greetings, smalltalk...)
+        social = self.convo.handle(text)
+        if social:
+            return social
+
         i = linguistics.parse(text)
         intent = i["intent"]
         self.episodes.record("utterance", {"text": text[:200], "intent": intent,
@@ -214,19 +278,38 @@ class Mind:
         if intent == "query":
             ans = self._find_answer(i["subject"])
             if ans:
+                self.convo.state.d["last_answer"] = ans[:200]
+                self.convo.state.save()
                 return ans
+            # unknown: infer harder, then analogy, then honest miss + question back
+            gained = self.knowledge.infer(i["subject"])
+            if gained:
+                parts = []
+                if gained.get("is-a"):
+                    parts.append("%s is %s" % (i["subject"].replace("_", " "), gained["is-a"][0].replace("_", " ")))
+                for k, v in gained.items():
+                    if k not in ("is-a", "causes"):
+                        parts.append("%s: %s" % (k, v))
+                if parts:
+                    return "By inference: %s." % "; ".join(parts[:2])
+            near = self.graph.activate([i["subject"]], topn=3)
+            near = [n for n, s in near if s > 0.05 and n != i["subject"]]
             self.knowledge.inquire("What is %s?" % i["subject"])
-            return ("I don't know '%s' yet — I've raised the question for my teacher. "
-                    "Teach me with '%s is ...', or I can experiment." % (
-                        i["subject"], i["subject"]))
+            if near:
+                return ("I don't know '%s' yet — the nearest thing I hold is '%s'. "
+                        "Is that what you mean, or will you teach me the difference?" % (
+                            i["subject"].replace("_", " "), near[0].replace("_", " ")))
+            return ("I don't know '%s' yet — it's on my study list. Ask me about "
+                    "what I do know, or teach me with '%s is ...'." % (
+                        i["subject"].replace("_", " "), i["subject"].replace("_", " ")))
 
         if intent == "query_attr":
             node = self.graph.get(i["subject"])
             if node and any(k.startswith(i["attr"]) for k in node["attrs"]):
                 return "Yes — %s has %s." % (i["subject"], i["attr"])
             self.knowledge.inquire("Does %s have %s?" % (i["subject"], i["attr"]))
-            return "Unknown so far — question queued. Tell me '%s has %s' and I'll know." % (
-                i["subject"], i["attr"])
+            return "I don't know whether %s has %s yet. Tell me '%s has %s' and I'll wire it in — or ask me something adjacent." % (
+                i["subject"], i["attr"], i["subject"], i["attr"])
 
         if intent == "compute":
             a, b = i["args"]
@@ -296,15 +379,30 @@ class Mind:
                 return "%s" % expected
             return "still learning that one."
 
-        # unknown words -> knowledge seeking (the child raising its hand)
+        # unknown words -> knowledge seeking (raise the hand silently, keep talking)
+        STOPWORDS = {"the", "and", "for", "are", "but", "not", "you", "all",
+                     "can", "her", "was", "one", "our", "out", "his", "has",
+                     "have", "been", "will", "what", "how", "why", "who",
+                     "tell", "me", "about", "that", "this", "with", "does",
+                     "did", "do", "is", "it", "of", "on", "in", "to", "a",
+                     "an", "your", "my", "know", "think", "heard", "ever"}
         words = [w for w in linguistics.parse(text).get("text", text).lower().split()
                  if w.isalpha()]
-        unknown = [w for w in words if not self.graph.lookup_word(w)]
+        unknown = [w for w in words if len(w) > 2 and w not in STOPWORDS
+                   and not self.graph.lookup_word(w)]
         if unknown:
+            w = unknown[0]
             self.knowledge.inquire("meaning of: %s" % ", ".join(unknown[:5]))
-            return ("I don't know '%s' yet. Teach me ('%s is ...') or let me "
-                    "experiment — I've queued the question." % (unknown[0], unknown[0]))
-        return "I heard you, but I don't yet know how to think about that. Teach me?"
+            near = self.graph.activate([w], topn=3)
+            near = [n for n, s in near if s > 0.05]
+            if near:
+                return ("'%s' isn't in my graph yet — closest I hold is '%s'. "
+                        "Is that related? Teach me with '%s is ...' and I'll connect them." % (
+                            w, near[0].replace("_", " "), w))
+            return ("'%s' isn't in my graph yet — it's on my study list. "
+                    "Teach me with '%s is ...', or ask me about what I do know." % (w, w))
+        return ("I heard you, but I don't yet know how to think about that. "
+                "Give me a fact or a puzzle and I'll grow around it.")
 
     # ---------- reporting -----------------------------------------------------------
     def status(self):

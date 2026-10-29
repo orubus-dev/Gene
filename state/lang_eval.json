@@ -1,0 +1,286 @@
+{
+ "total": 40,
+ "of": 40,
+ "rows": [
+  {
+   "cat": "identity",
+   "prompt": "who are you?",
+   "ok": true,
+   "why": "ok",
+   "reply": "Gene here v1.0 \u2014 an organism-style cognitive architecture - a world model, not a language model. Built by Orubus; nothing I know is hard-coded."
+  },
+  {
+   "cat": "identity",
+   "prompt": "what are you?",
+   "ok": true,
+   "why": "ok",
+   "reply": "The name's Gene v1.0. an organism-style cognitive architecture - a world model, not a language model \u2014 a mind you can read. Ask me what I can do."
+  },
+  {
+   "cat": "identity",
+   "prompt": "what's your name?",
+   "ok": true,
+   "why": "ok",
+   "reply": "Gene \u2014 version 1.0. A cognitive organism with 4 skills and a readable mind. What about you?"
+  },
+  {
+   "cat": "identity",
+   "prompt": "introduce yourself",
+   "ok": true,
+   "why": "ok",
+   "reply": "I'm Gene v1.0 \u2014 an organism-style cognitive architecture - a world model, not a language model. Built by Orubus; nothing I know is hard-coded. Happy to prove it."
+  },
+  {
+   "cat": "identity",
+   "prompt": "are you chatgpt?",
+   "ok": true,
+   "why": "ok",
+   "reply": "Gene v1.0, and no LLM inside \u2014 my knowledge is a graph of 94 concepts I grew myself, and you can diff it."
+  },
+  {
+   "cat": "identity",
+   "prompt": "are you an LLM?",
+   "ok": true,
+   "why": "ok",
+   "reply": "Wrong genus: I'm Gene v1.0, an organism-style cognitive architecture - a world model, not a language model. Language models predict words; I predict outcomes and learn when I'm wrong."
+  },
+  {
+   "cat": "identity",
+   "prompt": "are you human?",
+   "ok": true,
+   "why": "ok",
+   "reply": "Not human \u2014 Gene v1.0, a cognitive organism by Orubus. But I have moods, hormones and a memory, so the gap is smaller than you'd think."
+  },
+  {
+   "cat": "identity",
+   "prompt": "who r u",
+   "ok": true,
+   "why": "ok",
+   "reply": "Gene \u2014 v1.0. an organism-style cognitive architecture - a world model, not a language model \u2014 a mind you can read. Ask me what I can do."
+  },
+  {
+   "cat": "identity",
+   "prompt": "tell me about yourself",
+   "ok": true,
+   "why": "ok",
+   "reply": "Call me Gene v1.0. an organism-style cognitive architecture - a world model, not a language model \u2014 a mind you can read."
+  },
+  {
+   "cat": "identity",
+   "prompt": "what's it like being you?",
+   "ok": true,
+   "why": "ok",
+   "reply": "Quiet, mostly. I train, I sleep, I consolidate, I grow. I'm Gene v1.0 and my whole life is committed to git \u2014 you could read my diary."
+  },
+  {
+   "cat": "greeting",
+   "prompt": "hi",
+   "ok": true,
+   "why": "ok",
+   "reply": "Hey there! Ask me something, or teach me something."
+  },
+  {
+   "cat": "greeting",
+   "prompt": "hello!",
+   "ok": true,
+   "why": "ok",
+   "reply": "Good to see you. My 4 skills are warmed up \u2014 your move."
+  },
+  {
+   "cat": "greeting",
+   "prompt": "heyy wassup",
+   "ok": true,
+   "why": "ok",
+   "reply": "Hey! Ask me something, or teach me something."
+  },
+  {
+   "cat": "greeting",
+   "prompt": "yo",
+   "ok": true,
+   "why": "ok",
+   "reply": "Hi! My 4 skills are warmed up \u2014 your move."
+  },
+  {
+   "cat": "greeting",
+   "prompt": "good morning",
+   "ok": true,
+   "why": "ok",
+   "reply": "Good to see you. I'm curious what brought you here."
+  },
+  {
+   "cat": "howareyou",
+   "prompt": "how are you?",
+   "ok": true,
+   "why": "ok",
+   "reply": "Feeling great and fresh \u2014 1420 tasks solved so far. You?"
+  },
+  {
+   "cat": "howareyou",
+   "prompt": "hru today?",
+   "ok": true,
+   "why": "ok",
+   "reply": "My hormones say great mood, 100% energy. Settled and ready \u2014 what about you?"
+  },
+  {
+   "cat": "howareyou",
+   "prompt": "how's it going?",
+   "ok": true,
+   "why": "ok",
+   "reply": "Honestly? great and fresh \u2014 mood 1.00 after 21 training cycles. How are you?"
+  },
+  {
+   "cat": "howareyou",
+   "prompt": "you good?",
+   "ok": true,
+   "why": "ok",
+   "reply": "Pretty great, thanks for asking. 21 training cycles behind me. How are you?"
+  },
+  {
+   "cat": "capability",
+   "prompt": "what can you do?",
+   "ok": true,
+   "why": "ok",
+   "reply": "I'm a learner, not an encyclopedia \u2014 94 concepts and 4 skills, all inspectable. Give me examples and I'll infer the rule."
+  },
+  {
+   "cat": "capability",
+   "prompt": "what do you know?",
+   "ok": true,
+   "why": "ok",
+   "reply": "Best at: patterns and small programs \u2014 1420 of my 11380 attempts worked. Also: honest conversation and remembering everything."
+  },
+  {
+   "cat": "capability",
+   "prompt": "how do you learn?",
+   "ok": true,
+   "why": "ok",
+   "reply": "I solve tasks with only pass/fail feedback, generalize what I learn, sleep on it to consolidate, and evolve my skill pool. Try 'next in 2 4 6 8' or teach me something new."
+  },
+  {
+   "cat": "capability",
+   "prompt": "what are you good at?",
+   "ok": true,
+   "why": "ok",
+   "reply": "I can learn patterns in numbers, strings, lists and sequences, synthesize small programs from examples, reason over my 94 concepts, and remember everything in episodes."
+  },
+  {
+   "cat": "capability",
+   "prompt": "can you help me?",
+   "ok": true,
+   "why": "ok",
+   "reply": "Right now: 4 skills, 94 concepts, 100 reflex arcs. Teach me facts, give me puzzles, or ask what I know and how I know it."
+  },
+  {
+   "cat": "thanks",
+   "prompt": "thanks a lot",
+   "ok": true,
+   "why": "ok",
+   "reply": "You're welcome! That one's in my episodes now."
+  },
+  {
+   "cat": "farewell",
+   "prompt": "gtg bye",
+   "ok": true,
+   "why": "ok",
+   "reply": "Later! Questions I couldn't answer are saved for next time."
+  },
+  {
+   "cat": "compliment",
+   "prompt": "you're actually impressive",
+   "ok": true,
+   "why": "ok",
+   "reply": "Thank you \u2014 that goes in my episodes as a good day."
+  },
+  {
+   "cat": "insult",
+   "prompt": "you're useless",
+   "ok": true,
+   "why": "ok",
+   "reply": "Fair \u2014 I'm young and narrow. Point me at what I got wrong and I'll train on it."
+  },
+  {
+   "cat": "affirm",
+   "prompt": "lol yeah",
+   "ok": true,
+   "why": "ok",
+   "reply": "'lol' isn't in my graph yet \u2014 closest I hold is 'fluency'. Is that related? Teach me with 'lol is ...' and I'll connect them."
+  },
+  {
+   "cat": "user_name",
+   "prompt": "i'm Alex",
+   "ok": true,
+   "why": "ok",
+   "reply": "Nice to meet you, Alex \u2014 name bound to my concept of you."
+  },
+  {
+   "cat": "followup",
+   "prompt": "why?",
+   "ok": true,
+   "why": "ok",
+   "reply": "Because of how I learned it: fluency: varied, natural, unhurried replies that stay on topic \u2014 provenance for everything I say lives in my graph."
+  },
+  {
+   "cat": "followup",
+   "prompt": "more",
+   "ok": true,
+   "why": "ok",
+   "reply": "Here's the ledger: 94 concepts, 4 skills, 100 reflexes, 337 rules. Every line of it diffable in git."
+  },
+  {
+   "cat": "followup",
+   "prompt": "tell me more",
+   "ok": true,
+   "why": "ok",
+   "reply": "My self-report: 94 concepts, 4 skills, 100 reflexes, 337 causal rules across 21 cycles. The diff is my growth spurt."
+  },
+  {
+   "cat": "query",
+   "prompt": "what is a zorp",
+   "ok": true,
+   "why": "ok",
+   "reply": "I don't know 'zorp' yet \u2014 it's on my study list. Ask me about what I do know, or teach me with 'zorp is ...'."
+  },
+  {
+   "cat": "query",
+   "prompt": "what is fluency",
+   "ok": true,
+   "why": "ok",
+   "reply": "fluency: varied, natural, unhurried replies that stay on topic"
+  },
+  {
+   "cat": "unknown",
+   "prompt": "have you heard of quantum decoherence",
+   "ok": true,
+   "why": "ok",
+   "reply": "'quantum' isn't in my graph yet \u2014 closest I hold is 'python'. Is that related? Teach me with 'quantum is ...' and I'll connect them."
+  },
+  {
+   "cat": "compute",
+   "prompt": "compute 7 plus 5",
+   "ok": true,
+   "why": "ok",
+   "reply": "live compute = 12  (I worked it out in 5 tries)"
+  },
+  {
+   "cat": "sequence",
+   "prompt": "next in 2 4 6 8 10",
+   "ok": true,
+   "why": "ok",
+   "reply": "next is 12 (found in 10 tries: last | add(n=2))"
+  },
+  {
+   "cat": "fact",
+   "prompt": "gene is an organism that learns",
+   "ok": true,
+   "why": "ok",
+   "reply": "Got it \u2014 gene is organism_that_learns. I inferred more from what I know."
+  },
+  {
+   "cat": "provenance",
+   "prompt": "how do you know gene",
+   "ok": true,
+   "why": "ok",
+   "reply": "Learned gene: kind=organism, 21 attributes, 13 relations, 8.4 hours old. Sources: teaching, observation, inference and experiments."
+  }
+ ]
+}

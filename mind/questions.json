@@ -1,22 +1,802 @@
 [
  {
-  "t": 1793222066.6197705,
-  "q": "What is gene?"
+  "t": 1793252318.7647634,
+  "q": "meaning of: what was your hardest problem so far?"
  },
  {
-  "t": 1793222066.622939,
-  "q": "What is a_zorp?"
+  "t": 1793252318.7749763,
+  "q": "meaning of: what"
  },
  {
-  "t": 1793222108.6807876,
-  "q": "What is a_zorp?"
+  "t": 1793252318.776351,
+  "q": "meaning of: what was your hardest problem so far?"
  },
  {
-  "t": 1793222129.8887851,
+  "t": 1793252318.7857609,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.7870488,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.7963948,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.797649,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.8073614,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.8086188,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.818305,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.8196378,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.829889,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.8312027,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.841273,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.8425589,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.8526068,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.8538823,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.8639207,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.8652148,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.8752437,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.8765056,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.8860795,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.8873837,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.8970854,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.8983285,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.9080195,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.9092815,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.9189491,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.9201932,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.9302695,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.9315352,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.9409099,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.9421856,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.9522943,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.9535518,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.9635806,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.964831,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.9748766,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.9761674,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.9862156,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.987547,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252318.9969454,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252318.9982224,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.0075877,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.0088437,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.0189416,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.0201864,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.0295074,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.0307894,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.0408506,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.0421193,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.05224,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.0534956,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.0635097,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.0647614,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.0747821,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.0760424,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.0860746,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.0873053,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.096827,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.098122,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.1078718,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.1091557,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.1192036,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.120449,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.1298769,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.1311533,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.141267,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.1426265,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.1527638,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.1540887,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.1643615,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.1656287,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.1757376,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.1769972,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.1871023,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.1883812,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.1984494,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.1997938,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.209477,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.2108078,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.2202334,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.2214835,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.2316558,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.232992,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.243341,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.2446496,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.2547545,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.2560732,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.2661307,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.267411,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.2774413,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.2787626,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.289052,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.2903244,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.3005648,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.3018467,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.312118,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.3133905,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.3230789,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.3243132,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.3343446,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.3355942,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.3450887,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.346419,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.356557,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.357882,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.368165,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.3694754,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.3796241,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.380954,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.391129,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.3923907,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.402526,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.4037704,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.4134648,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.4148479,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.4246612,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.4259272,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.435765,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.4370553,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.447108,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.4483736,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.458451,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.4597304,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.4697888,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.4710596,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.481098,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.4823332,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.4923663,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.4936514,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.5036812,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.5049357,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.5147302,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.5161119,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.5263765,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.5276535,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.5370827,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.5383387,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.5485897,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.54992,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.5594823,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.5608475,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.5711362,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.5725374,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.5827208,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.5840065,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.5941663,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.5954313,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.605481,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.6067605,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.6165197,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.617785,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.627569,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.629052,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.6385126,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.6397815,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.6492524,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.6505349,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.6670759,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.668367,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.6950617,
+  "q": "meaning of: tired"
+ },
+ {
+  "t": 1793252319.7048998,
+  "q": "meaning of: tell"
+ },
+ {
+  "t": 1793252319.715403,
+  "q": "meaning of: tell"
+ },
+ {
+  "t": 1793252319.7253382,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.7267008,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.7368276,
+  "q": "meaning of: tell"
+ },
+ {
+  "t": 1793252319.7474787,
+  "q": "meaning of: tell"
+ },
+ {
+  "t": 1793252319.757483,
+  "q": "meaning of: prove"
+ },
+ {
+  "t": 1793252319.7587788,
+  "q": "meaning of: prove you're not just an LLM"
+ },
+ {
+  "t": 1793252319.7686183,
+  "q": "meaning of: prove"
+ },
+ {
+  "t": 1793252319.7698941,
+  "q": "meaning of: prove you're not just an LLM"
+ },
+ {
+  "t": 1793252319.7795148,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.7807946,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.7903912,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.791644,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.8008575,
+  "q": "meaning of: prove"
+ },
+ {
+  "t": 1793252319.8021204,
+  "q": "meaning of: prove you're not just an LLM"
+ },
+ {
+  "t": 1793252319.8118143,
+  "q": "meaning of: tell"
+ },
+ {
+  "t": 1793252319.8218641,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.8231637,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.8483872,
+  "q": "meaning of: tired"
+ },
+ {
+  "t": 1793252319.8578935,
+  "q": "meaning of: tell"
+ },
+ {
+  "t": 1793252319.8674302,
+  "q": "meaning of: tell"
+ },
+ {
+  "t": 1793252319.8775702,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.8789709,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.8884058,
+  "q": "meaning of: what"
+ },
+ {
+  "t": 1793252319.8896658,
+  "q": "meaning of: what was your hardest problem so far?"
+ },
+ {
+  "t": 1793252319.899477,
+  "q": "meaning of: tell"
+ },
+ {
+  "t": 1793252319.9254127,
+  "q": "meaning of: tired"
+ },
+ {
+  "t": 1793252319.9350717,
+  "q": "meaning of: tell"
+ },
+ {
+  "t": 1793252319.9448957,
+  "q": "meaning of: tell"
+ },
+ {
+  "t": 1793252319.9545028,
+  "q": "meaning of: tell"
+ },
+ {
+  "t": 1793252319.965249,
+  "q": "meaning of: tell"
+ },
+ {
+  "t": 1793252320.0348423,
+  "q": "meaning of: lol, yeah"
+ },
+ {
+  "t": 1793252320.0761547,
   "q": "What is zorp?"
  },
  {
-  "t": 1793222607.588763,
+  "t": 1793252320.0774832,
+  "q": "meaning of: quantum, decoherence"
+ },
+ {
+  "t": 1793252350.4217358,
+  "q": "meaning of: lol, yeah"
+ },
+ {
+  "t": 1793252350.4625807,
   "q": "What is zorp?"
+ },
+ {
+  "t": 1793252350.4640405,
+  "q": "meaning of: quantum, decoherence"
  }
 ]

@@ -73,7 +73,9 @@ class TestLiveLoop(unittest.TestCase):
 
     def test_unknown_word_seeks_knowledge(self):
         ans = self.m.handle_text("tell me about blorptastic")
-        self.assertIn("don't know", ans)
+        self.assertIn("blorptastic", ans)
+        self.assertIn("study list", ans)
+        self.assertNotIn("teacher", ans.lower())
 
     def test_status(self):
         ans = self.m.handle_text("status")

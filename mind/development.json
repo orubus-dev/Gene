@@ -5,9 +5,10 @@
   "number": 9,
   "code": 9,
   "list": 9,
-  "sequence": 9
+  "sequence": 9,
+  "chat": 10
  },
- "total_wins": 45,
+ "total_wins": 55,
  "milestones": [
   {
    "stage": "skills",
