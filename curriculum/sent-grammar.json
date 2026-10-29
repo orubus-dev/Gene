@@ -1,0 +1,339 @@
+{
+ "domain": "sentence grammar",
+ "concepts": [
+  {
+   "id": "sentence_grammar",
+   "kind": "domain",
+   "words": [
+    "sentence grammar"
+   ],
+   "attrs": {
+    "what": "how sentences are built, asked, denied and timed"
+   }
+  },
+  {
+   "id": "aux_do",
+   "kind": "aux_table",
+   "words": [
+    "do",
+    "does",
+    "did"
+   ],
+   "attrs": {
+    "i": "do",
+    "you": "do",
+    "he": "does",
+    "she": "does",
+    "it": "does",
+    "we": "do",
+    "they": "do",
+    "singular": "does",
+    "plural": "do"
+   },
+   "relations": [
+    {
+     "to": "sentence_grammar",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "aux_be",
+   "kind": "aux_table",
+   "words": [
+    "am",
+    "is",
+    "are",
+    "be"
+   ],
+   "attrs": {
+    "i": "am",
+    "you": "are",
+    "he": "is",
+    "she": "is",
+    "it": "is",
+    "we": "are",
+    "they": "are",
+    "singular": "is",
+    "plural": "are"
+   },
+   "relations": [
+    {
+     "to": "sentence_grammar",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "aux_will",
+   "kind": "aux_table",
+   "words": [
+    "will",
+    "shall"
+   ],
+   "attrs": {
+    "i": "will",
+    "you": "will",
+    "he": "will",
+    "she": "will",
+    "it": "will",
+    "we": "will",
+    "they": "will",
+    "singular": "will",
+    "plural": "will"
+   },
+   "relations": [
+    {
+     "to": "sentence_grammar",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "contractions",
+   "kind": "aux_table",
+   "words": [
+    "contraction"
+   ],
+   "attrs": {
+    "do not": "don't",
+    "does not": "doesn't",
+    "did not": "didn't",
+    "is not": "isn't",
+    "are not": "aren't",
+    "am not": "am not",
+    "was not": "wasn't",
+    "were not": "weren't",
+    "will not": "won't",
+    "would not": "wouldn't",
+    "can not": "can't",
+    "cannot": "can't",
+    "could not": "couldn't",
+    "should not": "shouldn't",
+    "have not": "haven't",
+    "has not": "hasn't",
+    "had not": "hadn't"
+   },
+   "relations": [
+    {
+     "to": "sentence_grammar",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pronoun",
+   "kind": "word_class",
+   "words": [
+    "pronoun"
+   ],
+   "attrs": {
+    "singular": "i you he she it",
+    "plural": "we they",
+    "does": "stands in for a name"
+   },
+   "relations": [
+    {
+     "to": "sentence_grammar",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "determiner",
+   "kind": "word_class",
+   "words": [
+    "determiner",
+    "article"
+   ],
+   "attrs": {
+    "list": "a an the",
+    "does": "points at a noun"
+   },
+   "relations": [
+    {
+     "to": "sentence_grammar",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "preposition",
+   "kind": "word_class",
+   "words": [
+    "preposition"
+   ],
+   "attrs": {
+    "list": "in on at by with from to under over near",
+    "does": "situates a thing in place or time"
+   },
+   "relations": [
+    {
+     "to": "sentence_grammar",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "conjunction",
+   "kind": "word_class",
+   "words": [
+    "conjunction"
+   ],
+   "attrs": {
+    "list": "and but or so because if when",
+    "does": "glues two thoughts together"
+   },
+   "relations": [
+    {
+     "to": "sentence_grammar",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "question_word",
+   "kind": "word_class",
+   "words": [
+    "question word"
+   ],
+   "attrs": {
+    "list": "what where when who why how which whose",
+    "does": "opens an open question"
+   },
+   "relations": [
+    {
+     "to": "sentence_grammar",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "punctuation",
+   "kind": "word_class",
+   "words": [
+    "punctuation"
+   ],
+   "attrs": {
+    "period": "ends a statement",
+    "question": "? ends a question",
+    "exclaim": "! ends a shout",
+    "comma": ", pauses inside",
+    "apostrophe": "' marks possession or contraction"
+   },
+   "relations": [
+    {
+     "to": "sentence_grammar",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pattern_sv",
+   "kind": "pattern",
+   "words": [
+    "subject verb"
+   ],
+   "attrs": {
+    "example": "she walks",
+    "does": "actor then action"
+   },
+   "relations": [
+    {
+     "to": "sentence_grammar",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pattern_svo",
+   "kind": "pattern",
+   "words": [
+    "subject verb object"
+   ],
+   "attrs": {
+    "example": "she walks the dog",
+    "does": "actor, action, target"
+   },
+   "relations": [
+    {
+     "to": "sentence_grammar",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pattern_svc",
+   "kind": "pattern",
+   "words": [
+    "subject verb complement"
+   ],
+   "attrs": {
+    "example": "she is happy",
+    "does": "actor, link, state"
+   },
+   "relations": [
+    {
+     "to": "sentence_grammar",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "future_tense",
+   "kind": "grammar_type",
+   "words": [
+    "future tense",
+    "future"
+   ],
+   "attrs": {
+    "example": "she will walk",
+    "does": "moves the action to what's coming"
+   },
+   "relations": [
+    {
+     "to": "grammar",
+     "rel": "is-a"
+    },
+    {
+     "to": "past_tense",
+     "rel": "pairs-with"
+    }
+   ]
+  },
+  {
+   "id": "present_continuous",
+   "kind": "grammar_type",
+   "words": [
+    "present continuous"
+   ],
+   "attrs": {
+    "example": "she is walking",
+    "does": "freezes the action while it happens"
+   },
+   "relations": [
+    {
+     "to": "grammar",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gerund",
+   "kind": "grammar_type",
+   "words": [
+    "gerund"
+   ],
+   "attrs": {
+    "example": "walking is fun",
+    "does": "turns a verb into a thing"
+   },
+   "relations": [
+    {
+     "to": "grammar",
+     "rel": "is-a"
+    }
+   ]
+  }
+ ]
+}

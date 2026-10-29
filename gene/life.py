@@ -30,8 +30,8 @@ def cmd_teach(mind, path):
         r["concepts"], r["examples"])
 
 
-def cmd_train(mind, budget, tier):
-    r = mind.train(budget=budget, tier=tier)
+def cmd_train(mind, budget, tier, domains=None):
+    r = mind.train(budget=budget, tier=tier, domains=domains)
     mind.persist()
     return ("train cycle %d — %d tasks, %d solved, %d new skills, pool=%d. by domain: %s"
             % (r["tasks"] and mind.progress["cycles"], r["tasks"], r["solved"],
@@ -104,6 +104,8 @@ def main(argv=None):
     ap.add_argument("--budget", type=int, default=40)
     ap.add_argument("--tier", type=int, default=1)
     ap.add_argument("--gens", type=int, default=2)
+    ap.add_argument("--domains", type=str, default=None,
+                    help="comma-separated task domains for train")
     a = ap.parse_args(argv)
 
     mind = Mind()
@@ -114,7 +116,8 @@ def main(argv=None):
             sys.exit("teach needs a curriculum file")
         print(cmd_teach(mind, a.path))
     elif a.command == "train":
-        print(cmd_train(mind, a.budget, a.tier))
+        doms = [d.strip() for d in a.domains.split(",")] if a.domains else None
+        print(cmd_train(mind, a.budget, a.tier, doms))
     elif a.command == "trainchat":
         print(cmd_train_chat(mind, a.budget, a.tier))
     elif a.command == "sleep":

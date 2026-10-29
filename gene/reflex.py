@@ -8,6 +8,8 @@ import hashlib
 import json
 import os
 
+MAX_ARCS = 30000          # the body keeps its strongest arcs, prunes the rest
+
 
 def stimulus_key(domain, payload):
     raw = json.dumps([domain, payload], sort_keys=True, ensure_ascii=False)
@@ -43,6 +45,10 @@ class Reflexes:
         else:
             # conflicting response: overwrite and reset — the body rewires
             self.arcs[k] = {"steps": steps, "hits": 1, "strength": amount}
+        if len(self.arcs) > MAX_ARCS:
+            keep = sorted(self.arcs.items(),
+                          key=lambda kv: -kv[1]["strength"])[:MAX_ARCS]
+            self.arcs = dict(keep)
 
     def decay(self, rate=0.05):
         for k in list(self.arcs.keys()):

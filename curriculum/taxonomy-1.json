@@ -1,0 +1,8503 @@
+{
+ "domain": "the living world",
+ "concepts": [
+  {
+   "id": "entity",
+   "kind": "category",
+   "words": [
+    "entity",
+    "thing"
+   ],
+   "attrs": {
+    "def": "anything that exists — a thing, a living being, a place or an idea"
+   }
+  },
+  {
+   "id": "living",
+   "kind": "category",
+   "words": [
+    "living",
+    "living thing",
+    "life"
+   ],
+   "attrs": {
+    "def": "something alive — it grows, reproduces and needs energy"
+   },
+   "relations": [
+    {
+     "to": "entity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "organism",
+   "kind": "category",
+   "words": [
+    "organism"
+   ],
+   "attrs": {
+    "def": "a living thing"
+   },
+   "relations": [
+    {
+     "to": "living",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "animal",
+   "kind": "category",
+   "words": [
+    "animal",
+    "creature"
+   ],
+   "attrs": {
+    "def": "a living thing that moves and eats other living things"
+   },
+   "relations": [
+    {
+     "to": "organism",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "vertebrate",
+   "kind": "category",
+   "words": [
+    "vertebrate"
+   ],
+   "attrs": {
+    "def": "an animal with a backbone"
+   },
+   "relations": [
+    {
+     "to": "animal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "invertebrate",
+   "kind": "category",
+   "words": [
+    "invertebrate"
+   ],
+   "attrs": {
+    "def": "an animal without a backbone"
+   },
+   "relations": [
+    {
+     "to": "animal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mammal",
+   "kind": "category",
+   "words": [
+    "mammal",
+    "mammals"
+   ],
+   "attrs": {
+    "def": "a warm-blooded animal that nurses its young"
+   },
+   "relations": [
+    {
+     "to": "vertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bird",
+   "kind": "category",
+   "words": [
+    "bird"
+   ],
+   "attrs": {
+    "def": "an animal with feathers, a beak and two wings"
+   },
+   "relations": [
+    {
+     "to": "vertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "fish_cat",
+   "kind": "category",
+   "words": [
+    "fish"
+   ],
+   "attrs": {
+    "def": "an animal that lives in water and breathes through gills"
+   },
+   "relations": [
+    {
+     "to": "vertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "reptile",
+   "kind": "category",
+   "words": [
+    "reptile"
+   ],
+   "attrs": {
+    "def": "a cold-blooded animal with scaly skin"
+   },
+   "relations": [
+    {
+     "to": "vertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "amphibian",
+   "kind": "category",
+   "words": [
+    "amphibian"
+   ],
+   "attrs": {
+    "def": "a soft-skinned animal that lives both in water and on land"
+   },
+   "relations": [
+    {
+     "to": "vertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "insect",
+   "kind": "category",
+   "words": [
+    "insect",
+    "bug"
+   ],
+   "attrs": {
+    "def": "a tiny animal with six legs and a three-part body"
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "arachnid",
+   "kind": "category",
+   "words": [
+    "arachnid"
+   ],
+   "attrs": {
+    "def": "an animal with eight legs and an exoskeleton"
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "crustacean",
+   "kind": "category",
+   "words": [
+    "crustacean"
+   ],
+   "attrs": {
+    "def": "a mostly-water animal with a hard shell and many legs"
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mollusk",
+   "kind": "category",
+   "words": [
+    "mollusk"
+   ],
+   "attrs": {
+    "def": "a soft-bodied animal, often inside a shell"
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "plant",
+   "kind": "category",
+   "words": [
+    "plant"
+   ],
+   "attrs": {
+    "def": "a living thing that makes its food from sunlight"
+   },
+   "relations": [
+    {
+     "to": "organism",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "tree_cat",
+   "kind": "category",
+   "words": [
+    "tree"
+   ],
+   "attrs": {
+    "def": "a tall plant with a woody trunk"
+   },
+   "relations": [
+    {
+     "to": "plant",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "flower_cat",
+   "kind": "category",
+   "words": [
+    "flower",
+    "blossom"
+   ],
+   "attrs": {
+    "def": "a blossoming plant"
+   },
+   "relations": [
+    {
+     "to": "plant",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "fungus",
+   "kind": "category",
+   "words": [
+    "fungus",
+    "fungi"
+   ],
+   "attrs": {
+    "def": "a living thing that feeds on decay, like a mushroom"
+   },
+   "relations": [
+    {
+     "to": "organism",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "microbe",
+   "kind": "category",
+   "words": [
+    "microbe",
+    "microorganism"
+   ],
+   "attrs": {
+    "def": "a living thing too small to see"
+   },
+   "relations": [
+    {
+     "to": "organism",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mythical_cat",
+   "kind": "category",
+   "words": [
+    "mythical creature"
+   ],
+   "attrs": {
+    "def": "a creature from stories and legends, not nature"
+   },
+   "relations": [
+    {
+     "to": "idea",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "canid",
+   "kind": "category",
+   "words": [
+    "canid",
+    "dog family"
+   ],
+   "attrs": {
+    "def": "a dog-family mammal — it hunts or was tamed from hunters"
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "felid",
+   "kind": "category",
+   "words": [
+    "felid",
+    "cat family"
+   ],
+   "attrs": {
+    "def": "a cat-family mammal — a stealthy hunter with sharp claws"
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ursid",
+   "kind": "category",
+   "words": [
+    "ursid",
+    "bear family"
+   ],
+   "attrs": {
+    "def": "a bear-family mammal — big, strong and heavyset"
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "equine",
+   "kind": "category",
+   "words": [
+    "equine",
+    "horse family"
+   ],
+   "attrs": {
+    "def": "a horse-family mammal — built for running on open land"
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bovine",
+   "kind": "category",
+   "words": [
+    "bovine",
+    "cattle family"
+   ],
+   "attrs": {
+    "def": "a cattle-family mammal — hoofed and grass-eating"
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rodent",
+   "kind": "category",
+   "words": [
+    "rodent"
+   ],
+   "attrs": {
+    "def": "a gnawing mammal with big front teeth"
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "primate",
+   "kind": "category",
+   "words": [
+    "primate"
+   ],
+   "attrs": {
+    "def": "an ape-family mammal with grasping hands"
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "marsupial",
+   "kind": "category",
+   "words": [
+    "marsupial"
+   ],
+   "attrs": {
+    "def": "a mammal that carries its young in a pouch"
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cetacean",
+   "kind": "category",
+   "words": [
+    "cetacean",
+    "whale family"
+   ],
+   "attrs": {
+    "def": "a whale-family mammal that lives its whole life in the sea"
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ungulate",
+   "kind": "category",
+   "words": [
+    "ungulate",
+    "hoofed mammal"
+   ],
+   "attrs": {
+    "def": "a hoofed, plant-eating mammal"
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "idea",
+   "kind": "category",
+   "words": [
+    "idea"
+   ],
+   "attrs": {
+    "def": "a thought or concept that lives in minds"
+   },
+   "relations": [
+    {
+     "to": "entity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "proboscidean",
+   "kind": "category",
+   "words": [
+    "proboscidean"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "ungulate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lagomorph",
+   "kind": "category",
+   "words": [
+    "lagomorph"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cervid",
+   "kind": "category",
+   "words": [
+    "cervid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "ungulate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "procyonid",
+   "kind": "category",
+   "words": [
+    "procyonid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "carnivoran",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mephitid",
+   "kind": "category",
+   "words": [
+    "mephitid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "carnivoran",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mustelid",
+   "kind": "category",
+   "words": [
+    "mustelid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "carnivoran",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "carnivoran",
+   "kind": "category",
+   "words": [
+    "carnivoran"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hyaenid",
+   "kind": "category",
+   "words": [
+    "hyaenid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "carnivoran",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mongoose",
+   "kind": "category",
+   "words": [
+    "mongoose"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "carnivoran",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "erinaceid",
+   "kind": "category",
+   "words": [
+    "erinaceid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insectivore",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "talpid",
+   "kind": "category",
+   "words": [
+    "talpid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insectivore",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "soricid",
+   "kind": "category",
+   "words": [
+    "soricid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insectivore",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "insectivore",
+   "kind": "category",
+   "words": [
+    "insectivore"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bat",
+   "kind": "category",
+   "words": [
+    "bat"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pilosa",
+   "kind": "category",
+   "words": [
+    "pilosa"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cingulata",
+   "kind": "category",
+   "words": [
+    "cingulata"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sirenian",
+   "kind": "category",
+   "words": [
+    "sirenian"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "cetacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pinniped",
+   "kind": "category",
+   "words": [
+    "pinniped"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "carnivoran",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "raptor",
+   "kind": "category",
+   "words": [
+    "raptor"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "owl",
+   "kind": "category",
+   "words": [
+    "owl"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "parrot",
+   "kind": "category",
+   "words": [
+    "parrot"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "corvid",
+   "kind": "category",
+   "words": [
+    "corvid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "songbird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "songbird",
+   "kind": "category",
+   "words": [
+    "songbird"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "dove",
+   "kind": "category",
+   "words": [
+    "dove"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gull",
+   "kind": "category",
+   "words": [
+    "gull"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "seabird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "seabird",
+   "kind": "category",
+   "words": [
+    "seabird"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "penguin",
+   "kind": "category",
+   "words": [
+    "penguin"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "seabird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rhea",
+   "kind": "category",
+   "words": [
+    "rhea"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "emu",
+   "kind": "category",
+   "words": [
+    "emu"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "rhea",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "kiwi",
+   "kind": "category",
+   "words": [
+    "kiwi"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "flamingo",
+   "kind": "category",
+   "words": [
+    "flamingo"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pelican",
+   "kind": "category",
+   "words": [
+    "pelican"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "seabird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "duck",
+   "kind": "category",
+   "words": [
+    "duck"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fowl",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "fowl",
+   "kind": "category",
+   "words": [
+    "fowl"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "auk",
+   "kind": "category",
+   "words": [
+    "auk"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "seabird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "salmonid",
+   "kind": "category",
+   "words": [
+    "salmonid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "tuna",
+   "kind": "category",
+   "words": [
+    "tuna"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cod",
+   "kind": "category",
+   "words": [
+    "cod"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "shark",
+   "kind": "category",
+   "words": [
+    "shark"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rayskate",
+   "kind": "category",
+   "words": [
+    "rayskate"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eel",
+   "kind": "category",
+   "words": [
+    "eel"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pipefish",
+   "kind": "category",
+   "words": [
+    "pipefish"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "damselfish",
+   "kind": "category",
+   "words": [
+    "damselfish"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "carp",
+   "kind": "category",
+   "words": [
+    "carp"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "puffer",
+   "kind": "category",
+   "words": [
+    "puffer"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "billfish",
+   "kind": "category",
+   "words": [
+    "billfish"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "piranha",
+   "kind": "category",
+   "words": [
+    "piranha"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "catfish",
+   "kind": "category",
+   "words": [
+    "catfish"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "clupeid",
+   "kind": "category",
+   "words": [
+    "clupeid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mackerel",
+   "kind": "category",
+   "words": [
+    "mackerel"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "elapid",
+   "kind": "category",
+   "words": [
+    "elapid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "snake",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "python",
+   "kind": "category",
+   "words": [
+    "python"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "snake",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "viper",
+   "kind": "category",
+   "words": [
+    "viper"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "snake",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "boa",
+   "kind": "category",
+   "words": [
+    "boa"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "snake",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "snake",
+   "kind": "category",
+   "words": [
+    "snake"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "reptile",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gecko",
+   "kind": "category",
+   "words": [
+    "gecko"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "lizard",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "iguana",
+   "kind": "category",
+   "words": [
+    "iguana"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "lizard",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "chameleon",
+   "kind": "category",
+   "words": [
+    "chameleon"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "lizard",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "monitor",
+   "kind": "category",
+   "words": [
+    "monitor"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "lizard",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lizard",
+   "kind": "category",
+   "words": [
+    "lizard"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "reptile",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "turtle",
+   "kind": "category",
+   "words": [
+    "turtle"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "reptile",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "croc",
+   "kind": "category",
+   "words": [
+    "croc"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "reptile",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "frog",
+   "kind": "category",
+   "words": [
+    "frog"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "amphibian",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "salamander",
+   "kind": "category",
+   "words": [
+    "salamander"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "amphibian",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ant",
+   "kind": "category",
+   "words": [
+    "ant"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bee",
+   "kind": "category",
+   "words": [
+    "bee"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "wasp",
+   "kind": "category",
+   "words": [
+    "wasp"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lepidoptera",
+   "kind": "category",
+   "words": [
+    "lepidoptera"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "beetle",
+   "kind": "category",
+   "words": [
+    "beetle"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "dragonfly",
+   "kind": "category",
+   "words": [
+    "dragonfly"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "grasshopper",
+   "kind": "category",
+   "words": [
+    "grasshopper"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cricket",
+   "kind": "category",
+   "words": [
+    "cricket"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mantid",
+   "kind": "category",
+   "words": [
+    "mantid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "roach",
+   "kind": "category",
+   "words": [
+    "roach"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "termite",
+   "kind": "category",
+   "words": [
+    "termite"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "flea",
+   "kind": "category",
+   "words": [
+    "flea"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mosquito",
+   "kind": "category",
+   "words": [
+    "mosquito"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "spider",
+   "kind": "category",
+   "words": [
+    "spider"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "arachnid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "scorpion",
+   "kind": "category",
+   "words": [
+    "scorpion"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "arachnid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "crab",
+   "kind": "category",
+   "words": [
+    "crab"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "crustacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lobster",
+   "kind": "category",
+   "words": [
+    "lobster"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "crustacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "shrimp",
+   "kind": "category",
+   "words": [
+    "shrimp"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "crustacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "snail",
+   "kind": "category",
+   "words": [
+    "snail"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mollusk",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bivalve",
+   "kind": "category",
+   "words": [
+    "bivalve"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mollusk",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "octopod",
+   "kind": "category",
+   "words": [
+    "octopod"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mollusk",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "squid",
+   "kind": "category",
+   "words": [
+    "squid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mollusk",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "jellyfish",
+   "kind": "category",
+   "words": [
+    "jellyfish"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "starfish",
+   "kind": "category",
+   "words": [
+    "starfish"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "coral",
+   "kind": "category",
+   "words": [
+    "coral"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "worm",
+   "kind": "category",
+   "words": [
+    "worm"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "desert plant",
+   "kind": "category",
+   "words": [
+    "desert plant"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "plant",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "grass_cat",
+   "kind": "category",
+   "words": [
+    "grass cat"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "plant",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "proboscidean",
+   "kind": "category",
+   "words": [
+    "proboscidean"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "ungulate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lagomorph",
+   "kind": "category",
+   "words": [
+    "lagomorph"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cervid",
+   "kind": "category",
+   "words": [
+    "cervid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "ungulate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "procyonid",
+   "kind": "category",
+   "words": [
+    "procyonid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "carnivoran",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mephitid",
+   "kind": "category",
+   "words": [
+    "mephitid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "carnivoran",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mustelid",
+   "kind": "category",
+   "words": [
+    "mustelid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "carnivoran",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "carnivoran",
+   "kind": "category",
+   "words": [
+    "carnivoran"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hyaenid",
+   "kind": "category",
+   "words": [
+    "hyaenid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "carnivoran",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mongoose",
+   "kind": "category",
+   "words": [
+    "mongoose"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "carnivoran",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "erinaceid",
+   "kind": "category",
+   "words": [
+    "erinaceid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insectivore",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "talpid",
+   "kind": "category",
+   "words": [
+    "talpid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insectivore",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "soricid",
+   "kind": "category",
+   "words": [
+    "soricid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insectivore",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "insectivore",
+   "kind": "category",
+   "words": [
+    "insectivore"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pilosa",
+   "kind": "category",
+   "words": [
+    "pilosa"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cingulata",
+   "kind": "category",
+   "words": [
+    "cingulata"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sirenian",
+   "kind": "category",
+   "words": [
+    "sirenian"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "cetacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pinniped",
+   "kind": "category",
+   "words": [
+    "pinniped"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "carnivoran",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "raptor",
+   "kind": "category",
+   "words": [
+    "raptor"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "owl",
+   "kind": "category",
+   "words": [
+    "owl"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "parrot",
+   "kind": "category",
+   "words": [
+    "parrot"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "corvid",
+   "kind": "category",
+   "words": [
+    "corvid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "songbird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "songbird",
+   "kind": "category",
+   "words": [
+    "songbird"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "dove",
+   "kind": "category",
+   "words": [
+    "dove"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gull",
+   "kind": "category",
+   "words": [
+    "gull"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "seabird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "seabird",
+   "kind": "category",
+   "words": [
+    "seabird"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "penguin",
+   "kind": "category",
+   "words": [
+    "penguin"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "seabird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rhea",
+   "kind": "category",
+   "words": [
+    "rhea"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "emu",
+   "kind": "category",
+   "words": [
+    "emu"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "rhea",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "kiwi",
+   "kind": "category",
+   "words": [
+    "kiwi"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "flamingo",
+   "kind": "category",
+   "words": [
+    "flamingo"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pelican",
+   "kind": "category",
+   "words": [
+    "pelican"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "seabird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "duck",
+   "kind": "category",
+   "words": [
+    "duck"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fowl",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "fowl",
+   "kind": "category",
+   "words": [
+    "fowl"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "auk",
+   "kind": "category",
+   "words": [
+    "auk"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "seabird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "salmonid",
+   "kind": "category",
+   "words": [
+    "salmonid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "tuna",
+   "kind": "category",
+   "words": [
+    "tuna"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cod",
+   "kind": "category",
+   "words": [
+    "cod"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "shark",
+   "kind": "category",
+   "words": [
+    "shark"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rayskate",
+   "kind": "category",
+   "words": [
+    "rayskate"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eel",
+   "kind": "category",
+   "words": [
+    "eel"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pipefish",
+   "kind": "category",
+   "words": [
+    "pipefish"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "damselfish",
+   "kind": "category",
+   "words": [
+    "damselfish"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "carp",
+   "kind": "category",
+   "words": [
+    "carp"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "puffer",
+   "kind": "category",
+   "words": [
+    "puffer"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "billfish",
+   "kind": "category",
+   "words": [
+    "billfish"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "piranha",
+   "kind": "category",
+   "words": [
+    "piranha"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "catfish",
+   "kind": "category",
+   "words": [
+    "catfish"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "clupeid",
+   "kind": "category",
+   "words": [
+    "clupeid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mackerel",
+   "kind": "category",
+   "words": [
+    "mackerel"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "elapid",
+   "kind": "category",
+   "words": [
+    "elapid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "snake",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "python",
+   "kind": "category",
+   "words": [
+    "python"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "snake",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "viper",
+   "kind": "category",
+   "words": [
+    "viper"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "snake",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "boa",
+   "kind": "category",
+   "words": [
+    "boa"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "snake",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "snake",
+   "kind": "category",
+   "words": [
+    "snake"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "reptile",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gecko",
+   "kind": "category",
+   "words": [
+    "gecko"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "lizard",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "iguana",
+   "kind": "category",
+   "words": [
+    "iguana"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "lizard",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "chameleon",
+   "kind": "category",
+   "words": [
+    "chameleon"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "lizard",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "monitor",
+   "kind": "category",
+   "words": [
+    "monitor"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "lizard",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lizard",
+   "kind": "category",
+   "words": [
+    "lizard"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "reptile",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "turtle",
+   "kind": "category",
+   "words": [
+    "turtle"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "reptile",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "croc",
+   "kind": "category",
+   "words": [
+    "croc"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "reptile",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "frog",
+   "kind": "category",
+   "words": [
+    "frog"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "amphibian",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "salamander",
+   "kind": "category",
+   "words": [
+    "salamander"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "amphibian",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ant",
+   "kind": "category",
+   "words": [
+    "ant"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bee",
+   "kind": "category",
+   "words": [
+    "bee"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "wasp",
+   "kind": "category",
+   "words": [
+    "wasp"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lepidoptera",
+   "kind": "category",
+   "words": [
+    "lepidoptera"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "beetle",
+   "kind": "category",
+   "words": [
+    "beetle"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "dragonfly",
+   "kind": "category",
+   "words": [
+    "dragonfly"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "grasshopper",
+   "kind": "category",
+   "words": [
+    "grasshopper"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cricket",
+   "kind": "category",
+   "words": [
+    "cricket"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mantid",
+   "kind": "category",
+   "words": [
+    "mantid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "roach",
+   "kind": "category",
+   "words": [
+    "roach"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "termite",
+   "kind": "category",
+   "words": [
+    "termite"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "flea",
+   "kind": "category",
+   "words": [
+    "flea"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mosquito",
+   "kind": "category",
+   "words": [
+    "mosquito"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "spider",
+   "kind": "category",
+   "words": [
+    "spider"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "arachnid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "scorpion",
+   "kind": "category",
+   "words": [
+    "scorpion"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "arachnid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "crab",
+   "kind": "category",
+   "words": [
+    "crab"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "crustacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lobster",
+   "kind": "category",
+   "words": [
+    "lobster"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "crustacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "shrimp",
+   "kind": "category",
+   "words": [
+    "shrimp"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "crustacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "snail",
+   "kind": "category",
+   "words": [
+    "snail"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mollusk",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bivalve",
+   "kind": "category",
+   "words": [
+    "bivalve"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mollusk",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "octopod",
+   "kind": "category",
+   "words": [
+    "octopod"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mollusk",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "squid",
+   "kind": "category",
+   "words": [
+    "squid"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "mollusk",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "jellyfish",
+   "kind": "category",
+   "words": [
+    "jellyfish"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "starfish",
+   "kind": "category",
+   "words": [
+    "starfish"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "coral",
+   "kind": "category",
+   "words": [
+    "coral"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "worm",
+   "kind": "category",
+   "words": [
+    "worm"
+   ],
+   "attrs": {
+    "def": null
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "dog",
+   "kind": "entity",
+   "words": [
+    "dog"
+   ],
+   "attrs": {
+    "sound": "barks",
+    "diet": "meat and kibble",
+    "role": "a loyal pet",
+    "feature": "wags its tail when happy",
+    "plural": "dogs"
+   },
+   "relations": [
+    {
+     "to": "canid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cat",
+   "kind": "entity",
+   "words": [
+    "cat"
+   ],
+   "attrs": {
+    "sound": "purrs",
+    "diet": "meat and fish",
+    "role": "an independent pet",
+    "feature": "whiskers and slit eyes",
+    "plural": "cats"
+   },
+   "relations": [
+    {
+     "to": "felid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "horse",
+   "kind": "entity",
+   "words": [
+    "horse"
+   ],
+   "attrs": {
+    "sound": "neighs",
+    "diet": "grass and hay",
+    "role": "rides and pulls loads",
+    "feature": "runs fast",
+    "plural": "horses"
+   },
+   "relations": [
+    {
+     "to": "equine",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cow",
+   "kind": "entity",
+   "words": [
+    "cow"
+   ],
+   "attrs": {
+    "sound": "moos",
+    "diet": "grass",
+    "role": "gives milk",
+    "feature": "chews cud",
+    "plural": "cows"
+   },
+   "relations": [
+    {
+     "to": "bovine",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pig",
+   "kind": "entity",
+   "words": [
+    "pig"
+   ],
+   "attrs": {
+    "sound": "oinks",
+    "diet": "almost anything",
+    "role": "farm animal",
+    "feature": "smart and rootless nose",
+    "plural": "pigs"
+   },
+   "relations": [
+    {
+     "to": "ungulate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sheep",
+   "kind": "entity",
+   "words": [
+    "sheep"
+   ],
+   "attrs": {
+    "sound": "baas",
+    "diet": "grass",
+    "role": "gives wool",
+    "feature": "thick fleece"
+   },
+   "relations": [
+    {
+     "to": "bovine",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "goat",
+   "kind": "entity",
+   "words": [
+    "goat"
+   ],
+   "attrs": {
+    "sound": "bleats",
+    "diet": "grass and shrubs",
+    "role": "gives milk",
+    "feature": "climbs almost anything",
+    "plural": "goats"
+   },
+   "relations": [
+    {
+     "to": "bovine",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lion",
+   "kind": "entity",
+   "words": [
+    "lion"
+   ],
+   "attrs": {
+    "sound": "roars",
+    "diet": "zebra and antelope",
+    "habitat": "african grasslands",
+    "feature": "the male's mane",
+    "plural": "lions"
+   },
+   "relations": [
+    {
+     "to": "felid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "tiger",
+   "kind": "entity",
+   "words": [
+    "tiger"
+   ],
+   "attrs": {
+    "sound": "growls",
+    "diet": "deer and wild pigs",
+    "habitat": "asian forests",
+    "feature": "orange striped coat",
+    "plural": "tigers"
+   },
+   "relations": [
+    {
+     "to": "felid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bear",
+   "kind": "entity",
+   "words": [
+    "bear"
+   ],
+   "attrs": {
+    "sound": "growls",
+    "diet": "fish, berries and honey",
+    "habitat": "forests",
+    "feature": "hibernates all winter",
+    "plural": "bears"
+   },
+   "relations": [
+    {
+     "to": "ursid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "wolf",
+   "kind": "entity",
+   "words": [
+    "wolf"
+   ],
+   "attrs": {
+    "sound": "howls",
+    "diet": "deer and elk",
+    "habitat": "wild forests",
+    "feature": "hunts in packs",
+    "plural": "wolves"
+   },
+   "relations": [
+    {
+     "to": "canid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "fox",
+   "kind": "entity",
+   "words": [
+    "fox"
+   ],
+   "attrs": {
+    "sound": "barks",
+    "diet": "rodents and berries",
+    "habitat": "woodland edges",
+    "feature": "bushy red tail",
+    "plural": "foxes"
+   },
+   "relations": [
+    {
+     "to": "canid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "elephant",
+   "kind": "entity",
+   "words": [
+    "elephant"
+   ],
+   "attrs": {
+    "sound": "trumpets",
+    "diet": "leaves and fruit",
+    "habitat": "savanna",
+    "feature": "a trunk and big ears",
+    "plural": "elephants"
+   },
+   "relations": [
+    {
+     "to": "proboscidean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "giraffe",
+   "kind": "entity",
+   "words": [
+    "giraffe"
+   ],
+   "attrs": {
+    "sound": "humms",
+    "diet": "acacia leaves",
+    "habitat": "african savanna",
+    "feature": "the tallest animal",
+    "plural": "girafves"
+   },
+   "relations": [
+    {
+     "to": "ungulate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "zebra",
+   "kind": "entity",
+   "words": [
+    "zebra"
+   ],
+   "attrs": {
+    "sound": "neighs",
+    "diet": "grass",
+    "habitat": "african plains",
+    "feature": "black and white stripes",
+    "plural": "zebras"
+   },
+   "relations": [
+    {
+     "to": "equine",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "monkey",
+   "kind": "entity",
+   "words": [
+    "monkey"
+   ],
+   "attrs": {
+    "sound": "chatters",
+    "diet": "fruit and insects",
+    "habitat": "forests",
+    "feature": "a long balancing tail",
+    "plural": "monkeys"
+   },
+   "relations": [
+    {
+     "to": "primate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gorilla",
+   "kind": "entity",
+   "words": [
+    "gorilla"
+   ],
+   "attrs": {
+    "sound": "grunts",
+    "diet": "leaves and stems",
+    "habitat": "african mountains",
+    "feature": "the largest primate",
+    "plural": "gorillas"
+   },
+   "relations": [
+    {
+     "to": "primate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "chimpanzee",
+   "kind": "entity",
+   "words": [
+    "chimpanzee"
+   ],
+   "attrs": {
+    "sound": "hoots",
+    "diet": "fruit and termites",
+    "habitat": "african forests",
+    "feature": "uses tools",
+    "plural": "chimpanzees"
+   },
+   "relations": [
+    {
+     "to": "primate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "kangaroo",
+   "kind": "entity",
+   "words": [
+    "kangaroo"
+   ],
+   "attrs": {
+    "sound": "hops silently",
+    "diet": "grass",
+    "habitat": "australia",
+    "feature": "carries its joey in a pouch",
+    "plural": "kangaroos"
+   },
+   "relations": [
+    {
+     "to": "marsupial",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "koala",
+   "kind": "entity",
+   "words": [
+    "koala"
+   ],
+   "attrs": {
+    "sound": "snores softly",
+    "diet": "eucalyptus leaves",
+    "habitat": "australian forests",
+    "feature": "sleeps most of the day",
+    "plural": "koalas"
+   },
+   "relations": [
+    {
+     "to": "marsupial",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "panda",
+   "kind": "entity",
+   "words": [
+    "panda"
+   ],
+   "attrs": {
+    "sound": "bleats",
+    "diet": "bamboo",
+    "habitat": "chinese mountains",
+    "feature": "black and white bear",
+    "plural": "pandas"
+   },
+   "relations": [
+    {
+     "to": "ursid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "camel",
+   "kind": "entity",
+   "words": [
+    "camel"
+   ],
+   "attrs": {
+    "sound": "grunts",
+    "diet": "dry plants",
+    "habitat": "deserts",
+    "feature": "a hump that stores fat",
+    "plural": "camels"
+   },
+   "relations": [
+    {
+     "to": "ungulate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "donkey",
+   "kind": "entity",
+   "words": [
+    "donkey"
+   ],
+   "attrs": {
+    "sound": "heehaws",
+    "diet": "grass and hay",
+    "role": "carries loads",
+    "feature": "long ears",
+    "plural": "donkeys"
+   },
+   "relations": [
+    {
+     "to": "equine",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mouse",
+   "kind": "entity",
+   "words": [
+    "mouse"
+   ],
+   "attrs": {
+    "sound": "squeaks",
+    "diet": "seeds and crumbs",
+    "habitat": "everywhere people live",
+    "feature": "fast and tiny",
+    "plural": "mice"
+   },
+   "relations": [
+    {
+     "to": "rodent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rat",
+   "kind": "entity",
+   "words": [
+    "rat"
+   ],
+   "attrs": {
+    "sound": "squeaks",
+    "diet": "almost anything",
+    "habitat": "cities and fields",
+    "feature": "a long scaly tail",
+    "plural": "rats"
+   },
+   "relations": [
+    {
+     "to": "rodent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "squirrel",
+   "kind": "entity",
+   "words": [
+    "squirrel"
+   ],
+   "attrs": {
+    "sound": "chatters",
+    "diet": "nuts and acorns",
+    "habitat": "forests",
+    "feature": "buries nuts for winter",
+    "plural": "squirrels"
+   },
+   "relations": [
+    {
+     "to": "rodent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rabbit",
+   "kind": "entity",
+   "words": [
+    "rabbit"
+   ],
+   "attrs": {
+    "sound": "thumps",
+    "diet": "grass and carrots",
+    "habitat": "meadows",
+    "feature": "long ears and big hops",
+    "plural": "rabbits"
+   },
+   "relations": [
+    {
+     "to": "lagomorph",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "deer",
+   "kind": "entity",
+   "words": [
+    "deer"
+   ],
+   "attrs": {
+    "sound": "bells",
+    "diet": "leaves and grass",
+    "habitat": "forests",
+    "feature": "grows antlers each year"
+   },
+   "relations": [
+    {
+     "to": "cervid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "moose",
+   "kind": "entity",
+   "words": [
+    "moose"
+   ],
+   "attrs": {
+    "sound": "bellowing call",
+    "diet": "water plants and twigs",
+    "habitat": "northern forests",
+    "feature": "huge flat antlers"
+   },
+   "relations": [
+    {
+     "to": "cervid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "raccoon",
+   "kind": "entity",
+   "words": [
+    "raccoon"
+   ],
+   "attrs": {
+    "sound": "chittering",
+    "diet": "almost anything",
+    "habitat": "woods and cities",
+    "feature": "masked face, clever hands",
+    "plural": "raccoons"
+   },
+   "relations": [
+    {
+     "to": "procyonid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "skunk",
+   "kind": "entity",
+   "words": [
+    "skunk"
+   ],
+   "attrs": {
+    "sound": "hisses",
+    "diet": "insects and eggs",
+    "habitat": "woodlands",
+    "feature": "sprays a terrible smell",
+    "plural": "skunks"
+   },
+   "relations": [
+    {
+     "to": "mephitid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bat",
+   "kind": "entity",
+   "words": [
+    "bat"
+   ],
+   "attrs": {
+    "sound": "high screeches",
+    "diet": "insects and fruit",
+    "habitat": "caves",
+    "feature": "the only flying mammal",
+    "plural": "bats"
+   },
+   "relations": [
+    {
+     "to": "mammal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "whale",
+   "kind": "entity",
+   "words": [
+    "whale"
+   ],
+   "attrs": {
+    "sound": "sings",
+    "diet": "krill and fish",
+    "habitat": "oceans",
+    "feature": "the biggest animal alive",
+    "plural": "whales"
+   },
+   "relations": [
+    {
+     "to": "cetacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "dolphin",
+   "kind": "entity",
+   "words": [
+    "dolphin"
+   ],
+   "attrs": {
+    "sound": "clicks and whistles",
+    "diet": "fish",
+    "habitat": "warm seas",
+    "feature": "smart, plays in waves",
+    "plural": "dolphins"
+   },
+   "relations": [
+    {
+     "to": "cetacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "seal",
+   "kind": "entity",
+   "words": [
+    "seal"
+   ],
+   "attrs": {
+    "sound": "barks",
+    "diet": "fish",
+    "habitat": "coasts",
+    "feature": "swims fast, waddles on land",
+    "plural": "seals"
+   },
+   "relations": [
+    {
+     "to": "pinniped",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "walrus",
+   "kind": "entity",
+   "words": [
+    "walrus"
+   ],
+   "attrs": {
+    "sound": "grunts",
+    "diet": "clams",
+    "habitat": "arctic coasts",
+    "feature": "long ivory tusks",
+    "plural": "walruses"
+   },
+   "relations": [
+    {
+     "to": "pinniped",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "manatee",
+   "kind": "entity",
+   "words": [
+    "manatee"
+   ],
+   "attrs": {
+    "sound": "soft chirps",
+    "diet": "sea grass",
+    "habitat": "warm rivers",
+    "feature": "a gentle sea cow",
+    "plural": "manatees"
+   },
+   "relations": [
+    {
+     "to": "sirenian",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hedgehog",
+   "kind": "entity",
+   "words": [
+    "hedgehog"
+   ],
+   "attrs": {
+    "sound": "snuffles",
+    "diet": "insects",
+    "habitat": "hedges",
+    "feature": "rolls into a spike ball",
+    "plural": "hedgehogs"
+   },
+   "relations": [
+    {
+     "to": "erinaceid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "otter",
+   "kind": "entity",
+   "words": [
+    "otter"
+   ],
+   "attrs": {
+    "sound": "chirps",
+    "diet": "fish and shellfish",
+    "habitat": "rivers",
+    "feature": "plays on its back in water",
+    "plural": "otters"
+   },
+   "relations": [
+    {
+     "to": "mustelid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "beaver",
+   "kind": "entity",
+   "words": [
+    "beaver"
+   ],
+   "attrs": {
+    "sound": "tail slaps",
+    "diet": "bark",
+    "habitat": "rivers",
+    "feature": "builds dams",
+    "plural": "beavers"
+   },
+   "relations": [
+    {
+     "to": "rodent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "badger",
+   "kind": "entity",
+   "words": [
+    "badger"
+   ],
+   "attrs": {
+    "sound": "growls",
+    "diet": "worms and grubs",
+    "habitat": "underground setts",
+    "feature": "striped face",
+    "plural": "badgers"
+   },
+   "relations": [
+    {
+     "to": "mustelid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sloth",
+   "kind": "entity",
+   "words": [
+    "sloth"
+   ],
+   "attrs": {
+    "sound": "soft hiss",
+    "diet": "leaves",
+    "habitat": "rainforest canopy",
+    "feature": "moves in slow motion",
+    "plural": "sloths"
+   },
+   "relations": [
+    {
+     "to": "pilosa",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "armadillo",
+   "kind": "entity",
+   "words": [
+    "armadillo"
+   ],
+   "attrs": {
+    "sound": "grunts",
+    "diet": "insects",
+    "habitat": "grasslands",
+    "feature": "armor shell",
+    "plural": "armadillos"
+   },
+   "relations": [
+    {
+     "to": "cingulata",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "anteater",
+   "kind": "entity",
+   "words": [
+    "anteater"
+   ],
+   "attrs": {
+    "sound": "snorts",
+    "diet": "ants and termites",
+    "habitat": "grasslands",
+    "feature": "a two-foot sticky tongue",
+    "plural": "anteaters"
+   },
+   "relations": [
+    {
+     "to": "pilosa",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hamster",
+   "kind": "entity",
+   "words": [
+    "hamster"
+   ],
+   "attrs": {
+    "sound": "quiet squeaks",
+    "diet": "seeds and grains",
+    "role": "a small pet",
+    "feature": "stuffs cheeks with food",
+    "plural": "hamsters"
+   },
+   "relations": [
+    {
+     "to": "rodent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ferret",
+   "kind": "entity",
+   "words": [
+    "ferret"
+   ],
+   "attrs": {
+    "sound": "dooks",
+    "diet": "meat",
+    "role": "a playful pet",
+    "feature": "long flexible body",
+    "plural": "ferrets"
+   },
+   "relations": [
+    {
+     "to": "mustelid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "weasel",
+   "kind": "entity",
+   "words": [
+    "weasel"
+   ],
+   "attrs": {
+    "sound": "shrill chatter",
+    "diet": "rodents",
+    "habitat": "fields",
+    "feature": "slippery and quick",
+    "plural": "weasels"
+   },
+   "relations": [
+    {
+     "to": "mustelid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "wolverine",
+   "kind": "entity",
+   "words": [
+    "wolverine"
+   ],
+   "attrs": {
+    "sound": "growls",
+    "diet": "whatever it can catch",
+    "habitat": "northern wilds",
+    "feature": "fearless and strong",
+    "plural": "wolverines"
+   },
+   "relations": [
+    {
+     "to": "mustelid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lynx",
+   "kind": "entity",
+   "words": [
+    "lynx"
+   ],
+   "attrs": {
+    "sound": "yowls",
+    "diet": "hares",
+    "habitat": "northern forests",
+    "feature": "tufted ears and a stub tail",
+    "plural": "lynxes"
+   },
+   "relations": [
+    {
+     "to": "felid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bobcat",
+   "kind": "entity",
+   "words": [
+    "bobcat"
+   ],
+   "attrs": {
+    "sound": "yowls",
+    "diet": "rabbits and birds",
+    "habitat": "north america",
+    "feature": "a bobbed tail",
+    "plural": "bobcats"
+   },
+   "relations": [
+    {
+     "to": "felid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cougar",
+   "kind": "entity",
+   "words": [
+    "cougar"
+   ],
+   "attrs": {
+    "sound": "whistles",
+    "diet": "deer",
+    "habitat": "mountains",
+    "feature": "also called puma or mountain lion",
+    "plural": "cougars"
+   },
+   "relations": [
+    {
+     "to": "felid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "jaguar",
+   "kind": "entity",
+   "words": [
+    "jaguar"
+   ],
+   "attrs": {
+    "sound": "deep growls",
+    "diet": "capybara and fish",
+    "habitat": "rainforests",
+    "feature": "rosette spots, strong jaws",
+    "plural": "jaguars"
+   },
+   "relations": [
+    {
+     "to": "felid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "leopard",
+   "kind": "entity",
+   "words": [
+    "leopard"
+   ],
+   "attrs": {
+    "sound": "sawing rasps",
+    "diet": "antelope",
+    "habitat": "africa and asia",
+    "feature": "spots, drags prey up trees",
+    "plural": "leopards"
+   },
+   "relations": [
+    {
+     "to": "felid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cheetah",
+   "kind": "entity",
+   "words": [
+    "cheetah"
+   ],
+   "attrs": {
+    "sound": "chirps",
+    "diet": "gazelles",
+    "habitat": "african plains",
+    "feature": "the fastest land animal",
+    "plural": "cheetahs"
+   },
+   "relations": [
+    {
+     "to": "felid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hyena",
+   "kind": "entity",
+   "words": [
+    "hyena"
+   ],
+   "attrs": {
+    "sound": "whooping laughs",
+    "diet": "leftovers and prey",
+    "habitat": "african plains",
+    "feature": "powerful jaws",
+    "plural": "hyenas"
+   },
+   "relations": [
+    {
+     "to": "hyaenid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "meerkat",
+   "kind": "entity",
+   "words": [
+    "meerkat"
+   ],
+   "attrs": {
+    "sound": "peeping calls",
+    "diet": "insects",
+    "habitat": "deserts",
+    "feature": "stands guard upright",
+    "plural": "meerkats"
+   },
+   "relations": [
+    {
+     "to": "mongoose",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mongoose",
+   "kind": "entity",
+   "words": [
+    "mongoose"
+   ],
+   "attrs": {
+    "sound": "chitters",
+    "diet": "snakes and rodents",
+    "habitat": "asia and africa",
+    "feature": "famously fights cobras",
+    "plural": "mongooses"
+   },
+   "relations": [
+    {
+     "to": "carnivoran",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "porcupine",
+   "kind": "entity",
+   "words": [
+    "porcupine"
+   ],
+   "attrs": {
+    "sound": "quill rattles",
+    "diet": "bark and plants",
+    "habitat": "forests",
+    "feature": "coat of quills",
+    "plural": "porcupines"
+   },
+   "relations": [
+    {
+     "to": "rodent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "chinchilla",
+   "kind": "entity",
+   "words": [
+    "chinchilla"
+   ],
+   "attrs": {
+    "sound": "soft squeaks",
+    "diet": "grass and seeds",
+    "habitat": "andes mountains",
+    "feature": "the softest fur",
+    "plural": "chinchillas"
+   },
+   "relations": [
+    {
+     "to": "rodent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "guinea_pig",
+   "kind": "entity",
+   "words": [
+    "guinea pig"
+   ],
+   "attrs": {
+    "sound": "wheeks",
+    "diet": "grass and veggies",
+    "role": "a gentle pet",
+    "feature": "never stops eating",
+    "plural": "guinea pigs"
+   },
+   "relations": [
+    {
+     "to": "rodent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "capybara",
+   "kind": "entity",
+   "words": [
+    "capybara"
+   ],
+   "attrs": {
+    "sound": "clicks",
+    "diet": "grass",
+    "habitat": "south american rivers",
+    "feature": "the biggest rodent",
+    "plural": "capybaras"
+   },
+   "relations": [
+    {
+     "to": "rodent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "opossum",
+   "kind": "entity",
+   "words": [
+    "opossum"
+   ],
+   "attrs": {
+    "sound": "hisses",
+    "diet": "almost anything",
+    "habitat": "americas",
+    "feature": "plays dead when scared",
+    "plural": "opossums"
+   },
+   "relations": [
+    {
+     "to": "marsupial",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "wombat",
+   "kind": "entity",
+   "words": [
+    "wombat"
+   ],
+   "attrs": {
+    "sound": "grunts",
+    "diet": "grass roots",
+    "habitat": "australia",
+    "feature": "cubes for droppings",
+    "plural": "wombats"
+   },
+   "relations": [
+    {
+     "to": "marsupial",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "wallaby",
+   "kind": "entity",
+   "words": [
+    "wallaby"
+   ],
+   "attrs": {
+    "sound": "thumps",
+    "diet": "grass",
+    "habitat": "australia",
+    "feature": "a small kangaroo",
+    "plural": "wallabies"
+   },
+   "relations": [
+    {
+     "to": "marsupial",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lemur",
+   "kind": "entity",
+   "words": [
+    "lemur"
+   ],
+   "attrs": {
+    "sound": "singing calls",
+    "diet": "fruit",
+    "habitat": "madagascar",
+    "feature": "big round eyes",
+    "plural": "lemurs"
+   },
+   "relations": [
+    {
+     "to": "primate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "baboon",
+   "kind": "entity",
+   "words": [
+    "baboon"
+   ],
+   "attrs": {
+    "sound": "barks",
+    "diet": "fruit and grubs",
+    "habitat": "african cliffs",
+    "feature": "a dog-like muzzle",
+    "plural": "baboons"
+   },
+   "relations": [
+    {
+     "to": "primate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "orangutan",
+   "kind": "entity",
+   "words": [
+    "orangutan"
+   ],
+   "attrs": {
+    "sound": "long calls",
+    "diet": "fruit",
+    "habitat": "borneo rainforests",
+    "feature": "builds a new nest each night",
+    "plural": "orangutans"
+   },
+   "relations": [
+    {
+     "to": "primate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gibbon",
+   "kind": "entity",
+   "words": [
+    "gibbon"
+   ],
+   "attrs": {
+    "sound": "singing duets",
+    "diet": "fruit",
+    "habitat": "asian treetops",
+    "feature": "swings branch to branch",
+    "plural": "gibbons"
+   },
+   "relations": [
+    {
+     "to": "primate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "aardvark",
+   "kind": "entity",
+   "words": [
+    "aardvark"
+   ],
+   "attrs": {
+    "sound": "snorts",
+    "diet": "ants and termites",
+    "habitat": "african night",
+    "feature": "digs like a machine",
+    "plural": "aardvarks"
+   },
+   "relations": [
+    {
+     "to": "tubulidentata",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pangolin",
+   "kind": "entity",
+   "words": [
+    "pangolin"
+   ],
+   "attrs": {
+    "sound": "hisses",
+    "diet": "ants",
+    "habitat": "africa and asia",
+    "feature": "scale armor, rolls up",
+    "plural": "pangolins"
+   },
+   "relations": [
+    {
+     "to": "pholidota",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rhinoceros",
+   "kind": "entity",
+   "words": [
+    "rhinoceros"
+   ],
+   "attrs": {
+    "sound": "snorts",
+    "diet": "grass",
+    "habitat": "savanna",
+    "feature": "a horn on the nose",
+    "plural": "rhinoceroses"
+   },
+   "relations": [
+    {
+     "to": "ungulate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hippopotamus",
+   "kind": "entity",
+   "words": [
+    "hippopotamus"
+   ],
+   "attrs": {
+    "sound": "grunts and bellows",
+    "diet": "grass",
+    "habitat": "african rivers",
+    "feature": "opens its mouth four feet wide",
+    "plural": "hippopotamuses"
+   },
+   "relations": [
+    {
+     "to": "ungulate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bison",
+   "kind": "entity",
+   "words": [
+    "bison"
+   ],
+   "attrs": {
+    "sound": "grunts",
+    "diet": "grass",
+    "habitat": "great plains",
+    "feature": "the biggest land animal in america",
+    "plural": "bisons"
+   },
+   "relations": [
+    {
+     "to": "bovine",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "buffalo",
+   "kind": "entity",
+   "words": [
+    "buffalo"
+   ],
+   "attrs": {
+    "sound": "low bellows",
+    "diet": "grass",
+    "habitat": "africa and asia",
+    "feature": "curved horns",
+    "plural": "buffalos"
+   },
+   "relations": [
+    {
+     "to": "bovine",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "yak",
+   "kind": "entity",
+   "words": [
+    "yak"
+   ],
+   "attrs": {
+    "sound": "grunts",
+    "diet": "grass",
+    "habitat": "himalayas",
+    "feature": "a shaggy coat for the cold",
+    "plural": "yaks"
+   },
+   "relations": [
+    {
+     "to": "bovine",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "llama",
+   "kind": "entity",
+   "words": [
+    "llama"
+   ],
+   "attrs": {
+    "sound": "humming",
+    "diet": "grass",
+    "role": "carries loads",
+    "feature": "spits when annoyed",
+    "plural": "llamas"
+   },
+   "relations": [
+    {
+     "to": "ungulate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "alpaca",
+   "kind": "entity",
+   "words": [
+    "alpaca"
+   ],
+   "attrs": {
+    "sound": "humming",
+    "diet": "grass",
+    "role": "gives soft wool",
+    "feature": "a fluffy face",
+    "plural": "alpacas"
+   },
+   "relations": [
+    {
+     "to": "ungulate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "narwhal",
+   "kind": "entity",
+   "words": [
+    "narwhal"
+   ],
+   "attrs": {
+    "sound": "clicks",
+    "diet": "fish",
+    "habitat": "arctic seas",
+    "feature": "a spiral tusk",
+    "plural": "narwhals"
+   },
+   "relations": [
+    {
+     "to": "cetacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "orca",
+   "kind": "entity",
+   "words": [
+    "orca"
+   ],
+   "attrs": {
+    "sound": "pods of calls",
+    "diet": "seals and fish",
+    "habitat": "all oceans",
+    "feature": "actually the biggest dolphin",
+    "plural": "orcas"
+   },
+   "relations": [
+    {
+     "to": "cetacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "porpoise",
+   "kind": "entity",
+   "words": [
+    "porpoise"
+   ],
+   "attrs": {
+    "sound": "soft clicks",
+    "diet": "fish",
+    "habitat": "cool northern seas",
+    "feature": "a blunt-nosed small whale",
+    "plural": "porpoises"
+   },
+   "relations": [
+    {
+     "to": "cetacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "dugong",
+   "kind": "entity",
+   "words": [
+    "dugong"
+   ],
+   "attrs": {
+    "sound": "chirps",
+    "diet": "sea grass",
+    "habitat": "warm coasts",
+    "feature": "the manatee's sea cousin",
+    "plural": "dugongs"
+   },
+   "relations": [
+    {
+     "to": "sirenian",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sea_lion",
+   "kind": "entity",
+   "words": [
+    "sea lion"
+   ],
+   "attrs": {
+    "sound": "loud barks",
+    "diet": "fish",
+    "habitat": "rocky coasts",
+    "feature": "can walk on its flippers",
+    "plural": "sea lions"
+   },
+   "relations": [
+    {
+     "to": "pinniped",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mole",
+   "kind": "entity",
+   "words": [
+    "mole"
+   ],
+   "attrs": {
+    "sound": "faint squeaks",
+    "diet": "earthworms",
+    "habitat": "underground",
+    "feature": "digs tunnels with spade hands",
+    "plural": "moles"
+   },
+   "relations": [
+    {
+     "to": "talpid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "shrew",
+   "kind": "entity",
+   "words": [
+    "shrew"
+   ],
+   "attrs": {
+    "sound": "high twitter",
+    "diet": "insects",
+    "habitat": "leaf litter",
+    "feature": "a tiny fast heartbeat",
+    "plural": "shrews"
+   },
+   "relations": [
+    {
+     "to": "soricid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "chipmunk",
+   "kind": "entity",
+   "words": [
+    "chipmunk"
+   ],
+   "attrs": {
+    "sound": "chip-chip calls",
+    "diet": "nuts and seeds",
+    "habitat": "woods",
+    "feature": "striped back, cheek pouches",
+    "plural": "chipmunks"
+   },
+   "relations": [
+    {
+     "to": "rodent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "groundhog",
+   "kind": "entity",
+   "words": [
+    "groundhog"
+   ],
+   "attrs": {
+    "sound": "whistles",
+    "diet": "plants",
+    "habitat": "meadows",
+    "feature": "predicts spring in stories",
+    "plural": "groundhogs"
+   },
+   "relations": [
+    {
+     "to": "rodent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gerbil",
+   "kind": "entity",
+   "words": [
+    "gerbil"
+   ],
+   "attrs": {
+    "sound": "faint thumps",
+    "diet": "seeds",
+    "role": "a small pet",
+    "feature": "long fuzzy tail",
+    "plural": "gerbils"
+   },
+   "relations": [
+    {
+     "to": "rodent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lemming",
+   "kind": "entity",
+   "words": [
+    "lemming"
+   ],
+   "attrs": {
+    "sound": "squeaks",
+    "diet": "grass and moss",
+    "habitat": "arctic tundra",
+    "feature": "population booms",
+    "plural": "lemmings"
+   },
+   "relations": [
+    {
+     "to": "rodent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "prairie_dog",
+   "kind": "entity",
+   "words": [
+    "prairie dog"
+   ],
+   "attrs": {
+    "sound": "barking calls",
+    "diet": "grass",
+    "habitat": "prairie towns",
+    "feature": "digs whole underground villages",
+    "plural": "prairie dogs"
+   },
+   "relations": [
+    {
+     "to": "rodent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "wildebeest",
+   "kind": "entity",
+   "words": [
+    "wildebeest"
+   ],
+   "attrs": {
+    "sound": "grunts and snorts",
+    "diet": "grass",
+    "habitat": "african plains",
+    "feature": "migrates in herds",
+    "plural": "wildebeests"
+   },
+   "relations": [
+    {
+     "to": "antelope",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "antelope",
+   "kind": "entity",
+   "words": [
+    "antelope"
+   ],
+   "attrs": {
+    "sound": "snorts",
+    "diet": "grass",
+    "habitat": "savanna",
+    "feature": "graceful curved horns",
+    "plural": "antelopes"
+   },
+   "relations": [
+    {
+     "to": "bovine",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gazelle",
+   "kind": "entity",
+   "words": [
+    "gazelle"
+   ],
+   "attrs": {
+    "sound": "faint grunts",
+    "diet": "grass and shoots",
+    "habitat": "africa",
+    "feature": "leaps to show off",
+    "plural": "gazelles"
+   },
+   "relations": [
+    {
+     "to": "antelope",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "impala",
+   "kind": "entity",
+   "words": [
+    "impala"
+   ],
+   "attrs": {
+    "sound": "snorts",
+    "diet": "grass",
+    "habitat": "savanna",
+    "feature": "jumps nine meters",
+    "plural": "impalas"
+   },
+   "relations": [
+    {
+     "to": "antelope",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "elk",
+   "kind": "entity",
+   "words": [
+    "elk"
+   ],
+   "attrs": {
+    "sound": "bugling",
+    "diet": "grass and bark",
+    "habitat": "mountain forests",
+    "feature": "the largest deer",
+    "plural": "elks"
+   },
+   "relations": [
+    {
+     "to": "cervid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "caribou",
+   "kind": "entity",
+   "words": [
+    "caribou"
+   ],
+   "attrs": {
+    "sound": "clicking tendons",
+    "diet": "lichen",
+    "habitat": "arctic tundra",
+    "feature": "both sexes grow antlers",
+    "plural": "caribous"
+   },
+   "relations": [
+    {
+     "to": "cervid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "reindeer",
+   "kind": "entity",
+   "words": [
+    "reindeer"
+   ],
+   "attrs": {
+    "sound": "grunts",
+    "diet": "lichen",
+    "habitat": "arctic",
+    "role": "pulls sleighs in stories",
+    "feature": "a thick winter coat",
+    "plural": "reindeers"
+   },
+   "relations": [
+    {
+     "to": "cervid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eagle",
+   "kind": "entity",
+   "words": [
+    "eagle"
+   ],
+   "attrs": {
+    "sound": "high cries",
+    "diet": "fish and small mammals",
+    "habitat": "cliffs and tall trees",
+    "feature": "hooks its prey with talons",
+    "plural": "eagles"
+   },
+   "relations": [
+    {
+     "to": "raptor",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hawk",
+   "kind": "entity",
+   "words": [
+    "hawk"
+   ],
+   "attrs": {
+    "sound": "sharp kee-kee",
+    "diet": "rodents",
+    "habitat": "open country",
+    "feature": "superb eyesight",
+    "plural": "hawks"
+   },
+   "relations": [
+    {
+     "to": "raptor",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "falcon",
+   "kind": "entity",
+   "words": [
+    "falcon"
+   ],
+   "attrs": {
+    "sound": "kak-kak",
+    "diet": "birds in mid-air",
+    "habitat": "everywhere",
+    "feature": "the fastest animal in a dive",
+    "plural": "falcons"
+   },
+   "relations": [
+    {
+     "to": "raptor",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "owl",
+   "kind": "entity",
+   "words": [
+    "owl"
+   ],
+   "attrs": {
+    "sound": "hoots",
+    "diet": "mice",
+    "habitat": "night woods",
+    "feature": "turns its head almost all the way around",
+    "plural": "owls"
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "parrot",
+   "kind": "entity",
+   "words": [
+    "parrot"
+   ],
+   "attrs": {
+    "sound": "mimics words",
+    "diet": "seeds and fruit",
+    "habitat": "tropics",
+    "feature": "can learn to talk",
+    "plural": "parrots"
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "parakeet",
+   "kind": "entity",
+   "words": [
+    "parakeet"
+   ],
+   "attrs": {
+    "sound": "cheerful chattering",
+    "diet": "seeds",
+    "role": "a small pet",
+    "feature": "a long tail on a small body",
+    "plural": "parakeets"
+   },
+   "relations": [
+    {
+     "to": "parrot",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "macaw",
+   "kind": "entity",
+   "words": [
+    "macaw"
+   ],
+   "attrs": {
+    "sound": "loud squawks",
+    "diet": "nuts and fruit",
+    "habitat": "rainforests",
+    "feature": "a meter of rainbow feathers",
+    "plural": "macaws"
+   },
+   "relations": [
+    {
+     "to": "parrot",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cockatoo",
+   "kind": "entity",
+   "words": [
+    "cockatoo"
+   ],
+   "attrs": {
+    "sound": "creaky calls",
+    "diet": "seeds",
+    "habitat": "australia",
+    "feature": "a crest it raises when excited",
+    "plural": "cockatoos"
+   },
+   "relations": [
+    {
+     "to": "parrot",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "crow",
+   "kind": "entity",
+   "words": [
+    "crow"
+   ],
+   "attrs": {
+    "sound": "caw caw",
+    "diet": "almost anything",
+    "habitat": "everywhere",
+    "feature": "one of the smartest birds",
+    "plural": "crows"
+   },
+   "relations": [
+    {
+     "to": "corvid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "raven",
+   "kind": "entity",
+   "words": [
+    "raven"
+   ],
+   "attrs": {
+    "sound": "deep croaks",
+    "diet": "almost anything",
+    "habitat": "wild places",
+    "feature": "solves puzzles for fun",
+    "plural": "ravens"
+   },
+   "relations": [
+    {
+     "to": "corvid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sparrow",
+   "kind": "entity",
+   "words": [
+    "sparrow"
+   ],
+   "attrs": {
+    "sound": "chirp chirp",
+    "diet": "seeds",
+    "habitat": "cities and farms",
+    "feature": "hops rather than walks",
+    "plural": "sparrows"
+   },
+   "relations": [
+    {
+     "to": "songbird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "robin",
+   "kind": "entity",
+   "words": [
+    "robin"
+   ],
+   "attrs": {
+    "sound": "morning song",
+    "diet": "worms",
+    "habitat": "gardens",
+    "feature": "a red-orange breast",
+    "plural": "robins"
+   },
+   "relations": [
+    {
+     "to": "songbird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cardinal",
+   "kind": "entity",
+   "words": [
+    "cardinal"
+   ],
+   "attrs": {
+    "sound": "loud whistles",
+    "diet": "seeds",
+    "habitat": "backyards",
+    "feature": "the male is all red",
+    "plural": "cardinals"
+   },
+   "relations": [
+    {
+     "to": "songbird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "finch",
+   "kind": "entity",
+   "words": [
+    "finch"
+   ],
+   "attrs": {
+    "sound": "trills",
+    "diet": "seeds",
+    "habitat": "everywhere",
+    "feature": "beaks shaped by what they eat",
+    "plural": "finches"
+   },
+   "relations": [
+    {
+     "to": "songbird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "canary",
+   "kind": "entity",
+   "words": [
+    "canary"
+   ],
+   "attrs": {
+    "sound": "beautiful song",
+    "diet": "seeds",
+    "role": "a singing pet",
+    "feature": "small and yellow",
+    "plural": "canaries"
+   },
+   "relations": [
+    {
+     "to": "songbird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pigeon",
+   "kind": "entity",
+   "words": [
+    "pigeon"
+   ],
+   "attrs": {
+    "sound": "cooing",
+    "diet": "grain and crumbs",
+    "habitat": "city streets",
+    "feature": "finds its way home across countries",
+    "plural": "pigeons"
+   },
+   "relations": [
+    {
+     "to": "dove",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "dove",
+   "kind": "entity",
+   "words": [
+    "dove"
+   ],
+   "attrs": {
+    "sound": "soft coos",
+    "diet": "seeds",
+    "habitat": "towns and woods",
+    "feature": "the symbol of peace",
+    "plural": "doves"
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "seagull",
+   "kind": "entity",
+   "words": [
+    "seagull"
+   ],
+   "attrs": {
+    "sound": "laughing cries",
+    "diet": "fish and chips",
+    "habitat": "coasts",
+    "feature": "steals food mid-air",
+    "plural": "seagulls"
+   },
+   "relations": [
+    {
+     "to": "gull",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "albatross",
+   "kind": "entity",
+   "words": [
+    "albatross"
+   ],
+   "attrs": {
+    "sound": "bill clacking",
+    "diet": "squid",
+    "habitat": "southern oceans",
+    "feature": "the longest wingspan",
+    "plural": "albatrosses"
+   },
+   "relations": [
+    {
+     "to": "seabird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "penguin",
+   "kind": "entity",
+   "words": [
+    "penguin"
+   ],
+   "attrs": {
+    "sound": "braying calls",
+    "diet": "fish",
+    "habitat": "antarctica",
+    "feature": "swims instead of flying",
+    "plural": "penguins"
+   },
+   "relations": [
+    {
+     "to": "seabird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ostrich",
+   "kind": "entity",
+   "words": [
+    "ostrich"
+   ],
+   "attrs": {
+    "sound": "booming hums",
+    "diet": "plants and lizards",
+    "habitat": "african savanna",
+    "feature": "the biggest bird, runs 70 km/h",
+    "plural": "ostriches"
+   },
+   "relations": [
+    {
+     "to": "rhea",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "emu",
+   "kind": "entity",
+   "words": [
+    "emu"
+   ],
+   "attrs": {
+    "sound": "drumming booms",
+    "diet": "seeds and insects",
+    "habitat": "australia",
+    "feature": "the second-biggest bird",
+    "plural": "emus"
+   },
+   "relations": [
+    {
+     "to": "rhea",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "kiwi",
+   "kind": "entity",
+   "words": [
+    "kiwi"
+   ],
+   "attrs": {
+    "sound": "shrill whistles",
+    "diet": "insects",
+    "habitat": "new zealand",
+    "feature": "eggs half its body weight",
+    "plural": "kiwis"
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "flamingo",
+   "kind": "entity",
+   "words": [
+    "flamingo"
+   ],
+   "attrs": {
+    "sound": "goose-like honks",
+    "diet": "tiny shrimp",
+    "habitat": "salt lakes",
+    "feature": "pink from what it eats",
+    "plural": "flamingos"
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pelican",
+   "kind": "entity",
+   "words": [
+    "pelican"
+   ],
+   "attrs": {
+    "sound": "grunting",
+    "diet": "fish",
+    "habitat": "coasts",
+    "feature": "a beak pouch that holds gallons",
+    "plural": "pelicans"
+   },
+   "relations": [
+    {
+     "to": "seabird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "duck",
+   "kind": "entity",
+   "words": [
+    "duck"
+   ],
+   "attrs": {
+    "sound": "quacks",
+    "diet": "plants and insects",
+    "habitat": "ponds",
+    "feature": "water rolls off its back",
+    "plural": "ducks"
+   },
+   "relations": [
+    {
+     "to": "fowl",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "goose",
+   "kind": "entity",
+   "words": [
+    "goose"
+   ],
+   "attrs": {
+    "sound": "honks",
+    "diet": "grass",
+    "habitat": "lakes",
+    "feature": "flies in a v formation",
+    "plural": "geese"
+   },
+   "relations": [
+    {
+     "to": "duck",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "swan",
+   "kind": "entity",
+   "words": [
+    "swan"
+   ],
+   "attrs": {
+    "sound": "trumpeting",
+    "diet": "water plants",
+    "habitat": "lakes",
+    "feature": "mates for life",
+    "plural": "swans"
+   },
+   "relations": [
+    {
+     "to": "duck",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "chicken",
+   "kind": "entity",
+   "words": [
+    "chicken"
+   ],
+   "attrs": {
+    "sound": "clucks",
+    "diet": "grain",
+    "role": "eggs and meat",
+    "feature": "dust-bathes to clean up",
+    "plural": "chickens"
+   },
+   "relations": [
+    {
+     "to": "fowl",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rooster",
+   "kind": "entity",
+   "words": [
+    "rooster"
+   ],
+   "attrs": {
+    "sound": "cock-a-doodle-doo",
+    "diet": "grain",
+    "role": "wakes the farm",
+    "feature": "crows at first light",
+    "plural": "roosters"
+   },
+   "relations": [
+    {
+     "to": "fowl",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "turkey",
+   "kind": "entity",
+   "words": [
+    "turkey"
+   ],
+   "attrs": {
+    "sound": "gobbles",
+    "diet": "seeds and acorns",
+    "habitat": "american woods",
+    "feature": "the male fans its tail",
+    "plural": "turkeys"
+   },
+   "relations": [
+    {
+     "to": "fowl",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "peacock",
+   "kind": "entity",
+   "words": [
+    "peacock"
+   ],
+   "attrs": {
+    "sound": "loud cries",
+    "diet": "seeds",
+    "habitat": "india",
+    "feature": "the male fans a jewel tail",
+    "plural": "peacocks"
+   },
+   "relations": [
+    {
+     "to": "fowl",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "woodpecker",
+   "kind": "entity",
+   "words": [
+    "woodpecker"
+   ],
+   "attrs": {
+    "sound": "drumming on trees",
+    "diet": "beetles",
+    "habitat": "forests",
+    "feature": "hammer-pecks 20 times a second",
+    "plural": "woodpeckers"
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hummingbird",
+   "kind": "entity",
+   "words": [
+    "hummingbird"
+   ],
+   "attrs": {
+    "sound": "wing buzz",
+    "diet": "nectar",
+    "habitat": "americas",
+    "feature": "hovers backwards",
+    "plural": "hummingbirds"
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "kingfisher",
+   "kind": "entity",
+   "words": [
+    "kingfisher"
+   ],
+   "attrs": {
+    "sound": "sharp whistles",
+    "diet": "small fish",
+    "habitat": "riverbanks",
+    "feature": "dives like a dart",
+    "plural": "kingfishers"
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "toucan",
+   "kind": "entity",
+   "words": [
+    "toucan"
+   ],
+   "attrs": {
+    "sound": "croaking",
+    "diet": "fruit",
+    "habitat": "rainforests",
+    "feature": "a beak half its body",
+    "plural": "toucans"
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "vulture",
+   "kind": "entity",
+   "words": [
+    "vulture"
+   ],
+   "attrs": {
+    "sound": "hisses",
+    "diet": "leftovers",
+    "habitat": "open country",
+    "feature": "cleans up what falls",
+    "plural": "vultures"
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "crane",
+   "kind": "entity",
+   "words": [
+    "crane"
+   ],
+   "attrs": {
+    "sound": "bugling calls",
+    "diet": "grain and frogs",
+    "habitat": "wetlands",
+    "feature": "dances to bond",
+    "plural": "cranes"
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "stork",
+   "kind": "entity",
+   "words": [
+    "stork"
+   ],
+   "attrs": {
+    "sound": "bill clattering",
+    "diet": "fish",
+    "habitat": "wetlands",
+    "feature": "delivers babies in stories",
+    "plural": "storks"
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "heron",
+   "kind": "entity",
+   "words": [
+    "heron"
+   ],
+   "attrs": {
+    "sound": "harsh croaks",
+    "diet": "fish",
+    "habitat": "shallow water",
+    "feature": "stands still as a statue",
+    "plural": "herons"
+   },
+   "relations": [
+    {
+     "to": "bird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "puffin",
+   "kind": "entity",
+   "words": [
+    "puffin"
+   ],
+   "attrs": {
+    "sound": "low growls",
+    "diet": "fish",
+    "habitat": "sea cliffs",
+    "feature": "a rainbow-striped beak",
+    "plural": "puffins"
+   },
+   "relations": [
+    {
+     "to": "auk",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "magpie",
+   "kind": "entity",
+   "words": [
+    "magpie"
+   ],
+   "attrs": {
+    "sound": "chattering",
+    "diet": "almost anything",
+    "habitat": "gardens",
+    "feature": "collects shiny things",
+    "plural": "magpies"
+   },
+   "relations": [
+    {
+     "to": "corvid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "starling",
+   "kind": "entity",
+   "words": [
+    "starling"
+   ],
+   "attrs": {
+    "sound": "whistles and mimicry",
+    "diet": "insects",
+    "habitat": "cities",
+    "feature": "clouds of thousands in flight",
+    "plural": "starlings"
+   },
+   "relations": [
+    {
+     "to": "songbird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "swallow",
+   "kind": "entity",
+   "words": [
+    "swallow"
+   ],
+   "attrs": {
+    "sound": "twittering",
+    "diet": "flying insects",
+    "habitat": "barns",
+    "feature": "migrates the whole globe",
+    "plural": "swallows"
+   },
+   "relations": [
+    {
+     "to": "songbird",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "salmon",
+   "kind": "entity",
+   "words": [
+    "salmon"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "smaller fish",
+    "habitat": "rivers then ocean",
+    "feature": "swims home up waterfalls",
+    "plural": "salmons"
+   },
+   "relations": [
+    {
+     "to": "salmonid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "tuna",
+   "kind": "entity",
+   "words": [
+    "tuna"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "squid and fish",
+    "habitat": "open ocean",
+    "feature": "swims nonstop, warm-blooded",
+    "plural": "tunas"
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "trout",
+   "kind": "entity",
+   "words": [
+    "trout"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "insects",
+    "habitat": "cold streams",
+    "feature": "spotted sides",
+    "plural": "trouts"
+   },
+   "relations": [
+    {
+     "to": "salmonid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cod",
+   "kind": "entity",
+   "words": [
+    "cod"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "small fish",
+    "habitat": "cold seas",
+    "feature": "the classic fish and chips",
+    "plural": "cods"
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "shark",
+   "kind": "entity",
+   "words": [
+    "shark"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "fish and seals",
+    "habitat": "all oceans",
+    "feature": "grows new teeth forever",
+    "plural": "sharks"
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ray",
+   "kind": "entity",
+   "words": [
+    "ray"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "shellfish",
+    "habitat": "sea floors",
+    "feature": "flies underwater like a kite",
+    "plural": "rays"
+   },
+   "relations": [
+    {
+     "to": "rayskate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eel",
+   "kind": "entity",
+   "words": [
+    "eel"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "small animals",
+    "habitat": "rivers and seas",
+    "feature": "snake-long and slippery",
+    "plural": "eels"
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "seahorse",
+   "kind": "entity",
+   "words": [
+    "seahorse"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "tiny crustaceans",
+    "habitat": "sea grass",
+    "feature": "the male carries the babies",
+    "plural": "seahorses"
+   },
+   "relations": [
+    {
+     "to": "pipefish",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "clownfish",
+   "kind": "entity",
+   "words": [
+    "clownfish"
+   ],
+   "attrs": {
+    "sound": "pops",
+    "diet": "plankton",
+    "habitat": "sea anemones",
+    "feature": "lives un-stung among tentacles",
+    "plural": "clownfishes"
+   },
+   "relations": [
+    {
+     "to": "damselfish",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "goldfish",
+   "kind": "entity",
+   "words": [
+    "goldfish"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "flakes",
+    "role": "a first pet",
+    "feature": "remembers for months",
+    "plural": "goldfishes"
+   },
+   "relations": [
+    {
+     "to": "carp",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pufferfish",
+   "kind": "entity",
+   "words": [
+    "pufferfish"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "shellfish",
+    "habitat": "warm seas",
+    "feature": "puffs into a spiky ball",
+    "plural": "pufferfishes"
+   },
+   "relations": [
+    {
+     "to": "puffer",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "swordfish",
+   "kind": "entity",
+   "words": [
+    "swordfish"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "squid",
+    "habitat": "open ocean",
+    "feature": "a sword for a nose",
+    "plural": "swordfishes"
+   },
+   "relations": [
+    {
+     "to": "billfish",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "piranha",
+   "kind": "entity",
+   "words": [
+    "piranha"
+   ],
+   "attrs": {
+    "sound": "drumming",
+    "diet": "fish and seeds",
+    "habitat": "amazon rivers",
+    "feature": "razor teeth in schools",
+    "plural": "piranhas"
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "catfish",
+   "kind": "entity",
+   "words": [
+    "catfish"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "whatever sinks",
+    "habitat": "rivers",
+    "feature": "whiskers that taste the water",
+    "plural": "catfishes"
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sardine",
+   "kind": "entity",
+   "words": [
+    "sardine"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "plankton",
+    "habitat": "schools in the sea",
+    "feature": "millions swim as one",
+    "plural": "sardines"
+   },
+   "relations": [
+    {
+     "to": "clupeid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "anchovy",
+   "kind": "entity",
+   "words": [
+    "anchovy"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "plankton",
+    "habitat": "sea schools",
+    "feature": "tiny and salty",
+    "plural": "anchovies"
+   },
+   "relations": [
+    {
+     "to": "clupeid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mackerel",
+   "kind": "entity",
+   "words": [
+    "mackerel"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "small fish",
+    "habitat": "open sea",
+    "feature": "striped and fast",
+    "plural": "mackerels"
+   },
+   "relations": [
+    {
+     "to": "fish_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "snake",
+   "kind": "entity",
+   "words": [
+    "snake"
+   ],
+   "attrs": {
+    "sound": "hisses",
+    "diet": "rodents and eggs",
+    "habitat": "everywhere warm",
+    "feature": "smells with its tongue",
+    "plural": "snakes"
+   },
+   "relations": [
+    {
+     "to": "reptile",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cobra",
+   "kind": "entity",
+   "words": [
+    "cobra"
+   ],
+   "attrs": {
+    "sound": "growling hiss",
+    "diet": "rodents",
+    "habitat": "asia and africa",
+    "feature": "spreads a hood, spits venom",
+    "plural": "cobras"
+   },
+   "relations": [
+    {
+     "to": "elapid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "python",
+   "kind": "entity",
+   "words": [
+    "python"
+   ],
+   "attrs": {
+    "sound": "hisses",
+    "diet": "birds and mammals",
+    "habitat": "tropics",
+    "feature": "squeezes its prey",
+    "plural": "pythons"
+   },
+   "relations": [
+    {
+     "to": "snake",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rattlesnake",
+   "kind": "entity",
+   "words": [
+    "rattlesnake"
+   ],
+   "attrs": {
+    "sound": "a shaking rattle",
+    "diet": "rodents",
+    "habitat": "americas",
+    "feature": "warns before it bites",
+    "plural": "rattlesnakes"
+   },
+   "relations": [
+    {
+     "to": "viper",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "boa",
+   "kind": "entity",
+   "words": [
+    "boa"
+   ],
+   "attrs": {
+    "sound": "hisses",
+    "diet": "rodents",
+    "habitat": "americas",
+    "feature": "constricts like pythons",
+    "plural": "boas"
+   },
+   "relations": [
+    {
+     "to": "snake",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "anaconda",
+   "kind": "entity",
+   "words": [
+    "anaconda"
+   ],
+   "attrs": {
+    "sound": "hisses",
+    "diet": "capybara",
+    "habitat": "amazon swamps",
+    "feature": "the heaviest snake",
+    "plural": "anacondas"
+   },
+   "relations": [
+    {
+     "to": "boa",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lizard",
+   "kind": "entity",
+   "words": [
+    "lizard"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "insects",
+    "habitat": "rocks and walls",
+    "feature": "regrows its tail",
+    "plural": "lizards"
+   },
+   "relations": [
+    {
+     "to": "reptile",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gecko",
+   "kind": "entity",
+   "words": [
+    "gecko"
+   ],
+   "attrs": {
+    "sound": "chirps",
+    "diet": "insects",
+    "habitat": "walls and ceilings",
+    "feature": "feet that stick to glass",
+    "plural": "geckos"
+   },
+   "relations": [
+    {
+     "to": "lizard",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "iguana",
+   "kind": "entity",
+   "words": [
+    "iguana"
+   ],
+   "attrs": {
+    "sound": "head-bobbing",
+    "diet": "leaves",
+    "habitat": "tropics",
+    "feature": "a spine sail down its back",
+    "plural": "iguanas"
+   },
+   "relations": [
+    {
+     "to": "lizard",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "chameleon",
+   "kind": "entity",
+   "words": [
+    "chameleon"
+   ],
+   "attrs": {
+    "sound": "faint hisses",
+    "diet": "insects",
+    "habitat": "africa",
+    "feature": "changes color, eyes move apart",
+    "plural": "chameleons"
+   },
+   "relations": [
+    {
+     "to": "lizard",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "komodo_dragon",
+   "kind": "entity",
+   "words": [
+    "komodo dragon"
+   ],
+   "attrs": {
+    "sound": "hisses",
+    "diet": "pigs and deer",
+    "habitat": "indonesian islands",
+    "feature": "the biggest lizard",
+    "plural": "komodo dragons"
+   },
+   "relations": [
+    {
+     "to": "monitor",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "turtle",
+   "kind": "entity",
+   "words": [
+    "turtle"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "plants and fish",
+    "habitat": "sea and ponds",
+    "feature": "carries its house",
+    "plural": "turtles"
+   },
+   "relations": [
+    {
+     "to": "reptile",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "tortoise",
+   "kind": "entity",
+   "words": [
+    "tortoise"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "grass",
+    "habitat": "dry land",
+    "feature": "lives over a hundred years",
+    "plural": "tortoises"
+   },
+   "relations": [
+    {
+     "to": "turtle",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "crocodile",
+   "kind": "entity",
+   "words": [
+    "crocodile"
+   ],
+   "attrs": {
+    "sound": "bellowing roars",
+    "diet": "zebra and fish",
+    "habitat": "rivers",
+    "feature": "the strongest bite ever measured",
+    "plural": "crocodiles"
+   },
+   "relations": [
+    {
+     "to": "croc",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "alligator",
+   "kind": "entity",
+   "words": [
+    "alligator"
+   ],
+   "attrs": {
+    "sound": "bellowing",
+    "diet": "fish and turtles",
+    "habitat": "swamps",
+    "feature": "u-shaped snout",
+    "plural": "alligators"
+   },
+   "relations": [
+    {
+     "to": "croc",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "frog",
+   "kind": "entity",
+   "words": [
+    "frog"
+   ],
+   "attrs": {
+    "sound": "croaks",
+    "diet": "insects",
+    "habitat": "ponds",
+    "feature": "breathes through its skin",
+    "plural": "frogs"
+   },
+   "relations": [
+    {
+     "to": "amphibian",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "toad",
+   "kind": "entity",
+   "words": [
+    "toad"
+   ],
+   "attrs": {
+    "sound": "warty croaks",
+    "diet": "insects",
+    "habitat": "gardens",
+    "feature": "dry bumpy skin",
+    "plural": "toads"
+   },
+   "relations": [
+    {
+     "to": "frog",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "salamander",
+   "kind": "entity",
+   "words": [
+    "salamander"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "insects",
+    "habitat": "damp woods",
+    "feature": "regrows whole legs",
+    "plural": "salamanders"
+   },
+   "relations": [
+    {
+     "to": "amphibian",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "newt",
+   "kind": "entity",
+   "words": [
+    "newt"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "small water animals",
+    "habitat": "ponds",
+    "feature": "a bright warning belly",
+    "plural": "newts"
+   },
+   "relations": [
+    {
+     "to": "salamander",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "axolotl",
+   "kind": "entity",
+   "words": [
+    "axolotl"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "worms",
+    "habitat": "mexican lakes",
+    "feature": "stays a larva forever, regrows anything",
+    "plural": "axolotls"
+   },
+   "relations": [
+    {
+     "to": "salamander",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ant",
+   "kind": "entity",
+   "words": [
+    "ant"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "almost anything",
+    "habitat": "colonies everywhere",
+    "feature": "carries 50 times its weight",
+    "plural": "ants"
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bee",
+   "kind": "entity",
+   "words": [
+    "bee"
+   ],
+   "attrs": {
+    "sound": "buzzing",
+    "diet": "nectar",
+    "habitat": "hives",
+    "feature": "makes honey, dances directions",
+    "plural": "bees"
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "wasp",
+   "kind": "entity",
+   "words": [
+    "wasp"
+   ],
+   "attrs": {
+    "sound": "buzzing",
+    "diet": "insects and sugar",
+    "habitat": "nests",
+    "feature": "paper nests, painful sting",
+    "plural": "wasps"
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hornet",
+   "kind": "entity",
+   "words": [
+    "hornet"
+   ],
+   "attrs": {
+    "sound": "deep buzz",
+    "diet": "other insects",
+    "habitat": "trees",
+    "feature": "the biggest wasp",
+    "plural": "hornets"
+   },
+   "relations": [
+    {
+     "to": "wasp",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "butterfly",
+   "kind": "entity",
+   "words": [
+    "butterfly"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "nectar",
+    "habitat": "gardens",
+    "feature": "caterpillar turns into wings",
+    "plural": "butterflies"
+   },
+   "relations": [
+    {
+     "to": "lepidoptera",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "moth",
+   "kind": "entity",
+   "words": [
+    "moth"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "wool and nectar",
+    "habitat": "night",
+    "feature": "flies to lamps",
+    "plural": "moths"
+   },
+   "relations": [
+    {
+     "to": "lepidoptera",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "beetle",
+   "kind": "entity",
+   "words": [
+    "beetle"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "plants",
+    "habitat": "everywhere",
+    "feature": "the most species of any animal",
+    "plural": "beetles"
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ladybug",
+   "kind": "entity",
+   "words": [
+    "ladybug"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "aphids",
+    "habitat": "gardens",
+    "feature": "eats garden pests",
+    "plural": "ladybugs"
+   },
+   "relations": [
+    {
+     "to": "beetle",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "firefly",
+   "kind": "entity",
+   "words": [
+    "firefly"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "pollen",
+    "habitat": "summer nights",
+    "feature": "glows to talk",
+    "plural": "fireflies"
+   },
+   "relations": [
+    {
+     "to": "beetle",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "dragonfly",
+   "kind": "entity",
+   "words": [
+    "dragonfly"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "mosquitoes",
+    "habitat": "ponds",
+    "feature": "four wings, flies any direction",
+    "plural": "dragonflies"
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "grasshopper",
+   "kind": "entity",
+   "words": [
+    "grasshopper"
+   ],
+   "attrs": {
+    "sound": "stridulation",
+    "diet": "grass",
+    "habitat": "meadows",
+    "feature": "jumps 20 times its length",
+    "plural": "grasshoppers"
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cricket",
+   "kind": "entity",
+   "words": [
+    "cricket"
+   ],
+   "attrs": {
+    "sound": "chirping legs",
+    "diet": "plants",
+    "habitat": "grass",
+    "feature": "sings by rubbing wings",
+    "plural": "crickets"
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mantis",
+   "kind": "entity",
+   "words": [
+    "mantis"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "other insects",
+    "habitat": "plants",
+    "feature": "prayer arms, hunts head-on",
+    "plural": "mantises"
+   },
+   "relations": [
+    {
+     "to": "mantid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cockroach",
+   "kind": "entity",
+   "words": [
+    "cockroach"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "everything",
+    "habitat": "warm buildings",
+    "feature": "outlives almost anything",
+    "plural": "cockroaches"
+   },
+   "relations": [
+    {
+     "to": "roach",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "termite",
+   "kind": "entity",
+   "words": [
+    "termite"
+   ],
+   "attrs": {
+    "sound": "head-banging",
+    "diet": "wood",
+    "habitat": "mounds",
+    "feature": "builds air-conditioned towers",
+    "plural": "termites"
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "flea",
+   "kind": "entity",
+   "words": [
+    "flea"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "blood",
+    "habitat": "pet fur",
+    "feature": "jumps 200 times its size",
+    "plural": "fleas"
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mosquito",
+   "kind": "entity",
+   "words": [
+    "mosquito"
+   ],
+   "attrs": {
+    "sound": "a thin whine",
+    "diet": "nectar and blood",
+    "habitat": "standing water",
+    "feature": "the deadliest animal to humans",
+    "plural": "mosquitos"
+   },
+   "relations": [
+    {
+     "to": "insect",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "spider",
+   "kind": "entity",
+   "words": [
+    "spider"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "insects",
+    "habitat": "webs and holes",
+    "feature": "spins silk stronger than steel",
+    "plural": "spiders"
+   },
+   "relations": [
+    {
+     "to": "arachnid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "tarantula",
+   "kind": "entity",
+   "words": [
+    "tarantula"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "insects",
+    "habitat": "burrows",
+    "feature": "foot-long leg span",
+    "plural": "tarantulas"
+   },
+   "relations": [
+    {
+     "to": "spider",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "scorpion",
+   "kind": "entity",
+   "words": [
+    "scorpion"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "insects",
+    "habitat": "deserts",
+    "feature": "glows under uv light",
+    "plural": "scorpions"
+   },
+   "relations": [
+    {
+     "to": "arachnid",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "crab",
+   "kind": "entity",
+   "words": [
+    "crab"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "whatever it finds",
+    "habitat": "beaches",
+    "feature": "walks sideways",
+    "plural": "crabs"
+   },
+   "relations": [
+    {
+     "to": "crustacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lobster",
+   "kind": "entity",
+   "words": [
+    "lobster"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "shellfish",
+    "habitat": "atlantic floor",
+    "feature": "claws that crush and cut",
+    "plural": "lobsters"
+   },
+   "relations": [
+    {
+     "to": "crustacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "shrimp",
+   "kind": "entity",
+   "words": [
+    "shrimp"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "plankton",
+    "habitat": "seas",
+    "feature": "snaps a bubble louder than a gun",
+    "plural": "shrimps"
+   },
+   "relations": [
+    {
+     "to": "crustacean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "crayfish",
+   "kind": "entity",
+   "words": [
+    "crayfish"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "plants",
+    "habitat": "freshwater",
+    "feature": "mini freshwater lobster",
+    "plural": "crayfishes"
+   },
+   "relations": [
+    {
+     "to": "crab",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "snail",
+   "kind": "entity",
+   "words": [
+    "snail"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "leaves",
+    "habitat": "gardens",
+    "feature": "carries a spiral house",
+    "plural": "snails"
+   },
+   "relations": [
+    {
+     "to": "mollusk",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "slug",
+   "kind": "entity",
+   "words": [
+    "slug"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "plants",
+    "habitat": "damp shade",
+    "feature": "a houseless snail",
+    "plural": "slugs"
+   },
+   "relations": [
+    {
+     "to": "snail",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "clam",
+   "kind": "entity",
+   "words": [
+    "clam"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "plankton",
+    "habitat": "buried in sand",
+    "feature": "siphons the water for food",
+    "plural": "clams"
+   },
+   "relations": [
+    {
+     "to": "bivalve",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "oyster",
+   "kind": "entity",
+   "words": [
+    "oyster"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "plankton",
+    "habitat": "sea beds",
+    "feature": "coats grit into pearls",
+    "plural": "oysters"
+   },
+   "relations": [
+    {
+     "to": "bivalve",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "octopus",
+   "kind": "entity",
+   "words": [
+    "octopus"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "crabs",
+    "habitat": "rocky sea floor",
+    "feature": "three hearts, changes color",
+    "plural": "octopuses"
+   },
+   "relations": [
+    {
+     "to": "octopod",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "squid",
+   "kind": "entity",
+   "words": [
+    "squid"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "fish",
+    "habitat": "deep sea",
+    "feature": "eight arms, two tentacles",
+    "plural": "squids"
+   },
+   "relations": [
+    {
+     "to": "mollusk",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "jellyfish",
+   "kind": "entity",
+   "words": [
+    "jellyfish"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "plankton",
+    "habitat": "all oceans",
+    "feature": "stings without a brain",
+    "plural": "jellyfishes"
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "starfish",
+   "kind": "entity",
+   "words": [
+    "starfish"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "shellfish",
+    "habitat": "sea floors",
+    "feature": "grows back lost arms",
+    "plural": "starfishes"
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "coral",
+   "kind": "entity",
+   "words": [
+    "coral"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "plankton",
+    "habitat": "reefs",
+    "feature": "an animal that builds cities",
+    "plural": "corals"
+   },
+   "relations": [
+    {
+     "to": "invertebrate",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "earthworm",
+   "kind": "entity",
+   "words": [
+    "earthworm"
+   ],
+   "attrs": {
+    "sound": "n/a",
+    "diet": "soil",
+    "habitat": "dirt",
+    "feature": "farms the ground for us",
+    "plural": "earthworms"
+   },
+   "relations": [
+    {
+     "to": "worm",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "oak",
+   "kind": "entity",
+   "words": [
+    "oak"
+   ],
+   "attrs": {
+    "part": "acorns",
+    "feature": "the strongest common wood",
+    "plural": "oaks"
+   },
+   "relations": [
+    {
+     "to": "tree_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pine",
+   "kind": "entity",
+   "words": [
+    "pine"
+   ],
+   "attrs": {
+    "part": "pine cones",
+    "feature": "evergreen needles",
+    "plural": "pines"
+   },
+   "relations": [
+    {
+     "to": "tree_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "maple",
+   "kind": "entity",
+   "words": [
+    "maple"
+   ],
+   "attrs": {
+    "part": "helicopter seeds",
+    "feature": "sap that becomes syrup",
+    "plural": "maples"
+   },
+   "relations": [
+    {
+     "to": "tree_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "birch",
+   "kind": "entity",
+   "words": [
+    "birch"
+   ],
+   "attrs": {
+    "feature": "white peeling bark",
+    "plural": "birches"
+   },
+   "relations": [
+    {
+     "to": "tree_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "willow",
+   "kind": "entity",
+   "words": [
+    "willow"
+   ],
+   "attrs": {
+    "feature": "drooping branches over water",
+    "plural": "willows"
+   },
+   "relations": [
+    {
+     "to": "tree_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cedar",
+   "kind": "entity",
+   "words": [
+    "cedar"
+   ],
+   "attrs": {
+    "feature": "scented red wood",
+    "plural": "cedars"
+   },
+   "relations": [
+    {
+     "to": "tree_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "palm",
+   "kind": "entity",
+   "words": [
+    "palm"
+   ],
+   "attrs": {
+    "part": "coconuts",
+    "feature": "fronds that survive storms",
+    "plural": "palms"
+   },
+   "relations": [
+    {
+     "to": "tree_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "baobab",
+   "kind": "entity",
+   "words": [
+    "baobab"
+   ],
+   "attrs": {
+    "feature": "a trunk like a water tower",
+    "plural": "baobabs"
+   },
+   "relations": [
+    {
+     "to": "tree_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sequoia",
+   "kind": "entity",
+   "words": [
+    "sequoia"
+   ],
+   "attrs": {
+    "feature": "the biggest living thing on earth",
+    "plural": "sequoias"
+   },
+   "relations": [
+    {
+     "to": "tree_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bamboo",
+   "kind": "entity",
+   "words": [
+    "bamboo"
+   ],
+   "attrs": {
+    "feature": "grows a meter in a day",
+    "plural": "bamboos"
+   },
+   "relations": [
+    {
+     "to": "grass_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rose",
+   "kind": "entity",
+   "words": [
+    "rose"
+   ],
+   "attrs": {
+    "feature": "thorns and perfume",
+    "plural": "roses"
+   },
+   "relations": [
+    {
+     "to": "flower_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "tulip",
+   "kind": "entity",
+   "words": [
+    "tulip"
+   ],
+   "attrs": {
+    "feature": "a cup that closes at night",
+    "plural": "tulips"
+   },
+   "relations": [
+    {
+     "to": "flower_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sunflower",
+   "kind": "entity",
+   "words": [
+    "sunflower"
+   ],
+   "attrs": {
+    "feature": "turns to face the sun",
+    "plural": "sunflowers"
+   },
+   "relations": [
+    {
+     "to": "flower_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "daisy",
+   "kind": "entity",
+   "words": [
+    "daisy"
+   ],
+   "attrs": {
+    "feature": "opens at dawn",
+    "plural": "daisies"
+   },
+   "relations": [
+    {
+     "to": "flower_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lily",
+   "kind": "entity",
+   "words": [
+    "lily"
+   ],
+   "attrs": {
+    "feature": "a perfume that fills a room",
+    "plural": "lilies"
+   },
+   "relations": [
+    {
+     "to": "flower_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "orchid",
+   "kind": "entity",
+   "words": [
+    "orchid"
+   ],
+   "attrs": {
+    "feature": "tricks insects into pollinating",
+    "plural": "orchids"
+   },
+   "relations": [
+    {
+     "to": "flower_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lotus",
+   "kind": "entity",
+   "words": [
+    "lotus"
+   ],
+   "attrs": {
+    "feature": "rises clean from muddy water",
+    "plural": "lotuses"
+   },
+   "relations": [
+    {
+     "to": "flower_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "daffodil",
+   "kind": "entity",
+   "words": [
+    "daffodil"
+   ],
+   "attrs": {
+    "feature": "the first flower of spring",
+    "plural": "daffodils"
+   },
+   "relations": [
+    {
+     "to": "flower_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lavender",
+   "kind": "entity",
+   "words": [
+    "lavender"
+   ],
+   "attrs": {
+    "feature": "a scent that calms",
+    "plural": "lavenders"
+   },
+   "relations": [
+    {
+     "to": "flower_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hibiscus",
+   "kind": "entity",
+   "words": [
+    "hibiscus"
+   ],
+   "attrs": {
+    "feature": "blooms one day only",
+    "plural": "hibiscuses"
+   },
+   "relations": [
+    {
+     "to": "flower_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cactus",
+   "kind": "entity",
+   "words": [
+    "cactus"
+   ],
+   "attrs": {
+    "feature": "stores years of water inside",
+    "plural": "cacti"
+   },
+   "relations": [
+    {
+     "to": "desert plant",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "fern",
+   "kind": "entity",
+   "words": [
+    "fern"
+   ],
+   "attrs": {
+    "feature": "older than the dinosaurs",
+    "plural": "ferns"
+   },
+   "relations": [
+    {
+     "to": "plant",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "moss",
+   "kind": "entity",
+   "words": [
+    "moss"
+   ],
+   "attrs": {
+    "feature": "a forest's soft carpet",
+    "plural": "mosses"
+   },
+   "relations": [
+    {
+     "to": "plant",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ivy",
+   "kind": "entity",
+   "words": [
+    "ivy"
+   ],
+   "attrs": {
+    "feature": "climbs whole walls",
+    "plural": "ivies"
+   },
+   "relations": [
+    {
+     "to": "plant",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "wheat",
+   "kind": "entity",
+   "words": [
+    "wheat"
+   ],
+   "attrs": {
+    "role": "makes flour",
+    "feature": "the crop that feeds the world",
+    "plural": "wheats"
+   },
+   "relations": [
+    {
+     "to": "grass_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rice",
+   "kind": "entity",
+   "words": [
+    "rice"
+   ],
+   "attrs": {
+    "role": "feeds half of humanity",
+    "feature": "grows in paddies",
+    "plural": "rices"
+   },
+   "relations": [
+    {
+     "to": "grass_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "corn",
+   "kind": "entity",
+   "words": [
+    "corn"
+   ],
+   "attrs": {
+    "part": "kernels",
+    "feature": "grows waist-high in a summer",
+    "plural": "corns"
+   },
+   "relations": [
+    {
+     "to": "grass_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "dragon",
+   "kind": "entity",
+   "words": [
+    "dragon"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "breathes fire in every legend",
+    "plural": "dragons"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "unicorn",
+   "kind": "entity",
+   "words": [
+    "unicorn"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "a horn only the pure can touch",
+    "plural": "unicorns"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mermaid",
+   "kind": "entity",
+   "words": [
+    "mermaid"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "half woman, half fish",
+    "plural": "mermaids"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "phoenix",
+   "kind": "entity",
+   "words": [
+    "phoenix"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "burns to ash and is reborn",
+    "plural": "phoenixes"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "fairy",
+   "kind": "entity",
+   "words": [
+    "fairy"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "tiny wings and magic dust",
+    "plural": "fairies"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "elf",
+   "kind": "entity",
+   "words": [
+    "elf"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "immortal and mischievous in tales",
+    "plural": "elves"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "giant",
+   "kind": "entity",
+   "words": [
+    "giant"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "big enough to step over rivers",
+    "plural": "giants"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "troll",
+   "kind": "entity",
+   "words": [
+    "troll"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "turns to stone in sunlight",
+    "plural": "trolls"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "goblin",
+   "kind": "entity",
+   "words": [
+    "goblin"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "sneaky and gold-hungry",
+    "plural": "goblins"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "werewolf",
+   "kind": "entity",
+   "words": [
+    "werewolf"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "a person that turns with the full moon",
+    "plural": "werewolves"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "vampire",
+   "kind": "entity",
+   "words": [
+    "vampire"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "drinks blood, fears garlic",
+    "plural": "vampires"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ghost",
+   "kind": "entity",
+   "words": [
+    "ghost"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "a soul that lingers",
+    "plural": "ghosts"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "zombie",
+   "kind": "entity",
+   "words": [
+    "zombie"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "walks dead, wants brains in films",
+    "plural": "zombies"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "kraken",
+   "kind": "entity",
+   "words": [
+    "kraken"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "a sea monster the size of an island",
+    "plural": "krakens"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "yeti",
+   "kind": "entity",
+   "words": [
+    "yeti"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "an abominable snowman",
+    "plural": "yetis"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bigfoot",
+   "kind": "entity",
+   "words": [
+    "bigfoot"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "footprints but never a sighting",
+    "plural": "bigfoots"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "centaur",
+   "kind": "entity",
+   "words": [
+    "centaur"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "half man, half horse",
+    "plural": "centaurs"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pegasus",
+   "kind": "entity",
+   "words": [
+    "pegasus"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "a winged white horse",
+    "plural": "pegasuses"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "griffin",
+   "kind": "entity",
+   "words": [
+    "griffin"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "lion body, eagle head",
+    "plural": "griffins"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "leprechaun",
+   "kind": "entity",
+   "words": [
+    "leprechaun"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "hides gold at the rainbow's end",
+    "plural": "leprechauns"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hydra",
+   "kind": "entity",
+   "words": [
+    "hydra"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "two heads grow back for one",
+    "plural": "hydras"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sphinx",
+   "kind": "entity",
+   "words": [
+    "sphinx"
+   ],
+   "attrs": {
+    "status": "mythical",
+    "feature": "asks riddles at the crossroads",
+    "plural": "sphinxes"
+   },
+   "relations": [
+    {
+     "to": "mythical_cat",
+     "rel": "is-a"
+    }
+   ]
+  }
+ ]
+}

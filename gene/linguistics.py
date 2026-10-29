@@ -98,7 +98,7 @@ _GRAMMAR_FORMS = {
     "past": r"(?:past(?:\s+tense)?|simple past)",
     "plural": r"(?:plural|pluralized?)",
     "ing": r"(?:ing|ing form|continuous)",
-    "third": r"(?:third person|third-person)",
+    "third": r"(?:third(?:\s+person|\s+form)?|third-person)",
 }
 
 
@@ -123,6 +123,123 @@ def _grammar(text):
     return None
 
 
+# ---- sentence transforms: whole-sentence grammar asks ------------------------
+_SENT_KINDS = (
+    r"question|interrogative|negative|past(?:\s+tense)?|simple past|"
+    r"future(?:\s+tense)?|continuous|present\s+continuous|progressive|"
+    r"ing(?:\s+form)?|imperative|command|exclamation|exclamatory|"
+    r"statement|declarative|plural"
+)
+
+
+def _norm_kind(k):
+    k = (k or "").strip().lower()
+    if k.startswith("past"):
+        return "past"
+    if k.startswith("fut"):
+        return "fut"
+    if k in ("continuous", "present continuous", "progressive") or k.startswith("ing"):
+        return "cont"
+    if k in ("imperative", "command"):
+        return "imp"
+    if k in ("exclamation", "exclamatory"):
+        return "excl"
+    if k in ("statement", "declarative"):
+        return "q2s"
+    if k in ("question", "interrogative"):
+        return "ynq"
+    if k == "negative":
+        return "neg"
+    if k == "plural":
+        return "plural"
+    return None
+
+
+def _sent_grammar(text):
+    """Match a whole-sentence transform ask: 'turn she walks into a
+    question', 'question form of does she walk?', 'she walks in past
+    tense', 'make a negative: the dog barks'. Multi-word sentences only —
+    single words belong to the word-form grammar above. Returns intent
+    dict or None."""
+    t = text.strip()
+    body = t
+    kind = None
+    m = re.match(r"^(?:make|turn|change|put|convert|rewrite|say)\s+['\"“”]?(.+?)['\"“”]?\s+"
+                 r"(?:in ?to|into|to|as)\s+(?:an?\s+|the\s+)?(%s)[?.!]*\s*$"
+                 % _SENT_KINDS, t, re.I)
+    if m:
+        body, kind = m.group(1), m.group(2)
+    else:
+        m = re.match(r"^(?:make|say|form|give me)\s+(?:an?\s+)?(%s)\s*[:\-—]\s*['\"“”]?(.+?)['\"“”]?[?.!]*\s*$"
+                     % _SENT_KINDS, t, re.I)
+        if m:
+            kind, body = m.group(1), m.group(2)
+        else:
+            m = re.match(r"^(?:what(?:'s| is)\s+)?(?:the\s+)?(%s)\s+(?:form|version)\s+of\s+"
+                         r"['\"“”]?(.+?)['\"“”]?[?.!]*\s*$" % _SENT_KINDS, t, re.I)
+            if m:
+                kind, body = m.group(1), m.group(2)
+            else:
+                m = re.match(r"^['\"“”]?(.+?)['\"“”]?\s+(?:in|to)\s+(?:the\s+)?(%s)[?.!]*\s*$"
+                             % _SENT_KINDS, t, re.I)
+                if m:
+                    body, kind = m.group(1), m.group(2)
+
+            if kind is None:
+                # 'negative of she walks', 'past tense of the cat sleeps'
+                m = re.match(r"^(?:the\s+)?(%s)\s+of\s+['\"\u201c\u201d]?(.+?)['\"\u201c\u201d]?[?.!]*\s*$"
+                             % _SENT_KINDS, t, re.I)
+                if m:
+                    kind, body = m.group(1), m.group(2)
+            if kind is None:
+                # 'does she walk? as a statement', 'she walks as a question'
+                m = re.match(r"^['\"\u201c\u201d]?(.+?)['\"\u201c\u201d]?\s+as\s+(?:a|an|the)?\s*"
+                             r"(%s)[?.!]*\s*$" % _SENT_KINDS, t, re.I)
+                if m:
+                    body, kind = m.group(1), m.group(2)
+    if kind is None:
+        return None
+    k = _norm_kind(kind)
+    if not k:
+        return None
+    sent = body.strip().strip("'\"“”?.! ").strip()
+    if not sent or len(sent.split()) < 2:
+        return None                      # single words -> word grammar
+    if k == "plural":
+        return None                      # sentence plural not a task here
+    return {"intent": "sentence", "kind": k, "sentence": sent.lower()}
+
+
+def _compose(text):
+    """Match a sentence-composition ask: 'make a sentence with dog and
+    swim', 'use moon and wolf in a sentence', 'sentence with the words
+    rain and sing'. The words must be taught; the piecing-together is the
+    organism's own grammar at work."""
+    t = text.strip()
+    m = re.match(r"^(?:make|build|write|form|give me|say)\s+(?:me\s+)?"
+                 r"(?:a|an|one|another)?\s*(?:new\s+|full\s+)?sentence\s+(?:with|using|from)\s+"
+                 r"['\"“”]?(.+?)['\"“”]?[?.!]*\s*$", t, re.I)
+    if not m:
+        m = re.match(r"^(?:use|put)\s+['\"“”]?(.+?)['\"“”]?\s+in\s+(?:a|one|another)\s+"
+                     r"sentence[?.!]*\s*$", t, re.I)
+    if not m:
+        m = re.match(r"^sentence\s+with\s+(?:the\s+words\s+)?['\"“”]?(.+?)['\"“”]?[?.!]*\s*$",
+                     t, re.I)
+    if not m:
+        return None
+    body = m.group(1)
+    parts = [p.strip(" '\"") for p in re.split(r",|\band\b", body) if p.strip(" '\"")]
+    words = []
+    for p in parts:
+        w = p.lower().strip()
+        w = re.sub(r"^(?:the|a|an)\s+", "", w)
+        if w and len(w.split()) == 1:
+            words.append(w)
+    if not words:
+        return None
+    return {"intent": "compose", "words": words[:3]}
+
+
 def parse(text):
     """Parse to an intent dict. Returns {"intent": ..., ...} — the caller
     (mind.py) decides how to act. This is parsing to *meaning*, not tokens."""
@@ -139,9 +256,45 @@ def parse(text):
     a = _arith(t)
     if a:
         return a
+    sg = _sent_grammar(t)
+    if sg:
+        return sg
+    cp = _compose(t)
+    if cp:
+        return cp
     g = _grammar(t)
     if g:
         return g
+
+    m = re.match(r"^is\s+(?:a|an|the)\s+(.+?)\s+(?:a|an)\s+(.+?)\??$", low)
+    if m:
+        return {"intent": "query_isa",
+                "x": m.group(1).strip().replace(" ", "_"),
+                "y": m.group(2).strip().rstrip("?").replace(" ", "_")}
+
+    m = re.match(r"^is\s+([a-z][a-z _-]*?)\s+(?:a|an)\s+([a-z][a-z _-]*?)\??$", low)
+    if m and m.group(1).split()[0] not in ("there", "it", "that", "this",
+                                           "he", "she") \
+            and "such" not in m.group(1):
+        return {"intent": "query_isa",
+                "x": m.group(1).strip().replace(" ", "_"),
+                "y": m.group(2).strip().rstrip("?").replace(" ", "_")}
+
+    m = re.match(r"^(?:name|list|give me|tell me)\s+(?:me\s+)?(?:some |all |a few )?"
+                 r"([a-z]+?)s\b[?.!]*$", low)
+    if m:
+        return {"intent": "query_members", "cat": m.group(1)}
+    m = re.match(r"^what\s+([a-z]+?)s\s+do\s+you\s+know\??$", low)
+    if m:
+        return {"intent": "query_members", "cat": m.group(1)}
+
+    m = re.match(r"^(?:guess|name)(?:\s+the)?\s+(?:animal|creature|thing|entity|word)"
+                 r"\s*[:\-—]\s*(.+)$", low)
+    if m:
+        return {"intent": "clue_guess", "clues": m.group(1)}
+    m = re.match(r"^(.+?)\s*[:\-—]\s*what\s+(?:is|am)\s+(?:it|i)\??$", low)
+    if m:
+        return {"intent": "clue_guess", "clues": m.group(1)}
 
     m = re.match(r"^how do you know (?:about )?(.+)$", low)
     if m:

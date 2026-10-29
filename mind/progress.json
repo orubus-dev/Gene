@@ -1,272 +1,253 @@
 {
- "attempts": 39239,
- "solved": 5156,
+ "attempts": 3843138,
+ "solved": 312437,
  "by_domain": {
   "chat": {
-   "tasks": 1470,
-   "solved": 1161
+   "tasks": 41370,
+   "solved": 39292
   },
   "sequence": {
-   "tasks": 95,
-   "solved": 77
+   "tasks": 10163,
+   "solved": 6124
   },
   "list": {
-   "tasks": 100,
-   "solved": 98
+   "tasks": 10090,
+   "solved": 9727
   },
   "number": {
-   "tasks": 98,
-   "solved": 98
+   "tasks": 10004,
+   "solved": 10004
   },
   "string": {
-   "tasks": 101,
-   "solved": 101
+   "tasks": 10143,
+   "solved": 10143
   },
   "code": {
-   "tasks": 101,
-   "solved": 41
+   "tasks": 10095,
+   "solved": 5290
   },
   "grammar": {
-   "tasks": 85,
-   "solved": 85
+   "tasks": 56850,
+   "solved": 56525
+  },
+  "sentence": {
+   "tasks": 111708,
+   "solved": 111592
+  },
+  "taxonomy": {
+   "tasks": 71527,
+   "solved": 60245
   }
  },
- "cycles": 57,
+ "cycles": 108,
  "history": [
   {
-   "cycle": 28,
+   "cycle": 79,
    "rates": {
-    "string": 1.0,
-    "number": 1.0,
+    "chat": 1.0
+   }
+  },
+  {
+   "cycle": 80,
+   "rates": {
+    "grammar": 1.0,
+    "sentence": 1.0
+   }
+  },
+  {
+   "cycle": 81,
+   "rates": {
+    "chat": 0.999
+   }
+  },
+  {
+   "cycle": 82,
+   "rates": {
+    "taxonomy": 0.842,
+    "sentence": 0.999
+   }
+  },
+  {
+   "cycle": 83,
+   "rates": {
+    "chat": 1.0
+   }
+  },
+  {
+   "cycle": 84,
+   "rates": {
+    "grammar": 1.0,
+    "sentence": 0.999,
+    "taxonomy": 0.845
+   }
+  },
+  {
+   "cycle": 85,
+   "rates": {
+    "chat": 0.999
+   }
+  },
+  {
+   "cycle": 86,
+   "rates": {
     "list": 1.0,
-    "sequence": 1.0,
-    "code": 0.4
-   }
-  },
-  {
-   "cycle": 29,
-   "rates": {
-    "chat": 1.0
-   }
-  },
-  {
-   "cycle": 30,
-   "rates": {
-    "sequence": 1.0,
-    "string": 1.0,
-    "list": 0.929,
-    "code": 0.182,
-    "number": 1.0
-   }
-  },
-  {
-   "cycle": 31,
-   "rates": {
-    "chat": 1.0
-   }
-  },
-  {
-   "cycle": 32,
-   "rates": {
-    "list": 1.0,
-    "sequence": 1.0,
     "number": 1.0,
-    "string": 1.0,
-    "code": 0.545
-   }
-  },
-  {
-   "cycle": 33,
-   "rates": {
-    "chat": 1.0
-   }
-  },
-  {
-   "cycle": 34,
-   "rates": {
-    "code": 0.6,
-    "string": 1.0,
-    "number": 1.0,
-    "sequence": 1.0,
-    "list": 0.938
-   }
-  },
-  {
-   "cycle": 35,
-   "rates": {
-    "chat": 1.0
-   }
-  },
-  {
-   "cycle": 36,
-   "rates": {
-    "string": 1.0,
-    "code": 0.294,
-    "list": 1.0,
-    "sequence": 1.0,
-    "number": 1.0
-   }
-  },
-  {
-   "cycle": 37,
-   "rates": {
-    "chat": 1.0
-   }
-  },
-  {
-   "cycle": 38,
-   "rates": {
-    "number": 1.0,
-    "list": 1.0,
-    "code": 0.545,
-    "sequence": 1.0,
+    "code": 0.628,
+    "sequence": 0.651,
     "string": 1.0
    }
   },
   {
-   "cycle": 39,
+   "cycle": 87,
    "rates": {
-    "chat": 1.0
+    "sentence": 0.999,
+    "taxonomy": 0.846
    }
   },
   {
-   "cycle": 40,
+   "cycle": 88,
    "rates": {
-    "code": 0.2,
-    "string": 1.0,
-    "list": 1.0,
-    "number": 1.0,
-    "sequence": 1.0
+    "chat": 0.848
    }
   },
   {
-   "cycle": 41,
+   "cycle": 89,
    "rates": {
-    "chat": 1.0
+    "chat": 0.792
    }
   },
   {
-   "cycle": 42,
+   "cycle": 90,
    "rates": {
-    "chat": 1.0
+    "chat": 0.818
    }
   },
   {
-   "cycle": 43,
+   "cycle": 91,
    "rates": {
-    "number": 1.0,
-    "string": 1.0,
-    "sequence": 1.0,
-    "code": 0.583,
-    "list": 1.0
+    "chat": 0.75
    }
   },
   {
-   "cycle": 44,
+   "cycle": 92,
    "rates": {
-    "chat": 1.0
+    "chat": 0.831
    }
   },
   {
-   "cycle": 45,
+   "cycle": 93,
    "rates": {
-    "sequence": 0.955,
-    "list": 1.0,
-    "number": 1.0,
-    "string": 1.0,
-    "code": 0.368
+    "chat": 0.787
    }
   },
   {
-   "cycle": 46,
+   "cycle": 94,
    "rates": {
-    "chat": 0.553
+    "chat": 0.798
    }
   },
   {
-   "cycle": 47,
+   "cycle": 95,
    "rates": {
-    "grammar": 1.0,
-    "sequence": 0.81,
-    "string": 1.0,
-    "code": 0.381,
-    "list": 0.909,
-    "number": 1.0
+    "chat": 0.721
    }
   },
   {
-   "cycle": 48,
+   "cycle": 96,
    "rates": {
-    "chat": 0.567
-   }
-  },
-  {
-   "cycle": 49,
-   "rates": {
-    "list": 1.0,
-    "sequence": 0.8,
-    "code": 0.36,
-    "string": 1.0,
-    "number": 1.0,
+    "sentence": 0.999,
     "grammar": 1.0
    }
   },
   {
-   "cycle": 50,
+   "cycle": 97,
    "rates": {
-    "chat": 0.54
+    "sentence": 0.999,
+    "taxonomy": 0.839
    }
   },
   {
-   "cycle": 51,
+   "cycle": 98,
    "rates": {
     "grammar": 1.0,
+    "sentence": 0.999,
+    "taxonomy": 0.842
+   }
+  },
+  {
+   "cycle": 99,
+   "rates": {
+    "code": 0.404,
     "number": 1.0,
-    "list": 1.0,
-    "code": 0.438,
     "string": 1.0,
-    "sequence": 0.688
+    "sequence": 0.497,
+    "list": 0.96
    }
   },
   {
-   "cycle": 52,
+   "cycle": 100,
    "rates": {
-    "chat": 0.9
+    "sentence": 0.998,
+    "taxonomy": 0.85
    }
   },
   {
-   "cycle": 53,
+   "cycle": 101,
    "rates": {
-    "chat": 0.82
+    "sentence": 0.998,
+    "grammar": 1.0
    }
   },
   {
-   "cycle": 54,
+   "cycle": 102,
    "rates": {
-    "chat": 0.86
+    "sentence": 0.999,
+    "taxonomy": 0.83
    }
   },
   {
-   "cycle": 55,
+   "cycle": 103,
    "rates": {
-    "chat": 0.81
-   }
-  },
-  {
-   "cycle": 56,
-   "rates": {
-    "chat": 1.0
-   }
-  },
-  {
-   "cycle": 57,
-   "rates": {
-    "code": 0.5,
+    "taxonomy": 0.846,
     "grammar": 1.0,
-    "sequence": 0.762,
-    "string": 1.0,
+    "sentence": 0.999
+   }
+  },
+  {
+   "cycle": 104,
+   "rates": {
     "number": 1.0,
-    "list": 1.0
+    "list": 0.955,
+    "string": 1.0,
+    "sequence": 0.654,
+    "code": 0.404
+   }
+  },
+  {
+   "cycle": 105,
+   "rates": {
+    "taxonomy": 0.836,
+    "sentence": 0.999
+   }
+  },
+  {
+   "cycle": 106,
+   "rates": {
+    "sentence": 0.999,
+    "grammar": 1.0
+   }
+  },
+  {
+   "cycle": 107,
+   "rates": {
+    "sentence": 1.0,
+    "taxonomy": 0.835
+   }
+  },
+  {
+   "cycle": 108,
+   "rates": {
+    "chat": 0.792
    }
   }
  ],
@@ -298,11 +279,6 @@
     "t": 1793256317.959011
    },
    {
-    "id": "future_tense",
-    "topic": "grammar",
-    "t": 1793256317.9590116
-   },
-   {
     "id": "negation",
     "topic": "grammar",
     "t": 1793256317.9590116
@@ -328,11 +304,6 @@
     "t": 1793256317.9590127
    },
    {
-    "id": "question",
-    "topic": "grammar",
-    "t": 1793256317.9590127
-   },
-   {
     "id": "relative_clause",
     "topic": "grammar",
     "t": 1793256317.9590132
@@ -351,8 +322,23 @@
     "id": "superlative",
     "topic": "grammar",
     "t": 1793256317.959014
+   },
+   {
+    "id": "future_tense",
+    "topic": "grammar",
+    "t": 1793268612.42457
+   },
+   {
+    "id": "gerund",
+    "topic": "grammar",
+    "t": 1793268612.4245718
+   },
+   {
+    "id": "present_continuous",
+    "topic": "grammar",
+    "t": 1793268612.4245725
    }
   ],
-  "hits": 0
+  "hits": 6
  }
 }

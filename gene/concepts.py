@@ -106,13 +106,22 @@ class ConceptGraph:
             self.nodes[cid]["touched"] = time.time()
 
     def decay(self, rate=0.01):
+        """Associations fade with disuse; taught structure never fully does.
+        is-a links are the organism's backbone (the entity database spine);
+        they decay toward a floor instead of vanishing — a child never
+        forgets that a whale is a mammal just from sleeping."""
+        floor = 0.25
         for n in self.nodes.values():
             for k in list(n["links"].keys()):
+                v = n["links"][k]
+                if k.startswith("is-a"):
+                    n["links"][k] = max(floor, v - rate)
+                    continue
                 n["links"][k] -= rate
                 if n["links"][k] <= 0.0:
                     del n["links"][k]
 
-    def apoptosis(self, min_strength=0.05, max_nodes=4000):
+    def apoptosis(self, min_strength=0.05, max_nodes=20000):
         """Prune: weak, isolated, long-untouched concepts die off."""
         now = time.time()
         doomed = []

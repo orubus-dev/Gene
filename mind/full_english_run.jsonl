@@ -1,0 +1,50 @@
+{"event": "run_start", "wake_blocks": 26, "wake_tasks": 10000, "chat_rounds": 20, "chat_turns": 2400, "t": 1793262634.9}
+{"event": "wake", "block": 1, "domains": ["sentence", "grammar"], "tier": 3, "tasks": 10000, "solved": 9893, "rate": 0.989, "genes": 44, "sleep_nodes": 2157, "t": 1793262638.6}
+{"event": "chat", "round": 1, "turns": 2400, "solved": 2400, "rate": 1.0, "max_tier": 4, "escalations": 0, "t": 1793262740.7}
+{"event": "wake", "block": 2, "domains": ["taxonomy", "sentence"], "tier": 4, "tasks": 10000, "solved": 9193, "rate": 0.919, "genes": 52, "sleep_nodes": 2158, "t": 1793262748.9}
+{"event": "chat", "round": 2, "turns": 2400, "solved": 2400, "rate": 1.0, "max_tier": 4, "escalations": 0, "t": 1793262856.7}
+{"event": "wake", "block": 3, "domains": ["sentence", "taxonomy", "grammar"], "tier": 4, "tasks": 10000, "solved": 9470, "rate": 0.947, "genes": 55, "sleep_nodes": 2158, "t": 1793262867.7}
+{"event": "chat", "round": 3, "turns": 2400, "solved": 2398, "rate": 0.999, "max_tier": 4, "escalations": 2, "t": 1793262972.4}
+{"event": "wake", "block": 4, "domains": ["number", "string", "list", "sequence", "code"], "tier": 4, "tasks": 10000, "solved": 8790, "rate": 0.879, "genes": 67, "sleep_nodes": 2158, "t": 1793262976.7}
+{"event": "chat", "round": 4, "turns": 2400, "solved": 2400, "rate": 1.0, "max_tier": 4, "escalations": 0, "t": 1793263083.2}
+{"event": "wake", "block": 5, "domains": ["sentence", "taxonomy"], "tier": 4, "tasks": 10000, "solved": 9229, "rate": 0.923, "genes": 68, "evolve_gens": 4, "pool": 46, "sleep_nodes": 2158, "t": 1793263090.9}
+{"event": "chat", "round": 5, "turns": 2400, "solved": 2399, "rate": 1.0, "max_tier": 4, "escalations": 1, "t": 1793263195.0}
+{"event": "wake", "block": 6, "domains": ["sentence", "grammar"], "tier": 4, "tasks": 10000, "solved": 9998, "rate": 1.0, "genes": 53, "sleep_nodes": 2156, "t": 1793263205.5}
+{"event": "chat", "round": 6, "turns": 2400, "solved": 2397, "rate": 0.999, "max_tier": 4, "escalations": 3, "t": 1793263310.9}
+{"event": "wake", "block": 7, "domains": ["taxonomy", "sentence"], "tier": 4, "tasks": 10000, "solved": 9224, "rate": 0.922, "genes": 53, "sleep_nodes": 2156, "t": 1793263321.1}
+{"event": "chat", "round": 7, "turns": 2400, "solved": 2397, "rate": 0.999, "max_tier": 4, "escalations": 3, "t": 1793263427.8}
+{"event": "wake", "block": 8, "domains": ["sentence", "taxonomy", "grammar"], "tier": 4, "tasks": 10000, "solved": 9504, "rate": 0.95, "genes": 53, "sleep_nodes": 2156, "t": 1793263436.3}
+{"event": "chat", "round": 8, "turns": 2400, "solved": 2398, "rate": 0.999, "max_tier": 4, "escalations": 2, "t": 1793263544.5}
+{"event": "wake", "block": 9, "domains": ["number", "string", "list", "sequence", "code"], "tier": 4, "tasks": 10000, "solved": 7753, "rate": 0.775, "genes": 71, "sleep_nodes": 2156, "t": 1793263551.3}
+{"event": "chat", "round": 9, "turns": 2400, "solved": 2400, "rate": 1.0, "max_tier": 4, "escalations": 0, "t": 1793263661.7}
+{"event": "wake", "block": 10, "domains": ["sentence", "taxonomy"], "tier": 4, "tasks": 10000, "solved": 9215, "rate": 0.921, "genes": 71, "evolve_gens": 4, "pool": 46, "sleep_nodes": 2156, "t": 1793263674.3}
+{"event": "chat", "round": 10, "turns": 2400, "solved": 2399, "rate": 1.0, "max_tier": 4, "escalations": 1, "t": 1793263785.0}
+{"event": "wake", "block": 11, "domains": ["sentence", "grammar"], "tier": 4, "tasks": 10000, "solved": 9998, "rate": 1.0, "genes": 58, "sleep_nodes": 2156, "t": 1793263789.8}
+{"event": "chat", "round": 11, "turns": 2400, "solved": 2397, "rate": 0.999, "max_tier": 4, "escalations": 3, "t": 1793263898.3}
+{"event": "wake", "block": 12, "domains": ["taxonomy", "sentence"], "tier": 4, "tasks": 10000, "solved": 9222, "rate": 0.922, "genes": 60, "sleep_nodes": 2156, "t": 1793263906.6}
+{"event": "chat", "round": 12, "turns": 2400, "solved": 2400, "rate": 1.0, "max_tier": 4, "escalations": 0, "t": 1793264023.4}
+{"event": "wake", "block": 13, "domains": ["sentence", "taxonomy", "grammar"], "tier": 4, "tasks": 10000, "solved": 9474, "rate": 0.947, "genes": 60, "sleep_nodes": 2156, "t": 1793264030.2}
+{"event": "chat", "round": 13, "turns": 2400, "solved": 2398, "rate": 0.999, "max_tier": 4, "escalations": 2, "t": 1793264138.3}
+{"event": "wake", "block": 14, "domains": ["number", "string", "list", "sequence", "code"], "tier": 4, "tasks": 10000, "solved": 8562, "rate": 0.856, "genes": 72, "sleep_nodes": 2145, "t": 1793264146.6}
+{"event": "wake", "block": 15, "domains": ["sentence", "taxonomy"], "tier": 4, "tasks": 10000, "solved": 9227, "rate": 0.923, "genes": 72, "evolve_gens": 4, "pool": 48, "sleep_nodes": 2145, "t": 1793264351.9}
+{"event": "chat", "round": 14, "turns": 1800, "solved": 1526, "rate": 0.848, "max_tier": 4, "escalations": 206, "t": 1793265516.9}
+{"event": "chat", "round": 14, "turns": 900, "solved": 713, "rate": 0.792, "max_tier": 4, "escalations": 141, "t": 1793265975.0}
+{"event": "chat", "round": 15, "turns": 900, "solved": 736, "rate": 0.818, "max_tier": 4, "escalations": 123, "t": 1793266241.4}
+{"event": "chat", "round": 16, "turns": 900, "solved": 675, "rate": 0.75, "max_tier": 4, "escalations": 169, "t": 1793266815.2}
+{"event": "chat", "round": 17, "turns": 900, "solved": 748, "rate": 0.831, "max_tier": 4, "escalations": 114, "t": 1793267083.0}
+{"event": "chat", "round": 18, "turns": 900, "solved": 708, "rate": 0.787, "max_tier": 4, "escalations": 144, "t": 1793267422.3}
+{"event": "chat", "round": 19, "turns": 900, "solved": 718, "rate": 0.798, "max_tier": 4, "escalations": 137, "t": 1793267738.4}
+{"event": "chat", "round": 20, "turns": 900, "solved": 649, "rate": 0.721, "max_tier": 4, "escalations": 189, "t": 1793268185.0}
+{"event": "wake", "block": 16, "domains": ["sentence", "grammar"], "tier": 4, "tasks": 10000, "solved": 9996, "rate": 1.0, "genes": 53, "sleep_nodes": 2136, "t": 1793268190.5}
+{"event": "wake", "block": 17, "domains": ["taxonomy", "sentence"], "tier": 4, "tasks": 10000, "solved": 9189, "rate": 0.919, "genes": 53, "sleep_nodes": 2136, "t": 1793268198.7}
+{"event": "wake", "block": 18, "domains": ["sentence", "taxonomy", "grammar"], "tier": 4, "tasks": 10000, "solved": 9479, "rate": 0.948, "genes": 53, "sleep_nodes": 2136, "t": 1793268205.4}
+{"event": "wake", "block": 19, "domains": ["number", "string", "list", "sequence", "code"], "tier": 4, "tasks": 10000, "solved": 7748, "rate": 0.775, "genes": 71, "sleep_nodes": 2136, "t": 1793268215.1}
+{"event": "wake", "block": 20, "domains": ["sentence", "taxonomy"], "tier": 4, "tasks": 10000, "solved": 9235, "rate": 0.923, "genes": 71, "evolve_gens": 4, "pool": 44, "sleep_nodes": 2135, "t": 1793268223.5}
+{"event": "wake", "block": 21, "domains": ["sentence", "grammar"], "tier": 4, "tasks": 10000, "solved": 9990, "rate": 0.999, "genes": 53, "sleep_nodes": 2135, "t": 1793268231.1}
+{"event": "wake", "block": 22, "domains": ["taxonomy", "sentence"], "tier": 4, "tasks": 10000, "solved": 9157, "rate": 0.916, "genes": 53, "sleep_nodes": 2107, "t": 1793268241.9}
+{"event": "wake", "block": 23, "domains": ["sentence", "taxonomy", "grammar"], "tier": 4, "tasks": 10000, "solved": 9483, "rate": 0.948, "genes": 53, "sleep_nodes": 2107, "t": 1793268250.9}
+{"event": "wake", "block": 24, "domains": ["number", "string", "list", "sequence", "code"], "tier": 4, "tasks": 10000, "solved": 8020, "rate": 0.802, "genes": 68, "sleep_nodes": 2107, "t": 1793268261.2}
+{"event": "wake", "block": 25, "domains": ["sentence", "taxonomy"], "tier": 4, "tasks": 10000, "solved": 9156, "rate": 0.916, "genes": 68, "evolve_gens": 4, "pool": 49, "sleep_nodes": 2107, "t": 1793268272.3}
+{"event": "wake", "block": 26, "domains": ["sentence", "grammar"], "tier": 4, "tasks": 10000, "solved": 9995, "rate": 1.0, "genes": 56, "sleep_nodes": 2107, "t": 1793268278.2}
+{"event": "wake", "block": 27, "domains": ["taxonomy", "sentence"], "tier": 4, "tasks": 10000, "solved": 9171, "rate": 0.917, "genes": 58, "sleep_nodes": 2117, "t": 1793268605.8}
+{"event": "chat", "round": 21, "turns": 600, "solved": 475, "rate": 0.792, "max_tier": 4, "escalations": 94, "t": 1793268814.2}

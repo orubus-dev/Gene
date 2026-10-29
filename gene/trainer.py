@@ -19,7 +19,7 @@ import json
 import os
 import random
 
-from . import dsl, genome, hdc
+from . import dsl, genome, hdc, sent_world, taxonomy
 from .reflex import stimulus_key
 
 
@@ -141,6 +141,12 @@ def gen_grammar_task(rng, tier=1):
             "prompt": "%s of %s" % (form, word)}
 
 
+def gen_taxonomy_task(rng, tier=1):
+    """Entity-database world: parent-questions and clue-guesses over the
+    taught is-a spine (see taxonomy.py). Expected = lesson pack truth."""
+    return taxonomy.gen_taxonomy_task(rng, tier)
+
+
 GENERATORS = {
     "number": gen_number_task,
     "string": gen_string_task,
@@ -148,6 +154,8 @@ GENERATORS = {
     "sequence": gen_sequence_task,
     "code": gen_code_task,
     "grammar": gen_grammar_task,
+    "sentence": sent_world.gen_sentence_task,
+    "taxonomy": gen_taxonomy_task,
 }
 
 
@@ -285,6 +293,8 @@ CANDIDATE_FN = {
     "list": list_pipeline_candidates,
     "code": code_pipeline_candidates,
     "grammar": grammar_pipeline_candidates,
+    "sentence": sent_world.sentence_pipeline_candidates,
+    "taxonomy": taxonomy.taxonomy_pipeline_candidates,
 }
 
 

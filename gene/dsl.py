@@ -270,6 +270,298 @@ def _grammar_lookup(x, args):
     return attrs[form]
 
 
+# ---- sentence motor cortex ---------------------------------------------------
+# A speaker's hands: split a sentence into words, move words around, put a
+# word in a slot. Pure manipulation — WHERE a word goes and WHAT word it is
+# must be discovered or remembered, never coded here.
+# The organism's graph is wired in (set_word_graph) so memory ops can read
+# the tables it was taught: verb forms, aux agreement, contractions.
+
+_GRAPH = None
+_FORM_IDX = None          # lazy reverse index: inflected -> base, per form
+_DETERMINERS = ("a", "an", "the")
+
+
+def set_word_graph(graph):
+    """Wire sentence memory ops to the organism's concept graph."""
+    global _GRAPH, _FORM_IDX
+    _GRAPH = graph
+    _FORM_IDX = None
+
+
+def _is_vowel(c):
+    return c in "aeiou"
+
+
+def _cvc(w):
+    """consonant-vowel-consonant tail (no doubling op uses this — kept for
+    future orthography work; doubling is stress-dependent and stays a
+    memory matter, the way children learn 'stopped' by correction)."""
+    if len(w) < 3:
+        return False
+    a, b, c = w[-3], w[-2], w[-1]
+    return (not _is_vowel(a)) and _is_vowel(b) and (not _is_vowel(c)) and c not in "wxy"
+
+
+def reg_past(w):
+    """Regular English past-tense orthography (an ability, like pronunciation).
+    Covers +ed, e->d, consonant+y->ied. Irregulars live in memory only."""
+    if w.endswith("e"):
+        return w + "d"
+    if len(w) >= 3 and w.endswith("y") and not _is_vowel(w[-2]):
+        return w[:-1] + "ied"
+    return w + "ed"
+
+
+def reg_ing(w):
+    if w.endswith("ie"):
+        return w[:-2] + "ying"
+    if w.endswith("ee"):
+        return w + "ing"
+    if w.endswith("e"):
+        return w[:-1] + "ing"
+    return w + "ing"
+
+
+def reg_third(w):
+    if w.endswith(("s", "x", "z", "ch", "sh")):
+        return w + "es"
+    if len(w) >= 3 and w.endswith("y") and not _is_vowel(w[-2]):
+        return w[:-1] + "ies"
+    return w + "s"
+
+
+def reg_base(w):
+    """Best-effort de-inflection of a regular form (walks->walk, flies->fly,
+    cities->city, wolves->wolf, types->type). Tries memory first; falls back
+    to orthography. Returns the likeliest base."""
+    cands = []
+    if w.endswith("ies") and len(w) > 3:
+        cands.append(w[:-3] + "y")
+    if w.endswith("oes") and len(w) > 3:
+        cands.append(w[:-2])
+    if w.endswith(("ches", "shes", "xes", "zes", "sses")):
+        cands.append(w[:-2])
+    if w.endswith("ves") and len(w) > 3:
+        cands.append(w[:-3] + "f")
+    if w.endswith("s") and not w.endswith("ss") and len(w) > 2:
+        cands.append(w[:-1])
+    if w.endswith("es") and len(w) > 2:
+        cands.append(w[:-2])
+    cands.append(w)
+    if _WORD_RESOLVER:
+        for c in cands:
+            if _WORD_RESOLVER(c):
+                return c
+    return cands[0]
+
+
+def _form_index():
+    """Reverse index over the organism's taught forms: walked->walk, goes->go.
+    Built lazily from the graph; rebuilt if the graph is re-wired."""
+    global _FORM_IDX
+    if _FORM_IDX is not None:
+        return _FORM_IDX
+    idx = {}
+    for f in ("past", "ing", "third", "plural"):
+        idx[f] = {}
+    if _GRAPH is not None:
+        for n in _GRAPH.nodes.values():
+            a = n.get("attrs", {})
+            words = n.get("words") or []
+            base = words[0] if words else n["id"].replace("_", " ")
+            for f in ("past", "ing", "third", "plural"):
+                v = a.get(f)
+                if isinstance(v, str) and v and v != base:
+                    idx[f][v.lower()] = base
+    _FORM_IDX = idx
+    return _FORM_IDX
+
+
+def _verb_form(w, form):
+    """The organism's morphological competence: memory first (taught forms,
+    including ALL irregulars), regular orthography otherwise. A native
+    speaker's regular-rule productivity: never heard 'walk'? You can still
+    say 'walked'. Irregular 'went' must have been learned."""
+    w = str(w).lower().strip()
+    if not w:
+        raise ValueError("empty word")
+    attrs = _WORD_RESOLVER(w) if _WORD_RESOLVER else None
+    if isinstance(attrs, dict) and attrs.get(form):
+        return attrs[form]
+    idx = _form_index()
+    base = None
+    for f in ("third", "past", "ing", "plural"):
+        if w in idx[f]:
+            base = idx[f][w]
+            break
+    if base is None:
+        if attrs:            # bound word that IS a base form
+            base = w
+        else:
+            base = reg_base(w) if w.endswith("s") else w
+    if form == "base":
+        return base
+    battrs = _WORD_RESOLVER(base) if _WORD_RESOLVER else None
+    if isinstance(battrs, dict) and battrs.get(form):
+        return battrs[form]
+    return {"past": reg_past, "ing": reg_ing,
+            "third": reg_third, "base": lambda x: x}[form](base)
+
+
+def _as_word_list(x):
+    ws = list(_seq(x))
+    if not ws:
+        raise ValueError("empty sentence")
+    return [str(w) for w in ws]
+
+
+@op("verb_last_to")
+def _verb_last_to(x, args):
+    """Replace the last word with its `form` (base/past/ing/third) — memory
+    first, regular rule otherwise. Operates on a word list."""
+    ws = _as_word_list(x)
+    ws[-1] = _verb_form(ws[-1], args.get("form", "past"))
+    return ws
+
+
+@op("reg_past")
+def _reg_past(x, args):
+    ws = _as_word_list(x)
+    ws[-1] = reg_past(ws[-1])
+    return ws
+
+
+@op("reg_ing")
+def _reg_ing(x, args):
+    ws = _as_word_list(x)
+    ws[-1] = reg_ing(ws[-1])
+    return ws
+
+
+@op("reg_third")
+def _reg_third(x, args):
+    ws = _as_word_list(x)
+    ws[-1] = reg_third(ws[-1])
+    return ws
+
+
+@op("aux_insert")
+def _aux_insert(x, args):
+    """Insert the agreeing auxiliary for the sentence's subject at `pos`.
+    Reads the taught aux tables (aux_do/aux_be/aux_will) from memory.
+    Subject lookup: pronouns direct; noun heads via determiner skip and the
+    plural-marker rule — all taught data, never coded facts."""
+    fam = args.get("family", "do")
+    pos = int(args.get("pos", 0))
+    ws = _as_word_list(x)
+    node = _GRAPH.get("aux_%s" % fam) if _GRAPH else None
+    if not node:
+        raise LookupError("aux table %r not taught" % fam)
+    a = node.get("attrs", {})
+    head = ""
+    for w in ws:
+        lw = w.lower().strip("'\".,?!")
+        if lw in _DETERMINERS:
+            continue
+        head = lw
+        break
+    if head in a:
+        aux = a[head]
+    else:
+        key = "plural" if head.endswith("s") and not head.endswith("ss") else "singular"
+        aux = a.get(key)
+    if not aux:
+        raise LookupError("no agreement for subject %r in %s" % (head, fam))
+    ws.insert(pos, aux)
+    return ws
+
+
+@op("verb_agree")
+def _verb_agree(x, args):
+    """Give the final verb the form that AGREES with the subject, read from
+    the taught aux_do table (he->does -> third form; they/do -> base form).
+    The same agreement physics aux_insert uses — no facts, just the table."""
+    ws = _as_word_list(x)
+    head = ""
+    for w in ws:
+        lw = w.lower().strip("'\".,?!")
+        if lw in _DETERMINERS:
+            continue
+        head = lw
+        break
+    node = _GRAPH.get("aux_do") if _GRAPH else None
+    a = node.get("attrs", {}) if node else {}
+    aux = a.get(head)
+    if not aux:
+        key = "plural" if head.endswith("s") and not head.endswith("ss") \
+            else "singular"
+        aux = a.get(key)
+    form = "base" if aux in ("do", "did", "will") else "third"
+    ws[-1] = _verb_form(ws[-1], form)
+    return ws
+
+
+@op("contract_not")
+def _contract_not(x, args):
+    """Merge an adjacent AUX + 'not' using the taught contraction table
+    (do not -> don't). Un-taught merges fail honestly."""
+    ws = _as_word_list(x)
+    node = _GRAPH.get("contractions") if _GRAPH else None
+    if not node:
+        raise LookupError("contraction table not taught")
+    table = node.get("attrs", {})
+    out = []
+    i = 0
+    while i < len(ws):
+        if i + 1 < len(ws):
+            key = "%s %s" % (ws[i].lower(), ws[i + 1].lower())
+            if key in table:
+                out.append(table[key])
+                i += 2
+                continue
+        out.append(ws[i])
+        i += 1
+    return out
+
+
+@op("swap_first_two")
+def _swap_first_two(x, args):
+    """Swap the first two words — the movement a speaker does for inversion."""
+    ws = _as_word_list(x)
+    if len(ws) < 2:
+        raise ValueError("swap needs two words")
+    ws[0], ws[1] = ws[1], ws[0]
+    return ws
+
+
+@op("drop_first")
+def _drop_first(x, args):
+    ws = _as_word_list(x)
+    ws.pop(0)
+    return ws
+
+
+@op("insert_at")
+def _insert_at(x, args):
+    """Put a literal word at a position — the hands, not the words."""
+    ws = _as_word_list(x)
+    ws.insert(int(args.get("pos", 0)), str(args.get("with", "")))
+    return ws
+
+
+@op("strip_punct")
+def _strip_punct(x, args):
+    if not isinstance(x, str):
+        raise TypeError("strip_punct needs a string")
+    return x.strip().rstrip("?!.,;:'\"")
+
+
+@op("join_words")
+def _join_words(x, args):
+    return " ".join(str(i) for i in _scalar_list(x))
+
+
 def execute_pipeline(steps, x):
     """Run a pipeline. Any failure raises — the caller treats it as a wrong answer."""
     cur = x

@@ -170,19 +170,22 @@ def hdc_cluster(graph, word, thresh=0.05, topn=3):
 
 def analyze_unknown(mind, word):
     """Full ingenuity pass. Returns (verdict, reply) where verdict in
-    {near_match, compound, morphology, novel}."""
+    {near_match, compound, morphology, novel}. Compound decomposition comes
+    FIRST: 'seacow' is sea+cow (both taught) — that beats a 2-letter typo
+    guess like meadow, the way a person reads the word apart before saying
+    'did you mean...?'."""
     g = mind.graph
     ev = decompose(word, g)
-    # --- did you mean...? (near match beats everything) ---
-    if ev["near"] and ev["near"][0][1] <= 2 and len(ev["near"][0][0]) >= 3:
-        target = ev["near"][0][0]
-        if mind.graph.lookup_word(target) or mind.graph.get(target):
-            return "near_match", ev, target
     # --- compound: both halves known ---
     if len(ev["parts"]) >= 2:
         halves = [p for p in ev["parts"] if mind.graph.lookup_word(p) or mind.graph.get(p)]
         if len(halves) >= 2:
             return "compound", ev, halves
+    # --- did you mean...? (tight edit distance to a taught word) ---
+    if ev["near"] and ev["near"][0][1] <= 2 and len(ev["near"][0][0]) >= 3:
+        target = ev["near"][0][0]
+        if mind.graph.lookup_word(target) or mind.graph.get(target):
+            return "near_match", ev, target
     # --- morphology signal + category cross-check ---
     members = category_members(g, "animal")
     cluster = hdc_cluster(g, word)
@@ -195,7 +198,17 @@ def _attrs_of(graph, cid):
 
 
 def _name(graph, cid):
-    return cid.replace("_", " ")
+    """Say it the way it was taught: adj_quick speaks as 'quick' — never
+    the internal id prefix."""
+    n = graph.get(cid)
+    if n:
+        ws = [str(w) for w in (n.get("words") or [])]
+        key = str(cid).lower().replace(" ", "_")
+        if key in [w.lower().replace(" ", "_") for w in ws]:
+            return str(cid).replace("_", " ")
+        if ws:
+            return ws[0]
+    return str(cid).replace("_", " ")
 
 
 def existence_reply(mind, word, rng=None):
@@ -224,14 +237,9 @@ def existence_reply(mind, word, rng=None):
 
     if verdict == "near_match":
         known = _name(g, payload)
-        extra = _find_answer_text(mind, payload)
-        dist = ev["near"][0][1]
-        away = "one letter" if dist == 1 else ("%d letters" % dist)
-        body = "Hmm — don't know '%s', but it's %s away from '%s', which I do know." % (w, away, known)
-        if extra:
-            body += " %s." % extra[0].lower() + extra[1:] if len(extra) > 1 else extra
-        body += " Same thing, or something new?"
-        return body
+        # a person says "did you mean X?" — short, honest, no machinery
+        return ("Never heard of '%s' — the closest thing in my world is '%s'. "
+                "Same thing, or something new?" % (w, known))
 
     if verdict == "compound":
         a, b = payload[0], payload[1]
@@ -289,13 +297,16 @@ def existence_reply(mind, word, rng=None):
 
 
 def _fact_snippet(cid, attrs):
+    """One taught fact, said as a person would — the VALUE, never the
+    attr key name."""
     if not attrs:
         return None
-    k = sorted(attrs.keys())[0]
+    pref = ("sound", "habitat", "diet", "feature", "trait", "role", "def")
+    k = next((p for p in pref if p in attrs), sorted(attrs.keys())[0])
     v = attrs[k]
-    if v == "yes":
-        return "the %s is %s" % (cid.replace("_", " "), k)
-    return "%s: %s %s" % (cid.replace("_", " "), k, v)
+    if k == "def":
+        return "%s is %s" % (cid.replace("_", " "), v)
+    return "%s: %s" % (cid.replace("_", " "), v)
 
 
 def _forced_theory(mind, ev, cluster):
@@ -348,14 +359,16 @@ def transitive_synthesis(graph, rng):
             if not t or not t["attrs"]:
                 continue
             k = sorted(t["attrs"].keys())[rng.randrange(len(t["attrs"]))]
+            if k in ("def", "status", "plural", "example"):
+                continue          # definitions are shared by kind, not properties
             if k in node["attrs"] or k in " ".join(node["attrs"].keys()):
                 continue
             v = t["attrs"][k]
-            return ("%s is a %s, and %s is %s — so %s is probably %s too. "
+            prop = k if v == "yes" else v
+            return ("%s is %s, and %s has that %s (%s) — so %s probably has it too. "
                     "Worked that out myself." % (
                         _name(graph, nid), _name(graph, target),
-                        _name(graph, target), ("%s %s" % (k, v) if v != "yes" else k),
-                        _name(graph, nid), ("%s %s" % (k, v) if v != "yes" else k)),
+                        _name(graph, target), k, prop, _name(graph, nid)),
                     [nid, target])
     return None, None
 

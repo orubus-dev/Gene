@@ -10,8 +10,8 @@ import random
 import time
 
 from . import concepts, conversation, endocrine, evolution, hdc, immune, knowledge
-from . import linguistics, memory, reflex, trainer, world
-from . import development, dsl, ingenuity
+from . import linguistics, memory, reflex, sent_world, trainer, world
+from . import development, dsl, ingenuity, taxonomy
 from . import genome as G
 
 
@@ -37,6 +37,8 @@ class Mind:
         # grammar memory: word-form lookups read ONLY the organism's own graph
         dsl.set_word_resolver(
             lambda w: (self.graph.lookup_word(w) or {}).get("attrs", {}))
+        # sentence/taxonomy motor ops read the graph too (same law)
+        dsl.set_word_graph(self.graph)
         self.convo = conversation.Conversation(self)
         self.progress = self._load("progress.json", {"attempts": 0, "solved": 0,
                                                      "by_domain": {}, "cycles": 0,
@@ -84,11 +86,16 @@ class Mind:
         self._save("meta.json", self.meta)
 
     # ---------- life cycles ------------------------------------------------------
-    def train(self, budget=40, tier=1):
+    def train(self, budget=40, tier=1, domains=None):
         """One waking learning session: try tasks, only pass/fail feedback."""
         report = {"tasks": 0, "solved": 0, "new_genes": 0, "by_domain": {}}
         new_genes = []
-        domains = list(trainer.GENERATORS.keys())
+        seen_steps = set()
+        for g in self.genes:
+            seen_steps.add(json.dumps(g.get("steps"), sort_keys=True))
+        all_domains = list(trainer.GENERATORS.keys())
+        domains = [d for d in (domains or all_domains) if d in trainer.GENERATORS] \
+            or all_domains
         for i in range(budget):
             dom = self.rng.choice(domains)
             task = trainer.GENERATORS[dom](self.rng, tier)
@@ -110,9 +117,12 @@ class Mind:
                 report["by_domain"][dom]["solved"] += 1
                 self.progress["solved"] += 1
                 if outcome["gene"]:
-                    self.genes.append(outcome["gene"])
-                    new_genes.append(outcome["gene"])
-                    self.graph.relate(dom, "skill", strength=0.1)
+                    k = json.dumps(outcome["gene"].get("steps"), sort_keys=True)
+                    if k not in seen_steps:      # pool stays lean DURING the block
+                        seen_steps.add(k)
+                        self.genes.append(outcome["gene"])
+                        new_genes.append(outcome["gene"])
+                        self.graph.relate(dom, "skill", strength=0.1)
             self.graph.hebbian(outcome["coactive"], amount=0.05)
         self.progress["cycles"] += 1
         self._snapshot_history(report)
@@ -342,6 +352,21 @@ class Mind:
 
         if intent == "query":
             subj_id = i["subject"]
+            # entity database first: full natural description when taught
+            from . import taxonomy as TX
+            node = self.graph.get(subj_id) or \
+                self.graph.lookup_word(subj_id.replace("_", " "))
+            if node:
+                d = TX.describe(self.graph, node["id"], max_sents=3)
+                gate_ok = node.get("kind") not in ("meta", "domain", "grammar_type",
+                                                   "verb_form", "noun_form",
+                                                   "adj_form", "organism") \
+                    and node["id"] not in ("gene", "self", "user", "teacher",
+                                           "knowledge", "skill", "orubus")
+                if d and gate_ok:
+                    self.convo.state.d["last_answer"] = d[:200]
+                    self.convo.state.save()
+                    return d
             ans = self._find_answer(subj_id)
             if not ans:
                 # word-bound lookup ("zorpus" taught via words[], not id)
@@ -410,6 +435,21 @@ class Mind:
 
         if intent == "grammar":
             return self._handle_grammar(i)
+
+        if intent == "sentence":
+            return self._handle_sentence(i)
+
+        if intent == "compose":
+            return self._handle_compose(i)
+
+        if intent == "query_isa":
+            return self._handle_isa(i)
+
+        if intent == "query_members":
+            return self._handle_members(i)
+
+        if intent == "clue_guess":
+            return self._handle_clues(i)
 
         if intent == "sequence":
             seq = i["args"]
@@ -515,6 +555,15 @@ class Mind:
                     break
             if truth:
                 break
+        if truth is None:
+            # the env's tables never saw this word — the organism's own
+            # taught memory is the authority here (five ways: inherit)
+            attrs = dsl._WORD_RESOLVER(word) if dsl._WORD_RESOLVER else None
+            if isinstance(attrs, dict) and attrs.get(form):
+                return self.rng.choice([
+                    "%s, %s form: %s." % (word, form, attrs[form]),
+                    "'%s' in %s form: %s." % (word, form, attrs[form]),
+                ])
         task = {"domain": "grammar", "input": word, "form": form,
                 "expected": truth or "", "prompt": "%s of %s" % (form, word)}
         outcome = trainer.train_task(task, self.genes, self.reflexes,
@@ -544,6 +593,169 @@ class Mind:
             "Not sure how '%s' changes there — tell me and I'll remember." % word,
             "Haven't learned that word's %s form yet. What is it?" % form,
         ])
+
+    # ---------- sentence world + entity database (live asks) --------------------
+    def _handle_compose(self, i):
+        """'Piece sentences together': build a grammatical sentence from the
+        given words using ONLY the organism's own taught tables — verb forms
+        (agreement via its form memory), determiners, sounds for flavor.
+        Unknown words are honest misses, never invented."""
+        from . import taxonomy as TX
+        words = i.get("words") or []
+        if not words:
+            return "Give me a word or two and I'll build a sentence with them."
+        nodes = []
+        for w in words:
+            key = w.replace(" ", "_")
+            n = self.graph.get(key) or self.graph.lookup_word(w)
+            if not n:
+                self.knowledge.inquire("compose word: %s" % w)
+                return self.rng.choice([
+                    "I don't have \"%s\" in my world yet — teach me and I'll use it." % w,
+                    "Hm, \"%s\" is a new word to me. What is it?" % w,
+                ])
+            nodes.append((w, n))
+        # split into verb-ish and noun-ish by taught kind
+        verbs, nouns = [], []
+        for w, n in nodes:
+            if n.get("kind") == "verb_form" or str(n["id"]).startswith("verb_"):
+                verbs.append(w)
+            else:
+                nouns.append(w)
+        a = self.graph.get("aux_be") and (self.graph.get("aux_be").get("attrs") or {})
+        det = "an" if nouns and nouns[0][0] in "aeiou" else "the"
+        subj = nouns[0] if nouns else self.rng.choice(["i", "she", "we"])
+        sents = []
+        if verbs:
+            v = verbs[0]
+            third = dsl._verb_form(v, "third")
+            s = "%s %s %s" % (det, subj, third) if subj not in ("i",) \
+                else "I %s" % dsl._verb_form(v, "base")
+            sents.append(s.capitalize() + ".")
+        elif nouns:
+            # no verb given: say what the noun IS + does, from its own graph
+            first = nouns[0]
+            node = nodes[0][1]
+            snd = node.get("attrs", {}).get("sound")
+            if snd:
+                head = snd.split()[0]
+                sents.append("The %s %s." % (first, head))
+            else:
+                parent = ""
+                ch = TX.ancestors(self.graph, node["id"])
+                if ch:
+                    parent = " is a %s" % TX._name(self.graph, ch[0])
+                sents.append(("A %s%s." % (first, parent)) if parent
+                             else "The %s is here." % first)
+        # leftover nouns get their own clause (piecing, not dumping)
+        for extra in nouns[1:]:
+            en = dict(nodes)[extra]
+            snd = en.get("attrs", {}).get("sound")
+            if snd:
+                sents.append("The %s %s." % (extra, snd.split()[0]))
+            else:
+                sents.append("The %s %s." % (extra, self.rng.choice(
+                    ["waits", "watches", "stays close", "listens"])))
+        out = " ".join(s.strip() for s in sents)
+        out = out[0].upper() + out[1:]
+        if not out.endswith((".", "!", "?")):
+            out += "."
+        return out
+    def _handle_sentence(self, i):
+        """Transform asks ('turn she walks into a question'). The organism
+        answers from its own learned pipelines; the environment only checks
+        pass/fail — same law as every other domain."""
+        kind, sent = i["kind"], i["sentence"]
+        expected = sent_world.expected_transform(kind, sent)
+        task = {"domain": "sentence", "kind": kind, "input": sent,
+                "expected": expected, "prompt": "%s: %s" % (kind, sent)}
+        outcome = trainer.train_task(task, self.genes, self.reflexes,
+                                     self.predictor, self.hormones, self.rng,
+                                     now=time.time())
+        if outcome["solved"] and outcome.get("winner"):
+            if outcome["gene"] and not any(g["steps"] == outcome["gene"]["steps"]
+                                           for g in self.genes):
+                self.genes.append(outcome["gene"])
+            self.progress["solved"] += 1
+            self.graph.hebbian(outcome["coactive"], 0.1)
+            result = expected
+            try:
+                result = dsl.execute_pipeline(outcome["winner"], sent)
+            except Exception:
+                pass
+            self.episodes.record("task", {"domain": "sentence",
+                                          "prompt": task["prompt"], "solved": True,
+                                          "tries": len(outcome["attempts"]),
+                                          "coactive": outcome["coactive"]})
+            # the transformed sentence IS the answer; anything added must
+            # come BEFORE it so the reply still ends with the sentence
+            if self.rng.random() < 0.3:
+                return self.rng.choice([
+                    "You'd say: %s" % result,
+                    "That's %s" % result,
+                ])
+            return result
+        self.knowledge.inquire("sentence transform: %s of '%s'" % (kind, sent))
+        return self.rng.choice([
+            "I haven't nailed that one yet — give me a few like it and I'll get there.",
+            "Still learning that construction. Show me one more example?",
+        ])
+
+    def _handle_isa(self, i):
+        from . import taxonomy as TX
+        x, y = i["x"], i["y"]
+        xw = TX._name(self.graph, x.replace(" ", "_"))
+        yw = TX._name(self.graph, y.replace(" ", "_"))
+        an = lambda w: "an" if w and w[0] in "aeiou" else "a"
+        if TX.is_a(self.graph, x, y):
+            chain = TX.ancestors(self.graph, x)
+            extra = ""
+            if chain and chain[0] != y:
+                extra = " (it's a %s, actually)" % TX._name(self.graph, chain[0])
+            return self.rng.choice([
+                "Yep — %s %s is %s %s%s." % (an(xw), xw, an(yw), yw, extra),
+                "Right — the %s is %s %s%s." % (xw, an(yw), yw, extra),
+            ])
+        chain = TX.ancestors(self.graph, x)
+        if chain:
+            parent = TX._name(self.graph, chain[0])
+            return self.rng.choice([
+                "Not quite — %s %s is %s %s, not %s %s."
+                % (an(xw), xw, an(parent), parent, an(yw), yw),
+                "No — that's %s %s. %s %s is %s %s."
+                % (an(yw), yw, an(xw), xw, an(parent), parent),
+            ])
+        return "Hm, I don't have %s in my world yet — teach me what it is?" % xw
+
+    def _handle_members(self, i):
+        from . import taxonomy as TX
+        cat = i["cat"]
+        mem = TX.members(self.graph, cat, max_n=60)
+        if not mem:
+            return "I don't know that category yet — teach me a few examples?"
+        names = [m.replace("_", " ") for m in mem]
+        shown = ", ".join(names[:8])
+        more = " — %d in all" % len(names) if len(names) > 8 else ""
+        return self.rng.choice([
+            "%s%s." % (shown, more),
+            "Under %s: %s%s." % (cat.replace("_", " "), shown, more),
+        ])
+
+    def _handle_clues(self, i):
+        from . import taxonomy as TX
+        res = TX.clue_search(self.graph, i["clues"], topn=1)
+        if not res:
+            self.knowledge.inquire("clues: %s" % i["clues"][:60])
+            return self.rng.choice([
+                "Those clues don't match anything I know yet — one more hint?",
+                "Hmm, no match in my world. What is it?",
+            ])
+        nid = res[0][0]
+        d = TX.describe(self.graph, nid, max_sents=2)
+        name = nid.replace("_", " ")
+        if self.rng.random() < 0.5 and d:
+            return "That sounds like a %s. %s" % (name, d)
+        return "That's a %s%s" % (name, "" if name.endswith(".") else ".")
 
     # ---------- reporting -----------------------------------------------------------
     def status(self):

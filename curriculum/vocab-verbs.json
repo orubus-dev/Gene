@@ -1,0 +1,10016 @@
+{
+ "domain": "verbs",
+ "concepts": [
+  {
+   "id": "verb",
+   "kind": "category",
+   "words": [
+    "verb",
+    "verbs"
+   ],
+   "attrs": {
+    "def": "a word for an action or a state"
+   }
+  },
+  {
+   "id": "verb_x",
+   "kind": "noun_form",
+   "words": [
+    "verb"
+   ],
+   "attrs": {
+    "plural": "verbs"
+   }
+  },
+  {
+   "id": "verb_walk",
+   "kind": "verb_form",
+   "words": [
+    "walk"
+   ],
+   "attrs": {
+    "third": "walks",
+    "past": "walked",
+    "ing": "walking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_run",
+   "kind": "verb_form",
+   "words": [
+    "run"
+   ],
+   "attrs": {
+    "third": "runs",
+    "past": "ran",
+    "ing": "running"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_jump",
+   "kind": "verb_form",
+   "words": [
+    "jump"
+   ],
+   "attrs": {
+    "third": "jumps",
+    "past": "jumped",
+    "ing": "jumping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_climb",
+   "kind": "verb_form",
+   "words": [
+    "climb"
+   ],
+   "attrs": {
+    "third": "climbs",
+    "past": "climbed",
+    "ing": "climbing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_swim",
+   "kind": "verb_form",
+   "words": [
+    "swim"
+   ],
+   "attrs": {
+    "third": "swims",
+    "past": "swam",
+    "ing": "swimming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_fly",
+   "kind": "verb_form",
+   "words": [
+    "fly"
+   ],
+   "attrs": {
+    "third": "flies",
+    "past": "flew",
+    "ing": "flying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_crawl",
+   "kind": "verb_form",
+   "words": [
+    "crawl"
+   ],
+   "attrs": {
+    "third": "crawls",
+    "past": "crawled",
+    "ing": "crawling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_slide",
+   "kind": "verb_form",
+   "words": [
+    "slide"
+   ],
+   "attrs": {
+    "third": "slides",
+    "past": "slid",
+    "ing": "sliding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hop",
+   "kind": "verb_form",
+   "words": [
+    "hop"
+   ],
+   "attrs": {
+    "third": "hops",
+    "past": "hoped",
+    "ing": "hoping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_skip",
+   "kind": "verb_form",
+   "words": [
+    "skip"
+   ],
+   "attrs": {
+    "third": "skips",
+    "past": "skiped",
+    "ing": "skiping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_march",
+   "kind": "verb_form",
+   "words": [
+    "march"
+   ],
+   "attrs": {
+    "third": "marches",
+    "past": "marched",
+    "ing": "marching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_jog",
+   "kind": "verb_form",
+   "words": [
+    "jog"
+   ],
+   "attrs": {
+    "third": "jogs",
+    "past": "joged",
+    "ing": "joging"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_sprint",
+   "kind": "verb_form",
+   "words": [
+    "sprint"
+   ],
+   "attrs": {
+    "third": "sprints",
+    "past": "sprinted",
+    "ing": "sprinting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_dance",
+   "kind": "verb_form",
+   "words": [
+    "dance"
+   ],
+   "attrs": {
+    "third": "dances",
+    "past": "danced",
+    "ing": "dancing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_sing",
+   "kind": "verb_form",
+   "words": [
+    "sing"
+   ],
+   "attrs": {
+    "third": "sings",
+    "past": "sang",
+    "ing": "singing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_whistle",
+   "kind": "verb_form",
+   "words": [
+    "whistle"
+   ],
+   "attrs": {
+    "third": "whistles",
+    "past": "whistled",
+    "ing": "whistling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hum",
+   "kind": "verb_form",
+   "words": [
+    "hum"
+   ],
+   "attrs": {
+    "third": "hums",
+    "past": "humed",
+    "ing": "huming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_shout",
+   "kind": "verb_form",
+   "words": [
+    "shout"
+   ],
+   "attrs": {
+    "third": "shouts",
+    "past": "shouted",
+    "ing": "shouting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_whisper",
+   "kind": "verb_form",
+   "words": [
+    "whisper"
+   ],
+   "attrs": {
+    "third": "whispers",
+    "past": "whispered",
+    "ing": "whispering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_talk",
+   "kind": "verb_form",
+   "words": [
+    "talk"
+   ],
+   "attrs": {
+    "third": "talks",
+    "past": "talked",
+    "ing": "talking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_speak",
+   "kind": "verb_form",
+   "words": [
+    "speak"
+   ],
+   "attrs": {
+    "third": "speaks",
+    "past": "spoke",
+    "ing": "speaking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_chat",
+   "kind": "verb_form",
+   "words": [
+    "chat"
+   ],
+   "attrs": {
+    "third": "chats",
+    "past": "chated",
+    "ing": "chating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_laugh",
+   "kind": "verb_form",
+   "words": [
+    "laugh"
+   ],
+   "attrs": {
+    "third": "laughs",
+    "past": "laughed",
+    "ing": "laughing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_cry",
+   "kind": "verb_form",
+   "words": [
+    "cry"
+   ],
+   "attrs": {
+    "third": "cries",
+    "past": "cried",
+    "ing": "crying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_smile",
+   "kind": "verb_form",
+   "words": [
+    "smile"
+   ],
+   "attrs": {
+    "third": "smiles",
+    "past": "smiled",
+    "ing": "smiling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_frown",
+   "kind": "verb_form",
+   "words": [
+    "frown"
+   ],
+   "attrs": {
+    "third": "frowns",
+    "past": "frowned",
+    "ing": "frowning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_greet",
+   "kind": "verb_form",
+   "words": [
+    "greet"
+   ],
+   "attrs": {
+    "third": "greets",
+    "past": "greeted",
+    "ing": "greeting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_wave",
+   "kind": "verb_form",
+   "words": [
+    "wave"
+   ],
+   "attrs": {
+    "third": "waves",
+    "past": "waved",
+    "ing": "waving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_nod",
+   "kind": "verb_form",
+   "words": [
+    "nod"
+   ],
+   "attrs": {
+    "third": "nods",
+    "past": "noded",
+    "ing": "noding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_shake",
+   "kind": "verb_form",
+   "words": [
+    "shake"
+   ],
+   "attrs": {
+    "third": "shakes",
+    "past": "shook",
+    "ing": "shaking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_bow",
+   "kind": "verb_form",
+   "words": [
+    "bow"
+   ],
+   "attrs": {
+    "third": "bows",
+    "past": "bowed",
+    "ing": "bowing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hug",
+   "kind": "verb_form",
+   "words": [
+    "hug"
+   ],
+   "attrs": {
+    "third": "hugs",
+    "past": "huged",
+    "ing": "huging"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_kiss",
+   "kind": "verb_form",
+   "words": [
+    "kiss"
+   ],
+   "attrs": {
+    "third": "kisses",
+    "past": "kissed",
+    "ing": "kissing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_point",
+   "kind": "verb_form",
+   "words": [
+    "point"
+   ],
+   "attrs": {
+    "third": "points",
+    "past": "pointed",
+    "ing": "pointing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_stare",
+   "kind": "verb_form",
+   "words": [
+    "stare"
+   ],
+   "attrs": {
+    "third": "stares",
+    "past": "stared",
+    "ing": "staring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_glance",
+   "kind": "verb_form",
+   "words": [
+    "glance"
+   ],
+   "attrs": {
+    "third": "glances",
+    "past": "glanced",
+    "ing": "glancing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_watch",
+   "kind": "verb_form",
+   "words": [
+    "watch"
+   ],
+   "attrs": {
+    "third": "watches",
+    "past": "watched",
+    "ing": "watching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_look",
+   "kind": "verb_form",
+   "words": [
+    "look"
+   ],
+   "attrs": {
+    "third": "looks",
+    "past": "looked",
+    "ing": "looking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_see",
+   "kind": "verb_form",
+   "words": [
+    "see"
+   ],
+   "attrs": {
+    "third": "sees",
+    "past": "saw",
+    "ing": "seeing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_listen",
+   "kind": "verb_form",
+   "words": [
+    "listen"
+   ],
+   "attrs": {
+    "third": "listens",
+    "past": "listened",
+    "ing": "listening"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hear",
+   "kind": "verb_form",
+   "words": [
+    "hear"
+   ],
+   "attrs": {
+    "third": "hears",
+    "past": "heard",
+    "ing": "hearing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_smell",
+   "kind": "verb_form",
+   "words": [
+    "smell"
+   ],
+   "attrs": {
+    "third": "smells",
+    "past": "smelled",
+    "ing": "smelling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_taste",
+   "kind": "verb_form",
+   "words": [
+    "taste"
+   ],
+   "attrs": {
+    "third": "tastes",
+    "past": "tasted",
+    "ing": "tasting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_touch",
+   "kind": "verb_form",
+   "words": [
+    "touch"
+   ],
+   "attrs": {
+    "third": "touches",
+    "past": "touched",
+    "ing": "touching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_feel",
+   "kind": "verb_form",
+   "words": [
+    "feel"
+   ],
+   "attrs": {
+    "third": "feels",
+    "past": "felt",
+    "ing": "feeling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hold",
+   "kind": "verb_form",
+   "words": [
+    "hold"
+   ],
+   "attrs": {
+    "third": "holds",
+    "past": "held",
+    "ing": "holding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_grip",
+   "kind": "verb_form",
+   "words": [
+    "grip"
+   ],
+   "attrs": {
+    "third": "grips",
+    "past": "griped",
+    "ing": "griping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_grab",
+   "kind": "verb_form",
+   "words": [
+    "grab"
+   ],
+   "attrs": {
+    "third": "grabs",
+    "past": "grabed",
+    "ing": "grabing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_pinch",
+   "kind": "verb_form",
+   "words": [
+    "pinch"
+   ],
+   "attrs": {
+    "third": "pinches",
+    "past": "pinched",
+    "ing": "pinching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_squeeze",
+   "kind": "verb_form",
+   "words": [
+    "squeeze"
+   ],
+   "attrs": {
+    "third": "squeezes",
+    "past": "squeezed",
+    "ing": "squeezing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_pat",
+   "kind": "verb_form",
+   "words": [
+    "pat"
+   ],
+   "attrs": {
+    "third": "pats",
+    "past": "pated",
+    "ing": "pating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_tap",
+   "kind": "verb_form",
+   "words": [
+    "tap"
+   ],
+   "attrs": {
+    "third": "taps",
+    "past": "taped",
+    "ing": "taping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_push",
+   "kind": "verb_form",
+   "words": [
+    "push"
+   ],
+   "attrs": {
+    "third": "pushes",
+    "past": "pushed",
+    "ing": "pushing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_pull",
+   "kind": "verb_form",
+   "words": [
+    "pull"
+   ],
+   "attrs": {
+    "third": "pulls",
+    "past": "pulled",
+    "ing": "pulling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_lift",
+   "kind": "verb_form",
+   "words": [
+    "lift"
+   ],
+   "attrs": {
+    "third": "lifts",
+    "past": "lifted",
+    "ing": "lifting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_carry",
+   "kind": "verb_form",
+   "words": [
+    "carry"
+   ],
+   "attrs": {
+    "third": "carries",
+    "past": "carried",
+    "ing": "carrying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_drag",
+   "kind": "verb_form",
+   "words": [
+    "drag"
+   ],
+   "attrs": {
+    "third": "drags",
+    "past": "draged",
+    "ing": "draging"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_drop",
+   "kind": "verb_form",
+   "words": [
+    "drop"
+   ],
+   "attrs": {
+    "third": "drops",
+    "past": "droped",
+    "ing": "droping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_throw",
+   "kind": "verb_form",
+   "words": [
+    "throw"
+   ],
+   "attrs": {
+    "third": "throws",
+    "past": "threw",
+    "ing": "throwing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_catch",
+   "kind": "verb_form",
+   "words": [
+    "catch"
+   ],
+   "attrs": {
+    "third": "catches",
+    "past": "caught",
+    "ing": "catching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_toss",
+   "kind": "verb_form",
+   "words": [
+    "toss"
+   ],
+   "attrs": {
+    "third": "tosses",
+    "past": "tossed",
+    "ing": "tossing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_roll",
+   "kind": "verb_form",
+   "words": [
+    "roll"
+   ],
+   "attrs": {
+    "third": "rolls",
+    "past": "rolled",
+    "ing": "rolling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_spin",
+   "kind": "verb_form",
+   "words": [
+    "spin"
+   ],
+   "attrs": {
+    "third": "spins",
+    "past": "spined",
+    "ing": "spining"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_turn",
+   "kind": "verb_form",
+   "words": [
+    "turn"
+   ],
+   "attrs": {
+    "third": "turns",
+    "past": "turned",
+    "ing": "turning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_twist",
+   "kind": "verb_form",
+   "words": [
+    "twist"
+   ],
+   "attrs": {
+    "third": "twists",
+    "past": "twisted",
+    "ing": "twisting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_bend",
+   "kind": "verb_form",
+   "words": [
+    "bend"
+   ],
+   "attrs": {
+    "third": "bends",
+    "past": "bended",
+    "ing": "bending"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_fold",
+   "kind": "verb_form",
+   "words": [
+    "fold"
+   ],
+   "attrs": {
+    "third": "folds",
+    "past": "folded",
+    "ing": "folding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_tear",
+   "kind": "verb_form",
+   "words": [
+    "tear"
+   ],
+   "attrs": {
+    "third": "tears",
+    "past": "tore",
+    "ing": "tearing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_cut",
+   "kind": "verb_form",
+   "words": [
+    "cut"
+   ],
+   "attrs": {
+    "third": "cuts",
+    "past": "cut",
+    "ing": "cutting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_paste",
+   "kind": "verb_form",
+   "words": [
+    "paste"
+   ],
+   "attrs": {
+    "third": "pastes",
+    "past": "pasted",
+    "ing": "pasting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_tie",
+   "kind": "verb_form",
+   "words": [
+    "tie"
+   ],
+   "attrs": {
+    "third": "ties",
+    "past": "tied",
+    "ing": "tying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_wrap",
+   "kind": "verb_form",
+   "words": [
+    "wrap"
+   ],
+   "attrs": {
+    "third": "wraps",
+    "past": "wraped",
+    "ing": "wraping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_open",
+   "kind": "verb_form",
+   "words": [
+    "open"
+   ],
+   "attrs": {
+    "third": "opens",
+    "past": "opened",
+    "ing": "opening"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_close",
+   "kind": "verb_form",
+   "words": [
+    "close"
+   ],
+   "attrs": {
+    "third": "closes",
+    "past": "closed",
+    "ing": "closing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_lock",
+   "kind": "verb_form",
+   "words": [
+    "lock"
+   ],
+   "attrs": {
+    "third": "locks",
+    "past": "locked",
+    "ing": "locking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_unlock",
+   "kind": "verb_form",
+   "words": [
+    "unlock"
+   ],
+   "attrs": {
+    "third": "unlocks",
+    "past": "unlocked",
+    "ing": "unlocking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_start",
+   "kind": "verb_form",
+   "words": [
+    "start"
+   ],
+   "attrs": {
+    "third": "starts",
+    "past": "started",
+    "ing": "starting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_stop",
+   "kind": "verb_form",
+   "words": [
+    "stop"
+   ],
+   "attrs": {
+    "third": "stops",
+    "past": "stoped",
+    "ing": "stoping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_begin",
+   "kind": "verb_form",
+   "words": [
+    "begin"
+   ],
+   "attrs": {
+    "third": "begins",
+    "past": "began",
+    "ing": "beginning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_end",
+   "kind": "verb_form",
+   "words": [
+    "end"
+   ],
+   "attrs": {
+    "third": "ends",
+    "past": "ended",
+    "ing": "ending"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_finish",
+   "kind": "verb_form",
+   "words": [
+    "finish"
+   ],
+   "attrs": {
+    "third": "finishes",
+    "past": "finished",
+    "ing": "finishing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_continue",
+   "kind": "verb_form",
+   "words": [
+    "continue"
+   ],
+   "attrs": {
+    "third": "continues",
+    "past": "continued",
+    "ing": "continuing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_repeat",
+   "kind": "verb_form",
+   "words": [
+    "repeat"
+   ],
+   "attrs": {
+    "third": "repeats",
+    "past": "repeated",
+    "ing": "repeating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_try",
+   "kind": "verb_form",
+   "words": [
+    "try"
+   ],
+   "attrs": {
+    "third": "tries",
+    "past": "tried",
+    "ing": "trying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_fail",
+   "kind": "verb_form",
+   "words": [
+    "fail"
+   ],
+   "attrs": {
+    "third": "fails",
+    "past": "failed",
+    "ing": "failing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_succeed",
+   "kind": "verb_form",
+   "words": [
+    "succeed"
+   ],
+   "attrs": {
+    "third": "succeeds",
+    "past": "succeeded",
+    "ing": "succeeding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_win",
+   "kind": "verb_form",
+   "words": [
+    "win"
+   ],
+   "attrs": {
+    "third": "wins",
+    "past": "won",
+    "ing": "winning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_lose",
+   "kind": "verb_form",
+   "words": [
+    "lose"
+   ],
+   "attrs": {
+    "third": "loses",
+    "past": "lost",
+    "ing": "losing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_draw",
+   "kind": "verb_form",
+   "words": [
+    "draw"
+   ],
+   "attrs": {
+    "third": "draws",
+    "past": "drew",
+    "ing": "drawing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_paint",
+   "kind": "verb_form",
+   "words": [
+    "paint"
+   ],
+   "attrs": {
+    "third": "paints",
+    "past": "painted",
+    "ing": "painting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_write",
+   "kind": "verb_form",
+   "words": [
+    "write"
+   ],
+   "attrs": {
+    "third": "writes",
+    "past": "wrote",
+    "ing": "writing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_read",
+   "kind": "verb_form",
+   "words": [
+    "read"
+   ],
+   "attrs": {
+    "third": "reads",
+    "past": "read",
+    "ing": "reading"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_spell",
+   "kind": "verb_form",
+   "words": [
+    "spell"
+   ],
+   "attrs": {
+    "third": "spells",
+    "past": "spelled",
+    "ing": "spelling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_count",
+   "kind": "verb_form",
+   "words": [
+    "count"
+   ],
+   "attrs": {
+    "third": "counts",
+    "past": "counted",
+    "ing": "counting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_add",
+   "kind": "verb_form",
+   "words": [
+    "add"
+   ],
+   "attrs": {
+    "third": "adds",
+    "past": "added",
+    "ing": "adding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_subtract",
+   "kind": "verb_form",
+   "words": [
+    "subtract"
+   ],
+   "attrs": {
+    "third": "subtracts",
+    "past": "subtracted",
+    "ing": "subtracting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_multiply",
+   "kind": "verb_form",
+   "words": [
+    "multiply"
+   ],
+   "attrs": {
+    "third": "multiplies",
+    "past": "multiplied",
+    "ing": "multiplying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_divide",
+   "kind": "verb_form",
+   "words": [
+    "divide"
+   ],
+   "attrs": {
+    "third": "divides",
+    "past": "divided",
+    "ing": "dividing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_measure",
+   "kind": "verb_form",
+   "words": [
+    "measure"
+   ],
+   "attrs": {
+    "third": "measures",
+    "past": "measured",
+    "ing": "measuring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_weigh",
+   "kind": "verb_form",
+   "words": [
+    "weigh"
+   ],
+   "attrs": {
+    "third": "weighs",
+    "past": "weighed",
+    "ing": "weighing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_compare",
+   "kind": "verb_form",
+   "words": [
+    "compare"
+   ],
+   "attrs": {
+    "third": "compares",
+    "past": "compared",
+    "ing": "comparing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_sort",
+   "kind": "verb_form",
+   "words": [
+    "sort"
+   ],
+   "attrs": {
+    "third": "sorts",
+    "past": "sorted",
+    "ing": "sorting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_group",
+   "kind": "verb_form",
+   "words": [
+    "group"
+   ],
+   "attrs": {
+    "third": "groups",
+    "past": "grouped",
+    "ing": "grouping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_match",
+   "kind": "verb_form",
+   "words": [
+    "match"
+   ],
+   "attrs": {
+    "third": "matches",
+    "past": "matched",
+    "ing": "matching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_mix",
+   "kind": "verb_form",
+   "words": [
+    "mix"
+   ],
+   "attrs": {
+    "third": "mixes",
+    "past": "mixed",
+    "ing": "mixing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_stir",
+   "kind": "verb_form",
+   "words": [
+    "stir"
+   ],
+   "attrs": {
+    "third": "stirs",
+    "past": "stired",
+    "ing": "stiring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_pour",
+   "kind": "verb_form",
+   "words": [
+    "pour"
+   ],
+   "attrs": {
+    "third": "pours",
+    "past": "poured",
+    "ing": "pouring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_spill",
+   "kind": "verb_form",
+   "words": [
+    "spill"
+   ],
+   "attrs": {
+    "third": "spills",
+    "past": "spilled",
+    "ing": "spilling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_fill",
+   "kind": "verb_form",
+   "words": [
+    "fill"
+   ],
+   "attrs": {
+    "third": "fills",
+    "past": "filled",
+    "ing": "filling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_empty",
+   "kind": "verb_form",
+   "words": [
+    "empty"
+   ],
+   "attrs": {
+    "third": "empties",
+    "past": "emptied",
+    "ing": "emptying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_drain",
+   "kind": "verb_form",
+   "words": [
+    "drain"
+   ],
+   "attrs": {
+    "third": "drains",
+    "past": "drained",
+    "ing": "draining"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_wash",
+   "kind": "verb_form",
+   "words": [
+    "wash"
+   ],
+   "attrs": {
+    "third": "washes",
+    "past": "washed",
+    "ing": "washing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_rinse",
+   "kind": "verb_form",
+   "words": [
+    "rinse"
+   ],
+   "attrs": {
+    "third": "rinses",
+    "past": "rinsed",
+    "ing": "rinsing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_dry",
+   "kind": "verb_form",
+   "words": [
+    "dry"
+   ],
+   "attrs": {
+    "third": "dries",
+    "past": "dried",
+    "ing": "drying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_scrub",
+   "kind": "verb_form",
+   "words": [
+    "scrub"
+   ],
+   "attrs": {
+    "third": "scrubs",
+    "past": "scrubed",
+    "ing": "scrubing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_wipe",
+   "kind": "verb_form",
+   "words": [
+    "wipe"
+   ],
+   "attrs": {
+    "third": "wipes",
+    "past": "wiped",
+    "ing": "wiping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_sweep",
+   "kind": "verb_form",
+   "words": [
+    "sweep"
+   ],
+   "attrs": {
+    "third": "sweeps",
+    "past": "swept",
+    "ing": "sweeping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_mop",
+   "kind": "verb_form",
+   "words": [
+    "mop"
+   ],
+   "attrs": {
+    "third": "mops",
+    "past": "moped",
+    "ing": "moping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_dust",
+   "kind": "verb_form",
+   "words": [
+    "dust"
+   ],
+   "attrs": {
+    "third": "dusts",
+    "past": "dusted",
+    "ing": "dusting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_polish",
+   "kind": "verb_form",
+   "words": [
+    "polish"
+   ],
+   "attrs": {
+    "third": "polishes",
+    "past": "polished",
+    "ing": "polishing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_shine",
+   "kind": "verb_form",
+   "words": [
+    "shine"
+   ],
+   "attrs": {
+    "third": "shines",
+    "past": "shined",
+    "ing": "shining"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_clean",
+   "kind": "verb_form",
+   "words": [
+    "clean"
+   ],
+   "attrs": {
+    "third": "cleans",
+    "past": "cleaned",
+    "ing": "cleaning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_dirty",
+   "kind": "verb_form",
+   "words": [
+    "dirty"
+   ],
+   "attrs": {
+    "third": "dirties",
+    "past": "dirtied",
+    "ing": "dirtying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_tidy",
+   "kind": "verb_form",
+   "words": [
+    "tidy"
+   ],
+   "attrs": {
+    "third": "tidies",
+    "past": "tidied",
+    "ing": "tidying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_organize",
+   "kind": "verb_form",
+   "words": [
+    "organize"
+   ],
+   "attrs": {
+    "third": "organizes",
+    "past": "organized",
+    "ing": "organizing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_arrange",
+   "kind": "verb_form",
+   "words": [
+    "arrange"
+   ],
+   "attrs": {
+    "third": "arranges",
+    "past": "arranged",
+    "ing": "arranging"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_stack",
+   "kind": "verb_form",
+   "words": [
+    "stack"
+   ],
+   "attrs": {
+    "third": "stacks",
+    "past": "stacked",
+    "ing": "stacking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_pile",
+   "kind": "verb_form",
+   "words": [
+    "pile"
+   ],
+   "attrs": {
+    "third": "piles",
+    "past": "piled",
+    "ing": "piling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_build",
+   "kind": "verb_form",
+   "words": [
+    "build"
+   ],
+   "attrs": {
+    "third": "builds",
+    "past": "built",
+    "ing": "building"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_make",
+   "kind": "verb_form",
+   "words": [
+    "make"
+   ],
+   "attrs": {
+    "third": "makes",
+    "past": "made",
+    "ing": "making"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_create",
+   "kind": "verb_form",
+   "words": [
+    "create"
+   ],
+   "attrs": {
+    "third": "creates",
+    "past": "created",
+    "ing": "creating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_fix",
+   "kind": "verb_form",
+   "words": [
+    "fix"
+   ],
+   "attrs": {
+    "third": "fixes",
+    "past": "fixed",
+    "ing": "fixing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_repair",
+   "kind": "verb_form",
+   "words": [
+    "repair"
+   ],
+   "attrs": {
+    "third": "repairs",
+    "past": "repaired",
+    "ing": "repairing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_break",
+   "kind": "verb_form",
+   "words": [
+    "break"
+   ],
+   "attrs": {
+    "third": "breaks",
+    "past": "broke",
+    "ing": "breaking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_smash",
+   "kind": "verb_form",
+   "words": [
+    "smash"
+   ],
+   "attrs": {
+    "third": "smashes",
+    "past": "smashed",
+    "ing": "smashing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_crack",
+   "kind": "verb_form",
+   "words": [
+    "crack"
+   ],
+   "attrs": {
+    "third": "cracks",
+    "past": "cracked",
+    "ing": "cracking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_stretch",
+   "kind": "verb_form",
+   "words": [
+    "stretch"
+   ],
+   "attrs": {
+    "third": "stretches",
+    "past": "stretched",
+    "ing": "stretching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_press",
+   "kind": "verb_form",
+   "words": [
+    "press"
+   ],
+   "attrs": {
+    "third": "presses",
+    "past": "pressed",
+    "ing": "pressing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_squash",
+   "kind": "verb_form",
+   "words": [
+    "squash"
+   ],
+   "attrs": {
+    "third": "squashes",
+    "past": "squashed",
+    "ing": "squashing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_bounce",
+   "kind": "verb_form",
+   "words": [
+    "bounce"
+   ],
+   "attrs": {
+    "third": "bounces",
+    "past": "bounced",
+    "ing": "bouncing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_balance",
+   "kind": "verb_form",
+   "words": [
+    "balance"
+   ],
+   "attrs": {
+    "third": "balances",
+    "past": "balanced",
+    "ing": "balancing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_topple",
+   "kind": "verb_form",
+   "words": [
+    "topple"
+   ],
+   "attrs": {
+    "third": "topples",
+    "past": "toppled",
+    "ing": "toppling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_lean",
+   "kind": "verb_form",
+   "words": [
+    "lean"
+   ],
+   "attrs": {
+    "third": "leans",
+    "past": "leaned",
+    "ing": "leaning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_tilt",
+   "kind": "verb_form",
+   "words": [
+    "tilt"
+   ],
+   "attrs": {
+    "third": "tilts",
+    "past": "tilted",
+    "ing": "tilting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_support",
+   "kind": "verb_form",
+   "words": [
+    "support"
+   ],
+   "attrs": {
+    "third": "supports",
+    "past": "supported",
+    "ing": "supporting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hang",
+   "kind": "verb_form",
+   "words": [
+    "hang"
+   ],
+   "attrs": {
+    "third": "hangs",
+    "past": "hung",
+    "ing": "hanging"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_drape",
+   "kind": "verb_form",
+   "words": [
+    "drape"
+   ],
+   "attrs": {
+    "third": "drapes",
+    "past": "draped",
+    "ing": "draping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_plant",
+   "kind": "verb_form",
+   "words": [
+    "plant"
+   ],
+   "attrs": {
+    "third": "plants",
+    "past": "planted",
+    "ing": "planting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_grow",
+   "kind": "verb_form",
+   "words": [
+    "grow"
+   ],
+   "attrs": {
+    "third": "grows",
+    "past": "grew",
+    "ing": "growing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_water",
+   "kind": "verb_form",
+   "words": [
+    "water"
+   ],
+   "attrs": {
+    "third": "waters",
+    "past": "watered",
+    "ing": "watering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_prune",
+   "kind": "verb_form",
+   "words": [
+    "prune"
+   ],
+   "attrs": {
+    "third": "prunes",
+    "past": "pruned",
+    "ing": "pruning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_harvest",
+   "kind": "verb_form",
+   "words": [
+    "harvest"
+   ],
+   "attrs": {
+    "third": "harvests",
+    "past": "harvested",
+    "ing": "harvesting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_pick",
+   "kind": "verb_form",
+   "words": [
+    "pick"
+   ],
+   "attrs": {
+    "third": "picks",
+    "past": "picked",
+    "ing": "picking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_dig",
+   "kind": "verb_form",
+   "words": [
+    "dig"
+   ],
+   "attrs": {
+    "third": "digs",
+    "past": "dug",
+    "ing": "digging"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_bury",
+   "kind": "verb_form",
+   "words": [
+    "bury"
+   ],
+   "attrs": {
+    "third": "buries",
+    "past": "buried",
+    "ing": "burying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_rake",
+   "kind": "verb_form",
+   "words": [
+    "rake"
+   ],
+   "attrs": {
+    "third": "rakes",
+    "past": "raked",
+    "ing": "raking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_mow",
+   "kind": "verb_form",
+   "words": [
+    "mow"
+   ],
+   "attrs": {
+    "third": "mows",
+    "past": "mowed",
+    "ing": "mowing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_sow",
+   "kind": "verb_form",
+   "words": [
+    "sow"
+   ],
+   "attrs": {
+    "third": "sows",
+    "past": "sowed",
+    "ing": "sowing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_bake",
+   "kind": "verb_form",
+   "words": [
+    "bake"
+   ],
+   "attrs": {
+    "third": "bakes",
+    "past": "baked",
+    "ing": "baking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_boil",
+   "kind": "verb_form",
+   "words": [
+    "boil"
+   ],
+   "attrs": {
+    "third": "boils",
+    "past": "boiled",
+    "ing": "boiling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_fry",
+   "kind": "verb_form",
+   "words": [
+    "fry"
+   ],
+   "attrs": {
+    "third": "fries",
+    "past": "fried",
+    "ing": "frying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_roast",
+   "kind": "verb_form",
+   "words": [
+    "roast"
+   ],
+   "attrs": {
+    "third": "roasts",
+    "past": "roasted",
+    "ing": "roasting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_grill",
+   "kind": "verb_form",
+   "words": [
+    "grill"
+   ],
+   "attrs": {
+    "third": "grills",
+    "past": "grilled",
+    "ing": "grilling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_steam",
+   "kind": "verb_form",
+   "words": [
+    "steam"
+   ],
+   "attrs": {
+    "third": "steams",
+    "past": "steamed",
+    "ing": "steaming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_simmer",
+   "kind": "verb_form",
+   "words": [
+    "simmer"
+   ],
+   "attrs": {
+    "third": "simmers",
+    "past": "simmered",
+    "ing": "simmering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_melt",
+   "kind": "verb_form",
+   "words": [
+    "melt"
+   ],
+   "attrs": {
+    "third": "melts",
+    "past": "melted",
+    "ing": "melting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_freeze",
+   "kind": "verb_form",
+   "words": [
+    "freeze"
+   ],
+   "attrs": {
+    "third": "freezes",
+    "past": "froze",
+    "ing": "freezing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_chill",
+   "kind": "verb_form",
+   "words": [
+    "chill"
+   ],
+   "attrs": {
+    "third": "chills",
+    "past": "chilled",
+    "ing": "chilling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_warm",
+   "kind": "verb_form",
+   "words": [
+    "warm"
+   ],
+   "attrs": {
+    "third": "warms",
+    "past": "warmed",
+    "ing": "warming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_cool",
+   "kind": "verb_form",
+   "words": [
+    "cool"
+   ],
+   "attrs": {
+    "third": "cools",
+    "past": "cooled",
+    "ing": "cooling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_heat",
+   "kind": "verb_form",
+   "words": [
+    "heat"
+   ],
+   "attrs": {
+    "third": "heats",
+    "past": "heated",
+    "ing": "heating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_cook",
+   "kind": "verb_form",
+   "words": [
+    "cook"
+   ],
+   "attrs": {
+    "third": "cooks",
+    "past": "cooked",
+    "ing": "cooking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_knead",
+   "kind": "verb_form",
+   "words": [
+    "knead"
+   ],
+   "attrs": {
+    "third": "kneads",
+    "past": "kneaded",
+    "ing": "kneading"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_serve",
+   "kind": "verb_form",
+   "words": [
+    "serve"
+   ],
+   "attrs": {
+    "third": "serves",
+    "past": "served",
+    "ing": "serving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_eat",
+   "kind": "verb_form",
+   "words": [
+    "eat"
+   ],
+   "attrs": {
+    "third": "eats",
+    "past": "ate",
+    "ing": "eating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_drink",
+   "kind": "verb_form",
+   "words": [
+    "drink"
+   ],
+   "attrs": {
+    "third": "drinks",
+    "past": "drank",
+    "ing": "drinking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_chew",
+   "kind": "verb_form",
+   "words": [
+    "chew"
+   ],
+   "attrs": {
+    "third": "chews",
+    "past": "chewed",
+    "ing": "chewing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_swallow",
+   "kind": "verb_form",
+   "words": [
+    "swallow"
+   ],
+   "attrs": {
+    "third": "swallows",
+    "past": "swallowed",
+    "ing": "swallowing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_bite",
+   "kind": "verb_form",
+   "words": [
+    "bite"
+   ],
+   "attrs": {
+    "third": "bites",
+    "past": "bit",
+    "ing": "biting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_sip",
+   "kind": "verb_form",
+   "words": [
+    "sip"
+   ],
+   "attrs": {
+    "third": "sips",
+    "past": "siped",
+    "ing": "siping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_gulp",
+   "kind": "verb_form",
+   "words": [
+    "gulp"
+   ],
+   "attrs": {
+    "third": "gulps",
+    "past": "gulped",
+    "ing": "gulping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_breathe",
+   "kind": "verb_form",
+   "words": [
+    "breathe"
+   ],
+   "attrs": {
+    "third": "breathes",
+    "past": "breathed",
+    "ing": "breathing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_inhale",
+   "kind": "verb_form",
+   "words": [
+    "inhale"
+   ],
+   "attrs": {
+    "third": "inhales",
+    "past": "inhaled",
+    "ing": "inhaling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_exhale",
+   "kind": "verb_form",
+   "words": [
+    "exhale"
+   ],
+   "attrs": {
+    "third": "exhales",
+    "past": "exhaled",
+    "ing": "exhaling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_cough",
+   "kind": "verb_form",
+   "words": [
+    "cough"
+   ],
+   "attrs": {
+    "third": "coughs",
+    "past": "coughed",
+    "ing": "coughing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_sneeze",
+   "kind": "verb_form",
+   "words": [
+    "sneeze"
+   ],
+   "attrs": {
+    "third": "sneezes",
+    "past": "sneezed",
+    "ing": "sneezing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_yawn",
+   "kind": "verb_form",
+   "words": [
+    "yawn"
+   ],
+   "attrs": {
+    "third": "yawns",
+    "past": "yawned",
+    "ing": "yawning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_blink",
+   "kind": "verb_form",
+   "words": [
+    "blink"
+   ],
+   "attrs": {
+    "third": "blinks",
+    "past": "blinked",
+    "ing": "blinking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_wink",
+   "kind": "verb_form",
+   "words": [
+    "wink"
+   ],
+   "attrs": {
+    "third": "winks",
+    "past": "winked",
+    "ing": "winking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_sleep",
+   "kind": "verb_form",
+   "words": [
+    "sleep"
+   ],
+   "attrs": {
+    "third": "sleeps",
+    "past": "slept",
+    "ing": "sleeping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_wake",
+   "kind": "verb_form",
+   "words": [
+    "wake"
+   ],
+   "attrs": {
+    "third": "wakes",
+    "past": "woke",
+    "ing": "waking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_dream",
+   "kind": "verb_form",
+   "words": [
+    "dream"
+   ],
+   "attrs": {
+    "third": "dreams",
+    "past": "dreamt",
+    "ing": "dreaming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_rest",
+   "kind": "verb_form",
+   "words": [
+    "rest"
+   ],
+   "attrs": {
+    "third": "rests",
+    "past": "rested",
+    "ing": "resting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_relax",
+   "kind": "verb_form",
+   "words": [
+    "relax"
+   ],
+   "attrs": {
+    "third": "relaxes",
+    "past": "relaxed",
+    "ing": "relaxing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_snore",
+   "kind": "verb_form",
+   "words": [
+    "snore"
+   ],
+   "attrs": {
+    "third": "snores",
+    "past": "snored",
+    "ing": "snoring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_nap",
+   "kind": "verb_form",
+   "words": [
+    "nap"
+   ],
+   "attrs": {
+    "third": "naps",
+    "past": "naped",
+    "ing": "naping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_doze",
+   "kind": "verb_form",
+   "words": [
+    "doze"
+   ],
+   "attrs": {
+    "third": "dozes",
+    "past": "dozed",
+    "ing": "dozing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_snuggle",
+   "kind": "verb_form",
+   "words": [
+    "snuggle"
+   ],
+   "attrs": {
+    "third": "snuggles",
+    "past": "snuggled",
+    "ing": "snuggling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_cuddle",
+   "kind": "verb_form",
+   "words": [
+    "cuddle"
+   ],
+   "attrs": {
+    "third": "cuddles",
+    "past": "cuddled",
+    "ing": "cuddling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_stroke",
+   "kind": "verb_form",
+   "words": [
+    "stroke"
+   ],
+   "attrs": {
+    "third": "strokes",
+    "past": "stroked",
+    "ing": "stroking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_pet",
+   "kind": "verb_form",
+   "words": [
+    "pet"
+   ],
+   "attrs": {
+    "third": "pets",
+    "past": "peted",
+    "ing": "peting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_chase",
+   "kind": "verb_form",
+   "words": [
+    "chase"
+   ],
+   "attrs": {
+    "third": "chases",
+    "past": "chased",
+    "ing": "chasing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_flee",
+   "kind": "verb_form",
+   "words": [
+    "flee"
+   ],
+   "attrs": {
+    "third": "flees",
+    "past": "fled",
+    "ing": "fleeing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hunt",
+   "kind": "verb_form",
+   "words": [
+    "hunt"
+   ],
+   "attrs": {
+    "third": "hunts",
+    "past": "hunted",
+    "ing": "hunting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_stalk",
+   "kind": "verb_form",
+   "words": [
+    "stalk"
+   ],
+   "attrs": {
+    "third": "stalks",
+    "past": "stalked",
+    "ing": "stalking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_pounce",
+   "kind": "verb_form",
+   "words": [
+    "pounce"
+   ],
+   "attrs": {
+    "third": "pounces",
+    "past": "pounced",
+    "ing": "pouncing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_scratch",
+   "kind": "verb_form",
+   "words": [
+    "scratch"
+   ],
+   "attrs": {
+    "third": "scratches",
+    "past": "scratched",
+    "ing": "scratching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_groom",
+   "kind": "verb_form",
+   "words": [
+    "groom"
+   ],
+   "attrs": {
+    "third": "grooms",
+    "past": "groomed",
+    "ing": "grooming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_peck",
+   "kind": "verb_form",
+   "words": [
+    "peck"
+   ],
+   "attrs": {
+    "third": "pecks",
+    "past": "pecked",
+    "ing": "pecking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_perch",
+   "kind": "verb_form",
+   "words": [
+    "perch"
+   ],
+   "attrs": {
+    "third": "perches",
+    "past": "perched",
+    "ing": "perching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_nest",
+   "kind": "verb_form",
+   "words": [
+    "nest"
+   ],
+   "attrs": {
+    "third": "nests",
+    "past": "nested",
+    "ing": "nesting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_roost",
+   "kind": "verb_form",
+   "words": [
+    "roost"
+   ],
+   "attrs": {
+    "third": "roosts",
+    "past": "roosted",
+    "ing": "roosting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_bark",
+   "kind": "verb_form",
+   "words": [
+    "bark"
+   ],
+   "attrs": {
+    "third": "barks",
+    "past": "barked",
+    "ing": "barking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_meow",
+   "kind": "verb_form",
+   "words": [
+    "meow"
+   ],
+   "attrs": {
+    "third": "meows",
+    "past": "meowed",
+    "ing": "meowing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_moo",
+   "kind": "verb_form",
+   "words": [
+    "moo"
+   ],
+   "attrs": {
+    "third": "moos",
+    "past": "mooed",
+    "ing": "mooing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_oink",
+   "kind": "verb_form",
+   "words": [
+    "oink"
+   ],
+   "attrs": {
+    "third": "oinks",
+    "past": "oinked",
+    "ing": "oinking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_neigh",
+   "kind": "verb_form",
+   "words": [
+    "neigh"
+   ],
+   "attrs": {
+    "third": "neighs",
+    "past": "neighed",
+    "ing": "neighing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_bleat",
+   "kind": "verb_form",
+   "words": [
+    "bleat"
+   ],
+   "attrs": {
+    "third": "bleats",
+    "past": "bleated",
+    "ing": "bleating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_crow",
+   "kind": "verb_form",
+   "words": [
+    "crow"
+   ],
+   "attrs": {
+    "third": "crows",
+    "past": "crowed",
+    "ing": "crowing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_quack",
+   "kind": "verb_form",
+   "words": [
+    "quack"
+   ],
+   "attrs": {
+    "third": "quacks",
+    "past": "quacked",
+    "ing": "quacking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_honk",
+   "kind": "verb_form",
+   "words": [
+    "honk"
+   ],
+   "attrs": {
+    "third": "honks",
+    "past": "honked",
+    "ing": "honking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_chirp",
+   "kind": "verb_form",
+   "words": [
+    "chirp"
+   ],
+   "attrs": {
+    "third": "chirps",
+    "past": "chirped",
+    "ing": "chirping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_tweet",
+   "kind": "verb_form",
+   "words": [
+    "tweet"
+   ],
+   "attrs": {
+    "third": "tweets",
+    "past": "tweeted",
+    "ing": "tweeting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_howl",
+   "kind": "verb_form",
+   "words": [
+    "howl"
+   ],
+   "attrs": {
+    "third": "howls",
+    "past": "howled",
+    "ing": "howling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_growl",
+   "kind": "verb_form",
+   "words": [
+    "growl"
+   ],
+   "attrs": {
+    "third": "growls",
+    "past": "growled",
+    "ing": "growling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_purr",
+   "kind": "verb_form",
+   "words": [
+    "purr"
+   ],
+   "attrs": {
+    "third": "purrs",
+    "past": "purred",
+    "ing": "purring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hiss",
+   "kind": "verb_form",
+   "words": [
+    "hiss"
+   ],
+   "attrs": {
+    "third": "hisses",
+    "past": "hissed",
+    "ing": "hissing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_buzz",
+   "kind": "verb_form",
+   "words": [
+    "buzz"
+   ],
+   "attrs": {
+    "third": "buzzes",
+    "past": "buzzed",
+    "ing": "buzzing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_drone",
+   "kind": "verb_form",
+   "words": [
+    "drone"
+   ],
+   "attrs": {
+    "third": "drones",
+    "past": "droned",
+    "ing": "droning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_croak",
+   "kind": "verb_form",
+   "words": [
+    "croak"
+   ],
+   "attrs": {
+    "third": "croaks",
+    "past": "croaked",
+    "ing": "croaking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_ribbit",
+   "kind": "verb_form",
+   "words": [
+    "ribbit"
+   ],
+   "attrs": {
+    "third": "ribbits",
+    "past": "ribbited",
+    "ing": "ribbiting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hoot",
+   "kind": "verb_form",
+   "words": [
+    "hoot"
+   ],
+   "attrs": {
+    "third": "hoots",
+    "past": "hooted",
+    "ing": "hooting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_trumpet",
+   "kind": "verb_form",
+   "words": [
+    "trumpet"
+   ],
+   "attrs": {
+    "third": "trumpets",
+    "past": "trumpeted",
+    "ing": "trumpeting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_roar",
+   "kind": "verb_form",
+   "words": [
+    "roar"
+   ],
+   "attrs": {
+    "third": "roars",
+    "past": "roared",
+    "ing": "roaring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_squeak",
+   "kind": "verb_form",
+   "words": [
+    "squeak"
+   ],
+   "attrs": {
+    "third": "squeaks",
+    "past": "squeaked",
+    "ing": "squeaking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_squeal",
+   "kind": "verb_form",
+   "words": [
+    "squeal"
+   ],
+   "attrs": {
+    "third": "squeals",
+    "past": "squealed",
+    "ing": "squealing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_think",
+   "kind": "verb_form",
+   "words": [
+    "think"
+   ],
+   "attrs": {
+    "third": "thinks",
+    "past": "thought",
+    "ing": "thinking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_know",
+   "kind": "verb_form",
+   "words": [
+    "know"
+   ],
+   "attrs": {
+    "third": "knows",
+    "past": "knew",
+    "ing": "knowing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_believe",
+   "kind": "verb_form",
+   "words": [
+    "believe"
+   ],
+   "attrs": {
+    "third": "believes",
+    "past": "believed",
+    "ing": "believing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_wonder",
+   "kind": "verb_form",
+   "words": [
+    "wonder"
+   ],
+   "attrs": {
+    "third": "wonders",
+    "past": "wondered",
+    "ing": "wondering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_guess",
+   "kind": "verb_form",
+   "words": [
+    "guess"
+   ],
+   "attrs": {
+    "third": "guesses",
+    "past": "guessed",
+    "ing": "guessing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_imagine",
+   "kind": "verb_form",
+   "words": [
+    "imagine"
+   ],
+   "attrs": {
+    "third": "imagines",
+    "past": "imagined",
+    "ing": "imagining"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_pretend",
+   "kind": "verb_form",
+   "words": [
+    "pretend"
+   ],
+   "attrs": {
+    "third": "pretends",
+    "past": "pretended",
+    "ing": "pretending"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_remember",
+   "kind": "verb_form",
+   "words": [
+    "remember"
+   ],
+   "attrs": {
+    "third": "remembers",
+    "past": "remembered",
+    "ing": "remembering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_forget",
+   "kind": "verb_form",
+   "words": [
+    "forget"
+   ],
+   "attrs": {
+    "third": "forgets",
+    "past": "forgot",
+    "ing": "forgetting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_recall",
+   "kind": "verb_form",
+   "words": [
+    "recall"
+   ],
+   "attrs": {
+    "third": "recalls",
+    "past": "recalled",
+    "ing": "recalling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_learn",
+   "kind": "verb_form",
+   "words": [
+    "learn"
+   ],
+   "attrs": {
+    "third": "learns",
+    "past": "learnt",
+    "ing": "learning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_teach",
+   "kind": "verb_form",
+   "words": [
+    "teach"
+   ],
+   "attrs": {
+    "third": "teaches",
+    "past": "taught",
+    "ing": "teaching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_study",
+   "kind": "verb_form",
+   "words": [
+    "study"
+   ],
+   "attrs": {
+    "third": "studies",
+    "past": "studied",
+    "ing": "studying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_practice",
+   "kind": "verb_form",
+   "words": [
+    "practice"
+   ],
+   "attrs": {
+    "third": "practices",
+    "past": "practiced",
+    "ing": "practicing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_drill",
+   "kind": "verb_form",
+   "words": [
+    "drill"
+   ],
+   "attrs": {
+    "third": "drills",
+    "past": "drilled",
+    "ing": "drilling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_memorize",
+   "kind": "verb_form",
+   "words": [
+    "memorize"
+   ],
+   "attrs": {
+    "third": "memorizes",
+    "past": "memorized",
+    "ing": "memorizing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_understand",
+   "kind": "verb_form",
+   "words": [
+    "understand"
+   ],
+   "attrs": {
+    "third": "understands",
+    "past": "understanded",
+    "ing": "understanding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_realize",
+   "kind": "verb_form",
+   "words": [
+    "realize"
+   ],
+   "attrs": {
+    "third": "realizes",
+    "past": "realized",
+    "ing": "realizing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_decide",
+   "kind": "verb_form",
+   "words": [
+    "decide"
+   ],
+   "attrs": {
+    "third": "decides",
+    "past": "decided",
+    "ing": "deciding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_choose",
+   "kind": "verb_form",
+   "words": [
+    "choose"
+   ],
+   "attrs": {
+    "third": "chooses",
+    "past": "chose",
+    "ing": "choosing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_prefer",
+   "kind": "verb_form",
+   "words": [
+    "prefer"
+   ],
+   "attrs": {
+    "third": "prefers",
+    "past": "prefered",
+    "ing": "prefering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_want",
+   "kind": "verb_form",
+   "words": [
+    "want"
+   ],
+   "attrs": {
+    "third": "wants",
+    "past": "wanted",
+    "ing": "wanting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_need",
+   "kind": "verb_form",
+   "words": [
+    "need"
+   ],
+   "attrs": {
+    "third": "needs",
+    "past": "needed",
+    "ing": "needing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_wish",
+   "kind": "verb_form",
+   "words": [
+    "wish"
+   ],
+   "attrs": {
+    "third": "wishes",
+    "past": "wished",
+    "ing": "wishing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hope",
+   "kind": "verb_form",
+   "words": [
+    "hope"
+   ],
+   "attrs": {
+    "third": "hopes",
+    "past": "hoped",
+    "ing": "hoping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_plan",
+   "kind": "verb_form",
+   "words": [
+    "plan"
+   ],
+   "attrs": {
+    "third": "plans",
+    "past": "planed",
+    "ing": "planing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_intend",
+   "kind": "verb_form",
+   "words": [
+    "intend"
+   ],
+   "attrs": {
+    "third": "intends",
+    "past": "intended",
+    "ing": "intending"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_mean",
+   "kind": "verb_form",
+   "words": [
+    "mean"
+   ],
+   "attrs": {
+    "third": "means",
+    "past": "meant",
+    "ing": "meaning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_imply",
+   "kind": "verb_form",
+   "words": [
+    "imply"
+   ],
+   "attrs": {
+    "third": "implies",
+    "past": "implied",
+    "ing": "implying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_suggest",
+   "kind": "verb_form",
+   "words": [
+    "suggest"
+   ],
+   "attrs": {
+    "third": "suggests",
+    "past": "suggested",
+    "ing": "suggesting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_propose",
+   "kind": "verb_form",
+   "words": [
+    "propose"
+   ],
+   "attrs": {
+    "third": "proposes",
+    "past": "proposed",
+    "ing": "proposing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_agree",
+   "kind": "verb_form",
+   "words": [
+    "agree"
+   ],
+   "attrs": {
+    "third": "agrees",
+    "past": "agreed",
+    "ing": "agreeing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_disagree",
+   "kind": "verb_form",
+   "words": [
+    "disagree"
+   ],
+   "attrs": {
+    "third": "disagrees",
+    "past": "disagreed",
+    "ing": "disagreeing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_argue",
+   "kind": "verb_form",
+   "words": [
+    "argue"
+   ],
+   "attrs": {
+    "third": "argues",
+    "past": "argued",
+    "ing": "arguing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_debate",
+   "kind": "verb_form",
+   "words": [
+    "debate"
+   ],
+   "attrs": {
+    "third": "debates",
+    "past": "debated",
+    "ing": "debating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_question",
+   "kind": "verb_form",
+   "words": [
+    "question"
+   ],
+   "attrs": {
+    "third": "questions",
+    "past": "questioned",
+    "ing": "questioning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_answer",
+   "kind": "verb_form",
+   "words": [
+    "answer"
+   ],
+   "attrs": {
+    "third": "answers",
+    "past": "answered",
+    "ing": "answering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_ask",
+   "kind": "verb_form",
+   "words": [
+    "ask"
+   ],
+   "attrs": {
+    "third": "asks",
+    "past": "asked",
+    "ing": "asking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_tell",
+   "kind": "verb_form",
+   "words": [
+    "tell"
+   ],
+   "attrs": {
+    "third": "tells",
+    "past": "told",
+    "ing": "telling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_explain",
+   "kind": "verb_form",
+   "words": [
+    "explain"
+   ],
+   "attrs": {
+    "third": "explains",
+    "past": "explained",
+    "ing": "explaining"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_describe",
+   "kind": "verb_form",
+   "words": [
+    "describe"
+   ],
+   "attrs": {
+    "third": "describes",
+    "past": "described",
+    "ing": "describing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_define",
+   "kind": "verb_form",
+   "words": [
+    "define"
+   ],
+   "attrs": {
+    "third": "defines",
+    "past": "defined",
+    "ing": "defining"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_name",
+   "kind": "verb_form",
+   "words": [
+    "name"
+   ],
+   "attrs": {
+    "third": "names",
+    "past": "named",
+    "ing": "naming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_call",
+   "kind": "verb_form",
+   "words": [
+    "call"
+   ],
+   "attrs": {
+    "third": "calls",
+    "past": "called",
+    "ing": "calling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_label",
+   "kind": "verb_form",
+   "words": [
+    "label"
+   ],
+   "attrs": {
+    "third": "labels",
+    "past": "labeled",
+    "ing": "labeling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_mention",
+   "kind": "verb_form",
+   "words": [
+    "mention"
+   ],
+   "attrs": {
+    "third": "mentions",
+    "past": "mentioned",
+    "ing": "mentioning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_state",
+   "kind": "verb_form",
+   "words": [
+    "state"
+   ],
+   "attrs": {
+    "third": "states",
+    "past": "stated",
+    "ing": "stating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_claim",
+   "kind": "verb_form",
+   "words": [
+    "claim"
+   ],
+   "attrs": {
+    "third": "claims",
+    "past": "claimed",
+    "ing": "claiming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_say",
+   "kind": "verb_form",
+   "words": [
+    "say"
+   ],
+   "attrs": {
+    "third": "says",
+    "past": "said",
+    "ing": "saying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_mutter",
+   "kind": "verb_form",
+   "words": [
+    "mutter"
+   ],
+   "attrs": {
+    "third": "mutters",
+    "past": "muttered",
+    "ing": "muttering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_mumble",
+   "kind": "verb_form",
+   "words": [
+    "mumble"
+   ],
+   "attrs": {
+    "third": "mumbles",
+    "past": "mumbled",
+    "ing": "mumbling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_yell",
+   "kind": "verb_form",
+   "words": [
+    "yell"
+   ],
+   "attrs": {
+    "third": "yells",
+    "past": "yelled",
+    "ing": "yelling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_scream",
+   "kind": "verb_form",
+   "words": [
+    "scream"
+   ],
+   "attrs": {
+    "third": "screams",
+    "past": "screamed",
+    "ing": "screaming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_cheer",
+   "kind": "verb_form",
+   "words": [
+    "cheer"
+   ],
+   "attrs": {
+    "third": "cheers",
+    "past": "cheered",
+    "ing": "cheering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_boo",
+   "kind": "verb_form",
+   "words": [
+    "boo"
+   ],
+   "attrs": {
+    "third": "boos",
+    "past": "booed",
+    "ing": "booing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_applaud",
+   "kind": "verb_form",
+   "words": [
+    "applaud"
+   ],
+   "attrs": {
+    "third": "applauds",
+    "past": "applauded",
+    "ing": "applauding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_clap",
+   "kind": "verb_form",
+   "words": [
+    "clap"
+   ],
+   "attrs": {
+    "third": "claps",
+    "past": "claped",
+    "ing": "claping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_help",
+   "kind": "verb_form",
+   "words": [
+    "help"
+   ],
+   "attrs": {
+    "third": "helps",
+    "past": "helped",
+    "ing": "helping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_share",
+   "kind": "verb_form",
+   "words": [
+    "share"
+   ],
+   "attrs": {
+    "third": "shares",
+    "past": "shared",
+    "ing": "sharing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_give",
+   "kind": "verb_form",
+   "words": [
+    "give"
+   ],
+   "attrs": {
+    "third": "gives",
+    "past": "gave",
+    "ing": "giving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_take",
+   "kind": "verb_form",
+   "words": [
+    "take"
+   ],
+   "attrs": {
+    "third": "takes",
+    "past": "took",
+    "ing": "taking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_receive",
+   "kind": "verb_form",
+   "words": [
+    "receive"
+   ],
+   "attrs": {
+    "third": "receives",
+    "past": "received",
+    "ing": "receiving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_offer",
+   "kind": "verb_form",
+   "words": [
+    "offer"
+   ],
+   "attrs": {
+    "third": "offers",
+    "past": "offered",
+    "ing": "offering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_accept",
+   "kind": "verb_form",
+   "words": [
+    "accept"
+   ],
+   "attrs": {
+    "third": "accepts",
+    "past": "accepted",
+    "ing": "accepting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_refuse",
+   "kind": "verb_form",
+   "words": [
+    "refuse"
+   ],
+   "attrs": {
+    "third": "refuses",
+    "past": "refused",
+    "ing": "refusing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_deny",
+   "kind": "verb_form",
+   "words": [
+    "deny"
+   ],
+   "attrs": {
+    "third": "denies",
+    "past": "denied",
+    "ing": "denying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_admit",
+   "kind": "verb_form",
+   "words": [
+    "admit"
+   ],
+   "attrs": {
+    "third": "admits",
+    "past": "admited",
+    "ing": "admiting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_allow",
+   "kind": "verb_form",
+   "words": [
+    "allow"
+   ],
+   "attrs": {
+    "third": "allows",
+    "past": "allowed",
+    "ing": "allowing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_permit",
+   "kind": "verb_form",
+   "words": [
+    "permit"
+   ],
+   "attrs": {
+    "third": "permits",
+    "past": "permited",
+    "ing": "permiting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_forbid",
+   "kind": "verb_form",
+   "words": [
+    "forbid"
+   ],
+   "attrs": {
+    "third": "forbids",
+    "past": "forbided",
+    "ing": "forbiding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_ban",
+   "kind": "verb_form",
+   "words": [
+    "ban"
+   ],
+   "attrs": {
+    "third": "bans",
+    "past": "baned",
+    "ing": "baning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_block",
+   "kind": "verb_form",
+   "words": [
+    "block"
+   ],
+   "attrs": {
+    "third": "blocks",
+    "past": "blocked",
+    "ing": "blocking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_borrow",
+   "kind": "verb_form",
+   "words": [
+    "borrow"
+   ],
+   "attrs": {
+    "third": "borrows",
+    "past": "borrowed",
+    "ing": "borrowing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_lend",
+   "kind": "verb_form",
+   "words": [
+    "lend"
+   ],
+   "attrs": {
+    "third": "lends",
+    "past": "lended",
+    "ing": "lending"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_keep",
+   "kind": "verb_form",
+   "words": [
+    "keep"
+   ],
+   "attrs": {
+    "third": "keeps",
+    "past": "kept",
+    "ing": "keeping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_save",
+   "kind": "verb_form",
+   "words": [
+    "save"
+   ],
+   "attrs": {
+    "third": "saves",
+    "past": "saved",
+    "ing": "saving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_spend",
+   "kind": "verb_form",
+   "words": [
+    "spend"
+   ],
+   "attrs": {
+    "third": "spends",
+    "past": "spent",
+    "ing": "spending"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_buy",
+   "kind": "verb_form",
+   "words": [
+    "buy"
+   ],
+   "attrs": {
+    "third": "buys",
+    "past": "bought",
+    "ing": "buying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_sell",
+   "kind": "verb_form",
+   "words": [
+    "sell"
+   ],
+   "attrs": {
+    "third": "sells",
+    "past": "selled",
+    "ing": "selling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_trade",
+   "kind": "verb_form",
+   "words": [
+    "trade"
+   ],
+   "attrs": {
+    "third": "trades",
+    "past": "traded",
+    "ing": "trading"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_swap",
+   "kind": "verb_form",
+   "words": [
+    "swap"
+   ],
+   "attrs": {
+    "third": "swaps",
+    "past": "swaped",
+    "ing": "swaping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_pay",
+   "kind": "verb_form",
+   "words": [
+    "pay"
+   ],
+   "attrs": {
+    "third": "pays",
+    "past": "paid",
+    "ing": "paying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_owe",
+   "kind": "verb_form",
+   "words": [
+    "owe"
+   ],
+   "attrs": {
+    "third": "owes",
+    "past": "owed",
+    "ing": "owing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_earn",
+   "kind": "verb_form",
+   "words": [
+    "earn"
+   ],
+   "attrs": {
+    "third": "earns",
+    "past": "earned",
+    "ing": "earning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_cost",
+   "kind": "verb_form",
+   "words": [
+    "cost"
+   ],
+   "attrs": {
+    "third": "costs",
+    "past": "cost",
+    "ing": "costing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_afford",
+   "kind": "verb_form",
+   "words": [
+    "afford"
+   ],
+   "attrs": {
+    "third": "affords",
+    "past": "afforded",
+    "ing": "affording"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_rent",
+   "kind": "verb_form",
+   "words": [
+    "rent"
+   ],
+   "attrs": {
+    "third": "rents",
+    "past": "rented",
+    "ing": "renting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hire",
+   "kind": "verb_form",
+   "words": [
+    "hire"
+   ],
+   "attrs": {
+    "third": "hires",
+    "past": "hired",
+    "ing": "hiring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_fire",
+   "kind": "verb_form",
+   "words": [
+    "fire"
+   ],
+   "attrs": {
+    "third": "fires",
+    "past": "fired",
+    "ing": "firing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_work",
+   "kind": "verb_form",
+   "words": [
+    "work"
+   ],
+   "attrs": {
+    "third": "works",
+    "past": "worked",
+    "ing": "working"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_play",
+   "kind": "verb_form",
+   "words": [
+    "play"
+   ],
+   "attrs": {
+    "third": "plays",
+    "past": "played",
+    "ing": "playing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_perform",
+   "kind": "verb_form",
+   "words": [
+    "perform"
+   ],
+   "attrs": {
+    "third": "performs",
+    "past": "performed",
+    "ing": "performing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_act",
+   "kind": "verb_form",
+   "words": [
+    "act"
+   ],
+   "attrs": {
+    "third": "acts",
+    "past": "acted",
+    "ing": "acting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_rehearse",
+   "kind": "verb_form",
+   "words": [
+    "rehearse"
+   ],
+   "attrs": {
+    "third": "rehearses",
+    "past": "rehearsed",
+    "ing": "rehearsing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_audition",
+   "kind": "verb_form",
+   "words": [
+    "audition"
+   ],
+   "attrs": {
+    "third": "auditions",
+    "past": "auditioned",
+    "ing": "auditioning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_compete",
+   "kind": "verb_form",
+   "words": [
+    "compete"
+   ],
+   "attrs": {
+    "third": "competes",
+    "past": "competed",
+    "ing": "competing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_race",
+   "kind": "verb_form",
+   "words": [
+    "race"
+   ],
+   "attrs": {
+    "third": "races",
+    "past": "raced",
+    "ing": "racing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_exercise",
+   "kind": "verb_form",
+   "words": [
+    "exercise"
+   ],
+   "attrs": {
+    "third": "exercises",
+    "past": "exercised",
+    "ing": "exercising"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_train",
+   "kind": "verb_form",
+   "words": [
+    "train"
+   ],
+   "attrs": {
+    "third": "trains",
+    "past": "trained",
+    "ing": "training"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_coach",
+   "kind": "verb_form",
+   "words": [
+    "coach"
+   ],
+   "attrs": {
+    "third": "coaches",
+    "past": "coached",
+    "ing": "coaching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_lead",
+   "kind": "verb_form",
+   "words": [
+    "lead"
+   ],
+   "attrs": {
+    "third": "leads",
+    "past": "led",
+    "ing": "leading"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_follow",
+   "kind": "verb_form",
+   "words": [
+    "follow"
+   ],
+   "attrs": {
+    "third": "follows",
+    "past": "followed",
+    "ing": "following"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_guide",
+   "kind": "verb_form",
+   "words": [
+    "guide"
+   ],
+   "attrs": {
+    "third": "guides",
+    "past": "guided",
+    "ing": "guiding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_direct",
+   "kind": "verb_form",
+   "words": [
+    "direct"
+   ],
+   "attrs": {
+    "third": "directs",
+    "past": "directed",
+    "ing": "directing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_manage",
+   "kind": "verb_form",
+   "words": [
+    "manage"
+   ],
+   "attrs": {
+    "third": "manages",
+    "past": "managed",
+    "ing": "managing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_schedule",
+   "kind": "verb_form",
+   "words": [
+    "schedule"
+   ],
+   "attrs": {
+    "third": "schedules",
+    "past": "scheduled",
+    "ing": "scheduling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_wait",
+   "kind": "verb_form",
+   "words": [
+    "wait"
+   ],
+   "attrs": {
+    "third": "waits",
+    "past": "waited",
+    "ing": "waiting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hurry",
+   "kind": "verb_form",
+   "words": [
+    "hurry"
+   ],
+   "attrs": {
+    "third": "hurries",
+    "past": "hurried",
+    "ing": "hurrying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_rush",
+   "kind": "verb_form",
+   "words": [
+    "rush"
+   ],
+   "attrs": {
+    "third": "rushes",
+    "past": "rushed",
+    "ing": "rushing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_slow",
+   "kind": "verb_form",
+   "words": [
+    "slow"
+   ],
+   "attrs": {
+    "third": "slows",
+    "past": "slowed",
+    "ing": "slowing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_pause",
+   "kind": "verb_form",
+   "words": [
+    "pause"
+   ],
+   "attrs": {
+    "third": "pauses",
+    "past": "paused",
+    "ing": "pausing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_resume",
+   "kind": "verb_form",
+   "words": [
+    "resume"
+   ],
+   "attrs": {
+    "third": "resumes",
+    "past": "resumed",
+    "ing": "resuming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_delay",
+   "kind": "verb_form",
+   "words": [
+    "delay"
+   ],
+   "attrs": {
+    "third": "delays",
+    "past": "delayed",
+    "ing": "delaying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_cancel",
+   "kind": "verb_form",
+   "words": [
+    "cancel"
+   ],
+   "attrs": {
+    "third": "cancels",
+    "past": "canceled",
+    "ing": "canceling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_postpone",
+   "kind": "verb_form",
+   "words": [
+    "postpone"
+   ],
+   "attrs": {
+    "third": "postpones",
+    "past": "postponed",
+    "ing": "postponing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_arrive",
+   "kind": "verb_form",
+   "words": [
+    "arrive"
+   ],
+   "attrs": {
+    "third": "arrives",
+    "past": "arrived",
+    "ing": "arriving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_depart",
+   "kind": "verb_form",
+   "words": [
+    "depart"
+   ],
+   "attrs": {
+    "third": "departs",
+    "past": "departed",
+    "ing": "departing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_leave",
+   "kind": "verb_form",
+   "words": [
+    "leave"
+   ],
+   "attrs": {
+    "third": "leaves",
+    "past": "left",
+    "ing": "leaving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_enter",
+   "kind": "verb_form",
+   "words": [
+    "enter"
+   ],
+   "attrs": {
+    "third": "enters",
+    "past": "entered",
+    "ing": "entering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_exit",
+   "kind": "verb_form",
+   "words": [
+    "exit"
+   ],
+   "attrs": {
+    "third": "exits",
+    "past": "exited",
+    "ing": "exiting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_return",
+   "kind": "verb_form",
+   "words": [
+    "return"
+   ],
+   "attrs": {
+    "third": "returns",
+    "past": "returned",
+    "ing": "returning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_stay",
+   "kind": "verb_form",
+   "words": [
+    "stay"
+   ],
+   "attrs": {
+    "third": "stays",
+    "past": "stayed",
+    "ing": "staying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_remain",
+   "kind": "verb_form",
+   "words": [
+    "remain"
+   ],
+   "attrs": {
+    "third": "remains",
+    "past": "remained",
+    "ing": "remaining"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_wander",
+   "kind": "verb_form",
+   "words": [
+    "wander"
+   ],
+   "attrs": {
+    "third": "wanders",
+    "past": "wandered",
+    "ing": "wandering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_roam",
+   "kind": "verb_form",
+   "words": [
+    "roam"
+   ],
+   "attrs": {
+    "third": "roams",
+    "past": "roamed",
+    "ing": "roaming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_travel",
+   "kind": "verb_form",
+   "words": [
+    "travel"
+   ],
+   "attrs": {
+    "third": "travels",
+    "past": "traveled",
+    "ing": "traveling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_commute",
+   "kind": "verb_form",
+   "words": [
+    "commute"
+   ],
+   "attrs": {
+    "third": "commutes",
+    "past": "commuted",
+    "ing": "commuting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_drive",
+   "kind": "verb_form",
+   "words": [
+    "drive"
+   ],
+   "attrs": {
+    "third": "drives",
+    "past": "drove",
+    "ing": "driving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_ride",
+   "kind": "verb_form",
+   "words": [
+    "ride"
+   ],
+   "attrs": {
+    "third": "rides",
+    "past": "rode",
+    "ing": "riding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_sail",
+   "kind": "verb_form",
+   "words": [
+    "sail"
+   ],
+   "attrs": {
+    "third": "sails",
+    "past": "sailed",
+    "ing": "sailing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_land",
+   "kind": "verb_form",
+   "words": [
+    "land"
+   ],
+   "attrs": {
+    "third": "lands",
+    "past": "landed",
+    "ing": "landing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_takeoff",
+   "kind": "verb_form",
+   "words": [
+    "takeoff"
+   ],
+   "attrs": {
+    "third": "takeoffs",
+    "past": "takeoffed",
+    "ing": "takeoffing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_park",
+   "kind": "verb_form",
+   "words": [
+    "park"
+   ],
+   "attrs": {
+    "third": "parks",
+    "past": "parked",
+    "ing": "parking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_steer",
+   "kind": "verb_form",
+   "words": [
+    "steer"
+   ],
+   "attrs": {
+    "third": "steers",
+    "past": "steered",
+    "ing": "steering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_brake",
+   "kind": "verb_form",
+   "words": [
+    "brake"
+   ],
+   "attrs": {
+    "third": "brakes",
+    "past": "braked",
+    "ing": "braking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_accelerate",
+   "kind": "verb_form",
+   "words": [
+    "accelerate"
+   ],
+   "attrs": {
+    "third": "accelerates",
+    "past": "accelerated",
+    "ing": "accelerating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_swerve",
+   "kind": "verb_form",
+   "words": [
+    "swerve"
+   ],
+   "attrs": {
+    "third": "swerves",
+    "past": "swerved",
+    "ing": "swerving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_reverse",
+   "kind": "verb_form",
+   "words": [
+    "reverse"
+   ],
+   "attrs": {
+    "third": "reverses",
+    "past": "reversed",
+    "ing": "reversing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_dock",
+   "kind": "verb_form",
+   "words": [
+    "dock"
+   ],
+   "attrs": {
+    "third": "docks",
+    "past": "docked",
+    "ing": "docking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_anchor",
+   "kind": "verb_form",
+   "words": [
+    "anchor"
+   ],
+   "attrs": {
+    "third": "anchors",
+    "past": "anchored",
+    "ing": "anchoring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_drift",
+   "kind": "verb_form",
+   "words": [
+    "drift"
+   ],
+   "attrs": {
+    "third": "drifts",
+    "past": "drifted",
+    "ing": "drifting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_float",
+   "kind": "verb_form",
+   "words": [
+    "float"
+   ],
+   "attrs": {
+    "third": "floats",
+    "past": "floated",
+    "ing": "floating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_sink",
+   "kind": "verb_form",
+   "words": [
+    "sink"
+   ],
+   "attrs": {
+    "third": "sinks",
+    "past": "sinked",
+    "ing": "sinking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_dive",
+   "kind": "verb_form",
+   "words": [
+    "dive"
+   ],
+   "attrs": {
+    "third": "dives",
+    "past": "dived",
+    "ing": "diving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_plunge",
+   "kind": "verb_form",
+   "words": [
+    "plunge"
+   ],
+   "attrs": {
+    "third": "plunges",
+    "past": "plunged",
+    "ing": "plunging"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_splash",
+   "kind": "verb_form",
+   "words": [
+    "splash"
+   ],
+   "attrs": {
+    "third": "splashes",
+    "past": "splashed",
+    "ing": "splashing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_soak",
+   "kind": "verb_form",
+   "words": [
+    "soak"
+   ],
+   "attrs": {
+    "third": "soaks",
+    "past": "soaked",
+    "ing": "soaking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_drench",
+   "kind": "verb_form",
+   "words": [
+    "drench"
+   ],
+   "attrs": {
+    "third": "drenches",
+    "past": "drenched",
+    "ing": "drenching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_dampen",
+   "kind": "verb_form",
+   "words": [
+    "dampen"
+   ],
+   "attrs": {
+    "third": "dampens",
+    "past": "dampened",
+    "ing": "dampening"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_evaporate",
+   "kind": "verb_form",
+   "words": [
+    "evaporate"
+   ],
+   "attrs": {
+    "third": "evaporates",
+    "past": "evaporated",
+    "ing": "evaporating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_condense",
+   "kind": "verb_form",
+   "words": [
+    "condense"
+   ],
+   "attrs": {
+    "third": "condenses",
+    "past": "condensed",
+    "ing": "condensing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_thaw",
+   "kind": "verb_form",
+   "words": [
+    "thaw"
+   ],
+   "attrs": {
+    "third": "thaws",
+    "past": "thawed",
+    "ing": "thawing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_burn",
+   "kind": "verb_form",
+   "words": [
+    "burn"
+   ],
+   "attrs": {
+    "third": "burns",
+    "past": "burnt",
+    "ing": "burning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_blaze",
+   "kind": "verb_form",
+   "words": [
+    "blaze"
+   ],
+   "attrs": {
+    "third": "blazes",
+    "past": "blazed",
+    "ing": "blazing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_ignite",
+   "kind": "verb_form",
+   "words": [
+    "ignite"
+   ],
+   "attrs": {
+    "third": "ignites",
+    "past": "ignited",
+    "ing": "igniting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_extinguish",
+   "kind": "verb_form",
+   "words": [
+    "extinguish"
+   ],
+   "attrs": {
+    "third": "extinguishes",
+    "past": "extinguished",
+    "ing": "extinguishing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_smolder",
+   "kind": "verb_form",
+   "words": [
+    "smolder"
+   ],
+   "attrs": {
+    "third": "smolders",
+    "past": "smoldered",
+    "ing": "smoldering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_glow",
+   "kind": "verb_form",
+   "words": [
+    "glow"
+   ],
+   "attrs": {
+    "third": "glows",
+    "past": "glowed",
+    "ing": "glowing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_flicker",
+   "kind": "verb_form",
+   "words": [
+    "flicker"
+   ],
+   "attrs": {
+    "third": "flickers",
+    "past": "flickered",
+    "ing": "flickering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_sparkle",
+   "kind": "verb_form",
+   "words": [
+    "sparkle"
+   ],
+   "attrs": {
+    "third": "sparkles",
+    "past": "sparkled",
+    "ing": "sparkling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_shimmer",
+   "kind": "verb_form",
+   "words": [
+    "shimmer"
+   ],
+   "attrs": {
+    "third": "shimmers",
+    "past": "shimmered",
+    "ing": "shimmering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_beam",
+   "kind": "verb_form",
+   "words": [
+    "beam"
+   ],
+   "attrs": {
+    "third": "beams",
+    "past": "beamed",
+    "ing": "beaming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_radiate",
+   "kind": "verb_form",
+   "words": [
+    "radiate"
+   ],
+   "attrs": {
+    "third": "radiates",
+    "past": "radiated",
+    "ing": "radiating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_reflect",
+   "kind": "verb_form",
+   "words": [
+    "reflect"
+   ],
+   "attrs": {
+    "third": "reflects",
+    "past": "reflected",
+    "ing": "reflecting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_absorb",
+   "kind": "verb_form",
+   "words": [
+    "absorb"
+   ],
+   "attrs": {
+    "third": "absorbs",
+    "past": "absorbed",
+    "ing": "absorbing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_filter",
+   "kind": "verb_form",
+   "words": [
+    "filter"
+   ],
+   "attrs": {
+    "third": "filters",
+    "past": "filtered",
+    "ing": "filtering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_dim",
+   "kind": "verb_form",
+   "words": [
+    "dim"
+   ],
+   "attrs": {
+    "third": "dims",
+    "past": "dimed",
+    "ing": "diming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_brighten",
+   "kind": "verb_form",
+   "words": [
+    "brighten"
+   ],
+   "attrs": {
+    "third": "brightens",
+    "past": "brightened",
+    "ing": "brightening"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_darken",
+   "kind": "verb_form",
+   "words": [
+    "darken"
+   ],
+   "attrs": {
+    "third": "darkens",
+    "past": "darkened",
+    "ing": "darkening"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_color",
+   "kind": "verb_form",
+   "words": [
+    "color"
+   ],
+   "attrs": {
+    "third": "colors",
+    "past": "colored",
+    "ing": "coloring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_dye",
+   "kind": "verb_form",
+   "words": [
+    "dye"
+   ],
+   "attrs": {
+    "third": "dyes",
+    "past": "dyed",
+    "ing": "dying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_bleach",
+   "kind": "verb_form",
+   "words": [
+    "bleach"
+   ],
+   "attrs": {
+    "third": "bleaches",
+    "past": "bleached",
+    "ing": "bleaching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_fade",
+   "kind": "verb_form",
+   "words": [
+    "fade"
+   ],
+   "attrs": {
+    "third": "fades",
+    "past": "faded",
+    "ing": "fading"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_stain",
+   "kind": "verb_form",
+   "words": [
+    "stain"
+   ],
+   "attrs": {
+    "third": "stains",
+    "past": "stained",
+    "ing": "staining"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_sketch",
+   "kind": "verb_form",
+   "words": [
+    "sketch"
+   ],
+   "attrs": {
+    "third": "sketches",
+    "past": "sketched",
+    "ing": "sketching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_doodle",
+   "kind": "verb_form",
+   "words": [
+    "doodle"
+   ],
+   "attrs": {
+    "third": "doodles",
+    "past": "doodled",
+    "ing": "doodling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_trace",
+   "kind": "verb_form",
+   "words": [
+    "trace"
+   ],
+   "attrs": {
+    "third": "traces",
+    "past": "traced",
+    "ing": "tracing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_outline",
+   "kind": "verb_form",
+   "words": [
+    "outline"
+   ],
+   "attrs": {
+    "third": "outlines",
+    "past": "outlined",
+    "ing": "outlining"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_shade",
+   "kind": "verb_form",
+   "words": [
+    "shade"
+   ],
+   "attrs": {
+    "third": "shades",
+    "past": "shaded",
+    "ing": "shading"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_highlight",
+   "kind": "verb_form",
+   "words": [
+    "highlight"
+   ],
+   "attrs": {
+    "third": "highlights",
+    "past": "highlighted",
+    "ing": "highlighting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_erase",
+   "kind": "verb_form",
+   "words": [
+    "erase"
+   ],
+   "attrs": {
+    "third": "erases",
+    "past": "erased",
+    "ing": "erasing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_correct",
+   "kind": "verb_form",
+   "words": [
+    "correct"
+   ],
+   "attrs": {
+    "third": "corrects",
+    "past": "corrected",
+    "ing": "correcting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_edit",
+   "kind": "verb_form",
+   "words": [
+    "edit"
+   ],
+   "attrs": {
+    "third": "edits",
+    "past": "edited",
+    "ing": "editing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_revise",
+   "kind": "verb_form",
+   "words": [
+    "revise"
+   ],
+   "attrs": {
+    "third": "revises",
+    "past": "revised",
+    "ing": "revising"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_refine",
+   "kind": "verb_form",
+   "words": [
+    "refine"
+   ],
+   "attrs": {
+    "third": "refines",
+    "past": "refined",
+    "ing": "refining"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_improve",
+   "kind": "verb_form",
+   "words": [
+    "improve"
+   ],
+   "attrs": {
+    "third": "improves",
+    "past": "improved",
+    "ing": "improving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_worsen",
+   "kind": "verb_form",
+   "words": [
+    "worsen"
+   ],
+   "attrs": {
+    "third": "worsens",
+    "past": "worsened",
+    "ing": "worsening"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_damage",
+   "kind": "verb_form",
+   "words": [
+    "damage"
+   ],
+   "attrs": {
+    "third": "damages",
+    "past": "damaged",
+    "ing": "damaging"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_harm",
+   "kind": "verb_form",
+   "words": [
+    "harm"
+   ],
+   "attrs": {
+    "third": "harms",
+    "past": "harmed",
+    "ing": "harming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hurt",
+   "kind": "verb_form",
+   "words": [
+    "hurt"
+   ],
+   "attrs": {
+    "third": "hurts",
+    "past": "hurt",
+    "ing": "hurting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_heal",
+   "kind": "verb_form",
+   "words": [
+    "heal"
+   ],
+   "attrs": {
+    "third": "heals",
+    "past": "healed",
+    "ing": "healing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_cure",
+   "kind": "verb_form",
+   "words": [
+    "cure"
+   ],
+   "attrs": {
+    "third": "cures",
+    "past": "cured",
+    "ing": "curing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_treat",
+   "kind": "verb_form",
+   "words": [
+    "treat"
+   ],
+   "attrs": {
+    "third": "treats",
+    "past": "treated",
+    "ing": "treating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_soothe",
+   "kind": "verb_form",
+   "words": [
+    "soothe"
+   ],
+   "attrs": {
+    "third": "soothes",
+    "past": "soothed",
+    "ing": "soothing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_comfort",
+   "kind": "verb_form",
+   "words": [
+    "comfort"
+   ],
+   "attrs": {
+    "third": "comforts",
+    "past": "comforted",
+    "ing": "comforting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_console",
+   "kind": "verb_form",
+   "words": [
+    "console"
+   ],
+   "attrs": {
+    "third": "consoles",
+    "past": "consoled",
+    "ing": "consoling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_encourage",
+   "kind": "verb_form",
+   "words": [
+    "encourage"
+   ],
+   "attrs": {
+    "third": "encourages",
+    "past": "encouraged",
+    "ing": "encouraging"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_inspire",
+   "kind": "verb_form",
+   "words": [
+    "inspire"
+   ],
+   "attrs": {
+    "third": "inspires",
+    "past": "inspired",
+    "ing": "inspiring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_motivate",
+   "kind": "verb_form",
+   "words": [
+    "motivate"
+   ],
+   "attrs": {
+    "third": "motivates",
+    "past": "motivated",
+    "ing": "motivating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_praise",
+   "kind": "verb_form",
+   "words": [
+    "praise"
+   ],
+   "attrs": {
+    "third": "praises",
+    "past": "praised",
+    "ing": "praising"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_scold",
+   "kind": "verb_form",
+   "words": [
+    "scold"
+   ],
+   "attrs": {
+    "third": "scolds",
+    "past": "scolded",
+    "ing": "scolding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_punish",
+   "kind": "verb_form",
+   "words": [
+    "punish"
+   ],
+   "attrs": {
+    "third": "punishes",
+    "past": "punished",
+    "ing": "punishing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_reward",
+   "kind": "verb_form",
+   "words": [
+    "reward"
+   ],
+   "attrs": {
+    "third": "rewards",
+    "past": "rewarded",
+    "ing": "rewarding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_forgive",
+   "kind": "verb_form",
+   "words": [
+    "forgive"
+   ],
+   "attrs": {
+    "third": "forgives",
+    "past": "forgave",
+    "ing": "forgiving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_trust",
+   "kind": "verb_form",
+   "words": [
+    "trust"
+   ],
+   "attrs": {
+    "third": "trusts",
+    "past": "trusted",
+    "ing": "trusting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_doubt",
+   "kind": "verb_form",
+   "words": [
+    "doubt"
+   ],
+   "attrs": {
+    "third": "doubts",
+    "past": "doubted",
+    "ing": "doubting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_suspect",
+   "kind": "verb_form",
+   "words": [
+    "suspect"
+   ],
+   "attrs": {
+    "third": "suspects",
+    "past": "suspected",
+    "ing": "suspecting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_admire",
+   "kind": "verb_form",
+   "words": [
+    "admire"
+   ],
+   "attrs": {
+    "third": "admires",
+    "past": "admired",
+    "ing": "admiring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_respect",
+   "kind": "verb_form",
+   "words": [
+    "respect"
+   ],
+   "attrs": {
+    "third": "respects",
+    "past": "respected",
+    "ing": "respecting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_adore",
+   "kind": "verb_form",
+   "words": [
+    "adore"
+   ],
+   "attrs": {
+    "third": "adores",
+    "past": "adored",
+    "ing": "adoring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_love",
+   "kind": "verb_form",
+   "words": [
+    "love"
+   ],
+   "attrs": {
+    "third": "loves",
+    "past": "loved",
+    "ing": "loving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_like",
+   "kind": "verb_form",
+   "words": [
+    "like"
+   ],
+   "attrs": {
+    "third": "likes",
+    "past": "liked",
+    "ing": "liking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_enjoy",
+   "kind": "verb_form",
+   "words": [
+    "enjoy"
+   ],
+   "attrs": {
+    "third": "enjoys",
+    "past": "enjoyed",
+    "ing": "enjoying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hate",
+   "kind": "verb_form",
+   "words": [
+    "hate"
+   ],
+   "attrs": {
+    "third": "hates",
+    "past": "hated",
+    "ing": "hating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_dislike",
+   "kind": "verb_form",
+   "words": [
+    "dislike"
+   ],
+   "attrs": {
+    "third": "dislikes",
+    "past": "disliked",
+    "ing": "disliking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_despise",
+   "kind": "verb_form",
+   "words": [
+    "despise"
+   ],
+   "attrs": {
+    "third": "despises",
+    "past": "despised",
+    "ing": "despising"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_resent",
+   "kind": "verb_form",
+   "words": [
+    "resent"
+   ],
+   "attrs": {
+    "third": "resents",
+    "past": "resented",
+    "ing": "resenting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_envy",
+   "kind": "verb_form",
+   "words": [
+    "envy"
+   ],
+   "attrs": {
+    "third": "envies",
+    "past": "envied",
+    "ing": "envying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_miss",
+   "kind": "verb_form",
+   "words": [
+    "miss"
+   ],
+   "attrs": {
+    "third": "misses",
+    "past": "missed",
+    "ing": "missing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_long",
+   "kind": "verb_form",
+   "words": [
+    "long"
+   ],
+   "attrs": {
+    "third": "longs",
+    "past": "longed",
+    "ing": "longing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_desire",
+   "kind": "verb_form",
+   "words": [
+    "desire"
+   ],
+   "attrs": {
+    "third": "desires",
+    "past": "desired",
+    "ing": "desiring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_crave",
+   "kind": "verb_form",
+   "words": [
+    "crave"
+   ],
+   "attrs": {
+    "third": "craves",
+    "past": "craved",
+    "ing": "craving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_select",
+   "kind": "verb_form",
+   "words": [
+    "select"
+   ],
+   "attrs": {
+    "third": "selects",
+    "past": "selected",
+    "ing": "selecting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_elect",
+   "kind": "verb_form",
+   "words": [
+    "elect"
+   ],
+   "attrs": {
+    "third": "elects",
+    "past": "elected",
+    "ing": "electing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_appoint",
+   "kind": "verb_form",
+   "words": [
+    "appoint"
+   ],
+   "attrs": {
+    "third": "appoints",
+    "past": "appointed",
+    "ing": "appointing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_rank",
+   "kind": "verb_form",
+   "words": [
+    "rank"
+   ],
+   "attrs": {
+    "third": "ranks",
+    "past": "ranked",
+    "ing": "ranking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_rate",
+   "kind": "verb_form",
+   "words": [
+    "rate"
+   ],
+   "attrs": {
+    "third": "rates",
+    "past": "rated",
+    "ing": "rating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_score",
+   "kind": "verb_form",
+   "words": [
+    "score"
+   ],
+   "attrs": {
+    "third": "scores",
+    "past": "scored",
+    "ing": "scoring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_grade",
+   "kind": "verb_form",
+   "words": [
+    "grade"
+   ],
+   "attrs": {
+    "third": "grades",
+    "past": "graded",
+    "ing": "grading"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_judge",
+   "kind": "verb_form",
+   "words": [
+    "judge"
+   ],
+   "attrs": {
+    "third": "judges",
+    "past": "judged",
+    "ing": "judging"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_evaluate",
+   "kind": "verb_form",
+   "words": [
+    "evaluate"
+   ],
+   "attrs": {
+    "third": "evaluates",
+    "past": "evaluated",
+    "ing": "evaluating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_assess",
+   "kind": "verb_form",
+   "words": [
+    "assess"
+   ],
+   "attrs": {
+    "third": "assesses",
+    "past": "assessed",
+    "ing": "assessing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_estimate",
+   "kind": "verb_form",
+   "words": [
+    "estimate"
+   ],
+   "attrs": {
+    "third": "estimates",
+    "past": "estimated",
+    "ing": "estimating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_predict",
+   "kind": "verb_form",
+   "words": [
+    "predict"
+   ],
+   "attrs": {
+    "third": "predicts",
+    "past": "predicted",
+    "ing": "predicting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_forecast",
+   "kind": "verb_form",
+   "words": [
+    "forecast"
+   ],
+   "attrs": {
+    "third": "forecasts",
+    "past": "forecasted",
+    "ing": "forecasting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_calculate",
+   "kind": "verb_form",
+   "words": [
+    "calculate"
+   ],
+   "attrs": {
+    "third": "calculates",
+    "past": "calculated",
+    "ing": "calculating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_compute",
+   "kind": "verb_form",
+   "words": [
+    "compute"
+   ],
+   "attrs": {
+    "third": "computes",
+    "past": "computed",
+    "ing": "computing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_solve",
+   "kind": "verb_form",
+   "words": [
+    "solve"
+   ],
+   "attrs": {
+    "third": "solves",
+    "past": "solved",
+    "ing": "solving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_figure",
+   "kind": "verb_form",
+   "words": [
+    "figure"
+   ],
+   "attrs": {
+    "third": "figures",
+    "past": "figured",
+    "ing": "figuring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_derive",
+   "kind": "verb_form",
+   "words": [
+    "derive"
+   ],
+   "attrs": {
+    "third": "derives",
+    "past": "derived",
+    "ing": "deriving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_conclude",
+   "kind": "verb_form",
+   "words": [
+    "conclude"
+   ],
+   "attrs": {
+    "third": "concludes",
+    "past": "concluded",
+    "ing": "concluding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_infer",
+   "kind": "verb_form",
+   "words": [
+    "infer"
+   ],
+   "attrs": {
+    "third": "infers",
+    "past": "infered",
+    "ing": "infering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_deduce",
+   "kind": "verb_form",
+   "words": [
+    "deduce"
+   ],
+   "attrs": {
+    "third": "deduces",
+    "past": "deduced",
+    "ing": "deducing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_reason",
+   "kind": "verb_form",
+   "words": [
+    "reason"
+   ],
+   "attrs": {
+    "third": "reasons",
+    "past": "reasoned",
+    "ing": "reasoning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_logic",
+   "kind": "verb_form",
+   "words": [
+    "logic"
+   ],
+   "attrs": {
+    "third": "logics",
+    "past": "logiced",
+    "ing": "logicing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_justify",
+   "kind": "verb_form",
+   "words": [
+    "justify"
+   ],
+   "attrs": {
+    "third": "justifies",
+    "past": "justified",
+    "ing": "justifying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_prove",
+   "kind": "verb_form",
+   "words": [
+    "prove"
+   ],
+   "attrs": {
+    "third": "proves",
+    "past": "proved",
+    "ing": "proving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_verify",
+   "kind": "verb_form",
+   "words": [
+    "verify"
+   ],
+   "attrs": {
+    "third": "verifies",
+    "past": "verified",
+    "ing": "verifying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_check",
+   "kind": "verb_form",
+   "words": [
+    "check"
+   ],
+   "attrs": {
+    "third": "checks",
+    "past": "checked",
+    "ing": "checking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_test",
+   "kind": "verb_form",
+   "words": [
+    "test"
+   ],
+   "attrs": {
+    "third": "tests",
+    "past": "tested",
+    "ing": "testing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_inspect",
+   "kind": "verb_form",
+   "words": [
+    "inspect"
+   ],
+   "attrs": {
+    "third": "inspects",
+    "past": "inspected",
+    "ing": "inspecting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_examine",
+   "kind": "verb_form",
+   "words": [
+    "examine"
+   ],
+   "attrs": {
+    "third": "examines",
+    "past": "examined",
+    "ing": "examining"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_observe",
+   "kind": "verb_form",
+   "words": [
+    "observe"
+   ],
+   "attrs": {
+    "third": "observes",
+    "past": "observed",
+    "ing": "observing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_notice",
+   "kind": "verb_form",
+   "words": [
+    "notice"
+   ],
+   "attrs": {
+    "third": "notices",
+    "past": "noticed",
+    "ing": "noticing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_spot",
+   "kind": "verb_form",
+   "words": [
+    "spot"
+   ],
+   "attrs": {
+    "third": "spots",
+    "past": "spoted",
+    "ing": "spoting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_detect",
+   "kind": "verb_form",
+   "words": [
+    "detect"
+   ],
+   "attrs": {
+    "third": "detects",
+    "past": "detected",
+    "ing": "detecting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_discover",
+   "kind": "verb_form",
+   "words": [
+    "discover"
+   ],
+   "attrs": {
+    "third": "discovers",
+    "past": "discovered",
+    "ing": "discovering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_invent",
+   "kind": "verb_form",
+   "words": [
+    "invent"
+   ],
+   "attrs": {
+    "third": "invents",
+    "past": "invented",
+    "ing": "inventing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_design",
+   "kind": "verb_form",
+   "words": [
+    "design"
+   ],
+   "attrs": {
+    "third": "designs",
+    "past": "designed",
+    "ing": "designing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_construct",
+   "kind": "verb_form",
+   "words": [
+    "construct"
+   ],
+   "attrs": {
+    "third": "constructs",
+    "past": "constructed",
+    "ing": "constructing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_assemble",
+   "kind": "verb_form",
+   "words": [
+    "assemble"
+   ],
+   "attrs": {
+    "third": "assembles",
+    "past": "assembled",
+    "ing": "assembling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_disassemble",
+   "kind": "verb_form",
+   "words": [
+    "disassemble"
+   ],
+   "attrs": {
+    "third": "disassembles",
+    "past": "disassembled",
+    "ing": "disassembling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_install",
+   "kind": "verb_form",
+   "words": [
+    "install"
+   ],
+   "attrs": {
+    "third": "installs",
+    "past": "installed",
+    "ing": "installing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_remove",
+   "kind": "verb_form",
+   "words": [
+    "remove"
+   ],
+   "attrs": {
+    "third": "removes",
+    "past": "removed",
+    "ing": "removing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_replace",
+   "kind": "verb_form",
+   "words": [
+    "replace"
+   ],
+   "attrs": {
+    "third": "replaces",
+    "past": "replaced",
+    "ing": "replacing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_upgrade",
+   "kind": "verb_form",
+   "words": [
+    "upgrade"
+   ],
+   "attrs": {
+    "third": "upgrades",
+    "past": "upgraded",
+    "ing": "upgrading"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_downgrade",
+   "kind": "verb_form",
+   "words": [
+    "downgrade"
+   ],
+   "attrs": {
+    "third": "downgrades",
+    "past": "downgraded",
+    "ing": "downgrading"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_adjust",
+   "kind": "verb_form",
+   "words": [
+    "adjust"
+   ],
+   "attrs": {
+    "third": "adjusts",
+    "past": "adjusted",
+    "ing": "adjusting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_tune",
+   "kind": "verb_form",
+   "words": [
+    "tune"
+   ],
+   "attrs": {
+    "third": "tunes",
+    "past": "tuned",
+    "ing": "tuning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_calibrate",
+   "kind": "verb_form",
+   "words": [
+    "calibrate"
+   ],
+   "attrs": {
+    "third": "calibrates",
+    "past": "calibrated",
+    "ing": "calibrating"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_align",
+   "kind": "verb_form",
+   "words": [
+    "align"
+   ],
+   "attrs": {
+    "third": "aligns",
+    "past": "aligned",
+    "ing": "aligning"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_level",
+   "kind": "verb_form",
+   "words": [
+    "level"
+   ],
+   "attrs": {
+    "third": "levels",
+    "past": "leveled",
+    "ing": "leveling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_plumb",
+   "kind": "verb_form",
+   "words": [
+    "plumb"
+   ],
+   "attrs": {
+    "third": "plumbs",
+    "past": "plumbed",
+    "ing": "plumbing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_square",
+   "kind": "verb_form",
+   "words": [
+    "square"
+   ],
+   "attrs": {
+    "third": "squares",
+    "past": "squared",
+    "ing": "squaring"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_center",
+   "kind": "verb_form",
+   "words": [
+    "center"
+   ],
+   "attrs": {
+    "third": "centers",
+    "past": "centered",
+    "ing": "centering"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_go",
+   "kind": "verb_form",
+   "words": [
+    "go"
+   ],
+   "attrs": {
+    "third": "goes",
+    "past": "went",
+    "ing": "going"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_be",
+   "kind": "verb_form",
+   "words": [
+    "be"
+   ],
+   "attrs": {
+    "third": "is",
+    "past": "was",
+    "ing": "being"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_have",
+   "kind": "verb_form",
+   "words": [
+    "have"
+   ],
+   "attrs": {
+    "third": "has",
+    "past": "had",
+    "ing": "having"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_do",
+   "kind": "verb_form",
+   "words": [
+    "do"
+   ],
+   "attrs": {
+    "third": "does",
+    "past": "did",
+    "ing": "doing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_come",
+   "kind": "verb_form",
+   "words": [
+    "come"
+   ],
+   "attrs": {
+    "third": "comes",
+    "past": "came",
+    "ing": "coming"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_get",
+   "kind": "verb_form",
+   "words": [
+    "get"
+   ],
+   "attrs": {
+    "third": "gets",
+    "past": "got",
+    "ing": "getting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_find",
+   "kind": "verb_form",
+   "words": [
+    "find"
+   ],
+   "attrs": {
+    "third": "finds",
+    "past": "found",
+    "ing": "finding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_put",
+   "kind": "verb_form",
+   "words": [
+    "put"
+   ],
+   "attrs": {
+    "third": "puts",
+    "past": "put",
+    "ing": "putting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_bring",
+   "kind": "verb_form",
+   "words": [
+    "bring"
+   ],
+   "attrs": {
+    "third": "brings",
+    "past": "brought",
+    "ing": "bringing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_sit",
+   "kind": "verb_form",
+   "words": [
+    "sit"
+   ],
+   "attrs": {
+    "third": "sits",
+    "past": "sat",
+    "ing": "sitting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_stand",
+   "kind": "verb_form",
+   "words": [
+    "stand"
+   ],
+   "attrs": {
+    "third": "stands",
+    "past": "stood",
+    "ing": "standing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_meet",
+   "kind": "verb_form",
+   "words": [
+    "meet"
+   ],
+   "attrs": {
+    "third": "meets",
+    "past": "met",
+    "ing": "meeting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_send",
+   "kind": "verb_form",
+   "words": [
+    "send"
+   ],
+   "attrs": {
+    "third": "sends",
+    "past": "sent",
+    "ing": "sending"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_fall",
+   "kind": "verb_form",
+   "words": [
+    "fall"
+   ],
+   "attrs": {
+    "third": "falls",
+    "past": "fell",
+    "ing": "falling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_reach",
+   "kind": "verb_form",
+   "words": [
+    "reach"
+   ],
+   "attrs": {
+    "third": "reaches",
+    "past": "reached",
+    "ing": "reaching"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_wear",
+   "kind": "verb_form",
+   "words": [
+    "wear"
+   ],
+   "attrs": {
+    "third": "wears",
+    "past": "wore",
+    "ing": "wearing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_ring",
+   "kind": "verb_form",
+   "words": [
+    "ring"
+   ],
+   "attrs": {
+    "third": "rings",
+    "past": "rang",
+    "ing": "ringing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_fight",
+   "kind": "verb_form",
+   "words": [
+    "fight"
+   ],
+   "attrs": {
+    "third": "fights",
+    "past": "fought",
+    "ing": "fighting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_creep",
+   "kind": "verb_form",
+   "words": [
+    "creep"
+   ],
+   "attrs": {
+    "third": "creeps",
+    "past": "crept",
+    "ing": "creeping"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_deal",
+   "kind": "verb_form",
+   "words": [
+    "deal"
+   ],
+   "attrs": {
+    "third": "deals",
+    "past": "dealt",
+    "ing": "dealing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_lay",
+   "kind": "verb_form",
+   "words": [
+    "lay"
+   ],
+   "attrs": {
+    "third": "lays",
+    "past": "laid",
+    "ing": "laying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_lie",
+   "kind": "verb_form",
+   "words": [
+    "lie"
+   ],
+   "attrs": {
+    "third": "lies",
+    "past": "lay",
+    "ing": "lying"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_rise",
+   "kind": "verb_form",
+   "words": [
+    "rise"
+   ],
+   "attrs": {
+    "third": "rises",
+    "past": "rose",
+    "ing": "rising"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_hide",
+   "kind": "verb_form",
+   "words": [
+    "hide"
+   ],
+   "attrs": {
+    "third": "hides",
+    "past": "hid",
+    "ing": "hiding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_stick",
+   "kind": "verb_form",
+   "words": [
+    "stick"
+   ],
+   "attrs": {
+    "third": "sticks",
+    "past": "stuck",
+    "ing": "sticking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_strike",
+   "kind": "verb_form",
+   "words": [
+    "strike"
+   ],
+   "attrs": {
+    "third": "strikes",
+    "past": "struck",
+    "ing": "striking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_spread",
+   "kind": "verb_form",
+   "words": [
+    "spread"
+   ],
+   "attrs": {
+    "third": "spreads",
+    "past": "spread",
+    "ing": "spreading"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_swell",
+   "kind": "verb_form",
+   "words": [
+    "swell"
+   ],
+   "attrs": {
+    "third": "swells",
+    "past": "swelled",
+    "ing": "swelling"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_seek",
+   "kind": "verb_form",
+   "words": [
+    "seek"
+   ],
+   "attrs": {
+    "third": "seeks",
+    "past": "sought",
+    "ing": "seeking"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_weave",
+   "kind": "verb_form",
+   "words": [
+    "weave"
+   ],
+   "attrs": {
+    "third": "weaves",
+    "past": "wove",
+    "ing": "weaving"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_wind",
+   "kind": "verb_form",
+   "words": [
+    "wind"
+   ],
+   "attrs": {
+    "third": "winds",
+    "past": "wound",
+    "ing": "winding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_grind",
+   "kind": "verb_form",
+   "words": [
+    "grind"
+   ],
+   "attrs": {
+    "third": "grinds",
+    "past": "ground",
+    "ing": "grinding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_shoot",
+   "kind": "verb_form",
+   "words": [
+    "shoot"
+   ],
+   "attrs": {
+    "third": "shoots",
+    "past": "shot",
+    "ing": "shooting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_steal",
+   "kind": "verb_form",
+   "words": [
+    "steal"
+   ],
+   "attrs": {
+    "third": "steals",
+    "past": "stole",
+    "ing": "stealing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_swear",
+   "kind": "verb_form",
+   "words": [
+    "swear"
+   ],
+   "attrs": {
+    "third": "swears",
+    "past": "swore",
+    "ing": "swearing"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_swing",
+   "kind": "verb_form",
+   "words": [
+    "swing"
+   ],
+   "attrs": {
+    "third": "swings",
+    "past": "swung",
+    "ing": "swinging"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_bleed",
+   "kind": "verb_form",
+   "words": [
+    "bleed"
+   ],
+   "attrs": {
+    "third": "bleeds",
+    "past": "bled",
+    "ing": "bleeding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_breed",
+   "kind": "verb_form",
+   "words": [
+    "breed"
+   ],
+   "attrs": {
+    "third": "breeds",
+    "past": "bred",
+    "ing": "breeding"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_cast",
+   "kind": "verb_form",
+   "words": [
+    "cast"
+   ],
+   "attrs": {
+    "third": "casts",
+    "past": "cast",
+    "ing": "casting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_fit",
+   "kind": "verb_form",
+   "words": [
+    "fit"
+   ],
+   "attrs": {
+    "third": "fits",
+    "past": "fitted",
+    "ing": "fitting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_let",
+   "kind": "verb_form",
+   "words": [
+    "let"
+   ],
+   "attrs": {
+    "third": "lets",
+    "past": "let",
+    "ing": "letting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_shut",
+   "kind": "verb_form",
+   "words": [
+    "shut"
+   ],
+   "attrs": {
+    "third": "shuts",
+    "past": "shut",
+    "ing": "shutting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_split",
+   "kind": "verb_form",
+   "words": [
+    "split"
+   ],
+   "attrs": {
+    "third": "splits",
+    "past": "split",
+    "ing": "splitting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "verb_spit",
+   "kind": "verb_form",
+   "words": [
+    "spit"
+   ],
+   "attrs": {
+    "third": "spits",
+    "past": "spat",
+    "ing": "spitting"
+   },
+   "relations": [
+    {
+     "to": "verb",
+     "rel": "is-a"
+    }
+   ]
+  }
+ ]
+}

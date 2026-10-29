@@ -1,0 +1,1472 @@
+{
+ "domain": "adjectives",
+ "concepts": [
+  {
+   "id": "adjective",
+   "kind": "category",
+   "words": [
+    "adjective",
+    "adjectives"
+   ],
+   "attrs": {
+    "def": "a word that describes a thing"
+   }
+  },
+  {
+   "id": "adj_ancient",
+   "kind": "adj_form",
+   "words": [
+    "ancient"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_angry",
+   "kind": "adj_form",
+   "words": [
+    "angry"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_awake",
+   "kind": "adj_form",
+   "words": [
+    "awake"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_big",
+   "kind": "adj_form",
+   "words": [
+    "big"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_bitter",
+   "kind": "adj_form",
+   "words": [
+    "bitter"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_boiling",
+   "kind": "adj_form",
+   "words": [
+    "boiling"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_bold",
+   "kind": "adj_form",
+   "words": [
+    "bold"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_bored",
+   "kind": "adj_form",
+   "words": [
+    "bored"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_brave",
+   "kind": "adj_form",
+   "words": [
+    "brave"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_bright",
+   "kind": "adj_form",
+   "words": [
+    "bright"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_brilliant",
+   "kind": "adj_form",
+   "words": [
+    "brilliant"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_calm",
+   "kind": "adj_form",
+   "words": [
+    "calm"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_cheerful",
+   "kind": "adj_form",
+   "words": [
+    "cheerful"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_chilly",
+   "kind": "adj_form",
+   "words": [
+    "chilly"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_clever",
+   "kind": "adj_form",
+   "words": [
+    "clever"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_closed",
+   "kind": "adj_form",
+   "words": [
+    "closed"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_cold",
+   "kind": "adj_form",
+   "words": [
+    "cold"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_cool",
+   "kind": "adj_form",
+   "words": [
+    "cool"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_cruel",
+   "kind": "adj_form",
+   "words": [
+    "cruel"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_delicate",
+   "kind": "adj_form",
+   "words": [
+    "delicate"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_dirty",
+   "kind": "adj_form",
+   "words": [
+    "dirty"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_dry",
+   "kind": "adj_form",
+   "words": [
+    "dry"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_dull",
+   "kind": "adj_form",
+   "words": [
+    "dull"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_dumb",
+   "kind": "adj_form",
+   "words": [
+    "dumb"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_eager",
+   "kind": "adj_form",
+   "words": [
+    "eager"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_early",
+   "kind": "adj_form",
+   "words": [
+    "early"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_empty",
+   "kind": "adj_form",
+   "words": [
+    "empty"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_excited",
+   "kind": "adj_form",
+   "words": [
+    "excited"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_fast",
+   "kind": "adj_form",
+   "words": [
+    "fast"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_flimsy",
+   "kind": "adj_form",
+   "words": [
+    "flimsy"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_fragile",
+   "kind": "adj_form",
+   "words": [
+    "fragile"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_freezing",
+   "kind": "adj_form",
+   "words": [
+    "freezing"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_fresh",
+   "kind": "adj_form",
+   "words": [
+    "fresh"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_full",
+   "kind": "adj_form",
+   "words": [
+    "full"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_gentle",
+   "kind": "adj_form",
+   "words": [
+    "gentle"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_gloomy",
+   "kind": "adj_form",
+   "words": [
+    "gloomy"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_gradual",
+   "kind": "adj_form",
+   "words": [
+    "gradual"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_greedy",
+   "kind": "adj_form",
+   "words": [
+    "greedy"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_gross",
+   "kind": "adj_form",
+   "words": [
+    "gross"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_grumpy",
+   "kind": "adj_form",
+   "words": [
+    "grumpy"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_happy",
+   "kind": "adj_form",
+   "words": [
+    "happy"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_hard",
+   "kind": "adj_form",
+   "words": [
+    "hard"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_harsh",
+   "kind": "adj_form",
+   "words": [
+    "harsh"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_heavy",
+   "kind": "adj_form",
+   "words": [
+    "heavy"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_honest",
+   "kind": "adj_form",
+   "words": [
+    "honest"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_hot",
+   "kind": "adj_form",
+   "words": [
+    "hot"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_huge",
+   "kind": "adj_form",
+   "words": [
+    "huge"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_hungry",
+   "kind": "adj_form",
+   "words": [
+    "hungry"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_joking",
+   "kind": "adj_form",
+   "words": [
+    "joking"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_keen",
+   "kind": "adj_form",
+   "words": [
+    "keen"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_lonely",
+   "kind": "adj_form",
+   "words": [
+    "lonely"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_long",
+   "kind": "adj_form",
+   "words": [
+    "long"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_loose",
+   "kind": "adj_form",
+   "words": [
+    "loose"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_loud",
+   "kind": "adj_form",
+   "words": [
+    "loud"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_man-made",
+   "kind": "adj_form",
+   "words": [
+    "man-made"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_mashed",
+   "kind": "adj_form",
+   "words": [
+    "mashed"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_medium",
+   "kind": "adj_form",
+   "words": [
+    "medium"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_modern",
+   "kind": "adj_form",
+   "words": [
+    "modern"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_muffled",
+   "kind": "adj_form",
+   "words": [
+    "muffled"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_murky",
+   "kind": "adj_form",
+   "words": [
+    "murky"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_narrow",
+   "kind": "adj_form",
+   "words": [
+    "narrow"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_new",
+   "kind": "adj_form",
+   "words": [
+    "new"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_noisy",
+   "kind": "adj_form",
+   "words": [
+    "noisy"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_oily",
+   "kind": "adj_form",
+   "words": [
+    "oily"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_open",
+   "kind": "adj_form",
+   "words": [
+    "open"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_parched",
+   "kind": "adj_form",
+   "words": [
+    "parched"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_plain",
+   "kind": "adj_form",
+   "words": [
+    "plain"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_polite",
+   "kind": "adj_form",
+   "words": [
+    "polite"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_quick",
+   "kind": "adj_form",
+   "words": [
+    "quick"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_rapid",
+   "kind": "adj_form",
+   "words": [
+    "rapid"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_remote",
+   "kind": "adj_form",
+   "words": [
+    "remote"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_rich",
+   "kind": "adj_form",
+   "words": [
+    "rich"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_roomy",
+   "kind": "adj_form",
+   "words": [
+    "roomy"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_rough",
+   "kind": "adj_form",
+   "words": [
+    "rough"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_round",
+   "kind": "adj_form",
+   "words": [
+    "round"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_sad",
+   "kind": "adj_form",
+   "words": [
+    "sad"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_salty",
+   "kind": "adj_form",
+   "words": [
+    "salty"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_savory",
+   "kind": "adj_form",
+   "words": [
+    "savory"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_scared",
+   "kind": "adj_form",
+   "words": [
+    "scared"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_serious",
+   "kind": "adj_form",
+   "words": [
+    "serious"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_shaky",
+   "kind": "adj_form",
+   "words": [
+    "shaky"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_sharp",
+   "kind": "adj_form",
+   "words": [
+    "sharp"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_shiny",
+   "kind": "adj_form",
+   "words": [
+    "shiny"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_short",
+   "kind": "adj_form",
+   "words": [
+    "short"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_silent",
+   "kind": "adj_form",
+   "words": [
+    "silent"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_silly",
+   "kind": "adj_form",
+   "words": [
+    "silly"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_sleepy",
+   "kind": "adj_form",
+   "words": [
+    "sleepy"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_slow",
+   "kind": "adj_form",
+   "words": [
+    "slow"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_small",
+   "kind": "adj_form",
+   "words": [
+    "small"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_smooth",
+   "kind": "adj_form",
+   "words": [
+    "smooth"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_soft",
+   "kind": "adj_form",
+   "words": [
+    "soft"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_soon",
+   "kind": "adj_form",
+   "words": [
+    "soon"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_sour",
+   "kind": "adj_form",
+   "words": [
+    "sour"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_spicy",
+   "kind": "adj_form",
+   "words": [
+    "spicy"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_stale",
+   "kind": "adj_form",
+   "words": [
+    "stale"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_straight",
+   "kind": "adj_form",
+   "words": [
+    "straight"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_strong",
+   "kind": "adj_form",
+   "words": [
+    "strong"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_sturdy",
+   "kind": "adj_form",
+   "words": [
+    "sturdy"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_sweet",
+   "kind": "adj_form",
+   "words": [
+    "sweet"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_tall",
+   "kind": "adj_form",
+   "words": [
+    "tall"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_thick",
+   "kind": "adj_form",
+   "words": [
+    "thick"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_thin",
+   "kind": "adj_form",
+   "words": [
+    "thin"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_thirsty",
+   "kind": "adj_form",
+   "words": [
+    "thirsty"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_tight",
+   "kind": "adj_form",
+   "words": [
+    "tight"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_tough",
+   "kind": "adj_form",
+   "words": [
+    "tough"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_twisted",
+   "kind": "adj_form",
+   "words": [
+    "twisted"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_warm",
+   "kind": "adj_form",
+   "words": [
+    "warm"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_weak",
+   "kind": "adj_form",
+   "words": [
+    "weak"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_wealthy",
+   "kind": "adj_form",
+   "words": [
+    "wealthy"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_wet",
+   "kind": "adj_form",
+   "words": [
+    "wet"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_wide",
+   "kind": "adj_form",
+   "words": [
+    "wide"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adj_zigzag",
+   "kind": "adj_form",
+   "words": [
+    "zigzag"
+   ],
+   "relations": [
+    {
+     "to": "adjective",
+     "rel": "is-a"
+    }
+   ]
+  }
+ ]
+}
