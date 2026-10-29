@@ -1,15 +1,15 @@
 {
  "stage": "language",
  "wins": {
-  "string": 24,
-  "number": 24,
-  "code": 24,
-  "list": 24,
-  "sequence": 24,
+  "string": 25,
+  "number": 25,
+  "code": 25,
+  "list": 25,
+  "sequence": 25,
   "chat": 31,
-  "grammar": 4
+  "grammar": 5
  },
- "total_wins": 155,
+ "total_wins": 161,
  "milestones": [
   {
    "stage": "skills",

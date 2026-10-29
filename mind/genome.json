@@ -1,8 +1,8 @@
 {
  "genes": [
   {
-   "id": "g00147",
-   "name": "last | add(n=7)",
+   "id": "g00166",
+   "name": "last | add(n=8)",
    "steps": [
     {
      "op": "last",
@@ -11,213 +11,32 @@
     {
      "op": "add",
      "args": {
-      "n": 7
+      "n": 8
      }
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793254160.5053077
+   "born": 1793261524.3127525
   },
   {
-   "id": "g00147",
-   "name": "upper",
+   "id": "g00145",
+   "name": "upper | concat(with='!')",
    "steps": [
     {
      "op": "upper",
      "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793254198.4566371
-  },
-  {
-   "id": "g00131",
-   "name": "last | add(n=9)",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
     },
     {
-     "op": "add",
+     "op": "concat",
      "args": {
-      "n": 9
+      "with": "!"
      }
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793254198.4556007
-  },
-  {
-   "id": "g00122",
-   "name": "add(n=-1)",
-   "steps": [
-    {
-     "op": "add",
-     "args": {
-      "n": -1
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793254198.4548752
-  },
-  {
-   "id": "g00106",
-   "name": "sort",
-   "steps": [
-    {
-     "op": "sort",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793254198.4529715
-  },
-  {
-   "id": "g00087",
-   "name": "last | add(n=12)",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
-    },
-    {
-     "op": "add",
-     "args": {
-      "n": 12
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793254198.4514894
-  },
-  {
-   "id": "g00046",
-   "name": "last | add(n=11)",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
-    },
-    {
-     "op": "add",
-     "args": {
-      "n": 11
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793254198.4482226
-  },
-  {
-   "id": "g00211",
-   "name": "add(n=1)",
-   "steps": [
-    {
-     "op": "add",
-     "args": {
-      "n": 1
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793254160.5117717
-  },
-  {
-   "id": "c25751",
-   "domain": "chat",
-   "steps": [
-    {
-     "op": "direct",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793256319.275973,
-   "name": "chat:capability:direct"
-  },
-  {
-   "id": "g00039",
-   "name": "split(sep='-') | first",
-   "steps": [
-    {
-     "op": "split",
-     "args": {
-      "sep": "-"
-     }
-    },
-    {
-     "op": "first",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793256427.8403065
-  },
-  {
-   "id": "g00054",
-   "name": "diff",
-   "steps": [
-    {
-     "op": "diff",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793256427.8417306
-  },
-  {
-   "id": "g00059",
-   "name": "sumv",
-   "steps": [
-    {
-     "op": "sumv",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793256427.8422332
-  },
-  {
-   "id": "g00066",
-   "name": "mul(n=-1)",
-   "steps": [
-    {
-     "op": "mul",
-     "args": {
-      "n": -1
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793256427.843141
-  },
-  {
-   "id": "g00071",
-   "name": "length",
-   "steps": [
-    {
-     "op": "length",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793256427.8438785
+   "born": 1793261524.3111675
   },
   {
    "id": "g00090",
@@ -233,66 +52,23 @@
    "born": 1793256427.8455784
   },
   {
-   "id": "g00108",
-   "name": "concat(with='ed')",
+   "id": "g00090",
+   "name": "grammar_lookup(form='past')",
    "steps": [
     {
-     "op": "concat",
+     "op": "grammar_lookup",
      "args": {
-      "with": "ed"
+      "form": "past"
      }
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793256427.847136
+   "born": 1793261524.3058546
   },
   {
-   "id": "g00146",
-   "name": "concat(with='ing')",
-   "steps": [
-    {
-     "op": "concat",
-     "args": {
-      "with": "ing"
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793256427.8505218
-  },
-  {
-   "id": "g00169",
-   "name": "prod",
-   "steps": [
-    {
-     "op": "prod",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793256427.8527033
-  },
-  {
-   "id": "g00183",
-   "name": "mul(n=2)",
-   "steps": [
-    {
-     "op": "mul",
-     "args": {
-      "n": 2
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793256427.8760335
-  },
-  {
-   "id": "g00187",
-   "name": "last | add(n=5)",
+   "id": "g00004",
+   "name": "last | add(n=3)",
    "steps": [
     {
      "op": "last",
@@ -301,26 +77,26 @@
     {
      "op": "add",
      "args": {
-      "n": 5
+      "n": 3
      }
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793256427.8766594
+   "born": 1793261524.2988405
   },
   {
-   "id": "g00289",
-   "name": "minv",
+   "id": "g00023",
+   "name": "reverse",
    "steps": [
     {
-     "op": "minv",
+     "op": "reverse",
      "args": {}
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793256427.8917818
+   "born": 1793256427.8391073
   },
   {
    "id": "g00461",
@@ -342,98 +118,84 @@
    "born": 1793256427.9115088
   },
   {
-   "id": "g00023",
-   "name": "reverse",
+   "id": "g00289",
+   "name": "minv",
    "steps": [
     {
-     "op": "reverse",
+     "op": "minv",
      "args": {}
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793256427.8391073
+   "born": 1793256427.8917818
   },
   {
-   "id": "g00024",
-   "name": "direct | add(n=7)",
+   "id": "g00187",
+   "name": "last | add(n=5)",
    "steps": [
     {
-     "op": "direct",
+     "op": "last",
      "args": {}
     },
     {
      "op": "add",
      "args": {
-      "n": 7
+      "n": 5
      }
     }
    ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.6752087331081503
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793256427.8766594
   },
   {
-   "id": "g00026",
-   "name": "reverse | mul(n=-1)",
-   "steps": [
-    {
-     "op": "reverse",
-     "args": {}
-    },
-    {
-     "op": "mul",
-     "args": {
-      "n": -1
-     }
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.22849962994579198
-  },
-  {
-   "id": "g00032",
-   "name": "item(i=3) | maxv",
-   "steps": [
-    {
-     "op": "item",
-     "args": {
-      "i": 3
-     }
-    },
-    {
-     "op": "maxv",
-     "args": {}
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.24001512854004414
-  },
-  {
-   "id": "g00036",
-   "name": "last",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.2761165847485164
-  },
-  {
-   "id": "g00038",
-   "name": "mul(n=-1) | concat(with='ed')",
+   "id": "g00183",
+   "name": "mul(n=2)",
    "steps": [
     {
      "op": "mul",
      "args": {
-      "n": -1
+      "n": 2
      }
-    },
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793256427.8760335
+  },
+  {
+   "id": "g00169",
+   "name": "prod",
+   "steps": [
+    {
+     "op": "prod",
+     "args": {}
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793256427.8527033
+  },
+  {
+   "id": "g00146",
+   "name": "concat(with='ing')",
+   "steps": [
+    {
+     "op": "concat",
+     "args": {
+      "with": "ing"
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793256427.8505218
+  },
+  {
+   "id": "g00108",
+   "name": "concat(with='ed')",
+   "steps": [
     {
      "op": "concat",
      "args": {
@@ -441,13 +203,67 @@
      }
     }
    ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.16169581447514492
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793256427.847136
   },
   {
-   "id": "g00041",
-   "name": "split(sep='-') | first | direct",
+   "id": "g00071",
+   "name": "length",
+   "steps": [
+    {
+     "op": "length",
+     "args": {}
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793256427.8438785
+  },
+  {
+   "id": "g00066",
+   "name": "mul(n=-1)",
+   "steps": [
+    {
+     "op": "mul",
+     "args": {
+      "n": -1
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793256427.843141
+  },
+  {
+   "id": "g00059",
+   "name": "sumv",
+   "steps": [
+    {
+     "op": "sumv",
+     "args": {}
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793256427.8422332
+  },
+  {
+   "id": "g00054",
+   "name": "diff",
+   "steps": [
+    {
+     "op": "diff",
+     "args": {}
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793256427.8417306
+  },
+  {
+   "id": "g00039",
+   "name": "split(sep='-') | first",
    "steps": [
     {
      "op": "split",
@@ -458,55 +274,57 @@
     {
      "op": "first",
      "args": {}
-    },
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793256427.8403065
+  },
+  {
+   "id": "c25751",
+   "domain": "chat",
+   "steps": [
     {
      "op": "direct",
      "args": {}
     }
    ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.5912527950768834
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793256319.275973,
+   "name": "chat:capability:direct"
   },
   {
-   "id": "g00044",
-   "name": "minv | diff",
+   "id": "g00001",
+   "name": "grammar_lookup",
    "steps": [
     {
-     "op": "minv",
-     "args": {}
-    },
-    {
-     "op": "diff",
+     "op": "grammar_lookup",
      "args": {}
     }
    ],
    "fitness": 0.0,
    "uses": 0,
-   "born": 0.37806630445841716
+   "born": 0.33081016345349157
   },
   {
-   "id": "g00046",
-   "name": "lower | add(n=-1)",
+   "id": "g00002",
+   "name": "item(i=0)",
    "steps": [
     {
-     "op": "lower",
-     "args": {}
-    },
-    {
-     "op": "add",
+     "op": "item",
      "args": {
-      "n": -1
+      "i": 0
      }
     }
    ],
    "fitness": 0.0,
    "uses": 0,
-   "born": 0.638588539283291
+   "born": 0.8505474080775742
   },
   {
-   "id": "g00047",
-   "name": "last | add(n=2) | add(n=-1)",
+   "id": "g00003",
+   "name": "last | add(n=-4)",
    "steps": [
     {
      "op": "last",
@@ -515,51 +333,140 @@
     {
      "op": "add",
      "args": {
-      "n": 2
-     }
-    },
-    {
-     "op": "add",
-     "args": {
-      "n": -1
+      "n": -4
      }
     }
    ],
    "fitness": 0.0,
    "uses": 0,
-   "born": 0.7503609959142066
+   "born": 0.6232167872908537
   },
   {
-   "id": "g00048",
-   "name": "first | length",
+   "id": "g00007",
+   "name": "wrap(pre='(', suf='(')",
+   "steps": [
+    {
+     "op": "wrap",
+     "args": {
+      "pre": "(",
+      "suf": "("
+     }
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.7382951758961754
+  },
+  {
+   "id": "g00008",
+   "name": "first | concat(with='ed')",
    "steps": [
     {
      "op": "first",
      "args": {}
     },
     {
-     "op": "length",
-     "args": {}
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.7283288633988305
-  },
-  {
-   "id": "g00050",
-   "name": "add(n=5)",
-   "steps": [
-    {
-     "op": "add",
+     "op": "concat",
      "args": {
-      "n": 5
+      "with": "ed"
      }
     }
    ],
    "fitness": 0.0,
    "uses": 0,
-   "born": 0.5315983128294516
+   "born": 0.3088656546753097
+  },
+  {
+   "id": "g00009",
+   "name": "item(i=0) | maxv",
+   "steps": [
+    {
+     "op": "item",
+     "args": {
+      "i": 0
+     }
+    },
+    {
+     "op": "maxv",
+     "args": {}
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.3024360414288043
+  },
+  {
+   "id": "g00011",
+   "name": "words",
+   "steps": [
+    {
+     "op": "words",
+     "args": {}
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.9808551325496644
+  },
+  {
+   "id": "g00015",
+   "name": "lower | first",
+   "steps": [
+    {
+     "op": "lower",
+     "args": {}
+    },
+    {
+     "op": "first",
+     "args": {}
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.40833824900678284
+  },
+  {
+   "id": "g00016",
+   "name": "length | reverse",
+   "steps": [
+    {
+     "op": "length",
+     "args": {}
+    },
+    {
+     "op": "reverse",
+     "args": {}
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.7280757256457416
+  },
+  {
+   "id": "g00018",
+   "name": "upper",
+   "steps": [
+    {
+     "op": "upper",
+     "args": {}
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.6251699360940373
+  },
+  {
+   "id": "g00020",
+   "name": "first",
+   "steps": [
+    {
+     "op": "first",
+     "args": {}
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.08980013338742832
   }
  ]
 }

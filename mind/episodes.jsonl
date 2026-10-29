@@ -1037,3 +1037,315 @@
 {"t": 1793256572.545, "kind": "chat", "data": {"intent": "improvement", "text": "are you getting better?", "reply": "Since you asked about progress: chat: 100% -> 100% (holding steady); code: 40% -> 50% (climbing); grammar: 100% -> 100% ", "coactive": ["self", "improvement", "conversation"]}}
 {"t": 1793256572.546, "kind": "chat", "data": {"intent": "greeting", "text": "greetings, machine", "reply": "Hey there! I'm curious what brought you here.", "coactive": ["self", "greeting", "conversation"]}}
 {"t": 1793256572.546, "kind": "utterance", "data": {"text": "next in 2 4 6 8", "intent": "sequence", "coactive": ["self", "sequence"]}}
+{"t": 1793261523.701, "kind": "observe", "data": {"subject": "living_thing", "coactive": ["living_thing"]}}
+{"t": 1793261523.701, "kind": "observe", "data": {"subject": "animal", "coactive": ["animal", "living_thing"]}}
+{"t": 1793261523.701, "kind": "observe", "data": {"subject": "plant", "coactive": ["plant", "living_thing"]}}
+{"t": 1793261523.701, "kind": "observe", "data": {"subject": "dog", "coactive": ["dog", "animal"]}}
+{"t": 1793261523.701, "kind": "observe", "data": {"subject": "bird", "coactive": ["bird", "animal"]}}
+{"t": 1793261523.701, "kind": "observe", "data": {"subject": "tree", "coactive": ["tree", "plant"]}}
+{"t": 1793261523.701, "kind": "observe", "data": {"subject": "cause_fire", "coactive": ["cause_fire", "smoke"]}}
+{"t": 1793261523.701, "kind": "observe", "data": {"subject": "smoke", "coactive": ["smoke"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "platypus", "coactive": ["platypus", "mammal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "mammal", "coactive": ["mammal", "animal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "octopus", "coactive": ["octopus", "animal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "manatee", "coactive": ["manatee", "animal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "quokka", "coactive": ["quokka", "mammal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "tardigrade", "coactive": ["tardigrade", "animal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "magnapinna_squid", "coactive": ["magnapinna_squid", "squid"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "squid", "coactive": ["squid", "animal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "anglerfish", "coactive": ["anglerfish", "fish"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "fish", "coactive": ["fish", "animal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "mantis_shrimp", "coactive": ["mantis_shrimp", "animal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "dart_frog", "coactive": ["dart_frog", "frog"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "frog", "coactive": ["frog", "animal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "horned_lizard", "coactive": ["horned_lizard", "lizard"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "lizard", "coactive": ["lizard", "animal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "bombardier_beetle", "coactive": ["bombardier_beetle", "insect"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "insect", "coactive": ["insect", "animal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "whale", "coactive": ["whale", "mammal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "zebra", "coactive": ["zebra", "mammal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "cow", "coactive": ["cow", "mammal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "dog", "coactive": ["dog", "mammal"]}}
+{"t": 1793261523.754, "kind": "observe", "data": {"subject": "cat", "coactive": ["cat", "mammal"]}}
+{"t": 1793261523.755, "kind": "observe", "data": {"subject": "bird", "coactive": ["bird", "animal"]}}
+{"t": 1793261523.755, "kind": "observe", "data": {"subject": "dragon", "coactive": ["dragon", "mythical_beast"]}}
+{"t": 1793261523.755, "kind": "observe", "data": {"subject": "unicorn", "coactive": ["unicorn", "mythical_beast"]}}
+{"t": 1793261523.755, "kind": "observe", "data": {"subject": "phoenix", "coactive": ["phoenix", "mythical_beast"]}}
+{"t": 1793261523.755, "kind": "observe", "data": {"subject": "mermaid", "coactive": ["mermaid", "mythical_beast"]}}
+{"t": 1793261523.755, "kind": "observe", "data": {"subject": "mythical_beast", "coactive": ["mythical_beast", "idea"]}}
+{"t": 1793261523.755, "kind": "observe", "data": {"subject": "idea", "coactive": ["idea"]}}
+{"t": 1793261523.807, "kind": "observe", "data": {"subject": "cat", "coactive": ["cat", "mammal"]}}
+{"t": 1793261523.807, "kind": "observe", "data": {"subject": "dog", "coactive": ["dog", "mammal"]}}
+{"t": 1793261523.807, "kind": "observe", "data": {"subject": "bird", "coactive": ["bird", "animal"]}}
+{"t": 1793261523.807, "kind": "observe", "data": {"subject": "friend", "coactive": ["friend"]}}
+{"t": 1793261523.807, "kind": "observe", "data": {"subject": "money", "coactive": ["money"]}}
+{"t": 1793261523.807, "kind": "observe", "data": {"subject": "job", "coactive": ["job"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "sun", "coactive": ["sun"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "moon", "coactive": ["moon"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "earth", "coactive": ["earth"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "mars", "coactive": ["mars"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "jupiter", "coactive": ["jupiter"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "planet", "coactive": ["planet"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "solar_system", "coactive": ["solar_system"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "star", "coactive": ["star"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "gravity", "coactive": ["gravity"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "lightning", "coactive": ["lightning"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "thunder", "coactive": ["thunder"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "storm", "coactive": ["storm"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "cloud", "coactive": ["cloud"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "rain", "coactive": ["rain"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "ocean", "coactive": ["ocean"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "deep_sea", "coactive": ["deep_sea"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "glacier", "coactive": ["glacier"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "fire", "coactive": ["fire"]}}
+{"t": 1793261523.86, "kind": "observe", "data": {"subject": "water", "coactive": ["water"]}}
+{"t": 1793261523.861, "kind": "observe", "data": {"subject": "ice", "coactive": ["ice"]}}
+{"t": 1793261523.861, "kind": "observe", "data": {"subject": "wind", "coactive": ["wind"]}}
+{"t": 1793261523.861, "kind": "observe", "data": {"subject": "code", "coactive": ["code"]}}
+{"t": 1793261523.861, "kind": "observe", "data": {"subject": "sandbox", "coactive": ["sandbox"]}}
+{"t": 1793261523.861, "kind": "observe", "data": {"subject": "graph", "coactive": ["graph"]}}
+{"t": 1793261523.861, "kind": "observe", "data": {"subject": "hormone", "coactive": ["hormone"]}}
+{"t": 1793261523.861, "kind": "observe", "data": {"subject": "git", "coactive": ["git"]}}
+{"t": 1793261523.913, "kind": "observe", "data": {"subject": "gene", "coactive": ["gene", "organism"]}}
+{"t": 1793261523.913, "kind": "observe", "data": {"subject": "organism", "coactive": ["organism"]}}
+{"t": 1793261523.913, "kind": "observe", "data": {"subject": "skill", "coactive": ["skill", "gene"]}}
+{"t": 1793261523.913, "kind": "observe", "data": {"subject": "sleep", "coactive": ["sleep", "memory"]}}
+{"t": 1793261523.913, "kind": "observe", "data": {"subject": "memory", "coactive": ["memory"]}}
+{"t": 1793261523.913, "kind": "observe", "data": {"subject": "curiosity", "coactive": ["curiosity"]}}
+{"t": 1793261523.913, "kind": "observe", "data": {"subject": "teacher", "coactive": ["teacher"]}}
+{"t": 1793261523.913, "kind": "observe", "data": {"subject": "experiment", "coactive": ["experiment"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "universe", "coactive": ["universe", "space", "time"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "space", "coactive": ["space"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "time", "coactive": ["time"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "matter", "coactive": ["matter"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "energy", "coactive": ["energy", "matter"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "atom", "coactive": ["atom", "matter"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "molecule", "coactive": ["molecule", "atom"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "water", "coactive": ["water", "molecule"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "fire", "coactive": ["fire"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "light", "coactive": ["light"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "gravity", "coactive": ["gravity"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "earth", "coactive": ["earth", "sun"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "sun", "coactive": ["sun"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "moon", "coactive": ["moon", "earth"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "life", "coactive": ["life"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "cell", "coactive": ["cell", "life"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "dna", "coactive": ["dna", "cell"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "evolution", "coactive": ["evolution", "dna"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "plant", "coactive": ["plant", "life"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "animal", "coactive": ["animal", "life"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "human", "coactive": ["human", "animal"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "brain", "coactive": ["brain", "human"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "memory", "coactive": ["memory", "brain"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "learning", "coactive": ["learning", "memory"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "intelligence", "coactive": ["intelligence"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "language", "coactive": ["language", "word"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "mathematics", "coactive": ["mathematics", "number"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "arithmetic", "coactive": ["arithmetic", "mathematics", "number"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "addition", "coactive": ["addition", "arithmetic"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "subtraction", "coactive": ["subtraction"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "multiplication", "coactive": ["multiplication"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "division", "coactive": ["division"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "logic", "coactive": ["logic"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "cause", "coactive": ["cause"]}}
+{"t": 1793261523.966, "kind": "observe", "data": {"subject": "computer", "coactive": ["computer"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "program", "coactive": ["program", "computer"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "python", "coactive": ["python"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "algorithm", "coactive": ["algorithm"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "data", "coactive": ["data"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "internet", "coactive": ["internet"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "github", "coactive": ["github"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "sandbox", "coactive": ["sandbox"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "history", "coactive": ["history"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "writing", "coactive": ["writing"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "school", "coactive": ["school"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "curiosity", "coactive": ["curiosity"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "courage", "coactive": ["courage"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "honesty", "coactive": ["honesty"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "friendship", "coactive": ["friendship"]}}
+{"t": 1793261523.967, "kind": "observe", "data": {"subject": "help", "coactive": ["help"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "grammar", "coactive": ["grammar"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "statement", "coactive": ["statement", "grammar"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "question", "coactive": ["question", "grammar", "statement"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "command", "coactive": ["command", "grammar"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "exclamation", "coactive": ["exclamation", "grammar", "statement"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "negation", "coactive": ["negation", "grammar", "statement"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "active", "coactive": ["active", "grammar"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "passive", "coactive": ["passive", "grammar", "active"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "conditional", "coactive": ["conditional", "grammar"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "comparative", "coactive": ["comparative", "grammar"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "superlative", "coactive": ["superlative", "grammar", "comparative"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "relative_clause", "coactive": ["relative_clause", "grammar"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "past_tense", "coactive": ["past_tense", "grammar"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "present_tense", "coactive": ["present_tense", "grammar", "past_tense"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "future_tense", "coactive": ["future_tense", "grammar", "past_tense"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "plural", "coactive": ["plural", "grammar"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "singular", "coactive": ["singular", "grammar", "plural"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_walk", "coactive": ["verb_walk"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_talk", "coactive": ["verb_talk"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_play", "coactive": ["verb_play"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_jump", "coactive": ["verb_jump"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_look", "coactive": ["verb_look"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_help", "coactive": ["verb_help"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_want", "coactive": ["verb_want"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_work", "coactive": ["verb_work"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_call", "coactive": ["verb_call"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_ask", "coactive": ["verb_ask"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_open", "coactive": ["verb_open"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_wash", "coactive": ["verb_wash"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_watch", "coactive": ["verb_watch"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_need", "coactive": ["verb_need"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_visit", "coactive": ["verb_visit"]}}
+{"t": 1793261524.021, "kind": "observe", "data": {"subject": "verb_paint", "coactive": ["verb_paint"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_learn", "coactive": ["verb_learn"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_turn", "coactive": ["verb_turn"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_start", "coactive": ["verb_start"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_wait", "coactive": ["verb_wait"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_like", "coactive": ["verb_like"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_hope", "coactive": ["verb_hope"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_dance", "coactive": ["verb_dance"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_move", "coactive": ["verb_move"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_live", "coactive": ["verb_live"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_use", "coactive": ["verb_use"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_love", "coactive": ["verb_love"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_go", "coactive": ["verb_go"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_be", "coactive": ["verb_be"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_have", "coactive": ["verb_have"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_do", "coactive": ["verb_do"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_say", "coactive": ["verb_say"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_eat", "coactive": ["verb_eat"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_run", "coactive": ["verb_run"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_see", "coactive": ["verb_see"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_come", "coactive": ["verb_come"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_get", "coactive": ["verb_get"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_make", "coactive": ["verb_make"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_take", "coactive": ["verb_take"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_give", "coactive": ["verb_give"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_find", "coactive": ["verb_find"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_think", "coactive": ["verb_think"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_teach", "coactive": ["verb_teach"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_buy", "coactive": ["verb_buy"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_fly", "coactive": ["verb_fly"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_know", "coactive": ["verb_know"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "verb_write", "coactive": ["verb_write"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_cat", "coactive": ["noun_cat"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_dog", "coactive": ["noun_dog"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_idea", "coactive": ["noun_idea"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_book", "coactive": ["noun_book"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_car", "coactive": ["noun_car"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_chair", "coactive": ["noun_chair"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_spoon", "coactive": ["noun_spoon"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_cloud", "coactive": ["noun_cloud"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_stone", "coactive": ["noun_stone"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_door", "coactive": ["noun_door"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_box", "coactive": ["noun_box"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_dish", "coactive": ["noun_dish"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_bus", "coactive": ["noun_bus"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_glass", "coactive": ["noun_glass"]}}
+{"t": 1793261524.022, "kind": "observe", "data": {"subject": "noun_bench", "coactive": ["noun_bench"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "active", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "command", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "comparative", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "conditional", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "exclamation", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "future_tense", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "negation", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "passive", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "past_tense", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "plural", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "present_tense", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "question", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "relative_clause", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "singular", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "statement", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.023, "kind": "hypothesis_confirmed", "data": {"guess": "superlative", "topic": "grammar", "coactive": ["self", "hypothesis", "confirmed"]}}
+{"t": 1793261524.076, "kind": "observe", "data": {"subject": "gene", "coactive": ["gene", "organism", "mind", "conversation"]}}
+{"t": 1793261524.076, "kind": "observe", "data": {"subject": "organism", "coactive": ["organism"]}}
+{"t": 1793261524.076, "kind": "observe", "data": {"subject": "mind", "coactive": ["mind"]}}
+{"t": 1793261524.076, "kind": "observe", "data": {"subject": "orubus", "coactive": ["orubus"]}}
+{"t": 1793261524.076, "kind": "observe", "data": {"subject": "user", "coactive": ["user"]}}
+{"t": 1793261524.076, "kind": "observe", "data": {"subject": "conversation", "coactive": ["conversation"]}}
+{"t": 1793261524.076, "kind": "observe", "data": {"subject": "greeting", "coactive": ["greeting"]}}
+{"t": 1793261524.076, "kind": "observe", "data": {"subject": "farewell", "coactive": ["farewell"]}}
+{"t": 1793261524.076, "kind": "observe", "data": {"subject": "thanks", "coactive": ["thanks"]}}
+{"t": 1793261524.076, "kind": "observe", "data": {"subject": "question", "coactive": ["question"]}}
+{"t": 1793261524.076, "kind": "observe", "data": {"subject": "answer", "coactive": ["answer"]}}
+{"t": 1793261524.076, "kind": "observe", "data": {"subject": "fluency", "coactive": ["fluency"]}}
+{"t": 1793261524.076, "kind": "observe", "data": {"subject": "identity", "coactive": ["identity"]}}
+{"t": 1793261524.076, "kind": "observe", "data": {"subject": "honesty", "coactive": ["honesty"]}}
+{"t": 1793261524.131, "kind": "observe", "data": {"subject": "gene", "coactive": ["gene", "fluency", "honesty"]}}
+{"t": 1793261524.131, "kind": "observe", "data": {"subject": "empathy", "coactive": ["empathy"]}}
+{"t": 1793261524.131, "kind": "observe", "data": {"subject": "paraphrase", "coactive": ["paraphrase"]}}
+{"t": 1793261524.131, "kind": "observe", "data": {"subject": "context", "coactive": ["context"]}}
+{"t": 1793261524.132, "kind": "observe", "data": {"subject": "smalltalk", "coactive": ["smalltalk"]}}
+{"t": 1793261524.132, "kind": "observe", "data": {"subject": "humor", "coactive": ["humor"]}}
+{"t": 1793261524.132, "kind": "observe", "data": {"subject": "patience", "coactive": ["patience"]}}
+{"t": 1793261524.132, "kind": "observe", "data": {"subject": "curiosity", "coactive": ["curiosity"]}}
+{"t": 1793261524.132, "kind": "observe", "data": {"subject": "principle", "coactive": ["principle"]}}
+{"t": 1793261524.132, "kind": "observe", "data": {"subject": "honesty", "coactive": ["honesty"]}}
+{"t": 1793261524.187, "kind": "observe", "data": {"subject": "math", "coactive": ["math"]}}
+{"t": 1793261524.187, "kind": "observe", "data": {"subject": "addition", "coactive": ["addition", "math"]}}
+{"t": 1793261524.187, "kind": "observe", "data": {"subject": "subtraction", "coactive": ["subtraction", "math", "addition"]}}
+{"t": 1793261524.187, "kind": "observe", "data": {"subject": "multiplication", "coactive": ["multiplication", "math", "addition"]}}
+{"t": 1793261524.187, "kind": "observe", "data": {"subject": "division", "coactive": ["division", "math", "multiplication"]}}
+{"t": 1793261524.187, "kind": "observe", "data": {"subject": "place_value", "coactive": ["place_value", "math"]}}
+{"t": 1793261524.187, "kind": "observe", "data": {"subject": "carrying", "coactive": ["carrying", "place_value"]}}
+{"t": 1793261524.187, "kind": "observe", "data": {"subject": "zero", "coactive": ["zero", "math"]}}
+{"t": 1793261524.187, "kind": "observe", "data": {"subject": "negative_number", "coactive": ["negative_number", "zero", "subtraction"]}}
+{"t": 1793261524.187, "kind": "observe", "data": {"subject": "half", "coactive": ["half", "division"]}}
+{"t": 1793261524.187, "kind": "observe", "data": {"subject": "quarter", "coactive": ["quarter", "division", "half"]}}
+{"t": 1793261524.187, "kind": "observe", "data": {"subject": "remainder", "coactive": ["remainder", "division"]}}
+{"t": 1793261524.188, "kind": "observe", "data": {"subject": "sum", "coactive": ["sum", "addition"]}}
+{"t": 1793261524.188, "kind": "observe", "data": {"subject": "difference", "coactive": ["difference", "subtraction"]}}
+{"t": 1793261524.188, "kind": "observe", "data": {"subject": "product", "coactive": ["product", "multiplication"]}}
+{"t": 1793261524.188, "kind": "observe", "data": {"subject": "quotient", "coactive": ["quotient", "division"]}}
+{"t": 1793261524.244, "kind": "observe", "data": {"subject": "self", "coactive": ["self"]}}
+{"t": 1793261524.244, "kind": "observe", "data": {"subject": "teacher", "coactive": ["teacher"]}}
+{"t": 1793261524.244, "kind": "observe", "data": {"subject": "knowledge", "coactive": ["knowledge"]}}
+{"t": 1793261524.244, "kind": "observe", "data": {"subject": "number", "coactive": ["number"]}}
+{"t": 1793261524.244, "kind": "observe", "data": {"subject": "word", "coactive": ["word"]}}
+{"t": 1793261524.244, "kind": "observe", "data": {"subject": "sequence", "coactive": ["sequence"]}}
+{"t": 1793261524.244, "kind": "observe", "data": {"subject": "cause", "coactive": ["cause"]}}
+{"t": 1793261524.244, "kind": "observe", "data": {"subject": "experiment", "coactive": ["experiment"]}}
+{"t": 1793261524.244, "kind": "observe", "data": {"subject": "question", "coactive": ["question"]}}
+{"t": 1793261524.244, "kind": "observe", "data": {"subject": "skill", "coactive": ["skill"]}}
+{"t": 1793261524.299, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793261524.3, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 23, "coactive": ["list", "skill", "success"]}}
+{"t": 1793261524.3, "kind": "task", "data": {"domain": "grammar", "prompt": "past of want", "solved": true, "tries": 16, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793261524.301, "kind": "task", "data": {"domain": "list", "prompt": "sum", "solved": true, "tries": 12, "coactive": ["list", "skill", "success"]}}
+{"t": 1793261524.301, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 + 3", "solved": true, "tries": 12, "coactive": ["number", "skill", "success"]}}
+{"t": 1793261524.301, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 15, "coactive": ["list", "skill", "success"]}}
+{"t": 1793261524.302, "kind": "task", "data": {"domain": "grammar", "prompt": "plural of car", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793261524.302, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 8, "coactive": ["code", "skill", "success"]}}
+{"t": 1793261524.302, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 2, "coactive": ["string", "skill", "success"]}}
+{"t": 1793261524.303, "kind": "task", "data": {"domain": "number", "prompt": "compute 3 + 6", "solved": true, "tries": 12, "coactive": ["number", "skill", "success"]}}
+{"t": 1793261524.303, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 23, "coactive": ["string", "skill", "success"]}}
+{"t": 1793261524.303, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 13, "coactive": ["code", "skill", "success"]}}
+{"t": 1793261524.304, "kind": "task", "data": {"domain": "grammar", "prompt": "plural of box", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793261524.304, "kind": "task", "data": {"domain": "grammar", "prompt": "past of work", "solved": true, "tries": 16, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793261524.304, "kind": "task", "data": {"domain": "grammar", "prompt": "plural of idea", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793261524.305, "kind": "task", "data": {"domain": "grammar", "prompt": "past of help", "solved": true, "tries": 16, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793261524.305, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793261524.305, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 + 4", "solved": true, "tries": 12, "coactive": ["number", "skill", "success"]}}
+{"t": 1793261524.306, "kind": "task", "data": {"domain": "list", "prompt": "max", "solved": true, "tries": 15, "coactive": ["list", "skill", "success"]}}
+{"t": 1793261524.306, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 - 2", "solved": true, "tries": 11, "coactive": ["number", "skill", "success"]}}
+{"t": 1793261524.306, "kind": "task", "data": {"domain": "grammar", "prompt": "past of say", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793261524.306, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 2, "coactive": ["string", "skill", "success"]}}
+{"t": 1793261524.307, "kind": "task", "data": {"domain": "grammar", "prompt": "plural of stone", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793261524.307, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 13, "coactive": ["code", "skill", "success"]}}
+{"t": 1793261524.308, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 13, "coactive": ["code", "skill", "success"]}}
+{"t": 1793261524.308, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 3, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793261524.308, "kind": "task", "data": {"domain": "grammar", "prompt": "past of work", "solved": true, "tries": 16, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793261524.308, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 1, "coactive": ["sequence", "skill", "success"]}}
+{"t": 1793261524.309, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 8, "coactive": ["code", "skill", "success"]}}
+{"t": 1793261524.309, "kind": "task", "data": {"domain": "code", "prompt": "synthesize function from examples", "solved": true, "tries": 19, "coactive": ["code", "skill", "success"]}}
+{"t": 1793261524.31, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": false, "tries": 31, "coactive": ["sequence", "failure"]}}
+{"t": 1793261524.31, "kind": "task", "data": {"domain": "grammar", "prompt": "plural of bus", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793261524.31, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 23, "coactive": ["string", "skill", "success"]}}
+{"t": 1793261524.311, "kind": "task", "data": {"domain": "grammar", "prompt": "plural of dish", "solved": true, "tries": 26, "coactive": ["grammar", "skill", "success"]}}
+{"t": 1793261524.311, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 23, "coactive": ["string", "skill", "success"]}}
+{"t": 1793261524.312, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 28, "coactive": ["string", "skill", "success"]}}
+{"t": 1793261524.312, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 23, "coactive": ["string", "skill", "success"]}}
+{"t": 1793261524.312, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 28, "coactive": ["string", "skill", "success"]}}
+{"t": 1793261524.313, "kind": "task", "data": {"domain": "list", "prompt": "reverse", "solved": true, "tries": 23, "coactive": ["list", "skill", "success"]}}
+{"t": 1793261524.313, "kind": "task", "data": {"domain": "sequence", "prompt": "next in sequence", "solved": true, "tries": 32, "coactive": ["sequence", "skill", "success"]}}

@@ -1,48 +1,38 @@
 {
- "attempts": 39239,
- "solved": 5156,
+ "attempts": 39915,
+ "solved": 5195,
  "by_domain": {
   "chat": {
    "tasks": 1470,
    "solved": 1161
   },
   "sequence": {
-   "tasks": 95,
-   "solved": 77
+   "tasks": 101,
+   "solved": 82
   },
   "list": {
-   "tasks": 100,
-   "solved": 98
+   "tasks": 105,
+   "solved": 103
   },
   "number": {
-   "tasks": 98,
-   "solved": 98
+   "tasks": 102,
+   "solved": 102
   },
   "string": {
-   "tasks": 101,
-   "solved": 101
+   "tasks": 109,
+   "solved": 109
   },
   "code": {
-   "tasks": 101,
-   "solved": 41
+   "tasks": 107,
+   "solved": 47
   },
   "grammar": {
-   "tasks": 85,
-   "solved": 85
+   "tasks": 96,
+   "solved": 96
   }
  },
- "cycles": 57,
+ "cycles": 58,
  "history": [
-  {
-   "cycle": 28,
-   "rates": {
-    "string": 1.0,
-    "number": 1.0,
-    "list": 1.0,
-    "sequence": 1.0,
-    "code": 0.4
-   }
-  },
   {
    "cycle": 29,
    "rates": {
@@ -268,91 +258,21 @@
     "number": 1.0,
     "list": 1.0
    }
+  },
+  {
+   "cycle": 58,
+   "rates": {
+    "sequence": 0.833,
+    "list": 1.0,
+    "grammar": 1.0,
+    "number": 1.0,
+    "code": 1.0,
+    "string": 1.0
+   }
   }
  ],
  "hypotheses": {
-  "open": [
-   {
-    "id": "active",
-    "topic": "grammar",
-    "t": 1793256317.9590085
-   },
-   {
-    "id": "command",
-    "topic": "grammar",
-    "t": 1793256317.9590101
-   },
-   {
-    "id": "comparative",
-    "topic": "grammar",
-    "t": 1793256317.9590106
-   },
-   {
-    "id": "conditional",
-    "topic": "grammar",
-    "t": 1793256317.9590108
-   },
-   {
-    "id": "exclamation",
-    "topic": "grammar",
-    "t": 1793256317.959011
-   },
-   {
-    "id": "future_tense",
-    "topic": "grammar",
-    "t": 1793256317.9590116
-   },
-   {
-    "id": "negation",
-    "topic": "grammar",
-    "t": 1793256317.9590116
-   },
-   {
-    "id": "passive",
-    "topic": "grammar",
-    "t": 1793256317.9590118
-   },
-   {
-    "id": "past_tense",
-    "topic": "grammar",
-    "t": 1793256317.959012
-   },
-   {
-    "id": "plural",
-    "topic": "grammar",
-    "t": 1793256317.9590125
-   },
-   {
-    "id": "present_tense",
-    "topic": "grammar",
-    "t": 1793256317.9590127
-   },
-   {
-    "id": "question",
-    "topic": "grammar",
-    "t": 1793256317.9590127
-   },
-   {
-    "id": "relative_clause",
-    "topic": "grammar",
-    "t": 1793256317.9590132
-   },
-   {
-    "id": "singular",
-    "topic": "grammar",
-    "t": 1793256317.9590135
-   },
-   {
-    "id": "statement",
-    "topic": "grammar",
-    "t": 1793256317.9590137
-   },
-   {
-    "id": "superlative",
-    "topic": "grammar",
-    "t": 1793256317.959014
-   }
-  ],
-  "hits": 0
+  "open": [],
+  "hits": 16
  }
 }

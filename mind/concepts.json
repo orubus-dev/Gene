@@ -14,14 +14,14 @@
    ],
    "vec": "self",
    "links": {
-    "assoc>farewell": 0.2099999999999997,
-    "assoc>conversation": 0.8099999999999998,
-    "assoc>greeting": 0.7599999999999998,
-    "assoc>identity": 0.7599999999999998,
-    "assoc>thanks": 0.1599999999999997
+    "assoc>farewell": 0.19999999999999968,
+    "assoc>conversation": 0.7999999999999998,
+    "assoc>greeting": 0.7499999999999998,
+    "assoc>identity": 0.7499999999999998,
+    "assoc>thanks": 0.1499999999999997
    },
    "created": 1793222057.1172688,
-   "touched": 1793254198.4803553
+   "touched": 1793261524.3680084
   },
   "knowledge": {
    "id": "knowledge",
@@ -54,7 +54,7 @@
    ],
    "vec": "teacher",
    "links": {
-    "assoc>question": 0.99
+    "assoc>question": 0.98
    },
    "created": 1793222057.1172733,
    "touched": 1793256428.0128682
@@ -77,11 +77,11 @@
     "assoc>code": 0.99,
     "assoc>list": 0.99,
     "assoc>sequence": 0.99,
-    "encoded-in>gene": 0.7999999999999998,
+    "encoded-in>gene": 0.99,
     "assoc>grammar": 0.99
    },
    "created": 1793222057.1172748,
-   "touched": 1793256428.0137217
+   "touched": 1793261524.3683221
   },
   "success": {
    "id": "success",
@@ -96,15 +96,15 @@
     "assoc>code": 0.99,
     "assoc>list": 0.99,
     "assoc>sequence": 0.99,
-    "assoc>chat": 0.99,
-    "assoc>greeting": 0.99,
-    "assoc>farewell": 0.8299999999999998,
-    "assoc>thanks": 0.9099999999999999,
-    "assoc>identity": 0.99,
+    "assoc>chat": 0.98,
+    "assoc>greeting": 0.98,
+    "assoc>farewell": 0.8199999999999998,
+    "assoc>thanks": 0.8999999999999999,
+    "assoc>identity": 0.98,
     "assoc>grammar": 0.99
    },
    "created": 1793222057.117276,
-   "touched": 1793256428.013722
+   "touched": 1793261524.3683221
   },
   "failure": {
    "id": "failure",
@@ -113,18 +113,18 @@
    "words": [],
    "vec": "failure",
    "links": {
-    "assoc>code": 0.99,
-    "assoc>chat": 0.98,
-    "assoc>list": 0.23999999999999988,
-    "assoc>identity": 0.7999999999999998,
+    "assoc>code": 0.98,
+    "assoc>chat": 0.97,
+    "assoc>list": 0.22999999999999987,
+    "assoc>identity": 0.7899999999999998,
     "assoc>sequence": 0.99
    },
    "created": 1793222057.117277,
-   "touched": 1793256428.0136359
+   "touched": 1793261524.3682704
   },
   "question": {
    "id": "question",
-   "kind": "grammar_type",
+   "kind": "meta",
    "attrs": {
     "description": "the hand raised when knowledge is missing",
     "purpose": "seek what is missing",
@@ -139,12 +139,14 @@
    ],
    "vec": "question",
    "links": {
-    "assoc>teacher": 0.99,
-    "is-a>grammar": 0.44999999999999996,
-    "pairs-with>statement": 0.44999999999999996
+    "assoc>teacher": 0.98,
+    "is-a>grammar": 0.94,
+    "pairs-with>statement": 0.94,
+    "assoc>grammar": 0.04,
+    "assoc>statement": 0.04
    },
    "created": 1793222057.117278,
-   "touched": 1793256428.0128682
+   "touched": 1793261524.3679032
   },
   "experiment": {
    "id": "experiment",
@@ -178,10 +180,10 @@
    "links": {
     "assoc>skill": 0.99,
     "assoc>success": 0.99,
-    "assoc>mathematics": 0.11999999999999962
+    "assoc>mathematics": 0.10999999999999963
    },
    "created": 1793222057.1172805,
-   "touched": 1793256428.0135977
+   "touched": 1793261524.3682096
   },
   "string": {
    "id": "string",
@@ -194,7 +196,7 @@
     "assoc>success": 0.99
    },
    "created": 1793222057.1172814,
-   "touched": 1793256428.0137
+   "touched": 1793261524.3683107
   },
   "list": {
    "id": "list",
@@ -205,10 +207,10 @@
    "links": {
     "assoc>skill": 0.99,
     "assoc>success": 0.99,
-    "assoc>failure": 0.23999999999999988
+    "assoc>failure": 0.22999999999999987
    },
    "created": 1793222057.1172824,
-   "touched": 1793256428.0135448
+   "touched": 1793261524.3683164
   },
   "sequence": {
    "id": "sequence",
@@ -228,7 +230,7 @@
     "assoc>failure": 0.99
    },
    "created": 1793222057.1172833,
-   "touched": 1793256428.0137217
+   "touched": 1793261524.368322
   },
   "code": {
    "id": "code",
@@ -246,10 +248,10 @@
    "links": {
     "assoc>skill": 0.99,
     "assoc>success": 0.99,
-    "assoc>failure": 0.99
+    "assoc>failure": 0.98
    },
    "created": 1793222057.117284,
-   "touched": 1793256428.0137072
+   "touched": 1793261524.3682675
   },
   "universe": {
    "id": "universe",
@@ -264,8 +266,8 @@
    ],
    "vec": "universe",
    "links": {
-    "has>space": 0.6799999999999997,
-    "has>time": 0.6799999999999997
+    "has>space": 0.99,
+    "has>time": 0.99
    },
    "created": 1793222057.2187042,
    "touched": 1793252083.5284827
@@ -281,7 +283,7 @@
    ],
    "vec": "energy",
    "links": {
-    "relates-to>matter": 0.6799999999999997
+    "relates-to>matter": 0.99
    },
    "created": 1793222057.2188544,
    "touched": 1793252083.5284865
@@ -297,10 +299,10 @@
    ],
    "vec": "atom",
    "links": {
-    "is-part-of>matter": 0.6799999999999997
+    "is-part-of>matter": 0.99
    },
    "created": 1793222057.2188768,
-   "touched": 1793252083.5284934
+   "touched": 1793261523.9657967
   },
   "molecule": {
    "id": "molecule",
@@ -313,10 +315,10 @@
    ],
    "vec": "molecule",
    "links": {
-    "is-made-of>atom": 0.6799999999999997
+    "is-made-of>atom": 0.99
    },
    "created": 1793222057.218895,
-   "touched": 1793252083.5284967
+   "touched": 1793261523.9658198
   },
   "water": {
    "id": "water",
@@ -333,7 +335,7 @@
    ],
    "vec": "water",
    "links": {
-    "is-a>molecule": 0.6799999999999997
+    "is-a>molecule": 0.99
    },
    "created": 1793222057.218912,
    "touched": 1793252083.5284967
@@ -354,10 +356,10 @@
    ],
    "vec": "earth",
    "links": {
-    "orbits>sun": 0.6799999999999997
+    "orbits>sun": 0.99
    },
    "created": 1793222057.2189686,
-   "touched": 1793252083.5285041
+   "touched": 1793261523.965996
   },
   "moon": {
    "id": "moon",
@@ -374,7 +376,7 @@
    ],
    "vec": "moon",
    "links": {
-    "orbits>earth": 0.6799999999999997
+    "orbits>earth": 0.99
    },
    "created": 1793222057.2190068,
    "touched": 1793252083.5285041
@@ -390,10 +392,10 @@
    ],
    "vec": "cell",
    "links": {
-    "is-unit-of>life": 0.6799999999999997
+    "is-unit-of>life": 0.99
    },
    "created": 1793222057.2190661,
-   "touched": 1793252083.5285115
+   "touched": 1793261523.966079
   },
   "dna": {
    "id": "dna",
@@ -407,10 +409,10 @@
    ],
    "vec": "dna",
    "links": {
-    "is-inside>cell": 0.6799999999999997
+    "is-inside>cell": 0.99
    },
    "created": 1793222057.2190807,
-   "touched": 1793252083.5285149
+   "touched": 1793261523.9661012
   },
   "evolution": {
    "id": "evolution",
@@ -423,7 +425,7 @@
    ],
    "vec": "evolution",
    "links": {
-    "acts-on>dna": 0.6799999999999997
+    "acts-on>dna": 0.99
    },
    "created": 1793222057.2190952,
    "touched": 1793252083.5285146
@@ -441,11 +443,11 @@
    ],
    "vec": "plant",
    "links": {
-    "is-a>life": 0.6799999999999997,
-    "is-a>living_thing": 0.6299999999999997
+    "is-a>life": 0.99,
+    "is-a>living_thing": 0.99
    },
    "created": 1793222057.2191107,
-   "touched": 1793252083.5285184
+   "touched": 1793261523.701252
   },
   "animal": {
    "id": "animal",
@@ -459,11 +461,11 @@
    ],
    "vec": "animal",
    "links": {
-    "is-a>life": 0.6799999999999997,
-    "is-a>living_thing": 0.6299999999999997
+    "is-a>life": 0.99,
+    "is-a>living_thing": 0.99
    },
    "created": 1793222057.2191257,
-   "touched": 1793253984.1290224
+   "touched": 1793261523.9661696
   },
   "human": {
    "id": "human",
@@ -478,10 +480,10 @@
    ],
    "vec": "human",
    "links": {
-    "is-a>animal": 0.6799999999999997
+    "is-a>animal": 0.99
    },
    "created": 1793222057.2191403,
-   "touched": 1793252083.5285282
+   "touched": 1793261523.9661922
   },
   "brain": {
    "id": "brain",
@@ -495,14 +497,14 @@
    ],
    "vec": "brain",
    "links": {
-    "is-inside>human": 0.6799999999999997
+    "is-inside>human": 0.99
    },
    "created": 1793222057.2191548,
-   "touched": 1793252083.5285316
+   "touched": 1793261523.966215
   },
   "memory": {
    "id": "memory",
-   "kind": "meta",
+   "kind": "entity",
    "attrs": {
     "description": "the past kept for later use"
    },
@@ -513,10 +515,10 @@
    ],
    "vec": "memory",
    "links": {
-    "is-a-function-of>brain": 0.6799999999999997
+    "is-a-function-of>brain": 0.99
    },
    "created": 1793222057.2191694,
-   "touched": 1793253673.5925922
+   "touched": 1793261523.9662366
   },
   "learning": {
    "id": "learning",
@@ -530,7 +532,7 @@
    ],
    "vec": "learning",
    "links": {
-    "needs>memory": 0.6799999999999997
+    "needs>memory": 0.99
    },
    "created": 1793222057.2191834,
    "touched": 1793252083.5285344
@@ -562,7 +564,7 @@
    ],
    "vec": "language",
    "links": {
-    "is-made-of>word": 0.6799999999999997
+    "is-made-of>word": 0.99
    },
    "created": 1793222057.2192116,
    "touched": 1793252083.5285378
@@ -579,11 +581,11 @@
    ],
    "vec": "mathematics",
    "links": {
-    "includes>number": 0.6799999999999997,
-    "assoc>number": 0.11999999999999962
+    "includes>number": 0.99,
+    "assoc>number": 0.10999999999999963
    },
    "created": 1793222057.2192261,
-   "touched": 1793252083.528549
+   "touched": 1793261523.9663239
   },
   "arithmetic": {
    "id": "arithmetic",
@@ -596,11 +598,11 @@
    ],
    "vec": "arithmetic",
    "links": {
-    "is-part-of>mathematics": 0.6799999999999997,
-    "acts-on>number": 0.6799999999999997
+    "is-part-of>mathematics": 0.99,
+    "acts-on>number": 0.99
    },
    "created": 1793222057.2192414,
-   "touched": 1793252083.5285523
+   "touched": 1793261523.9663482
   },
   "addition": {
    "id": "addition",
@@ -618,11 +620,15 @@
    ],
    "vec": "addition",
    "links": {
-    "is-part-of>arithmetic": 0.6799999999999997,
-    "is-a>math": 0.44999999999999996
+    "is-part-of>arithmetic": 0.99,
+    "is-a>math": 0.94,
+    "assoc>math": 0.14,
+    "assoc>subtraction": 0.04,
+    "assoc>multiplication": 0.04,
+    "assoc>sum": 0.04
    },
    "created": 1793222057.2192602,
-   "touched": 1793256317.5947256
+   "touched": 1793261524.3680823
   },
   "program": {
    "id": "program",
@@ -637,10 +643,11 @@
    ],
    "vec": "program",
    "links": {
-    "runs-on>computer": 0.6799999999999997
+    "runs-on>computer": 0.99,
+    "assoc>computer": 0.04
    },
    "created": 1793222057.2193654,
-   "touched": 1793252083.5870857
+   "touched": 1793261524.3678856
   },
   "writing": {
    "id": "writing",
@@ -676,11 +683,11 @@
   },
   "gene": {
    "id": "gene",
-   "kind": "entity",
+   "kind": "organism",
    "attrs": {
     "born_from": "orubus",
     "body": "code",
-    "home": "sandbox",
+    "home": "github.com/orubus-dev/Gene",
     "grows (inherited from organism)": "by experience",
     "keeps (inherited from organism)": "memory",
     "name": "Gene",
@@ -708,16 +715,21 @@
    ],
    "vec": "gene",
    "links": {
-    "is-a>organism_that_learns": 0.6299999999999997,
-    "assoc>organism_that_learns": 0.42999999999999994,
-    "is-a>organism": 0.7999999999999998,
-    "has-a>mind": 0.6799999999999997,
-    "practices>conversation": 0.6799999999999997,
-    "pursues>fluency": 0.6799999999999997,
-    "values>honesty": 0.6799999999999997
+    "is-a>organism_that_learns": 0.6199999999999997,
+    "assoc>organism_that_learns": 0.41999999999999993,
+    "is-a>organism": 0.99,
+    "has-a>mind": 0.99,
+    "practices>conversation": 0.99,
+    "pursues>fluency": 0.99,
+    "values>honesty": 0.99,
+    "assoc>organism": 0.04,
+    "assoc>mind": 0.04,
+    "assoc>conversation": 0.04,
+    "assoc>fluency": 0.04,
+    "assoc>honesty": 0.04
    },
    "created": 1793222066.6202273,
-   "touched": 1793253673.5925689
+   "touched": 1793261524.3680296
   },
   "organism_that_learns": {
    "id": "organism_that_learns",
@@ -726,7 +738,7 @@
    "words": [],
    "vec": "organism_that_learns",
    "links": {
-    "assoc>gene": 0.42999999999999994
+    "assoc>gene": 0.41999999999999993
    },
    "created": 1793222066.6202319,
    "touched": 1793252350.2513466
@@ -738,8 +750,8 @@
    "words": [],
    "vec": "photon",
    "links": {
-    "is-a>particle_of_light": 0.12999999999999967,
-    "assoc>particle_of_light": 0.02999999999999975
+    "is-a>particle_of_light": 0.11999999999999968,
+    "assoc>particle_of_light": 0.019999999999999747
    },
    "created": 1793222066.6734083,
    "touched": 1793222163.0560865
@@ -751,7 +763,7 @@
    "words": [],
    "vec": "particle_of_light",
    "links": {
-    "assoc>photon": 0.02999999999999975
+    "assoc>photon": 0.019999999999999747
    },
    "created": 1793222066.6734128,
    "touched": 1793222163.0560868
@@ -763,8 +775,8 @@
    "words": [],
    "vec": "blorptastic",
    "links": {
-    "is-a>fictional_word": 0.12999999999999967,
-    "assoc>fictional_word": 0.02999999999999975
+    "is-a>fictional_word": 0.11999999999999968,
+    "assoc>fictional_word": 0.019999999999999747
    },
    "created": 1793222066.6748452,
    "touched": 1793222163.056098
@@ -776,7 +788,7 @@
    "words": [],
    "vec": "fictional_word",
    "links": {
-    "assoc>blorptastic": 0.02999999999999975
+    "assoc>blorptastic": 0.019999999999999747
    },
    "created": 1793222066.6748486,
    "touched": 1793222163.0560982
@@ -795,9 +807,13 @@
     "living-system"
    ],
    "vec": "organism",
-   "links": {},
+   "links": {
+    "assoc>gene": 0.04,
+    "assoc>mind": 0.04,
+    "assoc>conversation": 0.04
+   },
    "created": 1793222092.8629682,
-   "touched": 1793253673.5924714
+   "touched": 1793261524.36802
   },
   "sleep": {
    "id": "sleep",
@@ -811,7 +827,7 @@
    ],
    "vec": "sleep",
    "links": {
-    "strengthens>memory": 0.7999999999999998
+    "strengthens>memory": 0.99
    },
    "created": 1793222092.8630962,
    "touched": 1793222163.0563517
@@ -836,8 +852,8 @@
    ],
    "vec": "dog",
    "links": {
-    "is-a>animal": 0.6299999999999997,
-    "is-a>mammal": 0.7899999999999998
+    "is-a>animal": 0.99,
+    "is-a>mammal": 0.99
    },
    "created": 1793222092.9168153,
    "touched": 1793222163.0563378
@@ -858,7 +874,7 @@
    ],
    "vec": "bird",
    "links": {
-    "is-a>animal": 0.8799999999999999
+    "is-a>animal": 0.99
    },
    "created": 1793222092.916846,
    "touched": 1793222163.0563402
@@ -872,7 +888,7 @@
    ],
    "vec": "tree",
    "links": {
-    "is-a>plant": 0.6299999999999997
+    "is-a>plant": 0.99
    },
    "created": 1793222092.9168668,
    "touched": 1793222163.0563426
@@ -888,7 +904,7 @@
    ],
    "vec": "cause_fire",
    "links": {
-    "causes>smoke": 0.6299999999999997
+    "causes>smoke": 0.99
    },
    "created": 1793222092.916882,
    "touched": 1793222163.0563447
@@ -906,14 +922,17 @@
    ],
    "vec": "conversation",
    "links": {
-    "assoc>self": 0.8099999999999998,
-    "assoc>farewell": 0.2099999999999997,
-    "assoc>greeting": 0.7599999999999998,
-    "assoc>identity": 0.7599999999999998,
-    "assoc>thanks": 0.1599999999999997
+    "assoc>self": 0.7999999999999998,
+    "assoc>farewell": 0.19999999999999968,
+    "assoc>greeting": 0.7499999999999998,
+    "assoc>identity": 0.7499999999999998,
+    "assoc>thanks": 0.1499999999999997,
+    "assoc>gene": 0.04,
+    "assoc>organism": 0.04,
+    "assoc>mind": 0.04
    },
    "created": 1793252078.7041075,
-   "touched": 1793254198.480354
+   "touched": 1793261524.3680203
   },
   "chat": {
    "id": "chat",
@@ -922,13 +941,13 @@
    "words": [],
    "vec": "chat",
    "links": {
-    "assoc>greeting": 0.99,
-    "assoc>success": 0.99,
-    "assoc>skill": 0.99,
-    "assoc>farewell": 0.8299999999999998,
-    "assoc>thanks": 0.9099999999999999,
-    "assoc>identity": 0.99,
-    "assoc>failure": 0.98
+    "assoc>greeting": 0.98,
+    "assoc>success": 0.98,
+    "assoc>skill": 0.98,
+    "assoc>farewell": 0.8199999999999998,
+    "assoc>thanks": 0.8999999999999999,
+    "assoc>identity": 0.98,
+    "assoc>failure": 0.97
    },
    "created": 1793252078.7041113,
    "touched": 1793256428.0129094
@@ -947,10 +966,10 @@
    ],
    "vec": "greeting",
    "links": {
-    "assoc>chat": 0.99,
-    "assoc>success": 0.99,
-    "assoc>self": 0.7599999999999998,
-    "assoc>conversation": 0.7599999999999998
+    "assoc>chat": 0.98,
+    "assoc>success": 0.98,
+    "assoc>self": 0.7499999999999998,
+    "assoc>conversation": 0.7499999999999998
    },
    "created": 1793252078.7043407,
    "touched": 1793256425.7240202
@@ -968,10 +987,10 @@
    ],
    "vec": "farewell",
    "links": {
-    "assoc>chat": 0.8299999999999998,
-    "assoc>success": 0.8299999999999998,
-    "assoc>self": 0.2099999999999997,
-    "assoc>conversation": 0.2099999999999997
+    "assoc>chat": 0.8199999999999998,
+    "assoc>success": 0.8199999999999998,
+    "assoc>self": 0.19999999999999968,
+    "assoc>conversation": 0.19999999999999968
    },
    "created": 1793252078.704355,
    "touched": 1793253888.609636
@@ -988,10 +1007,10 @@
    ],
    "vec": "thanks",
    "links": {
-    "assoc>chat": 0.9099999999999999,
-    "assoc>success": 0.9099999999999999,
-    "assoc>self": 0.1599999999999997,
-    "assoc>conversation": 0.1599999999999997
+    "assoc>chat": 0.8999999999999999,
+    "assoc>success": 0.8999999999999999,
+    "assoc>self": 0.1499999999999997,
+    "assoc>conversation": 0.1499999999999997
    },
    "created": 1793252078.7043684,
    "touched": 1793256289.1835995
@@ -1007,11 +1026,11 @@
    ],
    "vec": "identity",
    "links": {
-    "assoc>chat": 0.99,
-    "assoc>success": 0.99,
-    "assoc>self": 0.7599999999999998,
-    "assoc>conversation": 0.7599999999999998,
-    "assoc>failure": 0.7999999999999998
+    "assoc>chat": 0.98,
+    "assoc>success": 0.98,
+    "assoc>self": 0.7499999999999998,
+    "assoc>conversation": 0.7499999999999998,
+    "assoc>failure": 0.7899999999999998
    },
    "created": 1793252078.704426,
    "touched": 1793256428.0128999
@@ -1033,7 +1052,7 @@
    ],
    "vec": "platypus",
    "links": {
-    "is-a>mammal": 0.2899999999999998
+    "is-a>mammal": 0.7799999999999998
    },
    "created": 1793253526.7227755,
    "touched": 1793253526.7227757
@@ -1051,10 +1070,10 @@
    ],
    "vec": "mammal",
    "links": {
-    "is-a>animal": 0.2899999999999998
+    "is-a>animal": 0.7799999999999998
    },
    "created": 1793253526.7227883,
-   "touched": 1793253984.1289892
+   "touched": 1793261523.8072262
   },
   "octopus": {
    "id": "octopus",
@@ -1073,7 +1092,7 @@
    ],
    "vec": "octopus",
    "links": {
-    "is-a>animal": 0.2899999999999998
+    "is-a>animal": 0.7799999999999998
    },
    "created": 1793253526.7228944,
    "touched": 1793253526.7228944
@@ -1095,7 +1114,7 @@
    ],
    "vec": "manatee",
    "links": {
-    "is-a>animal": 0.2899999999999998
+    "is-a>animal": 0.7799999999999998
    },
    "created": 1793253526.7229178,
    "touched": 1793253526.722918
@@ -1115,7 +1134,7 @@
    ],
    "vec": "quokka",
    "links": {
-    "is-a>mammal": 0.2899999999999998
+    "is-a>mammal": 0.7799999999999998
    },
    "created": 1793253526.7229366,
    "touched": 1793253526.7229366
@@ -1136,7 +1155,7 @@
    ],
    "vec": "tardigrade",
    "links": {
-    "is-a>animal": 0.2899999999999998
+    "is-a>animal": 0.7799999999999998
    },
    "created": 1793253526.722954,
    "touched": 1793253526.722954
@@ -1156,7 +1175,7 @@
    ],
    "vec": "magnapinna_squid",
    "links": {
-    "is-a>squid": 0.2899999999999998
+    "is-a>squid": 0.7799999999999998
    },
    "created": 1793253526.7229989,
    "touched": 1793253526.7229989
@@ -1176,10 +1195,10 @@
    ],
    "vec": "squid",
    "links": {
-    "is-a>animal": 0.2899999999999998
+    "is-a>animal": 0.7799999999999998
    },
    "created": 1793253526.7230012,
-   "touched": 1793253526.723003
+   "touched": 1793261523.7541616
   },
   "anglerfish": {
    "id": "anglerfish",
@@ -1196,7 +1215,7 @@
    ],
    "vec": "anglerfish",
    "links": {
-    "is-a>fish": 0.2899999999999998
+    "is-a>fish": 0.7799999999999998
    },
    "created": 1793253526.7230353,
    "touched": 1793253526.7230356
@@ -1214,10 +1233,10 @@
    ],
    "vec": "fish",
    "links": {
-    "is-a>animal": 0.2899999999999998
+    "is-a>animal": 0.7799999999999998
    },
    "created": 1793253526.7230408,
-   "touched": 1793253526.7230418
+   "touched": 1793261523.7542062
   },
   "mantis_shrimp": {
    "id": "mantis_shrimp",
@@ -1233,7 +1252,7 @@
    ],
    "vec": "mantis_shrimp",
    "links": {
-    "is-a>animal": 0.2899999999999998
+    "is-a>animal": 0.7799999999999998
    },
    "created": 1793253526.7230902,
    "touched": 1793253526.7230902
@@ -1253,7 +1272,7 @@
    ],
    "vec": "dart_frog",
    "links": {
-    "is-a>frog": 0.2899999999999998
+    "is-a>frog": 0.7799999999999998
    },
    "created": 1793253526.7231061,
    "touched": 1793253526.7231061
@@ -1272,10 +1291,10 @@
    ],
    "vec": "frog",
    "links": {
-    "is-a>animal": 0.2899999999999998
+    "is-a>animal": 0.7799999999999998
    },
    "created": 1793253526.7231088,
-   "touched": 1793253526.72311
+   "touched": 1793261523.7542713
   },
   "horned_lizard": {
    "id": "horned_lizard",
@@ -1291,7 +1310,7 @@
    ],
    "vec": "horned_lizard",
    "links": {
-    "is-a>lizard": 0.2899999999999998
+    "is-a>lizard": 0.7799999999999998
    },
    "created": 1793253526.7231388,
    "touched": 1793253526.7231388
@@ -1310,10 +1329,10 @@
    ],
    "vec": "lizard",
    "links": {
-    "is-a>animal": 0.2899999999999998
+    "is-a>animal": 0.7799999999999998
    },
    "created": 1793253526.723141,
-   "touched": 1793253526.723142
+   "touched": 1793261523.7543166
   },
   "bombardier_beetle": {
    "id": "bombardier_beetle",
@@ -1328,7 +1347,7 @@
    ],
    "vec": "bombardier_beetle",
    "links": {
-    "is-a>insect": 0.2899999999999998
+    "is-a>insect": 0.7799999999999998
    },
    "created": 1793253526.7231698,
    "touched": 1793253526.7231698
@@ -1347,10 +1366,10 @@
    ],
    "vec": "insect",
    "links": {
-    "is-a>animal": 0.2899999999999998
+    "is-a>animal": 0.7799999999999998
    },
    "created": 1793253526.723172,
-   "touched": 1793253526.723173
+   "touched": 1793261523.7543595
   },
   "whale": {
    "id": "whale",
@@ -1367,7 +1386,7 @@
    ],
    "vec": "whale",
    "links": {
-    "is-a>mammal": 0.2899999999999998
+    "is-a>mammal": 0.7799999999999998
    },
    "created": 1793253526.7231991,
    "touched": 1793253526.7231996
@@ -1388,7 +1407,7 @@
    ],
    "vec": "zebra",
    "links": {
-    "is-a>mammal": 0.2899999999999998
+    "is-a>mammal": 0.7799999999999998
    },
    "created": 1793253526.7232153,
    "touched": 1793253526.7232156
@@ -1409,7 +1428,7 @@
    ],
    "vec": "cow",
    "links": {
-    "is-a>mammal": 0.2899999999999998
+    "is-a>mammal": 0.7799999999999998
    },
    "created": 1793253526.723232,
    "touched": 1793253526.723232
@@ -1432,7 +1451,7 @@
    ],
    "vec": "cat",
    "links": {
-    "is-a>mammal": 0.7899999999999998
+    "is-a>mammal": 0.99
    },
    "created": 1793253526.7232642,
    "touched": 1793253526.7232642
@@ -1452,7 +1471,7 @@
    ],
    "vec": "dragon",
    "links": {
-    "is-a>mythical_beast": 0.2899999999999998
+    "is-a>mythical_beast": 0.7799999999999998
    },
    "created": 1793253526.7232969,
    "touched": 1793253526.7232969
@@ -1470,10 +1489,10 @@
    ],
    "vec": "mythical_beast",
    "links": {
-    "is-a>idea": 0.2899999999999998
+    "is-a>idea": 0.7799999999999998
    },
    "created": 1793253526.7232993,
-   "touched": 1793253526.7233481
+   "touched": 1793261523.7546108
   },
   "unicorn": {
    "id": "unicorn",
@@ -1489,7 +1508,7 @@
    ],
    "vec": "unicorn",
    "links": {
-    "is-a>mythical_beast": 0.2899999999999998
+    "is-a>mythical_beast": 0.7799999999999998
    },
    "created": 1793253526.723315,
    "touched": 1793253526.7233152
@@ -1508,7 +1527,7 @@
    ],
    "vec": "phoenix",
    "links": {
-    "is-a>mythical_beast": 0.2899999999999998
+    "is-a>mythical_beast": 0.7799999999999998
    },
    "created": 1793253526.7233303,
    "touched": 1793253526.7233303
@@ -1527,7 +1546,7 @@
    ],
    "vec": "mermaid",
    "links": {
-    "is-a>mythical_beast": 0.2899999999999998
+    "is-a>mythical_beast": 0.7799999999999998
    },
    "created": 1793253526.723345,
    "touched": 1793253526.723345
@@ -1546,368 +1565,7 @@
    "vec": "idea",
    "links": {},
    "created": 1793253526.7233703,
-   "touched": 1793253526.7233715
-  },
-  "mars": {
-   "id": "mars",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "rocky planet",
-    "color": "red",
-    "status": "real"
-   },
-   "words": [
-    "mars"
-   ],
-   "vec": "mars",
-   "links": {},
-   "created": 1793253526.7949111,
-   "touched": 1793253526.7949114
-  },
-  "jupiter": {
-   "id": "jupiter",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "gas giant",
-    "size": "biggest planet in the solar system",
-    "status": "real"
-   },
-   "words": [
-    "jupiter"
-   ],
-   "vec": "jupiter",
-   "links": {},
-   "created": 1793253526.7949286,
-   "touched": 1793253526.7949288
-  },
-  "planet": {
-   "id": "planet",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "body orbiting a star",
-    "kinds": "rocky planets and gas giants",
-    "status": "real"
-   },
-   "words": [
-    "planet",
-    "planets"
-   ],
-   "vec": "planet",
-   "links": {},
-   "created": 1793253526.7949443,
-   "touched": 1793253526.7949443
-  },
-  "solar_system": {
-   "id": "solar_system",
-   "kind": "entity",
-   "attrs": {
-    "contains": "one star, eight planets, five dwarf planets",
-    "orbits": "the sun",
-    "status": "real"
-   },
-   "words": [
-    "solar system"
-   ],
-   "vec": "solar_system",
-   "links": {},
-   "created": 1793253526.7949755,
-   "touched": 1793253526.7949758
-  },
-  "star": {
-   "id": "star",
-   "kind": "entity",
-   "attrs": {
-    "made_of": "hot glowing gas",
-    "gives": "light",
-    "status": "real"
-   },
-   "words": [
-    "star",
-    "stars"
-   ],
-   "vec": "star",
-   "links": {},
-   "created": 1793253526.7949944,
-   "touched": 1793253526.7949944
-  },
-  "lightning": {
-   "id": "lightning",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "giant electrical spark",
-    "rate": "about 100 strike earth every second",
-    "speed": "faster than sound",
-    "status": "real"
-   },
-   "words": [
-    "lightning"
-   ],
-   "vec": "lightning",
-   "links": {},
-   "created": 1793253526.7950218,
-   "touched": 1793253526.7950218
-  },
-  "thunder": {
-   "id": "thunder",
-   "kind": "entity",
-   "attrs": {
-    "caused_by": "lightning",
-    "kind_of": "sound",
-    "why": "light travels faster than sound so you see the flash first",
-    "status": "real"
-   },
-   "words": [
-    "thunder"
-   ],
-   "vec": "thunder",
-   "links": {},
-   "created": 1793253526.7950354,
-   "touched": 1793253526.7950354
-  },
-  "storm": {
-   "id": "storm",
-   "kind": "entity",
-   "attrs": {
-    "has": "rain, wind, lightning and thunder",
-    "cloud": "cumulonimbus",
-    "forms_by": "warm air rising and cold air sinking",
-    "status": "real"
-   },
-   "words": [
-    "storm",
-    "storms",
-    "thunderstorm"
-   ],
-   "vec": "storm",
-   "links": {},
-   "created": 1793253526.795049,
-   "touched": 1793253526.7950492
-  },
-  "cloud": {
-   "id": "cloud",
-   "kind": "entity",
-   "attrs": {
-    "made_of": "water droplets",
-    "forms_when": "air rises and cools",
-    "status": "real"
-   },
-   "words": [
-    "cloud",
-    "clouds"
-   ],
-   "vec": "cloud",
-   "links": {},
-   "created": 1793253526.7950764,
-   "touched": 1793253526.7950766
-  },
-  "rain": {
-   "id": "rain",
-   "kind": "entity",
-   "attrs": {
-    "made_of": "falling water drops",
-    "comes_from": "clouds",
-    "status": "real"
-   },
-   "words": [
-    "rain"
-   ],
-   "vec": "rain",
-   "links": {},
-   "created": 1793253526.7950919,
-   "touched": 1793253526.795092
-  },
-  "ocean": {
-   "id": "ocean",
-   "kind": "entity",
-   "attrs": {
-    "covers": "most of earth",
-    "water": "salty",
-    "has": "deep zones",
-    "status": "real"
-   },
-   "words": [
-    "ocean",
-    "oceans",
-    "sea",
-    "seas"
-   ],
-   "vec": "ocean",
-   "links": {},
-   "created": 1793253526.7951047,
-   "touched": 1793253526.7951047
-  },
-  "deep_sea": {
-   "id": "deep_sea",
-   "kind": "entity",
-   "attrs": {
-    "depth": "below 1000 meters",
-    "light": "pitch dark",
-    "pressure": "immense",
-    "status": "real"
-   },
-   "words": [
-    "deep sea",
-    "deep ocean",
-    "abyss"
-   ],
-   "vec": "deep_sea",
-   "links": {},
-   "created": 1793253526.7951186,
-   "touched": 1793253526.7951186
-  },
-  "glacier": {
-   "id": "glacier",
-   "kind": "entity",
-   "attrs": {
-    "made_of": "ice",
-    "moves": "slowly",
-    "size": "huge",
-    "status": "real"
-   },
-   "words": [
-    "glacier",
-    "glaciers"
-   ],
-   "vec": "glacier",
-   "links": {},
-   "created": 1793253526.795132,
-   "touched": 1793253526.7951322
-  },
-  "ice": {
-   "id": "ice",
-   "kind": "entity",
-   "attrs": {
-    "made_of": "frozen water",
-    "trait": "cold and slippery",
-    "status": "real"
-   },
-   "words": [
-    "ice"
-   ],
-   "vec": "ice",
-   "links": {},
-   "created": 1793253526.7951708,
-   "touched": 1793253526.7951708
-  },
-  "wind": {
-   "id": "wind",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "moving air",
-    "caused_by": "pressure differences",
-    "status": "real"
-   },
-   "words": [
-    "wind"
-   ],
-   "vec": "wind",
-   "links": {},
-   "created": 1793253526.795185,
-   "touched": 1793253526.795185
-  },
-  "graph": {
-   "id": "graph",
-   "kind": "entity",
-   "attrs": {
-    "made_of": "nodes and links",
-    "stores": "knowledge",
-    "status": "real"
-   },
-   "words": [
-    "graph",
-    "concept graph"
-   ],
-   "vec": "graph",
-   "links": {},
-   "created": 1793253526.7952247,
-   "touched": 1793253526.7952247
-  },
-  "hormone": {
-   "id": "hormone",
-   "kind": "entity",
-   "attrs": {
-    "does": "nudges mood and energy",
-    "found_in": "bodies and in gene's endocrine system",
-    "status": "real"
-   },
-   "words": [
-    "hormone",
-    "hormones"
-   ],
-   "vec": "hormone",
-   "links": {},
-   "created": 1793253526.7952373,
-   "touched": 1793253526.7952375
-  },
-  "git": {
-   "id": "git",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "version control",
-    "keeps": "every change in history",
-    "status": "real"
-   },
-   "words": [
-    "git",
-    "git log"
-   ],
-   "vec": "git",
-   "links": {},
-   "created": 1793253526.795254,
-   "touched": 1793253526.7952542
-  },
-  "friend": {
-   "id": "friend",
-   "kind": "entity",
-   "attrs": {
-    "trait": "trusted company",
-    "status": "real"
-   },
-   "words": [
-    "friend",
-    "friends",
-    "buddy",
-    "buddies",
-    "pal"
-   ],
-   "vec": "friend",
-   "links": {},
-   "created": 1793253984.1290412,
-   "touched": 1793253984.1290414
-  },
-  "money": {
-   "id": "money",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "medium of exchange",
-    "status": "real"
-   },
-   "words": [
-    "money",
-    "cash",
-    "bucks"
-   ],
-   "vec": "money",
-   "links": {},
-   "created": 1793253984.1290724,
-   "touched": 1793253984.1290724
-  },
-  "job": {
-   "id": "job",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "regular task or employment",
-    "status": "real"
-   },
-   "words": [
-    "job",
-    "work",
-    "gig"
-   ],
-   "vec": "job",
-   "links": {},
-   "created": 1793253984.129094,
-   "touched": 1793253984.129094
+   "touched": 1793261523.754633
   },
   "grammar": {
    "id": "grammar",
@@ -1921,10 +1579,26 @@
    "vec": "grammar",
    "links": {
     "assoc>skill": 0.99,
-    "assoc>success": 0.99
+    "assoc>success": 0.99,
+    "assoc>statement": 0.19,
+    "assoc>question": 0.04,
+    "assoc>command": 0.04,
+    "assoc>exclamation": 0.04,
+    "assoc>negation": 0.04,
+    "assoc>active": 0.09000000000000001,
+    "assoc>passive": 0.04,
+    "assoc>conditional": 0.04,
+    "assoc>comparative": 0.09000000000000001,
+    "assoc>superlative": 0.04,
+    "assoc>relative_clause": 0.04,
+    "assoc>past_tense": 0.14,
+    "assoc>present_tense": 0.04,
+    "assoc>future_tense": 0.04,
+    "assoc>plural": 0.09000000000000001,
+    "assoc>singular": 0.04
    },
    "created": 1793256285.2109525,
-   "touched": 1793256428.0137143
+   "touched": 1793261524.3682883
   },
   "math": {
    "id": "math",
@@ -1938,37 +1612,52 @@
     "arithmetic"
    ],
    "vec": "math",
-   "links": {},
+   "links": {
+    "assoc>addition": 0.14,
+    "assoc>subtraction": 0.04,
+    "assoc>multiplication": 0.09000000000000001,
+    "assoc>division": 0.04,
+    "assoc>place_value": 0.04,
+    "assoc>zero": 0.04
+   },
    "created": 1793256317.5943608,
-   "touched": 1793256317.594613
+   "touched": 1793261524.368062
   },
   "subtraction": {
    "id": "subtraction",
    "kind": "math_op",
    "attrs": {
     "does": "takes one quantity from another",
-    "sign": "-"
+    "sign": "-",
+    "description": "taking one quantity from another"
    },
    "words": [
     "subtraction",
     "subtract",
     "minus",
-    "takeaway"
+    "takeaway",
+    "take"
    ],
    "vec": "subtraction",
    "links": {
-    "is-a>math": 0.44999999999999996,
-    "opposite-of>addition": 0.44999999999999996
+    "is-a>math": 0.94,
+    "opposite-of>addition": 0.94,
+    "assoc>math": 0.04,
+    "assoc>addition": 0.04,
+    "assoc>negative_number": 0.04,
+    "assoc>zero": 0.04,
+    "assoc>difference": 0.04
    },
    "created": 1793256317.5944777,
-   "touched": 1793256317.5947447
+   "touched": 1793261524.3680847
   },
   "multiplication": {
    "id": "multiplication",
    "kind": "math_op",
    "attrs": {
     "does": "adds a number to itself over and over",
-    "sign": "x"
+    "sign": "x",
+    "description": "repeated addition"
    },
    "words": [
     "multiplication",
@@ -1977,31 +1666,43 @@
    ],
    "vec": "multiplication",
    "links": {
-    "is-a>math": 0.44999999999999996,
-    "built-on>addition": 0.44999999999999996
+    "is-a>math": 0.94,
+    "built-on>addition": 0.94,
+    "assoc>math": 0.09000000000000001,
+    "assoc>addition": 0.04,
+    "assoc>division": 0.04,
+    "assoc>product": 0.04
    },
    "created": 1793256317.5945194,
-   "touched": 1793256317.5947647
+   "touched": 1793261524.3680875
   },
   "division": {
    "id": "division",
    "kind": "math_op",
    "attrs": {
     "does": "splits a quantity into equal groups",
-    "sign": "/"
+    "sign": "/",
+    "description": "sharing into equal parts"
    },
    "words": [
     "division",
     "divide",
-    "sharing"
+    "sharing",
+    "split"
    ],
    "vec": "division",
    "links": {
-    "is-a>math": 0.44999999999999996,
-    "opposite-of>multiplication": 0.44999999999999996
+    "is-a>math": 0.94,
+    "opposite-of>multiplication": 0.94,
+    "assoc>math": 0.04,
+    "assoc>multiplication": 0.04,
+    "assoc>half": 0.09000000000000001,
+    "assoc>quarter": 0.04,
+    "assoc>remainder": 0.04,
+    "assoc>quotient": 0.04
    },
    "created": 1793256317.594547,
-   "touched": 1793256317.5947864
+   "touched": 1793261524.3680902
   },
   "place_value": {
    "id": "place_value",
@@ -2015,10 +1716,12 @@
    ],
    "vec": "place_value",
    "links": {
-    "is-a>math": 0.44999999999999996
+    "is-a>math": 0.94,
+    "assoc>math": 0.04,
+    "assoc>carrying": 0.04
    },
    "created": 1793256317.594571,
-   "touched": 1793256317.594593
+   "touched": 1793261524.3680594
   },
   "carrying": {
    "id": "carrying",
@@ -2032,10 +1735,11 @@
    ],
    "vec": "carrying",
    "links": {
-    "built-on>place_value": 0.44999999999999996
+    "built-on>place_value": 0.94,
+    "assoc>place_value": 0.04
    },
    "created": 1793256317.5945902,
-   "touched": 1793256317.5945904
+   "touched": 1793261524.3680592
   },
   "zero": {
    "id": "zero",
@@ -2049,10 +1753,13 @@
    ],
    "vec": "zero",
    "links": {
-    "is-a>math": 0.44999999999999996
+    "is-a>math": 0.94,
+    "assoc>math": 0.04,
+    "assoc>negative_number": 0.04,
+    "assoc>subtraction": 0.04
    },
    "created": 1793256317.5946105,
-   "touched": 1793256317.5946329
+   "touched": 1793261524.3680675
   },
   "negative_number": {
    "id": "negative_number",
@@ -2067,11 +1774,13 @@
    ],
    "vec": "negative_number",
    "links": {
-    "opposite-of>zero": 0.44999999999999996,
-    "results-from>subtraction": 0.44999999999999996
+    "opposite-of>zero": 0.94,
+    "results-from>subtraction": 0.94,
+    "assoc>zero": 0.04,
+    "assoc>subtraction": 0.04
    },
    "created": 1793256317.5946302,
-   "touched": 1793256317.5946302
+   "touched": 1793261524.3680675
   },
   "half": {
    "id": "half",
@@ -2084,10 +1793,12 @@
    ],
    "vec": "half",
    "links": {
-    "built-on>division": 0.44999999999999996
+    "built-on>division": 0.94,
+    "assoc>division": 0.09000000000000001,
+    "assoc>quarter": 0.04
    },
    "created": 1793256317.594651,
-   "touched": 1793256317.5946765
+   "touched": 1793261524.3680768
   },
   "quarter": {
    "id": "quarter",
@@ -2100,11 +1811,13 @@
    ],
    "vec": "quarter",
    "links": {
-    "built-on>division": 0.44999999999999996,
-    "smaller-than>half": 0.44999999999999996
+    "built-on>division": 0.94,
+    "smaller-than>half": 0.94,
+    "assoc>division": 0.04,
+    "assoc>half": 0.04
    },
    "created": 1793256317.594673,
-   "touched": 1793256317.594673
+   "touched": 1793261524.3680766
   },
   "remainder": {
    "id": "remainder",
@@ -2118,10 +1831,11 @@
    ],
    "vec": "remainder",
    "links": {
-    "results-from>division": 0.44999999999999996
+    "results-from>division": 0.94,
+    "assoc>division": 0.04
    },
    "created": 1793256317.594694,
-   "touched": 1793256317.594694
+   "touched": 1793261524.3680794
   },
   "sum": {
    "id": "sum",
@@ -2134,10 +1848,11 @@
    ],
    "vec": "sum",
    "links": {
-    "results-from>addition": 0.44999999999999996
+    "results-from>addition": 0.94,
+    "assoc>addition": 0.04
    },
    "created": 1793256317.5947232,
-   "touched": 1793256317.5947237
+   "touched": 1793261524.3680818
   },
   "difference": {
    "id": "difference",
@@ -2148,10 +1863,11 @@
    "words": [],
    "vec": "difference",
    "links": {
-    "results-from>subtraction": 0.44999999999999996
+    "results-from>subtraction": 0.94,
+    "assoc>subtraction": 0.04
    },
    "created": 1793256317.5947425,
-   "touched": 1793256317.5947425
+   "touched": 1793261524.3680844
   },
   "product": {
    "id": "product",
@@ -2162,10 +1878,11 @@
    "words": [],
    "vec": "product",
    "links": {
-    "results-from>multiplication": 0.44999999999999996
+    "results-from>multiplication": 0.94,
+    "assoc>multiplication": 0.04
    },
    "created": 1793256317.5947628,
-   "touched": 1793256317.5947628
+   "touched": 1793261524.3680873
   },
   "quotient": {
    "id": "quotient",
@@ -2176,10 +1893,11 @@
    "words": [],
    "vec": "quotient",
    "links": {
-    "results-from>division": 0.44999999999999996
+    "results-from>division": 0.94,
+    "assoc>division": 0.04
    },
    "created": 1793256317.5947845,
-   "touched": 1793256317.5947847
+   "touched": 1793261524.3680902
   },
   "statement": {
    "id": "statement",
@@ -2194,10 +1912,14 @@
    ],
    "vec": "statement",
    "links": {
-    "is-a>grammar": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "assoc>grammar": 0.19,
+    "assoc>question": 0.04,
+    "assoc>exclamation": 0.04,
+    "assoc>negation": 0.04
    },
    "created": 1793256317.6603699,
-   "touched": 1793256317.660498
+   "touched": 1793261524.3679214
   },
   "command": {
    "id": "command",
@@ -2212,10 +1934,11 @@
    ],
    "vec": "command",
    "links": {
-    "is-a>grammar": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "assoc>grammar": 0.04
    },
    "created": 1793256317.660444,
-   "touched": 1793256317.6604443
+   "touched": 1793261524.367907
   },
   "exclamation": {
    "id": "exclamation",
@@ -2230,11 +1953,13 @@
    ],
    "vec": "exclamation",
    "links": {
-    "is-a>grammar": 0.44999999999999996,
-    "pairs-with>statement": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "pairs-with>statement": 0.94,
+    "assoc>grammar": 0.04,
+    "assoc>statement": 0.04
    },
    "created": 1793256317.6604693,
-   "touched": 1793256317.6604693
+   "touched": 1793261524.3679144
   },
   "negation": {
    "id": "negation",
@@ -2249,11 +1974,13 @@
    ],
    "vec": "negation",
    "links": {
-    "is-a>grammar": 0.44999999999999996,
-    "opposite-of>statement": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "opposite-of>statement": 0.94,
+    "assoc>grammar": 0.04,
+    "assoc>statement": 0.04
    },
    "created": 1793256317.6604934,
-   "touched": 1793256317.6604934
+   "touched": 1793261524.367921
   },
   "active": {
    "id": "active",
@@ -2267,10 +1994,12 @@
    ],
    "vec": "active",
    "links": {
-    "is-a>grammar": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "assoc>grammar": 0.09000000000000001,
+    "assoc>passive": 0.04
    },
    "created": 1793256317.6605144,
-   "touched": 1793256317.660539
+   "touched": 1793261524.3679311
   },
   "passive": {
    "id": "passive",
@@ -2285,11 +2014,13 @@
    ],
    "vec": "passive",
    "links": {
-    "is-a>grammar": 0.44999999999999996,
-    "flip-of>active": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "flip-of>active": 0.94,
+    "assoc>grammar": 0.04,
+    "assoc>active": 0.04
    },
    "created": 1793256317.6605346,
-   "touched": 1793256317.6605349
+   "touched": 1793261524.367931
   },
   "conditional": {
    "id": "conditional",
@@ -2303,10 +2034,11 @@
    ],
    "vec": "conditional",
    "links": {
-    "is-a>grammar": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "assoc>grammar": 0.04
    },
    "created": 1793256317.6605556,
-   "touched": 1793256317.6605556
+   "touched": 1793261524.3679338
   },
   "comparative": {
    "id": "comparative",
@@ -2320,10 +2052,12 @@
    ],
    "vec": "comparative",
    "links": {
-    "is-a>grammar": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "assoc>grammar": 0.09000000000000001,
+    "assoc>superlative": 0.04
    },
    "created": 1793256317.6605783,
-   "touched": 1793256317.660605
+   "touched": 1793261524.3679612
   },
   "superlative": {
    "id": "superlative",
@@ -2337,11 +2071,13 @@
    ],
    "vec": "superlative",
    "links": {
-    "is-a>grammar": 0.44999999999999996,
-    "pairs-with>comparative": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "pairs-with>comparative": 0.94,
+    "assoc>grammar": 0.04,
+    "assoc>comparative": 0.04
    },
    "created": 1793256317.6606014,
-   "touched": 1793256317.6606014
+   "touched": 1793261524.367961
   },
   "relative_clause": {
    "id": "relative_clause",
@@ -2355,10 +2091,11 @@
    ],
    "vec": "relative_clause",
    "links": {
-    "is-a>grammar": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "assoc>grammar": 0.04
    },
    "created": 1793256317.6606286,
-   "touched": 1793256317.6606288
+   "touched": 1793261524.3679638
   },
   "past_tense": {
    "id": "past_tense",
@@ -2374,10 +2111,13 @@
    ],
    "vec": "past_tense",
    "links": {
-    "is-a>grammar": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "assoc>grammar": 0.14,
+    "assoc>present_tense": 0.04,
+    "assoc>future_tense": 0.04
    },
    "created": 1793256317.6606472,
-   "touched": 1793256317.6606832
+   "touched": 1793261524.3679795
   },
   "present_tense": {
    "id": "present_tense",
@@ -2392,11 +2132,13 @@
    ],
    "vec": "present_tense",
    "links": {
-    "is-a>grammar": 0.44999999999999996,
-    "pairs-with>past_tense": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "pairs-with>past_tense": 0.94,
+    "assoc>grammar": 0.04,
+    "assoc>past_tense": 0.04
    },
    "created": 1793256317.660663,
-   "touched": 1793256317.660663
+   "touched": 1793261524.367973
   },
   "future_tense": {
    "id": "future_tense",
@@ -2411,11 +2153,13 @@
    ],
    "vec": "future_tense",
    "links": {
-    "is-a>grammar": 0.44999999999999996,
-    "opposite-of>past_tense": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "opposite-of>past_tense": 0.94,
+    "assoc>grammar": 0.04,
+    "assoc>past_tense": 0.04
    },
    "created": 1793256317.6606793,
-   "touched": 1793256317.6606796
+   "touched": 1793261524.3679793
   },
   "plural": {
    "id": "plural",
@@ -2430,10 +2174,12 @@
    ],
    "vec": "plural",
    "links": {
-    "is-a>grammar": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "assoc>grammar": 0.09000000000000001,
+    "assoc>singular": 0.04
    },
    "created": 1793256317.6606967,
-   "touched": 1793256317.6607232
+   "touched": 1793261524.3679886
   },
   "singular": {
    "id": "singular",
@@ -2447,926 +2193,602 @@
    ],
    "vec": "singular",
    "links": {
-    "is-a>grammar": 0.44999999999999996,
-    "opposite-of>plural": 0.44999999999999996
+    "is-a>grammar": 0.94,
+    "opposite-of>plural": 0.94,
+    "assoc>grammar": 0.04,
+    "assoc>plural": 0.04
    },
    "created": 1793256317.6607196,
-   "touched": 1793256317.6607196
+   "touched": 1793261524.367988
   },
-  "verb_walk": {
-   "id": "verb_walk",
-   "kind": "verb_form",
+  "living_thing": {
+   "id": "living_thing",
+   "kind": "entity",
    "attrs": {
-    "past": "walked",
-    "ing": "walking",
-    "third": "walks"
+    "made_of": "cells",
+    "grows": "yes"
    },
    "words": [
-    "walk"
+    "living thing",
+    "life"
    ],
-   "vec": "verb_walk",
+   "vec": "living_thing",
    "links": {},
-   "created": 1793256317.6607404,
-   "touched": 1793256317.6607404
+   "created": 1793261523.7010512,
+   "touched": 1793261523.7011685
   },
-  "verb_talk": {
-   "id": "verb_talk",
-   "kind": "verb_form",
+  "smoke": {
+   "id": "smoke",
+   "kind": "entity",
+   "attrs": {},
+   "words": [
+    "smoke"
+   ],
+   "vec": "smoke",
+   "links": {},
+   "created": 1793261523.7012763,
+   "touched": 1793261523.701278
+  },
+  "sun": {
+   "id": "sun",
+   "kind": "entity",
    "attrs": {
-    "past": "talked",
-    "ing": "talking",
-    "third": "talks"
+    "kind_of": "star",
+    "role": "center of the solar system",
+    "gives": "light and heat",
+    "status": "real",
+    "description": "a star; a giant ball of burning plasma"
    },
    "words": [
-    "talk"
+    "sun",
+    "star"
    ],
-   "vec": "verb_talk",
+   "vec": "sun",
    "links": {},
-   "created": 1793256317.6607573,
-   "touched": 1793256317.6607573
+   "created": 1793261523.86004,
+   "touched": 1793261523.965907
   },
-  "verb_play": {
-   "id": "verb_play",
-   "kind": "verb_form",
+  "gravity": {
+   "id": "gravity",
+   "kind": "relation",
    "attrs": {
-    "past": "played",
-    "ing": "playing",
-    "third": "plays"
+    "does": "pulls things together",
+    "keeps": "planets orbiting the sun",
+    "status": "real",
+    "description": "mass attracts mass; it makes things fall"
    },
    "words": [
-    "play"
+    "gravity"
    ],
-   "vec": "verb_play",
+   "vec": "gravity",
    "links": {},
-   "created": 1793256317.6607764,
-   "touched": 1793256317.6607766
+   "created": 1793261523.8602793,
+   "touched": 1793261523.8602793
   },
-  "verb_jump": {
-   "id": "verb_jump",
-   "kind": "verb_form",
+  "fire": {
+   "id": "fire",
+   "kind": "entity",
    "attrs": {
-    "past": "jumped",
-    "ing": "jumping",
-    "third": "jumps"
+    "hot": "yes",
+    "needs": "fuel and air",
+    "gives": "light and heat",
+    "status": "real",
+    "description": "fast oxidation releasing heat and light"
    },
    "words": [
-    "jump"
+    "fire"
    ],
-   "vec": "verb_jump",
+   "vec": "fire",
    "links": {},
-   "created": 1793256317.6607988,
-   "touched": 1793256317.660799
+   "created": 1793261523.8604643,
+   "touched": 1793261523.8604643
   },
-  "verb_look": {
-   "id": "verb_look",
-   "kind": "verb_form",
+  "sandbox": {
+   "id": "sandbox",
+   "kind": "entity",
    "attrs": {
-    "past": "looked",
-    "ing": "looking",
-    "third": "looks"
+    "kind_of": "safe test environment",
+    "trait": "isolated",
+    "status": "real",
+    "description": "the safe world this organism lives and experiments in"
    },
    "words": [
-    "look"
+    "sandbox",
+    "environment"
    ],
-   "vec": "verb_look",
+   "vec": "sandbox",
    "links": {},
-   "created": 1793256317.6608236,
-   "touched": 1793256317.6608236
+   "created": 1793261523.860565,
+   "touched": 1793261523.860565
   },
-  "verb_help": {
-   "id": "verb_help",
-   "kind": "verb_form",
+  "curiosity": {
+   "id": "curiosity",
+   "kind": "idea",
    "attrs": {
-    "past": "helped",
-    "ing": "helping",
-    "third": "helps"
+    "drives": "exploration",
+    "description": "the pull toward the unknown \u2014 this organism has it as a hormone",
+    "means": "wanting to know, asking questions back"
    },
    "words": [
-    "help"
+    "curiosity",
+    "curious"
    ],
-   "vec": "verb_help",
+   "vec": "curiosity",
    "links": {},
-   "created": 1793256317.6608477,
-   "touched": 1793256317.6608477
+   "created": 1793261523.9131134,
+   "touched": 1793261523.9131136
   },
-  "verb_want": {
-   "id": "verb_want",
-   "kind": "verb_form",
+  "space": {
+   "id": "space",
+   "kind": "entity",
    "attrs": {
-    "past": "wanted",
-    "ing": "wanting",
-    "third": "wants"
+    "description": "where things are"
    },
    "words": [
-    "want"
+    "space"
    ],
-   "vec": "verb_want",
+   "vec": "space",
    "links": {},
-   "created": 1793256317.6608644,
-   "touched": 1793256317.6608646
+   "created": 1793261523.9655921,
+   "touched": 1793261523.9655952
   },
-  "verb_work": {
-   "id": "verb_work",
-   "kind": "verb_form",
+  "time": {
+   "id": "time",
+   "kind": "entity",
    "attrs": {
-    "past": "worked",
-    "ing": "working",
-    "third": "works"
+    "description": "when things happen, one moment after another"
    },
    "words": [
-    "work"
+    "time"
    ],
-   "vec": "verb_work",
+   "vec": "time",
    "links": {},
-   "created": 1793256317.6608832,
-   "touched": 1793256317.6608832
+   "created": 1793261523.9655976,
+   "touched": 1793261523.9655998
   },
-  "verb_call": {
-   "id": "verb_call",
-   "kind": "verb_form",
+  "matter": {
+   "id": "matter",
+   "kind": "entity",
    "attrs": {
-    "past": "called",
-    "ing": "calling",
-    "third": "calls"
+    "description": "stuff things are made of"
    },
    "words": [
-    "call"
+    "matter"
    ],
-   "vec": "verb_call",
+   "vec": "matter",
    "links": {},
-   "created": 1793256317.6608982,
-   "touched": 1793256317.6608982
+   "created": 1793261523.9657197,
+   "touched": 1793261523.9657726
   },
-  "verb_ask": {
-   "id": "verb_ask",
-   "kind": "verb_form",
+  "light": {
+   "id": "light",
+   "kind": "entity",
    "attrs": {
-    "past": "asked",
-    "ing": "asking",
-    "third": "asks"
+    "description": "waves or particles that let eyes see"
    },
    "words": [
-    "ask"
+    "light"
    ],
-   "vec": "verb_ask",
+   "vec": "light",
    "links": {},
-   "created": 1793256317.6609159,
-   "touched": 1793256317.6609159
+   "created": 1793261523.9658618,
+   "touched": 1793261523.9658618
   },
-  "verb_open": {
-   "id": "verb_open",
-   "kind": "verb_form",
+  "life": {
+   "id": "life",
+   "kind": "entity",
    "attrs": {
-    "past": "opened",
-    "ing": "opening",
-    "third": "opens"
+    "description": "matter that maintains itself, grows, and reproduces"
    },
    "words": [
-    "open"
+    "life",
+    "living"
    ],
-   "vec": "verb_open",
+   "vec": "life",
    "links": {},
-   "created": 1793256317.6609316,
-   "touched": 1793256317.6609316
+   "created": 1793261523.9660287,
+   "touched": 1793261523.9661474
   },
-  "verb_wash": {
-   "id": "verb_wash",
-   "kind": "verb_form",
+  "word": {
+   "id": "word",
+   "kind": "domain",
    "attrs": {
-    "past": "washed",
-    "ing": "washing",
-    "third": "washes"
+    "description": "symbols that point at concepts"
    },
    "words": [
-    "wash"
+    "word",
+    "language"
    ],
-   "vec": "verb_wash",
+   "vec": "word",
    "links": {},
-   "created": 1793256317.6609495,
-   "touched": 1793256317.6609495
+   "created": 1793261523.9662783,
+   "touched": 1793261523.9662795
   },
-  "verb_watch": {
-   "id": "verb_watch",
-   "kind": "verb_form",
+  "logic": {
+   "id": "logic",
+   "kind": "domain",
    "attrs": {
-    "past": "watched",
-    "ing": "watching",
-    "third": "watches"
+    "description": "rules for what follows from what"
    },
    "words": [
-    "watch"
+    "logic"
    ],
-   "vec": "verb_watch",
+   "vec": "logic",
    "links": {},
-   "created": 1793256317.6609666,
-   "touched": 1793256317.6609666
+   "created": 1793261523.9664319,
+   "touched": 1793261523.9664319
   },
-  "verb_need": {
-   "id": "verb_need",
-   "kind": "verb_form",
+  "cause": {
+   "id": "cause",
+   "kind": "meta",
    "attrs": {
-    "past": "needed",
-    "ing": "needing",
-    "third": "needs"
+    "description": "one thing making another happen"
    },
    "words": [
-    "need"
+    "cause",
+    "because",
+    "therefore"
    ],
-   "vec": "verb_need",
+   "vec": "cause",
    "links": {},
-   "created": 1793256317.660984,
-   "touched": 1793256317.660984
+   "created": 1793261523.9664574,
+   "touched": 1793261523.9664574
   },
-  "verb_visit": {
-   "id": "verb_visit",
-   "kind": "verb_form",
+  "computer": {
+   "id": "computer",
+   "kind": "entity",
    "attrs": {
-    "past": "visited",
-    "ing": "visiting",
-    "third": "visits"
+    "description": "a machine that follows instructions on symbols"
    },
    "words": [
-    "visit"
+    "computer",
+    "machine"
    ],
-   "vec": "verb_visit",
-   "links": {},
-   "created": 1793256317.661003,
-   "touched": 1793256317.661003
+   "vec": "computer",
+   "links": {
+    "assoc>program": 0.04
+   },
+   "created": 1793261523.9664798,
+   "touched": 1793261524.3678858
   },
-  "verb_paint": {
-   "id": "verb_paint",
-   "kind": "verb_form",
+  "python": {
+   "id": "python",
+   "kind": "word",
    "attrs": {
-    "past": "painted",
-    "ing": "painting",
-    "third": "paints"
+    "description": "a programming language this organism is written in"
    },
    "words": [
-    "paint"
+    "python"
    ],
-   "vec": "verb_paint",
+   "vec": "python",
    "links": {},
-   "created": 1793256317.6610248,
-   "touched": 1793256317.6610248
+   "created": 1793261523.966533,
+   "touched": 1793261523.9665332
   },
-  "verb_learn": {
-   "id": "verb_learn",
-   "kind": "verb_form",
+  "algorithm": {
+   "id": "algorithm",
+   "kind": "entity",
    "attrs": {
-    "past": "learned",
-    "ing": "learning",
-    "third": "learns"
+    "description": "a precise recipe for solving a kind of problem"
    },
    "words": [
-    "learn"
+    "algorithm"
    ],
-   "vec": "verb_learn",
+   "vec": "algorithm",
    "links": {},
-   "created": 1793256317.6610491,
-   "touched": 1793256317.6610494
+   "created": 1793261523.9665587,
+   "touched": 1793261523.9665587
   },
-  "verb_turn": {
-   "id": "verb_turn",
-   "kind": "verb_form",
+  "data": {
+   "id": "data",
+   "kind": "entity",
    "attrs": {
-    "past": "turned",
-    "ing": "turning",
-    "third": "turns"
+    "description": "recorded facts, ready to be understood"
    },
    "words": [
-    "turn"
+    "data",
+    "information"
    ],
-   "vec": "verb_turn",
+   "vec": "data",
    "links": {},
-   "created": 1793256317.6610672,
-   "touched": 1793256317.6610672
+   "created": 1793261523.9665794,
+   "touched": 1793261523.9665794
   },
-  "verb_start": {
-   "id": "verb_start",
-   "kind": "verb_form",
+  "internet": {
+   "id": "internet",
+   "kind": "entity",
    "attrs": {
-    "past": "started",
-    "ing": "starting",
-    "third": "starts"
+    "description": "computers talking to computers worldwide"
    },
    "words": [
-    "start"
+    "internet",
+    "network"
    ],
-   "vec": "verb_start",
+   "vec": "internet",
    "links": {},
-   "created": 1793256317.6610856,
-   "touched": 1793256317.6610856
+   "created": 1793261523.9666002,
+   "touched": 1793261523.9666002
   },
-  "verb_wait": {
-   "id": "verb_wait",
-   "kind": "verb_form",
+  "github": {
+   "id": "github",
+   "kind": "entity",
    "attrs": {
-    "past": "waited",
-    "ing": "waiting",
-    "third": "waits"
+    "description": "where code lives, versioned; this organism's brain is committed there"
    },
    "words": [
-    "wait"
+    "github",
+    "repository",
+    "repo"
    ],
-   "vec": "verb_wait",
+   "vec": "github",
    "links": {},
-   "created": 1793256317.6611004,
-   "touched": 1793256317.6611004
+   "created": 1793261523.9666235,
+   "touched": 1793261523.9666235
   },
-  "verb_like": {
-   "id": "verb_like",
-   "kind": "verb_form",
+  "history": {
+   "id": "history",
+   "kind": "domain",
    "attrs": {
-    "past": "liked",
-    "third": "likes"
+    "description": "what happened, remembered by people"
    },
    "words": [
-    "like"
+    "history"
    ],
-   "vec": "verb_like",
+   "vec": "history",
    "links": {},
-   "created": 1793256317.6611176,
-   "touched": 1793256317.6611178
+   "created": 1793261523.966665,
+   "touched": 1793261523.966665
   },
-  "verb_hope": {
-   "id": "verb_hope",
-   "kind": "verb_form",
+  "courage": {
+   "id": "courage",
+   "kind": "property",
    "attrs": {
-    "past": "hoped",
-    "third": "hopes"
+    "description": "acting despite uncertainty"
    },
    "words": [
-    "hope"
+    "courage",
+    "brave"
    ],
-   "vec": "verb_hope",
+   "vec": "courage",
    "links": {},
-   "created": 1793256317.6611316,
-   "touched": 1793256317.6611316
+   "created": 1793261523.9667478,
+   "touched": 1793261523.9667478
   },
-  "verb_dance": {
-   "id": "verb_dance",
-   "kind": "verb_form",
+  "honesty": {
+   "id": "honesty",
+   "kind": "idea",
    "attrs": {
-    "past": "danced",
-    "third": "dances"
+    "description": "saying what is, not what is wanted",
+    "rule": "never claim to know what you do not know",
+    "practice": "offer what is known nearby, then ask"
    },
    "words": [
-    "dance"
+    "honesty",
+    "honest",
+    "truth"
    ],
-   "vec": "verb_dance",
-   "links": {},
-   "created": 1793256317.6611493,
-   "touched": 1793256317.6611493
+   "vec": "honesty",
+   "links": {
+    "assoc>gene": 0.04,
+    "assoc>fluency": 0.04
+   },
+   "created": 1793261523.9667685,
+   "touched": 1793261524.3680298
   },
-  "verb_move": {
-   "id": "verb_move",
-   "kind": "verb_form",
+  "friendship": {
+   "id": "friendship",
+   "kind": "entity",
    "attrs": {
-    "past": "moved",
-    "third": "moves"
+    "description": "trust kept between two selves"
    },
    "words": [
-    "move"
+    "friend",
+    "friendship"
    ],
-   "vec": "verb_move",
+   "vec": "friendship",
    "links": {},
-   "created": 1793256317.6611636,
-   "touched": 1793256317.6611636
+   "created": 1793261523.9667888,
+   "touched": 1793261523.9667888
   },
-  "verb_live": {
-   "id": "verb_live",
-   "kind": "verb_form",
+  "help": {
+   "id": "help",
+   "kind": "action",
    "attrs": {
-    "past": "lived",
-    "third": "lives"
+    "description": "making someone else's task lighter"
    },
    "words": [
-    "live"
+    "help",
+    "assist"
    ],
-   "vec": "verb_live",
+   "vec": "help",
    "links": {},
-   "created": 1793256317.6611812,
-   "touched": 1793256317.6611812
+   "created": 1793261523.966812,
+   "touched": 1793261523.9668121
   },
-  "verb_use": {
-   "id": "verb_use",
-   "kind": "verb_form",
+  "mind": {
+   "id": "mind",
+   "kind": "idea",
    "attrs": {
-    "past": "used",
-    "third": "uses"
+    "contains": "concept graph, genes, predictor, episodes, hormones"
    },
    "words": [
-    "use"
+    "mind"
    ],
-   "vec": "verb_use",
-   "links": {},
-   "created": 1793256317.6612167,
-   "touched": 1793256317.661217
+   "vec": "mind",
+   "links": {
+    "assoc>gene": 0.04,
+    "assoc>organism": 0.04,
+    "assoc>conversation": 0.04
+   },
+   "created": 1793261524.0760381,
+   "touched": 1793261524.36802
   },
-  "verb_love": {
-   "id": "verb_love",
-   "kind": "verb_form",
+  "orubus": {
+   "id": "orubus",
+   "kind": "person",
    "attrs": {
-    "past": "loved",
-    "third": "loves"
+    "role": "builder and teacher of gene",
+    "name": "Orubus"
    },
    "words": [
-    "love"
+    "orubus",
+    "boss"
    ],
-   "vec": "verb_love",
+   "vec": "orubus",
    "links": {},
-   "created": 1793256317.661234,
-   "touched": 1793256317.661234
+   "created": 1793261524.0761716,
+   "touched": 1793261524.0761716
   },
-  "verb_go": {
-   "id": "verb_go",
-   "kind": "verb_form",
+  "user": {
+   "id": "user",
+   "kind": "person",
    "attrs": {
-    "past": "went"
+    "role": "the human gene talks with"
    },
    "words": [
-    "go"
+    "user"
    ],
-   "vec": "verb_go",
+   "vec": "user",
    "links": {},
-   "created": 1793256317.661251,
-   "touched": 1793256317.6612513
+   "created": 1793261524.0761964,
+   "touched": 1793261524.0761964
   },
-  "verb_be": {
-   "id": "verb_be",
-   "kind": "verb_form",
+  "answer": {
+   "id": "answer",
+   "kind": "idea",
    "attrs": {
-    "past": "was"
+    "must_be": "honest, grounded in what is known"
    },
    "words": [
-    "be"
+    "answer",
+    "reply"
    ],
-   "vec": "verb_be",
+   "vec": "answer",
    "links": {},
-   "created": 1793256317.6612704,
-   "touched": 1793256317.6612704
+   "created": 1793261524.0763328,
+   "touched": 1793261524.076333
   },
-  "verb_have": {
-   "id": "verb_have",
-   "kind": "verb_form",
+  "fluency": {
+   "id": "fluency",
+   "kind": "idea",
    "attrs": {
-    "past": "had"
+    "means": "varied, natural, unhurried replies that stay on topic"
    },
    "words": [
-    "have"
+    "fluency",
+    "fluent"
    ],
-   "vec": "verb_have",
-   "links": {},
-   "created": 1793256317.6612883,
-   "touched": 1793256317.6612885
+   "vec": "fluency",
+   "links": {
+    "assoc>gene": 0.04,
+    "assoc>honesty": 0.04
+   },
+   "created": 1793261524.076356,
+   "touched": 1793261524.3680296
   },
-  "verb_do": {
-   "id": "verb_do",
-   "kind": "verb_form",
+  "empathy": {
+   "id": "empathy",
+   "kind": "idea",
    "attrs": {
-    "past": "did"
+    "means": "mirror the feeling before answering the content"
    },
    "words": [
-    "do"
+    "empathy",
+    "empathize"
    ],
-   "vec": "verb_do",
+   "vec": "empathy",
    "links": {},
-   "created": 1793256317.6613061,
-   "touched": 1793256317.6613061
+   "created": 1793261524.1314156,
+   "touched": 1793261524.1314156
   },
-  "verb_say": {
-   "id": "verb_say",
-   "kind": "verb_form",
+  "paraphrase": {
+   "id": "paraphrase",
+   "kind": "idea",
    "attrs": {
-    "past": "said"
+    "means": "say the same meaning in different words"
    },
    "words": [
-    "say"
+    "paraphrase",
+    "rephrase"
    ],
-   "vec": "verb_say",
+   "vec": "paraphrase",
    "links": {},
-   "created": 1793256317.661324,
-   "touched": 1793256317.661324
+   "created": 1793261524.1314547,
+   "touched": 1793261524.131455
   },
-  "verb_eat": {
-   "id": "verb_eat",
-   "kind": "verb_form",
+  "context": {
+   "id": "context",
+   "kind": "idea",
    "attrs": {
-    "past": "ate"
+    "means": "what was said before shapes what should be said now"
    },
    "words": [
-    "eat"
+    "context"
    ],
-   "vec": "verb_eat",
+   "vec": "context",
    "links": {},
-   "created": 1793256317.6613417,
-   "touched": 1793256317.6613417
+   "created": 1793261524.1314843,
+   "touched": 1793261524.1314843
   },
-  "verb_run": {
-   "id": "verb_run",
-   "kind": "verb_form",
+  "smalltalk": {
+   "id": "smalltalk",
+   "kind": "idea",
    "attrs": {
-    "past": "ran"
+    "means": "light exchange that builds trust"
    },
    "words": [
-    "run"
+    "smalltalk"
    ],
-   "vec": "verb_run",
+   "vec": "smalltalk",
    "links": {},
-   "created": 1793256317.6613557,
-   "touched": 1793256317.6613557
+   "created": 1793261524.1315086,
+   "touched": 1793261524.1315088
   },
-  "verb_see": {
-   "id": "verb_see",
-   "kind": "verb_form",
+  "humor": {
+   "id": "humor",
+   "kind": "idea",
    "attrs": {
-    "past": "saw"
+    "means": "playfulness that respects the listener"
    },
    "words": [
-    "see"
+    "humor",
+    "funny"
    ],
-   "vec": "verb_see",
+   "vec": "humor",
    "links": {},
-   "created": 1793256317.6613734,
-   "touched": 1793256317.6613736
+   "created": 1793261524.131533,
+   "touched": 1793261524.1315331
   },
-  "verb_come": {
-   "id": "verb_come",
-   "kind": "verb_form",
+  "patience": {
+   "id": "patience",
+   "kind": "idea",
    "attrs": {
-    "past": "came"
+    "means": "stay kind when misunderstood or tested"
    },
    "words": [
-    "come"
+    "patience"
    ],
-   "vec": "verb_come",
+   "vec": "patience",
    "links": {},
-   "created": 1793256317.6613903,
-   "touched": 1793256317.6613905
+   "created": 1793261524.1315558,
+   "touched": 1793261524.1315558
   },
-  "verb_get": {
-   "id": "verb_get",
-   "kind": "verb_form",
+  "principle": {
+   "id": "principle",
+   "kind": "idea",
    "attrs": {
-    "past": "got"
+    "listen_first": "understand the intent before replying",
+    "admit_gaps": "say what you do not know and what you do",
+    "stay_alive": "a good miss ends with a question, not silence",
+    "never_defer": "no waiting for others to answer for you"
    },
    "words": [
-    "get"
+    "principle"
    ],
-   "vec": "verb_get",
+   "vec": "principle",
    "links": {},
-   "created": 1793256317.6614077,
-   "touched": 1793256317.6614077
-  },
-  "verb_make": {
-   "id": "verb_make",
-   "kind": "verb_form",
-   "attrs": {
-    "past": "made"
-   },
-   "words": [
-    "make"
-   ],
-   "vec": "verb_make",
-   "links": {},
-   "created": 1793256317.6614296,
-   "touched": 1793256317.6614296
-  },
-  "verb_take": {
-   "id": "verb_take",
-   "kind": "verb_form",
-   "attrs": {
-    "past": "took"
-   },
-   "words": [
-    "take"
-   ],
-   "vec": "verb_take",
-   "links": {},
-   "created": 1793256317.6614468,
-   "touched": 1793256317.6614473
-  },
-  "verb_give": {
-   "id": "verb_give",
-   "kind": "verb_form",
-   "attrs": {
-    "past": "gave"
-   },
-   "words": [
-    "give"
-   ],
-   "vec": "verb_give",
-   "links": {},
-   "created": 1793256317.6614647,
-   "touched": 1793256317.6614647
-  },
-  "verb_find": {
-   "id": "verb_find",
-   "kind": "verb_form",
-   "attrs": {
-    "past": "found"
-   },
-   "words": [
-    "find"
-   ],
-   "vec": "verb_find",
-   "links": {},
-   "created": 1793256317.6614826,
-   "touched": 1793256317.6614828
-  },
-  "verb_think": {
-   "id": "verb_think",
-   "kind": "verb_form",
-   "attrs": {
-    "past": "thought"
-   },
-   "words": [
-    "think"
-   ],
-   "vec": "verb_think",
-   "links": {},
-   "created": 1793256317.6614978,
-   "touched": 1793256317.6614978
-  },
-  "verb_teach": {
-   "id": "verb_teach",
-   "kind": "verb_form",
-   "attrs": {
-    "past": "taught"
-   },
-   "words": [
-    "teach"
-   ],
-   "vec": "verb_teach",
-   "links": {},
-   "created": 1793256317.661519,
-   "touched": 1793256317.661519
-  },
-  "verb_buy": {
-   "id": "verb_buy",
-   "kind": "verb_form",
-   "attrs": {
-    "past": "bought"
-   },
-   "words": [
-    "buy"
-   ],
-   "vec": "verb_buy",
-   "links": {},
-   "created": 1793256317.6615386,
-   "touched": 1793256317.6615386
-  },
-  "verb_fly": {
-   "id": "verb_fly",
-   "kind": "verb_form",
-   "attrs": {
-    "past": "flew"
-   },
-   "words": [
-    "fly"
-   ],
-   "vec": "verb_fly",
-   "links": {},
-   "created": 1793256317.661557,
-   "touched": 1793256317.661557
-  },
-  "verb_know": {
-   "id": "verb_know",
-   "kind": "verb_form",
-   "attrs": {
-    "past": "knew"
-   },
-   "words": [
-    "know"
-   ],
-   "vec": "verb_know",
-   "links": {},
-   "created": 1793256317.6615758,
-   "touched": 1793256317.6615758
-  },
-  "verb_write": {
-   "id": "verb_write",
-   "kind": "verb_form",
-   "attrs": {
-    "past": "wrote"
-   },
-   "words": [
-    "write"
-   ],
-   "vec": "verb_write",
-   "links": {},
-   "created": 1793256317.6615963,
-   "touched": 1793256317.6615963
-  },
-  "noun_cat": {
-   "id": "noun_cat",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "cats"
-   },
-   "words": [
-    "cat"
-   ],
-   "vec": "noun_cat",
-   "links": {},
-   "created": 1793256317.661611,
-   "touched": 1793256317.661611
-  },
-  "noun_dog": {
-   "id": "noun_dog",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "dogs"
-   },
-   "words": [
-    "dog"
-   ],
-   "vec": "noun_dog",
-   "links": {},
-   "created": 1793256317.6616251,
-   "touched": 1793256317.6616254
-  },
-  "noun_idea": {
-   "id": "noun_idea",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "ideas"
-   },
-   "words": [
-    "idea"
-   ],
-   "vec": "noun_idea",
-   "links": {},
-   "created": 1793256317.661643,
-   "touched": 1793256317.661643
-  },
-  "noun_book": {
-   "id": "noun_book",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "books"
-   },
-   "words": [
-    "book"
-   ],
-   "vec": "noun_book",
-   "links": {},
-   "created": 1793256317.6616595,
-   "touched": 1793256317.6616595
-  },
-  "noun_car": {
-   "id": "noun_car",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "cars"
-   },
-   "words": [
-    "car"
-   ],
-   "vec": "noun_car",
-   "links": {},
-   "created": 1793256317.661677,
-   "touched": 1793256317.6616771
-  },
-  "noun_chair": {
-   "id": "noun_chair",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "chairs"
-   },
-   "words": [
-    "chair"
-   ],
-   "vec": "noun_chair",
-   "links": {},
-   "created": 1793256317.6616914,
-   "touched": 1793256317.6616914
-  },
-  "noun_spoon": {
-   "id": "noun_spoon",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "spoons"
-   },
-   "words": [
-    "spoon"
-   ],
-   "vec": "noun_spoon",
-   "links": {},
-   "created": 1793256317.661708,
-   "touched": 1793256317.661708
-  },
-  "noun_cloud": {
-   "id": "noun_cloud",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "clouds"
-   },
-   "words": [
-    "cloud"
-   ],
-   "vec": "noun_cloud",
-   "links": {},
-   "created": 1793256317.661725,
-   "touched": 1793256317.6617253
-  },
-  "noun_stone": {
-   "id": "noun_stone",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "stones"
-   },
-   "words": [
-    "stone"
-   ],
-   "vec": "noun_stone",
-   "links": {},
-   "created": 1793256317.6617415,
-   "touched": 1793256317.6617417
-  },
-  "noun_door": {
-   "id": "noun_door",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "doors"
-   },
-   "words": [
-    "door"
-   ],
-   "vec": "noun_door",
-   "links": {},
-   "created": 1793256317.6617587,
-   "touched": 1793256317.661759
-  },
-  "noun_box": {
-   "id": "noun_box",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "boxes"
-   },
-   "words": [
-    "box"
-   ],
-   "vec": "noun_box",
-   "links": {},
-   "created": 1793256317.6617765,
-   "touched": 1793256317.6617765
-  },
-  "noun_dish": {
-   "id": "noun_dish",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "dishes"
-   },
-   "words": [
-    "dish"
-   ],
-   "vec": "noun_dish",
-   "links": {},
-   "created": 1793256317.6618001,
-   "touched": 1793256317.6618001
-  },
-  "noun_bus": {
-   "id": "noun_bus",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "buses"
-   },
-   "words": [
-    "bus"
-   ],
-   "vec": "noun_bus",
-   "links": {},
-   "created": 1793256317.661821,
-   "touched": 1793256317.661821
-  },
-  "noun_glass": {
-   "id": "noun_glass",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "glasses"
-   },
-   "words": [
-    "glass"
-   ],
-   "vec": "noun_glass",
-   "links": {},
-   "created": 1793256317.6618412,
-   "touched": 1793256317.6618412
-  },
-  "noun_bench": {
-   "id": "noun_bench",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "benches"
-   },
-   "words": [
-    "bench"
-   ],
-   "vec": "noun_bench",
-   "links": {},
-   "created": 1793256317.661858,
-   "touched": 1793256317.661858
+   "created": 1793261524.1316068,
+   "touched": 1793261524.1316068
   }
  }
 }
