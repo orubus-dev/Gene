@@ -219,7 +219,7 @@ CLAUSE = {
     "trait": "it's %s",
     "role": "its job is %s",
     "used_for": "you use it for %s",
-    "effect": "it %s",
+    "effect": "%s",
     "state": "at room temperature it's %s",
     "found_in": "you'll find it in %s",
     "made_of": "it's made of %s",

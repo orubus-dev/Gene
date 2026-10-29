@@ -481,6 +481,9 @@ class Mind:
         if intent == "chem":
             return self._handle_chem(i)
 
+        if intent == "maths":
+            return self._handle_maths(i)
+
         if intent == "sentence":
             return self._handle_sentence(i)
 
@@ -802,6 +805,71 @@ class Mind:
             return "That sounds like a %s. %s" % (name, d)
         return "That's a %s%s" % (name, "" if name.endswith(".") else ".")
 
+    # ---------- maths talk (organism's own algebra, checker = env physics) -------
+    def _handle_maths(self, i):
+        """'solve speed for t v=20 u=2 a=3', 'rearrange v=u+a*t for a',
+        'fuse eq_speed and eq_accel' — the organism answers with its OWN
+        algebra over ITS taught formulas (or the formula in the ask);
+        the environment truth only checks pass/fail."""
+        from . import maths as MT
+        ask = i["input"]
+        kind = i["kind"]
+        # environment truth for the checker (never spoken)
+        try:
+            if kind == "eval":
+                p = MT._parse_task(ask)
+                f = p[5] or MT._eq_formula_from_graph(p[1])
+                expected = MT.evaluate_formula(f, p[4])
+            elif kind == "solve":
+                p = MT._parse_task(ask)
+                f = p[5] or MT._eq_formula_from_graph(p[1])
+                expected = MT.solve_formula(f, p[3], p[4])
+            elif kind == "rearrange":
+                p = MT._parse_task(ask)
+                f = p[5] or MT._eq_formula_from_graph(p[1])
+                expected = MT.rearrange_formula(f, p[3])
+            else:
+                p = MT._parse_task(ask)
+                expected = MT.fuse_formulas(MT._eq_formula_from_graph(p[1]),
+                                            MT._eq_formula_from_graph(p[2]))
+        except Exception:
+            expected = None
+        if expected is None:
+            self.knowledge.inquire("maths: %s" % ask[:60])
+            return self.rng.choice([
+                "That one's past my algebra so far — teach me the formula and I'll run it.",
+                "I don't have that formula in memory yet. What's the equation?",
+            ])
+        task = {"domain": "maths", "kind": kind, "input": ask,
+                "expected": expected, "prompt": ask}
+        outcome = trainer.train_task(task, self.genes, self.reflexes,
+                                     self.predictor, self.hormones, self.rng,
+                                     now=time.time())
+        if outcome["solved"] and outcome.get("winner"):
+            if outcome["gene"] and not any(g["steps"] == outcome["gene"]["steps"]
+                                           for g in self.genes):
+                self.genes.append(outcome["gene"])
+            self.progress["solved"] += 1
+            self.graph.hebbian(outcome["coactive"], 0.1)
+            try:
+                result = dsl.execute_pipeline(outcome["winner"], ask)
+            except Exception:
+                result = expected
+            if kind in ("eval", "solve"):
+                if isinstance(result, float) and abs(result - round(result)) < 1e-9:
+                    result = int(round(result))
+                return self.rng.choice(["%s", "that works out to %s", "%s — checked it twice"]) \
+                    % result
+            return self.rng.choice([
+                "%s" % result,
+                "working it through: %s" % result,
+            ])
+        self.knowledge.inquire("maths: %s" % ask[:60])
+        return self.rng.choice([
+            "I couldn't push that one through yet — a few more like it and I'll get there.",
+            "That algebra beat me this time. Show me the formula?",
+        ])
+
     # ---------- chemistry talk (organism's own memory routes) -------------------
     def _handle_chem(self, i):
         """'symbol of gold', 'formula of water', 'react hydrogen and
@@ -899,10 +967,11 @@ class Mind:
                     "Nothing in my long-term memory about %s — maybe it never stuck. Teach me and it will." % topic,
                     "I can't place %s in my memory. Was that one of yours?" % topic,
                 ])
+            what = lt._sane(hit["what"])
             return self.rng.choice([
                 "Found it — %s. That was cycle %s, and it's come back %s times since."
-                % (hit["what"], hit["when_cycle"], hit["count"]),
-                "%s — learned that around cycle %s, still in my memory." % (hit["what"], hit["when_cycle"]),
+                % (what, hit["when_cycle"], hit["count"]),
+                "%s — learned that around cycle %s, still in my memory." % (what, hit["when_cycle"]),
             ])
         if re.search(r"\b(hardest|worst|sting|still hurts)\b", low) and \
                 re.search(r"\b(failure|fail|problem|loss|miss)\b", low):
@@ -911,10 +980,11 @@ class Mind:
                 return "No big failures in my memory yet — either I'm lucky or young."
             a = n.get("attrs") or {}
             return self.rng.choice([
-                "The one that still stings: %s — cycle %s, failed it %s times before it gave in."
-                % (a.get("what", "something hard"), a.get("when_cycle"), a.get("count", 1)),
+                "The one that still stings: %s — cycle %s, failed it %s before it gave in."
+                % (lt._sane(a.get("what", "something hard")), a.get("when_cycle"),
+                   "once" if str(a.get("count", 1)) == "1" else "%s times" % a.get("count", 1)),
                 "Hardest memory on file: %s (cycle %s). It felt like a wall until it wasn't."
-                % (a.get("what", "something hard"), a.get("when_cycle")),
+                % (lt._sane(a.get("what", "something hard")), a.get("when_cycle")),
             ])
         if re.search(r"\b(proudest|best moment|favorite memory)\b", low):
             n = lt.proudest()
@@ -922,7 +992,7 @@ class Mind:
                 return "My memory has no trophy shelf yet — ask me again after a few more cycles."
             a = n.get("attrs") or {}
             return "Proudest memory: %s — cycle %s, and it stuck." % (
-                a.get("what", "a good win"), a.get("when_cycle"))
+                lt._sane(a.get("what", "a good win")), a.get("when_cycle"))
         if re.search(r"\b(last cycle|last sleep|last night|yesterday|your day|about your day)\b", low):
             story = self.diary.render_day(1)
             if story:
@@ -933,7 +1003,7 @@ class Mind:
             if not mems:
                 return "My long-term memory is empty so far — sleep will fill it."
             mems.sort(key=lambda n: -float((n.get("attrs") or {}).get("salience", 0)))
-            names = [str((n.get("attrs") or {}).get("what", ""))[:40] for n in mems[:3]]
+            names = [lt._sane((n.get("attrs") or {}).get("what", ""))[:40] for n in mems[:3]]
             return "I hold %d long-term memories. The strongest: %s." % (
                 len(mems), "; ".join(x for x in names if x))
         topic = self._mem_topic(text)
@@ -942,8 +1012,8 @@ class Mind:
             if hits:
                 a = hits[0].get("attrs") or {}
                 return self.rng.choice([
-                    "I remember — %s. Cycle %s, felt %s." % (a.get("what"), a.get("when_cycle"), a.get("felt", "fine")),
-                    "Yes: %s (cycle %s). %s." % (a.get("what"), a.get("when_cycle"),
+                    "I remember — %s. Cycle %s, felt %s." % (lt._sane(a.get("what")), a.get("when_cycle"), a.get("felt", "fine")),
+                    "Yes: %s (cycle %s). %s." % (lt._sane(a.get("what")), a.get("when_cycle"),
                                                  "It comes up a lot" if int(a.get("count", 1)) > 1 else ""),
                 ])
         self.knowledge.inquire("memory recall miss: %s" % text[:60])

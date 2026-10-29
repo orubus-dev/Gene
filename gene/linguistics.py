@@ -262,6 +262,64 @@ def _chem(text):
     return None
 
 
+def _maths_ask(text):
+    """Match a live maths ask: 'solve f=ma for a with f=10 m=2',
+    'solve speed for t v=20 u=2 a=3', 'rearrange v=u+a*t for a',
+    'evaluate eq_ke m=1 v=10', 'fuse eq_speed and eq_accel'. Returns an
+    intent dict in the task-world shape, or None."""
+    t = text.strip().rstrip("?!. ")
+    m = re.match(r"^(?:solve|rearrange|evaluate|eval|fuse)\s+(.+)$", t, re.I)
+    if not m:
+        return None
+    kind = t.split()[0].lower()
+    kind = {"evaluate": "eval", "eval": "eval"}.get(kind, kind)
+    body = m.group(1).strip()
+    # split off k=v pairs and the 'for X' / 'with' scaffolding
+    toks = body.split()
+    target = None
+    vals = []
+    head = []
+    i = 0
+    while i < len(toks):
+        w = toks[i]
+        if w.lower() == "for" and i + 1 < len(toks):
+            target = toks[i + 1].lower()
+            i += 2
+            continue
+        if w.lower() == "with":
+            i += 1
+            continue
+        if "=" in w:
+            k, v = w.split("=", 1)
+            try:
+                float(v)
+                vals.append(w)
+                i += 1
+                continue
+            except ValueError:
+                pass
+        head.append(w)
+        i += 1
+    if kind == "fuse":
+        if len(head) >= 3:
+            return {"intent": "maths", "kind": "fuse",
+                    "input": "fuse %s and %s" % (head[0], head[2])}
+        return None
+    if not head:
+        return None
+    eq = head[0]
+    if kind == "eval":
+        return {"intent": "maths", "kind": "eval",
+                "input": "eval %s %s" % (eq, " ".join(vals))}
+    if target:
+        if kind == "solve":
+            return {"intent": "maths", "kind": "solve",
+                    "input": "solve %s for %s %s" % (eq, target, " ".join(vals))}
+        return {"intent": "maths", "kind": "rearrange",
+                "input": "rearrange %s for %s" % (eq, target)}
+    return None
+
+
 def parse(text):
     """Parse to an intent dict. Returns {"intent": ..., ...} — the caller
     (mind.py) decides how to act. This is parsing to *meaning*, not tokens."""
@@ -290,6 +348,9 @@ def parse(text):
     ch = _chem(low)
     if ch:
         return ch
+    ma = _maths_ask(t)
+    if ma:
+        return ma
 
     m = re.match(r"^is\s+(?:a|an|the)\s+(.+?)\s+(?:a|an)\s+(.+?)\??$", low)
     if m:

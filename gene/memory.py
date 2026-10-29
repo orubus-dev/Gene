@@ -137,6 +137,19 @@ def _salience(ep):
 class LongTermEpisodic:
     """Sleep-time promotion of lived episodes into graph memory-nodes."""
 
+    _KIND_WORDS = {"q2s": "statement", "ynq": "question", "neg": "negative",
+                   "cont": "continuous", "fut": "future", "imp": "command",
+                   "excl": "exclamation", "plural": "plural"}
+
+    @classmethod
+    def _sane(cls, text):
+        """Memory content is spoken content — internal kind ids become words."""
+        s = str(text)
+        for k, w in cls._KIND_WORDS.items():
+            s = re.sub(r"\b%s:\s*" % k, "%s: " % w, s)
+            s = re.sub(r"^%s\b" % k, w, s)
+        return s
+
     def __init__(self, graph):
         self.g = graph
 
@@ -184,7 +197,7 @@ class LongTermEpisodic:
                 continue
             valence = 0.6 if outcome == "win" else (-0.6 if outcome == "loss" else 0.2)
             node = self.g.ensure(mid, kind="memory", attrs={
-                "what": str(what)[:120], "outcome": outcome,
+                "what": self._sane(str(what))[:120], "outcome": outcome,
                 "when_cycle": cycle, "salience": round(_salience(ep), 3),
                 "count": 1, "felt": felt, "valence": valence,
                 "words": " ".join(topic),

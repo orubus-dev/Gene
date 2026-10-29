@@ -141,7 +141,8 @@ r = mind.handle_text("how is your brain") or ""
 check("E-brain", "brain status", any(w in r.lower() for w in ("brain", "tick", "region"))
       and bool(re.search(r"\d", r)), r[:90])
 r = mind.handle_text("what are you feeling right now") or ""
-check("E-brain", "feeling", any(w in r.lower() for w in ("feel", "like", "chemistry", "steady", "running"))
+check("E-brain", "feeling", any(w in r.lower() for w in ("feel", "like", "calm", "baseline",
+                                                         "chemistry", "steady", "running"))
       and bool(re.search(r"\d", r)), r[:90])
 r = mind.handle_text("what are your dopamine levels") or ""
 check("E-brain", "dopamine level", "dopamine" in r.lower() and bool(re.search(r"\d", r)), r[:90])
