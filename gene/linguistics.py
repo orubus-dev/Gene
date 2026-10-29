@@ -390,6 +390,15 @@ def parse(text):
     if m:
         return {"intent": "query", "subject": _strip_article(m.group(1)).replace(" ", "_")}
 
+    m = re.match(r"^what\s+(?:is|are)\s+(?:the\s+)?(?:function|role|purpose|job)\s+"
+                 r"of\s+(.+?)[?.!]*$", low)
+    if m:
+        return {"intent": "query", "subject": _strip_article(m.group(1)).replace(" ", "_")}
+
+    m = re.match(r"^what\s+(?:is|are)\s+(.+?)(?:'s)?\s+(?:function|role|purpose)\??$", low)
+    if m:
+        return {"intent": "query", "subject": _strip_article(m.group(1)).replace(" ", "_")}
+
     m = re.match(r"^(?:what is|what are|whats|what'?s|who is|who'?s)\s+(.+)$", low)
     if m:
         return {"intent": "query", "subject": _strip_article(m.group(1)).replace(" ", "_")}
@@ -398,6 +407,23 @@ def parse(text):
     if m:
         return {"intent": "query_attr", "subject": m.group(1).replace(" ", "_"),
                 "attr": m.group(2).strip()}
+
+    # natural science questions — these are QUESTIONS; they must never fall
+    # through to the "X is Y" fact pattern below (that would teach garbage)
+    m = re.match(r"^where\s+(?:is|are|was|were)\s+(.+)$", low)
+    if m and not any(w in m.group(1).split() for w in
+                     ("you", "i", "we", "it", "that", "this")):
+        return {"intent": "query", "subject": _strip_article(m.group(1)).replace(" ", "_")}
+
+    m = re.match(r"^(?:what|which)\s+(?:continent|country|ocean|state|city)\s+"
+                 r"(?:is|are|was)\s+(.+?)(?:\s+(?:in|on|located in|part of))?[?.!]*$", low)
+    if m:
+        return {"intent": "query", "subject": _strip_article(m.group(1)).replace(" ", "_")}
+
+    m = re.match(r"^what\s+(?:does|do|did)\s+(.+?)\s+(?:do|does|mean|make)\??$", low)
+    if m and not any(w in m.group(1).split() for w in
+                     ("you", "i", "we", "it", "that", "this", "he", "she", "they")):
+        return {"intent": "query", "subject": _strip_article(m.group(1)).replace(" ", "_")}
 
     m = re.match(r"^(?:remember that\s+)?(.+?)\s+has\s+(.+)$", low)
     if m and " is " not in low:

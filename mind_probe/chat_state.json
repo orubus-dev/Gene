@@ -1,0 +1,32 @@
+{
+ "turns": 4,
+ "user_name": "Orubus",
+ "last_intent": "user_name",
+ "last_subject": "orubus",
+ "last_answer": "A gold is a metal (a shiny element that conducts electricity). It's element number 79. At room temperature it's solid.",
+ "mode": "talk",
+ "recent_in": {
+  "brain": [
+   85266,
+   70242
+  ],
+  "memory": [
+   11407
+  ],
+  "user_name": [
+   68894
+  ]
+ },
+ "recent_out": {
+  "brain": [
+   4139,
+   94809
+  ],
+  "memory": [
+   12145
+  ],
+  "user_name": [
+   4408
+  ]
+ }
+}

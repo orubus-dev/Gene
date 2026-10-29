@@ -1,0 +1,648 @@
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "quantity", "coactive": ["quantity", "entity"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "equation", "coactive": ["equation", "idea"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "unit", "coactive": ["unit", "entity"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "speed", "coactive": ["speed", "quantity"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "velocity", "coactive": ["velocity", "quantity"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "distance", "coactive": ["distance", "quantity"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "time", "coactive": ["time", "quantity"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "acceleration", "coactive": ["acceleration", "quantity"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "mass", "coactive": ["mass", "quantity"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "weight", "coactive": ["weight", "quantity"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "force", "coactive": ["force", "quantity"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "momentum", "coactive": ["momentum", "quantity"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "energy", "coactive": ["energy", "quantity"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "work", "coactive": ["work", "quantity"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "power", "coactive": ["power", "quantity"]}}
+{"t": 1793277259.571, "kind": "observe", "data": {"subject": "pressure", "coactive": ["pressure", "quantity"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "area", "coactive": ["area", "quantity"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "volume", "coactive": ["volume", "quantity"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "density", "coactive": ["density", "quantity"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "current", "coactive": ["current", "quantity"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "voltage", "coactive": ["voltage", "quantity"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "resistance", "coactive": ["resistance", "quantity"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "charge", "coactive": ["charge", "quantity"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "temperature", "coactive": ["temperature", "quantity"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "frequency", "coactive": ["frequency", "quantity"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "wavelength", "coactive": ["wavelength", "quantity"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "height", "coactive": ["height", "quantity"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "heat", "coactive": ["heat", "quantity"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "metre", "coactive": ["metre", "unit"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "second", "coactive": ["second", "unit"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "kilogram", "coactive": ["kilogram", "unit"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "newton", "coactive": ["newton", "unit"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "joule", "coactive": ["joule", "unit"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "watt", "coactive": ["watt", "unit"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "pascal", "coactive": ["pascal", "unit"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "ampere", "coactive": ["ampere", "unit"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "volt", "coactive": ["volt", "unit"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "ohm", "coactive": ["ohm", "unit"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "hertz", "coactive": ["hertz", "unit"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "kelvin", "coactive": ["kelvin", "unit"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_sum", "coactive": ["eq_sum", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_diff", "coactive": ["eq_diff", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_prod", "coactive": ["eq_prod", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_quot", "coactive": ["eq_quot", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_square", "coactive": ["eq_square", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_speed", "coactive": ["eq_speed", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_kin1", "coactive": ["eq_kin1", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_kin2", "coactive": ["eq_kin2", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_accel", "coactive": ["eq_accel", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_newton", "coactive": ["eq_newton", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_weight", "coactive": ["eq_weight", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_momentum", "coactive": ["eq_momentum", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_density", "coactive": ["eq_density", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_pressure", "coactive": ["eq_pressure", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_work", "coactive": ["eq_work", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_power", "coactive": ["eq_power", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_ke", "coactive": ["eq_ke", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_pe", "coactive": ["eq_pe", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_ohm", "coactive": ["eq_ohm", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_epower", "coactive": ["eq_epower", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_charge", "coactive": ["eq_charge", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_wave", "coactive": ["eq_wave", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_period", "coactive": ["eq_period", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_pythag", "coactive": ["eq_pythag", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_area_rect", "coactive": ["eq_area_rect", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_area_tri", "coactive": ["eq_area_tri", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_area_circ", "coactive": ["eq_area_circ", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_circum", "coactive": ["eq_circum", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_vol_box", "coactive": ["eq_vol_box", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_avg", "coactive": ["eq_avg", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_f2c", "coactive": ["eq_f2c", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_einstein", "coactive": ["eq_einstein", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_gas", "coactive": ["eq_gas", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_grav", "coactive": ["eq_grav", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_hooke", "coactive": ["eq_hooke", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_photon", "coactive": ["eq_photon", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "eq_fall", "coactive": ["eq_fall", "equation"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "commutative_law", "coactive": ["commutative_law"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "associative_law", "coactive": ["associative_law"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "distributive_law", "coactive": ["distributive_law"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "identity_law", "coactive": ["identity_law"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "zero_law", "coactive": ["zero_law"]}}
+{"t": 1793277259.572, "kind": "observe", "data": {"subject": "inverse_law", "coactive": ["inverse_law"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "pythagoras", "coactive": ["pythagoras"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "order_of_operations", "coactive": ["order_of_operations"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "body_structure", "coactive": ["body_structure", "entity"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "cell_part", "coactive": ["cell_part", "body_structure"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "tissue_cat", "coactive": ["tissue_cat", "body_structure"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "organ", "coactive": ["organ", "body_structure"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "life_system", "coactive": ["life_system", "body_structure"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "life_process", "coactive": ["life_process", "idea"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "genetics_cat", "coactive": ["genetics_cat", "idea"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "cell", "coactive": ["cell", "body_structure"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "nucleus", "coactive": ["nucleus", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "mitochondria", "coactive": ["mitochondria", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "ribosome", "coactive": ["ribosome", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "chloroplast", "coactive": ["chloroplast", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "cell_membrane", "coactive": ["cell_membrane", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "cytoplasm", "coactive": ["cytoplasm", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "vacuole", "coactive": ["vacuole", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "cell_wall", "coactive": ["cell_wall", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "dna", "coactive": ["dna", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "rna", "coactive": ["rna", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "gene", "coactive": ["gene", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "chromosome", "coactive": ["chromosome", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "protein", "coactive": ["protein", "body_structure"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "enzyme", "coactive": ["enzyme", "body_structure"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "red_blood_cell", "coactive": ["red_blood_cell", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "white_blood_cell", "coactive": ["white_blood_cell", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "neuron", "coactive": ["neuron", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "platelet", "coactive": ["platelet", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "stem_cell", "coactive": ["stem_cell", "cell_part"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "heart", "coactive": ["heart", "organ"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "lungs", "coactive": ["lungs", "organ"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "brain", "coactive": ["brain", "organ"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "stomach", "coactive": ["stomach", "organ"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "liver", "coactive": ["liver", "organ"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "kidney", "coactive": ["kidney", "organ"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "skin", "coactive": ["skin", "organ"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "eye", "coactive": ["eye", "organ"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "ear", "coactive": ["ear", "organ"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "tongue", "coactive": ["tongue", "organ"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "bones", "coactive": ["bones", "organ"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "muscle", "coactive": ["muscle", "tissue_cat"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "blood", "coactive": ["blood", "tissue_cat"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "nerve", "coactive": ["nerve", "tissue_cat"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "circulatory_system", "coactive": ["circulatory_system", "life_system"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "respiratory_system", "coactive": ["respiratory_system", "life_system"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "digestive_system", "coactive": ["digestive_system", "life_system"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "nervous_system", "coactive": ["nervous_system", "life_system"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "skeletal_system", "coactive": ["skeletal_system", "life_system"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "muscular_system", "coactive": ["muscular_system", "life_system"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "immune_system", "coactive": ["immune_system", "life_system"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "endocrine_system", "coactive": ["endocrine_system", "life_system"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "photosynthesis", "coactive": ["photosynthesis", "life_process"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "respiration", "coactive": ["respiration", "life_process"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "digestion", "coactive": ["digestion", "life_process"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "growth", "coactive": ["growth", "life_process"]}}
+{"t": 1793277259.573, "kind": "observe", "data": {"subject": "reproduction", "coactive": ["reproduction", "life_process"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "evolution", "coactive": ["evolution", "life_process"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "natural_selection", "coactive": ["natural_selection", "life_process"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "adaptation", "coactive": ["adaptation", "life_process"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "metabolism", "coactive": ["metabolism", "life_process"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "homeostasis", "coactive": ["homeostasis", "life_process"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "germination", "coactive": ["germination", "life_process"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "pollination", "coactive": ["pollination", "life_process"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "heredity", "coactive": ["heredity", "genetics_cat"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "trait", "coactive": ["trait", "genetics_cat"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "dominant", "coactive": ["dominant", "genetics_cat"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "recessive", "coactive": ["recessive", "genetics_cat"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "mutation", "coactive": ["mutation", "genetics_cat"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "genome", "coactive": ["genome", "genetics_cat"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "clone", "coactive": ["clone", "genetics_cat"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "punnett_square", "coactive": ["punnett_square", "genetics_cat"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "substance", "coactive": ["substance", "entity"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "element", "coactive": ["element", "substance"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "metal", "coactive": ["metal", "element"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "nonmetal", "coactive": ["nonmetal", "element"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "compound", "coactive": ["compound", "substance"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "mixture_cat", "coactive": ["mixture_cat", "substance"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "state_cat", "coactive": ["state_cat", "idea"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "atom_part", "coactive": ["atom_part", "entity"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "reaction_cat", "coactive": ["reaction_cat", "idea"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "hydrogen", "coactive": ["hydrogen", "nonmetal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "helium", "coactive": ["helium", "nonmetal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "lithium", "coactive": ["lithium", "metal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "carbon", "coactive": ["carbon", "nonmetal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "nitrogen", "coactive": ["nitrogen", "nonmetal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "oxygen", "coactive": ["oxygen", "nonmetal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "fluorine", "coactive": ["fluorine", "nonmetal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "neon", "coactive": ["neon", "nonmetal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "sodium", "coactive": ["sodium", "metal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "magnesium", "coactive": ["magnesium", "metal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "aluminium", "coactive": ["aluminium", "metal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "silicon", "coactive": ["silicon", "nonmetal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "phosphorus", "coactive": ["phosphorus", "nonmetal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "sulfur", "coactive": ["sulfur", "nonmetal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "chlorine", "coactive": ["chlorine", "nonmetal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "argon", "coactive": ["argon", "nonmetal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "potassium", "coactive": ["potassium", "metal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "calcium", "coactive": ["calcium", "metal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "titanium", "coactive": ["titanium", "metal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "chromium", "coactive": ["chromium", "metal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "iron", "coactive": ["iron", "metal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "nickel", "coactive": ["nickel", "metal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "copper", "coactive": ["copper", "metal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "zinc", "coactive": ["zinc", "metal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "silver", "coactive": ["silver", "metal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "tin", "coactive": ["tin", "metal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "iodine", "coactive": ["iodine", "nonmetal"]}}
+{"t": 1793277259.574, "kind": "observe", "data": {"subject": "gold", "coactive": ["gold", "metal"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "mercury", "coactive": ["mercury", "metal"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "lead", "coactive": ["lead", "metal"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "uranium", "coactive": ["uranium", "nonmetal"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "tungsten", "coactive": ["tungsten", "metal"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "water", "coactive": ["water", "compound"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "carbon_dioxide", "coactive": ["carbon_dioxide", "compound"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "methane", "coactive": ["methane", "compound"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "ammonia", "coactive": ["ammonia", "compound"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "salt", "coactive": ["salt", "compound"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "glucose", "coactive": ["glucose", "compound"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "ethanol", "coactive": ["ethanol", "compound"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "rust", "coactive": ["rust", "compound"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "baking_soda", "coactive": ["baking_soda", "compound"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "vinegar", "coactive": ["vinegar", "compound"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "hydrogen_peroxide", "coactive": ["hydrogen_peroxide", "compound"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "carbon_monoxide", "coactive": ["carbon_monoxide", "compound"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "sulfuric_acid", "coactive": ["sulfuric_acid", "compound"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "ozone", "coactive": ["ozone", "compound"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "bronze", "coactive": ["bronze", "mixture_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "steel", "coactive": ["steel", "mixture_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "air", "coactive": ["air", "mixture_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "saline", "coactive": ["saline", "mixture_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "solid", "coactive": ["solid", "state_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "liquid", "coactive": ["liquid", "state_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "gas", "coactive": ["gas", "state_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "plasma", "coactive": ["plasma", "state_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "melting", "coactive": ["melting", "state_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "freezing", "coactive": ["freezing", "state_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "evaporation", "coactive": ["evaporation", "state_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "condensation", "coactive": ["condensation", "state_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "proton", "coactive": ["proton", "atom_part"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "neutron", "coactive": ["neutron", "atom_part"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "electron", "coactive": ["electron", "atom_part"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "atomic_nucleus", "coactive": ["atomic_nucleus", "atom_part"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "water_formation", "coactive": ["water_formation", "reaction_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "rusting", "coactive": ["rusting", "reaction_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "burning_carbon", "coactive": ["burning_carbon", "reaction_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "salt_formation", "coactive": ["salt_formation", "reaction_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "methane_burning", "coactive": ["methane_burning", "reaction_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "ammonia_making", "coactive": ["ammonia_making", "reaction_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "combustion", "coactive": ["combustion", "reaction_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "oxidation", "coactive": ["oxidation", "reaction_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "neutralisation", "coactive": ["neutralisation", "reaction_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "electrolysis", "coactive": ["electrolysis", "reaction_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "photosynthesis_reaction", "coactive": ["photosynthesis_reaction", "reaction_cat"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "physics_thing", "coactive": ["physics_thing", "entity"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "force_type", "coactive": ["force_type", "physics_thing"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "energy_type", "coactive": ["energy_type", "physics_thing"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "wave_type", "coactive": ["wave_type", "physics_thing"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "electric_thing", "coactive": ["electric_thing", "physics_thing"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "gravity", "coactive": ["gravity", "force_type"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "friction", "coactive": ["friction", "force_type"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "magnetism", "coactive": ["magnetism", "force_type"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "tension", "coactive": ["tension", "force_type"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "buoyancy", "coactive": ["buoyancy", "force_type"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "inertia", "coactive": ["inertia", "physics_thing"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "momentum_conservation", "coactive": ["momentum_conservation", "physics_thing"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "speed_of_light", "coactive": ["speed_of_light", "physics_thing"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "black_hole", "coactive": ["black_hole", "physics_thing"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "big_bang", "coactive": ["big_bang", "physics_thing"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "kinetic_energy", "coactive": ["kinetic_energy", "energy_type"]}}
+{"t": 1793277259.575, "kind": "observe", "data": {"subject": "potential_energy", "coactive": ["potential_energy", "energy_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "thermal_energy", "coactive": ["thermal_energy", "energy_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "chemical_energy", "coactive": ["chemical_energy", "energy_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "nuclear_energy", "coactive": ["nuclear_energy", "energy_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "solar_energy", "coactive": ["solar_energy", "energy_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "sound_energy", "coactive": ["sound_energy", "energy_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "light_energy", "coactive": ["light_energy", "energy_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "conduction", "coactive": ["conduction", "physics_thing"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "convection", "coactive": ["convection", "physics_thing"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "radiation", "coactive": ["radiation", "physics_thing"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "light", "coactive": ["light", "wave_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "sound", "coactive": ["sound", "wave_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "echo", "coactive": ["echo", "wave_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "reflection", "coactive": ["reflection", "wave_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "refraction", "coactive": ["refraction", "wave_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "diffraction", "coactive": ["diffraction", "wave_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "resonance", "coactive": ["resonance", "wave_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "doppler_effect", "coactive": ["doppler_effect", "wave_type"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "electric_current", "coactive": ["electric_current", "electric_thing"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "circuit", "coactive": ["circuit", "electric_thing"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "battery", "coactive": ["battery", "electric_thing"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "magnet", "coactive": ["magnet", "electric_thing"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "electromagnet", "coactive": ["electromagnet", "electric_thing"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "static_electricity", "coactive": ["static_electricity", "electric_thing"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "lightning", "coactive": ["lightning", "electric_thing"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "conductor", "coactive": ["conductor", "electric_thing"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "insulator", "coactive": ["insulator", "electric_thing"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "semiconductor", "coactive": ["semiconductor", "electric_thing"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "transformer", "coactive": ["transformer", "electric_thing"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "place_cat", "coactive": ["place_cat", "entity"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "continent_cat", "coactive": ["continent_cat", "place_cat"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "ocean_cat", "coactive": ["ocean_cat", "place_cat"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "country", "coactive": ["country", "place_cat"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "river", "coactive": ["river", "place_cat"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "mountain_cat", "coactive": ["mountain_cat", "place_cat"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "desert_cat", "coactive": ["desert_cat", "place_cat"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "biome", "coactive": ["biome", "place_cat"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "africa", "coactive": ["africa", "continent"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "antarctica", "coactive": ["antarctica", "continent"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "asia", "coactive": ["asia", "continent"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "australia", "coactive": ["australia", "continent"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "europe", "coactive": ["europe", "continent"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "north_america", "coactive": ["north_america", "continent"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "south_america", "coactive": ["south_america", "continent"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "pacific_ocean", "coactive": ["pacific_ocean", "ocean"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "atlantic_ocean", "coactive": ["atlantic_ocean", "ocean"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "indian_ocean", "coactive": ["indian_ocean", "ocean"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "arctic_ocean", "coactive": ["arctic_ocean", "ocean"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "southern_ocean", "coactive": ["southern_ocean", "ocean"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "canada", "coactive": ["canada", "country"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "brazil", "coactive": ["brazil", "country"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "egypt", "coactive": ["egypt", "country"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "nigeria", "coactive": ["nigeria", "country"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "kenya", "coactive": ["kenya", "country"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "japan", "coactive": ["japan", "country"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "china", "coactive": ["china", "country"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "india", "coactive": ["india", "country"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "russia", "coactive": ["russia", "country"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "germany", "coactive": ["germany", "country"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "france", "coactive": ["france", "country"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "italy", "coactive": ["italy", "country"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "spain", "coactive": ["spain", "country"]}}
+{"t": 1793277259.576, "kind": "observe", "data": {"subject": "united kingdom", "coactive": ["united kingdom", "country"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "united states", "coactive": ["united states", "country"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "mexico", "coactive": ["mexico", "country"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "argentina", "coactive": ["argentina", "country"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "australia_country", "coactive": ["australia_country", "country"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "south africa", "coactive": ["south africa", "country"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "ethiopia", "coactive": ["ethiopia", "country"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "nile", "coactive": ["nile", "river"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "amazon_river", "coactive": ["amazon_river", "river"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "yangtze", "coactive": ["yangtze", "river"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "mississippi", "coactive": ["mississippi", "river"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "danube", "coactive": ["danube", "river"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "congo_river", "coactive": ["congo_river", "river"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "volga", "coactive": ["volga", "river"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "thames", "coactive": ["thames", "river"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "mount_everest", "coactive": ["mount_everest", "mountain"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "k2", "coactive": ["k2", "mountain"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "kilimanjaro", "coactive": ["kilimanjaro", "mountain"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "mount_fuji", "coactive": ["mount_fuji", "mountain"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "mont_blanc", "coactive": ["mont_blanc", "mountain"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "denali", "coactive": ["denali", "mountain"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "sahara", "coactive": ["sahara", "desert"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "gobi", "coactive": ["gobi", "desert"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "kalahari", "coactive": ["kalahari", "desert"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "atacama", "coactive": ["atacama", "desert"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "antarctic_desert", "coactive": ["antarctic_desert", "desert"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "rainforest_biome", "coactive": ["rainforest_biome", "biome"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "savanna_biome", "coactive": ["savanna_biome", "biome"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "tundra_biome", "coactive": ["tundra_biome", "biome"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "coral_reef_biome", "coactive": ["coral_reef_biome", "biome"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "taiga_biome", "coactive": ["taiga_biome", "biome"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "brain_region", "coactive": ["brain_region", "entity"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "neurotransmitter", "coactive": ["neurotransmitter", "quantity"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "emotion_cat", "coactive": ["emotion_cat", "idea"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "brain_scan", "coactive": ["brain_scan", "entity"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "prefrontal_cortex", "coactive": ["prefrontal_cortex", "brain_region"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "cortex", "coactive": ["cortex", "brain_region"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "motor_cortex", "coactive": ["motor_cortex", "brain_region"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "broca's_area", "coactive": ["broca's_area", "brain_region"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "wernicke's_area", "coactive": ["wernicke's_area", "brain_region"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "visual_cortex", "coactive": ["visual_cortex", "brain_region"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "auditory_cortex", "coactive": ["auditory_cortex", "brain_region"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "hippocampus", "coactive": ["hippocampus", "brain_region"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "amygdala", "coactive": ["amygdala", "brain_region"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "hypothalamus", "coactive": ["hypothalamus", "brain_region"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "thalamus", "coactive": ["thalamus", "brain_region"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "basal_ganglia", "coactive": ["basal_ganglia", "brain_region"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "cerebellum", "coactive": ["cerebellum", "brain_region"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "brainstem", "coactive": ["brainstem", "brain_region"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "dopamine", "coactive": ["dopamine", "neurotransmitter"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "serotonin", "coactive": ["serotonin", "neurotransmitter"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "norepinephrine", "coactive": ["norepinephrine", "neurotransmitter"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "cortisol", "coactive": ["cortisol", "neurotransmitter"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "oxytocin", "coactive": ["oxytocin", "neurotransmitter"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "acetylcholine", "coactive": ["acetylcholine", "neurotransmitter"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "gaba", "coactive": ["gaba", "neurotransmitter"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "endorphin", "coactive": ["endorphin", "neurotransmitter"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "glutamate", "coactive": ["glutamate", "neurotransmitter"]}}
+{"t": 1793277259.577, "kind": "observe", "data": {"subject": "joy", "coactive": ["joy", "emotion_cat"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "calm", "coactive": ["calm", "emotion_cat"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "fear", "coactive": ["fear", "emotion_cat"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "anger", "coactive": ["anger", "emotion_cat"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "sadness", "coactive": ["sadness", "emotion_cat"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "surprise", "coactive": ["surprise", "emotion_cat"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "excitement", "coactive": ["excitement", "emotion_cat"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "affection", "coactive": ["affection", "emotion_cat"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "curiosity", "coactive": ["curiosity", "emotion_cat"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "frustration", "coactive": ["frustration", "emotion_cat"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "human_brain_scan", "coactive": ["human_brain_scan", "brain_scan"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "mouse_brain_scan", "coactive": ["mouse_brain_scan", "brain_scan"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "octopus_brain_scan", "coactive": ["octopus_brain_scan", "brain_scan"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "crow_brain_scan", "coactive": ["crow_brain_scan", "brain_scan"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "dolphin_brain_scan", "coactive": ["dolphin_brain_scan", "brain_scan"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "human_brain", "coactive": ["human_brain"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "synapse", "coactive": ["synapse"]}}
+{"t": 1793277259.578, "kind": "observe", "data": {"subject": "neuroplasticity", "coactive": ["neuroplasticity"]}}
+{"t": 1793277259.587, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_einstein", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.588, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 + 10", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.588, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 - 14", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.588, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 x 3", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.588, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_photon", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.589, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_momentum", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.589, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_weight", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.589, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 10, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.589, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.589, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 10, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.59, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_quot", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.59, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.59, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_pe", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.59, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 + 11", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.593, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 10, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.593, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_grav", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.594, "kind": "task", "data": {"domain": "number", "prompt": "compute 11 + 8", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.594, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 + 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.594, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.595, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.595, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.595, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.595, "kind": "task", "data": {"domain": "number", "prompt": "compute 9 - 17", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.595, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.596, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.596, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 - 15", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.596, "kind": "task", "data": {"domain": "number", "prompt": "compute 10 + 17", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.597, "kind": "task", "data": {"domain": "number", "prompt": "compute 10 - 11", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.597, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 6, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.597, "kind": "task", "data": {"domain": "number", "prompt": "compute 2 + 4", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.597, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_vol_box", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.598, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 6, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.598, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_prod", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.598, "kind": "task", "data": {"domain": "number", "prompt": "compute 13 - 2", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.599, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.599, "kind": "task", "data": {"domain": "number", "prompt": "compute 9 x 6", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.599, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_area_circ", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.6, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.6, "kind": "task", "data": {"domain": "number", "prompt": "compute 15 + 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.6, "kind": "task", "data": {"domain": "number", "prompt": "compute 9 x 7", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.6, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 x 3", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.601, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.601, "kind": "task", "data": {"domain": "number", "prompt": "compute 10 - 3", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.601, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.602, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.602, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.602, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.603, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 + 3", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.604, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 - 2", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.604, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_grav", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.604, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 x 7", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.604, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_kin2", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.605, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.605, "kind": "task", "data": {"domain": "number", "prompt": "compute 0 x 6", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.605, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.605, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.606, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.606, "kind": "task", "data": {"domain": "number", "prompt": "compute 0 x 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.606, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_weight", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.606, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 x 1", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.606, "kind": "task", "data": {"domain": "number", "prompt": "compute 0 x 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.607, "kind": "task", "data": {"domain": "number", "prompt": "compute 15 - 5", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.607, "kind": "task", "data": {"domain": "number", "prompt": "compute 12 - 17", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.607, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 - 6", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.607, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_vol_box", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.607, "kind": "task", "data": {"domain": "number", "prompt": "compute 15 + 15", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.608, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_quot", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.608, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 - 6", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.609, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 + 15", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.609, "kind": "task", "data": {"domain": "number", "prompt": "compute 3 - 11", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.609, "kind": "task", "data": {"domain": "number", "prompt": "compute 17 - 3", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.609, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.61, "kind": "task", "data": {"domain": "number", "prompt": "compute 11 - 8", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.61, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.61, "kind": "task", "data": {"domain": "number", "prompt": "compute 10 - 3", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.611, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.611, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_kin1", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.615, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 + 9", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.616, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 + 4", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.62, "kind": "task", "data": {"domain": "number", "prompt": "compute 11 + 9", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.62, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_pressure", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.62, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 x 5", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.621, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_avg", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.621, "kind": "task", "data": {"domain": "number", "prompt": "compute 2 + 15", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.621, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.621, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.622, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.622, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 x 3", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.622, "kind": "task", "data": {"domain": "number", "prompt": "compute 15 - 3", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.622, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.623, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 - 2", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.623, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_einstein", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.623, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.623, "kind": "task", "data": {"domain": "number", "prompt": "compute 2 + 9", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.623, "kind": "task", "data": {"domain": "number", "prompt": "compute 15 - 15", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.624, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.624, "kind": "task", "data": {"domain": "number", "prompt": "compute 16 - 9", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.624, "kind": "task", "data": {"domain": "number", "prompt": "compute 2 x 6", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.624, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.625, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.625, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.626, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 x 5", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.626, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.626, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_einstein", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.627, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 + 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.627, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.627, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_vol_box", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.628, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.628, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.628, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.629, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.629, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.629, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 x 7", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.629, "kind": "task", "data": {"domain": "number", "prompt": "compute 9 + 7", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.629, "kind": "task", "data": {"domain": "number", "prompt": "compute 17 + 12", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.63, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_sum", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.63, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.63, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_photon", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.631, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.631, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 - 1", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.631, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_vol_box", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.631, "kind": "task", "data": {"domain": "number", "prompt": "compute 3 x 5", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.632, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.633, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 - 14", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.633, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 - 18", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.633, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 6, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.633, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 x 8", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.634, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 - 10", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.634, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.634, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.634, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_period", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.635, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.635, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.635, "kind": "task", "data": {"domain": "number", "prompt": "compute 0 x 4", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.635, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 + 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.636, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.636, "kind": "task", "data": {"domain": "number", "prompt": "compute 13 - 11", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.636, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 x 6", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.636, "kind": "task", "data": {"domain": "number", "prompt": "compute 9 x 4", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.636, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.637, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_accel", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.637, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 x 2", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.637, "kind": "task", "data": {"domain": "number", "prompt": "compute 18 - 14", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.638, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 - 15", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.639, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_period", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.639, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_work", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.639, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.64, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_area_rect", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.64, "kind": "task", "data": {"domain": "number", "prompt": "compute 5 - 13", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.64, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 6, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.64, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.641, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_period", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.641, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_pe", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.641, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.642, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 x 9", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.642, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.642, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_grav", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.642, "kind": "task", "data": {"domain": "number", "prompt": "compute 0 - 8", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.642, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 + 9", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.643, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.643, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 + 10", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.643, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_photon", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.643, "kind": "task", "data": {"domain": "number", "prompt": "compute 9 + 8", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.644, "kind": "task", "data": {"domain": "number", "prompt": "compute 11 - 10", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.644, "kind": "task", "data": {"domain": "number", "prompt": "compute 15 - 12", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.644, "kind": "task", "data": {"domain": "number", "prompt": "compute 16 - 17", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.645, "kind": "task", "data": {"domain": "number", "prompt": "compute 3 x 2", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.645, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.645, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.645, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 + 18", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.646, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.646, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 x 4", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.646, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_momentum", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.646, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 + 3", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.646, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.647, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_prod", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.647, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.648, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.648, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 - 8", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.648, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 6, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.648, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.649, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.649, "kind": "task", "data": {"domain": "number", "prompt": "compute 0 x 8", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.649, "kind": "task", "data": {"domain": "number", "prompt": "compute 11 + 13", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.649, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.65, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_sum", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.65, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.651, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.651, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.651, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_density", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.652, "kind": "task", "data": {"domain": "number", "prompt": "compute 3 x 2", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.653, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_accel", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.653, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 + 18", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.653, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.653, "kind": "task", "data": {"domain": "number", "prompt": "compute 9 x 4", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.653, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.654, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 - 11", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.654, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_area_circ", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.654, "kind": "task", "data": {"domain": "number", "prompt": "compute 6 + 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.655, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_work", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.655, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_area_circ", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.656, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.656, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.656, "kind": "task", "data": {"domain": "number", "prompt": "compute 9 x 1", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.656, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.657, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.657, "kind": "task", "data": {"domain": "number", "prompt": "compute 4 + 6", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.657, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_pressure", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.657, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_area_circ", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.658, "kind": "task", "data": {"domain": "number", "prompt": "compute 3 x 7", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.658, "kind": "task", "data": {"domain": "number", "prompt": "compute 2 x 3", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.658, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.659, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_momentum", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.659, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 1, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.659, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_momentum", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.659, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_kin2", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.659, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.66, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 x 0", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.66, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 6, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.661, "kind": "task", "data": {"domain": "number", "prompt": "compute 16 + 15", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.661, "kind": "task", "data": {"domain": "number", "prompt": "compute 10 + 17", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.661, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_pythag", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.662, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.662, "kind": "task", "data": {"domain": "string", "prompt": "first_word", "solved": true, "tries": 5, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.662, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 x 6", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.662, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.662, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.663, "kind": "task", "data": {"domain": "number", "prompt": "compute 18 - 10", "solved": true, "tries": 3, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.663, "kind": "task", "data": {"domain": "string", "prompt": "wrap", "solved": true, "tries": 7, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.663, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_work", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.663, "kind": "task", "data": {"domain": "string", "prompt": "reverse", "solved": true, "tries": 9, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.663, "kind": "task", "data": {"domain": "number", "prompt": "compute 13 - 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.664, "kind": "task", "data": {"domain": "number", "prompt": "compute 7 x 0", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.664, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 6, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.664, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.664, "kind": "task", "data": {"domain": "number", "prompt": "compute 15 + 12", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.665, "kind": "task", "data": {"domain": "string", "prompt": "upper", "solved": true, "tries": 8, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.666, "kind": "task", "data": {"domain": "number", "prompt": "compute 8 x 9", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.666, "kind": "task", "data": {"domain": "string", "prompt": "shout", "solved": true, "tries": 6, "coactive": ["string", "skill", "success"]}}
+{"t": 1793277259.666, "kind": "task", "data": {"domain": "number", "prompt": "compute 3 x 1", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.666, "kind": "task", "data": {"domain": "number", "prompt": "compute 11 + 6", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.666, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 - 0", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.666, "kind": "task", "data": {"domain": "number", "prompt": "compute 3 + 17", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.667, "kind": "task", "data": {"domain": "maths", "prompt": "eval eq_area_tri", "solved": true, "tries": 1, "coactive": ["maths", "skill", "success"]}}
+{"t": 1793277259.667, "kind": "task", "data": {"domain": "number", "prompt": "compute 1 x 6", "solved": true, "tries": 4, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.667, "kind": "development", "data": {"stage": "skills", "coactive": ["self", "growth", "skills"]}}
+{"t": 1793277259.724, "kind": "utterance", "data": {"text": "what is a mitochondria", "intent": "query", "coactive": ["self", "query"]}}
+{"t": 1793277259.724, "kind": "utterance", "data": {"text": "react hydrogen and oxygen", "intent": "chem", "coactive": ["self", "chem"]}}
+{"t": 1793277259.725, "kind": "utterance", "data": {"text": "symbol of gold", "intent": "chem", "coactive": ["self", "chem"]}}
+{"t": 1793277259.727, "kind": "chat", "data": {"intent": "brain", "text": "how is your brain", "reply": "brain: 252 ticks lived, field merged from 5 scan(s), busiest regions cortex, hippocampus, thalamus — mood reads as joy.", "coactive": ["self", "brain", "conversation"]}}
+{"t": 1793277259.727, "kind": "chat", "data": {"intent": "brain", "text": "what are you feeling", "reply": "Right now? feels like joy right now — dopamine is running high (0.79).", "coactive": ["self", "brain", "conversation"]}}
+{"t": 1793277259.728, "kind": "chat", "data": {"intent": "memory", "text": "what happened last cycle", "reply": "Cycle 1 I lived through 245 tasks, 245 cracked. 245 problems cracked. the standout was first_word. it felt good. I kept ", "coactive": ["self", "memory", "conversation"]}}
+{"t": 1793277259.728, "kind": "utterance", "data": {"text": "what is photosynthesis", "intent": "query", "coactive": ["self", "query"]}}
+{"t": 1793277259.729, "kind": "utterance", "data": {"text": "what is mount everest", "intent": "query", "coactive": ["self", "query"]}}
+{"t": 1793277259.729, "kind": "utterance", "data": {"text": "42+8", "intent": "compute", "coactive": ["self", "compute"]}}
+{"t": 1793277259.729, "kind": "task", "data": {"domain": "number", "prompt": "42 add 8", "solved": true, "tries": 2, "coactive": ["number", "skill", "success"]}}
+{"t": 1793277259.73, "kind": "chat", "data": {"intent": "user_name", "text": "i am orubus", "reply": "Nice to meet you, Orubus!", "coactive": ["self", "user_name", "conversation"]}}
+{"t": 1793277259.73, "kind": "utterance", "data": {"text": "what is gold", "intent": "query", "coactive": ["self", "query"]}}
