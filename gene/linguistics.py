@@ -16,7 +16,10 @@ Recognized intents (grown over time, keep minimal and honest):
 import re
 
 NUMWORDS = {"zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5,
-            "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
+            "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10,
+            "eleven": 11, "twelve": 12, "thirteen": 13, "fourteen": 14,
+            "fifteen": 15, "sixteen": 16, "seventeen": 17, "eighteen": 18,
+            "nineteen": 19, "twenty": 20}
 
 
 def _num(tok):
@@ -46,6 +49,80 @@ def _strip_article(s):
     return re.sub(r"^(a|an|the)\s+", "", s.strip())
 
 
+# ---- arithmetic expressions: bare, prefixed, or number-worded ----------------
+_NUM = r"(?:-?\d+(?:\.\d+)?|%s)" % "|".join(NUMWORDS)
+_ARITH_RE = re.compile(r"^(%s)\s*([+\-*/xX\u00f7])\s*(%s)$" % (_NUM, _NUM))
+_ARITH_WORDS_RE = re.compile(
+    r"^(%s)\s+(plus|minus|times|multiplied by|divided by|over)\s+(%s)$"
+    % (_NUM, _NUM))
+_PREFIX_WORDS = r"^(?:what(?:'s| is)|whats|compute|calculate|whats)\s+(.+)$"
+
+
+def _val(tok):
+    v = _num(tok)
+    return v
+
+
+def _arith(text):
+    """Match an arithmetic expression (bare, word-op, or prefixed). Returns
+    a compute intent dict or None. Handles 125+6, 3*8, 5/4, 1-3, five plus
+    seven, what is 97+38, divide 5 by 4."""
+    t = text.strip().rstrip("?!. ")
+    m = re.match(_PREFIX_WORDS, t)
+    if m:
+        t = m.group(1).strip()
+    m = re.match(r"^(?:divide|dividing)\s+(%s)\s+by\s+(%s)$" % (_NUM, _NUM), t)
+    if m:
+        return {"intent": "compute", "op": "div", "args": [_val(m.group(1)), _val(m.group(2))]}
+    m = re.match(r"^(%s)\s+divided by\s+(%s)$" % (_NUM, _NUM), t)
+    if m:
+        return {"intent": "compute", "op": "div", "args": [_val(m.group(1)), _val(m.group(2))]}
+    m = _ARITH_RE.match(t)
+    if m:
+        a, opb = _val(m.group(1)), _val(m.group(3))
+        sym = m.group(2).lower()
+        op = {"+": "add", "-": "sub", "*": "mul", "x": "mul",
+              "\u00f7": "div", "/": "div"}[sym]
+        return {"intent": "compute", "op": op, "args": [a, opb]}
+    m = _ARITH_WORDS_RE.match(t)
+    if m:
+        a, opb = _val(m.group(1)), _val(m.group(3))
+        op = {"plus": "add", "minus": "sub", "times": "mul",
+              "multiplied by": "mul", "divided by": "div", "over": "div"}[m.group(2)]
+        return {"intent": "compute", "op": op, "args": [a, opb]}
+    return None
+
+
+# ---- grammar transforms: learned forms of taught words -----------------------
+_GRAMMAR_FORMS = {
+    "past": r"(?:past(?:\s+tense)?|simple past)",
+    "plural": r"(?:plural|pluralized?)",
+    "ing": r"(?:ing|ing form|continuous)",
+    "third": r"(?:third person|third-person)",
+}
+
+
+def _grammar(text):
+    """Match a grammar-transform ask: 'past tense of walk', 'plural of cat',
+    'what is the past tense of go', 'turn walk into past'. Returns intent
+    dict or None."""
+    t = text.strip().rstrip("?!. ")
+    t = re.sub(r"^(?:what(?:'s| is)|whats|tell me)\s+(?:the\s+)?", "", t, flags=re.I)
+    for form, pat in _GRAMMAR_FORMS.items():
+        m = re.match(r"^(?:turn|make|put)?\s*(?:the\s+)?(%s)\s+(?:of|for)\s+([a-z][a-z-]*)$"
+                     % pat, t, re.I)
+        if m:
+            return {"intent": "grammar", "form": form, "word": m.group(2).lower()}
+        m = re.match(r"^([a-z][a-z-]*)\s+(?:in|to|into)\s+(?:the\s+)?(%s)$" % pat, t, re.I)
+        if m:
+            return {"intent": "grammar", "form": form, "word": m.group(1).lower()}
+        m = re.match(r"^(?:turn|make)\s+([a-z][a-z-]*)\s+(?:in ?to|to)\s+(?:the\s+)?(?:%s)(?:\s+tense)?$"
+                     % pat, t, re.I)
+        if m:
+            return {"intent": "grammar", "form": form, "word": m.group(1).lower()}
+    return None
+
+
 def parse(text):
     """Parse to an intent dict. Returns {"intent": ..., ...} — the caller
     (mind.py) decides how to act. This is parsing to *meaning*, not tokens."""
@@ -56,6 +133,15 @@ def parse(text):
         return {"intent": "status"}
     if low.startswith("what do you know"):
         return {"intent": "self_report"}
+
+    # arithmetic and grammar before everything — expression-shaped input
+    # must never be mistaken for a query about a subject
+    a = _arith(t)
+    if a:
+        return a
+    g = _grammar(t)
+    if g:
+        return g
 
     m = re.match(r"^how do you know (?:about )?(.+)$", low)
     if m:

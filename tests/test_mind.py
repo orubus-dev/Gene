@@ -59,6 +59,22 @@ class TestLiveLoop(unittest.TestCase):
         ans = self.m.handle_text("compute 7 plus 5")
         self.assertIn("12", ans)
 
+    def test_bare_arithmetic_generalizes(self):
+        # never-taught operands must still work: the skill generalizes
+        for expr, want in (("125+6", "131"), ("3*8", "24"), ("1-3", "-2"),
+                           ("5/4", "1.25")):
+            ans = self.m.handle_text(expr)
+            self.assertIn(want, ans, "%s -> %r" % (expr, ans))
+
+    def test_grammar_form_live(self):
+        self.m.teach_file(os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+            "curriculum", "grammar-1.json"))
+        ans = self.m.handle_text("past tense of walk")
+        self.assertIn("walked", ans)
+        ans = self.m.handle_text("past tense of go")
+        self.assertIn("went", ans)
+
     def test_sequence_next(self):
         ans = self.m.handle_text("next in 2 4 6 8 10")
         self.assertIn("12", ans)
@@ -74,7 +90,7 @@ class TestLiveLoop(unittest.TestCase):
     def test_unknown_word_seeks_knowledge(self):
         ans = self.m.handle_text("tell me about blorptastic")
         self.assertIn("blorptastic", ans)
-        self.assertIn("study list", ans)
+        self.assertRegex(ans.lower(), r"teach me|remember|no match")
         self.assertNotIn("teacher", ans.lower())
 
     def test_status(self):

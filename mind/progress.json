@@ -1,78 +1,38 @@
 {
- "attempts": 26436,
- "solved": 3682,
+ "attempts": 39239,
+ "solved": 5156,
  "by_domain": {
   "chat": {
-   "tasks": 100,
-   "solved": 100
+   "tasks": 1470,
+   "solved": 1161
   },
   "sequence": {
-   "tasks": 22,
-   "solved": 21
+   "tasks": 95,
+   "solved": 77
   },
   "list": {
-   "tasks": 20,
-   "solved": 20
+   "tasks": 100,
+   "solved": 98
   },
   "number": {
-   "tasks": 22,
-   "solved": 22
+   "tasks": 98,
+   "solved": 98
   },
   "string": {
-   "tasks": 17,
-   "solved": 17
+   "tasks": 101,
+   "solved": 101
   },
   "code": {
-   "tasks": 19,
-   "solved": 7
+   "tasks": 101,
+   "solved": 41
+  },
+  "grammar": {
+   "tasks": 85,
+   "solved": 85
   }
  },
- "cycles": 45,
+ "cycles": 57,
  "history": [
-  {
-   "cycle": 22,
-   "rates": {
-    "chat": 0.25
-   }
-  },
-  {
-   "cycle": 23,
-   "rates": {
-    "number": 1.0,
-    "string": 1.0,
-    "code": 0.769,
-    "sequence": 1.0,
-    "list": 0.929
-   }
-  },
-  {
-   "cycle": 24,
-   "rates": {
-    "chat": 0.342
-   }
-  },
-  {
-   "cycle": 25,
-   "rates": {
-    "string": 1.0,
-    "number": 1.0,
-    "sequence": 1.0,
-    "list": 1.0,
-    "code": 0.909
-   }
-  },
-  {
-   "cycle": 26,
-   "rates": {
-    "chat": 0.747
-   }
-  },
-  {
-   "cycle": 27,
-   "rates": {
-    "chat": 1.0
-   }
-  },
   {
    "cycle": 28,
    "rates": {
@@ -216,6 +176,183 @@
     "string": 1.0,
     "code": 0.368
    }
+  },
+  {
+   "cycle": 46,
+   "rates": {
+    "chat": 0.553
+   }
+  },
+  {
+   "cycle": 47,
+   "rates": {
+    "grammar": 1.0,
+    "sequence": 0.81,
+    "string": 1.0,
+    "code": 0.381,
+    "list": 0.909,
+    "number": 1.0
+   }
+  },
+  {
+   "cycle": 48,
+   "rates": {
+    "chat": 0.567
+   }
+  },
+  {
+   "cycle": 49,
+   "rates": {
+    "list": 1.0,
+    "sequence": 0.8,
+    "code": 0.36,
+    "string": 1.0,
+    "number": 1.0,
+    "grammar": 1.0
+   }
+  },
+  {
+   "cycle": 50,
+   "rates": {
+    "chat": 0.54
+   }
+  },
+  {
+   "cycle": 51,
+   "rates": {
+    "grammar": 1.0,
+    "number": 1.0,
+    "list": 1.0,
+    "code": 0.438,
+    "string": 1.0,
+    "sequence": 0.688
+   }
+  },
+  {
+   "cycle": 52,
+   "rates": {
+    "chat": 0.9
+   }
+  },
+  {
+   "cycle": 53,
+   "rates": {
+    "chat": 0.82
+   }
+  },
+  {
+   "cycle": 54,
+   "rates": {
+    "chat": 0.86
+   }
+  },
+  {
+   "cycle": 55,
+   "rates": {
+    "chat": 0.81
+   }
+  },
+  {
+   "cycle": 56,
+   "rates": {
+    "chat": 1.0
+   }
+  },
+  {
+   "cycle": 57,
+   "rates": {
+    "code": 0.5,
+    "grammar": 1.0,
+    "sequence": 0.762,
+    "string": 1.0,
+    "number": 1.0,
+    "list": 1.0
+   }
   }
- ]
+ ],
+ "hypotheses": {
+  "open": [
+   {
+    "id": "active",
+    "topic": "grammar",
+    "t": 1793256317.9590085
+   },
+   {
+    "id": "command",
+    "topic": "grammar",
+    "t": 1793256317.9590101
+   },
+   {
+    "id": "comparative",
+    "topic": "grammar",
+    "t": 1793256317.9590106
+   },
+   {
+    "id": "conditional",
+    "topic": "grammar",
+    "t": 1793256317.9590108
+   },
+   {
+    "id": "exclamation",
+    "topic": "grammar",
+    "t": 1793256317.959011
+   },
+   {
+    "id": "future_tense",
+    "topic": "grammar",
+    "t": 1793256317.9590116
+   },
+   {
+    "id": "negation",
+    "topic": "grammar",
+    "t": 1793256317.9590116
+   },
+   {
+    "id": "passive",
+    "topic": "grammar",
+    "t": 1793256317.9590118
+   },
+   {
+    "id": "past_tense",
+    "topic": "grammar",
+    "t": 1793256317.959012
+   },
+   {
+    "id": "plural",
+    "topic": "grammar",
+    "t": 1793256317.9590125
+   },
+   {
+    "id": "present_tense",
+    "topic": "grammar",
+    "t": 1793256317.9590127
+   },
+   {
+    "id": "question",
+    "topic": "grammar",
+    "t": 1793256317.9590127
+   },
+   {
+    "id": "relative_clause",
+    "topic": "grammar",
+    "t": 1793256317.9590132
+   },
+   {
+    "id": "singular",
+    "topic": "grammar",
+    "t": 1793256317.9590135
+   },
+   {
+    "id": "statement",
+    "topic": "grammar",
+    "t": 1793256317.9590137
+   },
+   {
+    "id": "superlative",
+    "topic": "grammar",
+    "t": 1793256317.959014
+   }
+  ],
+  "hits": 0
+ }
 }

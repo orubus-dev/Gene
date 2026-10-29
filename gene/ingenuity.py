@@ -199,7 +199,9 @@ def _name(graph, cid):
 
 
 def existence_reply(mind, word, rng=None):
-    """The honest + creative answer to 'what is X / does X exist?'."""
+    """The honest + natural answer to 'what is X / does X exist?'.
+    Leads with the verdict like a person would; keeps the evidence brief;
+    never narrates machinery. Every claim still traces to taught content."""
     import random as _r
     rng = rng or mind.rng
     g = mind.graph
@@ -213,13 +215,10 @@ def existence_reply(mind, word, rng=None):
         if status == "mythical":
             are = "are" if w.endswith("s") and w != nid else "is"
             who = w if w != nid else nid
-            return ("%s %s in my graph as MYTHICAL — real in stories, not in nature. "
-                    "%s. I classify that from what I was taught, not from vibes." % (
-                        who, are, ans or "I know it by kind and story-role")).replace("..", ".")
-        return ("Yes — %s is real in my world and I can vouch for it with content: %s. "
-                "I hold it as a %s in my graph; ask me more about it." % (
-                    nid, ans or "it has %d graph links" % len(known_node["links"]),
-                    known_node["kind"]))
+            return ("%s %s mythical — real in stories, not in nature. %s." % (
+                who, are, ans or "I know it by kind and story-role")).replace("..", ".")
+        return ("Yes — %s is real. %s. Ask me more about it if you like." % (
+            nid, (ans[0].upper() + ans[1:]) if ans else "It's a %s in my world" % known_node["kind"]))
     verdict, ev, payload = analyze_unknown(mind, w)
     mind.knowledge.inquire("meaning of: %s" % w)
 
@@ -228,15 +227,10 @@ def existence_reply(mind, word, rng=None):
         extra = _find_answer_text(mind, payload)
         dist = ev["near"][0][1]
         away = "one letter" if dist == 1 else ("%d letters" % dist)
-        lead = rng.choice([
-            "I don't know that word, but",
-            "Never seen that word — but",
-            "That's not in my vocabulary, but",
-        ])
-        body = "'%s' — %s it's %s away from '%s', which I do know." % (w, lead, away, known)
+        body = "Hmm — don't know '%s', but it's %s away from '%s', which I do know." % (w, away, known)
         if extra:
-            body += " %s." % extra
-        body += " Same thing, or something new? Teach me the difference."
+            body += " %s." % extra[0].lower() + extra[1:] if len(extra) > 1 else extra
+        body += " Same thing, or something new?"
         return body
 
     if verdict == "compound":
@@ -244,37 +238,37 @@ def existence_reply(mind, word, rng=None):
         aa, ab = _attrs_of(g, a), _attrs_of(g, b)
         fa = _fact_snippet(a, aa)
         fb = _fact_snippet(b, ab)
-        body = ("I've never heard of '%s', but I can take the word apart: %s + %s." % (w, a, b))
+        body = "Never heard of '%s', but I can take the word apart: %s + %s." % (w, a, b)
         if fa:
             body += " %s." % fa
         if fb:
             body += " %s." % fb
-        body += " So my working theory: a %s is something with the %s character of the %s." % (
+        body += " My best guess: a %s has something of the %s about the %s." % (
             w, b, a)
-        body += " That's inference, not knowledge — teach me 'a %s is ...' and I'll wire the truth in." % w
+        body += " If that's off, tell me what it really is — I'll remember."
         return body
 
     # morphology / novel — the zorpus case
     cluster, members = payload if verdict == "morphology" else ([], set())
-    n_concepts = len(g.nodes)
     parts = []
-    parts.append("'%s' is not in my graph — I hold %d concepts and there's no match for it" % (w, n_concepts))
     if members:
         cnoun = "creature" if len(members) == 1 else "creatures"
-        parts.append("I checked the %d %s I know: it matches none of them, so if it exists it's new to my world" % (len(members), cnoun))
+        parts.append("I know %d %s and it's no match for any of them" % (len(members), cnoun))
+    else:
+        parts.append("it's no match for anything I know")
     suf = ev.get("suffix")
     pre = ev.get("prefix")
     if suf:
-        parts.append("The ending '-%s' %s" % (suf[0], suf[1]))
+        parts.append("though the '-%s' ending reads like %s" % (suf[0], suf[1]))
     if pre:
-        parts.append("The start '%s-' suggests %s" % (pre[0], pre[1]))
+        parts.append("and '%s-' at the start suggests %s" % (pre[0], pre[1]))
     if cluster:
         named = [(n, s) for n, s in cluster
                  if (_attrs_of(g, n) or g.get(n) and g.get(n).get("links"))
                  and n not in ("self",)]
         if named:
             near_names = ", ".join(_name(g, n) for n, _ in named[:2])
-            parts.append("The closest things I hold by feel are: %s" % near_names)
+            parts.append("by feel it's closest to %s" % near_names)
     theory = _forced_theory(mind, ev, cluster)
     if theory and len(". ".join(parts)) < 300:
         parts.append(theory)
@@ -284,9 +278,11 @@ def existence_reply(mind, word, rng=None):
         "That's a new word to me.",
         "Honest answer: unknown.",
     ])
-    reply = lead + " " + ". ".join(parts) + "."
-    if len(reply) < 400:
-        reply += " It's on my study list now — teach me with 'a %s is ...' and I'll remember it forever." % w
+    reply = lead + " " + " — ".join(p[:1].upper() + p[1:] if i == 0 else p for i, p in enumerate(parts))
+    if not reply.endswith("."):
+        reply += "."
+    if len(reply) < 380:
+        reply += " If it's real, teach me ('a %s is ...') and I'll remember it." % w
     else:
         reply += " Teach me and I'll remember it."
     return reply[:418]
@@ -355,8 +351,8 @@ def transitive_synthesis(graph, rng):
             if k in node["attrs"] or k in " ".join(node["attrs"].keys()):
                 continue
             v = t["attrs"][k]
-            return ("%s is a %s, and %s is %s — so I conclude %s is probably %s too. "
-                    "Nobody taught me that; I derived it from the chain." % (
+            return ("%s is a %s, and %s is %s — so %s is probably %s too. "
+                    "Worked that out myself." % (
                         _name(graph, nid), _name(graph, target),
                         _name(graph, target), ("%s %s" % (k, v) if v != "yes" else k),
                         _name(graph, nid), ("%s %s" % (k, v) if v != "yes" else k)),
@@ -379,8 +375,8 @@ def cross_analogy(graph, rng):
             v = rng.choice(sorted(shared))
             ka = [k for k, vv in aa.items() if str(vv).lower() == v][0]
             kb = [k for k, vv in ab.items() if str(vv).lower() == v][0]
-            return ("Here's a link I built myself: %s and %s both connect to '%s' "
-                    "(%s / %s). Two different corners of my graph, one shared thread." % (
+            return ("Something I noticed: %s and %s share '%s' "
+                    "(%s / %s). Different corners, same thread — I found that myself." % (
                         _name(graph, a), _name(graph, b), v, ka, kb), [a, b])
     return None, None
 
@@ -423,9 +419,8 @@ def hdc_blend(graph, rng):
                     bits.append("%s (%s)" % (cid.replace("_", " "),
                                              ("%s %s" % (k, v)) if v != "yes" else k))
             if len(bits) >= 2:
-                return ("Blend test: I merged '%s' and '%s' in my vector space and the "
-                        "nearest thing to the blend is '%s'. %s — that junction is a "
-                        "real structure in my graph, not a phrase I copied." % (
+                return ("Put '%s' and '%s' side by side and what sits between them "
+                        "is '%s'. %s — a junction I found, not a line I was given." % (
                             a.replace("_", " "), b.replace("_", " "), c.replace("_", " "),
                             "; ".join(bits[:3])), [a, b, c])
     return None, None
@@ -453,8 +448,8 @@ def wonder(mind, rng):
     g = mind.graph
     with_attrs = _concepts_with_attrs(g, min_attrs=2)
     if not with_attrs:
-        return ("My graph is too young to wonder out loud yet — teach me a few "
-                "things and watch what I start asking.")
+        return ("I'm too new to wonder out loud yet — teach me a few things "
+                "and watch what I start asking.")
     cid = rng.choice(with_attrs)
     sibs = set()
     for rel, target, _ in g.neighbors(cid):
@@ -469,16 +464,94 @@ def wonder(mind, rng):
         if gap:
             k = sorted(gap)[0]
             v = ab[k]
-            return ("Honest wonder: %s is %s, and my sibling %s has that trait too — "
-                    "but nobody ever told me about %s's %s. My hypothesis: probably "
-                    "something in between. It's on my study list; teach me and I'll "
-                    "replace the guess with the fact." % (
+            return ("Honest wonder: %s is %s, and %s has that trait too — "
+                    "but nobody ever told me about %s's %s. Guess: probably "
+                    "something in between. Tell me the truth and I'll swap it "
+                    "for the guess." % (
                         _name(g, cid), ("%s %s" % (k, v)) if v != "yes" else k,
                         _name(g, sib), _name(g, cid), k))
-    # fallback: unknown-word curiosity from the study list
-    q = mind.knowledge
-    return ("What I wonder about most right now: whatever is in mind/questions.json — "
-            "the questions I couldn't answer. Those gaps organize my training.")
+    # fallback: unknown-word curiosity from the quiet hand-raise
+    return ("What I wonder about most: the words I couldn't place today. "
+            "Those gaps decide what I study next.")
+
+
+# ---------------- part 2: the evolution pipeline ------------------------------
+FAM_RELS = ("has-type", "includes", "pairs-with", "opposite-of",
+            "flip-of", "sibling-of", "evolves-to", "kind-of")
+
+
+def extrapolate(mind, topic="grammar", seeds=None, stimulus=None, rng=None):
+    """PART 2 — the evolution pipeline. Given a taught fragment of a family,
+    infer the rest of the family by walking the taught links; render the
+    missing members as labeled inference; place every guess on the open-
+    hypothesis ledger. Later lessons grade the ledger (real self-scoring:
+    a guess confirmed by teaching becomes a hit the organism can count).
+
+    No target list is coded here — the family is whatever the organism's
+    own graph connects. Delete the graph and this returns None."""
+    import time as _t
+    rng = rng or mind.rng
+    g = mind.graph
+    t = (topic or "grammar").lower().strip().replace("-", " ")
+    seed = g.get(t) or g.get(t.replace(" ", "_")) or g.lookup_word(t)
+    if not seed:
+        return None
+    fam = category_members(g, seed["id"])       # the taught roster under the seed
+    frontier = [seed["id"]] + sorted(fam)[:6]   # walk links from seed + members
+    seen = {seed["id"]} | fam
+    for _ in range(2):
+        nxt = []
+        for nid in frontier:
+            for rel, tt, _ in g.neighbors(nid):
+                if tt in seen or not g.get(tt):
+                    continue
+                if rel in FAM_RELS:
+                    fam.add(tt)
+                    nxt.append(tt)
+                    seen.add(tt)
+                elif rel == "is-a":
+                    nxt.append(tt)          # climb to the parent, keep walking
+                    seen.add(tt)
+        for f in list(fam):
+            fam |= category_members(g, f)
+        frontier = nxt
+        if not frontier:
+            break
+    fam.discard(seed["id"])
+    for s in (seeds or []):
+        fam.discard(s.lower().replace(" ", "_").strip("?!. "))
+    # members the human already named are not discoveries — drop them so the
+    # reply extrapolates the MISSING part of the family
+    stim_low = (stimulus or "").lower()
+    for f in list(fam):
+        if f.replace("_", " ") in stim_low:
+            fam.discard(f)
+    fam = {f for f in fam if (g.get(f) or {}).get("attrs")}
+    if not fam:
+        return None
+    ordered = sorted(fam)
+    rng.shuffle(ordered)
+    names = [f.replace("_", " ") for f in ordered[:8]]
+    seeds_txt = seed["id"].replace("_", " ")
+    lead = rng.choice([
+        "Taking '%s' and running with it" % seeds_txt,
+        "Extrapolating from '%s'" % seeds_txt,
+        "Following the pattern in '%s'" % seeds_txt,
+    ])
+    body = "the family should also hold: %s." % ", ".join(names)
+    label = rng.choice([
+        "That's inference — the pattern says they belong. Name one I got wrong and I'll re-check.",
+        "Call it reasoned guessing: each fills a hole the pattern leaves. Correct me and I'll adjust.",
+        "Nobody taught me those — I reached them from the shape of what I have. Teach the truth and I'll grade myself.",
+    ])
+    # the ledger: open guesses, graded by later lessons (self-improvement data)
+    hl = mind.progress.setdefault("hypotheses", {"open": [], "hits": 0})
+    open_ids = {h["id"] for h in hl["open"]}
+    for f in sorted(fam):
+        if f not in open_ids:
+            hl["open"].append({"id": f, "topic": t, "t": _t.time()})
+    hl["open"] = hl["open"][-60:]
+    return "%s, %s %s" % (lead, body, label)
 
 
 # ---------------- self-improvement narrative ---------------------------------
@@ -503,19 +576,23 @@ def improvement_report(mind, domain=None, rng=None, story=False):
             if worst is None or rate < worst[1]:
                 worst = (d, rate)
         if best and worst and best[0] != worst[0]:
+            extra = ""
+            hl = prog.get("hypotheses") or {}
+            if hl.get("hits"):
+                extra = " And %d of my own extrapolations got confirmed by later lessons." % hl["hits"]
             opts = [
-                ("Growth story with receipts: %d lifetime attempts, %d solved. "
+                ("Growth story with numbers: %d lifetime attempts, %d solved. "
                  "Strongest domain now: %s (%.0f%%). Weakest: %s (%.0f%%) — that one "
-                 "gets the next escalation ladder. Failure is just unconsolidated data.",
-                 (att, sol, best[0], best[1] * 100, worst[0], worst[1] * 100)),
+                 "gets the next hard round. Failure is just unfinished learning.%s",
+                 (att, sol, best[0], best[1] * 100, worst[0], worst[1] * 100, extra)),
                 ("What did I used to fail at? Most things — %d of %d early attempts missed. "
                  "Now %s sits at %.0f%% and even %s keeps improving. The curve only goes "
-                 "up when the misses stay logged.",
-                 (sol, att, best[0], best[1] * 100, worst[0])),
-                ("Quantified: %d attempts, %d solved, and the trend per domain is "
-                 "measured every cycle. Steepest gains: %s. Still climbing: %s — that's "
-                 "the frontier I train hardest.",
-                 (att, sol, best[0], worst[0])),
+                 "up when the misses stay logged.%s",
+                 (sol, att, best[0], best[1] * 100, worst[0], extra)),
+                ("By the numbers: %d attempts, %d solved, trend measured every cycle. "
+                 "Steepest gains: %s. Still climbing: %s — that's the frontier I train "
+                 "hardest.%s",
+                 (att, sol, best[0], worst[0], extra)),
             ]
             t = opts[rng.randrange(len(opts))]
             return t[0] % t[1]
@@ -565,15 +642,14 @@ def improvement_report(mind, domain=None, rng=None, story=False):
                 "ask me after the next few training blocks.")
     body = "; ".join(lines[:4])
     lead = rng.choice([
-        "Getting better? The ledger says",
-        "My learning curve, straight from the record:",
+        "Getting better? The record says",
+        "My learning curve, straight up:",
         "Numbers over boasts —",
         "Since you asked about progress:",
     ])
     tail = rng.choice([
-        " Every number there is my own solve-rate history.",
-        " That's measured history, not a boast.",
-        " The diff log backs every digit.",
-        " I trend-track myself the way I track everything: honestly.",
+        " Every number there is my own history.",
+        " Measured, not boasted.",
+        " I track myself the way I track everything: honestly.",
     ])
     return "%s %s.%s" % (lead, body, tail)

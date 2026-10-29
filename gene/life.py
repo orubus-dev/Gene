@@ -40,6 +40,15 @@ def cmd_train(mind, budget, tier):
                          for d, v in sorted(r["by_domain"].items()))))
 
 
+def cmd_train_chat(mind, budget, tier):
+    r = mind.train_chat(budget=budget, start_tier=tier)
+    mind.persist()
+    return ("chat cycle — %d tasks, %d solved, escalations %d, max tier %d. by intent: %s"
+            % (r["tasks"], r["solved"], r["escalations"], r["max_tier"],
+               ", ".join("%s %d/%d" % (k, v["solved"], v["tasks"])
+                         for k, v in sorted(r["by_intent"].items()))))
+
+
 def cmd_sleep(mind):
     r = mind.sleep()
     mind.persist()
@@ -89,8 +98,8 @@ def cmd_demo(mind):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(prog="gene", description="the gene organism")
-    ap.add_argument("command", choices=["awaken", "teach", "train", "sleep",
-                                        "evolve", "live", "demo", "status"])
+    ap.add_argument("command", choices=["awaken", "teach", "train", "trainchat",
+                                        "sleep", "evolve", "live", "demo", "status"])
     ap.add_argument("path", nargs="?", help="curriculum file for teach")
     ap.add_argument("--budget", type=int, default=40)
     ap.add_argument("--tier", type=int, default=1)
@@ -106,6 +115,8 @@ def main(argv=None):
         print(cmd_teach(mind, a.path))
     elif a.command == "train":
         print(cmd_train(mind, a.budget, a.tier))
+    elif a.command == "trainchat":
+        print(cmd_train_chat(mind, a.budget, a.tier))
     elif a.command == "sleep":
         print(cmd_sleep(mind))
     elif a.command == "evolve":

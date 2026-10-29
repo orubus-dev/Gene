@@ -26,18 +26,26 @@ from .reflex import stimulus_key
 # ============================== task worlds ==================================
 def gen_number_task(rng, tier=1):
     a, b = rng.randint(0, 9 * tier), rng.randint(0, 9 * tier)
-    kind = rng.choice(["add", "sub", "mul"] if tier > 1 else ["add", "sub"])
+    kind = rng.choice(["add", "sub", "mul", "div"] if tier > 2 else
+                      (["add", "sub", "mul"] if tier > 1 else ["add", "sub"]))
     if kind == "add":
         inp, out = [a, b], a + b
     elif kind == "sub":
-        if b > a:
-            a, b = b, a
+        if tier < 2 and b > a:
+            a, b = b, a          # gentle world: no negatives at first sight
+        # tier >= 2: true signed subtraction — 1 - 3 is -2, the honest answer
         inp, out = [a, b], a - b
-    else:
-        a, b = rng.randint(0, 9), rng.randint(0, 9)
+    elif kind == "mul":
+        hi = 12 if tier > 2 else 9
+        a, b = rng.randint(0, hi), rng.randint(0, hi)
         inp, out = [a, b], a * b
+    else:
+        b = rng.randint(2, min(9, 2 + tier))
+        a = rng.randint(1, 9 * tier)
+        inp, out = [a, b], a / b
+    sym = {"add": "+", "sub": "-", "mul": "x", "div": "\u00f7"}[kind]
     return {"domain": "number", "input": inp, "expected": out,
-            "prompt": "compute %s %s %s" % (a, {"add": "+", "sub": "-", "mul": "x"}[kind], b)}
+            "prompt": "compute %s %s %s" % (a, sym, b)}
 
 
 def gen_string_task(rng, tier=1):
@@ -104,12 +112,42 @@ def gen_code_task(rng, tier=1):
             "hidden": hidden}
 
 
+def gen_grammar_task(rng, tier=1):
+    """Grammar world: word forms (past, plural, ing, third person).
+
+    Tier 1-2: words from the PUBLIC lesson plan (curriculum/grammar-1.json) —
+    the organism was taught them; irregulars force real memory use.
+    Tier 3-4: HELD-OUT regular words the lesson never mentions — the rule
+    must generalize or the task fails. The environment owns the truth
+    (physics); the organism only ever gets pass/fail.
+    """
+    forms = grammar_env()
+    pool = forms.get("probes", {}) if tier >= 3 else {}
+    if not pool:
+        pool = forms.get("lesson", {})
+    form = rng.choice(["past", "plural"] if tier < 4 else
+                      ["past", "plural", "ing", "third"])
+    words = pool.get(form, [])
+    if not words:
+        for f in ("past", "plural", "ing", "third"):
+            if pool.get(f):
+                form = f
+                words = pool[f]
+                break
+    if not words:
+        return None
+    word, truth = rng.choice(words)
+    return {"domain": "grammar", "input": word, "form": form, "expected": truth,
+            "prompt": "%s of %s" % (form, word)}
+
+
 GENERATORS = {
     "number": gen_number_task,
     "string": gen_string_task,
     "list": gen_list_task,
     "sequence": gen_sequence_task,
     "code": gen_code_task,
+    "grammar": gen_grammar_task,
 }
 
 
@@ -123,10 +161,12 @@ def number_pipeline_candidates(rng, task, known_genes):
     never from the expected value.
     """
     cands = []
-    # core hypotheses for two-number input: combine-all, first-minus-last, all-product
+    # core hypotheses for two-number input: combine-all, first-minus-last,
+    # all-product, first-shared-by-last
     cands.append([{"op": "sumv", "args": {}}])
     cands.append([{"op": "diff", "args": {}}])
     cands.append([{"op": "prod", "args": {}}])
+    cands.append([{"op": "quotv", "args": {}}])
     for opname in ("add", "sub", "mul", "fdiv"):
         cands.append([{"op": "sumv", "args": {}}, {"op": opname, "args": {}}])
     cands.append([{"op": "maxv", "args": {}}])
@@ -212,12 +252,39 @@ def code_pipeline_candidates(rng, task, known_genes):
     return cands
 
 
+# ---------------- grammar: lookup + suffix-rule hypotheses --------------------
+def grammar_pipeline_candidates(rng, task, known_genes):
+    """Hypotheses for a word-form task: memory first (taught pairs), then
+    suffix rules (-ed, -d, -s, -es, -ing), then known grammar genes.
+    Which suffix is right must be DISCOVERED — candidates never see the
+    expected form."""
+    form = task.get("form", "past")
+    cands = []
+    cands.append([{"op": "grammar_lookup", "args": {"form": form}}])
+    for suf in {"past": ("ed", "d"), "plural": ("s", "es"),
+                "ing": ("ing",), "third": ("s", "es")}.get(form, ("ed",)):
+        cands.append([{"op": "concat", "args": {"with": suf}}])
+    for g in known_genes:
+        if g.get("domain") == "grammar" and g.get("steps"):
+            cands.append(g["steps"])
+    for _ in range(3):
+        cands.append(genome.random_gene(rng, "string")["steps"])
+    seen, out = set(), []
+    for s in cands:
+        k = json.dumps(s, sort_keys=True)
+        if k not in seen:
+            seen.add(k)
+            out.append(s)
+    return out
+
+
 CANDIDATE_FN = {
     "number": number_pipeline_candidates,
     "sequence": sequence_pipeline_candidates,
     "string": string_pipeline_candidates,
     "list": list_pipeline_candidates,
     "code": code_pipeline_candidates,
+    "grammar": grammar_pipeline_candidates,
 }
 
 
@@ -239,6 +306,67 @@ def check(domain, task, result):
         return result == exp
     except Exception:
         return False
+
+
+# ---------------- grammar environment physics ---------------------------------
+_GRAMMAR_ENV = None
+
+
+def _load_grammar_lesson():
+    """The PUBLIC lesson plan: word forms taught in curriculum/grammar-1.json.
+    The organism was taught every one of these through the normal channel."""
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "curriculum", "grammar-1.json")
+    lesson = {"past": [], "plural": [], "ing": [], "third": []}
+    try:
+        with open(path) as f:
+            pack = json.load(f)
+    except Exception:
+        return lesson
+    for w in pack.get("wordforms", []):
+        base = w.get("base")
+        if not base:
+            continue
+        for form in ("past", "plural", "ing", "third"):
+            if w.get(form):
+                lesson[form].append((base, w[form]))
+    return lesson
+
+
+def grammar_env():
+    """Ground truth for grammar tasks = the environment's physics.
+    'lesson' = words taught in the public curriculum. 'probes' = held-out
+    regular words the lesson never mentions (rule-generalization tests).
+    The ORGANISM never sees either — only pass/fail comes back."""
+    global _GRAMMAR_ENV
+    if _GRAMMAR_ENV is None:
+        _GRAMMAR_ENV = {
+            "lesson": _load_grammar_lesson(),
+            "probes": {
+                "past": [("climb", "climbed"), ("point", "pointed"),
+                         ("rain", "rained"), ("snow", "snowed"),
+                         ("rest", "rested"), ("kick", "kicked"),
+                         ("float", "floated"), ("glow", "glowed"),
+                         ("reach", "reached"), ("warn", "warned"),
+                         ("treat", "treated"), ("march", "marched"),
+                         ("smile", "smiled"), ("sneeze", "sneezed"),
+                         ("blink", "blinked"), ("land", "landed")],
+                "plural": [("river", "rivers"), ("mountain", "mountains"),
+                           ("apple", "apples"), ("table", "tables"),
+                           ("pencil", "pencils"), ("garden", "gardens"),
+                           ("candle", "candles"), ("melon", "melons"),
+                           ("pebble", "pebbles"), ("shadow", "shadows")],
+                "ing": [("climb", "climbing"), ("point", "pointing"),
+                        ("rain", "raining"), ("rest", "resting"),
+                        ("kick", "kicking"), ("float", "floating"),
+                        ("glow", "glowing"), ("reach", "reaching")],
+                "third": [("climb", "climbs"), ("point", "points"),
+                          ("rain", "rains"), ("rest", "rests"),
+                          ("kick", "kicks"), ("float", "floats"),
+                          ("glow", "glows"), ("reach", "reaches")],
+            },
+        }
+    return _GRAMMAR_ENV
 
 
 # ============================== the loop =====================================
@@ -311,10 +439,12 @@ def train_task(task, genome_genes, reflexes, predictor, endocrine, rng,
         reflexes.reinforce(domain, task["input"], winner)
         gene = genome.new_gene(winner, fitness=1.0, uses=1, born=now)
         return {"solved": True, "attempts": attempts, "gene": gene,
-                "domain": domain, "coactive": [domain, "skill", "success"]}
+                "domain": domain, "coactive": [domain, "skill", "success"],
+                "winner": winner, "winner_tag": tag}
     endocrine.load(1.0)
     return {"solved": False, "attempts": attempts, "gene": None,
-            "domain": domain, "coactive": [domain, "failure"]}
+            "domain": domain, "coactive": [domain, "failure"],
+            "winner": None, "winner_tag": None}
 
 
 def dedupe_genes(genes, cap=600):

@@ -24,7 +24,7 @@ class TestIngenuity(unittest.TestCase):
     def test_unknown_gets_honest_verdict_and_hypothesis(self):
         r = self.m.handle_text("what is a zorpus?")
         self.assertIn("zorpus", r.lower())
-        self.assertRegex(r.lower(), r"never heard|not in my graph|no record")
+        self.assertRegex(r.lower(), r"never heard|no record|no match|new word to me|don't know")
         self.assertNotIn("teacher", r.lower())
         # grounded reasoning, not a bare cop-out
         self.assertTrue(len(r) > 60)
@@ -32,7 +32,7 @@ class TestIngenuity(unittest.TestCase):
     def test_prefix_reasoning(self):
         r = self.m.handle_text("what is an unglorb?")
         self.assertIn("unglorb", r.lower())
-        self.assertRegex(r.lower(), r"never heard|not in my graph|no record")
+        self.assertRegex(r.lower(), r"never heard|no record|no match|new word to me|don't know")
 
     def test_near_match_suggests_known(self):
         r = self.m.handle_text("what is a dawg?")
@@ -45,8 +45,8 @@ class TestIngenuity(unittest.TestCase):
 
     def test_taught_real_confirmed(self):
         r = self.m.handle_text("do tardigrades exist?")
-        self.assertRegex(r.lower(), r"real|is a|creature|in my graph")
-        self.assertNotRegex(r.lower(), r"never heard|not in my graph")
+        self.assertRegex(r.lower(), r"real|is a|creature|animal")
+        self.assertNotRegex(r.lower(), r"never heard|don't know|no match")
 
     def test_taught_mythical_classified(self):
         r = self.m.handle_text("do dragons exist?")
@@ -77,7 +77,32 @@ class TestIngenuity(unittest.TestCase):
         self.assertEqual(classify_semantic("who am I speaking with?"), "identity")
         self.assertEqual(classify_semantic("where do you come from?"), "origin")
         self.assertEqual(classify_semantic("what do you wonder about"), "creativity")
+        self.assertEqual(classify_semantic("what time is it"), "time")
+        self.assertEqual(classify_semantic("what's the weather like"), "weather")
         # nonsense stays unclassified rather than guessed
         self.assertIn(classify_semantic("xyzzy plugh"), (None,))
+
+    def test_natural_speech_no_machinery_narration(self):
+        # the user's law: a person doesn't cite their own brain plumbing
+        BAN = ("my graph", "in my graph", "hormone", "provenance", "diffable",
+               "in git", "episodes", "vector", "concepts", "study list")
+        asks = ["how are you?", "thanks!", "bye", "what time is it?",
+                "what's the weather like?", "what is an octopus?"]
+        for a in asks:
+            r = self.m.handle_text(a) or ""
+            low = r.lower()
+            for b in BAN:
+                self.assertNotIn(b, low, "%r -> %r leaked %r" % (a, r, b))
+
+    def test_extrapolate_names_family(self):
+        self.m.teach_file(os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+            "curriculum", "grammar-1.json"))
+        r = self.m.handle_text("we have statements and questions — what other grammar types are out there?")
+        self.assertTrue(r, "extrapolate returned nothing")
+        hits = sum(1 for f in ("command", "exclamation", "negation", "passive",
+                               "conditional", "comparative", "superlative",
+                               "future tense", "plural") if f in r.lower())
+        self.assertGreaterEqual(hits, 2, r)
 if __name__ == "__main__":
     unittest.main()

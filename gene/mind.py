@@ -11,7 +11,7 @@ import time
 
 from . import concepts, conversation, endocrine, evolution, hdc, immune, knowledge
 from . import linguistics, memory, reflex, trainer, world
-from . import development, ingenuity
+from . import development, dsl, ingenuity
 from . import genome as G
 
 
@@ -34,6 +34,9 @@ class Mind:
         self.dev = development.Development(self._p("development.json"))
         self.dev.load_dict(self._load("development.json", None))
         self.rng = random.Random(int(self._load("rng.json", {"seed": 1337})["seed"]))
+        # grammar memory: word-form lookups read ONLY the organism's own graph
+        dsl.set_word_resolver(
+            lambda w: (self.graph.lookup_word(w) or {}).get("attrs", {}))
         self.convo = conversation.Conversation(self)
         self.progress = self._load("progress.json", {"attempts": 0, "solved": 0,
                                                      "by_domain": {}, "cycles": 0,
@@ -89,6 +92,8 @@ class Mind:
         for i in range(budget):
             dom = self.rng.choice(domains)
             task = trainer.GENERATORS[dom](self.rng, tier)
+            if task is None:          # grammar world can be empty pre-teaching
+                continue
             outcome = trainer.train_task(task, self.genes, self.reflexes,
                                          self.predictor, self.hormones, self.rng,
                                          now=time.time())
@@ -244,7 +249,38 @@ class Mind:
 
     def teach_file(self, path):
         report = self.knowledge.teach_file(path)
+        self._score_hypotheses(path)
         return report
+
+    def _score_hypotheses(self, path):
+        """Part-2 self-improvement: when a later lesson lands, grade the
+        organism's own extrapolations against it. A guess confirmed by
+        teaching is a real hit; open guesses stay open (never revealed)."""
+        hl = self.progress.get("hypotheses")
+        if not hl or not hl.get("open"):
+            return
+        try:
+            with open(path) as f:
+                pack = json.load(f)
+        except Exception:
+            return
+        taught = set()
+        for c in pack.get("concepts", []):
+            if c.get("id"):
+                taught.add(c["id"].lower())
+            taught.update(str(w).lower() for w in c.get("words", []))
+        still_open = []
+        for h in hl["open"]:
+            gid = h["id"].lower()
+            if gid in taught or gid.replace("_", " ") in taught:
+                hl["hits"] = hl.get("hits", 0) + 1
+                self.episodes.record("hypothesis_confirmed", {
+                    "guess": h["id"], "topic": h.get("topic"),
+                    "coactive": ["self", "hypothesis", "confirmed"]})
+            else:
+                still_open.append(h)
+        hl["open"] = still_open[-80:]
+        self.progress["hypotheses"] = hl
 
     # ---------- live mind (chat) ---------------------------------------------------
     def _find_answer(self, cid):
@@ -313,12 +349,7 @@ class Mind:
                 if wn:
                     ans = self._find_answer(wn["id"])
             if ans:
-                tail = self.rng.choice([
-                    "",
-                    " (From my graph — ask 'how do you know %s' for provenance.)" % subj_id.replace("_", " "),
-                    " Taught or derived — nothing hard-coded.",
-                    " Want the deeper links? Say 'more'.",
-                ])
+                tail = self.rng.choice(["", "", " Want more? Say 'more'.", ""])
                 full = (ans + tail).strip()
                 self.convo.state.d["last_answer"] = full[:200]
                 self.convo.state.save()
@@ -336,12 +367,6 @@ class Mind:
                 if parts:
                     return "By inference: %s." % "; ".join(parts[:2])
             verdict_reply = ingenuity.existence_reply(self, subj_id)
-            near = self.graph.activate([subj_id], topn=3)
-            near = [n for n, s in near if s > 0.12 and n != subj_id]
-            if near and "'" + subj_id.replace("_", " ") in verdict_reply:
-                # ingenuity had nothing structural to say; keep HDC guess but
-                # honest-first: lead with the verdict, append the HDC neighbor
-                return verdict_reply + " (By raw vector feel it lands nearest '%s' — weak signal.)" % near[0].replace("_", " ")
             return verdict_reply
 
         if intent == "query_attr":
@@ -349,30 +374,42 @@ class Mind:
             if node and any(k.startswith(i["attr"]) for k in node["attrs"]):
                 return "Yes — %s has %s." % (i["subject"], i["attr"])
             self.knowledge.inquire("Does %s have %s?" % (i["subject"], i["attr"]))
-            return "I don't know whether %s has %s yet. Tell me '%s has %s' and I'll wire it in — or ask me something adjacent." % (
-                i["subject"], i["attr"], i["subject"], i["attr"])
+            return "Not sure whether %s has %s. If you know, tell me — I'll remember." % (
+                i["subject"], i["attr"])
 
         if intent == "compute":
             a, b = i["args"]
-            task = {"domain": "number", "input": [a, b],
-                    "expected": {"add": a + b, "sub": max(a, b) - min(a, b),
-                                 "mul": a * b}[i["op"]],
+            if i["op"] == "div" and b == 0:
+                return "Dividing by zero? There's no number that does that — it breaks."
+            expected = {"add": lambda: a + b, "sub": lambda: a - b,
+                        "mul": lambda: a * b, "div": lambda: a / b}[i["op"]]()
+            task = {"domain": "number", "input": [a, b], "expected": expected,
                     "prompt": "live compute"}
             outcome = trainer.train_task(task, self.genes, self.reflexes,
                                          self.predictor, self.hormones, self.rng,
                                          now=time.time())
-            if outcome["solved"]:
+            if outcome["solved"] and outcome.get("winner"):
                 if outcome["gene"] and not any(g["steps"] == outcome["gene"]["steps"] for g in self.genes):
                     self.genes.append(outcome["gene"])
                 self.progress["solved"] += 1
                 self.graph.hebbian(outcome["coactive"], 0.1)
                 try:
-                    result = trainer.run_pipeline_on("number", task, outcome["gene"]["steps"])
+                    result = dsl.execute_pipeline(outcome["winner"], [a, b])
                 except Exception:
-                    result = task["expected"]
-                return "%s = %s  (I worked it out in %d tries)" % (
-                    task["prompt"], result, len(outcome["attempts"]))
-            return "I couldn't work that out yet. Let me train on it — say 'train'."
+                    result = None
+                if result is not None:
+                    self.episodes.record("task", {"domain": "number",
+                                                  "prompt": "%s %s %s" % (a, i["op"], b),
+                                                  "solved": True, "tries": len(outcome["attempts"]),
+                                                  "coactive": outcome["coactive"]})
+                    return self._math_reply(a, i["op"], b, result)
+            return self.rng.choice([
+                "Haven't got that one yet — give me a few more like it and I'll get there.",
+                "Can't work that one out yet. Try me with smaller numbers while I train.",
+            ])
+
+        if intent == "grammar":
+            return self._handle_grammar(i)
 
         if intent == "sequence":
             seq = i["args"]
@@ -438,6 +475,75 @@ class Mind:
             return ingenuity.existence_reply(self, w)
         return ("I heard you, but I don't yet know how to think about that. "
                 "Give me a fact or a puzzle and I'll grow around it.")
+
+    # ---------- arithmetic + grammar talk (natural, organism-computed) ---------
+    def _math_reply(self, a, op, b, r):
+        sym = {"add": "+", "sub": "-", "mul": "\u00d7", "div": "\u00f7"}[op]
+        if isinstance(r, float) and abs(r - round(r)) < 1e-9:
+            r = int(round(r))
+        num = ("%g" % r) if isinstance(r, float) else str(r)
+        extra = ""
+        if isinstance(r, (int, float)) and r < 0:
+            extra = " — below zero"
+        elif isinstance(r, float) and abs(r - round(r)) > 1e-9 and b in (2, 4):
+            whole = int(r)
+            part = "half" if b == 2 else "quarter"
+            extra = (" — %s and a %s" % (whole, part)) if whole else (" — a %s" % part)
+        frame = self.rng.randrange(3)
+        if frame == 0:
+            base = "%s %s %s = %s" % (a, sym, b, num)
+        elif frame == 1:
+            base = "%s%s%s? %s." % (a, sym, b, num)
+        else:
+            base = "that's %s" % num
+        tail = self.rng.choice(["", "", "", " Want another?"])
+        return base + extra + tail
+
+    def _handle_grammar(self, i):
+        """Word-form asks ('past tense of walk'). The organism answers from
+        its OWN memory (taught pairs) or its OWN discovered suffix rules —
+        the environment table only checks pass/fail, never speaks."""
+        word, form = i["word"], i["form"]
+        if form not in ("past", "plural", "ing", "third"):
+            return "I know past tense, plural, -ing and third person — try one of those?"
+        truth = None
+        env = trainer.grammar_env()
+        for pool in ("lesson", "probes"):
+            for w, t in env[pool].get(form, []):
+                if w == word:
+                    truth = t
+                    break
+            if truth:
+                break
+        task = {"domain": "grammar", "input": word, "form": form,
+                "expected": truth or "", "prompt": "%s of %s" % (form, word)}
+        outcome = trainer.train_task(task, self.genes, self.reflexes,
+                                     self.predictor, self.hormones, self.rng,
+                                     now=time.time())
+        if outcome["solved"] and outcome.get("winner"):
+            if outcome["gene"] and not any(g["steps"] == outcome["gene"]["steps"] for g in self.genes):
+                self.genes.append(outcome["gene"])
+            self.progress["solved"] += 1
+            self.graph.hebbian(outcome["coactive"], 0.1)
+            try:
+                result = dsl.execute_pipeline(outcome["winner"], word)
+            except Exception:
+                result = None
+            if result:
+                self.episodes.record("task", {"domain": "grammar",
+                                              "prompt": task["prompt"], "solved": True,
+                                              "tries": len(outcome["attempts"]),
+                                              "coactive": outcome["coactive"]})
+                return self.rng.choice([
+                    "%s — %s." % (word, result),
+                    "'%s' in %s form: %s." % (word, form, result),
+                    "%s, %s form: %s." % (word, form, result),
+                ])
+        self.knowledge.inquire("grammar form: %s of '%s'" % (form, word))
+        return self.rng.choice([
+            "Not sure how '%s' changes there — tell me and I'll remember." % word,
+            "Haven't learned that word's %s form yet. What is it?" % form,
+        ])
 
     # ---------- reporting -----------------------------------------------------------
     def status(self):

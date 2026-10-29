@@ -137,6 +137,23 @@ def _diff(x, args):
         raise ValueError("diff needs two elements")
     return _num(xs[0]) - _num(xs[-1])
 
+@op("quotv")
+def _quotv(x, args):
+    """first ÷ last of a pair. An innate ability: 'share one by the other'.
+    True division — 5 shared by 4 gives 1.25, not a dodge."""
+    xs = _scalar_list(x)
+    if len(xs) < 2:
+        raise ValueError("quot needs two elements")
+    n = _num(xs[-1])
+    if n == 0:
+        raise ZeroDivisionError
+    return _num(xs[0]) / n
+
+@op("neg")
+def _neg(x, args):
+    """Unary negation — 'below zero'. An ability, like stepping backwards."""
+    return -_num(x)
+
 @op("prod")
 def _prod(x, args):
     p = 1
@@ -225,6 +242,32 @@ def _filterop(x, args):
     sub = args.get("pipeline") or []
     val = args.get("val")
     return [i for i in _scalar_list(x) if execute_pipeline(sub, i) == val]
+
+
+# ---- grammar memory (ability, not knowledge) --------------------------------
+# The resolver is wired to the organism's OWN concept graph at startup. The
+# op can only ever read what the organism was taught or derived — delete the
+# graph and it raises like any other failed attempt.
+_WORD_RESOLVER = None
+
+
+def set_word_resolver(fn):
+    """Wire the grammar-memory lookup to the organism's concept graph."""
+    global _WORD_RESOLVER
+    _WORD_RESOLVER = fn
+
+
+@op("grammar_lookup")
+def _grammar_lookup(x, args):
+    """Look up a taught word-form: x='go', args={'form':'past'} -> 'went'.
+    Reads ONLY the organism's memory. Un-taught forms fail (a real miss)."""
+    if _WORD_RESOLVER is None:
+        raise TypeError("no grammar memory wired")
+    form = args.get("form")
+    attrs = _WORD_RESOLVER(str(x))
+    if not attrs or form not in attrs:
+        raise LookupError("form %r of %r not in memory" % (form, x))
+    return attrs[form]
 
 
 def execute_pipeline(steps, x):

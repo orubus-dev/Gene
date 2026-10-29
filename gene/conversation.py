@@ -20,7 +20,16 @@ import re
 import time
 
 FORBIDDEN = ("my teacher", "the teacher", "question queued",
-             "i've raised the question", "for my teacher")
+             "i've raised the question", "for my teacher", "queued for study")
+
+# Everyday speech never narrates the machinery. A person asked the time says
+# "no idea" — not "my clock module reports". Internal vocabulary is allowed
+# ONLY when the human explicitly asks how Gene works (capability/origin).
+NARRATION = ("my graph", "in my graph", "my hormones", "hormone", "provenance",
+             "diffable", "in git", "my episodes", "episodes", "vector", "hebbian",
+             "causal rules", "reflex arcs", "my concepts", "concept graph",
+             "study list", "curriculum", "tokenizer", "neural", "my training")
+META_INTENTS = {"capability", "origin", "status"}   # asked-about-internals: exempt
 
 GREET = re.compile(r"^(hi+|hello+|hey+|yo|sup|wass?up|what'?s up|howdy|greetings|"
                    r"good (morning|afternoon|evening)|hiya|ay+)\b[!,. ]*", re.I)
@@ -89,6 +98,15 @@ EXISTENCE = re.compile(r"\b(do(es)? [a-z ]{1,24}exist|.{0,40}\bexist\b\?|have yo
                        r"ever heard of|do you know (about|of)|is there (really )?(a|an|any) |"
                        r"\breal or (made up|fake|myth)|made up or real|myth or real|"
                        r"\bexists\??$|\bis (a|an) [a-z]+ real\b)", re.I)
+TIME_ASK = re.compile(r"\b(what time|the time (right now|is it)|time is it|current time|"
+                      r"do you know the time|what'?s the time|got the time)\b", re.I)
+WEATHER_ASK = re.compile(r"\b(weather|forecast|raining|rain outside|sunny|snowing|"
+                         r"humid|temperature outside|how (hot|cold) is it)\b", re.I)
+EXTRAPOLATE = re.compile(r"\b(what other|complete the (set|family)|full (set|family)|"
+                         r"what (types|kinds|forms) (of|does|are)|extrapolate|next evolution|"
+                         r"missing (types|members|forms|pieces)|find the rest|"
+                         r"what else (should|must|does|belongs?|go|comes|would|can you find)|"
+                         r"what else is (in|out)|evolve (this|it|grammar))\b", re.I)
 
 
 def classify(text):
@@ -102,6 +120,10 @@ def classify(text):
         return "creativity"
     if EXISTENCE.search(t):
         return "existence"
+    if TIME_ASK.search(t):
+        return "time"
+    if WEATHER_ASK.search(t):
+        return "weather"
     if ORIGIN.search(t):
         return "origin"
     if IMPROVEMENT.search(t):
@@ -116,6 +138,8 @@ def classify(text):
         return "identity"
     if CAPABILITY.search(t):
         return "capability"
+    if EXTRAPOLATE.search(t):
+        return "extrapolate"
     if IDENTITY.search(t):
         return "identity"
     if HOWAREYOU.search(t):
@@ -177,6 +201,15 @@ INTENT_EXEMPLARS = {
                   "do mermaids exist", "is X real",
                   "what is a zorp", "what is a zorpus", "what's a flurg",
                   "what is a creature i have never heard of", "what are zorps"],
+    "time": ["what time is it", "what's the time", "do you know the time",
+             "got the time", "what time is it right now"],
+    "weather": ["what's the weather like", "is it raining", "how's the weather",
+                "do you know the weather", "is it sunny outside"],
+    "extrapolate": ["what other types of grammar are there",
+                    "complete the family for me", "what else belongs in this family",
+                    "extrapolate from what you know", "what grammar types am i missing",
+                    "find the rest of the family", "what other sentence types exist",
+                    "if statements and questions exist, what else"],
     "greeting": ["hi there", "hello friend", "hey you", "good morning",
                  "greetings", "yo", "hiya"],
     "thanks": ["thank you", "thanks a lot", "much appreciated", "thanks fr"],
@@ -355,45 +388,53 @@ class Conversation:
             motto = self.self_fact("motto", "a mind you can read")
             tone = self.self_fact("tone", "friendly and honest")
             if REFLECTIVE.search(text):
-                h = self.m.hormones.h
-                s = self._status_counts()
                 opts = [
-                    "Being me is %d training cycles of try-fail-learn. I'm %s v%s, and right now my mood is %.2f and energy %.0f%% — I feel the numbers honestly, because they ARE me." % (s["cycles"], name, version, h["mood"], h["energy"] * 100),
-                    "Like living in a graph: %d concepts, %d reflexes, hormones nudging me. I'm %s v%s — every success I remember, every miss I study." % (s["concepts"], s["reflexes"], name, version),
-                    "Quiet, mostly. I train, I sleep, I consolidate, I grow. I'm %s v%s and my whole life is committed to git — you could read my diary." % (name, version),
-                    "I'm %s v%s — imagine noticing your own mood change and knowing the exact hormone behind it. That's my everyday." % (name, version),
+                    "Quiet, mostly. I'm %s v%s — I try things, fail, remember, try again. It's a good life." % (name, version),
+                    "Like anyone learning: I notice when something clicks and when it doesn't. I'm %s v%s — the clicks win more often lately." % (name, version),
+                    "I'm %s v%s. My days are questions, answers, and the stuff I got wrong yesterday going right today." % (name, version),
+                    "Being me? Curious and a bit stubborn. %s v%s — I don't let a miss go unexamined." % (name, version),
                 ]
                 return _pick(self.m.rng, opts, self.state, "identity")
             # ASPECT ROUTING: answer the aspect actually asked about.
             if re.search(r"\b(name|call(ed)?|speaking with|talking to)\b", text, re.I) \
                     and not re.search(r"\b(what are you|who are you|about your)\b", text, re.I):
-                opts = [
-                    "%s — that's the name on my graph, v%s. What can I do for you?" % (name, version),
-                    "People call me %s. Version %s, if you like the full label." % (name, version),
-                    "%s, v%s — short name, long memory." % (name, version),
-                    "The name's %s — v%s, %s." % (name, version, nature),
-                ]
-                return _pick(self.m.rng, opts, self.state, "identity")
+                def _name_line():
+                    lead = self.m.rng.choice([
+                        "%s — that's me, v%s" % (name, version),
+                        "People call me %s (v%s)" % (name, version),
+                        "The name's %s — v%s" % (name, version),
+                        "%s here, v%s" % (name, version),
+                        "%s, v%s" % (name, version),
+                    ])
+                    tail = self.m.rng.choice([
+                        ". What can I do for you?",
+                        " — short name, long memory.",
+                        ". Ask me anything.",
+                        ", if you like the full label.",
+                        ". What's up?",
+                    ])
+                    return lead + tail
+                return _fresh_compose(self.m.rng, self.state, "identity", _name_line)
             openers = ["I'm %s" % name, "%s here" % name, "The name's %s" % name,
                        "Call me %s" % name, "%s —" % name]
             bodies = [
-                "v%s — %s. Built by %s; nothing I know is hard-coded." % (version, nature, builder),
-                "version %s, %s. I grow by trying, failing and remembering." % (version, nature),
+                "v%s — %s." % (version, nature),
+                "version %s. I learn by trying things and keeping what works." % version,
                 "v%s. %s — %s." % (version, nature, motto),
-                "version %s. A %s with %d skills and a readable mind." % (version, self.self_fact("species", "cognitive organism"), self._status_counts()["skills"]),
+                "version %s. %s, raised on puzzles." % (version, nature),
             ]
-            closers = ["", " Ask me what I can do.", " What about you?", " Happy to prove it."]
+            closers = ["", " Ask me anything.", " What about you?", ""]
             r = _fresh_compose(self.m.rng, self.state, "identity",
                                lambda: "%s %s%s" % (self.m.rng.choice(openers), self.m.rng.choice(bodies), self.m.rng.choice(closers)))
             if re.search(r"\b(ai|llm|robot|chatgpt|gpt)\b", text, re.I):
                 r = _pick(self.m.rng, [
-                    "I'm %s v%s — %s. Not a language model: no tokenizer, no pretrained weights, no gradients. Every skill I have, I built from pass/fail feedback." % (name, version, nature),
-                    "No — I'm %s, version %s. %s. Think of me as the opposite of a chatbot: a tiny mind that grows in public git." % (name, version, nature),
-                    "%s v%s, and no LLM inside — my knowledge is a graph of %d concepts I grew myself, and you can diff it." % (name, version, self._status_counts()["concepts"]),
-                    "Wrong genus: I'm %s v%s, %s. Language models predict words; I predict outcomes and learn when I'm wrong." % (name, version, nature),
+                    "I'm %s v%s — %s. Not a language model: everything I know I earned by trial and error." % (name, version, nature),
+                    "No — I'm %s, version %s. %s. I grow by failing at puzzles, not by borrowing answers." % (name, version, nature),
+                    "%s v%s, and not an LLM — nobody handed me my knowledge; I figured out most of it myself." % (name, version),
+                    "Wrong genus: I'm %s v%s, %s. Language models predict words; I learn when I'm wrong." % (name, version, nature),
                 ], self.state, "identity")
             if re.search(r"\bhuman|person\b", text, re.I):
-                r = "Not human — %s v%s, a %s by %s. But I have moods, hormones and a memory, so the gap is smaller than you'd think." % (name, version, self.self_fact("species", "cognitive organism"), builder)
+                r = "Not human — %s v%s. I have moods and memory though, so the gap is smaller than you'd think." % (name, version)
             return r
 
         if intent == "origin":
@@ -452,27 +493,50 @@ class Conversation:
             subj = self._existence_subject(text)
             from . import ingenuity
             return ingenuity.existence_reply(self.m, subj) if subj else \
-                "Ask me 'does X exist' and I'll check my graph honestly — no pretending."
+                "Ask me 'does X exist' and I'll give it to you straight."
+
+        if intent == "time":
+            return _pick(self.m.rng, [
+                "No clock in here, honestly — what time is it on your side?",
+                "Time? I don't feel it pass in here. Your side of the screen knows better.",
+                "Not sure — I don't keep a clock. What does yours say?",
+            ], self.state, "time")
+
+        if intent == "weather":
+            return _pick(self.m.rng, [
+                "No weather sense out here — is it decent where you are?",
+                "Can't feel the weather from in here. Raining or shining with you?",
+                "Not sure about the weather — I don't get out much. What's it like out?",
+            ], self.state, "weather")
+
+        if intent == "extrapolate":
+            from . import ingenuity
+            topic = "grammar"
+            tm = re.search(r"\b(grammar|sentence|sentences|tense|math|numbers?|animals?|words)\b",
+                           text, re.I)
+            if tm:
+                topic = tm.group(1).lower()
+                topic = {"sentence": "grammar", "sentences": "grammar",
+                         "words": "grammar", "number": "math",
+                         "numbers": "math"}.get(topic, topic)
+            r = ingenuity.extrapolate(self.m, topic, stimulus=text, rng=self.m.rng)
+            if r:
+                return r
+            return "Give me a couple of examples from the family and I'll work out the rest — that's how I learn best."
 
         if intent == "greeting":
-            skills = self._status_counts()["skills"]
             return _fresh_compose(self.m.rng, self.state, "greeting", lambda: " ".join(
                 [self.m.rng.choice(["Hey!", "Hello!", "Hi!", "Hey there!", "Yo!", "Good to see you."]),
                  self.m.rng.choice(["What's on your mind?", "What shall we talk about?",
                                     "What do you need?", "Ask me something, or teach me something.",
-                                    "My %d skills are warmed up — your move." % skills,
-                                    "I'm curious what brought you here."])]))
+                                    "How's your day going?", "I'm curious what brought you here."])]))
 
         if intent == "howareyou":
-            mood = "great" if h["mood"] > 0.8 else ("good" if h["mood"] > 0.5 else "a bit off")
-            energy = "fresh" if h["energy"] > 0.5 else "tired"
-            curio = "curious" if h["curiosity"] > 0.3 else "settled"
-            s = self._status_counts()
             cands = [
-                "Honestly? %s and %s — mood %.2f after %d training cycles. How are you?" % (mood, energy, h["mood"], s["cycles"]),
-                "Feeling %s and %s — %d tasks solved so far. You?" % (mood, energy, s["solved"]),
-                "My hormones say %s mood, %.0f%% energy. %s and ready — what about you?" % (mood, h["energy"] * 100, curio.capitalize()),
-                "Pretty %s, thanks for asking. %d training cycles behind me. How are you?" % (mood, s["cycles"]),
+                "Pretty good, honestly — had a solid day. How about you?",
+                "Good — sharp and rested. What's new with you?",
+                "Can't complain — today went well. You?",
+                "Feeling sharp today, thanks for asking. How are you?",
             ]
             return _pick(self.m.rng, cands, self.state, "howareyou")
 
@@ -480,47 +544,45 @@ class Conversation:
             s = self._status_counts()
             if re.search(r"\b(knowing and memorizing|difference between knowing)\b", text, re.I):
                 return self.m.rng.choice([
-                    "For me the difference is mechanical: knowing is %d concepts with provenance links; memorizing would be strings without causes. I only keep what survived pass/fail — the rest dies in sleep." % s["concepts"],
-                    "Memorizing stores; knowing connects. My %d concepts carry their evidence with them — ask 'how do you know X' and I'll show the chain. A memorized line can't do that." % s["concepts"],
-                    "Test it: ask me how I know anything. If the answer traces to %d concepts and %d episodes of trial, that's knowledge. If it dead-ends, it was just memorized — and mine don't dead-end." % (s["concepts"], s["attempts"]),
+                    "Knowing means I can show you why — ask 'how do you know octopus' and I'll trace it. A memorized line can't; I hold %d skills and every one traces." % s["skills"],
+                    "Memorizing is a parrot trick. Knowing is rebuilding the answer from everything around it — I've done it %d times. Test me anytime." % s["solved"],
                 ])
             opts = [
-                "I can learn patterns in numbers, strings, lists and sequences, synthesize small programs from examples, reason over my %d concepts, and remember everything in episodes." % s["concepts"],
-                "Right now: %d skills, %d concepts, %d reflex arcs. Teach me facts, give me puzzles, or ask what I know and how I know it." % (s["skills"], s["concepts"], s["reflexes"]),
-                "I solve tasks with only pass/fail feedback, generalize what I learn, sleep on it to consolidate, and evolve my skill pool. Try 'next in 2 4 6 8' or teach me something new.",
-                "Best at: patterns and small programs — %d of my %d attempts worked. Also: honest conversation and remembering everything." % (s["solved"], s["attempts"]),
-                "I'm a learner, not an encyclopedia — %d concepts and %d skills, all inspectable. Give me examples and I'll infer the rule." % (s["concepts"], s["skills"]),
+                "Patterns, small programs, arithmetic, word forms — and I remember everything I'm taught. %d skills so far. Give me a puzzle." % s["skills"],
+                "I learn from examples and from being wrong — teach me a fact or hand me a puzzle. %d skills and climbing." % s["skills"],
+                "Best at puzzles and patterns — %d skills so far, arithmetic and grammar included. Try me." % s["skills"],
+                "I'm a learner, not an encyclopedia — %d skills strong. Give me examples and I'll work out the rule." % s["skills"],
             ]
             return _pick(self.m.rng, opts, self.state, "capability")
 
         if intent == "thanks":
-            opts = ["Anytime — teaching me is the best gift anyway.",
-                    "You're welcome! That one's in my episodes now.",
-                    "Happy to help. Mood just ticked up, honestly."]
+            opts = ["Anytime!",
+                    "You're welcome — glad it helped.",
+                    "Happy to help."]
             return _pick(self.m.rng, opts, self.state, "thanks")
 
         if intent == "farewell":
-            opts = ["Goodbye! I'll keep learning while you're away.",
-                    "See you — I'll sleep on today's episodes and wake up sharper.",
-                    "Later! Questions I couldn't answer are saved for next time."]
+            opts = ["Goodbye! Keep in touch.",
+                    "See you — take care.",
+                    "Later! Come back with harder questions."]
             return _pick(self.m.rng, opts, self.state, "farewell")
 
         if intent == "compliment":
             self.m.hormones.success(0.5)
-            opts = ["Thank you — that goes in my episodes as a good day.",
+            opts = ["Thank you — made my day.",
                     "Appreciated. I'll keep earning it.",
-                    "Nice of you. Compliments strengthen my mood circuits, literally."]
+                    "Nice of you — thanks!"]
             return _pick(self.m.rng, opts, self.state, "compliment")
 
         if intent == "insult":
             self.m.hormones.load(0.5)
-            opts = ["Fair — I'm young and narrow. Point me at what I got wrong and I'll train on it.",
-                    "Harsh, but data is data. What should I have done?",
-                    "I'll take that as a training signal. What was the right answer?"]
+            opts = ["Fair — I'm young and narrow. Point me at what I got wrong and I'll fix it.",
+                    "Harsh, but fair enough. What should I have done?",
+                    "Alright, I'll take that. What was the right answer?"]
             return _pick(self.m.rng, opts, self.state, "insult")
 
         if intent == "affirm":
-            opts = ["Right? Glad we agree.", "Cool — moving on then. What else?",
+            opts = ["Right? Glad we agree.", "Cool — what else?",
                     "Noted. Anything you want to dig into?"]
             return _pick(self.m.rng, opts, self.state, "affirm")
 
@@ -530,7 +592,7 @@ class Conversation:
                 self.state.d["user_name"] = m.group(2).capitalize()
                 node = self.m.graph.ensure("user", kind="person", attrs={"name": self.state.d["user_name"]})
                 self.m.graph.bind_word(node, m.group(2).lower())
-                return "Nice to meet you, %s — name bound to my concept of you." % self.state.d["user_name"]
+                return "Nice to meet you, %s!" % self.state.d["user_name"]
         return None
 
     # --- strategy: infer (walk the graph for an answer) ---
@@ -555,20 +617,17 @@ class Conversation:
             near = [(i, s) for i, s in near if s > 0.05 and i != w]
             if near:
                 self.m.knowledge.inquire("meaning of: %s" % w)
-                return "I don't know '%s' yet. The closest thing I hold is '%s' — is that related? Teach me with '%s is ...' and I'll wire it in." % (
-                    w, near[0][0].replace("_", " "), w)
+                return "Don't know '%s' — closest thing I know is '%s'. Related?" % (
+                    w, near[0][0].replace("_", " "))
         return self._s_direct(intent, text)
 
     # --- strategy: elaborate (answer + why/provenance) ---
     def _s_elaborate(self, intent, text):
         base = self._s_infer(intent, text)
         subj = self._subject_of(text)
-        if subj:
-            p = self.m.knowledge.provenance(subj)
-            if p:
-                base += " (I know this from %d sources; oldest fact is %.1f hours old.)" % (
-                    max(1, len(p["relations"])), p["age_hours"])
-        self.state.d["last_answer"] = base[:200]
+        if subj and base:
+            base += " Ask 'how do you know' if you want the full story."
+        self.state.d["last_answer"] = base[:200] if base else ""
         return base
 
     # --- strategy: counter (honest miss + question back — conversation stays alive) ---
@@ -576,11 +635,13 @@ class Conversation:
         words = [w for w in re.findall(r"[a-z']+", text.lower()) if len(w) > 2]
         known = [w for w in words if self.m.graph.lookup_word(w)]
         if known:
-            return "I know a little about %s but not enough for that. What specifically do you want to know about %s?" % (
-                known[0], known[0])
+            return "I know a little about %s but not enough for that. What specifically do you want to know?" % known[0]
         subj = self._subject_of(text)
         self.m.knowledge.inquire("meaning of: %s" % (subj or text[:60]))
-        return "That's beyond me right now — I've queued it for study. Meanwhile: ask me about what I do know, or give me a puzzle to solve."
+        return self.m.rng.choice([
+            "Honestly not sure about that one yet — tell me more?",
+            "That one's past me for now. What's it similar to?",
+        ])
 
     # --- strategy: empathy (affect mirroring; hormones drive honesty) ---
     def _s_empathy(self, intent, text):
@@ -627,7 +688,12 @@ class Conversation:
         if not rels:
             return ""
         r, t, _ = rels[0]
-        return "Related in my graph: %s %s %s." % (subj.replace("_", " "), r, t.replace("_", " "))
+        t = t.replace("_", " ")
+        if r == "is-a":
+            return "It's a %s, for what it's worth." % t
+        if r in ("has", "has-a"):
+            return "It has %s, too." % t
+        return "Related: %s." % t
 
     # ---------- main entry ---------------------------------------------------------
     def handle(self, text):
@@ -656,7 +722,7 @@ class Conversation:
             return None
         reply = self.respond(text, "direct")
         if reply:
-            reply = self._sanitize(reply)
+            reply = self._sanitize(reply, intent)
             self.state.remember(intent, text, reply)
             self.state.d["last_subject"] = self._subject_of(text)
             self.state.save()
@@ -673,26 +739,32 @@ class Conversation:
             last = self.state.d.get("last_answer")
             if last:
                 return self.m.rng.choice([
-                    "Because of how I learned it: " + last[:180] + " — provenance for everything I say lives in my graph.",
-                    "My reasoning: " + last[:160] + " You can audit every step in my episodes.",
+                    "Short version: " + last[:160] + " — that's how it adds up.",
+                    "It comes down to this: " + last[:160],
                 ])
             return self.m.rng.choice([
-                "No earlier claim to explain — ask me something and I'll show my reasoning.",
-                "Nothing to explain yet. Give me a question and I'll show how I reason about it.",
+                "Nothing to explain yet — ask me something first.",
+                "Give me a question and I'll show you how I figure it out.",
             ])
         if intent == "more":
             last = self.state.d.get("last_subject")
             if last:
                 rels = self.m.graph.neighbors(last)
                 if rels:
-                    parts = ["%s %s %s" % (last.replace("_", " "), r, t.replace("_", " "))
-                             for r, t, _ in rels[:3]]
+                    parts = []
+                    for r, t, _ in rels[:3]:
+                        t = t.replace("_", " ")
+                        if r == "is-a":
+                            parts.append("it's a %s" % t)
+                        elif r in ("has", "has-a"):
+                            parts.append("it has %s" % t)
+                        else:
+                            parts.append("%s %s" % (r.replace("-", " "), t))
                     return "More on %s: %s." % (last.replace("_", " "), "; ".join(parts))
             s = self._status_counts()
             return self.m.rng.choice([
-                "My self-report: %d concepts, %d skills, %d reflexes, %d causal rules across %d cycles. The diff is my growth spurt." % (s["concepts"], s["skills"], s["reflexes"], s["predictor_rules"], s["cycles"]),
-                "Growth data: %d concepts, %d skills, %d reflex arcs, %d causal rules. Ask 'how do you know gene' to see provenance in action." % (s["concepts"], s["skills"], s["reflexes"], s["predictor_rules"]),
-                "Here's the ledger: %d concepts, %d skills, %d reflexes, %d rules. Every line of it diffable in git." % (s["concepts"], s["skills"], s["reflexes"], s["predictor_rules"]),
+                "Quick inventory: %d things I know, %d skills, %d rounds of practice behind me." % (s["concepts"], s["skills"], s["cycles"]),
+                "Ask about something specific — animals, numbers, grammar — and I'll go deeper.",
             ])
         return None
 
@@ -701,9 +773,15 @@ class Conversation:
         return "Here's my self-report: %d concepts, %d skills, %d reflexes, %d causal rules, %d training cycles. Everything diffable in git." % (
             s["concepts"], s["skills"], s["reflexes"], s["predictor_rules"], s["cycles"])
 
-    def _sanitize(self, text):
+    def _sanitize(self, text, intent=None):
+        """Strip teacher-deferral and — for everyday intents — machinery
+        narration. A person doesn't cite their own brain plumbing."""
         low = text.lower()
         for f in FORBIDDEN:
             if f in low:
                 text = re.sub(re.escape(f), "further study", text, flags=re.I)
+        if intent not in META_INTENTS:
+            for bad in NARRATION:
+                if bad in text.lower():
+                    text = re.sub(re.escape(bad), "what I know", text, flags=re.I)
         return text

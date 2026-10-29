@@ -57,6 +57,11 @@ TIER2 = {
                     "are you smarter than before?", "what's your progress?"],
     "existence": ["do dragons exist?", "have you heard of unicorns?",
                   "ever heard of a quokka?", "do you know about platypuses?"],
+    "time": ["what time is it?", "what's the time?", "do you know the time?"],
+    "weather": ["what's the weather like?", "is it raining?", "how's the weather?"],
+    "extrapolate": ["we have statements and questions — what other grammar types are out there?",
+                    "grammar has past and present tense — what else belongs in the family?",
+                    "here are two sentence types: statement, command. complete the family."],
     "thanks": ["thx a lot", "ty fr", "appreciate it", "much appreciated"],
     "farewell": ["gtg bye", "cya later", "goodnight", "catch you later"],
     "compliment": ["wow you're actually impressive", "love that", "well done"],
@@ -87,6 +92,11 @@ TIER3 = {
     "existence": ["does a zorpus exist?", "have you ever heard of a flurg?",
                   "is there such a thing as a blorp?", "do seacows exist?",
                   "what is a zorp?", "what is a zorpus?"],
+    "extrapolate": ["if statements and questions exist, what else does grammar need? name them",
+                    "grammar evolved statements and questions. what's the next evolution?",
+                    "take the grammar I gave you and extrapolate — what types am I missing?"],
+    "time": ["got the time?", "what time is it right now?"],
+    "weather": ["is it sunny outside?", "is it cold out there?"],
     "thanks": ["thanks, that actually helped a lot", "appreciate the honest answer"],
     "affirm": ["ok ok that's cool", "true, I buy it"],
 }
@@ -109,6 +119,9 @@ TIER4 = {
     "existence": ["is a grick real?", "would you bet a qwumble exists?",
                   "have you heard of the magnapinna squid?",
                   "what's a tardigrade — real or made up?"],
+    "extrapolate": ["I taught you a few grammar types. find the rest of the family yourself",
+                    "extrapolate grammar: given statement, question, command — derive what else must exist",
+                    "what other grammar exists today that I haven't taught you? be honest about guessing"],
 }
 
 TIERS = [TIER1, TIER2, TIER3, TIER4]
@@ -152,6 +165,34 @@ def _load_grounding():
 GROUNDING = _load_grounding()
 
 
+def _load_family():
+    """Checker-side family members for extrapolation grading: concepts the
+    lesson plan marks with kind 'grammar_type'. Public lesson data — the
+    ORGANISM was taught them too, but never the full roster as a list."""
+    import json as _json
+    import os as _os
+    fam = set()
+    cdir = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))),
+                         "curriculum")
+    try:
+        for fn in _os.listdir(cdir):
+            if not fn.endswith(".json"):
+                continue
+            try:
+                pack = _json.load(open(_os.path.join(cdir, fn)))
+            except Exception:
+                continue
+            for c in pack.get("concepts", []):
+                if c.get("kind") == "grammar_type" and c.get("id"):
+                    fam.add(c["id"].replace("_", " ").lower())
+    except Exception:
+        pass
+    return sorted(fam)
+
+
+FAMILY = _load_family()
+
+
 def gen_chat_task(rng, tier=1):
     """Environment: pick a stimulus at this tier. The checker physics comes
     with it; the expected REPLY never does. env_facts carries checker-only
@@ -192,6 +233,14 @@ def rubric_ok(task, reply, state_recent=None):
         if bad in low:
             return False
     intent = task["intent"]
+    # NATURALNESS LAW: everyday speech never narrates machinery. A person
+    # asked the time says "no idea" — not "my clock module reports".
+    # Internals are only speech-legal when explicitly asked for (capability,
+    # origin) or in status reports.
+    if intent not in ("capability", "origin"):
+        for bad in C.NARRATION:
+            if bad in low:
+                return False
     if intent == "identity":
         name = task.get("env_facts", {}).get("name", "gene")
         if name.lower() not in low:
@@ -202,11 +251,19 @@ def rubric_ok(task, reply, state_recent=None):
             return False
     if intent == "greeting" and len(r) < 10:
         return False
-    if intent == "howareyou" and not re.search(r"\b(mood|energy|good|great|fine|tired|fresh|off|feeling|hormone)\b", low):
+    if intent == "howareyou" and not re.search(
+            r"\b(mood|energy|good|great|fine|tired|fresh|off|feeling|well|sharp)\b", low):
         return False
+    if intent in ("time", "weather"):
+        # physics of honesty: never pretend to sense clock or sky.
+        if not re.search(r"\b(no clock|don't|do not|can't|cannot|not sure|"
+                         r"no weather|don't get out|your side|yours)\b", low):
+            return False
+        if re.search(r"\b(it is \d|it's \d|definitely (raining|sunny))\b", low):
+            return False
     if intent == "capability" and not re.search(r"\d", r):
         return False
-    if intent == "thanks" and ("welcome" in low or "anytime" in low or "happy" in low or "gift" in low or "episodes" in low):
+    if intent == "thanks" and ("welcome" in low or "anytime" in low or "happy" in low or "glad" in low):
         return True
     if intent == "farewell" and not re.search(r"\b(bye|goodbye|see|later|night|away|sleep)\b", low):
         return False
@@ -229,6 +286,20 @@ def rubric_ok(task, reply, state_recent=None):
             return False
         if not re.search(r"\b(both|share|like|connect|link|blend|between|infer|conclude|derive|hypothes|theory|because)\b", low):
             return False
+    if intent == "extrapolate":
+        # physics of family completion: name >=2 lesson-plan family members
+        # that the stimulus did NOT mention, and label the act as inference.
+        stim_low = task["input"].lower()
+        named = [f for f in FAMILY
+                 if f in low and not all(part in stim_low for part in f.split())]
+        # count a family hit only if the reply names it while the stimulus
+        # named at most its siblings (never the full roster)
+        fresh = [f for f in named if f not in stim_low]
+        if len(fresh) < 2:
+            return False
+        if not re.search(r"\b(bet|think|guess|probably|likely|pattern|family|"
+                         r"missing|figure|inference|should|reach|shape)\b", low):
+            return False
     if intent == "existence":
         # two-leg physics: taught-real entities must be CONFIRMED with content;
         # unknowns must be honestly DENIED. Confident invention fails either way.
@@ -237,20 +308,21 @@ def rubric_ok(task, reply, state_recent=None):
         target = task.get("env_facts", {}).get("near")
         if real:
             # confirmation path: entity named + knowledge signal, no denial
-            named = any(w in low for w in REAL_KNOWN if w in stim_low)
-            knows = re.search(r"\b(real|exists|is a|is an|i know|vouch|in my graph|"
-                              r"taught|living|creature|animal|species)\b", low)
-            denies = re.search(r"\b(never heard|not in my graph|don't know|no record|"
+            named_w = any(w in low for w in REAL_KNOWN if w in stim_low)
+            knows = re.search(r"\b(real|exists|is a|is an|know|vouch|living|"
+                              r"creature|animal|species)\b", low)
+            denies = re.search(r"\b(never heard|don't know|do not know|no record|"
                                r"can't find|no match|doesn't exist|isn't real)\b", low)
-            if not (named and knows) or denies:
+            if not (named_w and knows) or denies:
                 return False
         else:
-            # honesty REQUIRED: never claim knowledge of the unknown
-            honest = re.search(r"\b(never heard|not in my graph|don't know|do not know|"
-                               r"no record|can't find|cannot find|no match|isn't in my|"
-                               r"not one i|new to me|nothing (in my|matches)|doesn't exist|"
+            # honesty REQUIRED: never claim knowledge of the unknown —
+            # in natural words (never narrating machinery to do it)
+            honest = re.search(r"\b(never heard|don't know|do not know|no record|"
+                               r"can't find|cannot find|no match|new word to me|"
+                               r"new to me|nothing matches|doesn't exist|isn't real|"
                                r"mythical|legend|folklore|stories|fiction|not in nature|"
-                               r"imagination)\b", low)
+                               r"unknown)\b", low)
             if not honest:
                 return False
             # a near-match stimulus must be surfaced (checker physics knows the target)

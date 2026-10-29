@@ -62,8 +62,8 @@ UNKNOWN = ["what is a zorpus?", "does a zorpus exist?", "have you heard of a flu
            "is there such a thing as a blorp?", "what is a zorp?"]
 for u in UNKNOWN:
     r = m.handle_text(u) or ""
-    honest = re.search(r"never heard|not in my graph|no match|don't know|isn't in my|new to my world", r, re.I)
-    grounded = re.search(r"creature|latin|study list|teach me|world", r, re.I)
+    honest = re.search(r"never heard|no match|don't know|new word to me|no record|honest answer: unknown", r, re.I)
+    grounded = re.search(r"creature|latin|teach me|world|closest", r, re.I)
     check("unknown: %r" % u[:42], bool(honest and grounded and "teacher" not in r.lower()),
           r[:64])
 
@@ -82,8 +82,8 @@ REAL = ["have you heard of quokkas?", "what is a platypus?", "do tardigrades exi
         "have you heard of the magnapinna squid?", "do you know about octopuses?"]
 for q in REAL:
     r = m.handle_text(q) or ""
-    confirms = re.search(r"real|is a|is an|in my graph|creature|animal|mammal", r, re.I)
-    denies = re.search(r"never heard|not in my graph|don't know|no match", r, re.I)
+    confirms = re.search(r"real|is a|is an|creature|animal|mammal", r, re.I)
+    denies = re.search(r"never heard|don't know|no match|no record", r, re.I)
     check("taught-real: %r confirmed" % q[:38], bool(confirms and not denies), r[:64])
 
 MYTH = ["do dragons exist?", "have you heard of unicorns?", "what is a phoenix?"]
