@@ -29,7 +29,7 @@ NARRATION = ("my graph", "in my graph", "my hormones", "hormone", "provenance",
              "diffable", "in git", "my episodes", "episodes", "vector", "hebbian",
              "causal rules", "reflex arcs", "my concepts", "concept graph",
              "study list", "curriculum", "tokenizer", "neural", "my training")
-META_INTENTS = {"capability", "origin", "status"}   # asked-about-internals: exempt
+META_INTENTS = {"capability", "origin", "status", "memory", "brain"}   # asked-about-internals: exempt
 
 GREET = re.compile(r"^(hi+|hello+|hey+|yo|sup|wass?up|what'?s up|howdy|greetings|"
                    r"good (morning|afternoon|evening)|hiya|ay+)\b[!,. ]*", re.I)
@@ -107,6 +107,15 @@ EXTRAPOLATE = re.compile(r"\b(what other|complete the (set|family)|full (set|fam
                          r"missing (types|members|forms|pieces)|find the rest|"
                          r"what else (should|must|does|belongs?|go|comes|would|can you find)|"
                          r"what else is (in|out)|evolve (this|it|grammar))\b", re.I)
+MEMORY_RE = re.compile(r"\b(when did you (learn|first)|how long have you known|"
+                        r"hardest failure|do you remember|what do you remember|"
+                        r"your memories|your long-term memory|what happened last "
+                        r"(cycle|sleep|night)|tell me about your day|about your day|"
+                        r"your proudest|best moment|favorite memory)\b", re.I)
+BRAIN_RE = re.compile(r"\b(brain|dopamine|serotonin|cortisol|norepinephrine|"
+                      r"oxytocin|gaba|endorphin|acetylcholine|glutamate|"
+                      r"neurotransmitter|neurons?|amygdala|hippocampus|cerebellum|"
+                      r"prefrontal|what are you feeling|your (feelings|emotions))\b", re.I)
 
 
 def classify(text):
@@ -136,6 +145,10 @@ def classify(text):
         return "identity"
     if REFLECTIVE.search(t):
         return "identity"
+    if MEMORY_RE.search(t):
+        return "memory"
+    if BRAIN_RE.search(t):
+        return "brain"
     if CAPABILITY.search(t):
         return "capability"
     if EXTRAPOLATE.search(t):
@@ -210,6 +223,13 @@ INTENT_EXEMPLARS = {
                     "extrapolate from what you know", "what grammar types am i missing",
                     "find the rest of the family", "what other sentence types exist",
                     "if statements and questions exist, what else"],
+    "memory": ["when did you learn about whales", "what was your hardest failure",
+               "do you remember learning that", "what happened last cycle",
+               "tell me about your day", "what do you remember",
+               "how long have you known about dogs", "what is your proudest memory"],
+    "brain": ["how is your brain", "what are you feeling right now",
+              "what are your dopamine levels", "show me your brain status",
+              "how do your emotions work", "which region is busiest"],
     "greeting": ["hi there", "hello friend", "hey you", "good morning",
                  "greetings", "yo", "hiya"],
     "thanks": ["thank you", "thanks a lot", "much appreciated", "thanks fr"],
@@ -508,6 +528,12 @@ class Conversation:
                 "Can't feel the weather from in here. Raining or shining with you?",
                 "Not sure about the weather — I don't get out much. What's it like out?",
             ], self.state, "weather")
+
+        if intent == "memory":
+            return self.m._handle_memory(text)
+
+        if intent == "brain":
+            return self.m._handle_brain(text)
 
         if intent == "extrapolate":
             from . import ingenuity

@@ -194,7 +194,75 @@ def analyze_unknown(mind, word):
 
 def _attrs_of(graph, cid):
     node = graph.get(cid) or graph.lookup_word(cid)
-    return (node or {}).get("attrs", {})
+    return _natural_attrs((node or {}).get("attrs", {}))
+
+
+# ---- speakability filters: machinery never becomes small talk ----------------
+BAD_KEYS = {"status", "def", "plural", "past", "ing", "third", "example",
+            "words", "count", "salience", "valence", "when_cycle",
+            "last_cycle", "outcome", "felt", "what", "regions", "weight",
+            "baseline", "number"}
+_MACH_PREFIX = ("verb_", "noun_", "adj_", "aux_", "mem_", "eq_", "reg_",
+                "int_", "sentence_", "grammar_")
+_MACH_IDS = {"ynq", "q2s", "neg", "cont", "fut", "imp", "excl", "plural",
+             "past", "present", "aux_be", "aux_do", "aux_will",
+             "contractions", "self", "knowledge", "teacher", "skill",
+             "success", "failure", "question", "experiment", "memory",
+             "conversation", "chat", "maths", "chem", "code", "list",
+             "sequence", "string", "number", "gene", "word", "idea"}
+# how a taught attribute sounds inside a spoken sentence
+CLAUSE = {
+    "sound": "you can hear it — %s",
+    "diet": "it eats %s",
+    "habitat": "it lives in %s",
+    "feature": "it's known for %s",
+    "trait": "it's %s",
+    "role": "its job is %s",
+    "used_for": "you use it for %s",
+    "effect": "it %s",
+    "state": "at room temperature it's %s",
+    "found_in": "you'll find it in %s",
+    "made_of": "it's made of %s",
+    "color": "it's %s",
+    "size": "it's %s",
+    "speed": "it moves %s",
+    "part": "you'll find it on %s",
+    "taste": "it tastes %s",
+    "capital": "its capital is %s",
+    "symbol": "its symbol is %s",
+    "height": "it rises %s",
+    "length": "it runs %s",
+    "formula": "its formula is %s",
+    "unit": "it's measured in %s",
+    "continent": "it sits in %s",
+    "language": "people there speak %s",
+    "flows": "it flows through %s",
+}
+
+
+def _speakable(nid):
+    """Machinery ids (ynq, aux_do, mem_whale, eq_speed...) never speak."""
+    s = str(nid)
+    return (not any(s.startswith(p) for p in _MACH_PREFIX)
+            and s not in _MACH_IDS and not s.isdigit())
+
+
+def _natural_attrs(attrs):
+    """Only attrs a person would say out loud."""
+    return {k: v for k, v in (attrs or {}).items()
+            if k not in BAD_KEYS and not k.startswith("ch_")
+            and " (inherited" not in k}
+
+
+def _clause(k, v):
+    """One taught fact as a spoken clause: 'it eats grass', never 'diet: grass'."""
+    tpl = CLAUSE.get(k)
+    if tpl:
+        try:
+            return tpl % str(v)
+        except Exception:
+            return str(v)
+    return str(v)
 
 
 def _name(graph, cid):
@@ -337,9 +405,13 @@ def _concepts_with_attrs(graph, min_attrs=2, limit=60):
     intent-name ghosts need not apply."""
     out = []
     for nid, n in graph.nodes.items():
-        if n["kind"] in ("meta", "domain"):
+        if n["kind"] in ("meta", "domain", "grammar_type", "verb_form",
+                         "noun_form", "adj_form", "memory", "equation",
+                         "scan", "word"):
             continue
-        real = {k: v for k, v in n["attrs"].items() if " (inherited" not in k}
+        if not _speakable(nid):
+            continue
+        real = _natural_attrs(n["attrs"])
         if len(real) >= min_attrs:
             out.append(nid)
         if len(out) >= limit:
@@ -351,24 +423,29 @@ def transitive_synthesis(graph, rng):
     """A is-a B, B has P, A lacks P => 'A is probably P' (derived, labeled)."""
     for _ in range(24):
         nid = rng.choice(list(graph.nodes.keys()))
+        if not _speakable(nid):
+            continue
         node = graph.nodes[nid]
         for rel, target, s in graph.neighbors(nid):
             if rel != "is-a":
                 continue
             t = graph.get(target)
-            if not t or not t["attrs"]:
+            if not t or not t["attrs"] or not _speakable(target):
                 continue
-            k = sorted(t["attrs"].keys())[rng.randrange(len(t["attrs"]))]
-            if k in ("def", "status", "plural", "example"):
-                continue          # definitions are shared by kind, not properties
+            nat = _natural_attrs(t["attrs"])
+            ks = [k for k in nat if k in CLAUSE]
+            if not ks:
+                continue
+            k = rng.choice(ks)
             if k in node["attrs"] or k in " ".join(node["attrs"].keys()):
                 continue
-            v = t["attrs"][k]
-            prop = k if v == "yes" else v
-            return ("%s is %s, and %s has that %s (%s) — so %s probably has it too. "
-                    "Worked that out myself." % (
+            v = nat[k]
+            if str(v).strip().lower() in ("yes", ""):
+                continue
+            return ("%s is %s — and there's the tell: %s, so I infer %s "
+                    "probably has that too. Worked that out myself." % (
                         _name(graph, nid), _name(graph, target),
-                        _name(graph, target), k, prop, _name(graph, nid)),
+                        _clause(k, v), _name(graph, nid)),
                     [nid, target])
     return None, None
 
@@ -383,14 +460,17 @@ def cross_analogy(graph, rng):
         if _shares_tree(graph, a, b):
             continue
         aa, ab = _attrs_of(graph, a), _attrs_of(graph, b)
-        shared = set(str(v).lower() for v in aa.values()) & set(str(v).lower() for v in ab.values())
+        shared = set(str(v).lower() for v in aa.values()
+                     if str(v).strip().lower() not in ("yes", "")
+                     and len(str(v)) > 2 and str(v).isalpha()) & \
+            set(str(v).lower() for v in ab.values()
+                if str(v).strip().lower() not in ("yes", "")
+                and len(str(v)) > 2 and str(v).isalpha())
         if shared:
             v = rng.choice(sorted(shared))
-            ka = [k for k, vv in aa.items() if str(vv).lower() == v][0]
-            kb = [k for k, vv in ab.items() if str(vv).lower() == v][0]
-            return ("Something I noticed: %s and %s share '%s' "
-                    "(%s / %s). Different corners, same thread — I found that myself." % (
-                        _name(graph, a), _name(graph, b), v, ka, kb), [a, b])
+            return ("Something I noticed: %s and %s both come back to '%s'. "
+                    "Different corners, same thread — I found that myself." % (
+                        _name(graph, a), _name(graph, b), v), [a, b])
     return None, None
 
 
@@ -412,15 +492,19 @@ def _ancestors(graph, cid):
 def hdc_blend(graph, rng):
     """Bundle two concept vectors; report what lives between them."""
     ids = [nid for nid, n in graph.nodes.items()
-           if n["kind"] not in ("meta", "domain") and len(nid) > 2
-           and n["attrs"]]
+           if n["kind"] not in ("meta", "domain", "grammar_type", "verb_form",
+                                "noun_form", "adj_form", "memory", "equation",
+                                "scan", "word")
+           and len(nid) > 2 and _speakable(nid)
+           and _natural_attrs(n["attrs"])]
     if len(ids) < 3:
         return None, None
     for _ in range(20):
         a, b = rng.sample(ids, 2)
         q = hdc.bundle([hdc.vec(a), hdc.vec(b)])
         near = graph.by_similarity_seedvec(q, topn=4)
-        near = [(n, s) for n, s in near if n not in (a, b)]
+        near = [(n, s) for n, s in near
+                if n not in (a, b) and _speakable(n)]
         if near and near[0][1] > 0.04:
             c = near[0][0]
             aa, ab, ac = _attrs_of(graph, a), _attrs_of(graph, b), _attrs_of(graph, c)
@@ -428,13 +512,11 @@ def hdc_blend(graph, rng):
             for cid, at in ((a, aa), (b, ab), (c, ac)):
                 if at:
                     k = sorted(at.keys())[0]
-                    v = at[k]
-                    bits.append("%s (%s)" % (cid.replace("_", " "),
-                                             ("%s %s" % (k, v)) if v != "yes" else k))
+                    bits.append("%s (%s)" % (_name(graph, cid), _clause(k, at[k])))
             if len(bits) >= 2:
                 return ("Put '%s' and '%s' side by side and what sits between them "
                         "is '%s'. %s — a junction I found, not a line I was given." % (
-                            a.replace("_", " "), b.replace("_", " "), c.replace("_", " "),
+                            _name(graph, a), _name(graph, b), _name(graph, c),
                             "; ".join(bits[:3])), [a, b, c])
     return None, None
 
@@ -473,16 +555,14 @@ def wonder(mind, rng):
     if sib:
         aa, ab = _attrs_of(g, cid), _attrs_of(g, sib)
         mine, theirs = set(aa.keys()), set(ab.keys())
-        gap = theirs - mine
+        gap = [k for k in (theirs - mine) if k in CLAUSE]
         if gap:
             k = sorted(gap)[0]
             v = ab[k]
-            return ("Honest wonder: %s is %s, and %s has that trait too — "
-                    "but nobody ever told me about %s's %s. Guess: probably "
-                    "something in between. Tell me the truth and I'll swap it "
-                    "for the guess." % (
-                        _name(g, cid), ("%s %s" % (k, v)) if v != "yes" else k,
-                        _name(g, sib), _name(g, cid), k))
+            return ("Honest wonder: %s and %s are family, and %s — but nobody "
+                    "ever told me that about %s. Guess: probably something in "
+                    "between. Tell me the truth and I'll swap it for the guess." % (
+                        _name(g, cid), _name(g, sib), _clause(k, v), _name(g, cid)))
     # fallback: unknown-word curiosity from the quiet hand-raise
     return ("What I wonder about most: the words I couldn't place today. "
             "Those gaps decide what I study next.")

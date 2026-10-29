@@ -240,6 +240,28 @@ def _compose(text):
     return {"intent": "compose", "words": words[:3]}
 
 
+def _chem(text):
+    """Match a chemistry ask: 'symbol of gold', 'what is the formula of
+    water', 'react hydrogen and oxygen', 'what does sodium and chlorine
+    make'. Returns intent dict or None."""
+    t = text.strip().rstrip("?!. ")
+    m = re.match(r"^(?:what(?:'s| is)\s+)?(?:the\s+)?symbol\s+(?:of\s+)?([a-z][a-z ]*)$", t, re.I)
+    if m:
+        return {"intent": "chem", "kind": "symbol", "name": m.group(1).strip().lower()}
+    m = re.match(r"^(?:what(?:'s| is)\s+)?(?:the\s+)?(?:chemical\s+)?formula\s+(?:of|for)\s+([a-z][a-z ]*)$", t, re.I)
+    if m:
+        return {"intent": "chem", "kind": "formula", "name": m.group(1).strip().lower()}
+    m = re.match(r"^(?:react|mix|combine)\s+(.+)$", t, re.I)
+    if m:
+        return {"intent": "chem", "kind": "react", "terms": m.group(1).strip().lower()}
+    m = re.match(r"^(?:what do you get (?:if|when) you (?:mix|react|combine|burn)|"
+                 r"what does ([a-z]+ and [a-z]+) make)\b", t, re.I)
+    if m:
+        return {"intent": "chem", "kind": "react",
+                "terms": m.group(1).strip().lower() if m.group(1) else t}
+    return None
+
+
 def parse(text):
     """Parse to an intent dict. Returns {"intent": ..., ...} — the caller
     (mind.py) decides how to act. This is parsing to *meaning*, not tokens."""
@@ -265,6 +287,9 @@ def parse(text):
     g = _grammar(t)
     if g:
         return g
+    ch = _chem(low)
+    if ch:
+        return ch
 
     m = re.match(r"^is\s+(?:a|an|the)\s+(.+?)\s+(?:a|an)\s+(.+?)\??$", low)
     if m:

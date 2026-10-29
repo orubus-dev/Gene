@@ -20,6 +20,8 @@ import os
 import random
 
 from . import dsl, genome, hdc, sent_world, taxonomy
+from . import chem as chem_world
+from . import maths as maths_world
 from .reflex import stimulus_key
 
 
@@ -156,6 +158,8 @@ GENERATORS = {
     "grammar": gen_grammar_task,
     "sentence": sent_world.gen_sentence_task,
     "taxonomy": gen_taxonomy_task,
+    "maths": maths_world.gen_maths_task,
+    "chem": chem_world.gen_chem_task,
 }
 
 
@@ -295,6 +299,8 @@ CANDIDATE_FN = {
     "grammar": grammar_pipeline_candidates,
     "sentence": sent_world.sentence_pipeline_candidates,
     "taxonomy": taxonomy.taxonomy_pipeline_candidates,
+    "maths": maths_world.maths_pipeline_candidates,
+    "chem": chem_world.chem_pipeline_candidates,
 }
 
 

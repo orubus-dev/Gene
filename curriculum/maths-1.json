@@ -1,0 +1,1468 @@
+{
+ "concepts": [
+  {
+   "id": "quantity",
+   "kind": "category",
+   "words": [
+    "quantity",
+    "quantities"
+   ],
+   "attrs": {
+    "def": "something that can be measured and counted"
+   },
+   "relations": [
+    {
+     "to": "entity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "equation",
+   "kind": "category",
+   "words": [
+    "equation",
+    "equations",
+    "formula"
+   ],
+   "attrs": {
+    "def": "a rule that says two expressions are equal"
+   },
+   "relations": [
+    {
+     "to": "idea",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "unit",
+   "kind": "category",
+   "words": [
+    "unit",
+    "units"
+   ],
+   "attrs": {
+    "def": "a standard amount used to measure a quantity"
+   },
+   "relations": [
+    {
+     "to": "entity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "speed",
+   "kind": "quantity",
+   "words": [
+    "speed"
+   ],
+   "attrs": {
+    "unit": "metres per second",
+    "used_for": "telling how fast something moves"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "velocity",
+   "kind": "quantity",
+   "words": [
+    "velocity"
+   ],
+   "attrs": {
+    "unit": "metres per second",
+    "role": "speed with a direction"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "distance",
+   "kind": "quantity",
+   "words": [
+    "distance"
+   ],
+   "attrs": {
+    "unit": "metre",
+    "used_for": "measuring how far apart things are"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "time",
+   "kind": "quantity",
+   "words": [
+    "time"
+   ],
+   "attrs": {
+    "unit": "second",
+    "used_for": "measuring how long things take"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "acceleration",
+   "kind": "quantity",
+   "words": [
+    "acceleration"
+   ],
+   "attrs": {
+    "unit": "metre per second squared",
+    "role": "how quickly speed changes"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mass",
+   "kind": "quantity",
+   "words": [
+    "mass"
+   ],
+   "attrs": {
+    "unit": "kilogram",
+    "role": "how much matter something holds"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "weight",
+   "kind": "quantity",
+   "words": [
+    "weight"
+   ],
+   "attrs": {
+    "unit": "newton",
+    "role": "the pull of gravity on a mass"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "force",
+   "kind": "quantity",
+   "words": [
+    "force"
+   ],
+   "attrs": {
+    "unit": "newton",
+    "role": "a push or a pull"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "momentum",
+   "kind": "quantity",
+   "words": [
+    "momentum"
+   ],
+   "attrs": {
+    "unit": "kilogram metre per second",
+    "role": "mass on the move"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "energy",
+   "kind": "quantity",
+   "words": [
+    "energy"
+   ],
+   "attrs": {
+    "unit": "joule",
+    "role": "the ability to do work"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "work",
+   "kind": "quantity",
+   "words": [
+    "work"
+   ],
+   "attrs": {
+    "unit": "joule",
+    "role": "force spent over a distance"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "power",
+   "kind": "quantity",
+   "words": [
+    "power"
+   ],
+   "attrs": {
+    "unit": "watt",
+    "role": "how fast work gets done"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pressure",
+   "kind": "quantity",
+   "words": [
+    "pressure"
+   ],
+   "attrs": {
+    "unit": "pascal",
+    "role": "force spread over an area"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "area",
+   "kind": "quantity",
+   "words": [
+    "area"
+   ],
+   "attrs": {
+    "unit": "square metre",
+    "used_for": "measuring a surface"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "volume",
+   "kind": "quantity",
+   "words": [
+    "volume"
+   ],
+   "attrs": {
+    "unit": "cubic metre",
+    "used_for": "measuring the space inside"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "density",
+   "kind": "quantity",
+   "words": [
+    "density"
+   ],
+   "attrs": {
+    "unit": "kilogram per cubic metre",
+    "role": "how tightly packed the mass is"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "current",
+   "kind": "quantity",
+   "words": [
+    "current"
+   ],
+   "attrs": {
+    "unit": "ampere",
+    "role": "electric charge on the move"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "voltage",
+   "kind": "quantity",
+   "words": [
+    "voltage"
+   ],
+   "attrs": {
+    "unit": "volt",
+    "role": "the push behind a current"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "resistance",
+   "kind": "quantity",
+   "words": [
+    "resistance"
+   ],
+   "attrs": {
+    "unit": "ohm",
+    "role": "how much a material fights the current"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "charge",
+   "kind": "quantity",
+   "words": [
+    "charge"
+   ],
+   "attrs": {
+    "unit": "coulomb",
+    "role": "the electric property of matter"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "temperature",
+   "kind": "quantity",
+   "words": [
+    "temperature"
+   ],
+   "attrs": {
+    "unit": "kelvin",
+    "role": "how hot something is"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "frequency",
+   "kind": "quantity",
+   "words": [
+    "frequency"
+   ],
+   "attrs": {
+    "unit": "hertz",
+    "role": "how often something repeats each second"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "wavelength",
+   "kind": "quantity",
+   "words": [
+    "wavelength"
+   ],
+   "attrs": {
+    "unit": "metre",
+    "role": "the span of one wave"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "height",
+   "kind": "quantity",
+   "words": [
+    "height"
+   ],
+   "attrs": {
+    "unit": "metre",
+    "used_for": "measuring how tall something is"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "heat",
+   "kind": "quantity",
+   "words": [
+    "heat"
+   ],
+   "attrs": {
+    "unit": "joule",
+    "role": "energy moving from hot to cold"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "metre",
+   "kind": "entity",
+   "words": [
+    "metre"
+   ],
+   "attrs": {
+    "symbol": "m",
+    "used_for": "measuring length"
+   },
+   "relations": [
+    {
+     "to": "unit",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "second",
+   "kind": "entity",
+   "words": [
+    "second"
+   ],
+   "attrs": {
+    "symbol": "s",
+    "used_for": "measuring time"
+   },
+   "relations": [
+    {
+     "to": "unit",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "kilogram",
+   "kind": "entity",
+   "words": [
+    "kilogram"
+   ],
+   "attrs": {
+    "symbol": "kg",
+    "used_for": "measuring mass"
+   },
+   "relations": [
+    {
+     "to": "unit",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "newton",
+   "kind": "entity",
+   "words": [
+    "newton"
+   ],
+   "attrs": {
+    "symbol": "N",
+    "used_for": "measuring force"
+   },
+   "relations": [
+    {
+     "to": "unit",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "joule",
+   "kind": "entity",
+   "words": [
+    "joule"
+   ],
+   "attrs": {
+    "symbol": "J",
+    "used_for": "measuring energy"
+   },
+   "relations": [
+    {
+     "to": "unit",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "watt",
+   "kind": "entity",
+   "words": [
+    "watt"
+   ],
+   "attrs": {
+    "symbol": "W",
+    "used_for": "measuring power"
+   },
+   "relations": [
+    {
+     "to": "unit",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pascal",
+   "kind": "entity",
+   "words": [
+    "pascal"
+   ],
+   "attrs": {
+    "symbol": "Pa",
+    "used_for": "measuring pressure"
+   },
+   "relations": [
+    {
+     "to": "unit",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ampere",
+   "kind": "entity",
+   "words": [
+    "ampere"
+   ],
+   "attrs": {
+    "symbol": "A",
+    "used_for": "measuring current"
+   },
+   "relations": [
+    {
+     "to": "unit",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "volt",
+   "kind": "entity",
+   "words": [
+    "volt"
+   ],
+   "attrs": {
+    "symbol": "V",
+    "used_for": "measuring voltage"
+   },
+   "relations": [
+    {
+     "to": "unit",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ohm",
+   "kind": "entity",
+   "words": [
+    "ohm"
+   ],
+   "attrs": {
+    "symbol": "Ω",
+    "used_for": "measuring resistance"
+   },
+   "relations": [
+    {
+     "to": "unit",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hertz",
+   "kind": "entity",
+   "words": [
+    "hertz"
+   ],
+   "attrs": {
+    "symbol": "Hz",
+    "used_for": "measuring frequency"
+   },
+   "relations": [
+    {
+     "to": "unit",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "kelvin",
+   "kind": "entity",
+   "words": [
+    "kelvin"
+   ],
+   "attrs": {
+    "symbol": "K",
+    "used_for": "measuring temperature"
+   },
+   "relations": [
+    {
+     "to": "unit",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_sum",
+   "kind": "equation",
+   "words": [
+    "sum formula",
+    "sum equation"
+   ],
+   "attrs": {
+    "formula": "c=a+b",
+    "subject": "arithmetic",
+    "gives": "the total of two numbers"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_diff",
+   "kind": "equation",
+   "words": [
+    "difference formula",
+    "difference equation"
+   ],
+   "attrs": {
+    "formula": "c=a-b",
+    "subject": "arithmetic",
+    "gives": "what is left after taking away"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_prod",
+   "kind": "equation",
+   "words": [
+    "product formula",
+    "product equation"
+   ],
+   "attrs": {
+    "formula": "c=a*b",
+    "subject": "arithmetic",
+    "gives": "one number taken many times"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_quot",
+   "kind": "equation",
+   "words": [
+    "quotient formula",
+    "quotient equation"
+   ],
+   "attrs": {
+    "formula": "c=a/b",
+    "subject": "arithmetic",
+    "gives": "one number shared by another"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_square",
+   "kind": "equation",
+   "words": [
+    "square formula",
+    "square equation"
+   ],
+   "attrs": {
+    "formula": "c=a^2",
+    "subject": "algebra",
+    "gives": "a number times itself"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_speed",
+   "kind": "equation",
+   "words": [
+    "speed formula",
+    "speed equation"
+   ],
+   "attrs": {
+    "formula": "v=d/t",
+    "subject": "kinematics",
+    "gives": "speed from distance over time"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_kin1",
+   "kind": "equation",
+   "words": [
+    "velocity formula",
+    "velocity equation"
+   ],
+   "attrs": {
+    "formula": "v=u+a*t",
+    "subject": "kinematics",
+    "gives": "final velocity from starting speed"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_kin2",
+   "kind": "equation",
+   "words": [
+    "distance formula",
+    "distance equation"
+   ],
+   "attrs": {
+    "formula": "s=u*t+0.5*a*t^2",
+    "subject": "kinematics",
+    "gives": "how far you travel while speeding up"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_accel",
+   "kind": "equation",
+   "words": [
+    "acceleration formula",
+    "acceleration equation"
+   ],
+   "attrs": {
+    "formula": "a=(v-u)/t",
+    "subject": "kinematics",
+    "gives": "how fast the speed changed"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_newton",
+   "kind": "equation",
+   "words": [
+    "force formula",
+    "force equation"
+   ],
+   "attrs": {
+    "formula": "f=m*a",
+    "subject": "mechanics",
+    "gives": "newton's second law"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_weight",
+   "kind": "equation",
+   "words": [
+    "weight formula",
+    "weight equation"
+   ],
+   "attrs": {
+    "formula": "w=m*g",
+    "subject": "mechanics",
+    "gives": "gravity's pull on a mass"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_momentum",
+   "kind": "equation",
+   "words": [
+    "momentum formula",
+    "momentum equation"
+   ],
+   "attrs": {
+    "formula": "p=m*v",
+    "subject": "mechanics",
+    "gives": "mass on the move"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_density",
+   "kind": "equation",
+   "words": [
+    "density formula",
+    "density equation"
+   ],
+   "attrs": {
+    "formula": "d=m/v",
+    "subject": "matter",
+    "gives": "mass squeezed into a volume"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_pressure",
+   "kind": "equation",
+   "words": [
+    "pressure formula",
+    "pressure equation"
+   ],
+   "attrs": {
+    "formula": "p=f/a",
+    "subject": "mechanics",
+    "gives": "force spread over an area"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_work",
+   "kind": "equation",
+   "words": [
+    "work formula",
+    "work equation"
+   ],
+   "attrs": {
+    "formula": "w=f*s",
+    "subject": "mechanics",
+    "gives": "force times the distance it moved"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_power",
+   "kind": "equation",
+   "words": [
+    "power formula",
+    "power equation"
+   ],
+   "attrs": {
+    "formula": "p=w/t",
+    "subject": "mechanics",
+    "gives": "work done each second"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_ke",
+   "kind": "equation",
+   "words": [
+    "kinetic energy formula",
+    "kinetic energy equation"
+   ],
+   "attrs": {
+    "formula": "e=0.5*m*v^2",
+    "subject": "energy",
+    "gives": "the energy of motion"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_pe",
+   "kind": "equation",
+   "words": [
+    "potential energy formula",
+    "potential energy equation"
+   ],
+   "attrs": {
+    "formula": "e=m*g*h",
+    "subject": "energy",
+    "gives": "the energy of height"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_ohm",
+   "kind": "equation",
+   "words": [
+    "ohm's law",
+    "ohm's law"
+   ],
+   "attrs": {
+    "formula": "v=i*r",
+    "subject": "electricity",
+    "gives": "voltage from current and resistance"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_epower",
+   "kind": "equation",
+   "words": [
+    "electric power formula",
+    "electric power equation"
+   ],
+   "attrs": {
+    "formula": "p=v*i",
+    "subject": "electricity",
+    "gives": "voltage times current"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_charge",
+   "kind": "equation",
+   "words": [
+    "charge formula",
+    "charge equation"
+   ],
+   "attrs": {
+    "formula": "q=i*t",
+    "subject": "electricity",
+    "gives": "current flowing for a time"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_wave",
+   "kind": "equation",
+   "words": [
+    "wave speed formula",
+    "wave speed equation"
+   ],
+   "attrs": {
+    "formula": "v=f*l",
+    "subject": "waves",
+    "gives": "frequency times wavelength"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_period",
+   "kind": "equation",
+   "words": [
+    "period formula",
+    "period equation"
+   ],
+   "attrs": {
+    "formula": "t=1/f",
+    "subject": "waves",
+    "gives": "one over the frequency"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_pythag",
+   "kind": "equation",
+   "words": [
+    "pythagoras theorem",
+    "pythagoras theorem"
+   ],
+   "attrs": {
+    "formula": "c^2=a^2+b^2",
+    "subject": "geometry",
+    "gives": "the longest side of a right triangle"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_area_rect",
+   "kind": "equation",
+   "words": [
+    "rectangle area formula",
+    "rectangle area equation"
+   ],
+   "attrs": {
+    "formula": "a=l*w",
+    "subject": "geometry",
+    "gives": "length times width"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_area_tri",
+   "kind": "equation",
+   "words": [
+    "triangle area formula",
+    "triangle area equation"
+   ],
+   "attrs": {
+    "formula": "a=0.5*b*h",
+    "subject": "geometry",
+    "gives": "half the base times the height"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_area_circ",
+   "kind": "equation",
+   "words": [
+    "circle area formula",
+    "circle area equation"
+   ],
+   "attrs": {
+    "formula": "a=pi*r^2",
+    "subject": "geometry",
+    "gives": "pi times the radius squared"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_circum",
+   "kind": "equation",
+   "words": [
+    "circumference formula",
+    "circumference equation"
+   ],
+   "attrs": {
+    "formula": "c=2*pi*r",
+    "subject": "geometry",
+    "gives": "around the circle"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_vol_box",
+   "kind": "equation",
+   "words": [
+    "box volume formula",
+    "box volume equation"
+   ],
+   "attrs": {
+    "formula": "v=l*w*h",
+    "subject": "geometry",
+    "gives": "length, width and height together"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_avg",
+   "kind": "equation",
+   "words": [
+    "average formula",
+    "average equation"
+   ],
+   "attrs": {
+    "formula": "m=(a+b)/2",
+    "subject": "statistics",
+    "gives": "the middle of two numbers"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_f2c",
+   "kind": "equation",
+   "words": [
+    "fahrenheit formula",
+    "fahrenheit equation"
+   ],
+   "attrs": {
+    "formula": "f=9*c/5+32",
+    "subject": "conversion",
+    "gives": "celsius turned fahrenheit"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_einstein",
+   "kind": "equation",
+   "words": [
+    "mass-energy formula",
+    "mass-energy equation"
+   ],
+   "attrs": {
+    "formula": "e=m*c^2",
+    "subject": "relativity",
+    "gives": "mass is frozen energy"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_gas",
+   "kind": "equation",
+   "words": [
+    "gas law",
+    "gas law"
+   ],
+   "attrs": {
+    "formula": "n=p*v/(r*t)",
+    "subject": "thermodynamics",
+    "gives": "moles of gas from pressure and volume"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_grav",
+   "kind": "equation",
+   "words": [
+    "gravity formula",
+    "gravity equation"
+   ],
+   "attrs": {
+    "formula": "f=g*m*n/(d^2)",
+    "subject": "mechanics",
+    "gives": "the pull between two masses"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_hooke",
+   "kind": "equation",
+   "words": [
+    "spring formula",
+    "spring equation"
+   ],
+   "attrs": {
+    "formula": "f=k*x",
+    "subject": "mechanics",
+    "gives": "a spring fights twice as hard"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_photon",
+   "kind": "equation",
+   "words": [
+    "photon energy formula",
+    "photon energy equation"
+   ],
+   "attrs": {
+    "formula": "e=h*f",
+    "subject": "quantum",
+    "gives": "light's energy in its frequency"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eq_fall",
+   "kind": "equation",
+   "words": [
+    "fall speed formula",
+    "fall speed equation"
+   ],
+   "attrs": {
+    "formula": "v=sqrt(2*g*h)",
+    "subject": "kinematics",
+    "gives": "how fast after falling from a height"
+   },
+   "relations": [
+    {
+     "to": "equation",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "commutative_law",
+   "kind": "entity",
+   "words": [
+    "commutative law"
+   ],
+   "attrs": {
+    "statement": "a*b equals b*a — order does not matter in multiplication"
+   }
+  },
+  {
+   "id": "associative_law",
+   "kind": "entity",
+   "words": [
+    "associative law"
+   ],
+   "attrs": {
+    "statement": "(a+b)+c equals a+(b+c) — grouping does not change a sum"
+   }
+  },
+  {
+   "id": "distributive_law",
+   "kind": "entity",
+   "words": [
+    "distributive law"
+   ],
+   "attrs": {
+    "statement": "a*(b+c) equals a*b+a*c — multiplication spreads over addition"
+   }
+  },
+  {
+   "id": "identity_law",
+   "kind": "entity",
+   "words": [
+    "identity law"
+   ],
+   "attrs": {
+    "statement": "anything plus zero is itself; anything times one is itself"
+   }
+  },
+  {
+   "id": "zero_law",
+   "kind": "entity",
+   "words": [
+    "zero law"
+   ],
+   "attrs": {
+    "statement": "anything times zero is zero"
+   }
+  },
+  {
+   "id": "inverse_law",
+   "kind": "entity",
+   "words": [
+    "inverse law"
+   ],
+   "attrs": {
+    "statement": "adding then subtracting the same number brings you back"
+   }
+  },
+  {
+   "id": "pythagoras",
+   "kind": "entity",
+   "words": [
+    "pythagoras"
+   ],
+   "attrs": {
+    "statement": "in a right triangle the square of the longest side equals the squares of the other two added"
+   }
+  },
+  {
+   "id": "order_of_operations",
+   "kind": "entity",
+   "words": [
+    "order of operations"
+   ],
+   "attrs": {
+    "statement": "multiplication before addition, brackets first"
+   }
+  }
+ ]
+}

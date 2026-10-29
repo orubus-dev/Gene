@@ -1,253 +1,285 @@
 {
- "attempts": 3843138,
- "solved": 312437,
+ "attempts": 8342204,
+ "solved": 824894,
  "by_domain": {
   "chat": {
-   "tasks": 41370,
-   "solved": 39292
+   "tasks": 50370,
+   "solved": 46325
   },
   "sequence": {
-   "tasks": 10163,
-   "solved": 6124
+   "tasks": 24216,
+   "solved": 14213
   },
   "list": {
-   "tasks": 10090,
-   "solved": 9727
+   "tasks": 24095,
+   "solved": 23331
   },
   "number": {
-   "tasks": 10004,
-   "solved": 10004
+   "tasks": 23916,
+   "solved": 23916
   },
   "string": {
-   "tasks": 10143,
-   "solved": 10143
+   "tasks": 24200,
+   "solved": 24200
   },
   "code": {
-   "tasks": 10095,
-   "solved": 5290
+   "tasks": 24068,
+   "solved": 11762
   },
   "grammar": {
-   "tasks": 56850,
-   "solved": 56525
+   "tasks": 103293,
+   "solved": 102968
   },
   "sentence": {
-   "tasks": 111708,
-   "solved": 111592
+   "tasks": 158493,
+   "solved": 158273
   },
   "taxonomy": {
-   "tasks": 71527,
-   "solved": 60245
+   "tasks": 211256,
+   "solved": 175054
+  },
+  "maths": {
+   "tasks": 165017,
+   "solved": 165016
+  },
+  "chem": {
+   "tasks": 86632,
+   "solved": 76341
   }
  },
- "cycles": 108,
+ "cycles": 169,
  "history": [
   {
-   "cycle": 79,
+   "cycle": 140,
    "rates": {
-    "chat": 1.0
+    "string": 1.0,
+    "sequence": 0.422,
+    "code": 0.422,
+    "list": 0.96,
+    "number": 1.0
    }
   },
   {
-   "cycle": 80,
+   "cycle": 141,
    "rates": {
+    "maths": 1.0,
+    "taxonomy": 0.818,
+    "sentence": 0.996
+   }
+  },
+  {
+   "cycle": 142,
+   "rates": {
+    "chem": 0.877,
     "grammar": 1.0,
-    "sentence": 1.0
+    "maths": 1.0
    }
   },
   {
-   "cycle": 81,
+   "cycle": 143,
    "rates": {
-    "chat": 0.999
+    "taxonomy": 0.805,
+    "maths": 1.0
    }
   },
   {
-   "cycle": 82,
+   "cycle": 144,
    "rates": {
-    "taxonomy": 0.842,
-    "sentence": 0.999
+    "maths": 1.0,
+    "taxonomy": 0.827
    }
   },
   {
-   "cycle": 83,
+   "cycle": 145,
    "rates": {
-    "chat": 1.0
+    "chat": 0.821
    }
   },
   {
-   "cycle": 84,
+   "cycle": 146,
    "rates": {
+    "chem": 0.88,
+    "taxonomy": 0.818
+   }
+  },
+  {
+   "cycle": 147,
+   "rates": {
+    "sentence": 0.996,
     "grammar": 1.0,
-    "sentence": 0.999,
-    "taxonomy": 0.845
+    "maths": 1.0
    }
   },
   {
-   "cycle": 85,
+   "cycle": 148,
    "rates": {
-    "chat": 0.999
+    "maths": 1.0,
+    "chem": 0.878,
+    "taxonomy": 0.812
    }
   },
   {
-   "cycle": 86,
+   "cycle": 149,
    "rates": {
-    "list": 1.0,
+    "list": 0.954,
     "number": 1.0,
-    "code": 0.628,
-    "sequence": 0.651,
+    "sequence": 0.584,
+    "code": 0.408,
     "string": 1.0
    }
   },
   {
-   "cycle": 87,
+   "cycle": 150,
    "rates": {
-    "sentence": 0.999,
-    "taxonomy": 0.846
+    "taxonomy": 0.817,
+    "sentence": 0.998,
+    "maths": 1.0
    }
   },
   {
-   "cycle": 88,
+   "cycle": 151,
    "rates": {
-    "chat": 0.848
+    "chat": 0.761
    }
   },
   {
-   "cycle": 89,
+   "cycle": 152,
    "rates": {
-    "chat": 0.792
-   }
-  },
-  {
-   "cycle": 90,
-   "rates": {
-    "chat": 0.818
-   }
-  },
-  {
-   "cycle": 91,
-   "rates": {
-    "chat": 0.75
-   }
-  },
-  {
-   "cycle": 92,
-   "rates": {
-    "chat": 0.831
-   }
-  },
-  {
-   "cycle": 93,
-   "rates": {
-    "chat": 0.787
-   }
-  },
-  {
-   "cycle": 94,
-   "rates": {
-    "chat": 0.798
-   }
-  },
-  {
-   "cycle": 95,
-   "rates": {
-    "chat": 0.721
-   }
-  },
-  {
-   "cycle": 96,
-   "rates": {
-    "sentence": 0.999,
-    "grammar": 1.0
-   }
-  },
-  {
-   "cycle": 97,
-   "rates": {
-    "sentence": 0.999,
-    "taxonomy": 0.839
-   }
-  },
-  {
-   "cycle": 98,
-   "rates": {
+    "chem": 0.88,
     "grammar": 1.0,
-    "sentence": 0.999,
-    "taxonomy": 0.842
+    "maths": 1.0
    }
   },
   {
-   "cycle": 99,
+   "cycle": 153,
    "rates": {
-    "code": 0.404,
-    "number": 1.0,
-    "string": 1.0,
-    "sequence": 0.497,
-    "list": 0.96
+    "maths": 1.0,
+    "taxonomy": 0.821
    }
   },
   {
-   "cycle": 100,
+   "cycle": 154,
+   "rates": {
+    "maths": 1.0,
+    "taxonomy": 0.819
+   }
+  },
+  {
+   "cycle": 155,
+   "rates": {
+    "chem": 0.885,
+    "taxonomy": 0.816
+   }
+  },
+  {
+   "cycle": 156,
+   "rates": {
+    "sentence": 0.997,
+    "grammar": 1.0,
+    "maths": 1.0
+   }
+  },
+  {
+   "cycle": 157,
+   "rates": {
+    "chem": 0.873,
+    "taxonomy": 0.82,
+    "maths": 1.0
+   }
+  },
+  {
+   "cycle": 158,
+   "rates": {
+    "list": 0.963,
+    "string": 1.0,
+    "number": 1.0,
+    "code": 0.395,
+    "sequence": 0.521
+   }
+  },
+  {
+   "cycle": 159,
+   "rates": {
+    "taxonomy": 0.812,
+    "maths": 1.0,
+    "sentence": 0.996
+   }
+  },
+  {
+   "cycle": 160,
+   "rates": {
+    "chem": 0.877,
+    "grammar": 1.0,
+    "maths": 1.0
+   }
+  },
+  {
+   "cycle": 161,
+   "rates": {
+    "maths": 1.0,
+    "taxonomy": 0.814
+   }
+  },
+  {
+   "cycle": 162,
+   "rates": {
+    "taxonomy": 0.813,
+    "maths": 1.0
+   }
+  },
+  {
+   "cycle": 163,
+   "rates": {
+    "chem": 0.882,
+    "taxonomy": 0.819
+   }
+  },
+  {
+   "cycle": 164,
    "rates": {
     "sentence": 0.998,
-    "taxonomy": 0.85
-   }
-  },
-  {
-   "cycle": 101,
-   "rates": {
-    "sentence": 0.998,
+    "maths": 1.0,
     "grammar": 1.0
    }
   },
   {
-   "cycle": 102,
+   "cycle": 165,
    "rates": {
-    "sentence": 0.999,
-    "taxonomy": 0.83
+    "maths": 1.0,
+    "chem": 0.877,
+    "taxonomy": 0.826
    }
   },
   {
-   "cycle": 103,
+   "cycle": 166,
    "rates": {
-    "taxonomy": 0.846,
-    "grammar": 1.0,
-    "sentence": 0.999
-   }
-  },
-  {
-   "cycle": 104,
-   "rates": {
-    "number": 1.0,
-    "list": 0.955,
     "string": 1.0,
-    "sequence": 0.654,
-    "code": 0.404
+    "list": 0.964,
+    "number": 1.0,
+    "sequence": 0.624,
+    "code": 0.408
    }
   },
   {
-   "cycle": 105,
+   "cycle": 167,
    "rates": {
-    "taxonomy": 0.836,
-    "sentence": 0.999
+    "maths": 1.0,
+    "sentence": 0.998,
+    "taxonomy": 0.82
    }
   },
   {
-   "cycle": 106,
+   "cycle": 168,
    "rates": {
-    "sentence": 0.999,
-    "grammar": 1.0
+    "chem": 0.882,
+    "grammar": 1.0,
+    "maths": 1.0
    }
   },
   {
-   "cycle": 107,
+   "cycle": 169,
    "rates": {
-    "sentence": 1.0,
-    "taxonomy": 0.835
-   }
-  },
-  {
-   "cycle": 108,
-   "rates": {
-    "chat": 0.792
+    "chat": 0.758
    }
   }
  ],

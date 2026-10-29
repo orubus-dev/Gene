@@ -62,6 +62,10 @@ TIER2 = {
     "extrapolate": ["we have statements and questions — what other grammar types are out there?",
                     "grammar has past and present tense — what else belongs in the family?",
                     "here are two sentence types: statement, command. complete the family."],
+    "memory": ["when did you learn about whales?", "do you remember what you learned last cycle?",
+               "what was your hardest failure?", "do you remember dogs?"],
+    "brain": ["how is your brain doing?", "what are you feeling right now?",
+              "what are your dopamine levels?"],
     "thanks": ["thx a lot", "ty fr", "appreciate it", "much appreciated"],
     "farewell": ["gtg bye", "cya later", "goodnight", "catch you later"],
     "compliment": ["wow you're actually impressive", "love that", "well done"],
@@ -97,6 +101,12 @@ TIER3 = {
                     "take the grammar I gave you and extrapolate — what types am I missing?"],
     "time": ["got the time?", "what time is it right now?"],
     "weather": ["is it sunny outside?", "is it cold out there?"],
+    "memory": ["tell me about your day — what happened in your last sleep cycle?",
+               "do you remember learning about octopuses? when was that?",
+               "what do you remember from yesterday?"],
+    "brain": ["give me a brain status — what's lighting up?",
+               "which neurotransmitter is loudest right now?",
+               "walk me through how your emotions work"],
     "thanks": ["thanks, that actually helped a lot", "appreciate the honest answer"],
     "affirm": ["ok ok that's cool", "true, I buy it"],
 }
@@ -119,6 +129,12 @@ TIER4 = {
     "existence": ["is a grick real?", "would you bet a qwumble exists?",
                   "have you heard of the magnapinna squid?",
                   "what's a tardigrade — real or made up?"],
+    "memory": ["what's your proudest memory and why?",
+               "do you remember failing at something hard? tell me about it",
+               "what do you remember from your first hundred cycles?"],
+    "brain": ["if your brain is real, prove it — what's happening in there right now?",
+               "which regions are busiest after a training block, and what do they do?",
+               "what's the chemistry behind your mood right now?"],
     "extrapolate": ["I taught you a few grammar types. find the rest of the family yourself",
                     "extrapolate grammar: given statement, question, command — derive what else must exist",
                     "what other grammar exists today that I haven't taught you? be honest about guessing"],
@@ -197,6 +213,7 @@ def gen_chat_task(rng, tier=1):
     """Environment: pick a stimulus at this tier. The checker physics comes
     with it; the expected REPLY never does. env_facts carries checker-only
     physics (taught graph facts used for GRADING, never shown to the agent)."""
+    from . import brain as _BR
     pool = TIERS[min(tier, 4) - 1]
     intent = rng.choice(list(pool.keys()))
     text = rng.choice(pool[intent])
@@ -210,6 +227,13 @@ def gen_chat_task(rng, tier=1):
             if w in text.lower():
                 env["near"] = tgt
                 break
+    if intent == "memory":
+        import re as _re
+        tm = _re.search(r"(?:about|remember|of)\s+([a-z]+)", text.lower())
+        if tm:
+            env["topic"] = tm.group(1)
+    if intent == "brain":
+        env["chems"] = sorted(_BR.CHEM_BASELINE.keys())
     return {"domain": "chat", "tier": min(tier, 4), "intent": intent,
             "input": text, "prompt": "chat: " + text[:40], "env_facts": env}
 
@@ -237,7 +261,7 @@ def rubric_ok(task, reply, state_recent=None):
     # asked the time says "no idea" — not "my clock module reports".
     # Internals are only speech-legal when explicitly asked for (capability,
     # origin) or in status reports.
-    if intent not in ("capability", "origin"):
+    if intent not in ("capability", "origin", "memory", "brain"):
         for bad in C.NARRATION:
             if bad in low:
                 return False
@@ -338,6 +362,35 @@ def rubric_ok(task, reply, state_recent=None):
         nums = bool(re.search(r"\d", r))
         honest = re.search(r"\b(too early|just started|only just|not enough (data|cycles))\b", low)
         if not ((trend and nums) or honest):
+            return False
+    if intent == "memory":
+        # physics of an honest memory answer: reference the memory estate
+        # (cycle numbers, what stuck, honest miss) — never fake a recall
+        topic = task.get("env_facts", {}).get("topic")
+        signal = re.search(r"\b(cycle|remember|learned|learnt|memory|memories|"
+                           r"day|sleep|fail|sting|proud|kept|stuck|placed)\b", low)
+        if not signal:
+            return False
+        if topic and topic in task["input"].lower():
+            named = topic in low
+            honest = re.search(r"\b(no memory|don't remember|do not remember|"
+                               r"no record|can't place|cannot place|not sure|"
+                               r"nothing|didn't ring|did not ring|empty)\b", low)
+            if not (named or honest or re.search(r"\d", r)):
+                return False
+    if intent == "brain":
+        # physics: real chemistry/regions/feelings with real numbers; never
+        # deny having a brain state, never invent an untaught chemical
+        chems = task.get("env_facts", {}).get("chems", [])
+        hit = any(c in low for c in chems)
+        state_word = re.search(r"\b(brain|region|tick|field|scan|feel|feeling|"
+                               r"emotion|mood|steady|chemistry|chemical|resting)\b", low)
+        if not (hit or state_word):
+            return False
+        if re.search(r"\b(no brain|don't have a brain|do not have a brain|"
+                     r"no feelings|no emotions|can't feel)\b", low):
+            return False
+        if not re.search(r"\d", r):
             return False
     if task["tier"] >= 3 and len(r) < 24:    # harder tiers need substance
         return False

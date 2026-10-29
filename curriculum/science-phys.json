@@ -1,0 +1,727 @@
+{
+ "concepts": [
+  {
+   "id": "physics_thing",
+   "kind": "category",
+   "words": [
+    "physics thing"
+   ],
+   "attrs": {
+    "def": "something physics studies — forces, energy, waves and fields"
+   },
+   "relations": [
+    {
+     "to": "entity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "force_type",
+   "kind": "category",
+   "words": [
+    "force type"
+   ],
+   "attrs": {
+    "def": "a kind of push or pull"
+   },
+   "relations": [
+    {
+     "to": "physics_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "energy_type",
+   "kind": "category",
+   "words": [
+    "energy type"
+   ],
+   "attrs": {
+    "def": "a form energy takes"
+   },
+   "relations": [
+    {
+     "to": "physics_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "wave_type",
+   "kind": "category",
+   "words": [
+    "wave type"
+   ],
+   "attrs": {
+    "def": "a ripple that carries energy"
+   },
+   "relations": [
+    {
+     "to": "physics_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "electric_thing",
+   "kind": "category",
+   "words": [
+    "electric thing"
+   ],
+   "attrs": {
+    "def": "something in the world of electricity and magnetism"
+   },
+   "relations": [
+    {
+     "to": "physics_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gravity",
+   "kind": "entity",
+   "words": [
+    "gravity"
+   ],
+   "attrs": {
+    "effect": "pulls everything toward everything, down toward earth's centre"
+   },
+   "relations": [
+    {
+     "to": "force_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "friction",
+   "kind": "entity",
+   "words": [
+    "friction"
+   ],
+   "attrs": {
+    "effect": "slows surfaces sliding past each other",
+    "trait": "a hidden brake"
+   },
+   "relations": [
+    {
+     "to": "force_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "magnetism",
+   "kind": "entity",
+   "words": [
+    "magnetism"
+   ],
+   "attrs": {
+    "effect": "pulls iron and steers compasses"
+   },
+   "relations": [
+    {
+     "to": "force_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "tension",
+   "kind": "entity",
+   "words": [
+    "tension"
+   ],
+   "attrs": {
+    "role": "the pull along a rope"
+   },
+   "relations": [
+    {
+     "to": "force_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "buoyancy",
+   "kind": "entity",
+   "words": [
+    "buoyancy"
+   ],
+   "attrs": {
+    "effect": "pushes floating things up"
+   },
+   "relations": [
+    {
+     "to": "force_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "inertia",
+   "kind": "entity",
+   "words": [
+    "inertia"
+   ],
+   "attrs": {
+    "role": "things keep doing what they're doing until forced"
+   },
+   "relations": [
+    {
+     "to": "physics_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "momentum_conservation",
+   "kind": "entity",
+   "words": [
+    "momentum conservation"
+   ],
+   "attrs": {
+    "statement": "momentum never vanishes, only passes on"
+   },
+   "relations": [
+    {
+     "to": "physics_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "speed_of_light",
+   "kind": "entity",
+   "words": [
+    "speed of light"
+   ],
+   "attrs": {
+    "role": "the universe's speed limit — 300000 km per second"
+   },
+   "relations": [
+    {
+     "to": "physics_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "black_hole",
+   "kind": "entity",
+   "words": [
+    "black hole"
+   ],
+   "attrs": {
+    "effect": "gravity so strong not even light escapes"
+   },
+   "relations": [
+    {
+     "to": "physics_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "big_bang",
+   "kind": "entity",
+   "words": [
+    "big bang"
+   ],
+   "attrs": {
+    "role": "the start of everything, 13.8 billion years ago"
+   },
+   "relations": [
+    {
+     "to": "physics_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "kinetic_energy",
+   "kind": "energy_type",
+   "words": [
+    "kinetic energy"
+   ],
+   "attrs": {
+    "role": "the energy of motion"
+   },
+   "relations": [
+    {
+     "to": "energy_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "potential_energy",
+   "kind": "energy_type",
+   "words": [
+    "potential energy"
+   ],
+   "attrs": {
+    "role": "energy stored by position, like height"
+   },
+   "relations": [
+    {
+     "to": "energy_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "thermal_energy",
+   "kind": "energy_type",
+   "words": [
+    "thermal energy"
+   ],
+   "attrs": {
+    "role": "the jiggle of particles — heat"
+   },
+   "relations": [
+    {
+     "to": "energy_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "chemical_energy",
+   "kind": "energy_type",
+   "words": [
+    "chemical energy"
+   ],
+   "attrs": {
+    "role": "energy parked in bonds, like food and fuel"
+   },
+   "relations": [
+    {
+     "to": "energy_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "nuclear_energy",
+   "kind": "energy_type",
+   "words": [
+    "nuclear energy"
+   ],
+   "attrs": {
+    "role": "energy in the atom's heart"
+   },
+   "relations": [
+    {
+     "to": "energy_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "solar_energy",
+   "kind": "energy_type",
+   "words": [
+    "solar energy"
+   ],
+   "attrs": {
+    "role": "energy arriving from sunlight"
+   },
+   "relations": [
+    {
+     "to": "energy_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sound_energy",
+   "kind": "energy_type",
+   "words": [
+    "sound energy"
+   ],
+   "attrs": {
+    "role": "energy riding through air as vibrations"
+   },
+   "relations": [
+    {
+     "to": "energy_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "light_energy",
+   "kind": "energy_type",
+   "words": [
+    "light energy"
+   ],
+   "attrs": {
+    "role": "energy racing as light waves"
+   },
+   "relations": [
+    {
+     "to": "energy_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "conduction",
+   "kind": "energy_type",
+   "words": [
+    "conduction"
+   ],
+   "attrs": {
+    "effect": "heat travels through touching matter"
+   },
+   "relations": [
+    {
+     "to": "physics_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "convection",
+   "kind": "energy_type",
+   "words": [
+    "convection"
+   ],
+   "attrs": {
+    "effect": "heat rides on moving fluids"
+   },
+   "relations": [
+    {
+     "to": "physics_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "radiation",
+   "kind": "energy_type",
+   "words": [
+    "radiation"
+   ],
+   "attrs": {
+    "effect": "heat travels as waves, even through space"
+   },
+   "relations": [
+    {
+     "to": "physics_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "light",
+   "kind": "wave_type",
+   "words": [
+    "light"
+   ],
+   "attrs": {
+    "trait": "the fastest wave there is",
+    "effect": "lets eyes see"
+   },
+   "relations": [
+    {
+     "to": "wave_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sound",
+   "kind": "wave_type",
+   "words": [
+    "sound"
+   ],
+   "attrs": {
+    "trait": "needs air or water to travel",
+    "effect": "carries voices and music"
+   },
+   "relations": [
+    {
+     "to": "wave_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "echo",
+   "kind": "wave_type",
+   "words": [
+    "echo"
+   ],
+   "attrs": {
+    "effect": "sound bounces back from a wall"
+   },
+   "relations": [
+    {
+     "to": "wave_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "reflection",
+   "kind": "wave_type",
+   "words": [
+    "reflection"
+   ],
+   "attrs": {
+    "effect": "light bounces off mirrors"
+   },
+   "relations": [
+    {
+     "to": "wave_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "refraction",
+   "kind": "wave_type",
+   "words": [
+    "refraction"
+   ],
+   "attrs": {
+    "effect": "light bends entering water or glass"
+   },
+   "relations": [
+    {
+     "to": "wave_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "diffraction",
+   "kind": "wave_type",
+   "words": [
+    "diffraction"
+   ],
+   "attrs": {
+    "effect": "waves bend around corners"
+   },
+   "relations": [
+    {
+     "to": "wave_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "resonance",
+   "kind": "wave_type",
+   "words": [
+    "resonance"
+   ],
+   "attrs": {
+    "effect": "matching frequencies amplify a wave"
+   },
+   "relations": [
+    {
+     "to": "wave_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "doppler_effect",
+   "kind": "wave_type",
+   "words": [
+    "doppler effect"
+   ],
+   "attrs": {
+    "effect": "moving sirens change pitch"
+   },
+   "relations": [
+    {
+     "to": "wave_type",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "electric_current",
+   "kind": "electric_thing",
+   "words": [
+    "electric current"
+   ],
+   "attrs": {
+    "role": "charge flowing in a loop"
+   },
+   "relations": [
+    {
+     "to": "electric_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "circuit",
+   "kind": "electric_thing",
+   "words": [
+    "circuit"
+   ],
+   "attrs": {
+    "role": "the closed loop a current needs"
+   },
+   "relations": [
+    {
+     "to": "electric_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "battery",
+   "kind": "electric_thing",
+   "words": [
+    "battery"
+   ],
+   "attrs": {
+    "used_for": "storing chemical energy as electric push"
+   },
+   "relations": [
+    {
+     "to": "electric_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "magnet",
+   "kind": "electric_thing",
+   "words": [
+    "magnet"
+   ],
+   "attrs": {
+    "effect": "attracts iron, has a north and south pole"
+   },
+   "relations": [
+    {
+     "to": "electric_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "electromagnet",
+   "kind": "electric_thing",
+   "words": [
+    "electromagnet"
+   ],
+   "attrs": {
+    "role": "a magnet switched on by current"
+   },
+   "relations": [
+    {
+     "to": "electric_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "static_electricity",
+   "kind": "electric_thing",
+   "words": [
+    "static electricity"
+   ],
+   "attrs": {
+    "effect": "charge builds up then jumps — a zap"
+   },
+   "relations": [
+    {
+     "to": "electric_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lightning",
+   "kind": "electric_thing",
+   "words": [
+    "lightning"
+   ],
+   "attrs": {
+    "effect": "sky-sized static discharge"
+   },
+   "relations": [
+    {
+     "to": "electric_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "conductor",
+   "kind": "electric_thing",
+   "words": [
+    "conductor"
+   ],
+   "attrs": {
+    "role": "lets current pass easily, like copper"
+   },
+   "relations": [
+    {
+     "to": "electric_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "insulator",
+   "kind": "electric_thing",
+   "words": [
+    "insulator"
+   ],
+   "attrs": {
+    "role": "block current, like rubber"
+   },
+   "relations": [
+    {
+     "to": "electric_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "semiconductor",
+   "kind": "electric_thing",
+   "words": [
+    "semiconductor"
+   ],
+   "attrs": {
+    "role": "sometimes conducts — the heart of chips"
+   },
+   "relations": [
+    {
+     "to": "electric_thing",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "transformer",
+   "kind": "electric_thing",
+   "words": [
+    "transformer"
+   ],
+   "attrs": {
+    "used_for": "stepping voltage up or down"
+   },
+   "relations": [
+    {
+     "to": "electric_thing",
+     "rel": "is-a"
+    }
+   ]
+  }
+ ]
+}

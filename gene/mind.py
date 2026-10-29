@@ -7,11 +7,12 @@ diffable in git.
 import json
 import os
 import random
+import re
 import time
 
 from . import concepts, conversation, endocrine, evolution, hdc, immune, knowledge
 from . import linguistics, memory, reflex, sent_world, trainer, world
-from . import development, dsl, ingenuity, taxonomy
+from . import brain, development, dsl, ingenuity, taxonomy
 from . import genome as G
 
 
@@ -40,6 +41,15 @@ class Mind:
         # sentence/taxonomy motor ops read the graph too (same law)
         dsl.set_word_graph(self.graph)
         self.convo = conversation.Conversation(self)
+        # ---- the memory estate (five more classes beyond the tape) ----------
+        self.mem_lt = memory.LongTermEpisodic(self.graph)
+        self.valence = memory.EmotionalMemory(self._p("valence.json"))
+        self.working = memory.WorkingMemory(self._p("working.json"))
+        self.intents = memory.ProspectiveMemory(self._p("intentions.json"),
+                                                self.knowledge)
+        self.diary = memory.Narrative(self._p("autobiography.jsonl"))
+        self.brain = brain.Brain(self)
+        self._last_domains = []
         self.progress = self._load("progress.json", {"attempts": 0, "solved": 0,
                                                      "by_domain": {}, "cycles": 0,
                                                      "history": []})
@@ -53,9 +63,10 @@ class Mind:
                           ("teacher", "meta"), ("skill", "meta"),
                           ("success", "meta"), ("failure", "meta"),
                           ("question", "meta"), ("experiment", "meta"),
-                          ("conversation", "idea")):
+                          ("memory", "category"), ("conversation", "idea")):
             self.graph.ensure(cid, kind=kind)
-        for dom in ("number", "string", "list", "sequence", "code", "chat"):
+        for dom in ("number", "string", "list", "sequence", "code", "chat",
+                    "maths", "chem"):
             self.graph.ensure(dom, kind="domain")
 
     # ---------- persistence ----------------------------------------------------
@@ -84,6 +95,10 @@ class Mind:
         self._save("progress.json", self.progress)
         self._save("rng.json", {"seed": self.rng.randint(0, 2**30)})
         self._save("meta.json", self.meta)
+        self.brain.save()
+        self.valence.save()
+        self.working.save()
+        self.intents.save()
 
     # ---------- life cycles ------------------------------------------------------
     def train(self, budget=40, tier=1, domains=None):
@@ -108,6 +123,8 @@ class Mind:
             report["by_domain"].setdefault(dom, {"tasks": 0, "solved": 0})
             report["by_domain"][dom]["tasks"] += 1
             self.progress["attempts"] += len(outcome["attempts"])
+            self.valence.feel("win" if outcome["solved"] else "loss", dom)
+            self.brain.tick("success" if outcome["solved"] else "effort", [dom])
             self.episodes.record("task", {"domain": dom, "prompt": task["prompt"],
                                           "solved": outcome["solved"],
                                           "tries": len(outcome["attempts"]),
@@ -125,6 +142,7 @@ class Mind:
                         self.graph.relate(dom, "skill", strength=0.1)
             self.graph.hebbian(outcome["coactive"], amount=0.05)
         self.progress["cycles"] += 1
+        self._last_domains = list(report["by_domain"].keys())
         self._snapshot_history(report)
         self.genes = trainer.dedupe_genes(self.genes)
         # development: wins accrue; maturation gates may open
@@ -172,6 +190,9 @@ class Mind:
             report["by_intent"][it]["tasks"] += 1
             report["tiers"][str(task["tier"])] = report["tiers"].get(str(task["tier"]), 0) + 1
             self.progress["attempts"] += len(outcome["attempts"])
+            self.valence.feel("win" if outcome["solved"] else "loss", it, tag=str(it))
+            self.brain.tick("success" if outcome["solved"] else "failure",
+                            ["language", "speech"] if outcome["solved"] else ["attention"])
             self.episodes.record("chat_task", {"intent": it, "tier": task["tier"],
                                                "stimulus": task["input"][:80],
                                                "solved": outcome["solved"],
@@ -235,8 +256,9 @@ class Mind:
         self.progress["history"] = hist[-30:]
 
     def sleep(self):
-        """Consolidation: replay episodes, hebbian wiring, decay, apoptosis."""
-        report = memory.sleep_cycle(self.graph, self.episodes)
+        """Consolidation: replay episodes, hebbian wiring, decay, apoptosis,
+        then the memory estate: long-term promotion, autobiography, brain rest."""
+        report = memory.sleep_cycle(self.graph, self.episodes, mind=self)
         self.reflexes.decay()
         self.hormones.rested(0.5)
         report["hormones"] = dict(self.hormones.h)
@@ -307,7 +329,27 @@ class Mind:
         return None
 
     def handle_text(self, text):
-        """The live loop: social layer -> parse -> reflex -> know/reason/act."""
+        """The live loop: working memory + prospective memory + brain keep
+        time with every turn, then the social layer -> parse -> reflex ->
+        know/reason/act."""
+        fired = self.intents.check(text)
+        self.brain.tick("utterance", ["attention"])
+        reply = self._think(text)
+        if reply:
+            ents = [w for w in re.findall(r"[a-z]+", text.lower())
+                    if self.graph.lookup_word(w)]
+            intent = conversation.classify(text) or \
+                linguistics.parse(text).get("intent", "unknown")
+            self.working.observe(text, intent, entities=ents, reply=reply)
+            if fired:
+                it = fired[0]
+                note = "Side note, since %s came up: %s." % (
+                    it.get("topic", "that"), it.get("text", ""))
+                if note.strip()[:20].lower() not in reply.lower()[:400]:
+                    reply = reply + " " + note
+        return reply
+
+    def _think(self, text):
         # social/conversational layer first (identity, greetings, smalltalk...)
         social = self.convo.handle(text)
         if social:
@@ -435,6 +477,9 @@ class Mind:
 
         if intent == "grammar":
             return self._handle_grammar(i)
+
+        if intent == "chem":
+            return self._handle_chem(i)
 
         if intent == "sentence":
             return self._handle_sentence(i)
@@ -757,6 +802,182 @@ class Mind:
             return "That sounds like a %s. %s" % (name, d)
         return "That's a %s%s" % (name, "" if name.endswith(".") else ".")
 
+    # ---------- chemistry talk (organism's own memory routes) -------------------
+    def _handle_chem(self, i):
+        """'symbol of gold', 'formula of water', 'react hydrogen and
+        oxygen' — the organism answers from ITS OWN taught elements and
+        reactions; the lesson physics only checks pass/fail, never speaks."""
+        from . import chem as CH
+        kind = i["kind"]
+        els, rxns, comps = CH._lesson()
+        expected = None
+        if kind == "react":
+            terms = [t.strip() for t in re.split(r"\s+and\s+|\+|,", i.get("terms", ""))]
+            terms = [t for t in terms if t]
+            ask = "react %s" % " and ".join(terms)
+            want = {t.replace(" ", "_") for t in terms}
+            for r in rxns:
+                have = {t.strip().replace(" ", "_")
+                        for t in r["reactants"].lower().split("+")}
+                if want and want.issubset(have):
+                    expected = r["product"]
+                    break
+            route = "chem_react"
+        else:
+            name = i.get("name", "").strip()
+            ask = "%s %s" % (kind, name)
+            route = "chem_symbol" if kind == "symbol" else "chem_formula"
+            pool = els if kind == "symbol" else comps
+            for c in pool:
+                w0 = c["words"][0] if c.get("words") else c["id"]
+                if w0 == name or c["id"].replace("_", " ") == name:
+                    key = "symbol" if kind == "symbol" else "formula"
+                    expected = (c.get("attrs") or {}).get(key)
+                    break
+        if expected is None:
+            self.knowledge.inquire("chemistry: %s" % ask)
+            return self.rng.choice([
+                "I don't have that in my chemistry memory yet — teach me and I'll answer.",
+                "Not taught that one yet. What's the answer?",
+            ])
+        task = {"domain": "chem", "kind": kind, "input": ask,
+                "expected": expected, "prompt": ask}
+        outcome = trainer.train_task(task, self.genes, self.reflexes,
+                                     self.predictor, self.hormones, self.rng,
+                                     now=time.time())
+        if outcome["solved"] and outcome.get("winner"):
+            if outcome["gene"] and not any(g["steps"] == outcome["gene"]["steps"]
+                                           for g in self.genes):
+                self.genes.append(outcome["gene"])
+            self.progress["solved"] += 1
+            self.graph.hebbian(outcome["coactive"], 0.1)
+            try:
+                result = dsl.execute_pipeline(outcome["winner"], ask)
+            except Exception:
+                result = expected
+            if result is not None:
+                if kind == "react":
+                    terms = [t for t in ask[len("react "):].split(" and ") if t]
+                    return self.rng.choice([
+                        "%s gives you %s." % (" + ".join(terms), result),
+                        "Mix them and you get %s." % result,
+                    ])
+                return self.rng.choice([
+                    "%s — it's %s." % (i.get("name", "that").capitalize(), result),
+                    "The %s is %s." % (kind, result),
+                ])
+        self.knowledge.inquire("chemistry: %s" % ask)
+        return self.rng.choice([
+            "That reaction isn't in my memory yet — teach me?",
+            "No chemistry memory for that yet. What should it be?",
+        ])
+
+    # ---------- memory estate (recall intents — facts only from her own stores) ---
+    def _mem_topic(self, text):
+        m = re.search(r"(?:learn(?:ed)?(?: about)?|remember|recall|know(?: about)?)\s+"
+                      r"(?:about\s+|of\s+)?([a-z][a-z _-]{1,40}?)\??$", text.strip(), re.I)
+        if not m:
+            return None
+        t = m.group(1).strip().rstrip("?!. ")
+        t = re.sub(r"^(?:the|a|an)\s+", "", t, flags=re.I)
+        return t
+
+    def _handle_memory(self, text):
+        """'when did you learn X', 'your hardest failure', 'what happened
+        last cycle', 'tell me about your day', 'do you remember X' — every
+        fact comes from her own long-term memories / autobiography."""
+        low = text.lower()
+        lt = self.mem_lt
+        if re.search(r"\b(when did you (learn|first)|how long have you known)\b", low):
+            topic = self._mem_topic(text)
+            if not topic:
+                return "Ask me 'when did you learn about whales?' and I'll dig it up."
+            hit = lt.learned_when(topic.replace(" ", "_")) or lt.learned_when(topic)
+            if not hit:
+                self.knowledge.inquire("memory of: %s" % topic)
+                return self.rng.choice([
+                    "Nothing in my long-term memory about %s — maybe it never stuck. Teach me and it will." % topic,
+                    "I can't place %s in my memory. Was that one of yours?" % topic,
+                ])
+            return self.rng.choice([
+                "Found it — %s. That was cycle %s, and it's come back %s times since."
+                % (hit["what"], hit["when_cycle"], hit["count"]),
+                "%s — learned that around cycle %s, still in my memory." % (hit["what"], hit["when_cycle"]),
+            ])
+        if re.search(r"\b(hardest|worst|sting|still hurts)\b", low) and \
+                re.search(r"\b(failure|fail|problem|loss|miss)\b", low):
+            n = lt.hardest()
+            if not n:
+                return "No big failures in my memory yet — either I'm lucky or young."
+            a = n.get("attrs") or {}
+            return self.rng.choice([
+                "The one that still stings: %s — cycle %s, failed it %s times before it gave in."
+                % (a.get("what", "something hard"), a.get("when_cycle"), a.get("count", 1)),
+                "Hardest memory on file: %s (cycle %s). It felt like a wall until it wasn't."
+                % (a.get("what", "something hard"), a.get("when_cycle")),
+            ])
+        if re.search(r"\b(proudest|best moment|favorite memory)\b", low):
+            n = lt.proudest()
+            if not n:
+                return "My memory has no trophy shelf yet — ask me again after a few more cycles."
+            a = n.get("attrs") or {}
+            return "Proudest memory: %s — cycle %s, and it stuck." % (
+                a.get("what", "a good win"), a.get("when_cycle"))
+        if re.search(r"\b(last cycle|last sleep|last night|yesterday|your day|about your day)\b", low):
+            story = self.diary.render_day(1)
+            if story:
+                return self.rng.choice([story, "From the autobiography: " + story])
+            return "My autobiography is still blank — the first sleep will fix that."
+        if re.search(r"\bwhat do you remember\b|\byour memories\b|\byour memory\b", low):
+            mems = lt._all()
+            if not mems:
+                return "My long-term memory is empty so far — sleep will fill it."
+            mems.sort(key=lambda n: -float((n.get("attrs") or {}).get("salience", 0)))
+            names = [str((n.get("attrs") or {}).get("what", ""))[:40] for n in mems[:3]]
+            return "I hold %d long-term memories. The strongest: %s." % (
+                len(mems), "; ".join(x for x in names if x))
+        topic = self._mem_topic(text)
+        if topic:
+            hits = lt.recall_topic(topic.replace(" ", "_")) or lt.recall_topic(topic)
+            if hits:
+                a = hits[0].get("attrs") or {}
+                return self.rng.choice([
+                    "I remember — %s. Cycle %s, felt %s." % (a.get("what"), a.get("when_cycle"), a.get("felt", "fine")),
+                    "Yes: %s (cycle %s). %s." % (a.get("what"), a.get("when_cycle"),
+                                                 "It comes up a lot" if int(a.get("count", 1)) > 1 else ""),
+                ])
+        self.knowledge.inquire("memory recall miss: %s" % text[:60])
+        return self.rng.choice([
+            "That didn't ring any long-term bells — give me the fact and I'll keep it.",
+            "No memory of that yet. Tell me and it becomes one.",
+        ])
+
+    def _handle_brain(self, text):
+        """'how is your brain', 'what are you feeling', 'dopamine levels',
+        'brain scan' — she was asked about herself, so internals are legal
+        speech here. Every number is her real state."""
+        low = text.lower()
+        from . import brain as BR
+        m = re.search(r"\b(dopamine|serotonin|cortisol|norepinephrine|oxytocin|"
+                      r"acetylcholine|gaba|endorphin|glutamate)\b", low)
+        if m:
+            return self.brain.levels_line(m.group(1))
+        if re.search(r"\b(scan|picture|render|voxel|3d)\b", low):
+            return self.brain.scan_report()
+        if re.search(r"\b(feel|feeling|emotion|mood)\b", low):
+            e = self.brain.feeling_line()
+            return "Right now? %s" % e if self.rng.random() < 0.5 else e
+        if re.search(r"\b(region|lighting up|busiest|active)\b", low):
+            hot = sorted(self.brain.activation.items(), key=lambda kv: -kv[1])[:4]
+            roles = []
+            for rid, v in hot:
+                node = self.graph.get(rid)
+                role = (node.get("attrs") or {}).get("role", "") if node else ""
+                roles.append("%s (%.2f)%s" % (rid.replace("_", " "), v,
+                                              " — %s" % role if role else ""))
+            return "Busiest regions right now: %s." % ", ".join(roles)
+        return self.brain.status_line()
+
     # ---------- reporting -----------------------------------------------------------
     def status(self):
         dom = self.progress.get("by_domain", {})
@@ -772,6 +993,9 @@ class Mind:
             "cycles": self.progress.get("cycles", 0),
             "hormones": self.hormones.h,
             "questions_queued": self._load("questions.json", []).__len__(),
+            "memories": len(self.mem_lt._all()),
+            "intentions_open": self.intents.open_count(),
+            "brain_ticks": self.brain.ticks,
         }
 
     def status_text(self):
@@ -799,4 +1023,8 @@ class Mind:
               h["mood"], h["energy"] * 100, h["curiosity"], h["urgency"])),
         ]
         tpl, args = templates[self.rng.randrange(len(templates))]
-        return tpl % args
+        mem = self.mem_lt._all()
+        tail = (" Long-term memory holds %d moments; %d intentions open; brain: %d ticks."
+                % (len(mem), self.intents.open_count(), self.brain.ticks)) \
+            if mem else " Long-term memory fills during sleep."
+        return tpl % args + tail

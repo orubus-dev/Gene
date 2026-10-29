@@ -10,7 +10,10 @@ import time
 
 from . import hdc
 
-KINDS = ("entity", "action", "property", "relation", "word", "domain", "meta")
+KINDS = ("entity", "action", "property", "relation", "word", "domain", "meta",
+         "category", "memory", "equation", "emotion", "reaction", "element",
+         "quantity", "region", "scan", "person", "organism", "idea",
+         "grammar_type", "verb_form", "noun_form", "adj_form")
 
 
 class ConceptGraph:
@@ -126,8 +129,8 @@ class ConceptGraph:
         now = time.time()
         doomed = []
         for n in self.nodes.values():
-            if n["kind"] == "meta":
-                continue  # core self-concepts persist
+            if n["kind"] in ("meta", "memory"):
+                continue  # core self + long-term memories persist
             strong = [s for _, _, s in self.neighbors(n["id"])]
             if not strong and (now - n["touched"]) > 3600:
                 doomed.append(n["id"])
@@ -135,7 +138,8 @@ class ConceptGraph:
                 doomed.append(n["id"])
         if len(self.nodes) > max_nodes:  # overpopulation: cut the weakest
             ranked = sorted(
-                (n for n in self.nodes.values() if n["kind"] != "meta"),
+                (n for n in self.nodes.values()
+                 if n["kind"] not in ("meta", "memory")),
                 key=lambda n: sum(s for _, _, s in self.neighbors(n["id"])),
             )
             doomed += [n["id"] for n in ranked[: len(self.nodes) - max_nodes]]

@@ -25,7 +25,8 @@ import re
 from . import dsl
 
 EXCLUDED_KINDS = {"domain", "meta", "grammar_type", "verb_form", "noun_form",
-                  "adj_form", "category", "idea"}
+                  "adj_form", "category", "idea", "memory", "equation",
+                  "emotion", "scan", "region", "word"}
 _ENTS_CACHE = {}
 _DF_CACHE = {}
 # attr keys whose values render as a natural sentence via FRAMES
@@ -45,6 +46,19 @@ FRAMES = {
     "shape": "Its shape is %s.",
     "speed": "It moves %s.",
     "young": "Its young: %s.",
+    "capital": "Its capital is %s.",
+    "symbol": "Its symbol is %s.",
+    "height": "It rises %s.",
+    "length": "It runs %s.",
+    "state": "At room temperature it's %s.",
+    "formula": "Its formula is %s.",
+    "flows": "It flows through %s.",
+    "unit": "It's measured in %s.",
+    "number": "It's element number %s.",
+    "continent": "It sits in %s.",
+    "language": "People there speak %s.",
+    "found_in": "You'll find it in %s.",
+    "effect": "It %s.",
     "def": None,          # category definitions render in the chain sentence
 }
 
@@ -264,7 +278,9 @@ def _entity_hay(graph, nid, n):
 _TAX_CACHE = None
 _ALL_TOKENS = None
 CLUE_KEYS = ("sound", "diet", "habitat", "feature", "trait", "role",
-             "used_for", "made_of", "taste", "size", "speed")
+             "used_for", "made_of", "taste", "size", "speed",
+             "symbol", "capital", "state", "continent", "unit",
+             "found_in", "effect", "part")
 
 
 def _taxonomy_lesson():
@@ -278,7 +294,9 @@ def _taxonomy_lesson():
     ents = []
     cdir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
                         "curriculum")
-    for fn in ("taxonomy-1.json", "taxonomy-2.json", "facts_animals.json"):
+    for fn in ("taxonomy-1.json", "taxonomy-2.json", "facts_animals.json",
+               "science-bio.json", "science-chem.json", "science-phys.json",
+               "science-geo.json"):
         try:
             with open(os.path.join(cdir, fn)) as f:
                 pack = json.load(f)

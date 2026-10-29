@@ -1,0 +1,1110 @@
+{
+ "concepts": [
+  {
+   "id": "place_cat",
+   "kind": "category",
+   "words": [
+    "place",
+    "places"
+   ],
+   "attrs": {
+    "def": "a location on earth or beyond"
+   },
+   "relations": [
+    {
+     "to": "entity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "continent_cat",
+   "kind": "category",
+   "words": [
+    "continent"
+   ],
+   "attrs": {
+    "def": "one of earth's seven great land masses"
+   },
+   "relations": [
+    {
+     "to": "place_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ocean_cat",
+   "kind": "category",
+   "words": [
+    "ocean"
+   ],
+   "attrs": {
+    "def": "one of earth's five great waters"
+   },
+   "relations": [
+    {
+     "to": "place_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "country",
+   "kind": "category",
+   "words": [
+    "country",
+    "countries"
+   ],
+   "attrs": {
+    "def": "a nation with borders and a government"
+   },
+   "relations": [
+    {
+     "to": "place_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "river",
+   "kind": "category",
+   "words": [
+    "river",
+    "rivers"
+   ],
+   "attrs": {
+    "def": "a long flow of water crossing the land"
+   },
+   "relations": [
+    {
+     "to": "place_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mountain_cat",
+   "kind": "category",
+   "words": [
+    "mountain"
+   ],
+   "attrs": {
+    "def": "a towering height of rock"
+   },
+   "relations": [
+    {
+     "to": "place_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "desert_cat",
+   "kind": "category",
+   "words": [
+    "desert"
+   ],
+   "attrs": {
+    "def": "a land so dry it barely rains"
+   },
+   "relations": [
+    {
+     "to": "place_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "biome",
+   "kind": "category",
+   "words": [
+    "biome"
+   ],
+   "attrs": {
+    "def": "a big region with its own climate and life"
+   },
+   "relations": [
+    {
+     "to": "place_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "africa",
+   "kind": "entity",
+   "words": [
+    "africa"
+   ],
+   "attrs": {
+    "trait": "the cradle of humankind",
+    "feature": "home to the sahara and the nile"
+   },
+   "relations": [
+    {
+     "to": "continent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "antarctica",
+   "kind": "entity",
+   "words": [
+    "antarctica"
+   ],
+   "attrs": {
+    "trait": "the coldest, windiest continent",
+    "found_in": "the south pole"
+   },
+   "relations": [
+    {
+     "to": "continent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "asia",
+   "kind": "entity",
+   "words": [
+    "asia"
+   ],
+   "attrs": {
+    "trait": "the biggest continent",
+    "feature": "home to mount everest and china"
+   },
+   "relations": [
+    {
+     "to": "continent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "australia",
+   "kind": "entity",
+   "words": [
+    "australia"
+   ],
+   "attrs": {
+    "trait": "an island continent",
+    "feature": "home of the kangaroo"
+   },
+   "relations": [
+    {
+     "to": "continent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "europe",
+   "kind": "entity",
+   "words": [
+    "europe"
+   ],
+   "attrs": {
+    "trait": "a peninsula of peninsulas",
+    "feature": "home to the alps"
+   },
+   "relations": [
+    {
+     "to": "continent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "north_america",
+   "kind": "entity",
+   "words": [
+    "north america"
+   ],
+   "attrs": {
+    "feature": "from alaska to panama",
+    "found_in": "the western hemisphere"
+   },
+   "relations": [
+    {
+     "to": "continent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "south_america",
+   "kind": "entity",
+   "words": [
+    "south america"
+   ],
+   "attrs": {
+    "feature": "home to the amazon rainforest",
+    "found_in": "the southern hemisphere"
+   },
+   "relations": [
+    {
+     "to": "continent",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pacific_ocean",
+   "kind": "entity",
+   "words": [
+    "pacific ocean"
+   ],
+   "attrs": {
+    "trait": "the largest ocean on earth",
+    "found_in": "between asia and the americas"
+   },
+   "relations": [
+    {
+     "to": "ocean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "atlantic_ocean",
+   "kind": "entity",
+   "words": [
+    "atlantic ocean"
+   ],
+   "attrs": {
+    "trait": "the second largest",
+    "found_in": "between the americas and europe-africa"
+   },
+   "relations": [
+    {
+     "to": "ocean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "indian_ocean",
+   "kind": "entity",
+   "words": [
+    "indian ocean"
+   ],
+   "attrs": {
+    "trait": "the warmest ocean",
+    "found_in": "south of asia"
+   },
+   "relations": [
+    {
+     "to": "ocean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "arctic_ocean",
+   "kind": "entity",
+   "words": [
+    "arctic ocean"
+   ],
+   "attrs": {
+    "trait": "the smallest, coldest ocean",
+    "found_in": "around the north pole"
+   },
+   "relations": [
+    {
+     "to": "ocean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "southern_ocean",
+   "kind": "entity",
+   "words": [
+    "southern ocean"
+   ],
+   "attrs": {
+    "found_in": "around antarctica"
+   },
+   "relations": [
+    {
+     "to": "ocean",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "canada",
+   "kind": "country",
+   "words": [
+    "canada"
+   ],
+   "attrs": {
+    "capital": "ottawa",
+    "continent": "north america",
+    "language": "english and french"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "brazil",
+   "kind": "country",
+   "words": [
+    "brazil"
+   ],
+   "attrs": {
+    "capital": "brasilia",
+    "continent": "south america",
+    "language": "portuguese"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "egypt",
+   "kind": "country",
+   "words": [
+    "egypt"
+   ],
+   "attrs": {
+    "capital": "cairo",
+    "continent": "africa",
+    "language": "arabic"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "nigeria",
+   "kind": "country",
+   "words": [
+    "nigeria"
+   ],
+   "attrs": {
+    "capital": "abuja",
+    "continent": "africa",
+    "language": "english"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "kenya",
+   "kind": "country",
+   "words": [
+    "kenya"
+   ],
+   "attrs": {
+    "capital": "nairobi",
+    "continent": "africa",
+    "language": "swahili and english"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "japan",
+   "kind": "country",
+   "words": [
+    "japan"
+   ],
+   "attrs": {
+    "capital": "tokyo",
+    "continent": "asia",
+    "language": "japanese"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "china",
+   "kind": "country",
+   "words": [
+    "china"
+   ],
+   "attrs": {
+    "capital": "beijing",
+    "continent": "asia",
+    "language": "mandarin"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "india",
+   "kind": "country",
+   "words": [
+    "india"
+   ],
+   "attrs": {
+    "capital": "new delhi",
+    "continent": "asia",
+    "language": "hindi and english"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "russia",
+   "kind": "country",
+   "words": [
+    "russia"
+   ],
+   "attrs": {
+    "capital": "moscow",
+    "continent": "europe",
+    "language": "russian"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "germany",
+   "kind": "country",
+   "words": [
+    "germany"
+   ],
+   "attrs": {
+    "capital": "berlin",
+    "continent": "europe",
+    "language": "german"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "france",
+   "kind": "country",
+   "words": [
+    "france"
+   ],
+   "attrs": {
+    "capital": "paris",
+    "continent": "europe",
+    "language": "french"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "italy",
+   "kind": "country",
+   "words": [
+    "italy"
+   ],
+   "attrs": {
+    "capital": "rome",
+    "continent": "europe",
+    "language": "italian"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "spain",
+   "kind": "country",
+   "words": [
+    "spain"
+   ],
+   "attrs": {
+    "capital": "madrid",
+    "continent": "europe",
+    "language": "spanish"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "united kingdom",
+   "kind": "country",
+   "words": [
+    "united kingdom"
+   ],
+   "attrs": {
+    "capital": "london",
+    "continent": "europe",
+    "language": "english"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "united states",
+   "kind": "country",
+   "words": [
+    "united states"
+   ],
+   "attrs": {
+    "capital": "washington dc",
+    "continent": "north america",
+    "language": "english"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mexico",
+   "kind": "country",
+   "words": [
+    "mexico"
+   ],
+   "attrs": {
+    "capital": "mexico city",
+    "continent": "north america",
+    "language": "spanish"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "argentina",
+   "kind": "country",
+   "words": [
+    "argentina"
+   ],
+   "attrs": {
+    "capital": "buenos aires",
+    "continent": "south america",
+    "language": "spanish"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "australia_country",
+   "kind": "country",
+   "words": [
+    "australia (country)"
+   ],
+   "attrs": {
+    "capital": "canberra",
+    "continent": "australia",
+    "language": "english"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "south africa",
+   "kind": "country",
+   "words": [
+    "south africa"
+   ],
+   "attrs": {
+    "capital": "pretoria",
+    "continent": "africa",
+    "language": "eleven official languages"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ethiopia",
+   "kind": "country",
+   "words": [
+    "ethiopia"
+   ],
+   "attrs": {
+    "capital": "addis ababa",
+    "continent": "africa",
+    "language": "amharic"
+   },
+   "relations": [
+    {
+     "to": "country",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "nile",
+   "kind": "entity",
+   "words": [
+    "nile"
+   ],
+   "attrs": {
+    "length": "6650 km",
+    "flows": "egypt and sudan",
+    "trait": "the longest river"
+   },
+   "relations": [
+    {
+     "to": "river",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "amazon_river",
+   "kind": "entity",
+   "words": [
+    "amazon river"
+   ],
+   "attrs": {
+    "length": "6400 km",
+    "flows": "peru and brazil",
+    "trait": "carries the most water"
+   },
+   "relations": [
+    {
+     "to": "river",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "yangtze",
+   "kind": "entity",
+   "words": [
+    "yangtze"
+   ],
+   "attrs": {
+    "length": "6300 km",
+    "flows": "china"
+   },
+   "relations": [
+    {
+     "to": "river",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mississippi",
+   "kind": "entity",
+   "words": [
+    "mississippi"
+   ],
+   "attrs": {
+    "length": "3700 km",
+    "flows": "the united states"
+   },
+   "relations": [
+    {
+     "to": "river",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "danube",
+   "kind": "entity",
+   "words": [
+    "danube"
+   ],
+   "attrs": {
+    "length": "2850 km",
+    "flows": "through ten countries in europe"
+   },
+   "relations": [
+    {
+     "to": "river",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "congo_river",
+   "kind": "entity",
+   "words": [
+    "congo river"
+   ],
+   "attrs": {
+    "length": "4700 km",
+    "flows": "the congo rainforest"
+   },
+   "relations": [
+    {
+     "to": "river",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "volga",
+   "kind": "entity",
+   "words": [
+    "volga"
+   ],
+   "attrs": {
+    "length": "3530 km",
+    "flows": "russia",
+    "trait": "europe's longest"
+   },
+   "relations": [
+    {
+     "to": "river",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "thames",
+   "kind": "entity",
+   "words": [
+    "thames"
+   ],
+   "attrs": {
+    "length": "346 km",
+    "flows": "london"
+   },
+   "relations": [
+    {
+     "to": "river",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mount_everest",
+   "kind": "entity",
+   "words": [
+    "mount everest"
+   ],
+   "attrs": {
+    "height": "8849 m",
+    "found_in": "the himalayas",
+    "trait": "the roof of the world"
+   },
+   "relations": [
+    {
+     "to": "mountain",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "k2",
+   "kind": "entity",
+   "words": [
+    "k2"
+   ],
+   "attrs": {
+    "height": "8611 m",
+    "found_in": "the karakoram"
+   },
+   "relations": [
+    {
+     "to": "mountain",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "kilimanjaro",
+   "kind": "entity",
+   "words": [
+    "kilimanjaro"
+   ],
+   "attrs": {
+    "height": "5895 m",
+    "found_in": "tanzania",
+    "trait": "a snowy giant near the equator"
+   },
+   "relations": [
+    {
+     "to": "mountain",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mount_fuji",
+   "kind": "entity",
+   "words": [
+    "mount fuji"
+   ],
+   "attrs": {
+    "height": "3776 m",
+    "found_in": "japan"
+   },
+   "relations": [
+    {
+     "to": "mountain",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mont_blanc",
+   "kind": "entity",
+   "words": [
+    "mont blanc"
+   ],
+   "attrs": {
+    "height": "4808 m",
+    "found_in": "the alps"
+   },
+   "relations": [
+    {
+     "to": "mountain",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "denali",
+   "kind": "entity",
+   "words": [
+    "denali"
+   ],
+   "attrs": {
+    "height": "6190 m",
+    "found_in": "alaska"
+   },
+   "relations": [
+    {
+     "to": "mountain",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sahara",
+   "kind": "entity",
+   "words": [
+    "sahara"
+   ],
+   "attrs": {
+    "found_in": "north africa",
+    "trait": "the largest hot desert"
+   },
+   "relations": [
+    {
+     "to": "desert",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gobi",
+   "kind": "entity",
+   "words": [
+    "gobi"
+   ],
+   "attrs": {
+    "found_in": "mongolia and china",
+    "trait": "a cold desert"
+   },
+   "relations": [
+    {
+     "to": "desert",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "kalahari",
+   "kind": "entity",
+   "words": [
+    "kalahari"
+   ],
+   "attrs": {
+    "found_in": "southern africa"
+   },
+   "relations": [
+    {
+     "to": "desert",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "atacama",
+   "kind": "entity",
+   "words": [
+    "atacama"
+   ],
+   "attrs": {
+    "found_in": "chile",
+    "trait": "the driest place on earth"
+   },
+   "relations": [
+    {
+     "to": "desert",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "antarctic_desert",
+   "kind": "entity",
+   "words": [
+    "antarctic desert"
+   ],
+   "attrs": {
+    "found_in": "antarctica",
+    "trait": "the largest desert of all"
+   },
+   "relations": [
+    {
+     "to": "desert",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rainforest_biome",
+   "kind": "entity",
+   "words": [
+    "rainforest biome"
+   ],
+   "attrs": {
+    "feature": "wet, dense and bursting with species",
+    "found_in": "the equator"
+   },
+   "relations": [
+    {
+     "to": "biome",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "savanna_biome",
+   "kind": "entity",
+   "words": [
+    "savanna biome"
+   ],
+   "attrs": {
+    "feature": "grassland with scattered trees",
+    "found_in": "africa"
+   },
+   "relations": [
+    {
+     "to": "biome",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "tundra_biome",
+   "kind": "entity",
+   "words": [
+    "tundra biome"
+   ],
+   "attrs": {
+    "feature": "frozen ground and short summers",
+    "found_in": "the far north"
+   },
+   "relations": [
+    {
+     "to": "biome",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "coral_reef_biome",
+   "kind": "entity",
+   "words": [
+    "coral reef biome"
+   ],
+   "attrs": {
+    "feature": "underwater cities built by tiny animals",
+    "found_in": "warm shallow seas"
+   },
+   "relations": [
+    {
+     "to": "biome",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "taiga_biome",
+   "kind": "entity",
+   "words": [
+    "taiga biome"
+   ],
+   "attrs": {
+    "feature": "endless conifer forest",
+    "found_in": "russia and canada"
+   },
+   "relations": [
+    {
+     "to": "biome",
+     "rel": "is-a"
+    }
+   ]
+  }
+ ]
+}

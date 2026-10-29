@@ -1,0 +1,1125 @@
+{
+ "concepts": [
+  {
+   "id": "body_structure",
+   "kind": "category",
+   "words": [
+    "body structure",
+    "structure"
+   ],
+   "attrs": {
+    "def": "a part of a living thing, from cells up to organs"
+   },
+   "relations": [
+    {
+     "to": "entity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cell_part",
+   "kind": "category",
+   "words": [
+    "cell part",
+    "organelle"
+   ],
+   "attrs": {
+    "def": "a tiny working part inside a cell"
+   },
+   "relations": [
+    {
+     "to": "body_structure",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "tissue_cat",
+   "kind": "category",
+   "words": [
+    "tissue"
+   ],
+   "attrs": {
+    "def": "a family of cells doing one job"
+   },
+   "relations": [
+    {
+     "to": "body_structure",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "organ",
+   "kind": "category",
+   "words": [
+    "organ",
+    "organs"
+   ],
+   "attrs": {
+    "def": "a body part built from tissues, doing a big job"
+   },
+   "relations": [
+    {
+     "to": "body_structure",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "life_system",
+   "kind": "category",
+   "words": [
+    "body system",
+    "system"
+   ],
+   "attrs": {
+    "def": "a team of organs working on one life job"
+   },
+   "relations": [
+    {
+     "to": "body_structure",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "life_process",
+   "kind": "category",
+   "words": [
+    "life process",
+    "process"
+   ],
+   "attrs": {
+    "def": "something living things do to stay alive"
+   },
+   "relations": [
+    {
+     "to": "idea",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "genetics_cat",
+   "kind": "category",
+   "words": [
+    "genetics",
+    "heredity"
+   ],
+   "attrs": {
+    "def": "the study of how traits pass to offspring"
+   },
+   "relations": [
+    {
+     "to": "idea",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cell",
+   "kind": "entity",
+   "words": [
+    "cell"
+   ],
+   "attrs": {
+    "found_in": "every living thing",
+    "role": "the smallest unit of life"
+   },
+   "relations": [
+    {
+     "to": "body_structure",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "nucleus",
+   "kind": "entity",
+   "words": [
+    "nucleus"
+   ],
+   "attrs": {
+    "role": "the cell's control room, holds the dna"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mitochondria",
+   "kind": "entity",
+   "words": [
+    "mitochondria"
+   ],
+   "attrs": {
+    "role": "making energy for the cell",
+    "found_in": "almost every cell"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ribosome",
+   "kind": "entity",
+   "words": [
+    "ribosome"
+   ],
+   "attrs": {
+    "role": "building proteins"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "chloroplast",
+   "kind": "entity",
+   "words": [
+    "chloroplast"
+   ],
+   "attrs": {
+    "role": "capturing sunlight for photosynthesis",
+    "found_in": "plant cells"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cell_membrane",
+   "kind": "entity",
+   "words": [
+    "cell membrane"
+   ],
+   "attrs": {
+    "role": "the cell's gatekeeper, deciding what enters"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cytoplasm",
+   "kind": "entity",
+   "words": [
+    "cytoplasm"
+   ],
+   "attrs": {
+    "role": "the jelly inside a cell where work happens"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "vacuole",
+   "kind": "entity",
+   "words": [
+    "vacuole"
+   ],
+   "attrs": {
+    "role": "storage tank of the cell",
+    "found_in": "plant cells"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cell_wall",
+   "kind": "entity",
+   "words": [
+    "cell wall"
+   ],
+   "attrs": {
+    "role": "the stiff outer skin",
+    "found_in": "plant cells"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "dna",
+   "kind": "entity",
+   "words": [
+    "dna"
+   ],
+   "attrs": {
+    "used_for": "storing the instructions for life",
+    "feature": "the double helix"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rna",
+   "kind": "entity",
+   "words": [
+    "rna"
+   ],
+   "attrs": {
+    "role": "dna's working copy, carrying messages"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gene",
+   "kind": "entity",
+   "words": [
+    "gene"
+   ],
+   "attrs": {
+    "role": "a recipe for one trait",
+    "found_in": "dna"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "chromosome",
+   "kind": "entity",
+   "words": [
+    "chromosome"
+   ],
+   "attrs": {
+    "role": "a bundled thread of genes"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "protein",
+   "kind": "entity",
+   "words": [
+    "protein"
+   ],
+   "attrs": {
+    "role": "the cell's building block and machine"
+   },
+   "relations": [
+    {
+     "to": "body_structure",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "enzyme",
+   "kind": "entity",
+   "words": [
+    "enzyme"
+   ],
+   "attrs": {
+    "role": "a protein that speeds up chemistry"
+   },
+   "relations": [
+    {
+     "to": "body_structure",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "red_blood_cell",
+   "kind": "entity",
+   "words": [
+    "red blood cell"
+   ],
+   "attrs": {
+    "role": "carrying oxygen around the body",
+    "trait": "round and red"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "white_blood_cell",
+   "kind": "entity",
+   "words": [
+    "white blood cell"
+   ],
+   "attrs": {
+    "role": "fighting germs and infection"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "neuron",
+   "kind": "entity",
+   "words": [
+    "neuron"
+   ],
+   "attrs": {
+    "used_for": "carrying electrical signals",
+    "found_in": "the brain and nerves"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "platelet",
+   "kind": "entity",
+   "words": [
+    "platelet"
+   ],
+   "attrs": {
+    "role": "patching wounds with clots"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "stem_cell",
+   "kind": "entity",
+   "words": [
+    "stem cell"
+   ],
+   "attrs": {
+    "role": "a cell that can become any other cell"
+   },
+   "relations": [
+    {
+     "to": "cell_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "heart",
+   "kind": "entity",
+   "words": [
+    "heart"
+   ],
+   "attrs": {
+    "role": "pumping blood around the body",
+    "trait": "muscular and tireless"
+   },
+   "relations": [
+    {
+     "to": "organ",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lungs",
+   "kind": "entity",
+   "words": [
+    "lungs"
+   ],
+   "attrs": {
+    "used_for": "breathing in oxygen and out carbon dioxide"
+   },
+   "relations": [
+    {
+     "to": "organ",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "brain",
+   "kind": "entity",
+   "words": [
+    "brain"
+   ],
+   "attrs": {
+    "role": "the body's control centre and home of the mind"
+   },
+   "relations": [
+    {
+     "to": "organ",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "stomach",
+   "kind": "entity",
+   "words": [
+    "stomach"
+   ],
+   "attrs": {
+    "role": "breaking down food with acid"
+   },
+   "relations": [
+    {
+     "to": "organ",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "liver",
+   "kind": "entity",
+   "words": [
+    "liver"
+   ],
+   "attrs": {
+    "role": "filtering the blood and making bile"
+   },
+   "relations": [
+    {
+     "to": "organ",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "kidney",
+   "kind": "entity",
+   "words": [
+    "kidney"
+   ],
+   "attrs": {
+    "role": "filtering waste into urine"
+   },
+   "relations": [
+    {
+     "to": "organ",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "skin",
+   "kind": "entity",
+   "words": [
+    "skin"
+   ],
+   "attrs": {
+    "role": "wrapping the body and keeping germs out"
+   },
+   "relations": [
+    {
+     "to": "organ",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "eye",
+   "kind": "entity",
+   "words": [
+    "eye"
+   ],
+   "attrs": {
+    "used_for": "seeing",
+    "feature": "turns light into signals"
+   },
+   "relations": [
+    {
+     "to": "organ",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ear",
+   "kind": "entity",
+   "words": [
+    "ear"
+   ],
+   "attrs": {
+    "used_for": "hearing and balance"
+   },
+   "relations": [
+    {
+     "to": "organ",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "tongue",
+   "kind": "entity",
+   "words": [
+    "tongue"
+   ],
+   "attrs": {
+    "used_for": "tasting food"
+   },
+   "relations": [
+    {
+     "to": "organ",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bones",
+   "kind": "entity",
+   "words": [
+    "bones"
+   ],
+   "attrs": {
+    "role": "the body's frame and armour"
+   },
+   "relations": [
+    {
+     "to": "organ",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "muscle",
+   "kind": "entity",
+   "words": [
+    "muscle"
+   ],
+   "attrs": {
+    "role": "pulling on bones to move the body"
+   },
+   "relations": [
+    {
+     "to": "tissue_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "blood",
+   "kind": "entity",
+   "words": [
+    "blood"
+   ],
+   "attrs": {
+    "role": "the body's delivery service"
+   },
+   "relations": [
+    {
+     "to": "tissue_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "nerve",
+   "kind": "entity",
+   "words": [
+    "nerve"
+   ],
+   "attrs": {
+    "used_for": "carrying signals at speed"
+   },
+   "relations": [
+    {
+     "to": "tissue_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "circulatory_system",
+   "kind": "entity",
+   "words": [
+    "circulatory system"
+   ],
+   "attrs": {
+    "role": "moving blood, oxygen and food everywhere"
+   },
+   "relations": [
+    {
+     "to": "life_system",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "respiratory_system",
+   "kind": "entity",
+   "words": [
+    "respiratory system"
+   ],
+   "attrs": {
+    "role": "breathing — oxygen in, carbon dioxide out"
+   },
+   "relations": [
+    {
+     "to": "life_system",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "digestive_system",
+   "kind": "entity",
+   "words": [
+    "digestive system"
+   ],
+   "attrs": {
+    "role": "breaking food into usable fuel"
+   },
+   "relations": [
+    {
+     "to": "life_system",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "nervous_system",
+   "kind": "entity",
+   "words": [
+    "nervous system"
+   ],
+   "attrs": {
+    "role": "sensing, deciding, commanding"
+   },
+   "relations": [
+    {
+     "to": "life_system",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "skeletal_system",
+   "kind": "entity",
+   "words": [
+    "skeletal system"
+   ],
+   "attrs": {
+    "role": "support, protection and movement"
+   },
+   "relations": [
+    {
+     "to": "life_system",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "muscular_system",
+   "kind": "entity",
+   "words": [
+    "muscular system"
+   ],
+   "attrs": {
+    "role": "all the body's pulling"
+   },
+   "relations": [
+    {
+     "to": "life_system",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "immune_system",
+   "kind": "entity",
+   "words": [
+    "immune system"
+   ],
+   "attrs": {
+    "role": "hunting germs and remembering enemies"
+   },
+   "relations": [
+    {
+     "to": "life_system",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "endocrine_system",
+   "kind": "entity",
+   "words": [
+    "endocrine system"
+   ],
+   "attrs": {
+    "role": "hormones — the body's chemical mail"
+   },
+   "relations": [
+    {
+     "to": "life_system",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "photosynthesis",
+   "kind": "entity",
+   "words": [
+    "photosynthesis"
+   ],
+   "attrs": {
+    "effect": "plants turn sunlight, water and carbon dioxide into food"
+   },
+   "relations": [
+    {
+     "to": "life_process",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "respiration",
+   "kind": "entity",
+   "words": [
+    "respiration"
+   ],
+   "attrs": {
+    "effect": "cells burn food with oxygen to release energy"
+   },
+   "relations": [
+    {
+     "to": "life_process",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "digestion",
+   "kind": "entity",
+   "words": [
+    "digestion"
+   ],
+   "attrs": {
+    "effect": "food gets broken down into fuel"
+   },
+   "relations": [
+    {
+     "to": "life_process",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "growth",
+   "kind": "entity",
+   "words": [
+    "growth"
+   ],
+   "attrs": {
+    "effect": "living things get bigger using food"
+   },
+   "relations": [
+    {
+     "to": "life_process",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "reproduction",
+   "kind": "entity",
+   "words": [
+    "reproduction"
+   ],
+   "attrs": {
+    "effect": "living things make new living things"
+   },
+   "relations": [
+    {
+     "to": "life_process",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "evolution",
+   "kind": "entity",
+   "words": [
+    "evolution"
+   ],
+   "attrs": {
+    "effect": "species change over generations"
+   },
+   "relations": [
+    {
+     "to": "life_process",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "natural_selection",
+   "kind": "entity",
+   "words": [
+    "natural selection"
+   ],
+   "attrs": {
+    "effect": "the fittest survive and breed, so their traits spread"
+   },
+   "relations": [
+    {
+     "to": "life_process",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "adaptation",
+   "kind": "entity",
+   "words": [
+    "adaptation"
+   ],
+   "attrs": {
+    "effect": "species fit their habitat over time"
+   },
+   "relations": [
+    {
+     "to": "life_process",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "metabolism",
+   "kind": "entity",
+   "words": [
+    "metabolism"
+   ],
+   "attrs": {
+    "effect": "all the chemistry that keeps a body running"
+   },
+   "relations": [
+    {
+     "to": "life_process",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "homeostasis",
+   "kind": "entity",
+   "words": [
+    "homeostasis"
+   ],
+   "attrs": {
+    "effect": "the body keeps its inside steady"
+   },
+   "relations": [
+    {
+     "to": "life_process",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "germination",
+   "kind": "entity",
+   "words": [
+    "germination"
+   ],
+   "attrs": {
+    "effect": "a seed wakes and becomes a plant"
+   },
+   "relations": [
+    {
+     "to": "life_process",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "pollination",
+   "kind": "entity",
+   "words": [
+    "pollination"
+   ],
+   "attrs": {
+    "effect": "pollen moves so plants can make seeds"
+   },
+   "relations": [
+    {
+     "to": "life_process",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "heredity",
+   "kind": "entity",
+   "words": [
+    "heredity"
+   ],
+   "attrs": {
+    "role": "passing traits from parents to young"
+   },
+   "relations": [
+    {
+     "to": "genetics_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "trait",
+   "kind": "entity",
+   "words": [
+    "trait"
+   ],
+   "attrs": {
+    "role": "a feature an organism carries, like fur colour"
+   },
+   "relations": [
+    {
+     "to": "genetics_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "dominant",
+   "kind": "entity",
+   "words": [
+    "dominant"
+   ],
+   "attrs": {
+    "role": "a trait that shows even with one copy"
+   },
+   "relations": [
+    {
+     "to": "genetics_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "recessive",
+   "kind": "entity",
+   "words": [
+    "recessive"
+   ],
+   "attrs": {
+    "role": "a trait that hides unless both copies agree"
+   },
+   "relations": [
+    {
+     "to": "genetics_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mutation",
+   "kind": "entity",
+   "words": [
+    "mutation"
+   ],
+   "attrs": {
+    "effect": "a random change in dna, sometimes new traits"
+   },
+   "relations": [
+    {
+     "to": "genetics_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "genome",
+   "kind": "entity",
+   "words": [
+    "genome"
+   ],
+   "attrs": {
+    "role": "the complete recipe book of an organism"
+   },
+   "relations": [
+    {
+     "to": "genetics_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "clone",
+   "kind": "entity",
+   "words": [
+    "clone"
+   ],
+   "attrs": {
+    "role": "an exact copy of one organism"
+   },
+   "relations": [
+    {
+     "to": "genetics_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "punnett_square",
+   "kind": "entity",
+   "words": [
+    "punnett square"
+   ],
+   "attrs": {
+    "used_for": "predicting which traits the young can get"
+   },
+   "relations": [
+    {
+     "to": "genetics_cat",
+     "rel": "is-a"
+    }
+   ]
+  }
+ ]
+}

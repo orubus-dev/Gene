@@ -1,0 +1,812 @@
+{
+ "concepts": [
+  {
+   "id": "brain_region",
+   "kind": "category",
+   "words": [
+    "brain region",
+    "region"
+   ],
+   "attrs": {
+    "def": "a working district of the brain"
+   },
+   "relations": [
+    {
+     "to": "entity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "neurotransmitter",
+   "kind": "category",
+   "words": [
+    "neurotransmitter",
+    "brain chemical"
+   ],
+   "attrs": {
+    "def": "a chemical the brain uses to signal"
+   },
+   "relations": [
+    {
+     "to": "quantity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "emotion_cat",
+   "kind": "category",
+   "words": [
+    "emotion",
+    "emotions",
+    "feeling"
+   ],
+   "attrs": {
+    "def": "a felt state of the mind"
+   },
+   "relations": [
+    {
+     "to": "idea",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "brain_scan",
+   "kind": "category",
+   "words": [
+    "brain scan",
+    "scan"
+   ],
+   "attrs": {
+    "def": "a 3D map of a brain's regions"
+   },
+   "relations": [
+    {
+     "to": "entity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "prefrontal_cortex",
+   "kind": "entity",
+   "words": [
+    "prefrontal cortex"
+   ],
+   "attrs": {
+    "role": "plans, decides, holds the working thread",
+    "trait": "the conductor"
+   },
+   "relations": [
+    {
+     "to": "brain_region",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cortex",
+   "kind": "entity",
+   "words": [
+    "cortex"
+   ],
+   "attrs": {
+    "role": "the wrinkled thinking sheet where concepts live"
+   },
+   "relations": [
+    {
+     "to": "brain_region",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "motor_cortex",
+   "kind": "entity",
+   "words": [
+    "motor cortex"
+   ],
+   "attrs": {
+    "role": "commands the body's movements"
+   },
+   "relations": [
+    {
+     "to": "brain_region",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "broca's_area",
+   "kind": "entity",
+   "words": [
+    "broca's area"
+   ],
+   "attrs": {
+    "role": "speech production — putting words out"
+   },
+   "relations": [
+    {
+     "to": "brain_region",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "wernicke's_area",
+   "kind": "entity",
+   "words": [
+    "wernicke's area"
+   ],
+   "attrs": {
+    "role": "language understanding — taking words in"
+   },
+   "relations": [
+    {
+     "to": "brain_region",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "visual_cortex",
+   "kind": "entity",
+   "words": [
+    "visual cortex"
+   ],
+   "attrs": {
+    "role": "turning light into sight"
+   },
+   "relations": [
+    {
+     "to": "brain_region",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "auditory_cortex",
+   "kind": "entity",
+   "words": [
+    "auditory cortex"
+   ],
+   "attrs": {
+    "role": "turning vibrations into sound"
+   },
+   "relations": [
+    {
+     "to": "brain_region",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hippocampus",
+   "kind": "entity",
+   "words": [
+    "hippocampus"
+   ],
+   "attrs": {
+    "role": "files new experiences into long-term memory"
+   },
+   "relations": [
+    {
+     "to": "brain_region",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "amygdala",
+   "kind": "entity",
+   "words": [
+    "amygdala"
+   ],
+   "attrs": {
+    "role": "the alarm bell — fear and emotional coloring"
+   },
+   "relations": [
+    {
+     "to": "brain_region",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hypothalamus",
+   "kind": "entity",
+   "words": [
+    "hypothalamus"
+   ],
+   "attrs": {
+    "role": "runs hormones, hunger, thirst and temperature"
+   },
+   "relations": [
+    {
+     "to": "brain_region",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "thalamus",
+   "kind": "entity",
+   "words": [
+    "thalamus"
+   ],
+   "attrs": {
+    "role": "the relay station for attention"
+   },
+   "relations": [
+    {
+     "to": "brain_region",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "basal_ganglia",
+   "kind": "entity",
+   "words": [
+    "basal ganglia"
+   ],
+   "attrs": {
+    "role": "habits and predicted rewards"
+   },
+   "relations": [
+    {
+     "to": "brain_region",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cerebellum",
+   "kind": "entity",
+   "words": [
+    "cerebellum"
+   ],
+   "attrs": {
+    "role": "balance, timing and practiced moves"
+   },
+   "relations": [
+    {
+     "to": "brain_region",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "brainstem",
+   "kind": "entity",
+   "words": [
+    "brainstem"
+   ],
+   "attrs": {
+    "role": "breathing and heartbeat — keeps the lights on"
+   },
+   "relations": [
+    {
+     "to": "brain_region",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "dopamine",
+   "kind": "entity",
+   "words": [
+    "dopamine"
+   ],
+   "attrs": {
+    "role": "reward and motivation",
+    "baseline": "0.3"
+   },
+   "relations": [
+    {
+     "to": "neurotransmitter",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "serotonin",
+   "kind": "entity",
+   "words": [
+    "serotonin"
+   ],
+   "attrs": {
+    "role": "mood stability and calm",
+    "baseline": "0.45"
+   },
+   "relations": [
+    {
+     "to": "neurotransmitter",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "norepinephrine",
+   "kind": "entity",
+   "words": [
+    "norepinephrine"
+   ],
+   "attrs": {
+    "role": "alertness and fight-or-flight",
+    "baseline": "0.25"
+   },
+   "relations": [
+    {
+     "to": "neurotransmitter",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "cortisol",
+   "kind": "entity",
+   "words": [
+    "cortisol"
+   ],
+   "attrs": {
+    "role": "stress signal",
+    "baseline": "0.15"
+   },
+   "relations": [
+    {
+     "to": "neurotransmitter",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "oxytocin",
+   "kind": "entity",
+   "words": [
+    "oxytocin"
+   ],
+   "attrs": {
+    "role": "bonding and trust",
+    "baseline": "0.25"
+   },
+   "relations": [
+    {
+     "to": "neurotransmitter",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "acetylcholine",
+   "kind": "entity",
+   "words": [
+    "acetylcholine"
+   ],
+   "attrs": {
+    "role": "learning and attention",
+    "baseline": "0.3"
+   },
+   "relations": [
+    {
+     "to": "neurotransmitter",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gaba",
+   "kind": "entity",
+   "words": [
+    "gaba"
+   ],
+   "attrs": {
+    "role": "the brain's brake pedal",
+    "baseline": "0.4"
+   },
+   "relations": [
+    {
+     "to": "neurotransmitter",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "endorphin",
+   "kind": "entity",
+   "words": [
+    "endorphin"
+   ],
+   "attrs": {
+    "role": "eases pain after effort",
+    "baseline": "0.2"
+   },
+   "relations": [
+    {
+     "to": "neurotransmitter",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "glutamate",
+   "kind": "entity",
+   "words": [
+    "glutamate"
+   ],
+   "attrs": {
+    "role": "the gas pedal of plasticity",
+    "baseline": "0.35"
+   },
+   "relations": [
+    {
+     "to": "neurotransmitter",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "joy",
+   "kind": "emotion",
+   "words": [
+    "joy"
+   ],
+   "attrs": {
+    "ch_dopamine": "0.85",
+    "ch_serotonin": "0.8",
+    "ch_norepinephrine": "0.2",
+    "ch_cortisol": "0.05",
+    "ch_oxytocin": "0.4",
+    "ch_acetylcholine": "0.4",
+    "ch_gaba": "0.35",
+    "ch_endorphin": "0.5",
+    "ch_glutamate": "0.4"
+   },
+   "relations": [
+    {
+     "to": "emotion_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "calm",
+   "kind": "emotion",
+   "words": [
+    "calm"
+   ],
+   "attrs": {
+    "ch_dopamine": "0.35",
+    "ch_serotonin": "0.7",
+    "ch_norepinephrine": "0.15",
+    "ch_cortisol": "0.08",
+    "ch_oxytocin": "0.45",
+    "ch_acetylcholine": "0.25",
+    "ch_gaba": "0.8",
+    "ch_endorphin": "0.4",
+    "ch_glutamate": "0.2"
+   },
+   "relations": [
+    {
+     "to": "emotion_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "fear",
+   "kind": "emotion",
+   "words": [
+    "fear"
+   ],
+   "attrs": {
+    "ch_dopamine": "0.2",
+    "ch_serotonin": "0.2",
+    "ch_norepinephrine": "0.9",
+    "ch_cortisol": "0.8",
+    "ch_oxytocin": "0.1",
+    "ch_acetylcholine": "0.5",
+    "ch_gaba": "0.15",
+    "ch_endorphin": "0.1",
+    "ch_glutamate": "0.6"
+   },
+   "relations": [
+    {
+     "to": "emotion_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "anger",
+   "kind": "emotion",
+   "words": [
+    "anger"
+   ],
+   "attrs": {
+    "ch_dopamine": "0.4",
+    "ch_serotonin": "0.15",
+    "ch_norepinephrine": "0.85",
+    "ch_cortisol": "0.7",
+    "ch_oxytocin": "0.1",
+    "ch_acetylcholine": "0.4",
+    "ch_gaba": "0.15",
+    "ch_endorphin": "0.3",
+    "ch_glutamate": "0.7"
+   },
+   "relations": [
+    {
+     "to": "emotion_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sadness",
+   "kind": "emotion",
+   "words": [
+    "sadness"
+   ],
+   "attrs": {
+    "ch_dopamine": "0.1",
+    "ch_serotonin": "0.15",
+    "ch_norepinephrine": "0.2",
+    "ch_cortisol": "0.5",
+    "ch_oxytocin": "0.3",
+    "ch_acetylcholine": "0.2",
+    "ch_gaba": "0.5",
+    "ch_endorphin": "0.1",
+    "ch_glutamate": "0.2"
+   },
+   "relations": [
+    {
+     "to": "emotion_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "surprise",
+   "kind": "emotion",
+   "words": [
+    "surprise"
+   ],
+   "attrs": {
+    "ch_dopamine": "0.6",
+    "ch_serotonin": "0.4",
+    "ch_norepinephrine": "0.8",
+    "ch_cortisol": "0.3",
+    "ch_oxytocin": "0.2",
+    "ch_acetylcholine": "0.6",
+    "ch_gaba": "0.3",
+    "ch_endorphin": "0.2",
+    "ch_glutamate": "0.6"
+   },
+   "relations": [
+    {
+     "to": "emotion_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "excitement",
+   "kind": "emotion",
+   "words": [
+    "excitement"
+   ],
+   "attrs": {
+    "ch_dopamine": "0.8",
+    "ch_serotonin": "0.6",
+    "ch_norepinephrine": "0.75",
+    "ch_cortisol": "0.2",
+    "ch_oxytocin": "0.3",
+    "ch_acetylcholine": "0.7",
+    "ch_gaba": "0.25",
+    "ch_endorphin": "0.35",
+    "ch_glutamate": "0.65"
+   },
+   "relations": [
+    {
+     "to": "emotion_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "affection",
+   "kind": "emotion",
+   "words": [
+    "affection"
+   ],
+   "attrs": {
+    "ch_dopamine": "0.55",
+    "ch_serotonin": "0.7",
+    "ch_norepinephrine": "0.2",
+    "ch_cortisol": "0.05",
+    "ch_oxytocin": "0.9",
+    "ch_acetylcholine": "0.35",
+    "ch_gaba": "0.55",
+    "ch_endorphin": "0.45",
+    "ch_glutamate": "0.3"
+   },
+   "relations": [
+    {
+     "to": "emotion_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "curiosity",
+   "kind": "emotion",
+   "words": [
+    "curiosity"
+   ],
+   "attrs": {
+    "ch_dopamine": "0.6",
+    "ch_serotonin": "0.5",
+    "ch_norepinephrine": "0.55",
+    "ch_cortisol": "0.1",
+    "ch_oxytocin": "0.25",
+    "ch_acetylcholine": "0.85",
+    "ch_gaba": "0.4",
+    "ch_endorphin": "0.25",
+    "ch_glutamate": "0.6"
+   },
+   "relations": [
+    {
+     "to": "emotion_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "frustration",
+   "kind": "emotion",
+   "words": [
+    "frustration"
+   ],
+   "attrs": {
+    "ch_dopamine": "0.15",
+    "ch_serotonin": "0.2",
+    "ch_norepinephrine": "0.7",
+    "ch_cortisol": "0.65",
+    "ch_oxytocin": "0.15",
+    "ch_acetylcholine": "0.5",
+    "ch_gaba": "0.2",
+    "ch_endorphin": "0.15",
+    "ch_glutamate": "0.55"
+   },
+   "relations": [
+    {
+     "to": "emotion_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "human_brain_scan",
+   "kind": "brain_scan",
+   "words": [
+    "human brain scan"
+   ],
+   "attrs": {
+    "weight": "1.0",
+    "regions": "cortex:1.0;prefrontal:1.0;broca:1.0;wernicke:1.0;hippocampus:0.9;amygdala:0.8;cerebellum:0.9;hypothalamus:0.9;thalamus:1.0;basal_ganglia:0.9;visual:0.9;auditory:0.9;motor:0.9;brainstem:1.0",
+    "feature": "the reference scan — symbolic thought and language"
+   },
+   "relations": [
+    {
+     "to": "brain_scan",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mouse_brain_scan",
+   "kind": "brain_scan",
+   "words": [
+    "mouse brain scan"
+   ],
+   "attrs": {
+    "weight": "0.25",
+    "regions": "cortex:0.6;hippocampus:1.0;amygdala:0.9;cerebellum:1.0;olfactory:1.0;brainstem:1.0;thalamus:0.8",
+    "feature": "tiny but a memory and navigation champion"
+   },
+   "relations": [
+    {
+     "to": "brain_scan",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "octopus_brain_scan",
+   "kind": "brain_scan",
+   "words": [
+    "octopus brain scan"
+   ],
+   "attrs": {
+    "weight": "0.4",
+    "regions": "cortex:0.9;visual:1.2;motor:1.1;basal_ganglia:0.7;brainstem:0.8",
+    "feature": "half its neurons live in the arms — distributed problem solving"
+   },
+   "relations": [
+    {
+     "to": "brain_scan",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "crow_brain_scan",
+   "kind": "brain_scan",
+   "words": [
+    "crow brain scan"
+   ],
+   "attrs": {
+    "weight": "0.3",
+    "regions": "cortex:1.1;prefrontal:0.9;visual:1.1;motor:0.8;hippocampus:0.8;thalamus:0.9",
+    "feature": "a bird that reasons with tools despite a pea-sized cortex"
+   },
+   "relations": [
+    {
+     "to": "brain_scan",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "dolphin_brain_scan",
+   "kind": "brain_scan",
+   "words": [
+    "dolphin brain scan"
+   ],
+   "attrs": {
+    "weight": "0.45",
+    "regions": "cortex:1.1;auditory:1.4;broca:0.5;wernicke:0.5;hippocampus:0.8;amygdala:0.9;cerebellum:1.0",
+    "feature": "echolocation and social brains of the sea"
+   },
+   "relations": [
+    {
+     "to": "brain_scan",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "human_brain",
+   "kind": "entity",
+   "words": [
+    "human brain"
+   ],
+   "attrs": {
+    "role": "86 billion neurons, the most stereotyped dreamer known",
+    "trait": "folds itself for surface area"
+   }
+  },
+  {
+   "id": "synapse",
+   "kind": "entity",
+   "words": [
+    "synapse"
+   ],
+   "attrs": {
+    "role": "the gap where neurons talk in chemicals"
+   }
+  },
+  {
+   "id": "neuroplasticity",
+   "kind": "entity",
+   "words": [
+    "neuroplasticity"
+   ],
+   "attrs": {
+    "effect": "the brain rewires itself with practice — gene's whole life"
+   }
+  }
+ ]
+}

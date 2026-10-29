@@ -1,0 +1,1465 @@
+{
+ "concepts": [
+  {
+   "id": "substance",
+   "kind": "category",
+   "words": [
+    "substance",
+    "matter"
+   ],
+   "attrs": {
+    "def": "the stuff things are made of"
+   },
+   "relations": [
+    {
+     "to": "entity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "element",
+   "kind": "category",
+   "words": [
+    "element",
+    "elements"
+   ],
+   "attrs": {
+    "def": "a pure substance that cannot be split"
+   },
+   "relations": [
+    {
+     "to": "substance",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "metal",
+   "kind": "category",
+   "words": [
+    "metal",
+    "metals"
+   ],
+   "attrs": {
+    "def": "a shiny element that conducts electricity"
+   },
+   "relations": [
+    {
+     "to": "element",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "nonmetal",
+   "kind": "category",
+   "words": [
+    "nonmetal",
+    "nonmetals"
+   ],
+   "attrs": {
+    "def": "an element that is not a metal"
+   },
+   "relations": [
+    {
+     "to": "element",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "compound",
+   "kind": "category",
+   "words": [
+    "compound",
+    "compounds"
+   ],
+   "attrs": {
+    "def": "a substance built from two or more elements"
+   },
+   "relations": [
+    {
+     "to": "substance",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mixture_cat",
+   "kind": "category",
+   "words": [
+    "mixture"
+   ],
+   "attrs": {
+    "def": "two substances jumbled together but not bonded"
+   },
+   "relations": [
+    {
+     "to": "substance",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "state_cat",
+   "kind": "category",
+   "words": [
+    "state of matter"
+   ],
+   "attrs": {
+    "def": "the form a substance takes — solid, liquid, gas or plasma"
+   },
+   "relations": [
+    {
+     "to": "idea",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "atom_part",
+   "kind": "category",
+   "words": [
+    "atom part"
+   ],
+   "attrs": {
+    "def": "a piece inside an atom"
+   },
+   "relations": [
+    {
+     "to": "entity",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "reaction_cat",
+   "kind": "category",
+   "words": [
+    "reaction",
+    "chemical reaction"
+   ],
+   "attrs": {
+    "def": "a change that turns substances into new substances"
+   },
+   "relations": [
+    {
+     "to": "idea",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hydrogen",
+   "kind": "element",
+   "words": [
+    "hydrogen"
+   ],
+   "attrs": {
+    "symbol": "H",
+    "number": "1",
+    "state": "gas",
+    "used_for": "rocket fuel"
+   },
+   "relations": [
+    {
+     "to": "nonmetal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "helium",
+   "kind": "element",
+   "words": [
+    "helium"
+   ],
+   "attrs": {
+    "symbol": "He",
+    "number": "2",
+    "state": "gas",
+    "used_for": "balloons"
+   },
+   "relations": [
+    {
+     "to": "nonmetal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lithium",
+   "kind": "element",
+   "words": [
+    "lithium"
+   ],
+   "attrs": {
+    "symbol": "Li",
+    "number": "3",
+    "state": "solid",
+    "used_for": "batteries"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "carbon",
+   "kind": "element",
+   "words": [
+    "carbon"
+   ],
+   "attrs": {
+    "symbol": "C",
+    "number": "6",
+    "state": "solid",
+    "used_for": "all life"
+   },
+   "relations": [
+    {
+     "to": "nonmetal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "nitrogen",
+   "kind": "element",
+   "words": [
+    "nitrogen"
+   ],
+   "attrs": {
+    "symbol": "N",
+    "number": "7",
+    "state": "gas",
+    "used_for": "most of the air"
+   },
+   "relations": [
+    {
+     "to": "nonmetal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "oxygen",
+   "kind": "element",
+   "words": [
+    "oxygen"
+   ],
+   "attrs": {
+    "symbol": "O",
+    "number": "8",
+    "state": "gas",
+    "used_for": "breathing"
+   },
+   "relations": [
+    {
+     "to": "nonmetal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "fluorine",
+   "kind": "element",
+   "words": [
+    "fluorine"
+   ],
+   "attrs": {
+    "symbol": "F",
+    "number": "9",
+    "state": "gas",
+    "used_for": "toothpaste"
+   },
+   "relations": [
+    {
+     "to": "nonmetal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "neon",
+   "kind": "element",
+   "words": [
+    "neon"
+   ],
+   "attrs": {
+    "symbol": "Ne",
+    "number": "10",
+    "state": "gas",
+    "used_for": "bright signs"
+   },
+   "relations": [
+    {
+     "to": "nonmetal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sodium",
+   "kind": "element",
+   "words": [
+    "sodium"
+   ],
+   "attrs": {
+    "symbol": "Na",
+    "number": "11",
+    "state": "solid",
+    "used_for": "salt"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "magnesium",
+   "kind": "element",
+   "words": [
+    "magnesium"
+   ],
+   "attrs": {
+    "symbol": "Mg",
+    "number": "12",
+    "state": "solid",
+    "used_for": "burning white"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "aluminium",
+   "kind": "element",
+   "words": [
+    "aluminium"
+   ],
+   "attrs": {
+    "symbol": "Al",
+    "number": "13",
+    "state": "solid",
+    "used_for": "foil and cans"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "silicon",
+   "kind": "element",
+   "words": [
+    "silicon"
+   ],
+   "attrs": {
+    "symbol": "Si",
+    "number": "14",
+    "state": "solid",
+    "used_for": "computer chips"
+   },
+   "relations": [
+    {
+     "to": "nonmetal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "phosphorus",
+   "kind": "element",
+   "words": [
+    "phosphorus"
+   ],
+   "attrs": {
+    "symbol": "P",
+    "number": "15",
+    "state": "solid",
+    "used_for": "matches"
+   },
+   "relations": [
+    {
+     "to": "nonmetal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sulfur",
+   "kind": "element",
+   "words": [
+    "sulfur"
+   ],
+   "attrs": {
+    "symbol": "S",
+    "number": "16",
+    "state": "solid",
+    "used_for": "yellow powder"
+   },
+   "relations": [
+    {
+     "to": "nonmetal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "chlorine",
+   "kind": "element",
+   "words": [
+    "chlorine"
+   ],
+   "attrs": {
+    "symbol": "Cl",
+    "number": "17",
+    "state": "gas",
+    "used_for": "pools"
+   },
+   "relations": [
+    {
+     "to": "nonmetal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "argon",
+   "kind": "element",
+   "words": [
+    "argon"
+   ],
+   "attrs": {
+    "symbol": "Ar",
+    "number": "18",
+    "state": "gas",
+    "used_for": "light bulbs"
+   },
+   "relations": [
+    {
+     "to": "nonmetal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "potassium",
+   "kind": "element",
+   "words": [
+    "potassium"
+   ],
+   "attrs": {
+    "symbol": "K",
+    "number": "19",
+    "state": "solid",
+    "used_for": "bananas"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "calcium",
+   "kind": "element",
+   "words": [
+    "calcium"
+   ],
+   "attrs": {
+    "symbol": "Ca",
+    "number": "20",
+    "state": "solid",
+    "used_for": "bones"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "titanium",
+   "kind": "element",
+   "words": [
+    "titanium"
+   ],
+   "attrs": {
+    "symbol": "Ti",
+    "number": "22",
+    "state": "solid",
+    "used_for": "jet engines"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "chromium",
+   "kind": "element",
+   "words": [
+    "chromium"
+   ],
+   "attrs": {
+    "symbol": "Cr",
+    "number": "24",
+    "state": "solid",
+    "used_for": "shine on steel"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "iron",
+   "kind": "element",
+   "words": [
+    "iron"
+   ],
+   "attrs": {
+    "symbol": "Fe",
+    "number": "26",
+    "state": "solid",
+    "used_for": "steel and blood"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "nickel",
+   "kind": "element",
+   "words": [
+    "nickel"
+   ],
+   "attrs": {
+    "symbol": "Ni",
+    "number": "28",
+    "state": "solid",
+    "used_for": "coins"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "copper",
+   "kind": "element",
+   "words": [
+    "copper"
+   ],
+   "attrs": {
+    "symbol": "Cu",
+    "number": "29",
+    "state": "solid",
+    "used_for": "wires"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "zinc",
+   "kind": "element",
+   "words": [
+    "zinc"
+   ],
+   "attrs": {
+    "symbol": "Zn",
+    "number": "30",
+    "state": "solid",
+    "used_for": "coating steel"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "silver",
+   "kind": "element",
+   "words": [
+    "silver"
+   ],
+   "attrs": {
+    "symbol": "Ag",
+    "number": "47",
+    "state": "solid",
+    "used_for": "the best conductor"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "tin",
+   "kind": "element",
+   "words": [
+    "tin"
+   ],
+   "attrs": {
+    "symbol": "Sn",
+    "number": "50",
+    "state": "solid",
+    "used_for": "cans"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "iodine",
+   "kind": "element",
+   "words": [
+    "iodine"
+   ],
+   "attrs": {
+    "symbol": "I",
+    "number": "53",
+    "state": "solid",
+    "used_for": "antiseptic"
+   },
+   "relations": [
+    {
+     "to": "nonmetal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gold",
+   "kind": "element",
+   "words": [
+    "gold"
+   ],
+   "attrs": {
+    "symbol": "Au",
+    "number": "79",
+    "state": "solid",
+    "used_for": "never rusts"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "mercury",
+   "kind": "element",
+   "words": [
+    "mercury"
+   ],
+   "attrs": {
+    "symbol": "Hg",
+    "number": "80",
+    "state": "liquid",
+    "used_for": "old thermometers"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "lead",
+   "kind": "element",
+   "words": [
+    "lead"
+   ],
+   "attrs": {
+    "symbol": "Pb",
+    "number": "82",
+    "state": "solid",
+    "used_for": "heavy shielding"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "uranium",
+   "kind": "element",
+   "words": [
+    "uranium"
+   ],
+   "attrs": {
+    "symbol": "U",
+    "number": "92",
+    "state": "solid",
+    "used_for": "nuclear fuel"
+   },
+   "relations": [
+    {
+     "to": "nonmetal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "tungsten",
+   "kind": "element",
+   "words": [
+    "tungsten"
+   ],
+   "attrs": {
+    "symbol": "W",
+    "number": "74",
+    "state": "solid",
+    "used_for": "filaments"
+   },
+   "relations": [
+    {
+     "to": "metal",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "kind": "entity",
+   "words": [
+    "water"
+   ],
+   "attrs": {
+    "formula": "h2o",
+    "found_in": "rains rivers and you",
+    "used_for": "drinking and every known life"
+   },
+   "relations": [
+    {
+     "to": "compound",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "carbon_dioxide",
+   "kind": "entity",
+   "words": [
+    "carbon dioxide"
+   ],
+   "attrs": {
+    "formula": "co2",
+    "found_in": "exhaled breath and fizzy drinks",
+    "effect": "plants breathe it in"
+   },
+   "relations": [
+    {
+     "to": "compound",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "methane",
+   "kind": "entity",
+   "words": [
+    "methane"
+   ],
+   "attrs": {
+    "formula": "ch4",
+    "found_in": "natural gas",
+    "used_for": "cooking and heating"
+   },
+   "relations": [
+    {
+     "to": "compound",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ammonia",
+   "kind": "entity",
+   "words": [
+    "ammonia"
+   ],
+   "attrs": {
+    "formula": "nh3",
+    "used_for": "fertiliser and cleaning",
+    "trait": "sharp smelling"
+   },
+   "relations": [
+    {
+     "to": "compound",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "salt",
+   "kind": "entity",
+   "words": [
+    "salt"
+   ],
+   "attrs": {
+    "formula": "nacl",
+    "used_for": "seasoning food",
+    "found_in": "the sea"
+   },
+   "relations": [
+    {
+     "to": "compound",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "glucose",
+   "kind": "entity",
+   "words": [
+    "glucose"
+   ],
+   "attrs": {
+    "formula": "c6h12o6",
+    "role": "sugar that fuels living things"
+   },
+   "relations": [
+    {
+     "to": "compound",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ethanol",
+   "kind": "entity",
+   "words": [
+    "ethanol"
+   ],
+   "attrs": {
+    "formula": "c2h5oh",
+    "found_in": "drinks and fuel"
+   },
+   "relations": [
+    {
+     "to": "compound",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rust",
+   "kind": "entity",
+   "words": [
+    "rust"
+   ],
+   "attrs": {
+    "formula": "fe2o3",
+    "effect": "slowly eats iron",
+    "trait": "flaky and orange"
+   },
+   "relations": [
+    {
+     "to": "compound",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "baking_soda",
+   "kind": "entity",
+   "words": [
+    "baking soda"
+   ],
+   "attrs": {
+    "formula": "nahco3",
+    "used_for": "baking and fizzing"
+   },
+   "relations": [
+    {
+     "to": "compound",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "vinegar",
+   "kind": "entity",
+   "words": [
+    "vinegar"
+   ],
+   "attrs": {
+    "formula": "c2h4o2",
+    "used_for": "cooking and cleaning",
+    "trait": "sour"
+   },
+   "relations": [
+    {
+     "to": "compound",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "hydrogen_peroxide",
+   "kind": "entity",
+   "words": [
+    "hydrogen peroxide"
+   ],
+   "attrs": {
+    "formula": "h2o2",
+    "used_for": "cleaning wounds",
+    "effect": "fizzes on germs"
+   },
+   "relations": [
+    {
+     "to": "compound",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "carbon_monoxide",
+   "kind": "entity",
+   "words": [
+    "carbon monoxide"
+   ],
+   "attrs": {
+    "formula": "co",
+    "effect": "a silent poison from bad burning"
+   },
+   "relations": [
+    {
+     "to": "compound",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "sulfuric_acid",
+   "kind": "entity",
+   "words": [
+    "sulfuric acid"
+   ],
+   "attrs": {
+    "formula": "h2so4",
+    "used_for": "car batteries",
+    "trait": "very corrosive"
+   },
+   "relations": [
+    {
+     "to": "compound",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ozone",
+   "kind": "entity",
+   "words": [
+    "ozone"
+   ],
+   "attrs": {
+    "formula": "o3",
+    "role": "the sunburn shield high in the sky"
+   },
+   "relations": [
+    {
+     "to": "compound",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "bronze",
+   "kind": "entity",
+   "words": [
+    "bronze"
+   ],
+   "attrs": {
+    "made_of": "copper and tin",
+    "used_for": "statues and old weapons"
+   },
+   "relations": [
+    {
+     "to": "mixture_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "steel",
+   "kind": "entity",
+   "words": [
+    "steel"
+   ],
+   "attrs": {
+    "made_of": "iron and carbon",
+    "used_for": "buildings and tools"
+   },
+   "relations": [
+    {
+     "to": "mixture_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "kind": "entity",
+   "words": [
+    "air"
+   ],
+   "attrs": {
+    "made_of": "nitrogen and oxygen and more",
+    "found_in": "everywhere"
+   },
+   "relations": [
+    {
+     "to": "mixture_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "saline",
+   "kind": "entity",
+   "words": [
+    "saline"
+   ],
+   "attrs": {
+    "made_of": "salt and water",
+    "used_for": "medical drips"
+   },
+   "relations": [
+    {
+     "to": "mixture_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "solid",
+   "kind": "entity",
+   "words": [
+    "solid"
+   ],
+   "attrs": {
+    "trait": "keeps its shape",
+    "effect": "particles lock in place"
+   },
+   "relations": [
+    {
+     "to": "state_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "liquid",
+   "kind": "entity",
+   "words": [
+    "liquid"
+   ],
+   "attrs": {
+    "trait": "flows and takes the container's shape"
+   },
+   "relations": [
+    {
+     "to": "state_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "gas",
+   "kind": "entity",
+   "words": [
+    "gas"
+   ],
+   "attrs": {
+    "trait": "spreads to fill any space"
+   },
+   "relations": [
+    {
+     "to": "state_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "plasma",
+   "kind": "entity",
+   "words": [
+    "plasma"
+   ],
+   "attrs": {
+    "trait": "electrically charged gas, like lightning"
+   },
+   "relations": [
+    {
+     "to": "state_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "melting",
+   "kind": "entity",
+   "words": [
+    "melting"
+   ],
+   "attrs": {
+    "effect": "solid turns to liquid when heated"
+   },
+   "relations": [
+    {
+     "to": "state_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "freezing",
+   "kind": "entity",
+   "words": [
+    "freezing"
+   ],
+   "attrs": {
+    "effect": "liquid turns to solid when cooled"
+   },
+   "relations": [
+    {
+     "to": "state_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "evaporation",
+   "kind": "entity",
+   "words": [
+    "evaporation"
+   ],
+   "attrs": {
+    "effect": "liquid turns to gas"
+   },
+   "relations": [
+    {
+     "to": "state_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "condensation",
+   "kind": "entity",
+   "words": [
+    "condensation"
+   ],
+   "attrs": {
+    "effect": "gas turns to liquid when cooled"
+   },
+   "relations": [
+    {
+     "to": "state_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "proton",
+   "kind": "entity",
+   "words": [
+    "proton"
+   ],
+   "attrs": {
+    "charge": "positive",
+    "found_in": "the nucleus"
+   },
+   "relations": [
+    {
+     "to": "atom_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "neutron",
+   "kind": "entity",
+   "words": [
+    "neutron"
+   ],
+   "attrs": {
+    "charge": "none",
+    "found_in": "the nucleus"
+   },
+   "relations": [
+    {
+     "to": "atom_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "electron",
+   "kind": "entity",
+   "words": [
+    "electron"
+   ],
+   "attrs": {
+    "charge": "negative",
+    "role": "orbits the nucleus and makes bonds"
+   },
+   "relations": [
+    {
+     "to": "atom_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "atomic_nucleus",
+   "kind": "entity",
+   "words": [
+    "atomic nucleus"
+   ],
+   "attrs": {
+    "role": "the heavy heart of an atom"
+   },
+   "relations": [
+    {
+     "to": "atom_part",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "water_formation",
+   "kind": "reaction",
+   "words": [
+    "water formation"
+   ],
+   "attrs": {
+    "reactants": "hydrogen + oxygen",
+    "product": "water"
+   },
+   "relations": [
+    {
+     "to": "reaction_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "rusting",
+   "kind": "reaction",
+   "words": [
+    "rusting"
+   ],
+   "attrs": {
+    "reactants": "iron + oxygen",
+    "product": "rust"
+   },
+   "relations": [
+    {
+     "to": "reaction_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "burning_carbon",
+   "kind": "reaction",
+   "words": [
+    "burning carbon"
+   ],
+   "attrs": {
+    "reactants": "carbon + oxygen",
+    "product": "carbon dioxide"
+   },
+   "relations": [
+    {
+     "to": "reaction_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "salt_formation",
+   "kind": "reaction",
+   "words": [
+    "salt formation"
+   ],
+   "attrs": {
+    "reactants": "sodium + chlorine",
+    "product": "salt"
+   },
+   "relations": [
+    {
+     "to": "reaction_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "methane_burning",
+   "kind": "reaction",
+   "words": [
+    "methane burning"
+   ],
+   "attrs": {
+    "reactants": "methane + oxygen",
+    "product": "carbon dioxide"
+   },
+   "relations": [
+    {
+     "to": "reaction_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "ammonia_making",
+   "kind": "reaction",
+   "words": [
+    "ammonia making"
+   ],
+   "attrs": {
+    "reactants": "nitrogen + hydrogen",
+    "product": "ammonia"
+   },
+   "relations": [
+    {
+     "to": "reaction_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "combustion",
+   "kind": "entity",
+   "words": [
+    "combustion"
+   ],
+   "attrs": {
+    "effect": "burning — fuel meets oxygen and releases energy",
+    "reactants": "fuel + oxygen",
+    "product": "heat and light"
+   },
+   "relations": [
+    {
+     "to": "reaction_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "oxidation",
+   "kind": "entity",
+   "words": [
+    "oxidation"
+   ],
+   "attrs": {
+    "effect": "oxygen joins a substance",
+    "reactants": "element + oxygen",
+    "product": "an oxide"
+   },
+   "relations": [
+    {
+     "to": "reaction_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "neutralisation",
+   "kind": "entity",
+   "words": [
+    "neutralisation"
+   ],
+   "attrs": {
+    "effect": "acid and base cancel into salt and water",
+    "reactants": "acid + base",
+    "product": "salt and water"
+   },
+   "relations": [
+    {
+     "to": "reaction_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "electrolysis",
+   "kind": "entity",
+   "words": [
+    "electrolysis"
+   ],
+   "attrs": {
+    "effect": "electric current splits a compound",
+    "reactants": "compound + electricity",
+    "product": "separate elements"
+   },
+   "relations": [
+    {
+     "to": "reaction_cat",
+     "rel": "is-a"
+    }
+   ]
+  },
+  {
+   "id": "photosynthesis_reaction",
+   "kind": "entity",
+   "words": [
+    "photosynthesis reaction"
+   ],
+   "attrs": {
+    "effect": "plants make glucose from light",
+    "reactants": "carbon dioxide + water",
+    "product": "glucose and oxygen"
+   },
+   "relations": [
+    {
+     "to": "reaction_cat",
+     "rel": "is-a"
+    }
+   ]
+  }
+ ]
+}
