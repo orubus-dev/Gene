@@ -1,7 +1,6 @@
 {
  "domains": {
   "maths": 0.595,
-  "grammar": 0.595,
   "number": 0.595,
   "string": 0.595,
   "improvement": 0.595,
@@ -12,14 +11,15 @@
   "capability": 0.595,
   "origin": 0.595,
   "creativity": 0.595,
-  "sentence": 0.595,
   "memory": 0.595,
-  "taxonomy": 0.568,
-  "chem": 0.506,
-  "list": 0.454,
-  "sequence": 0.295,
+  "taxonomy": 0.591,
+  "chem": 0.579,
+  "list": 0.564,
+  "sentence": 0.555,
+  "grammar": 0.515,
+  "sequence": 0.469,
   "brain": -0.197,
-  "code": 0.034
+  "code": -0.019
  },
  "skills": {
   "improvement": 0.595,

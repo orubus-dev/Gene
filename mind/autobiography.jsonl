@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+=======
+>>>>>>> 5ae4998d2757bf19bccb917c8ce35d9417cd65f5
 {"t": 1793272841.1, "cycle": 108, "day": "Cycle 108", "headline": "a quiet cycle", "wins": 0, "tasks": 0, "top": "", "felt": "steady", "kept": 0, "domains": [], "emotion": "sadness"}
 {"t": 1793272885.4, "cycle": 109, "day": "Cycle 109", "headline": "300 tasks, 276 cracked", "wins": 276, "tasks": 300, "top": "", "felt": "good", "kept": 24, "domains": ["taxonomy", "maths"], "emotion": "joy"}
 {"t": 1793272900.6, "cycle": 110, "day": "Cycle 110", "headline": "300 tasks, 289 cracked", "wins": 289, "tasks": 300, "top": "rearrange p=2*l+2*w", "felt": "good", "kept": 24, "domains": ["taxonomy", "maths"], "emotion": "joy"}
@@ -67,5 +70,6 @@
 {"t": 1793276577.6, "cycle": 169, "day": "Cycle 169", "headline": "192 tasks, 135 cracked", "wins": 135, "tasks": 192, "top": "neg: we are quick", "felt": "good", "kept": 24, "domains": [], "emotion": "joy"}
 {"t": 1793276733.1, "cycle": 174, "day": "Cycle 174", "headline": "228 tasks, 195 cracked", "wins": 195, "tasks": 228, "top": "neg: we are quick", "felt": "good", "kept": 24, "domains": ["string", "taxonomy", "code", "grammar", "chem", "maths", "list", "sequence", "number", "sentence"], "emotion": "joy"}
 {"t": 1793276766.5, "cycle": 172, "day": "Cycle 172", "headline": "212 tasks, 170 cracked", "wins": 170, "tasks": 212, "top": "neg: we are quick", "felt": "good", "kept": 24, "domains": ["list", "chem", "number", "string", "code", "sequence", "sentence", "maths", "grammar", "taxonomy"], "emotion": "joy"}
+{"t": 1793276875.0, "cycle": 171, "day": "Cycle 171", "headline": "134 tasks, 125 cracked", "wins": 125, "tasks": 134, "top": "neg: we are quick", "felt": "good", "kept": 24, "domains": [], "emotion": "joy"}
 {"t": 1793277225.8, "cycle": 172, "day": "Cycle 172", "headline": "212 tasks, 170 cracked", "wins": 170, "tasks": 212, "top": "neg: we are quick", "felt": "good", "kept": 24, "domains": ["list", "chem", "number", "string", "code", "sequence", "sentence", "maths", "grammar", "taxonomy"], "emotion": "joy"}
 {"t": 1793277258.5, "cycle": 174, "day": "Cycle 174", "headline": "228 tasks, 195 cracked", "wins": 195, "tasks": 228, "top": "neg: we are quick", "felt": "good", "kept": 24, "domains": ["string", "taxonomy", "code", "grammar", "chem", "maths", "list", "sequence", "number", "sentence"], "emotion": "joy"}
