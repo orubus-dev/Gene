@@ -11,7 +11,7 @@ import time
 
 from . import concepts, conversation, endocrine, evolution, hdc, immune, knowledge
 from . import linguistics, memory, reflex, trainer, world
-from . import development
+from . import development, ingenuity
 from . import genome as G
 
 
@@ -36,7 +36,8 @@ class Mind:
         self.rng = random.Random(int(self._load("rng.json", {"seed": 1337})["seed"]))
         self.convo = conversation.Conversation(self)
         self.progress = self._load("progress.json", {"attempts": 0, "solved": 0,
-                                                     "by_domain": {}, "cycles": 0})
+                                                     "by_domain": {}, "cycles": 0,
+                                                     "history": []})
         self.meta = self._load("meta.json", {"born": time.time(), "name": "gene"})
 
         self._seed_core()
@@ -109,6 +110,7 @@ class Mind:
                     self.graph.relate(dom, "skill", strength=0.1)
             self.graph.hebbian(outcome["coactive"], amount=0.05)
         self.progress["cycles"] += 1
+        self._snapshot_history(report)
         self.genes = trainer.dedupe_genes(self.genes)
         # development: wins accrue; maturation gates may open
         for dom, v in report["by_domain"].items():
@@ -173,22 +175,49 @@ class Mind:
                     self.genes.append(outcome["gene"])
                 self.graph.relate("chat", "skill", strength=0.1)
                 tier = max(start_tier, task["tier"])          # hold the hard-won level
+                # ASPIRATION LAW: dominate a tier and the world gets harder —
+                # winning is also a reason to climb, never to coast.
+                if report["tasks"] >= 5 and report["solved"] / report["tasks"] >= 0.9:
+                    tier = min(4, tier + 1)
             else:
-                # ESCALATION LAW: failure -> harder next, answer never shown
-                esc = dict(task)
-                esc["tier"] = min(4, task["tier"] + 1)
-                esc["input"] = task["input"]
-                queue.append(esc)
-                report["escalations"] += 1
-                tier = min(4, max(tier, esc["tier"]))
-                self.episodes.record("escalation", {"intent": it,
-                                                    "tier": esc["tier"],
-                                                    "coactive": ["chat", "failure", "harder"]})
+                # ESCALATION LAW: failure -> harder next, answer never shown.
+                # Bound: a stimulus re-escalates at most 3 times, then it is
+                # released (it returns next cycle; never revealed, never easier).
+                tries = task.get("tries", 0)
+                if tries < 3:
+                    esc = dict(task)
+                    esc["tier"] = min(4, task["tier"] + 1)
+                    esc["input"] = task["input"]
+                    esc["tries"] = tries + 1
+                    queue.append(esc)
+                    report["escalations"] += 1
+                    tier = min(4, max(tier, esc["tier"]))
+                    self.episodes.record("escalation", {"intent": it,
+                                                        "tier": esc["tier"],
+                                                        "coactive": ["chat", "failure", "harder"]})
             report["max_tier"] = max(report["max_tier"], tier)
         self.progress["cycles"] += 1
+        self._snapshot_history({"by_domain": {"chat": {"tasks": report["tasks"],
+                                                        "solved": report["solved"]}}})
         self.genes = trainer.dedupe_genes(self.genes)
         self.dev.record_win("chat") if report["solved"] else None
         return report
+
+    def _snapshot_history(self, report):
+        """Append a per-cycle solve-rate snapshot (for self-improvement narrative)."""
+        hist = self.progress.setdefault("history", [])
+        rates = {}
+        for dom, v in report.get("by_domain", {}).items():
+            if v.get("tasks"):
+                rates[dom] = round(v["solved"] / v["tasks"], 3)
+            # keep lifetime per-domain counters current too
+            agg = self.progress.setdefault("by_domain", {}).setdefault(
+                dom, {"tasks": 0, "solved": 0})
+            agg["tasks"] += v.get("tasks", 0)
+            agg["solved"] += v.get("solved", 0)
+        if rates:
+            hist.append({"cycle": self.progress["cycles"], "rates": rates})
+        self.progress["history"] = hist[-30:]
 
     def sleep(self):
         """Consolidation: replay episodes, hebbian wiring, decay, apoptosis."""
@@ -276,13 +305,27 @@ class Mind:
             return "Noted: %s has %s." % (i["subject"], i["attr"])
 
         if intent == "query":
-            ans = self._find_answer(i["subject"])
+            subj_id = i["subject"]
+            ans = self._find_answer(subj_id)
+            if not ans:
+                # word-bound lookup ("zorpus" taught via words[], not id)
+                wn = self.graph.lookup_word(subj_id.replace("_", " "))
+                if wn:
+                    ans = self._find_answer(wn["id"])
             if ans:
-                self.convo.state.d["last_answer"] = ans[:200]
+                tail = self.rng.choice([
+                    "",
+                    " (From my graph — ask 'how do you know %s' for provenance.)" % subj_id.replace("_", " "),
+                    " Taught or derived — nothing hard-coded.",
+                    " Want the deeper links? Say 'more'.",
+                ])
+                full = (ans + tail).strip()
+                self.convo.state.d["last_answer"] = full[:200]
                 self.convo.state.save()
-                return ans
-            # unknown: infer harder, then analogy, then honest miss + question back
-            gained = self.knowledge.infer(i["subject"])
+                return full
+            # unknown: infer harder, then INGENUITY (decompose + existence),
+            # then analogy, then honest miss + question back
+            gained = self.knowledge.infer(subj_id)
             if gained:
                 parts = []
                 if gained.get("is-a"):
@@ -292,16 +335,14 @@ class Mind:
                         parts.append("%s: %s" % (k, v))
                 if parts:
                     return "By inference: %s." % "; ".join(parts[:2])
-            near = self.graph.activate([i["subject"]], topn=3)
-            near = [n for n, s in near if s > 0.05 and n != i["subject"]]
-            self.knowledge.inquire("What is %s?" % i["subject"])
-            if near:
-                return ("I don't know '%s' yet — the nearest thing I hold is '%s'. "
-                        "Is that what you mean, or will you teach me the difference?" % (
-                            i["subject"].replace("_", " "), near[0].replace("_", " ")))
-            return ("I don't know '%s' yet — it's on my study list. Ask me about "
-                    "what I do know, or teach me with '%s is ...'." % (
-                        i["subject"].replace("_", " "), i["subject"].replace("_", " ")))
+            verdict_reply = ingenuity.existence_reply(self, subj_id)
+            near = self.graph.activate([subj_id], topn=3)
+            near = [n for n, s in near if s > 0.12 and n != subj_id]
+            if near and "'" + subj_id.replace("_", " ") in verdict_reply:
+                # ingenuity had nothing structural to say; keep HDC guess but
+                # honest-first: lead with the verdict, append the HDC neighbor
+                return verdict_reply + " (By raw vector feel it lands nearest '%s' — weak signal.)" % near[0].replace("_", " ")
+            return verdict_reply
 
         if intent == "query_attr":
             node = self.graph.get(i["subject"])
@@ -392,15 +433,9 @@ class Mind:
                    and not self.graph.lookup_word(w)]
         if unknown:
             w = unknown[0]
-            self.knowledge.inquire("meaning of: %s" % ", ".join(unknown[:5]))
-            near = self.graph.activate([w], topn=3)
-            near = [n for n, s in near if s > 0.05]
-            if near:
-                return ("'%s' isn't in my graph yet — closest I hold is '%s'. "
-                        "Is that related? Teach me with '%s is ...' and I'll connect them." % (
-                            w, near[0].replace("_", " "), w))
-            return ("'%s' isn't in my graph yet — it's on my study list. "
-                    "Teach me with '%s is ...', or ask me about what I do know." % (w, w))
+            self.episodes.record("wonder", {"unknown": ", ".join(unknown[:5]),
+                                            "coactive": ["self", "question", "study"]})
+            return ingenuity.existence_reply(self, w)
         return ("I heard you, but I don't yet know how to think about that. "
                 "Give me a fact or a puzzle and I'll grow around it.")
 
@@ -424,10 +459,26 @@ class Mind:
     def status_text(self):
         s = self.status()
         acc = (100.0 * s["solved"] / s["attempts"]) if s["attempts"] else 0.0
-        return ("organism status — concepts: %d | skills: %d | reflexes: %d | "
-                "causal rules: %d | lifetime: %d attempts, %d solved (%.1f%%) | "
-                "cycles: %d | hormones: curiosity %.2f urgency %.2f energy %.2f mood %.2f"
-                % (s["concepts"], s["skills"], s["reflexes"], s["predictor_rules"],
-                   s["attempts"], s["solved"], acc, s["cycles"],
-                   s["hormones"]["curiosity"], s["hormones"]["urgency"],
-                   s["hormones"]["energy"], s["hormones"]["mood"]))
+        h = s["hormones"]
+        templates = [
+            ("organism status — concepts: %d | skills: %d | reflexes: %d | "
+             "causal rules: %d | lifetime: %d attempts, %d solved (%.1f%%) | "
+             "cycles: %d | hormones: curiosity %.2f urgency %.2f energy %.2f mood %.2f",
+             (s["concepts"], s["skills"], s["reflexes"], s["predictor_rules"],
+              s["attempts"], s["solved"], acc, s["cycles"],
+              h["curiosity"], h["urgency"], h["energy"], h["mood"])),
+            ("self-report: %d concepts, %d skills, %d reflex arcs, %d causal rules. "
+             "Lifetime: %d/%d solved (%.1f%%) over %d cycles. Mood %.2f, energy %.0f%%, "
+             "curiosity %.2f — all diffable in git.",
+             (s["concepts"], s["skills"], s["reflexes"], s["predictor_rules"],
+              s["solved"], s["attempts"], acc, s["cycles"],
+              h["mood"], h["energy"] * 100, h["curiosity"])),
+            ("%d concepts strong, %d skills, %d reflexes, %d rules. "
+             "%d attempts, %d solved (%.1f%%), %d cycles lived. "
+             "Hormones: mood %.2f | energy %.0f%% | curiosity %.2f | urgency %.2f.",
+             (s["concepts"], s["skills"], s["reflexes"], s["predictor_rules"],
+              s["attempts"], s["solved"], acc, s["cycles"],
+              h["mood"], h["energy"] * 100, h["curiosity"], h["urgency"])),
+        ]
+        tpl, args = templates[self.rng.randrange(len(templates))]
+        return tpl % args

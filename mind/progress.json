@@ -1,6 +1,221 @@
 {
- "attempts": 11380,
- "solved": 1420,
- "by_domain": {},
- "cycles": 21
+ "attempts": 26436,
+ "solved": 3682,
+ "by_domain": {
+  "chat": {
+   "tasks": 100,
+   "solved": 100
+  },
+  "sequence": {
+   "tasks": 22,
+   "solved": 21
+  },
+  "list": {
+   "tasks": 20,
+   "solved": 20
+  },
+  "number": {
+   "tasks": 22,
+   "solved": 22
+  },
+  "string": {
+   "tasks": 17,
+   "solved": 17
+  },
+  "code": {
+   "tasks": 19,
+   "solved": 7
+  }
+ },
+ "cycles": 45,
+ "history": [
+  {
+   "cycle": 22,
+   "rates": {
+    "chat": 0.25
+   }
+  },
+  {
+   "cycle": 23,
+   "rates": {
+    "number": 1.0,
+    "string": 1.0,
+    "code": 0.769,
+    "sequence": 1.0,
+    "list": 0.929
+   }
+  },
+  {
+   "cycle": 24,
+   "rates": {
+    "chat": 0.342
+   }
+  },
+  {
+   "cycle": 25,
+   "rates": {
+    "string": 1.0,
+    "number": 1.0,
+    "sequence": 1.0,
+    "list": 1.0,
+    "code": 0.909
+   }
+  },
+  {
+   "cycle": 26,
+   "rates": {
+    "chat": 0.747
+   }
+  },
+  {
+   "cycle": 27,
+   "rates": {
+    "chat": 1.0
+   }
+  },
+  {
+   "cycle": 28,
+   "rates": {
+    "string": 1.0,
+    "number": 1.0,
+    "list": 1.0,
+    "sequence": 1.0,
+    "code": 0.4
+   }
+  },
+  {
+   "cycle": 29,
+   "rates": {
+    "chat": 1.0
+   }
+  },
+  {
+   "cycle": 30,
+   "rates": {
+    "sequence": 1.0,
+    "string": 1.0,
+    "list": 0.929,
+    "code": 0.182,
+    "number": 1.0
+   }
+  },
+  {
+   "cycle": 31,
+   "rates": {
+    "chat": 1.0
+   }
+  },
+  {
+   "cycle": 32,
+   "rates": {
+    "list": 1.0,
+    "sequence": 1.0,
+    "number": 1.0,
+    "string": 1.0,
+    "code": 0.545
+   }
+  },
+  {
+   "cycle": 33,
+   "rates": {
+    "chat": 1.0
+   }
+  },
+  {
+   "cycle": 34,
+   "rates": {
+    "code": 0.6,
+    "string": 1.0,
+    "number": 1.0,
+    "sequence": 1.0,
+    "list": 0.938
+   }
+  },
+  {
+   "cycle": 35,
+   "rates": {
+    "chat": 1.0
+   }
+  },
+  {
+   "cycle": 36,
+   "rates": {
+    "string": 1.0,
+    "code": 0.294,
+    "list": 1.0,
+    "sequence": 1.0,
+    "number": 1.0
+   }
+  },
+  {
+   "cycle": 37,
+   "rates": {
+    "chat": 1.0
+   }
+  },
+  {
+   "cycle": 38,
+   "rates": {
+    "number": 1.0,
+    "list": 1.0,
+    "code": 0.545,
+    "sequence": 1.0,
+    "string": 1.0
+   }
+  },
+  {
+   "cycle": 39,
+   "rates": {
+    "chat": 1.0
+   }
+  },
+  {
+   "cycle": 40,
+   "rates": {
+    "code": 0.2,
+    "string": 1.0,
+    "list": 1.0,
+    "number": 1.0,
+    "sequence": 1.0
+   }
+  },
+  {
+   "cycle": 41,
+   "rates": {
+    "chat": 1.0
+   }
+  },
+  {
+   "cycle": 42,
+   "rates": {
+    "chat": 1.0
+   }
+  },
+  {
+   "cycle": 43,
+   "rates": {
+    "number": 1.0,
+    "string": 1.0,
+    "sequence": 1.0,
+    "code": 0.583,
+    "list": 1.0
+   }
+  },
+  {
+   "cycle": 44,
+   "rates": {
+    "chat": 1.0
+   }
+  },
+  {
+   "cycle": 45,
+   "rates": {
+    "sequence": 0.955,
+    "list": 1.0,
+    "number": 1.0,
+    "string": 1.0,
+    "code": 0.368
+   }
+  }
+ ]
 }

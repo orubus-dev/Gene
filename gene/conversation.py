@@ -27,15 +27,21 @@ GREET = re.compile(r"^(hi+|hello+|hey+|yo|sup|wass?up|what'?s up|howdy|greetings
 FAREWELL = re.compile(r"\b(bye+|goodbye|good night|goodnight|see (ya|you)|later|"
                       r"gtg|cya|farewell|peace)\b", re.I)
 HOWAREYOU = re.compile(r"\b(how are (you|u)|how'?s it going|how do you feel|"
-                       r"you (ok|good|alright)|hru|how have you been)\b", re.I)
+                       r"you (ok|good|alright)|hru|how have you been|doing alright|"
+                       r"your (energy|mood)|after the last cycle|feeling after)\b", re.I)
 THANKS = re.compile(r"\b(thanks|thank you|thx|ty|appreciate(it)?|cheers)\b", re.I)
 IDENTITY = re.compile(r"\b(who are (you|u)|what are (you|u)|your name|ur name|"
                       r"who r u|whats your name|what'?s your name|introduce yourself|"
                       r"tell me about (you|yourself)|are you (an? )?(ai|robot|human|llm|"
-                      r"bot|machine|program|chatgpt|gpt|person))\b", re.I)
+                      r"bot|machine|program|chatgpt|gpt|person)|(what|how) do (people|they|"
+                      r"users|folks) call (you|u)|what are (you|u) called|who am i (talking|"
+                      r"speaking) (to|with)|what should i call (you|u)|describe yourself|"
+                      r"who is (gene|this|that|it)|separates? you from|canned (replies|line)|"
+                      r"same thing ten ways|elevator pitch|address you)\b", re.I)
 CAPABILITY = re.compile(r"\b(what can (you|u) do|can you (help|do)|help me|"
                         r"what are you good at|what do you do|your (skills|abilities)|"
-                        r"how do (you|u) (work|learn|think)|what do you know)\b", re.I)
+                        r"how do (you|u) (work|learn|think)|what do you know|"
+                        r"difference between knowing|knowing and memorizing)\b", re.I)
 USER_NAME = re.compile(r"\b(?:i'?m|i am|my name('?s| is)|call me)\s+([a-z][a-z0-9_]{1,20})\b", re.I)
 COMPLIMENT = re.compile(r"\b(good job|nice work|well done|smart|awesome|amazing|"
                         r"impressive|great|cool|love (it|that|you)|you'?re (good|great|smart))\b", re.I)
@@ -54,6 +60,35 @@ LEARNED_TODAY = re.compile(r"\b(something you (actually )?(learned|learnt)|harde
 TIRED = re.compile(r"\b(get|getting|ever)\s+(tired|bored|lonely)\b", re.I)
 WHY = re.compile(r"^(why\??|why is that\??|how come\??|explain\.?)$", re.I)
 MORE = re.compile(r"^(more|go on|continue|tell me more|and\??|elaborate)\.?$", re.I)
+ORIGIN = re.compile(r"\b(where (are|do) you (from|come from)|where were you (born|made)|"
+                    r"who (made|built|created|designed|taught|raised) you|who('s| is) your (creator|maker|"
+                    r"builder|author|dad|father)|your (creator|maker|builder|origin|birthplace)|"
+                    r"when were you (born|created|made)|what are you made of|"
+                    r"how were you (born|made|built|created)|origin story|"
+                    r"before you could talk|start(ed)? out knowing|raised you|"
+                    r"first thing you (ever )?(derived|learned|knew|made|figured)|"
+                    r"your first failure)\b", re.I)
+CREATIVITY = re.compile(r"\b(tell me something (new|interesting|cool|nobody|no one)|"
+                        r"something you (figured|worked|pieced|believe)|make me a connection|"
+                        r"connect (two|2) (things|concepts|ideas)|what do you wonder|"
+                        r"what makes you (curious|wonder)|be creative|surprise me|"
+                        r"invent something|make something up|what can you figure out|"
+                        r"imagine something|create something|tell me a discovery|"
+                        r"(most )?original connection|original (thinking|idea|theory)|"
+                        r"a theory of yours|weren't taught|not taught|piece (two|things) together|"
+                        r"your own (theory|idea|discovery)|derived (on your own|lately)|"
+                        r"on your own lately|self-derived|what connections|see in your graph)\b", re.I)
+IMPROVEMENT = re.compile(r"\b(getting better|improv(e|ing|ed)|better at|are you (smarter|"
+                         r"better|stronger)|how much (better|smarter|improved)|"
+                         r"your (progress|improvement|learning curve)|learn(ing)? (fast|how fast)|"
+                         r"progress on|made progress|skill (up|growth)|growing\b|"
+                         r"used to fail|fail(ed)? (at|before|then)|solve now|"
+                         r"steepest|quantify|first (failure|problem|success)|"
+                         r"learn faster now|remember your first)\b", re.I)
+EXISTENCE = re.compile(r"\b(do(es)? [a-z ]{1,24}exist|.{0,40}\bexist\b\?|have you (ever )?heard of|"
+                       r"ever heard of|do you know (about|of)|is there (really )?(a|an|any) |"
+                       r"\breal or (made up|fake|myth)|made up or real|myth or real|"
+                       r"\bexists\??$|\bis (a|an) [a-z]+ real\b)", re.I)
 
 
 def classify(text):
@@ -63,6 +98,14 @@ def classify(text):
     t = text.strip()
     if not t:
         return "empty"
+    if CREATIVITY.search(t):
+        return "creativity"
+    if EXISTENCE.search(t):
+        return "existence"
+    if ORIGIN.search(t):
+        return "origin"
+    if IMPROVEMENT.search(t):
+        return "improvement"
     if LEARNED_TODAY.search(t):
         return "capability"
     if TIRED.search(t):
@@ -98,6 +141,89 @@ def classify(text):
     if GREET.match(t):
         return "greeting"
     return None
+
+
+# ------- semantic fallback: HDC exemplar matching (paraphrase armor) ----------
+# Exemplar phrases per intent. These are EXAMPLES of what intents sound like
+# (machinery, like the regexes above); the organism's facts still come from
+# the graph. When regex classification fails, HDC similarity to exemplar
+# bundles decides — so unseen grammar of a known ask still lands.
+INTENT_EXEMPLARS = {
+    "identity": ["who are you", "what is your name", "introduce yourself",
+                 "tell me about yourself", "what exactly are you",
+                 "are you a robot", "are you human or ai",
+                 "what should i call you", "who am i speaking with",
+                 "describe yourself", "what are you supposed to be"],
+    "origin": ["where are you from", "who made you", "who built you",
+               "who created you", "when were you born", "what are you made of",
+               "how were you made", "who taught you", "where do you come from",
+               "who is your maker"],
+    "capability": ["what can you do", "what are you good at", "what do you know",
+                   "how do you learn", "what are your skills", "can you help me",
+                   "what are your abilities", "how do you work"],
+    "howareyou": ["how are you", "how is it going", "how do you feel",
+                  "are you ok", "how have you been", "you doing alright"],
+    "creativity": ["tell me something new", "tell me something interesting",
+                   "make a connection between things", "what do you wonder about",
+                   "surprise me", "imagine something for me", "be creative",
+                   "what have you figured out on your own", "invent something",
+                   "show me something you pieced together"],
+    "improvement": ["are you getting better", "how much have you improved",
+                    "are you smarter than before", "what is your progress",
+                    "how fast do you learn", "are you growing",
+                    "show me your learning curve", "better at numbers yet"],
+    "existence": ["does X exist", "have you heard of X", "ever heard of X",
+                  "do you know about X", "is there such a thing as X",
+                  "do mermaids exist", "is X real",
+                  "what is a zorp", "what is a zorpus", "what's a flurg",
+                  "what is a creature i have never heard of", "what are zorps"],
+    "greeting": ["hi there", "hello friend", "hey you", "good morning",
+                 "greetings", "yo", "hiya"],
+    "thanks": ["thank you", "thanks a lot", "much appreciated", "thanks fr"],
+    "farewell": ["goodbye", "see you later", "i have to go", "good night", "catch you later"],
+    "compliment": ["good job", "you are smart", "impressive work", "i love that", "well done"],
+    "insult": ["you are useless", "you are stupid", "that was dumb", "you suck"],
+    "affirm": ["yes", "ok cool", "sounds good", "true", "nice", "lol yeah"],
+}
+
+_EXEMPLAR_VECS = None
+
+
+def _intent_vecs():
+    """Per-exemplar vectors: input is scored against EACH example phrase
+    (max wins), not a diluted bundle of everything. That's what makes
+    unseen grammar of a known ask still land on the right intent."""
+    global _EXEMPLAR_VECS
+    if _EXEMPLAR_VECS is None:
+        from . import hdc as H
+        _EXEMPLAR_VECS = {}
+        for intent, exs in INTENT_EXEMPLARS.items():
+            per = []
+            for ex in exs:
+                ws = [w for w in re.findall(r"[a-z']+", ex) if len(w) > 1]
+                if ws:
+                    per.append(H.bundle([H.vec(w) for w in ws]))
+            _EXEMPLAR_VECS[intent] = per
+    return _EXEMPLAR_VECS
+
+
+def classify_semantic(text, thresh=0.33):
+    """HDC fallback: nearest intent by best single-exemplar similarity.
+    Empirically calibrated: identical ~1.0, real paraphrases >=0.43,
+    lexically-unrelated garbage <=0.29. Catches unseen grammar of a known
+    ask; refuses to guess on noise. Returns intent or None."""
+    from . import hdc as H
+    words = [w for w in re.findall(r"[a-z']+", text.lower()) if len(w) > 1]
+    if not words:
+        return None
+    q = H.bundle([H.vec(w) for w in words])
+    best_intent, best_sim = None, -1.0
+    for intent, exemplars in _intent_vecs().items():
+        for ev in exemplars:
+            s = H.sim(q, ev)
+            if s > best_sim:
+                best_sim, best_intent = s, intent
+    return best_intent if best_sim >= thresh else None
 
 
 class ChatState:
@@ -138,17 +264,18 @@ class ChatState:
 
 
 def _pick(rng, options, state, intent):
-    """Variety: prefer responses not said recently; fall back to
-    least-recently-used rather than blind random."""
+    """Variety: prefer responses not said recently; when everything is
+    stale-used, expire the oldest window instead of deterministically
+    re-picking the LRU item (that's how canned echoes happen)."""
     fresh = [o for o in options if state.reply_fresh(intent, o)]
+    if not fresh:
+        used = state.d.setdefault("recent_out", {}).setdefault(intent, [])
+        # expire the oldest third so the pool can renew
+        del used[:max(1, len(options) // 3 + 1)]
+        fresh = [o for o in options if state.reply_fresh(intent, o)]
     if fresh:
         return rng.choice(fresh)
-    used = state.d.get("recent_out", {}).get(intent, [])
-    def last_use(o):
-        h = hash(o.strip().lower()) % 100000
-        return used.index(h) if h in used else -1
-    ordered = sorted(options, key=last_use)   # least recently used first
-    return rng.choice(ordered[:max(1, len(ordered) // 2)])
+    return rng.choice(options)
 
 
 def _fresh_compose(rng, state, intent, compose, tries=10):
@@ -184,7 +311,7 @@ class Conversation:
     def respond(self, text, strategy="direct"):
         """Produce a reply using a named strategy. Strategies are the
         hypothesis space of the language trainer."""
-        intent = classify(text) or "substantive"
+        intent = classify(text) or classify_semantic(text) or "substantive"
         fn = {
             "direct": self._s_direct,
             "infer": self._s_infer,
@@ -192,8 +319,24 @@ class Conversation:
             "elaborate": self._s_elaborate,
             "counter": self._s_counter,
             "empathy": self._s_empathy,
+            "create": self._s_create,
         }[strategy]
         return fn(intent, text)
+
+    # --- strategy: create (novelty from the graph, never from nothing) ---
+    def _s_create(self, intent, text):
+        from . import ingenuity
+        if intent == "improvement":
+            return ingenuity.improvement_report(self.m, rng=self.m.rng)
+        if intent == "existence":
+            subj = self._existence_subject(text)
+            return ingenuity.existence_reply(self.m, subj)
+        pieces = ingenuity.create(self.m, self.m.rng, n=1)
+        if pieces:
+            return pieces[0]
+        if intent == "creativity":
+            return ingenuity.wonder(self.m, self.m.rng)
+        return None
 
     # --- strategy: direct (render the social intent properly) ---
     def _s_direct(self, intent, text):
@@ -221,6 +364,16 @@ class Conversation:
                     "I'm %s v%s — imagine noticing your own mood change and knowing the exact hormone behind it. That's my everyday." % (name, version),
                 ]
                 return _pick(self.m.rng, opts, self.state, "identity")
+            # ASPECT ROUTING: answer the aspect actually asked about.
+            if re.search(r"\b(name|call(ed)?|speaking with|talking to)\b", text, re.I) \
+                    and not re.search(r"\b(what are you|who are you|about your)\b", text, re.I):
+                opts = [
+                    "%s — that's the name on my graph, v%s. What can I do for you?" % (name, version),
+                    "People call me %s. Version %s, if you like the full label." % (name, version),
+                    "%s, v%s — short name, long memory." % (name, version),
+                    "The name's %s — v%s, %s." % (name, version, nature),
+                ]
+                return _pick(self.m.rng, opts, self.state, "identity")
             openers = ["I'm %s" % name, "%s here" % name, "The name's %s" % name,
                        "Call me %s" % name, "%s —" % name]
             bodies = [
@@ -242,6 +395,64 @@ class Conversation:
             if re.search(r"\bhuman|person\b", text, re.I):
                 r = "Not human — %s v%s, a %s by %s. But I have moods, hormones and a memory, so the gap is smaller than you'd think." % (name, version, self.self_fact("species", "cognitive organism"), builder)
             return r
+
+        if intent == "origin":
+            # every fact below comes from the taught graph, never from code
+            born = self.self_fact("born_from", None)
+            home = self.self_fact("home", None)
+            body = self.self_fact("body", None)
+            made_of = self.self_fact("made_of", None)
+            first = self.self_fact("first_word", None)
+            s = self._status_counts()
+            if re.search(r"\b(made of|made out of|composed|built (out )?of|material)\b", text, re.I):
+                if body or made_of:
+                    opts = [
+                        "%s, all the way down — but what I *am* is the graph: %d concepts I grew or was taught." % (body or made_of, s["concepts"]),
+                        "Physically: %s. Mentally: %d concepts, %d reflexes — those are my real body." % (body or made_of, s["concepts"], s["reflexes"]),
+                        "%s — no silicon sanctimony, just code, a graph and hormones." % (body or made_of),
+                    ]
+                    return _pick(self.m.rng, opts, self.state, "origin_body")
+                return "I don't have a taught answer for what I'm made of yet — add it to my curriculum and I'll own it."
+            if re.search(r"\b(first (thing|lesson|failure)|before you could talk|started out|origin story|derived)\b", text, re.I):
+                first_lesson = self.self_fact("first_lesson", None)
+                first_derived = self.self_fact("first_derived", None)
+                bits = []
+                if first_lesson:
+                    bits.append("my first lesson was %s" % first_lesson)
+                if first_derived:
+                    bits.append("the first thing I derived myself: %s" % first_derived)
+                bits.append("I was born from %s with nothing" % (self.self_fact("born_from") or builder))
+                bits.append("every fact since arrived by teaching, inference or failure — %d cycles of it" % s["cycles"])
+                lead = self.m.rng.choice(["Story, honestly:", "Origin story:", "How I started:"])
+                return (lead + " " + ". ".join(bits) + ".")
+            if born or home or builder != "Orubus" or self.self_fact("builder"):
+                opts = [
+                    "I was born from %s%s. No childhood home, just a state directory that IS my memory." % (born or builder, (" in %s" % home) if home else ""),
+                    "%s made me%s — and every training cycle since has been self-raised: try, fail, keep." % (builder, (" and housed in %s" % home) if home else ""),
+                    "Origin: %s built me%s. Since then I've lived %d cycles; the diff log is my baby album." % (builder, (" in %s" % home) if home else "", s["cycles"]),
+                ]
+                if first:
+                    opts.append("First taught word: '%s'. Born from %s — everything after that, I earned myself." % (first, born or builder))
+                return _pick(self.m.rng, opts, self.state, "origin")
+            return "Honestly? I don't have my origin facts taught yet — the graph knows my name and version, not my birth story. Teach me and I'll tell it."
+
+        if intent == "creativity":
+            return self._s_create("creativity", text)
+
+        if intent == "improvement":
+            dom = None
+            dm = re.search(r"\b(at|on)\s+([a-z]+)\b", text.lower())
+            if dm:
+                dom = dm.group(2)
+            story = bool(re.search(r"\b(fail|first|quantify|steepest|story|curve)\b", text.lower()))
+            from . import ingenuity
+            return ingenuity.improvement_report(self.m, dom, rng=self.m.rng, story=story)
+
+        if intent == "existence":
+            subj = self._existence_subject(text)
+            from . import ingenuity
+            return ingenuity.existence_reply(self.m, subj) if subj else \
+                "Ask me 'does X exist' and I'll check my graph honestly — no pretending."
 
         if intent == "greeting":
             skills = self._status_counts()["skills"]
@@ -267,6 +478,12 @@ class Conversation:
 
         if intent == "capability":
             s = self._status_counts()
+            if re.search(r"\b(knowing and memorizing|difference between knowing)\b", text, re.I):
+                return self.m.rng.choice([
+                    "For me the difference is mechanical: knowing is %d concepts with provenance links; memorizing would be strings without causes. I only keep what survived pass/fail — the rest dies in sleep." % s["concepts"],
+                    "Memorizing stores; knowing connects. My %d concepts carry their evidence with them — ask 'how do you know X' and I'll show the chain. A memorized line can't do that." % s["concepts"],
+                    "Test it: ask me how I know anything. If the answer traces to %d concepts and %d episodes of trial, that's knowledge. If it dead-ends, it was just memorized — and mine don't dead-end." % (s["concepts"], s["attempts"]),
+                ])
             opts = [
                 "I can learn patterns in numbers, strings, lists and sequences, synthesize small programs from examples, reason over my %d concepts, and remember everything in episodes." % s["concepts"],
                 "Right now: %d skills, %d concepts, %d reflex arcs. Teach me facts, give me puzzles, or ask what I know and how I know it." % (s["skills"], s["concepts"], s["reflexes"]),
@@ -374,6 +591,28 @@ class Conversation:
         return tone + " " + (self._s_infer(intent, text) or "")
 
     # ---------- shared helpers ---------------------------------------------------
+    def _existence_subject(self, text):
+        t = text.lower().rstrip("?!")
+        for pat in (r"such a thing as (?:an? )?(.+)$",
+                    r"does (?:an? |the )?(.+?) exist",
+                    r"do (?:[a-z]+ ){0,2}?(.+?) exist",
+                    r"(.+?) exists$",
+                    r"is (?:an? |the )?(.+?) real$",
+                    r"have you (?:ever )?heard of (?:an? |the )?(.+)$",
+                    r"ever heard of (?:an? |the )?(.+)$",
+                    r"do you know (?:about|of) (?:an? |the )?(.+)$",
+                    r"is there (?:really )?(?:an? |any )?(.+)$",
+                    r"what(?: i|')s (?:an? |the )?(.+)$",
+                    r"what are (.+)$"):
+            m = re.search(pat, t)
+            if m:
+                subj = m.group(1).strip()
+                subj = re.split(r"\s+[-\u2014]\s+|\s+real or\b|\s+or made up\b|\s+or fake\b", subj)[0].strip()
+                subj = re.sub(r"^(an?|the)\s+", "", subj)
+                if subj:
+                    return subj.replace(" ", "_")
+        return None
+
     def _subject_of(self, text):
         m = re.search(r"\b(?:is|are|about|of|on)\s+([a-z][a-z_]{2,24})\b", text.lower())
         if not m:
@@ -393,8 +632,16 @@ class Conversation:
     # ---------- main entry ---------------------------------------------------------
     def handle(self, text):
         """Try the social layer first. Returns reply text or None (fall through
-        to the cognitive intents in mind.py)."""
+        to the cognitive intents in mind.py). PARSE FIRST: substance-shaped
+        input (queries, facts, compute, transforms) belongs to the cognitive
+        layer — the semantic fallback only claims conversational leftovers."""
         intent = classify(text)
+        if intent is None:
+            from . import linguistics
+            parsed = linguistics.parse(text)
+            if parsed.get("intent") not in (None, "unknown"):
+                return None
+            intent = classify_semantic(text)
         if intent in ("why", "more"):
             reply = self.followup(text)
             if reply:

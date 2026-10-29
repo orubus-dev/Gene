@@ -61,7 +61,11 @@ def parse(text):
     if m:
         return {"intent": "provenance", "subject": m.group(1).replace(" ", "_")}
 
-    m = re.match(r"^(?:what is|what are|whats|who is)\s+(.+)$", low)
+    m = re.match(r"^tell me about (.+)$", low)
+    if m:
+        return {"intent": "query", "subject": _strip_article(m.group(1)).replace(" ", "_")}
+
+    m = re.match(r"^(?:what is|what are|whats|what'?s|who is|who'?s)\s+(.+)$", low)
     if m:
         return {"intent": "query", "subject": _strip_article(m.group(1)).replace(" ", "_")}
 

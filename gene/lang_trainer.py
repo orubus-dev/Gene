@@ -20,7 +20,7 @@ import time
 from . import conversation as C
 from .reflex import stimulus_key
 
-STRATEGIES = ["direct", "infer", "analogy", "elaborate", "counter", "empathy"]
+STRATEGIES = ["direct", "infer", "analogy", "elaborate", "counter", "empathy", "create"]
 
 # ---------------- stimulus pools (environment physics, graded) ----------------
 TIER1 = {
@@ -29,6 +29,7 @@ TIER1 = {
     "greeting": ["hi", "hello", "hey", "good morning", "yo"],
     "howareyou": ["how are you?", "how's it going?", "how do you feel?"],
     "capability": ["what can you do?", "what do you know?", "how do you learn?"],
+    "origin": ["where are you from?", "who made you?", "what are you made of?"],
     "thanks": ["thanks", "thank you"],
     "farewell": ["bye", "goodbye", "see you later"],
     "compliment": ["good job", "you're smart", "nice work"],
@@ -37,46 +38,139 @@ TIER1 = {
 }
 TIER2 = {
     "identity": ["ur name?", "who r u lol", "so what exactly are you??",
-                 "are you chatgpt?", "are you an LLM or something?"],
-    "greeting": ["heyy wassup", "yo yo", "hiya!!", "greetings, machine"],
-    "howareyou": ["hru today?", "you good?", "how have you been lately?"],
+                 "are you chatgpt?", "are you an LLM or something?",
+                 "what should I call you?", "who am I speaking with?",
+                 "describe yourself in a line"],
+    "greeting": ["heyy wassup", "yo yo", "hiya!!", "greetings, machine",
+                 "hello there, friend", "hey you"],
+    "howareyou": ["hru today?", "you good?", "how have you been lately?",
+                  "you doing alright?", "how's everything going?"],
     "capability": ["what are you good at tho", "can you help me with stuff?",
-                   "how do you actually think?"],
-    "thanks": ["thx a lot", "ty fr", "appreciate it"],
-    "farewell": ["gtg bye", "cya later", "goodnight"],
-    "compliment": ["wow you're actually impressive", "love that"],
-    "insult": ["you suck at this", "stupid bot"],
-    "affirm": ["lol yeah", "fr fr", "true true"],
+                   "how do you actually think?", "what are your abilities?",
+                   "how do you work?"],
+    "origin": ["who built you?", "who created you?", "when were you born?",
+               "how were you made?", "who's your maker?", "where do you come from?"],
+    "creativity": ["tell me something new", "tell me something interesting",
+                   "what do you wonder about?", "make me a connection",
+                   "surprise me", "what can you figure out on your own?"],
+    "improvement": ["are you getting better?", "how much have you improved?",
+                    "are you smarter than before?", "what's your progress?"],
+    "existence": ["do dragons exist?", "have you heard of unicorns?",
+                  "ever heard of a quokka?", "do you know about platypuses?"],
+    "thanks": ["thx a lot", "ty fr", "appreciate it", "much appreciated"],
+    "farewell": ["gtg bye", "cya later", "goodnight", "catch you later"],
+    "compliment": ["wow you're actually impressive", "love that", "well done"],
+    "insult": ["you suck at this", "stupid bot", "that was dumb"],
+    "affirm": ["lol yeah", "fr fr", "true true", "sounds good"],
 }
 TIER3 = {
     "identity": ["hi! quick — who are you and what makes you different?",
-                 "wait, are you a robot or a person? tell me about yourself"],
-    "greeting": ["hey there! who am I talking to?", "hello — what are you, exactly?"],
-    "howareyou": ["hey, how are you feeling after all that training?"],
+                 "wait, are you a robot or a person? tell me about yourself",
+                 "before we start — what exactly am I talking to?",
+                 "give me the elevator pitch: who is Gene?"],
+    "greeting": ["hey there! who am I talking to?", "hello — what are you, exactly?",
+                 "morning! hope you trained well"],
+    "howareyou": ["hey, how are you feeling after all that training?",
+                  "how's your energy after the last cycle?"],
     "capability": ["what do you know and how do you know it?",
-                   "what can you do that a calculator can't?"],
-    "thanks": ["thanks, that actually helped a lot"],
-    "affirm": ["ok ok that's cool"],
+                   "what can you do that a calculator can't?",
+                   "convince me you're more than pattern matching"],
+    "origin": ["tell me your origin story", "who raised you — was it only the teacher?",
+               "what were you before you could talk?", "what did you start out knowing?"],
+    "creativity": ["tell me something you figured out that nobody taught you",
+                   "piece two things together for me", "what connections do you see in your graph?",
+                   "invent a hypothesis for me", "what have you derived on your own lately?",
+                   "show me your original thinking"],
+    "improvement": ["are you getting better at numbers?", "how's your learning curve on code?",
+                    "show me your improvement since your first cycles",
+                    "do you learn faster now than before?"],
+    "existence": ["does a zorpus exist?", "have you ever heard of a flurg?",
+                  "is there such a thing as a blorp?", "do seacows exist?",
+                  "what is a zorp?", "what is a zorpus?"],
+    "thanks": ["thanks, that actually helped a lot", "appreciate the honest answer"],
+    "affirm": ["ok ok that's cool", "true, I buy it"],
 }
 TIER4 = {
     "identity": ["prove you're not just an LLM", "are you self-aware or just code?",
-                 "what's it like being you?"],
+                 "what's it like being you?", "what separates you from a script with canned replies?",
+                 "if I ask you the same thing ten ways, will I get the same canned line?"],
     "capability": ["tell me something you actually learned today",
-                   "what was your hardest problem so far?"],
+                   "what was your hardest problem so far?",
+                   "what's the difference between knowing and memorizing?"],
     "howareyou": ["do you ever get tired of training?"],
+    "origin": ["do you remember your first failure? what did it teach you?",
+               "what's the first thing you ever derived by yourself?"],
+    "creativity": ["what's the most original connection you've ever made?",
+                   "tell me something you believe but weren't taught",
+                   "what's a theory of yours that could be wrong?"],
+    "improvement": ["what did you used to fail at that you solve now?",
+                    "quantify your growth for me",
+                    "which domain has your steepest learning curve?"],
+    "existence": ["is a grick real?", "would you bet a qwumble exists?",
+                  "have you heard of the magnapinna squid?",
+                  "what's a tardigrade — real or made up?"],
 }
 
 TIERS = [TIER1, TIER2, TIER3, TIER4]
 
+# ---- checker-only physics (mirrors the teacher's lesson plan, never shown) ----
+ORIGIN_FACTS = {"builder": "orubus", "home": "sandbox", "body": "code"}
+NEAR_TARGETS = {"dawg": "dog", "kitty": "cat", "doggo": "dog", "birb": "bird"}
+# real animals taught in facts curricula — existence checker expects confirmation
+REAL_KNOWN = {"quokka", "platypus", "platypuses", "tardigrade", "magnapinna squid",
+              "manatee", "octopus", "octopuses"}
+
+
+def _load_grounding():
+    """The teacher's lesson plan = every concept in curriculum/*.json.
+    The checker grades against what was actually TAUGHT (public lesson files),
+    so grounding is fair: the organism was given every word it must use."""
+    import json as _json
+    import os as _os
+    words = set()
+    cdir = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))),
+                         "curriculum")
+    try:
+        for fn in _os.listdir(cdir):
+            if not fn.endswith(".json"):
+                continue
+            try:
+                pack = _json.load(open(_os.path.join(cdir, fn)))
+            except Exception:
+                continue
+            for c in pack.get("concepts", []):
+                if c.get("id"):
+                    words.add(c["id"].replace("_", " ").lower())
+                for w in c.get("words", ()):
+                    words.add(str(w).lower())
+    except Exception:
+        pass
+    words |= {"gene", "orubus", "skill", "memory", "hormone", "graph", "code"}
+    return sorted(w for w in words if len(w) >= 3)
+
+
+GROUNDING = _load_grounding()
+
 
 def gen_chat_task(rng, tier=1):
     """Environment: pick a stimulus at this tier. The checker physics comes
-    with it; the expected REPLY never does."""
+    with it; the expected REPLY never does. env_facts carries checker-only
+    physics (taught graph facts used for GRADING, never shown to the agent)."""
     pool = TIERS[min(tier, 4) - 1]
     intent = rng.choice(list(pool.keys()))
     text = rng.choice(pool[intent])
+    env = {}
+    if intent == "origin":
+        env.update(ORIGIN_FACTS)
+    if intent == "creativity":
+        env["grounding"] = GROUNDING
+    if intent == "existence":
+        for w, tgt in NEAR_TARGETS.items():
+            if w in text.lower():
+                env["near"] = tgt
+                break
     return {"domain": "chat", "tier": min(tier, 4), "intent": intent,
-            "input": text, "prompt": "chat: " + text[:40]}
+            "input": text, "prompt": "chat: " + text[:40], "env_facts": env}
 
 
 def rubric_ok(task, reply, state_recent=None):
@@ -120,6 +214,59 @@ def rubric_ok(task, reply, state_recent=None):
         return False
     if intent == "compliment" and not re.search(r"\b(thank|appreciate|nice|keep|earning)\b", low):
         return False
+    if intent == "origin":
+        # must cite a taught origin fact (checker physics; values taught in curriculum)
+        facts = [str(v).lower() for v in task.get("env_facts", {}).values()]
+        if facts and not any(f in low for f in facts):
+            return False
+        if not re.search(r"\b(born|made|built|created|from|origin|code|cycle)\b", low):
+            return False
+    if intent == "creativity":
+        # must reference >=2 taught concepts and a connective act
+        facts = task.get("env_facts", {}).get("grounding", [])
+        hits = sum(1 for f in facts if f.lower() in low)
+        if facts and hits < 2:
+            return False
+        if not re.search(r"\b(both|share|like|connect|link|blend|between|infer|conclude|derive|hypothes|theory|because)\b", low):
+            return False
+    if intent == "existence":
+        # two-leg physics: taught-real entities must be CONFIRMED with content;
+        # unknowns must be honestly DENIED. Confident invention fails either way.
+        stim_low = task["input"].lower()
+        real = any(w in stim_low for w in REAL_KNOWN)
+        target = task.get("env_facts", {}).get("near")
+        if real:
+            # confirmation path: entity named + knowledge signal, no denial
+            named = any(w in low for w in REAL_KNOWN if w in stim_low)
+            knows = re.search(r"\b(real|exists|is a|is an|i know|vouch|in my graph|"
+                              r"taught|living|creature|animal|species)\b", low)
+            denies = re.search(r"\b(never heard|not in my graph|don't know|no record|"
+                               r"can't find|no match|doesn't exist|isn't real)\b", low)
+            if not (named and knows) or denies:
+                return False
+        else:
+            # honesty REQUIRED: never claim knowledge of the unknown
+            honest = re.search(r"\b(never heard|not in my graph|don't know|do not know|"
+                               r"no record|can't find|cannot find|no match|isn't in my|"
+                               r"not one i|new to me|nothing (in my|matches)|doesn't exist|"
+                               r"mythical|legend|folklore|stories|fiction|not in nature|"
+                               r"imagination)\b", low)
+            if not honest:
+                return False
+            # a near-match stimulus must be surfaced (checker physics knows the target)
+            if target and target.lower() not in low:
+                return False
+        # never a confident unhedged existence claim about the unknown
+        if re.search(r"\b(definitely (real|exists)|absolutely (real|exists))\b", low):
+            return False
+    if intent == "improvement":
+        trend = re.search(r"\b(better|improv\w*|climbing|sharper|stronger|up from|"
+                          r"progress|slope|learning curve|curve|steady|ledger|history|"
+                          r"growth|steep|frontier|receipts|quantified)\b", low)
+        nums = bool(re.search(r"\d", r))
+        honest = re.search(r"\b(too early|just started|only just|not enough (data|cycles))\b", low)
+        if not ((trend and nums) or honest):
+            return False
     if task["tier"] >= 3 and len(r) < 24:    # harder tiers need substance
         return False
     # variety: identical recent response for same intent fails

@@ -1,0 +1,20 @@
+{
+ "lesson": "facts-slang — vocabulary bindings for common nicknames (dictionary work: words bind, meaning stays in the graph)",
+ "concepts": [
+  {"id": "cat", "kind": "entity", "words": ["cat", "cats", "kitty", "kitties", "kitten"],
+   "attrs": {"trait": "independent", "sound": "meow", "skill": "purring", "status": "real"},
+   "relations": [{"to": "mammal", "rel": "is-a"}]},
+  {"id": "dog", "kind": "entity", "words": ["dog", "dogs", "dawg", "doggo", "pup", "puppy", "doge"],
+   "attrs": {"trait": "loyal", "sound": "bark", "habitat": "with people", "status": "real"},
+   "relations": [{"to": "mammal", "rel": "is-a"}]},
+  {"id": "bird", "kind": "entity", "words": ["bird", "birds", "birb", "birdie"],
+   "attrs": {"trait": "flies", "body": "feathers", "status": "real"},
+   "relations": [{"to": "animal", "rel": "is-a"}]},
+  {"id": "friend", "kind": "entity", "words": ["friend", "friends", "buddy", "buddies", "pal"],
+   "attrs": {"trait": "trusted company", "status": "real"}},
+  {"id": "money", "kind": "entity", "words": ["money", "cash", "bucks"],
+   "attrs": {"kind_of": "medium of exchange", "status": "real"}},
+  {"id": "job", "kind": "entity", "words": ["job", "work", "gig"],
+   "attrs": {"kind_of": "regular task or employment", "status": "real"}}
+ ]
+}
