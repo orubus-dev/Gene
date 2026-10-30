@@ -1,62 +1,54 @@
 {
- "attempts": 8344137,
- "solved": 825001,
+ "attempts": 8344875,
+ "solved": 825036,
  "by_domain": {
   "chat": {
    "tasks": 50370,
    "solved": 46325
   },
   "sequence": {
-   "tasks": 24224,
-   "solved": 14221
+   "tasks": 24230,
+   "solved": 14227
   },
   "list": {
-   "tasks": 24108,
-   "solved": 23344
+   "tasks": 24111,
+   "solved": 23347
   },
   "number": {
-   "tasks": 23926,
-   "solved": 23926
+   "tasks": 23930,
+   "solved": 23930
   },
   "string": {
-   "tasks": 24212,
-   "solved": 24212
+   "tasks": 24215,
+   "solved": 24215
   },
   "code": {
-   "tasks": 24080,
-   "solved": 11767
+   "tasks": 24088,
+   "solved": 11770
   },
   "grammar": {
-   "tasks": 103308,
-   "solved": 102982
+   "tasks": 103313,
+   "solved": 102987
   },
   "sentence": {
-   "tasks": 158503,
-   "solved": 158282
+   "tasks": 158504,
+   "solved": 158283
   },
   "taxonomy": {
-   "tasks": 211268,
-   "solved": 175066
+   "tasks": 211272,
+   "solved": 175070
   },
   "maths": {
-   "tasks": 165027,
-   "solved": 165026
+   "tasks": 165032,
+   "solved": 165031
   },
   "chem": {
-   "tasks": 86646,
-   "solved": 76355
+   "tasks": 86647,
+   "solved": 76356
   }
  },
- "cycles": 171,
+ "cycles": 172,
  "history": [
-  {
-   "cycle": 142,
-   "rates": {
-    "chem": 0.877,
-    "grammar": 1.0,
-    "maths": 1.0
-   }
-  },
   {
    "cycle": 143,
    "rates": {
@@ -293,96 +285,25 @@
     "chem": 1.0,
     "maths": 1.0
    }
+  },
+  {
+   "cycle": 172,
+   "rates": {
+    "string": 1.0,
+    "code": 0.375,
+    "grammar": 1.0,
+    "sequence": 1.0,
+    "number": 1.0,
+    "taxonomy": 1.0,
+    "maths": 1.0,
+    "list": 1.0,
+    "chem": 1.0,
+    "sentence": 1.0
+   }
   }
  ],
  "hypotheses": {
-  "open": [
-   {
-    "id": "active",
-    "topic": "grammar",
-    "t": 1793256317.9590085
-   },
-   {
-    "id": "command",
-    "topic": "grammar",
-    "t": 1793256317.9590101
-   },
-   {
-    "id": "comparative",
-    "topic": "grammar",
-    "t": 1793256317.9590106
-   },
-   {
-    "id": "conditional",
-    "topic": "grammar",
-    "t": 1793256317.9590108
-   },
-   {
-    "id": "exclamation",
-    "topic": "grammar",
-    "t": 1793256317.959011
-   },
-   {
-    "id": "negation",
-    "topic": "grammar",
-    "t": 1793256317.9590116
-   },
-   {
-    "id": "passive",
-    "topic": "grammar",
-    "t": 1793256317.9590118
-   },
-   {
-    "id": "past_tense",
-    "topic": "grammar",
-    "t": 1793256317.959012
-   },
-   {
-    "id": "plural",
-    "topic": "grammar",
-    "t": 1793256317.9590125
-   },
-   {
-    "id": "present_tense",
-    "topic": "grammar",
-    "t": 1793256317.9590127
-   },
-   {
-    "id": "relative_clause",
-    "topic": "grammar",
-    "t": 1793256317.9590132
-   },
-   {
-    "id": "singular",
-    "topic": "grammar",
-    "t": 1793256317.9590135
-   },
-   {
-    "id": "statement",
-    "topic": "grammar",
-    "t": 1793256317.9590137
-   },
-   {
-    "id": "superlative",
-    "topic": "grammar",
-    "t": 1793256317.959014
-   },
-   {
-    "id": "future_tense",
-    "topic": "grammar",
-    "t": 1793268612.42457
-   },
-   {
-    "id": "gerund",
-    "topic": "grammar",
-    "t": 1793268612.4245718
-   },
-   {
-    "id": "present_continuous",
-    "topic": "grammar",
-    "t": 1793268612.4245725
-   }
-  ],
-  "hits": 6
+  "open": [],
+  "hits": 23
  }
 }
