@@ -1,85 +1,353 @@
 {
  "genes": [
   {
-   "id": "g00109",
-   "name": "upper",
+   "id": "g00139",
+   "name": "last | add(n=5)",
    "steps": [
     {
-     "op": "upper",
+     "op": "last",
+     "args": {}
+    },
+    {
+     "op": "add",
+     "args": {
+      "n": 5
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793523228.487373
+  },
+  {
+   "id": "g00121",
+   "name": "maxv",
+   "steps": [
+    {
+     "op": "maxv",
      "args": {}
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793434115.568971
+   "born": 1793523228.4854627
   },
   {
-   "id": "g00100",
-   "name": "concat(with='ed')",
+   "id": "g00098",
+   "name": "concat(with='s')",
    "steps": [
     {
      "op": "concat",
      "args": {
-      "with": "ed"
+      "with": "s"
      }
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793434115.5678568
+   "born": 1793523228.4818838
   },
   {
-   "id": "g00093",
-   "name": "reverse",
+   "id": "g00085",
+   "name": "chem_symbol",
    "steps": [
     {
-     "op": "reverse",
+     "op": "chem_symbol",
      "args": {}
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793434115.5667007
+   "born": 1793523228.4786968
   },
   {
-   "id": "g00068",
-   "name": "grammar_lookup(form='past')",
+   "id": "g00064",
+   "name": "chem_react",
    "steps": [
     {
-     "op": "grammar_lookup",
+     "op": "chem_react",
+     "args": {}
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793523228.4754643
+  },
+  {
+   "id": "g00029",
+   "name": "upper | concat(with='!')",
+   "steps": [
+    {
+     "op": "upper",
+     "args": {}
+    },
+    {
+     "op": "concat",
      "args": {
-      "form": "past"
+      "with": "!"
      }
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793434115.5643525
+   "born": 1793523228.4679809
   },
   {
-   "id": "g00057",
-   "name": "parent_of",
-   "steps": [
-    {
-     "op": "parent_of",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793434115.5624826
-  },
-  {
-   "id": "g00053",
-   "name": "words | swap_first_two | join_words | wrap(pre='', suf='?')",
+   "id": "g00141",
+   "name": "words | verb_last_to(form='ing') | aux_insert(family='be', pos=-1) | join_words | wrap(pre='', suf='.')",
    "steps": [
     {
      "op": "words",
      "args": {}
     },
     {
-     "op": "swap_first_two",
+     "op": "verb_last_to",
+     "args": {
+      "form": "ing"
+     }
+    },
+    {
+     "op": "aux_insert",
+     "args": {
+      "family": "be",
+      "pos": -1
+     }
+    },
+    {
+     "op": "join_words",
      "args": {}
+    },
+    {
+     "op": "wrap",
+     "args": {
+      "pre": "",
+      "suf": "."
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276200.3205297
+  },
+  {
+   "id": "g00267",
+   "name": "grammar_lookup(form='ing')",
+   "steps": [
+    {
+     "op": "grammar_lookup",
+     "args": {
+      "form": "ing"
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276200.3457618
+  },
+  {
+   "id": "g00149",
+   "name": "last | add(n=10)",
+   "steps": [
+    {
+     "op": "last",
+     "args": {}
+    },
+    {
+     "op": "add",
+     "args": {
+      "n": 10
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276216.961189
+  },
+  {
+   "id": "g00166",
+   "name": "last | add(n=4)",
+   "steps": [
+    {
+     "op": "last",
+     "args": {}
+    },
+    {
+     "op": "add",
+     "args": {
+      "n": 4
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276216.9668236
+  },
+  {
+   "id": "g00196",
+   "name": "add(n=1)",
+   "steps": [
+    {
+     "op": "add",
+     "args": {
+      "n": 1
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276216.9727383
+  },
+  {
+   "id": "g00375",
+   "name": "last | add(n=11)",
+   "steps": [
+    {
+     "op": "last",
+     "args": {}
+    },
+    {
+     "op": "add",
+     "args": {
+      "n": 11
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276216.9985015
+  },
+  {
+   "id": "g00397",
+   "name": "last | add(n=8)",
+   "steps": [
+    {
+     "op": "last",
+     "args": {}
+    },
+    {
+     "op": "add",
+     "args": {
+      "n": 8
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276217.0014215
+  },
+  {
+   "id": "g00429",
+   "name": "last | add(n=7)",
+   "steps": [
+    {
+     "op": "last",
+     "args": {}
+    },
+    {
+     "op": "add",
+     "args": {
+      "n": 7
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276217.0064566
+  },
+  {
+   "id": "g00673",
+   "name": "last | add(n=9)",
+   "steps": [
+    {
+     "op": "last",
+     "args": {}
+    },
+    {
+     "op": "add",
+     "args": {
+      "n": 9
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276217.046879
+  },
+  {
+   "id": "g08348",
+   "name": "sort | unique | unique",
+   "steps": [
+    {
+     "op": "sort",
+     "args": {}
+    },
+    {
+     "op": "unique",
+     "args": {}
+    },
+    {
+     "op": "unique",
+     "args": {}
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276218.1521115
+  },
+  {
+   "id": "g09700",
+   "name": "last | add(n=12)",
+   "steps": [
+    {
+     "op": "last",
+     "args": {}
+    },
+    {
+     "op": "add",
+     "args": {
+      "n": 12
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276218.3377829
+  },
+  {
+   "id": "g27283",
+   "name": "add(n=-2)",
+   "steps": [
+    {
+     "op": "add",
+     "args": {
+      "n": -2
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276220.9865968
+  },
+  {
+   "id": "g00231",
+   "name": "words | aux_insert(family='do', pos=0) | verb_last_to(form='base') | join_words | wrap(pre='', suf='?')",
+   "steps": [
+    {
+     "op": "words",
+     "args": {}
+    },
+    {
+     "op": "aux_insert",
+     "args": {
+      "family": "do",
+      "pos": 0
+     }
+    },
+    {
+     "op": "verb_last_to",
+     "args": {
+      "form": "base"
+     }
     },
     {
      "op": "join_words",
@@ -95,33 +363,79 @@
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793434115.552256
+   "born": 1793276223.7122517
   },
   {
-   "id": "g00042",
-   "name": "diff",
+   "id": "g00263",
+   "name": "concat(with='es')",
    "steps": [
     {
-     "op": "diff",
+     "op": "concat",
+     "args": {
+      "with": "es"
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276234.7728446
+  },
+  {
+   "id": "c40554",
+   "domain": "chat",
+   "steps": [
+    {
+     "op": "direct",
      "args": {}
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793348211.6409316
+   "born": 1793276249.8128793,
+   "name": "chat:identity:direct"
   },
   {
-   "id": "g00042",
-   "name": "rsort",
+   "id": "c35906",
+   "domain": "chat",
    "steps": [
     {
-     "op": "rsort",
+     "op": "empathy",
      "args": {}
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793434115.5510905
+   "born": 1793276277.894817,
+   "name": "chat:memory:empathy"
+  },
+  {
+   "id": "c76041",
+   "domain": "chat",
+   "steps": [
+    {
+     "op": "create",
+     "args": {}
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276285.3041544,
+   "name": "chat:brain:create"
+  },
+  {
+   "id": "g00020",
+   "name": "grammar_lookup(form='plural')",
+   "steps": [
+    {
+     "op": "grammar_lookup",
+     "args": {
+      "form": "plural"
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793434115.5441027
   },
   {
    "id": "g00033",
@@ -172,92 +486,82 @@
    "born": 1793434115.55001
   },
   {
-   "id": "g00020",
-   "name": "grammar_lookup(form='plural')",
+   "id": "g00001",
+   "name": "grammar_lookup",
    "steps": [
     {
      "op": "grammar_lookup",
-     "args": {
-      "form": "plural"
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793434115.5441027
-  },
-  {
-   "id": "c76041",
-   "domain": "chat",
-   "steps": [
-    {
-     "op": "create",
      "args": {}
     }
    ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276285.3041544,
-   "name": "chat:brain:create"
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.2071971842407737
   },
   {
-   "id": "c35906",
-   "domain": "chat",
+   "id": "g00002",
+   "name": "last",
    "steps": [
+    {
+     "op": "last",
+     "args": {}
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.46267512069063976
+  },
+  {
+   "id": "g00004",
+   "name": "unique | unique",
+   "steps": [
+    {
+     "op": "unique",
+     "args": {}
+    },
+    {
+     "op": "unique",
+     "args": {}
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.17262161846156754
+  },
+  {
+   "id": "g00005",
+   "name": "upper",
+   "steps": [
+    {
+     "op": "upper",
+     "args": {}
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.20679155747180633
+  },
+  {
+   "id": "g00006",
+   "name": "first | empathy",
+   "steps": [
+    {
+     "op": "first",
+     "args": {}
+    },
     {
      "op": "empathy",
      "args": {}
     }
    ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276277.894817,
-   "name": "chat:memory:empathy"
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.38171615002160153
   },
   {
-   "id": "c40554",
-   "domain": "chat",
+   "id": "g00009",
+   "name": "verb_last_to(form='base') | join_words | wrap(pre='', suf='?')",
    "steps": [
-    {
-     "op": "direct",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276249.8128793,
-   "name": "chat:identity:direct"
-  },
-  {
-   "id": "g00263",
-   "name": "concat(with='es')",
-   "steps": [
-    {
-     "op": "concat",
-     "args": {
-      "with": "es"
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276234.7728446
-  },
-  {
-   "id": "g00231",
-   "name": "words | aux_insert(family='do', pos=0) | verb_last_to(form='base') | join_words | wrap(pre='', suf='?')",
-   "steps": [
-    {
-     "op": "words",
-     "args": {}
-    },
-    {
-     "op": "aux_insert",
-     "args": {
-      "family": "do",
-      "pos": 0
-     }
-    },
     {
      "op": "verb_last_to",
      "args": {
@@ -276,33 +580,64 @@
      }
     }
    ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276223.7122517
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.04997684836072591
   },
   {
-   "id": "g27283",
-   "name": "add(n=-2)",
+   "id": "g00014",
+   "name": "upper | concat(with='_')",
    "steps": [
     {
-     "op": "add",
+     "op": "upper",
+     "args": {}
+    },
+    {
+     "op": "concat",
      "args": {
-      "n": -2
+      "with": "_"
      }
     }
    ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276220.9865968
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.8359627876106451
   },
   {
-   "id": "g09700",
-   "name": "last | add(n=12)",
+   "id": "g00015",
+   "name": "wrap(pre='', suf='.')",
    "steps": [
     {
-     "op": "last",
-     "args": {}
-    },
+     "op": "wrap",
+     "args": {
+      "pre": "",
+      "suf": "."
+     }
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.06337071958856966
+  },
+  {
+   "id": "g00016",
+   "name": "concat(with='[')",
+   "steps": [
+    {
+     "op": "concat",
+     "args": {
+      "with": "["
+     }
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.3293645234579232
+  },
+  {
+   "id": "g00017",
+   "name": "add(n=12)",
+   "steps": [
     {
      "op": "add",
      "args": {
@@ -310,377 +645,65 @@
      }
     }
    ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276218.3377829
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.28899388473092646
   },
   {
-   "id": "g08348",
-   "name": "sort | unique | unique",
-   "steps": [
-    {
-     "op": "sort",
-     "args": {}
-    },
-    {
-     "op": "unique",
-     "args": {}
-    },
-    {
-     "op": "unique",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276218.1521115
-  },
-  {
-   "id": "g00673",
-   "name": "last | add(n=9)",
+   "id": "g00018",
+   "name": "last | wrap(pre='*', suf='*') | add(n=5)",
    "steps": [
     {
      "op": "last",
-     "args": {}
-    },
-    {
-     "op": "add",
-     "args": {
-      "n": 9
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276217.046879
-  },
-  {
-   "id": "g00429",
-   "name": "last | add(n=7)",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
-    },
-    {
-     "op": "add",
-     "args": {
-      "n": 7
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276217.0064566
-  },
-  {
-   "id": "g00397",
-   "name": "last | add(n=8)",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
-    },
-    {
-     "op": "add",
-     "args": {
-      "n": 8
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276217.0014215
-  },
-  {
-   "id": "g00375",
-   "name": "last | add(n=11)",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
-    },
-    {
-     "op": "add",
-     "args": {
-      "n": 11
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276216.9985015
-  },
-  {
-   "id": "g00196",
-   "name": "add(n=1)",
-   "steps": [
-    {
-     "op": "add",
-     "args": {
-      "n": 1
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276216.9727383
-  },
-  {
-   "id": "g00166",
-   "name": "last | add(n=4)",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
-    },
-    {
-     "op": "add",
-     "args": {
-      "n": 4
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276216.9668236
-  },
-  {
-   "id": "g00149",
-   "name": "last | add(n=10)",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
-    },
-    {
-     "op": "add",
-     "args": {
-      "n": 10
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276216.961189
-  },
-  {
-   "id": "g00267",
-   "name": "grammar_lookup(form='ing')",
-   "steps": [
-    {
-     "op": "grammar_lookup",
-     "args": {
-      "form": "ing"
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276200.3457618
-  },
-  {
-   "id": "g00141",
-   "name": "words | verb_last_to(form='ing') | aux_insert(family='be', pos=-1) | join_words | wrap(pre='', suf='.')",
-   "steps": [
-    {
-     "op": "words",
-     "args": {}
-    },
-    {
-     "op": "verb_last_to",
-     "args": {
-      "form": "ing"
-     }
-    },
-    {
-     "op": "aux_insert",
-     "args": {
-      "family": "be",
-      "pos": -1
-     }
-    },
-    {
-     "op": "join_words",
      "args": {}
     },
     {
      "op": "wrap",
      "args": {
-      "pre": "",
-      "suf": "."
+      "pre": "*",
+      "suf": "*"
      }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1793276200.3205297
-  },
-  {
-   "id": "g00001",
-   "name": "words | swap_first_two | aux_insert(family='be', pos=-1) | join_words | wrap(pre='', suf='.')",
-   "steps": [
-    {
-     "op": "words",
-     "args": {}
-    },
-    {
-     "op": "swap_first_two",
-     "args": {}
-    },
-    {
-     "op": "aux_insert",
-     "args": {
-      "family": "be",
-      "pos": -1
-     }
-    },
-    {
-     "op": "join_words",
-     "args": {}
-    },
-    {
-     "op": "wrap",
-     "args": {
-      "pre": "",
-      "suf": "."
-     }
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.7806171278704145
-  },
-  {
-   "id": "g00002",
-   "name": "sort | add(n=1)",
-   "steps": [
-    {
-     "op": "sort",
-     "args": {}
     },
     {
      "op": "add",
      "args": {
-      "n": 1
+      "n": 5
      }
     }
    ],
    "fitness": 0.0,
    "uses": 0,
-   "born": 0.3778053384420481
+   "born": 0.843993062908985
   },
   {
-   "id": "g00004",
-   "name": "concat(with='(')",
+   "id": "g00020",
+   "name": "slice(a=1, b=8) | add(n=1)",
    "steps": [
-    {
-     "op": "concat",
-     "args": {
-      "with": "("
-     }
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.949671844943349
-  },
-  {
-   "id": "g00007",
-   "name": "last | rsort",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
-    },
-    {
-     "op": "rsort",
-     "args": {}
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.7063618140538985
-  },
-  {
-   "id": "g00008",
-   "name": "last | slice(a=0, b=3)",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
-    },
     {
      "op": "slice",
      "args": {
-      "a": 0,
-      "b": 3
+      "a": 1,
+      "b": 8
      }
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.8479787961807267
-  },
-  {
-   "id": "g00009",
-   "name": "add(n=10) | last",
-   "steps": [
+    },
     {
      "op": "add",
      "args": {
-      "n": 10
+      "n": 1
      }
-    },
-    {
-     "op": "last",
-     "args": {}
     }
    ],
    "fitness": 0.0,
    "uses": 0,
-   "born": 0.8457842425130769
+   "born": 0.3330924631289939
   },
   {
-   "id": "g00010",
-   "name": "grammar_lookup",
+   "id": "g00025",
+   "name": "direct | contract_not | join_words | wrap(pre='', suf='.')",
    "steps": [
     {
-     "op": "grammar_lookup",
+     "op": "direct",
      "args": {}
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.4074504017677021
-  },
-  {
-   "id": "g00013",
-   "name": "words | aux_insert(family='do', pos=-1) | insert_at(pos=-1, with='not') | verb_last_to(form='base') | contract_not | join_words | unique",
-   "steps": [
-    {
-     "op": "words",
-     "args": {}
-    },
-    {
-     "op": "aux_insert",
-     "args": {
-      "family": "do",
-      "pos": -1
-     }
-    },
-    {
-     "op": "insert_at",
-     "args": {
-      "pos": -1,
-      "with": "not"
-     }
-    },
-    {
-     "op": "verb_last_to",
-     "args": {
-      "form": "base"
-     }
     },
     {
      "op": "contract_not",
@@ -691,147 +714,31 @@
      "args": {}
     },
     {
-     "op": "unique",
-     "args": {}
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.9461644589587499
-  },
-  {
-   "id": "g00014",
-   "name": "words | grammar_lookup(form='past')",
-   "steps": [
-    {
-     "op": "words",
-     "args": {}
-    },
-    {
-     "op": "grammar_lookup",
+     "op": "wrap",
      "args": {
-      "form": "past"
+      "pre": "",
+      "suf": "."
      }
     }
    ],
    "fitness": 0.0,
    "uses": 0,
-   "born": 0.27429581907352785
-  },
-  {
-   "id": "g00015",
-   "name": "first | concat(with='ed')",
-   "steps": [
-    {
-     "op": "first",
-     "args": {}
-    },
-    {
-     "op": "concat",
-     "args": {
-      "with": "ed"
-     }
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.3813978177861206
-  },
-  {
-   "id": "g00018",
-   "name": "last | last | add(n=9)",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
-    },
-    {
-     "op": "last",
-     "args": {}
-    },
-    {
-     "op": "add",
-     "args": {
-      "n": 9
-     }
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.9216821847234385
-  },
-  {
-   "id": "g00019",
-   "name": "words | aux_insert(family='do', pos=-1)",
-   "steps": [
-    {
-     "op": "words",
-     "args": {}
-    },
-    {
-     "op": "aux_insert",
-     "args": {
-      "family": "do",
-      "pos": -1
-     }
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.5447138999397774
-  },
-  {
-   "id": "g00021",
-   "name": "last | add(n=1)",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
-    },
-    {
-     "op": "add",
-     "args": {
-      "n": 1
-     }
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.0432181275332677
-  },
-  {
-   "id": "g00023",
-   "name": "last | first",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
-    },
-    {
-     "op": "first",
-     "args": {}
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.6087048138911565
+   "born": 0.0771607893881372
   },
   {
    "id": "g00026",
-   "name": "last | reverse",
+   "name": "add(n=-6)",
    "steps": [
     {
-     "op": "last",
-     "args": {}
-    },
-    {
-     "op": "reverse",
-     "args": {}
+     "op": "add",
+     "args": {
+      "n": -6
+     }
     }
    ],
    "fitness": 0.0,
    "uses": 0,
-   "born": 0.06282408368739567
+   "born": 0.1770475630215409
   }
  ]
 }
