@@ -13,13 +13,13 @@
   "creativity": 0.595,
   "memory": 0.595,
   "taxonomy": 0.595,
-  "chem": 0.591,
-  "list": 0.589,
-  "sentence": 0.585,
-  "grammar": 0.581,
-  "sequence": 0.568,
+  "chem": 0.595,
+  "list": 0.592,
+  "sentence": 0.59,
+  "sequence": 0.574,
+  "grammar": 0.427,
   "brain": -0.197,
-  "code": -0.131
+  "code": -0.121
  },
  "skills": {
   "improvement": 0.595,
