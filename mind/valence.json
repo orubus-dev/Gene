@@ -16,10 +16,10 @@
   "chem": 0.595,
   "list": 0.595,
   "sentence": 0.595,
-  "sequence": 0.592,
-  "grammar": 0.407,
+  "sequence": 0.595,
+  "grammar": 0.443,
   "brain": -0.197,
-  "code": -0.034
+  "code": -0.14
  },
  "skills": {
   "improvement": 0.595,
