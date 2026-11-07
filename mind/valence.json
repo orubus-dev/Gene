@@ -17,9 +17,9 @@
   "list": 0.595,
   "sentence": 0.595,
   "sequence": 0.595,
-  "grammar": 0.443,
+  "grammar": 0.459,
   "brain": -0.197,
-  "code": -0.14
+  "code": 0.135
  },
  "skills": {
   "improvement": 0.595,
