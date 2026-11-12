@@ -12,14 +12,14 @@
   "origin": 0.595,
   "creativity": 0.595,
   "memory": 0.595,
-  "taxonomy": 0.595,
   "chem": 0.595,
   "list": 0.595,
   "sentence": 0.595,
   "sequence": 0.595,
-  "grammar": 0.532,
+  "grammar": 0.56,
+  "taxonomy": 0.433,
   "brain": -0.197,
-  "code": -0.161
+  "code": 0.001
  },
  "skills": {
   "improvement": 0.595,
