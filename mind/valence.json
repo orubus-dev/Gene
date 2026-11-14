@@ -16,10 +16,10 @@
   "list": 0.595,
   "sentence": 0.595,
   "sequence": 0.595,
-  "grammar": 0.564,
-  "taxonomy": 0.502,
+  "taxonomy": 0.529,
+  "grammar": 0.396,
   "brain": -0.197,
-  "code": 0.041
+  "code": 0.059
  },
  "skills": {
   "improvement": 0.595,
