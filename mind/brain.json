@@ -3,22 +3,22 @@
   "dopamine": 0.616485232,
   "serotonin": 0.698666968,
   "norepinephrine": 0.2500000000000001,
-  "cortisol": 0.10966323006092163,
+  "cortisol": 0.11985962346985961,
   "oxytocin": 0.25,
-  "acetylcholine": 0.34892982599586425,
-  "gaba": 0.47604340831305575,
+  "acetylcholine": 0.3846172029271491,
+  "gaba": 0.47604340831305625,
   "endorphin": 0.54180405056,
-  "glutamate": 0.3849498757113316
+  "glutamate": 0.41044085923367796
  },
  "activation": {
   "cortex": 0.6,
   "hippocampus": 0.6,
-  "thalamus": 3.656158440062974e-05,
-  "wernicke": 3.656158440062974e-05,
-  "broca": 3.656158440062974e-05
+  "thalamus": 2.1936950640377843e-05,
+  "wernicke": 2.1936950640377843e-05,
+  "broca": 2.1936950640377843e-05
  },
- "ticks": 564402,
- "field_sum": 1125.519,
+ "ticks": 564442,
+ "field_sum": 1125.518,
  "species": [
   "human_brain_scan",
   "mouse_brain_scan",
