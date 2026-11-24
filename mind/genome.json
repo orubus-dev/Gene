@@ -1,8 +1,23 @@
 {
  "genes": [
   {
-   "id": "g00139",
-   "name": "last | add(n=9)",
+   "id": "g00103",
+   "name": "concat(with='s')",
+   "steps": [
+    {
+     "op": "concat",
+     "args": {
+      "with": "s"
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1795522172.7613635
+  },
+  {
+   "id": "g00079",
+   "name": "last | add(n=4)",
    "steps": [
     {
      "op": "last",
@@ -11,25 +26,97 @@
     {
      "op": "add",
      "args": {
-      "n": 9
+      "n": 4
      }
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1795429658.487319
+   "born": 1795522172.755465
   },
   {
-   "id": "g00122",
-   "name": "words | swap_first_two | join_words | wrap(pre='', suf='?')",
+   "id": "g00072",
+   "name": "add(n=1)",
+   "steps": [
+    {
+     "op": "add",
+     "args": {
+      "n": 1
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1795522172.752487
+  },
+  {
+   "id": "g00061",
+   "name": "words | aux_insert(family='do', pos=-1) | insert_at(pos=-1, with='not') | verb_last_to(form='base') | contract_not | join_words | wrap(pre='', suf='.')",
    "steps": [
     {
      "op": "words",
      "args": {}
     },
     {
-     "op": "swap_first_two",
+     "op": "aux_insert",
+     "args": {
+      "family": "do",
+      "pos": -1
+     }
+    },
+    {
+     "op": "insert_at",
+     "args": {
+      "pos": -1,
+      "with": "not"
+     }
+    },
+    {
+     "op": "verb_last_to",
+     "args": {
+      "form": "base"
+     }
+    },
+    {
+     "op": "contract_not",
      "args": {}
+    },
+    {
+     "op": "join_words",
+     "args": {}
+    },
+    {
+     "op": "wrap",
+     "args": {
+      "pre": "",
+      "suf": "."
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1795522172.7490056
+  },
+  {
+   "id": "g00058",
+   "name": "words | aux_insert(family='do', pos=0) | verb_last_to(form='base') | join_words | wrap(pre='', suf='?')",
+   "steps": [
+    {
+     "op": "words",
+     "args": {}
+    },
+    {
+     "op": "aux_insert",
+     "args": {
+      "family": "do",
+      "pos": 0
+     }
+    },
+    {
+     "op": "verb_last_to",
+     "args": {
+      "form": "base"
+     }
     },
     {
      "op": "join_words",
@@ -45,187 +132,35 @@
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1795429658.484045
+   "born": 1795522172.746125
   },
   {
-   "id": "g00119",
-   "name": "maxv",
+   "id": "g00023",
+   "name": "add(n=-1)",
    "steps": [
-    {
-     "op": "maxv",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1795429658.4833333
-  },
-  {
-   "id": "g00108",
-   "name": "grammar_lookup(form='past')",
-   "steps": [
-    {
-     "op": "grammar_lookup",
-     "args": {
-      "form": "past"
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1795429658.4806411
-  },
-  {
-   "id": "g00088",
-   "name": "grammar_lookup(form='plural')",
-   "steps": [
-    {
-     "op": "grammar_lookup",
-     "args": {
-      "form": "plural"
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1795429658.4787173
-  },
-  {
-   "id": "g00038",
-   "name": "sumv",
-   "steps": [
-    {
-     "op": "sumv",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1795429658.4706376
-  },
-  {
-   "id": "g00028",
-   "name": "maths_eval",
-   "steps": [
-    {
-     "op": "maths_eval",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1794216183.3048537
-  },
-  {
-   "id": "g00028",
-   "name": "parent_of",
-   "steps": [
-    {
-     "op": "parent_of",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1795429658.4691696
-  },
-  {
-   "id": "g00020",
-   "name": "upper | concat(with='!')",
-   "steps": [
-    {
-     "op": "upper",
-     "args": {}
-    },
-    {
-     "op": "concat",
-     "args": {
-      "with": "!"
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1795429658.4606516
-  },
-  {
-   "id": "g00056",
-   "name": "concat(with='ed')",
-   "steps": [
-    {
-     "op": "concat",
-     "args": {
-      "with": "ed"
-     }
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1794387584.1786823
-  },
-  {
-   "id": "g00025",
-   "name": "chem_react",
-   "steps": [
-    {
-     "op": "chem_react",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1794387584.1713881
-  },
-  {
-   "id": "g00035",
-   "name": "reverse",
-   "steps": [
-    {
-     "op": "reverse",
-     "args": {}
-    }
-   ],
-   "fitness": 1.0,
-   "uses": 1,
-   "born": 1794040185.3676789
-  },
-  {
-   "id": "g00375",
-   "name": "last | add(n=11)",
-   "steps": [
-    {
-     "op": "last",
-     "args": {}
-    },
     {
      "op": "add",
      "args": {
-      "n": 11
+      "n": -1
      }
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793276216.9985015
+   "born": 1795522172.7363696
   },
   {
-   "id": "g00397",
-   "name": "last | add(n=8)",
+   "id": "g00027",
+   "name": "chem_symbol",
    "steps": [
     {
-     "op": "last",
+     "op": "chem_symbol",
      "args": {}
-    },
-    {
-     "op": "add",
-     "args": {
-      "n": 8
-     }
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1793276217.0014215
+   "born": 1795339755.7763853
   },
   {
    "id": "g00429",
@@ -247,55 +182,28 @@
    "born": 1793276217.0064566
   },
   {
-   "id": "g00027",
-   "name": "chem_symbol",
+   "id": "g00397",
+   "name": "last | add(n=8)",
    "steps": [
     {
-     "op": "chem_symbol",
+     "op": "last",
      "args": {}
+    },
+    {
+     "op": "add",
+     "args": {
+      "n": 8
+     }
     }
    ],
    "fitness": 1.0,
    "uses": 1,
-   "born": 1795339755.7763853
+   "born": 1793276217.0014215
   },
   {
-   "id": "g00003",
-   "name": "upper | sort | concat(with='!')",
+   "id": "g00375",
+   "name": "last | add(n=11)",
    "steps": [
-    {
-     "op": "upper",
-     "args": {}
-    },
-    {
-     "op": "sort",
-     "args": {}
-    },
-    {
-     "op": "concat",
-     "args": {
-      "with": "!"
-     }
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.04264182920053239
-  },
-  {
-   "id": "g00006",
-   "name": "upper | concat(with='!') | last | add(n=11)",
-   "steps": [
-    {
-     "op": "upper",
-     "args": {}
-    },
-    {
-     "op": "concat",
-     "args": {
-      "with": "!"
-     }
-    },
     {
      "op": "last",
      "args": {}
@@ -307,82 +215,76 @@
      }
     }
    ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.012771946755158359
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1793276216.9985015
   },
   {
-   "id": "g00007",
-   "name": "sumv | add(n=9)",
-   "steps": [
-    {
-     "op": "sumv",
-     "args": {}
-    },
-    {
-     "op": "add",
-     "args": {
-      "n": 9
-     }
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.9103867444016852
-  },
-  {
-   "id": "g00008",
-   "name": "item(i=1) | swap_first_two | join_words | wrap(pre='', suf='?')",
-   "steps": [
-    {
-     "op": "item",
-     "args": {
-      "i": 1
-     }
-    },
-    {
-     "op": "swap_first_two",
-     "args": {}
-    },
-    {
-     "op": "join_words",
-     "args": {}
-    },
-    {
-     "op": "wrap",
-     "args": {
-      "pre": "",
-      "suf": "?"
-     }
-    }
-   ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.33049541657219705
-  },
-  {
-   "id": "g00009",
-   "name": "reverse | maths_eval",
+   "id": "g00035",
+   "name": "reverse",
    "steps": [
     {
      "op": "reverse",
      "args": {}
-    },
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1794040185.3676789
+  },
+  {
+   "id": "g00025",
+   "name": "chem_react",
+   "steps": [
     {
-     "op": "maths_eval",
+     "op": "chem_react",
      "args": {}
     }
    ],
-   "fitness": 0.0,
-   "uses": 0,
-   "born": 0.06902717818643656
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1794387584.1713881
   },
   {
-   "id": "g00010",
-   "name": "upper | concat(with='ed')",
+   "id": "g00056",
+   "name": "concat(with='ed')",
+   "steps": [
+    {
+     "op": "concat",
+     "args": {
+      "with": "ed"
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1794387584.1786823
+  },
+  {
+   "id": "g00020",
+   "name": "upper | concat(with='!')",
    "steps": [
     {
      "op": "upper",
+     "args": {}
+    },
+    {
+     "op": "concat",
+     "args": {
+      "with": "!"
+     }
+    }
+   ],
+   "fitness": 1.0,
+   "uses": 1,
+   "born": 1795429658.4606516
+  },
+  {
+   "id": "g00003",
+   "name": "last | concat(with='ed')",
+   "steps": [
+    {
+     "op": "last",
      "args": {}
     },
     {
@@ -394,26 +296,129 @@
    ],
    "fitness": 0.0,
    "uses": 0,
-   "born": 0.45845006166498115
+   "born": 0.744482457551398
   },
   {
-   "id": "g00016",
-   "name": "last | grammar_lookup(form='past')",
+   "id": "g00004",
+   "name": "chem_react | concat(with='ed')",
+   "steps": [
+    {
+     "op": "chem_react",
+     "args": {}
+    },
+    {
+     "op": "concat",
+     "args": {
+      "with": "ed"
+     }
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.8392794578564728
+  },
+  {
+   "id": "g00006",
+   "name": "reverse | reverse",
+   "steps": [
+    {
+     "op": "reverse",
+     "args": {}
+    },
+    {
+     "op": "reverse",
+     "args": {}
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.9131467366669834
+  },
+  {
+   "id": "g00007",
+   "name": "add(n=8)",
+   "steps": [
+    {
+     "op": "add",
+     "args": {
+      "n": 8
+     }
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.6396245866656772
+  },
+  {
+   "id": "g00009",
+   "name": "concat(with='!')",
+   "steps": [
+    {
+     "op": "concat",
+     "args": {
+      "with": "!"
+     }
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.6647438548198036
+  },
+  {
+   "id": "g00010",
+   "name": "words",
+   "steps": [
+    {
+     "op": "words",
+     "args": {}
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.669089066922535
+  },
+  {
+   "id": "g00011",
+   "name": "last | chem_symbol",
    "steps": [
     {
      "op": "last",
      "args": {}
     },
     {
-     "op": "grammar_lookup",
+     "op": "chem_symbol",
+     "args": {}
+    }
+   ],
+   "fitness": 0.0,
+   "uses": 0,
+   "born": 0.667472466132418
+  },
+  {
+   "id": "g00012",
+   "name": "upper | slice(a=0, b=4) | concat(with='!')",
+   "steps": [
+    {
+     "op": "upper",
+     "args": {}
+    },
+    {
+     "op": "slice",
      "args": {
-      "form": "past"
+      "a": 0,
+      "b": 4
+     }
+    },
+    {
+     "op": "concat",
+     "args": {
+      "with": "!"
      }
     }
    ],
    "fitness": 0.0,
    "uses": 0,
-   "born": 0.27092251125345035
+   "born": 0.18118078583519792
   }
  ]
 }
