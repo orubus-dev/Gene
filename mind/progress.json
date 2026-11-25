@@ -1,62 +1,54 @@
 {
- "attempts": 8360552,
- "solved": 825943,
+ "attempts": 8361229,
+ "solved": 825977,
  "by_domain": {
   "chat": {
    "tasks": 50370,
    "solved": 46325
   },
   "sequence": {
-   "tasks": 24320,
-   "solved": 14315
+   "tasks": 24322,
+   "solved": 14317
   },
   "list": {
-   "tasks": 24194,
-   "solved": 23430
+   "tasks": 24199,
+   "solved": 23435
   },
   "number": {
-   "tasks": 24033,
-   "solved": 24033
+   "tasks": 24034,
+   "solved": 24034
   },
   "string": {
-   "tasks": 24302,
-   "solved": 24302
+   "tasks": 24304,
+   "solved": 24304
   },
   "code": {
-   "tasks": 24214,
-   "solved": 11820
+   "tasks": 24220,
+   "solved": 11821
   },
   "grammar": {
-   "tasks": 103407,
-   "solved": 103070
+   "tasks": 103410,
+   "solved": 103072
   },
   "sentence": {
-   "tasks": 158607,
-   "solved": 158386
+   "tasks": 158610,
+   "solved": 158389
   },
   "taxonomy": {
-   "tasks": 211379,
-   "solved": 175173
+   "tasks": 211385,
+   "solved": 175179
   },
   "maths": {
-   "tasks": 165135,
-   "solved": 165134
+   "tasks": 165140,
+   "solved": 165139
   },
   "chem": {
-   "tasks": 86751,
-   "solved": 76460
+   "tasks": 86758,
+   "solved": 76467
   }
  },
- "cycles": 197,
+ "cycles": 198,
  "history": [
-  {
-   "cycle": 168,
-   "rates": {
-    "chem": 0.882,
-    "grammar": 1.0,
-    "maths": 1.0
-   }
-  },
   {
    "cycle": 169,
    "rates": {
@@ -479,6 +471,21 @@
     "number": 1.0,
     "list": 1.0,
     "sentence": 1.0
+   }
+  },
+  {
+   "cycle": 198,
+   "rates": {
+    "taxonomy": 1.0,
+    "sentence": 1.0,
+    "chem": 1.0,
+    "grammar": 0.667,
+    "string": 1.0,
+    "number": 1.0,
+    "code": 0.167,
+    "maths": 1.0,
+    "sequence": 1.0,
+    "list": 1.0
    }
   }
  ],
