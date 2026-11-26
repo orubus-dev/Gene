@@ -1,19 +1,19 @@
 {
  "stage": "language",
  "wins": {
-  "string": 65,
-  "number": 65,
+  "string": 66,
+  "number": 66,
   "code": 63,
-  "list": 65,
-  "sequence": 64,
+  "list": 66,
+  "sequence": 65,
   "chat": 58,
-  "grammar": 60,
-  "sentence": 67,
-  "taxonomy": 79,
-  "maths": 70,
-  "chem": 51
+  "grammar": 61,
+  "sentence": 68,
+  "taxonomy": 80,
+  "maths": 71,
+  "chem": 52
  },
- "total_wins": 707,
+ "total_wins": 716,
  "milestones": [
   {
    "stage": "skills",

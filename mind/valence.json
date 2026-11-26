@@ -15,11 +15,11 @@
   "chem": 0.595,
   "list": 0.595,
   "sentence": 0.595,
-  "taxonomy": 0.583,
-  "sequence": 0.506,
-  "grammar": 0.397,
-  "brain": -0.197,
-  "code": -0.179
+  "taxonomy": 0.591,
+  "sequence": 0.539,
+  "grammar": 0.467,
+  "code": -0.266,
+  "brain": -0.197
  },
  "skills": {
   "improvement": 0.595,
