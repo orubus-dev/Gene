@@ -14,10 +14,10 @@
    ],
    "vec": "self",
    "links": {
-    "assoc>conversation": 0.6999999999999997,
-    "assoc>greeting": 0.6499999999999995,
-    "assoc>identity": 0.6999999999999997,
-    "assoc>sentence": 0.059999999999999255
+    "assoc>conversation": 0.6899999999999997,
+    "assoc>greeting": 0.6399999999999995,
+    "assoc>identity": 0.6899999999999997,
+    "assoc>sentence": 0.04999999999999925
    },
    "created": 1793222057.1172688,
    "touched": 1793276875.0073538
@@ -55,7 +55,7 @@
    ],
    "vec": "teacher",
    "links": {
-    "assoc>question": 0.6999999999999997,
+    "assoc>question": 0.6899999999999997,
     "is-a>role_cat": 0.99
    },
    "created": 1793222057.1172733,
@@ -87,7 +87,7 @@
     "encoded-in>gene": 0.99
    },
    "created": 1793222057.1172748,
-   "touched": 1795775915.1190934
+   "touched": 1795859752.6111853
   },
   "success": {
    "id": "success",
@@ -102,18 +102,18 @@
     "assoc>code": 0.99,
     "assoc>list": 0.99,
     "assoc>sequence": 0.99,
-    "assoc>chat": 0.6899999999999997,
-    "assoc>identity": 0.6899999999999997,
+    "assoc>chat": 0.6799999999999997,
+    "assoc>identity": 0.6799999999999997,
     "assoc>grammar": 0.99,
     "assoc>sentence": 0.99,
     "assoc>taxonomy": 0.99,
     "assoc>maths": 0.99,
     "assoc>chem": 0.99,
-    "assoc>memory": 0.6899999999999997,
-    "assoc>brain": 0.6899999999999997
+    "assoc>memory": 0.6799999999999997,
+    "assoc>brain": 0.6799999999999997
    },
    "created": 1793222057.117276,
-   "touched": 1795775915.1190934
+   "touched": 1795859752.6111853
   },
   "failure": {
    "id": "failure",
@@ -123,18 +123,18 @@
    "vec": "failure",
    "links": {
     "assoc>code": 0.99,
-    "assoc>chat": 0.6899999999999997,
-    "assoc>list": 0.6499999999999997,
-    "assoc>sequence": 0.8499999999999999,
-    "assoc>sentence": 0.6999999999999997,
-    "assoc>taxonomy": 0.9299999999999999,
-    "assoc>chem": 0.6699999999999997,
-    "assoc>brain": 0.6899999999999997,
-    "assoc>memory": 0.06999999999999953,
-    "assoc>grammar": 0.97
+    "assoc>chat": 0.6799999999999997,
+    "assoc>list": 0.6399999999999997,
+    "assoc>sequence": 0.8399999999999999,
+    "assoc>sentence": 0.6899999999999997,
+    "assoc>taxonomy": 0.9199999999999999,
+    "assoc>chem": 0.6599999999999997,
+    "assoc>brain": 0.6799999999999997,
+    "assoc>memory": 0.05999999999999953,
+    "assoc>grammar": 0.99
    },
    "created": 1793222057.117277,
-   "touched": 1795775915.1190426
+   "touched": 1795859752.6111045
   },
   "question": {
    "id": "question",
@@ -153,7 +153,7 @@
    ],
    "vec": "question",
    "links": {
-    "assoc>teacher": 0.6999999999999997,
+    "assoc>teacher": 0.6899999999999997,
     "is-a>grammar": 0.99,
     "pairs-with>statement": 0.99
    },
@@ -194,7 +194,7 @@
     "assoc>success": 0.99
    },
    "created": 1793222057.1172805,
-   "touched": 1795775915.118972
+   "touched": 1795859752.611185
   },
   "string": {
    "id": "string",
@@ -207,7 +207,7 @@
     "assoc>success": 0.99
    },
    "created": 1793222057.1172814,
-   "touched": 1795775915.119068
+   "touched": 1795859752.6111205
   },
   "list": {
    "id": "list",
@@ -218,10 +218,10 @@
    "links": {
     "assoc>skill": 0.99,
     "assoc>success": 0.99,
-    "assoc>failure": 0.6499999999999997
+    "assoc>failure": 0.6399999999999997
    },
    "created": 1793222057.1172824,
-   "touched": 1795775915.1190932
+   "touched": 1795859752.6110606
   },
   "sequence": {
    "id": "sequence",
@@ -238,10 +238,10 @@
    "links": {
     "assoc>skill": 0.99,
     "assoc>success": 0.99,
-    "assoc>failure": 0.8499999999999999
+    "assoc>failure": 0.8399999999999999
    },
    "created": 1793222057.1172833,
-   "touched": 1795775915.1190395
+   "touched": 1795859752.6110408
   },
   "code": {
    "id": "code",
@@ -262,7 +262,7 @@
     "assoc>failure": 0.99
    },
    "created": 1793222057.117284,
-   "touched": 1795775915.1190486
+   "touched": 1795859752.6111774
   },
   "energy": {
    "id": "energy",
@@ -328,7 +328,7 @@
     "is-unit-of>life": 0.99
    },
    "created": 1793222057.2190661,
-   "touched": 1795775911.853966
+   "touched": 1795859748.9104877
   },
   "dna": {
    "id": "dna",
@@ -348,7 +348,7 @@
     "is-inside>cell": 0.99
    },
    "created": 1793222057.2190807,
-   "touched": 1795775911.8539822
+   "touched": 1795859748.9105241
   },
   "evolution": {
    "id": "evolution",
@@ -387,7 +387,7 @@
     "is-a>organism": 0.99
    },
    "created": 1793222057.2191107,
-   "touched": 1795775914.0158916
+   "touched": 1795859751.3188107
   },
   "animal": {
    "id": "animal",
@@ -407,7 +407,7 @@
     "is-a>organism": 0.99
    },
    "created": 1793222057.2191257,
-   "touched": 1795775914.0077345
+   "touched": 1795859751.3030689
   },
   "human": {
    "id": "human",
@@ -425,7 +425,7 @@
     "is-a>animal": 0.99
    },
    "created": 1793222057.2191403,
-   "touched": 1795775911.8540478
+   "touched": 1795859748.9106953
   },
   "brain": {
    "id": "brain",
@@ -444,13 +444,13 @@
    "links": {
     "is-a>body_part": 0.99,
     "is-a>organ": 0.99,
-    "assoc>chat": 0.6899999999999997,
-    "assoc>failure": 0.6899999999999997,
-    "assoc>success": 0.6899999999999997,
+    "assoc>chat": 0.6799999999999997,
+    "assoc>failure": 0.6799999999999997,
+    "assoc>success": 0.6799999999999997,
     "is-inside>human": 0.99
    },
    "created": 1793222057.2191548,
-   "touched": 1795775911.854064
+   "touched": 1795859748.910732
   },
   "memory": {
    "id": "memory",
@@ -467,12 +467,12 @@
    "vec": "memory",
    "links": {
     "is-a-function-of>brain": 0.99,
-    "assoc>chat": 0.6899999999999997,
-    "assoc>success": 0.6899999999999997,
-    "assoc>failure": 0.06999999999999953
+    "assoc>chat": 0.6799999999999997,
+    "assoc>success": 0.6799999999999997,
+    "assoc>failure": 0.05999999999999953
    },
    "created": 1793222057.2191694,
-   "touched": 1795775915.1257946
+   "touched": 1795859752.6193695
   },
   "learning": {
    "id": "learning",
@@ -587,7 +587,7 @@
     "values>honesty": 0.99
    },
    "created": 1793222066.6202273,
-   "touched": 1795775911.6761274
+   "touched": 1795859748.7098866
   },
   "organism": {
    "id": "organism",
@@ -608,7 +608,7 @@
     "is-a>living": 0.99
    },
    "created": 1793222092.8629682,
-   "touched": 1795775914.1893325
+   "touched": 1795859751.5186489
   },
   "sleep": {
    "id": "sleep",
@@ -679,7 +679,7 @@
     "is-a>vertebrate": 0.99
    },
    "created": 1793222092.916846,
-   "touched": 1795775914.014172
+   "touched": 1795859751.3153775
   },
   "tree": {
    "id": "tree",
@@ -708,12 +708,12 @@
    ],
    "vec": "conversation",
    "links": {
-    "assoc>self": 0.6999999999999997,
-    "assoc>greeting": 0.6499999999999995,
-    "assoc>identity": 0.6999999999999997
+    "assoc>self": 0.6899999999999997,
+    "assoc>greeting": 0.6399999999999995,
+    "assoc>identity": 0.6899999999999997
    },
    "created": 1793252078.7041075,
-   "touched": 1795775912.2148354
+   "touched": 1795859749.3213232
   },
   "chat": {
    "id": "chat",
@@ -722,12 +722,12 @@
    "words": [],
    "vec": "chat",
    "links": {
-    "assoc>success": 0.6899999999999997,
-    "assoc>skill": 0.6799999999999997,
-    "assoc>identity": 0.6899999999999997,
-    "assoc>failure": 0.6899999999999997,
-    "assoc>brain": 0.6899999999999997,
-    "assoc>memory": 0.6899999999999997
+    "assoc>success": 0.6799999999999997,
+    "assoc>skill": 0.6699999999999997,
+    "assoc>identity": 0.6799999999999997,
+    "assoc>failure": 0.6799999999999997,
+    "assoc>brain": 0.6799999999999997,
+    "assoc>memory": 0.6799999999999997
    },
    "created": 1793252078.7041113,
    "touched": 1793276577.62488
@@ -746,8 +746,8 @@
    ],
    "vec": "greeting",
    "links": {
-    "assoc>self": 0.6499999999999995,
-    "assoc>conversation": 0.6499999999999995
+    "assoc>self": 0.6399999999999995,
+    "assoc>conversation": 0.6399999999999995
    },
    "created": 1793252078.7043407,
    "touched": 1793276875.0073488
@@ -763,10 +763,10 @@
    ],
    "vec": "identity",
    "links": {
-    "assoc>chat": 0.6899999999999997,
-    "assoc>success": 0.6899999999999997,
-    "assoc>self": 0.6999999999999997,
-    "assoc>conversation": 0.6999999999999997
+    "assoc>chat": 0.6799999999999997,
+    "assoc>success": 0.6799999999999997,
+    "assoc>self": 0.6899999999999997,
+    "assoc>conversation": 0.6899999999999997
    },
    "created": 1793252078.704426,
    "touched": 1793276875.0073416
@@ -789,7 +789,7 @@
     "is-a>animal": 0.99
    },
    "created": 1793253526.7227883,
-   "touched": 1795775914.0114403
+   "touched": 1795859751.3115313
   },
   "octopus": {
    "id": "octopus",
@@ -868,7 +868,7 @@
     "is-a>animal": 0.99
    },
    "created": 1793253526.7230012,
-   "touched": 1795775911.1441164
+   "touched": 1795859748.1184523
   },
   "frog": {
    "id": "frog",
@@ -894,7 +894,7 @@
     "is-a>animal": 0.99
    },
    "created": 1793253526.7231088,
-   "touched": 1795775914.0148556
+   "touched": 1795859751.3166997
   },
   "lizard": {
    "id": "lizard",
@@ -920,7 +920,7 @@
     "is-a>animal": 0.99
    },
    "created": 1793253526.723141,
-   "touched": 1795775914.0147135
+   "touched": 1795859751.3164346
   },
   "insect": {
    "id": "insect",
@@ -942,7 +942,7 @@
     "is-a>animal": 0.99
    },
    "created": 1793253526.723172,
-   "touched": 1795775914.0152445
+   "touched": 1795859751.317378
   },
   "whale": {
    "id": "whale",
@@ -1153,7 +1153,7 @@
     "is-a>entity": 0.99
    },
    "created": 1793253526.7233703,
-   "touched": 1795775914.1894448
+   "touched": 1795859751.5189006
   },
   "ocean": {
    "id": "ocean",
@@ -1177,7 +1177,7 @@
     "is-a>landform": 0.99
    },
    "created": 1793253526.7951047,
-   "touched": 1795775913.295299
+   "touched": 1795859750.5165257
   },
   "glacier": {
    "id": "glacier",
@@ -1214,10 +1214,10 @@
    "links": {
     "assoc>skill": 0.99,
     "assoc>success": 0.99,
-    "assoc>failure": 0.97
+    "assoc>failure": 0.99
    },
    "created": 1793256285.2109525,
-   "touched": 1795775915.1190808
+   "touched": 1795859752.6111698
   },
   "future_tense": {
    "id": "future_tense",
@@ -1598,7 +1598,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793256317.6611176,
-   "touched": 1795775915.118513
+   "touched": 1795859752.6104727
   },
   "verb_hope": {
    "id": "verb_hope",
@@ -1653,7 +1653,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793256317.661234,
-   "touched": 1795775915.1185102
+   "touched": 1795859752.6104689
   },
   "verb_go": {
    "id": "verb_go",
@@ -1672,7 +1672,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793256317.661251,
-   "touched": 1795775915.1186967
+   "touched": 1795859752.6107225
   },
   "verb_be": {
    "id": "verb_be",
@@ -1691,7 +1691,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793256317.6612704,
-   "touched": 1795775915.1186996
+   "touched": 1795859752.6107264
   },
   "verb_have": {
    "id": "verb_have",
@@ -1710,7 +1710,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793256317.6612883,
-   "touched": 1795775915.1187024
+   "touched": 1795859752.61073
   },
   "verb_do": {
    "id": "verb_do",
@@ -1729,7 +1729,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793256317.6613061,
-   "touched": 1795775915.118705
+   "touched": 1795859752.6107335
   },
   "verb_say": {
    "id": "verb_say",
@@ -1820,7 +1820,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793256317.6613903,
-   "touched": 1795775915.1187084
+   "touched": 1795859752.6107373
   },
   "verb_get": {
    "id": "verb_get",
@@ -1839,7 +1839,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793256317.6614077,
-   "touched": 1795775915.118711
+   "touched": 1795859752.6107411
   },
   "verb_make": {
    "id": "verb_make",
@@ -1912,7 +1912,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793256317.6614826,
-   "touched": 1795775915.118714
+   "touched": 1795859752.6107447
   },
   "verb_think": {
    "id": "verb_think",
@@ -8999,7 +8999,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2899077,
-   "touched": 1795775915.1183538
+   "touched": 1795859752.6102636
   },
   "verb_shimmer": {
    "id": "verb_shimmer",
@@ -9018,7 +9018,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2899225,
-   "touched": 1795775915.1183617
+   "touched": 1795859752.6102722
   },
   "verb_beam": {
    "id": "verb_beam",
@@ -9037,7 +9037,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2899384,
-   "touched": 1795775915.1183662
+   "touched": 1795859752.6102774
   },
   "verb_radiate": {
    "id": "verb_radiate",
@@ -9056,7 +9056,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2899528,
-   "touched": 1795775915.1183698
+   "touched": 1795859752.6102817
   },
   "verb_reflect": {
    "id": "verb_reflect",
@@ -9075,7 +9075,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2899692,
-   "touched": 1795775915.1183732
+   "touched": 1795859752.6102855
   },
   "verb_absorb": {
    "id": "verb_absorb",
@@ -9094,7 +9094,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2899852,
-   "touched": 1795775915.1183763
+   "touched": 1795859752.6102896
   },
   "verb_filter": {
    "id": "verb_filter",
@@ -9113,7 +9113,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.29,
-   "touched": 1795775915.1183794
+   "touched": 1795859752.6102934
   },
   "verb_dim": {
    "id": "verb_dim",
@@ -9132,7 +9132,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.290019,
-   "touched": 1795775915.118382
+   "touched": 1795859752.6102974
   },
   "verb_brighten": {
    "id": "verb_brighten",
@@ -9151,7 +9151,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2900352,
-   "touched": 1795775915.118385
+   "touched": 1795859752.610301
   },
   "verb_darken": {
    "id": "verb_darken",
@@ -9170,7 +9170,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.290051,
-   "touched": 1795775915.1183882
+   "touched": 1795859752.610305
   },
   "verb_color": {
    "id": "verb_color",
@@ -9189,7 +9189,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2900677,
-   "touched": 1795775915.118391
+   "touched": 1795859752.6103086
   },
   "verb_dye": {
    "id": "verb_dye",
@@ -9208,7 +9208,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2900841,
-   "touched": 1795775915.1183941
+   "touched": 1795859752.6103125
   },
   "verb_bleach": {
    "id": "verb_bleach",
@@ -9227,7 +9227,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2901003,
-   "touched": 1795775915.118397
+   "touched": 1795859752.6103165
   },
   "verb_fade": {
    "id": "verb_fade",
@@ -9246,7 +9246,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2901146,
-   "touched": 1795775915.1183999
+   "touched": 1795859752.61032
   },
   "verb_stain": {
    "id": "verb_stain",
@@ -9265,7 +9265,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2901304,
-   "touched": 1795775915.1184027
+   "touched": 1795859752.610324
   },
   "verb_sketch": {
    "id": "verb_sketch",
@@ -9284,7 +9284,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2901468,
-   "touched": 1795775915.1184056
+   "touched": 1795859752.6103275
   },
   "verb_doodle": {
    "id": "verb_doodle",
@@ -9303,7 +9303,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2901711,
-   "touched": 1795775915.1184084
+   "touched": 1795859752.6103313
   },
   "verb_trace": {
    "id": "verb_trace",
@@ -9322,7 +9322,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2901857,
-   "touched": 1795775915.118411
+   "touched": 1795859752.6103346
   },
   "verb_outline": {
    "id": "verb_outline",
@@ -9341,7 +9341,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2902021,
-   "touched": 1795775915.1184142
+   "touched": 1795859752.6103384
   },
   "verb_shade": {
    "id": "verb_shade",
@@ -9360,7 +9360,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2902184,
-   "touched": 1795775915.1184168
+   "touched": 1795859752.6103425
   },
   "verb_highlight": {
    "id": "verb_highlight",
@@ -9379,7 +9379,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2902346,
-   "touched": 1795775915.1184196
+   "touched": 1795859752.610346
   },
   "verb_erase": {
    "id": "verb_erase",
@@ -9398,7 +9398,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2902513,
-   "touched": 1795775915.1184227
+   "touched": 1795859752.6103501
   },
   "verb_correct": {
    "id": "verb_correct",
@@ -9417,7 +9417,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.290266,
-   "touched": 1795775915.1184258
+   "touched": 1795859752.6103537
   },
   "verb_edit": {
    "id": "verb_edit",
@@ -9436,7 +9436,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2902849,
-   "touched": 1795775915.1184287
+   "touched": 1795859752.6103573
   },
   "verb_revise": {
    "id": "verb_revise",
@@ -9455,7 +9455,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2902997,
-   "touched": 1795775915.1184316
+   "touched": 1795859752.6103609
   },
   "verb_refine": {
    "id": "verb_refine",
@@ -9474,7 +9474,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2903147,
-   "touched": 1795775915.1184342
+   "touched": 1795859752.6103644
   },
   "verb_improve": {
    "id": "verb_improve",
@@ -9493,7 +9493,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2903326,
-   "touched": 1795775915.1184375
+   "touched": 1795859752.6103685
   },
   "verb_worsen": {
    "id": "verb_worsen",
@@ -9512,7 +9512,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2903492,
-   "touched": 1795775915.1184404
+   "touched": 1795859752.6103725
   },
   "verb_damage": {
    "id": "verb_damage",
@@ -9531,7 +9531,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2903745,
-   "touched": 1795775915.1184435
+   "touched": 1795859752.6103764
   },
   "verb_harm": {
    "id": "verb_harm",
@@ -9550,7 +9550,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.29039,
-   "touched": 1795775915.1184464
+   "touched": 1795859752.61038
   },
   "verb_hurt": {
    "id": "verb_hurt",
@@ -9569,7 +9569,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2904074,
-   "touched": 1795775915.1184492
+   "touched": 1795859752.6103833
   },
   "verb_heal": {
    "id": "verb_heal",
@@ -9588,7 +9588,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2904239,
-   "touched": 1795775915.118452
+   "touched": 1795859752.610393
   },
   "verb_cure": {
    "id": "verb_cure",
@@ -9607,7 +9607,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.29044,
-   "touched": 1795775915.1184554
+   "touched": 1795859752.6103973
   },
   "verb_treat": {
    "id": "verb_treat",
@@ -9626,7 +9626,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2904549,
-   "touched": 1795775915.1184583
+   "touched": 1795859752.6104014
   },
   "verb_soothe": {
    "id": "verb_soothe",
@@ -9645,7 +9645,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2904708,
-   "touched": 1795775915.1184611
+   "touched": 1795859752.6104054
   },
   "verb_comfort": {
    "id": "verb_comfort",
@@ -9664,7 +9664,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2904863,
-   "touched": 1795775915.118464
+   "touched": 1795859752.6104093
   },
   "verb_console": {
    "id": "verb_console",
@@ -9683,7 +9683,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.290504,
-   "touched": 1795775915.1184669
+   "touched": 1795859752.6104133
   },
   "verb_encourage": {
    "id": "verb_encourage",
@@ -9702,7 +9702,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2905197,
-   "touched": 1795775915.1184697
+   "touched": 1795859752.610417
   },
   "verb_inspire": {
    "id": "verb_inspire",
@@ -9721,7 +9721,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.290535,
-   "touched": 1795775915.1184723
+   "touched": 1795859752.6104207
   },
   "verb_motivate": {
    "id": "verb_motivate",
@@ -9740,7 +9740,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.290551,
-   "touched": 1795775915.1184752
+   "touched": 1795859752.610424
   },
   "verb_praise": {
    "id": "verb_praise",
@@ -9759,7 +9759,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2905693,
-   "touched": 1795775915.1184783
+   "touched": 1795859752.6104279
   },
   "verb_scold": {
    "id": "verb_scold",
@@ -9778,7 +9778,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2906113,
-   "touched": 1795775915.1184812
+   "touched": 1795859752.6104314
   },
   "verb_punish": {
    "id": "verb_punish",
@@ -9797,7 +9797,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2916455,
-   "touched": 1795775915.118484
+   "touched": 1795859752.6104352
   },
   "verb_reward": {
    "id": "verb_reward",
@@ -9816,7 +9816,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2917023,
-   "touched": 1795775915.118487
+   "touched": 1795859752.610439
   },
   "verb_forgive": {
    "id": "verb_forgive",
@@ -9835,7 +9835,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2917242,
-   "touched": 1795775915.1184895
+   "touched": 1795859752.610443
   },
   "verb_trust": {
    "id": "verb_trust",
@@ -9854,7 +9854,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2917414,
-   "touched": 1795775915.1184924
+   "touched": 1795859752.6104467
   },
   "verb_doubt": {
    "id": "verb_doubt",
@@ -9873,7 +9873,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2917583,
-   "touched": 1795775915.1184952
+   "touched": 1795859752.6104505
   },
   "verb_suspect": {
    "id": "verb_suspect",
@@ -9892,7 +9892,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2917747,
-   "touched": 1795775915.1184978
+   "touched": 1795859752.610454
   },
   "verb_admire": {
    "id": "verb_admire",
@@ -9911,7 +9911,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2917924,
-   "touched": 1795775915.118501
+   "touched": 1795859752.6104577
   },
   "verb_respect": {
    "id": "verb_respect",
@@ -9930,7 +9930,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2918086,
-   "touched": 1795775915.118504
+   "touched": 1795859752.6104612
   },
   "verb_adore": {
    "id": "verb_adore",
@@ -9949,7 +9949,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.291824,
-   "touched": 1795775915.118507
+   "touched": 1795859752.610465
   },
   "verb_enjoy": {
    "id": "verb_enjoy",
@@ -9968,7 +9968,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2918997,
-   "touched": 1795775915.1185162
+   "touched": 1795859752.6104765
   },
   "verb_hate": {
    "id": "verb_hate",
@@ -9987,7 +9987,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2919173,
-   "touched": 1795775915.118519
+   "touched": 1795859752.61048
   },
   "verb_dislike": {
    "id": "verb_dislike",
@@ -10006,7 +10006,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2919385,
-   "touched": 1795775915.118522
+   "touched": 1795859752.6104836
   },
   "verb_despise": {
    "id": "verb_despise",
@@ -10025,7 +10025,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2919557,
-   "touched": 1795775915.118525
+   "touched": 1795859752.6104872
   },
   "verb_resent": {
    "id": "verb_resent",
@@ -10044,7 +10044,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2919714,
-   "touched": 1795775915.118528
+   "touched": 1795859752.610491
   },
   "verb_envy": {
    "id": "verb_envy",
@@ -10063,7 +10063,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.291988,
-   "touched": 1795775915.1185305
+   "touched": 1795859752.610495
   },
   "verb_miss": {
    "id": "verb_miss",
@@ -10082,7 +10082,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2920032,
-   "touched": 1795775915.1185334
+   "touched": 1795859752.6104987
   },
   "verb_long": {
    "id": "verb_long",
@@ -10101,7 +10101,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2920182,
-   "touched": 1795775915.1185362
+   "touched": 1795859752.6105025
   },
   "verb_desire": {
    "id": "verb_desire",
@@ -10120,7 +10120,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2920399,
-   "touched": 1795775915.118539
+   "touched": 1795859752.6105063
   },
   "verb_crave": {
    "id": "verb_crave",
@@ -10139,7 +10139,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2920563,
-   "touched": 1795775915.1185417
+   "touched": 1795859752.6105099
   },
   "verb_select": {
    "id": "verb_select",
@@ -10158,7 +10158,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2920723,
-   "touched": 1795775915.1185446
+   "touched": 1795859752.6105134
   },
   "verb_elect": {
    "id": "verb_elect",
@@ -10177,7 +10177,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2920895,
-   "touched": 1795775915.1185474
+   "touched": 1795859752.610517
   },
   "verb_appoint": {
    "id": "verb_appoint",
@@ -10196,7 +10196,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.292105,
-   "touched": 1795775915.1185503
+   "touched": 1795859752.6105206
   },
   "verb_rank": {
    "id": "verb_rank",
@@ -10215,7 +10215,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.292122,
-   "touched": 1795775915.1185532
+   "touched": 1795859752.6105242
   },
   "verb_rate": {
    "id": "verb_rate",
@@ -10234,7 +10234,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.292137,
-   "touched": 1795775915.1185555
+   "touched": 1795859752.6105278
   },
   "verb_score": {
    "id": "verb_score",
@@ -10253,7 +10253,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2921531,
-   "touched": 1795775915.118559
+   "touched": 1795859752.610531
   },
   "verb_grade": {
    "id": "verb_grade",
@@ -10272,7 +10272,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2921677,
-   "touched": 1795775915.1185617
+   "touched": 1795859752.610535
   },
   "verb_judge": {
    "id": "verb_judge",
@@ -10291,7 +10291,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.292182,
-   "touched": 1795775915.1185646
+   "touched": 1795859752.6105387
   },
   "verb_evaluate": {
    "id": "verb_evaluate",
@@ -10310,7 +10310,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2921984,
-   "touched": 1795775915.1185675
+   "touched": 1795859752.6105423
   },
   "verb_assess": {
    "id": "verb_assess",
@@ -10329,7 +10329,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2922132,
-   "touched": 1795775915.1185706
+   "touched": 1795859752.6105459
   },
   "verb_estimate": {
    "id": "verb_estimate",
@@ -10348,7 +10348,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.292229,
-   "touched": 1795775915.118574
+   "touched": 1795859752.6105494
   },
   "verb_predict": {
    "id": "verb_predict",
@@ -10367,7 +10367,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2922468,
-   "touched": 1795775915.1185765
+   "touched": 1795859752.610553
   },
   "verb_forecast": {
    "id": "verb_forecast",
@@ -10386,7 +10386,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2922652,
-   "touched": 1795775915.1185794
+   "touched": 1795859752.610557
   },
   "verb_calculate": {
    "id": "verb_calculate",
@@ -10405,7 +10405,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2922828,
-   "touched": 1795775915.1185822
+   "touched": 1795859752.6105735
   },
   "verb_compute": {
    "id": "verb_compute",
@@ -10424,7 +10424,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.292302,
-   "touched": 1795775915.118585
+   "touched": 1795859752.6105778
   },
   "verb_solve": {
    "id": "verb_solve",
@@ -10443,7 +10443,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2923167,
-   "touched": 1795775915.118588
+   "touched": 1795859752.6105819
   },
   "verb_figure": {
    "id": "verb_figure",
@@ -10462,7 +10462,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2923317,
-   "touched": 1795775915.1185908
+   "touched": 1795859752.6105857
   },
   "verb_derive": {
    "id": "verb_derive",
@@ -10481,7 +10481,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2923467,
-   "touched": 1795775915.1185935
+   "touched": 1795859752.6105893
   },
   "verb_conclude": {
    "id": "verb_conclude",
@@ -10500,7 +10500,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.292363,
-   "touched": 1795775915.1185963
+   "touched": 1795859752.6105928
   },
   "verb_infer": {
    "id": "verb_infer",
@@ -10519,7 +10519,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2923777,
-   "touched": 1795775915.1185994
+   "touched": 1795859752.6105967
   },
   "verb_deduce": {
    "id": "verb_deduce",
@@ -10538,7 +10538,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2923946,
-   "touched": 1795775915.1186023
+   "touched": 1795859752.6106005
   },
   "verb_reason": {
    "id": "verb_reason",
@@ -10557,7 +10557,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2924135,
-   "touched": 1795775915.118605
+   "touched": 1795859752.610604
   },
   "verb_logic": {
    "id": "verb_logic",
@@ -10576,7 +10576,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2924292,
-   "touched": 1795775915.1186075
+   "touched": 1795859752.6106076
   },
   "verb_justify": {
    "id": "verb_justify",
@@ -10595,7 +10595,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2924445,
-   "touched": 1795775915.1186104
+   "touched": 1795859752.6106112
   },
   "verb_prove": {
    "id": "verb_prove",
@@ -10614,7 +10614,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.292462,
-   "touched": 1795775915.1186132
+   "touched": 1795859752.610615
   },
   "verb_verify": {
    "id": "verb_verify",
@@ -10633,7 +10633,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2924795,
-   "touched": 1795775915.118616
+   "touched": 1795859752.6106188
   },
   "verb_check": {
    "id": "verb_check",
@@ -10652,7 +10652,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.292496,
-   "touched": 1795775915.1186192
+   "touched": 1795859752.6106224
   },
   "verb_test": {
    "id": "verb_test",
@@ -10671,7 +10671,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2925124,
-   "touched": 1795775915.1186225
+   "touched": 1795859752.610626
   },
   "verb_inspect": {
    "id": "verb_inspect",
@@ -10690,7 +10690,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2925296,
-   "touched": 1795775915.1186256
+   "touched": 1795859752.6106296
   },
   "verb_examine": {
    "id": "verb_examine",
@@ -10709,7 +10709,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.292545,
-   "touched": 1795775915.1186283
+   "touched": 1795859752.6106331
   },
   "verb_observe": {
    "id": "verb_observe",
@@ -10728,7 +10728,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2925599,
-   "touched": 1795775915.1186311
+   "touched": 1795859752.6106367
   },
   "verb_notice": {
    "id": "verb_notice",
@@ -10747,7 +10747,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2925766,
-   "touched": 1795775915.118634
+   "touched": 1795859752.6106405
   },
   "verb_spot": {
    "id": "verb_spot",
@@ -10766,7 +10766,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2925916,
-   "touched": 1795775915.118637
+   "touched": 1795859752.6106446
   },
   "verb_detect": {
    "id": "verb_detect",
@@ -10785,7 +10785,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.292616,
-   "touched": 1795775915.11864
+   "touched": 1795859752.6106482
   },
   "verb_discover": {
    "id": "verb_discover",
@@ -10804,7 +10804,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2926333,
-   "touched": 1795775915.1186428
+   "touched": 1795859752.610652
   },
   "verb_invent": {
    "id": "verb_invent",
@@ -10823,7 +10823,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2926505,
-   "touched": 1795775915.1186454
+   "touched": 1795859752.6106555
   },
   "verb_design": {
    "id": "verb_design",
@@ -10842,7 +10842,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.292667,
-   "touched": 1795775915.118648
+   "touched": 1795859752.6106591
   },
   "verb_construct": {
    "id": "verb_construct",
@@ -10861,7 +10861,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2926848,
-   "touched": 1795775915.118651
+   "touched": 1795859752.6106627
   },
   "verb_assemble": {
    "id": "verb_assemble",
@@ -10880,7 +10880,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2927005,
-   "touched": 1795775915.118654
+   "touched": 1795859752.6106663
   },
   "verb_disassemble": {
    "id": "verb_disassemble",
@@ -10899,7 +10899,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2927148,
-   "touched": 1795775915.118657
+   "touched": 1795859752.61067
   },
   "verb_install": {
    "id": "verb_install",
@@ -10918,7 +10918,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2927318,
-   "touched": 1795775915.1186602
+   "touched": 1795859752.610674
   },
   "verb_remove": {
    "id": "verb_remove",
@@ -10937,7 +10937,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2927468,
-   "touched": 1795775915.1186628
+   "touched": 1795859752.6106775
   },
   "verb_replace": {
    "id": "verb_replace",
@@ -10956,7 +10956,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.292762,
-   "touched": 1795775915.1186657
+   "touched": 1795859752.6106813
   },
   "verb_upgrade": {
    "id": "verb_upgrade",
@@ -10975,7 +10975,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2927797,
-   "touched": 1795775915.1186686
+   "touched": 1795859752.610685
   },
   "verb_downgrade": {
    "id": "verb_downgrade",
@@ -10994,7 +10994,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2927957,
-   "touched": 1795775915.1186714
+   "touched": 1795859752.6106887
   },
   "verb_adjust": {
    "id": "verb_adjust",
@@ -11013,7 +11013,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.292812,
-   "touched": 1795775915.1186743
+   "touched": 1795859752.6106923
   },
   "verb_tune": {
    "id": "verb_tune",
@@ -11032,7 +11032,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2928274,
-   "touched": 1795775915.118677
+   "touched": 1795859752.610696
   },
   "verb_calibrate": {
    "id": "verb_calibrate",
@@ -11051,7 +11051,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2929187,
-   "touched": 1795775915.1186798
+   "touched": 1795859752.6107
   },
   "verb_align": {
    "id": "verb_align",
@@ -11070,7 +11070,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2929366,
-   "touched": 1795775915.1186826
+   "touched": 1795859752.6107035
   },
   "verb_level": {
    "id": "verb_level",
@@ -11089,7 +11089,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2929516,
-   "touched": 1795775915.1186852
+   "touched": 1795859752.6107073
   },
   "verb_plumb": {
    "id": "verb_plumb",
@@ -11108,7 +11108,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2929661,
-   "touched": 1795775915.118688
+   "touched": 1795859752.6107113
   },
   "verb_square": {
    "id": "verb_square",
@@ -11127,7 +11127,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2929873,
-   "touched": 1795775915.1186907
+   "touched": 1795859752.6107152
   },
   "verb_center": {
    "id": "verb_center",
@@ -11146,7 +11146,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2930028,
-   "touched": 1795775915.1186936
+   "touched": 1795859752.610719
   },
   "verb_put": {
    "id": "verb_put",
@@ -11165,7 +11165,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.293132,
-   "touched": 1795775915.1187172
+   "touched": 1795859752.6107488
   },
   "verb_bring": {
    "id": "verb_bring",
@@ -11184,7 +11184,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2931488,
-   "touched": 1795775915.11872
+   "touched": 1795859752.6107523
   },
   "verb_sit": {
    "id": "verb_sit",
@@ -11203,7 +11203,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2931652,
-   "touched": 1795775915.118723
+   "touched": 1795859752.6107562
   },
   "verb_stand": {
    "id": "verb_stand",
@@ -11222,7 +11222,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.293182,
-   "touched": 1795775915.1187255
+   "touched": 1795859752.6107597
   },
   "verb_meet": {
    "id": "verb_meet",
@@ -11241,7 +11241,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2931974,
-   "touched": 1795775915.1187284
+   "touched": 1795859752.6107633
   },
   "verb_send": {
    "id": "verb_send",
@@ -11260,7 +11260,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2932136,
-   "touched": 1795775915.1187313
+   "touched": 1795859752.6107671
   },
   "verb_fall": {
    "id": "verb_fall",
@@ -11279,7 +11279,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2932286,
-   "touched": 1795775915.1187341
+   "touched": 1795859752.6107707
   },
   "verb_reach": {
    "id": "verb_reach",
@@ -11298,7 +11298,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2932436,
-   "touched": 1795775915.118737
+   "touched": 1795859752.6107743
   },
   "verb_wear": {
    "id": "verb_wear",
@@ -11317,7 +11317,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2932599,
-   "touched": 1795775915.1187396
+   "touched": 1795859752.6107779
   },
   "verb_ring": {
    "id": "verb_ring",
@@ -11336,7 +11336,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2932756,
-   "touched": 1795775915.1187425
+   "touched": 1795859752.6107814
   },
   "verb_fight": {
    "id": "verb_fight",
@@ -11355,7 +11355,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2932906,
-   "touched": 1795775915.1187453
+   "touched": 1795859752.6107848
   },
   "verb_creep": {
    "id": "verb_creep",
@@ -11374,7 +11374,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2933066,
-   "touched": 1795775915.1187484
+   "touched": 1795859752.6107883
   },
   "verb_deal": {
    "id": "verb_deal",
@@ -11393,7 +11393,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2933214,
-   "touched": 1795775915.118765
+   "touched": 1795859752.6107922
   },
   "verb_lay": {
    "id": "verb_lay",
@@ -11412,7 +11412,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2933388,
-   "touched": 1795775915.1187687
+   "touched": 1795859752.6107957
   },
   "verb_lie": {
    "id": "verb_lie",
@@ -11431,7 +11431,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2933547,
-   "touched": 1795775915.1187718
+   "touched": 1795859752.6107993
   },
   "verb_rise": {
    "id": "verb_rise",
@@ -11450,7 +11450,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2933712,
-   "touched": 1795775915.1187756
+   "touched": 1795859752.610803
   },
   "verb_hide": {
    "id": "verb_hide",
@@ -11469,7 +11469,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.293387,
-   "touched": 1795775915.1187785
+   "touched": 1795859752.610807
   },
   "verb_stick": {
    "id": "verb_stick",
@@ -11488,7 +11488,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.293403,
-   "touched": 1795775915.1187813
+   "touched": 1795859752.6108105
   },
   "verb_strike": {
    "id": "verb_strike",
@@ -11507,7 +11507,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2934182,
-   "touched": 1795775915.1187844
+   "touched": 1795859752.610814
   },
   "verb_spread": {
    "id": "verb_spread",
@@ -11526,7 +11526,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2934344,
-   "touched": 1795775915.1187873
+   "touched": 1795859752.610818
   },
   "verb_swell": {
    "id": "verb_swell",
@@ -11545,7 +11545,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.293449,
-   "touched": 1795775915.1187904
+   "touched": 1795859752.6108217
   },
   "verb_seek": {
    "id": "verb_seek",
@@ -11564,7 +11564,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2934637,
-   "touched": 1795775915.1187935
+   "touched": 1795859752.6108253
   },
   "verb_weave": {
    "id": "verb_weave",
@@ -11583,7 +11583,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2934797,
-   "touched": 1795775915.1187966
+   "touched": 1795859752.6108289
   },
   "verb_wind": {
    "id": "verb_wind",
@@ -11602,7 +11602,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2934957,
-   "touched": 1795775915.1187994
+   "touched": 1795859752.6108327
   },
   "verb_grind": {
    "id": "verb_grind",
@@ -11621,7 +11621,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2935119,
-   "touched": 1795775915.1188025
+   "touched": 1795859752.6108365
   },
   "verb_shoot": {
    "id": "verb_shoot",
@@ -11640,7 +11640,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2935278,
-   "touched": 1795775915.1188052
+   "touched": 1795859752.61084
   },
   "verb_steal": {
    "id": "verb_steal",
@@ -11659,7 +11659,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2935443,
-   "touched": 1795775915.118808
+   "touched": 1795859752.6108437
   },
   "verb_swear": {
    "id": "verb_swear",
@@ -11678,7 +11678,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2935586,
-   "touched": 1795775915.1188111
+   "touched": 1795859752.6108472
   },
   "verb_swing": {
    "id": "verb_swing",
@@ -11697,7 +11697,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2935743,
-   "touched": 1795775915.1188142
+   "touched": 1795859752.6108508
   },
   "verb_bleed": {
    "id": "verb_bleed",
@@ -11716,7 +11716,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2935889,
-   "touched": 1795775915.118817
+   "touched": 1795859752.6108544
   },
   "verb_breed": {
    "id": "verb_breed",
@@ -11735,7 +11735,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2936144,
-   "touched": 1795775915.11882
+   "touched": 1795859752.6108582
   },
   "verb_cast": {
    "id": "verb_cast",
@@ -11754,7 +11754,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2936332,
-   "touched": 1795775915.1188226
+   "touched": 1795859752.6108618
   },
   "verb_fit": {
    "id": "verb_fit",
@@ -11773,7 +11773,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.293649,
-   "touched": 1795775915.1188257
+   "touched": 1795859752.6108656
   },
   "verb_let": {
    "id": "verb_let",
@@ -11792,7 +11792,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.293664,
-   "touched": 1795775915.118829
+   "touched": 1795859752.6108692
   },
   "verb_shut": {
    "id": "verb_shut",
@@ -11811,7 +11811,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2936807,
-   "touched": 1795775915.118832
+   "touched": 1795859752.6108727
   },
   "verb_split": {
    "id": "verb_split",
@@ -11830,7 +11830,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2936969,
-   "touched": 1795775915.118835
+   "touched": 1795859752.6108763
   },
   "verb_spit": {
    "id": "verb_spit",
@@ -11849,7 +11849,7 @@
     "assoc>verb": 0.99
    },
    "created": 1793261751.2937129,
-   "touched": 1795775915.118838
+   "touched": 1795859752.61088
   },
   "noun_afternoon": {
    "id": "noun_afternoon",
@@ -18219,7 +18219,7 @@
     "is-a>entity": 0.99
    },
    "created": 1793261751.6220534,
-   "touched": 1795775914.007661
+   "touched": 1795859751.30294
   },
   "vertebrate": {
    "id": "vertebrate",
@@ -18235,7 +18235,7 @@
     "is-a>animal": 0.99
    },
    "created": 1793261751.6221566,
-   "touched": 1795775914.0078416
+   "touched": 1795859751.3032598
   },
   "invertebrate": {
    "id": "invertebrate",
@@ -18251,7 +18251,7 @@
     "is-a>animal": 0.99
    },
    "created": 1793261751.6221776,
-   "touched": 1795775914.0154972
+   "touched": 1795859751.3179564
   },
   "fish_cat": {
    "id": "fish_cat",
@@ -18267,7 +18267,7 @@
     "is-a>vertebrate": 0.99
    },
    "created": 1793261751.6222413,
-   "touched": 1795775914.014556
+   "touched": 1795859751.3161044
   },
   "reptile": {
    "id": "reptile",
@@ -18283,7 +18283,7 @@
     "is-a>vertebrate": 0.99
    },
    "created": 1793261751.6222594,
-   "touched": 1795775914.0147443
+   "touched": 1795859751.3165069
   },
   "amphibian": {
    "id": "amphibian",
@@ -18299,7 +18299,7 @@
     "is-a>vertebrate": 0.99
    },
    "created": 1793261751.6222794,
-   "touched": 1795775914.0148714
+   "touched": 1795859751.316733
   },
   "arachnid": {
    "id": "arachnid",
@@ -18315,7 +18315,7 @@
     "is-a>invertebrate": 0.99
    },
    "created": 1793261751.6223197,
-   "touched": 1795775914.0152955
+   "touched": 1795859751.317478
   },
   "crustacean": {
    "id": "crustacean",
@@ -18331,7 +18331,7 @@
     "is-a>invertebrate": 0.99
    },
    "created": 1793261751.6223385,
-   "touched": 1795775914.0153403
+   "touched": 1795859751.3175952
   },
   "mollusk": {
    "id": "mollusk",
@@ -18347,7 +18347,7 @@
     "is-a>invertebrate": 0.99
    },
    "created": 1793261751.622359,
-   "touched": 1795775914.015451
+   "touched": 1795859751.3178525
   },
   "tree_cat": {
    "id": "tree_cat",
@@ -18363,7 +18363,7 @@
     "is-a>plant": 0.99
    },
    "created": 1793261751.6223977,
-   "touched": 1795775914.0156493
+   "touched": 1795859751.3182898
   },
   "flower_cat": {
    "id": "flower_cat",
@@ -18380,7 +18380,7 @@
     "is-a>plant": 0.99
    },
    "created": 1793261751.6224148,
-   "touched": 1795775914.015831
+   "touched": 1795859751.3186762
   },
   "fungus": {
    "id": "fungus",
@@ -18430,7 +18430,7 @@
     "is-a>idea": 0.99
    },
    "created": 1793261751.622475,
-   "touched": 1795775914.0162714
+   "touched": 1795859751.3207276
   },
   "canid": {
    "id": "canid",
@@ -18447,7 +18447,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.622494,
-   "touched": 1795775914.0111332
+   "touched": 1795859751.3108346
   },
   "felid": {
    "id": "felid",
@@ -18464,7 +18464,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.6225216,
-   "touched": 1795775914.0117915
+   "touched": 1795859751.312305
   },
   "ursid": {
    "id": "ursid",
@@ -18481,7 +18481,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.6225414,
-   "touched": 1795775914.0112722
+   "touched": 1795859751.311156
   },
   "equine": {
    "id": "equine",
@@ -18498,7 +18498,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.622559,
-   "touched": 1795775914.0113034
+   "touched": 1795859751.3112257
   },
   "bovine": {
    "id": "bovine",
@@ -18515,7 +18515,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.6225762,
-   "touched": 1795775914.0123556
+   "touched": 1795859751.313769
   },
   "rodent": {
    "id": "rodent",
@@ -18531,7 +18531,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.6225958,
-   "touched": 1795775914.012325
+   "touched": 1795859751.3137004
   },
   "primate": {
    "id": "primate",
@@ -18547,7 +18547,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.6226292,
-   "touched": 1795775914.0120058
+   "touched": 1795859751.3128364
   },
   "marsupial": {
    "id": "marsupial",
@@ -18563,7 +18563,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.6226473,
-   "touched": 1795775914.011946
+   "touched": 1795859751.3126886
   },
   "cetacean": {
    "id": "cetacean",
@@ -18580,7 +18580,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.6226692,
-   "touched": 1795775914.0121887
+   "touched": 1795859751.3133504
   },
   "ungulate": {
    "id": "ungulate",
@@ -18597,7 +18597,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.6226883,
-   "touched": 1795775914.0121434
+   "touched": 1795859751.3132262
   },
   "proboscidean": {
    "id": "proboscidean",
@@ -18613,7 +18613,7 @@
     "is-a>ungulate": 0.99
    },
    "created": 1793261751.622725,
-   "touched": 1795775914.0111477
+   "touched": 1795859751.3108692
   },
   "lagomorph": {
    "id": "lagomorph",
@@ -18629,7 +18629,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.6227543,
-   "touched": 1795775914.011364
+   "touched": 1795859751.3113616
   },
   "cervid": {
    "id": "cervid",
@@ -18645,7 +18645,7 @@
     "is-a>ungulate": 0.99
    },
    "created": 1793261751.622776,
-   "touched": 1795775914.0124319
+   "touched": 1795859751.3139513
   },
   "procyonid": {
    "id": "procyonid",
@@ -18661,7 +18661,7 @@
     "is-a>carnivoran": 0.99
    },
    "created": 1793261751.6227944,
-   "touched": 1795775914.0114095
+   "touched": 1795859751.311463
   },
   "carnivoran": {
    "id": "carnivoran",
@@ -18677,7 +18677,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.6227963,
-   "touched": 1795775914.0118372
+   "touched": 1795859751.3124156
   },
   "mephitid": {
    "id": "mephitid",
@@ -18693,7 +18693,7 @@
     "is-a>carnivoran": 0.99
    },
    "created": 1793261751.622814,
-   "touched": 1795775914.0114248
+   "touched": 1795859751.311497
   },
   "mustelid": {
    "id": "mustelid",
@@ -18709,7 +18709,7 @@
     "is-a>carnivoran": 0.99
    },
    "created": 1793261751.6228333,
-   "touched": 1795775914.0116868
+   "touched": 1795859751.312102
   },
   "hyaenid": {
    "id": "hyaenid",
@@ -18725,7 +18725,7 @@
     "is-a>carnivoran": 0.99
    },
    "created": 1793261751.6228826,
-   "touched": 1795775914.0118067
+   "touched": 1795859751.312344
   },
   "mongoose": {
    "id": "mongoose",
@@ -18746,7 +18746,7 @@
     "is-a>carnivoran": 0.99
    },
    "created": 1793261751.6229026,
-   "touched": 1795775914.0118217
+   "touched": 1795859751.3123808
   },
   "erinaceid": {
    "id": "erinaceid",
@@ -18762,7 +18762,7 @@
     "is-a>insectivore": 0.99
    },
    "created": 1793261751.6229243,
-   "touched": 1795775914.011533
+   "touched": 1795859751.3117607
   },
   "insectivore": {
    "id": "insectivore",
@@ -18778,7 +18778,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.622926,
-   "touched": 1795775914.00979
+   "touched": 1795859751.3077455
   },
   "talpid": {
    "id": "talpid",
@@ -18794,7 +18794,7 @@
     "is-a>insectivore": 0.99
    },
    "created": 1793261751.6231222,
-   "touched": 1795775914.012234
+   "touched": 1795859751.3134525
   },
   "soricid": {
    "id": "soricid",
@@ -18810,7 +18810,7 @@
     "is-a>insectivore": 0.99
    },
    "created": 1793261751.6231542,
-   "touched": 1795775914.0122492
+   "touched": 1795859751.313486
   },
   "bat": {
    "id": "bat",
@@ -18847,7 +18847,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.6232133,
-   "touched": 1795775914.011626
+   "touched": 1795859751.3119655
   },
   "cingulata": {
    "id": "cingulata",
@@ -18863,7 +18863,7 @@
     "is-a>mammal": 0.99
    },
    "created": 1793261751.6232314,
-   "touched": 1795775914.0116105
+   "touched": 1795859751.3119311
   },
   "sirenian": {
    "id": "sirenian",
@@ -18879,7 +18879,7 @@
     "is-a>cetacean": 0.99
    },
    "created": 1793261751.6232524,
-   "touched": 1795775914.0122037
+   "touched": 1795859751.313385
   },
   "pinniped": {
    "id": "pinniped",
@@ -18895,7 +18895,7 @@
     "is-a>carnivoran": 0.99
    },
    "created": 1793261751.623279,
-   "touched": 1795775914.0122192
+   "touched": 1795859751.3134189
   },
   "raptor": {
    "id": "raptor",
@@ -18911,7 +18911,7 @@
     "is-a>bird": 0.99
    },
    "created": 1793261751.6233006,
-   "touched": 1795775914.0124779
+   "touched": 1795859751.3140547
   },
   "owl": {
    "id": "owl",
@@ -18953,7 +18953,7 @@
     "is-a>bird": 0.99
    },
    "created": 1793261751.623346,
-   "touched": 1795775914.012553
+   "touched": 1795859751.3142257
   },
   "corvid": {
    "id": "corvid",
@@ -18969,7 +18969,7 @@
     "is-a>songbird": 0.99
    },
    "created": 1793261751.6233644,
-   "touched": 1795775914.0142088
+   "touched": 1795859751.3154438
   },
   "songbird": {
    "id": "songbird",
@@ -18985,7 +18985,7 @@
     "is-a>bird": 0.99
    },
    "created": 1793261751.6233664,
-   "touched": 1795775914.0142741
+   "touched": 1795859751.3155107
   },
   "dove": {
    "id": "dove",
@@ -19006,7 +19006,7 @@
     "is-a>bird": 0.99
    },
    "created": 1793261751.6234016,
-   "touched": 1795775914.012685
+   "touched": 1795859751.3145041
   },
   "gull": {
    "id": "gull",
@@ -19022,7 +19022,7 @@
     "is-a>seabird": 0.99
    },
    "created": 1793261751.6234193,
-   "touched": 1795775914.012716
+   "touched": 1795859751.3145883
   },
   "seabird": {
    "id": "seabird",
@@ -19038,7 +19038,7 @@
     "is-a>bird": 0.99
    },
    "created": 1793261751.6234214,
-   "touched": 1795775914.0128367
+   "touched": 1795859751.314831
   },
   "penguin": {
    "id": "penguin",
@@ -19075,7 +19075,7 @@
     "is-a>bird": 0.99
    },
    "created": 1793261751.6234741,
-   "touched": 1795775914.0127907
+   "touched": 1795859751.31473
   },
   "emu": {
    "id": "emu",
@@ -19180,7 +19180,7 @@
     "is-a>fowl": 0.99
    },
    "created": 1793261751.6235685,
-   "touched": 1795775914.012881
+   "touched": 1795859751.3149443
   },
   "fowl": {
    "id": "fowl",
@@ -19196,7 +19196,7 @@
     "is-a>bird": 0.99
    },
    "created": 1793261751.6235707,
-   "touched": 1795775914.0129416
+   "touched": 1795859751.3150783
   },
   "auk": {
    "id": "auk",
@@ -19212,7 +19212,7 @@
     "is-a>seabird": 0.99
    },
    "created": 1793261751.6236155,
-   "touched": 1795775914.0141919
+   "touched": 1795859751.3154106
   },
   "salmonid": {
    "id": "salmonid",
@@ -19228,7 +19228,7 @@
     "is-a>fish_cat": 0.99
    },
    "created": 1793261751.6236358,
-   "touched": 1795775914.0143294
+   "touched": 1795859751.3156326
   },
   "tuna": {
    "id": "tuna",
@@ -19307,7 +19307,7 @@
     "is-a>fish_cat": 0.99
    },
    "created": 1793261751.623713,
-   "touched": 1795775914.014377
+   "touched": 1795859751.3157337
   },
   "eel": {
    "id": "eel",
@@ -19344,7 +19344,7 @@
     "is-a>fish_cat": 0.99
    },
    "created": 1793261751.623749,
-   "touched": 1795775914.0144105
+   "touched": 1795859751.3158016
   },
   "damselfish": {
    "id": "damselfish",
@@ -19360,7 +19360,7 @@
     "is-a>fish_cat": 0.99
    },
    "created": 1793261751.6237671,
-   "touched": 1795775914.0144267
+   "touched": 1795859751.315836
   },
   "carp": {
    "id": "carp",
@@ -19376,7 +19376,7 @@
     "is-a>fish_cat": 0.99
    },
    "created": 1793261751.6237848,
-   "touched": 1795775914.0144427
+   "touched": 1795859751.3158703
   },
   "puffer": {
    "id": "puffer",
@@ -19392,7 +19392,7 @@
     "is-a>fish_cat": 0.99
    },
    "created": 1793261751.6238036,
-   "touched": 1795775914.0144596
+   "touched": 1795859751.3159037
   },
   "billfish": {
    "id": "billfish",
@@ -19408,7 +19408,7 @@
     "is-a>fish_cat": 0.99
    },
    "created": 1793261751.6238205,
-   "touched": 1795775914.0144765
+   "touched": 1795859752.6191194
   },
   "piranha": {
    "id": "piranha",
@@ -19466,7 +19466,7 @@
     "is-a>fish_cat": 0.99
    },
    "created": 1793261751.6238966,
-   "touched": 1795775914.0145404
+   "touched": 1795859751.3160715
   },
   "mackerel": {
    "id": "mackerel",
@@ -19503,7 +19503,7 @@
     "is-a>snake": 0.99
    },
    "created": 1793261751.6239371,
-   "touched": 1795775914.0145876
+   "touched": 1795859751.3161707
   },
   "snake": {
    "id": "snake",
@@ -19524,7 +19524,7 @@
     "is-a>reptile": 0.99
    },
    "created": 1793261751.623939,
-   "touched": 1795775914.0146337
+   "touched": 1795859751.31627
   },
   "python": {
    "id": "python",
@@ -19562,7 +19562,7 @@
     "is-a>snake": 0.99
    },
    "created": 1793261751.6239748,
-   "touched": 1795775914.0146184
+   "touched": 1795859751.3162365
   },
   "boa": {
    "id": "boa",
@@ -19583,7 +19583,7 @@
     "is-a>snake": 0.99
    },
    "created": 1793261751.6239922,
-   "touched": 1795775914.014652
+   "touched": 1795859751.316303
   },
   "gecko": {
    "id": "gecko",
@@ -19662,7 +19662,7 @@
     "is-a>lizard": 0.99
    },
    "created": 1793261751.6240833,
-   "touched": 1795775914.014729
+   "touched": 1795859751.3164678
   },
   "turtle": {
    "id": "turtle",
@@ -19683,7 +19683,7 @@
     "is-a>reptile": 0.99
    },
    "created": 1793261751.6241202,
-   "touched": 1795775914.0147893
+   "touched": 1795859751.3165436
   },
   "croc": {
    "id": "croc",
@@ -19699,7 +19699,7 @@
     "is-a>reptile": 0.99
    },
    "created": 1793261751.6241403,
-   "touched": 1795775914.0148242
+   "touched": 1795859751.3166313
   },
   "salamander": {
    "id": "salamander",
@@ -19720,7 +19720,7 @@
     "is-a>amphibian": 0.99
    },
    "created": 1793261751.6241772,
-   "touched": 1795775914.014902
+   "touched": 1795859751.316801
   },
   "ant": {
    "id": "ant",
@@ -19783,7 +19783,7 @@
     "is-a>insect": 0.99
    },
    "created": 1793261751.6242325,
-   "touched": 1795775914.0150297
+   "touched": 1795859751.3169346
   },
   "lepidoptera": {
    "id": "lepidoptera",
@@ -19799,7 +19799,7 @@
     "is-a>insect": 0.99
    },
    "created": 1793261751.6242511,
-   "touched": 1795775914.0150616
+   "touched": 1795859751.3170025
   },
   "beetle": {
    "id": "beetle",
@@ -19820,7 +19820,7 @@
     "is-a>insect": 0.99
    },
    "created": 1793261751.6242692,
-   "touched": 1795775914.0151076
+   "touched": 1795859751.3171139
   },
   "dragonfly": {
    "id": "dragonfly",
@@ -19900,7 +19900,7 @@
     "is-a>insect": 0.99
    },
    "created": 1793261751.6243489,
-   "touched": 1795775914.0151684
+   "touched": 1795859751.317246
   },
   "roach": {
    "id": "roach",
@@ -19916,7 +19916,7 @@
     "is-a>insect": 0.99
    },
    "created": 1793261751.624367,
-   "touched": 1795775914.0151837
+   "touched": 1795859751.3172793
   },
   "termite": {
    "id": "termite",
@@ -20000,7 +20000,7 @@
     "is-a>arachnid": 0.99
    },
    "created": 1793261751.624432,
-   "touched": 1795775914.0152802
+   "touched": 1795859751.3174448
   },
   "scorpion": {
    "id": "scorpion",
@@ -20042,7 +20042,7 @@
     "is-a>crustacean": 0.99
    },
    "created": 1793261751.6244736,
-   "touched": 1795775914.015358
+   "touched": 1795859751.317632
   },
   "lobster": {
    "id": "lobster",
@@ -20105,7 +20105,7 @@
     "is-a>mollusk": 0.99
    },
    "created": 1793261751.6245313,
-   "touched": 1795775914.0153883
+   "touched": 1795859751.3177116
   },
   "bivalve": {
    "id": "bivalve",
@@ -20121,7 +20121,7 @@
     "is-a>mollusk": 0.99
    },
    "created": 1793261751.624552,
-   "touched": 1795775914.0154188
+   "touched": 1795859751.3177786
   },
   "octopod": {
    "id": "octopod",
@@ -20137,7 +20137,7 @@
     "is-a>mollusk": 0.99
    },
    "created": 1793261751.6245701,
-   "touched": 1795775914.0154347
+   "touched": 1795859751.3178124
   },
   "jellyfish": {
    "id": "jellyfish",
@@ -20216,7 +20216,7 @@
     "is-a>invertebrate": 0.99
    },
    "created": 1793261751.6246703,
-   "touched": 1795775914.0155132
+   "touched": 1795859751.3179905
   },
   "desert plant": {
    "id": "desert plant",
@@ -20232,7 +20232,7 @@
     "is-a>plant": 0.99
    },
    "created": 1793261751.6246893,
-   "touched": 1795775914.0158455
+   "touched": 1795859751.3187099
   },
   "grass_cat": {
    "id": "grass_cat",
@@ -20248,7 +20248,7 @@
     "is-a>plant": 0.99
    },
    "created": 1793261751.6247125,
-   "touched": 1795775914.0159364
+   "touched": 1795859751.3189104
   },
   "horse": {
    "id": "horse",
@@ -21905,7 +21905,7 @@
     "is-a>bovine": 0.99
    },
    "created": 1793261751.6289515,
-   "touched": 1795775914.0123866
+   "touched": 1795859751.3138468
   },
   "gazelle": {
    "id": "gazelle",
@@ -22246,7 +22246,7 @@
     "is-a>songbird": 0.99
    },
    "created": 1793261751.6292784,
-   "touched": 1793261751.6292784
+   "touched": 1795859752.6192343
   },
   "canary": {
    "id": "canary",
@@ -23228,7 +23228,7 @@
     "is-a>mantid": 0.99
    },
    "created": 1793261751.630701,
-   "touched": 1793261751.630701
+   "touched": 1795859752.6191995
   },
   "cockroach": {
    "id": "cockroach",
@@ -24175,7 +24175,7 @@
     "is-a>entity": 0.99
    },
    "created": 1793261751.7626376,
-   "touched": 1795775914.1894603
+   "touched": 1795859751.5189364
   },
   "tool": {
    "id": "tool",
@@ -24191,7 +24191,7 @@
     "is-a>artifact": 0.99
    },
    "created": 1793261751.7628157,
-   "touched": 1795775914.1925793
+   "touched": 1795859751.5261266
   },
   "machine": {
    "id": "machine",
@@ -24207,7 +24207,7 @@
     "is-a>artifact": 0.99
    },
    "created": 1793261751.762881,
-   "touched": 1795775914.190925
+   "touched": 1795859751.5223129
   },
   "device": {
    "id": "device",
@@ -24224,7 +24224,7 @@
     "is-a>machine": 0.99
    },
    "created": 1793261751.7629132,
-   "touched": 1795775914.1928525
+   "touched": 1795859751.526736
   },
   "vehicle": {
    "id": "vehicle",
@@ -24240,7 +24240,7 @@
     "is-a>machine": 0.99
    },
    "created": 1793261751.762937,
-   "touched": 1795775914.19131
+   "touched": 1795859751.5232089
   },
   "furniture": {
    "id": "furniture",
@@ -24256,7 +24256,7 @@
     "is-a>artifact": 0.99
    },
    "created": 1793261751.7629578,
-   "touched": 1795775914.191778
+   "touched": 1795859751.524253
   },
   "clothing": {
    "id": "clothing",
@@ -24274,7 +24274,7 @@
     "is-a>artifact": 0.99
    },
    "created": 1793261751.7629786,
-   "touched": 1795775914.1922493
+   "touched": 1795859751.5253549
   },
   "container": {
    "id": "container",
@@ -24291,7 +24291,7 @@
     "is-a>artifact": 0.99
    },
    "created": 1793261751.7630012,
-   "touched": 1795775914.1925645
+   "touched": 1795859751.5260923
   },
   "instrument": {
    "id": "instrument",
@@ -24308,7 +24308,7 @@
     "is-a>artifact": 0.99
    },
    "created": 1793261751.7630203,
-   "touched": 1795775914.1928072
+   "touched": 1795859751.5266323
   },
   "weapon": {
    "id": "weapon",
@@ -24324,7 +24324,7 @@
     "is-a>artifact": 0.99
    },
    "created": 1793261751.7630384,
-   "touched": 1795775914.1929417
+   "touched": 1795859751.5269403
   },
   "toy": {
    "id": "toy",
@@ -24340,7 +24340,7 @@
     "is-a>artifact": 0.99
    },
    "created": 1793261751.7630575,
-   "touched": 1795775914.1932275
+   "touched": 1795859751.527612
   },
   "structure": {
    "id": "structure",
@@ -24356,7 +24356,7 @@
     "is-a>artifact": 0.99
    },
    "created": 1793261751.7630758,
-   "touched": 1795775914.1938558
+   "touched": 1795859751.5290217
   },
   "building": {
    "id": "building",
@@ -24372,7 +24372,7 @@
     "is-a>structure": 0.99
    },
    "created": 1793261751.7630951,
-   "touched": 1795775914.1936579
+   "touched": 1795859751.5286012
   },
   "place_cat": {
    "id": "place_cat",
@@ -24390,7 +24390,7 @@
     "is-a>entity": 0.99
    },
    "created": 1793261751.7631152,
-   "touched": 1795775914.1892347
+   "touched": 1795859751.5184073
   },
   "room_cat": {
    "id": "room_cat",
@@ -24406,7 +24406,7 @@
     "is-a>place_cat": 0.99
    },
    "created": 1793261751.7631335,
-   "touched": 1795775914.1941178
+   "touched": 1795859751.5296242
   },
   "landmark": {
    "id": "landmark",
@@ -24422,7 +24422,7 @@
     "is-a>place_cat": 0.99
    },
    "created": 1793261751.7631521,
-   "touched": 1795775914.1945803
+   "touched": 1795859751.5306985
   },
   "landform": {
    "id": "landform",
@@ -24438,7 +24438,7 @@
     "is-a>place_cat": 0.99
    },
    "created": 1793261751.7631707,
-   "touched": 1795775914.1950865
+   "touched": 1795859751.531825
   },
   "matter": {
    "id": "matter",
@@ -24456,7 +24456,7 @@
     "is-a>entity": 0.99
    },
    "created": 1793261751.7631881,
-   "touched": 1795775914.1892834
+   "touched": 1795859751.5185165
   },
   "material": {
    "id": "material",
@@ -24472,7 +24472,7 @@
     "is-a>matter": 0.99
    },
    "created": 1793261751.7632065,
-   "touched": 1795775914.195748
+   "touched": 1795859751.5333376
   },
   "food_cat": {
    "id": "food_cat",
@@ -24488,7 +24488,7 @@
     "is-a>matter": 0.99
    },
    "created": 1793261751.7632244,
-   "touched": 1795775914.1966875
+   "touched": 1795859751.5354884
   },
   "dish": {
    "id": "dish",
@@ -24505,7 +24505,7 @@
     "is-a>food_cat": 0.99
    },
    "created": 1793261751.763253,
-   "touched": 1795775914.1971772
+   "touched": 1795859751.5365832
   },
   "drink": {
    "id": "drink",
@@ -24522,7 +24522,7 @@
     "is-a>food_cat": 0.99
    },
    "created": 1793261751.7632735,
-   "touched": 1795775914.1973615
+   "touched": 1795859751.537014
   },
   "person_cat": {
    "id": "person_cat",
@@ -24557,7 +24557,7 @@
     "is-a>idea": 0.99
    },
    "created": 1793261751.7633114,
-   "touched": 1795775914.1983285
+   "touched": 1795859751.5392034
   },
   "body_part": {
    "id": "body_part",
@@ -24573,7 +24573,7 @@
     "is-a>entity": 0.99
    },
    "created": 1793261751.7633302,
-   "touched": 1795775914.2000213
+   "touched": 1795859751.5407162
   },
   "time_cat": {
    "id": "time_cat",
@@ -24590,7 +24590,7 @@
     "is-a>idea": 0.99
    },
    "created": 1793261751.7633474,
-   "touched": 1795775914.200327
+   "touched": 1795859751.5414102
   },
   "game_cat": {
    "id": "game_cat",
@@ -24606,7 +24606,7 @@
     "is-a>idea": 0.99
    },
    "created": 1793261751.763365,
-   "touched": 1795775914.2004795
+   "touched": 1795859751.541771
   },
   "sport": {
    "id": "sport",
@@ -24622,7 +24622,7 @@
     "is-a>game_cat": 0.99
    },
    "created": 1793261751.7633846,
-   "touched": 1795775914.2008805
+   "touched": 1795859751.5426269
   },
   "color_cat": {
    "id": "color_cat",
@@ -24638,7 +24638,7 @@
     "is-a>idea": 0.99
    },
    "created": 1793261751.763402,
-   "touched": 1795775914.2010732
+   "touched": 1795859751.5430472
   },
   "shape_cat": {
    "id": "shape_cat",
@@ -24655,7 +24655,7 @@
     "is-a>idea": 0.99
    },
    "created": 1793261751.7634203,
-   "touched": 1795775914.2012568
+   "touched": 1795859751.5434723
   },
   "book_cat": {
    "id": "book_cat",
@@ -24672,7 +24672,7 @@
     "is-a>artifact": 0.99
    },
    "created": 1793261751.7634459,
-   "touched": 1795775914.2014997
+   "touched": 1795859751.5452194
   },
   "hammer": {
    "id": "hammer",
@@ -25537,7 +25537,7 @@
     "is-a>vehicle": 0.99
    },
    "created": 1793261751.76444,
-   "touched": 1793261751.7644403
+   "touched": 1795859752.619266
   },
   "forklift": {
    "id": "forklift",
@@ -25922,7 +25922,7 @@
     "is-a>device": 0.99
    },
    "created": 1793261751.764916,
-   "touched": 1795775911.8542743
+   "touched": 1795859748.9111907
   },
   "laptop": {
    "id": "laptop",
@@ -28403,7 +28403,7 @@
     "is-a>body_structure": 0.99
    },
    "created": 1793261751.7677257,
-   "touched": 1795775912.9349775
+   "touched": 1795859750.120103
   },
   "accordion": {
    "id": "accordion",
@@ -30465,7 +30465,7 @@
     "is-a>landform": 0.99
    },
    "created": 1793261751.769967,
-   "touched": 1795775913.2958586
+   "touched": 1795859750.5177932
   },
   "hill": {
    "id": "hill",
@@ -30568,7 +30568,7 @@
     "is-a>landform": 0.99
    },
    "created": 1793261751.7700765,
-   "touched": 1795775913.2959368
+   "touched": 1795859750.5179687
   },
   "sea": {
    "id": "sea",
@@ -30623,7 +30623,7 @@
     "is-a>place_cat": 0.99
    },
    "created": 1793261751.7701397,
-   "touched": 1795775913.2957497
+   "touched": 1795859750.5175462
   },
   "stream": {
    "id": "stream",
@@ -30986,7 +30986,7 @@
     "is-a>element": 0.99
    },
    "created": 1793261751.7704985,
-   "touched": 1795775913.1176164
+   "touched": 1795859750.3182354
   },
   "steel": {
    "id": "steel",
@@ -31028,7 +31028,7 @@
     "is-a>metal": 0.99
    },
    "created": 1793261751.7705321,
-   "touched": 1795522172.9756987
+   "touched": 1795859752.6193287
   },
   "copper": {
    "id": "copper",
@@ -33590,7 +33590,7 @@
     "is-a>role_cat": 0.99
    },
    "created": 1793261751.773744,
-   "touched": 1793261751.7737443
+   "touched": 1795859752.6191678
   },
   "baker": {
    "id": "baker",
@@ -36912,11 +36912,11 @@
    "links": {
     "assoc>skill": 0.99,
     "assoc>success": 0.99,
-    "assoc>failure": 0.6999999999999997,
-    "assoc>self": 0.059999999999999255
+    "assoc>failure": 0.6899999999999997,
+    "assoc>self": 0.04999999999999925
    },
    "created": 1793262162.3067124,
-   "touched": 1795775915.1190743
+   "touched": 1795859752.611153
   },
   "taxonomy": {
    "id": "taxonomy",
@@ -36927,10 +36927,10 @@
    "links": {
     "assoc>skill": 0.99,
     "assoc>success": 0.99,
-    "assoc>failure": 0.9299999999999999
+    "assoc>failure": 0.9199999999999999
    },
    "created": 1793262740.9341984,
-   "touched": 1795775915.1190617
+   "touched": 1795859752.6111286
   },
   "gravity": {
    "id": "gravity",
@@ -37091,7 +37091,7 @@
     "is-a>animal": 0.99
    },
    "created": 1793269368.6086428,
-   "touched": 1795775911.144151
+   "touched": 1795859748.1185298
   },
   "mantis_shrimp": {
    "id": "mantis_shrimp",
@@ -37185,7 +37185,7 @@
     "is-a>idea": 0.99
    },
    "created": 1793269368.609607,
-   "touched": 1795775911.1444438
+   "touched": 1795859748.119247
   },
   "maths": {
    "id": "maths",
@@ -37198,7 +37198,7 @@
     "assoc>success": 0.99
    },
    "created": 1793272837.3472126,
-   "touched": 1795775915.1188886
+   "touched": 1795859752.6111617
   },
   "chem": {
    "id": "chem",
@@ -37209,10 +37209,10 @@
    "links": {
     "assoc>skill": 0.99,
     "assoc>success": 0.99,
-    "assoc>failure": 0.6699999999999997
+    "assoc>failure": 0.6599999999999997
    },
    "created": 1793272837.3472164,
-   "touched": 1795775915.119055
+   "touched": 1795859752.6110246
   },
   "quantity": {
    "id": "quantity",
@@ -37229,7 +37229,7 @@
     "is-a>entity": 0.99
    },
    "created": 1793272837.3474274,
-   "touched": 1795775912.7530878
+   "touched": 1795859749.919579
   },
   "equation": {
    "id": "equation",
@@ -37247,7 +37247,7 @@
     "is-a>idea": 0.99
    },
    "created": 1793272837.3475173,
-   "touched": 1795775912.753867
+   "touched": 1795859749.922152
   },
   "unit": {
    "id": "unit",
@@ -37264,7 +37264,7 @@
     "is-a>entity": 0.99
    },
    "created": 1793272837.3475566,
-   "touched": 1795775912.7532732
+   "touched": 1795859749.920017
   },
   "speed": {
    "id": "speed",
@@ -37333,7 +37333,7 @@
     "is-a>quantity": 0.99
    },
    "created": 1793272837.3476615,
-   "touched": 1795775911.8535972
+   "touched": 1795859748.9097927
   },
   "acceleration": {
    "id": "acceleration",
@@ -38577,7 +38577,7 @@
     "is-a>entity": 0.99
    },
    "created": 1793272837.9738772,
-   "touched": 1795775912.9346657
+   "touched": 1795859750.1195087
   },
   "cell_part": {
    "id": "cell_part",
@@ -38594,7 +38594,7 @@
     "is-a>body_structure": 0.99
    },
    "created": 1793272837.9739835,
-   "touched": 1795775912.9347749
+   "touched": 1795859750.119717
   },
   "tissue_cat": {
    "id": "tissue_cat",
@@ -38610,7 +38610,7 @@
     "is-a>body_structure": 0.99
    },
    "created": 1793272837.9740267,
-   "touched": 1795775912.9350245
+   "touched": 1795859750.1202142
   },
   "life_system": {
    "id": "life_system",
@@ -38627,7 +38627,7 @@
     "is-a>body_structure": 0.99
    },
    "created": 1793272837.9740806,
-   "touched": 1795775912.9351523
+   "touched": 1795859750.120492
   },
   "life_process": {
    "id": "life_process",
@@ -38644,7 +38644,7 @@
     "is-a>idea": 0.99
    },
    "created": 1793272837.9741042,
-   "touched": 1795775912.9353397
+   "touched": 1795859750.1209433
   },
   "genetics_cat": {
    "id": "genetics_cat",
@@ -38661,7 +38661,7 @@
     "is-a>idea": 0.99
    },
    "created": 1793272837.9741294,
-   "touched": 1795775912.935463
+   "touched": 1795859750.1212173
   },
   "nucleus": {
    "id": "nucleus",
@@ -39468,7 +39468,7 @@
     "is-a>entity": 0.99
    },
    "created": 1793272838.5963304,
-   "touched": 1795775913.117046
+   "touched": 1795859750.3169382
   },
   "element": {
    "id": "element",
@@ -39485,7 +39485,7 @@
     "is-a>substance": 0.99
    },
    "created": 1793272838.5964332,
-   "touched": 1795775913.1170082
+   "touched": 1795859750.3168426
   },
   "nonmetal": {
    "id": "nonmetal",
@@ -39502,7 +39502,7 @@
     "is-a>element": 0.99
    },
    "created": 1793272838.5964992,
-   "touched": 1795775913.117601
+   "touched": 1795859750.3182
   },
   "compound": {
    "id": "compound",
@@ -39519,7 +39519,7 @@
     "is-a>substance": 0.99
    },
    "created": 1793272838.596524,
-   "touched": 1795775913.1178575
+   "touched": 1795859750.318755
   },
   "mixture_cat": {
    "id": "mixture_cat",
@@ -39535,7 +39535,7 @@
     "is-a>substance": 0.99
    },
    "created": 1793272838.5965466,
-   "touched": 1795775913.1179209
+   "touched": 1795859750.318895
   },
   "state_cat": {
    "id": "state_cat",
@@ -39551,7 +39551,7 @@
     "is-a>idea": 0.99
    },
    "created": 1793272838.5965679,
-   "touched": 1795775913.1180437
+   "touched": 1795859750.3191686
   },
   "atom_part": {
    "id": "atom_part",
@@ -39567,7 +39567,7 @@
     "is-a>entity": 0.99
    },
    "created": 1793272838.5965881,
-   "touched": 1795775913.118105
+   "touched": 1795859750.3193028
   },
   "reaction_cat": {
    "id": "reaction_cat",
@@ -39584,7 +39584,7 @@
     "is-a>idea": 0.99
    },
    "created": 1793272838.5966072,
-   "touched": 1795775913.1182754
+   "touched": 1795859750.3197181
   },
   "hydrogen": {
    "id": "hydrogen",
@@ -39698,7 +39698,7 @@
     "is-a>nonmetal": 0.99
    },
    "created": 1793272838.5967286,
-   "touched": 1794820189.621585
+   "touched": 1795859752.61933
   },
   "fluorine": {
    "id": "fluorine",
@@ -40749,7 +40749,7 @@
     "is-a>entity": 0.99
    },
    "created": 1793272839.2187498,
-   "touched": 1795775913.4678683
+   "touched": 1795859750.7180243
   },
   "force_type": {
    "id": "force_type",
@@ -40765,7 +40765,7 @@
     "is-a>physics_thing": 0.99
    },
    "created": 1793272839.2188787,
-   "touched": 1795775913.467579
+   "touched": 1795859750.7174013
   },
   "energy_type": {
    "id": "energy_type",
@@ -40781,7 +40781,7 @@
     "is-a>physics_thing": 0.99
    },
    "created": 1793272839.2189147,
-   "touched": 1795775913.4678216
+   "touched": 1795859750.7179167
   },
   "wave_type": {
    "id": "wave_type",
@@ -40797,7 +40797,7 @@
     "is-a>physics_thing": 0.99
    },
    "created": 1793272839.218939,
-   "touched": 1795775913.4679954
+   "touched": 1795859750.7183142
   },
   "electric_thing": {
    "id": "electric_thing",
@@ -40813,7 +40813,7 @@
     "is-a>physics_thing": 0.99
    },
    "created": 1793272839.2189615,
-   "touched": 1795775913.4681726
+   "touched": 1795859750.7187433
   },
   "friction": {
    "id": "friction",
@@ -41442,7 +41442,7 @@
     "is-a>place_cat": 0.99
    },
    "created": 1793272839.8470962,
-   "touched": 1795775913.2956243
+   "touched": 1795859750.517268
   },
   "mountain_cat": {
    "id": "mountain_cat",
@@ -41490,7 +41490,7 @@
     "is-a>place_cat": 0.99
    },
    "created": 1793272839.8471851,
-   "touched": 1795775913.2960262
+   "touched": 1795859750.5181448
   },
   "africa": {
    "id": "africa",
@@ -42412,7 +42412,7 @@
     "is-a>entity": 0.99
    },
    "created": 1793272840.4618986,
-   "touched": 1795775910.9745195
+   "touched": 1795859747.9143643
   },
   "neurotransmitter": {
    "id": "neurotransmitter",
@@ -42429,7 +42429,7 @@
     "is-a>quantity": 0.99
    },
    "created": 1793272840.4620225,
-   "touched": 1795775910.9746633
+   "touched": 1795859747.914709
   },
   "emotion_cat": {
    "id": "emotion_cat",
@@ -42447,7 +42447,7 @@
     "is-a>idea": 0.99
    },
    "created": 1793272840.4620628,
-   "touched": 1795775910.974874
+   "touched": 1795859747.9150634
   },
   "brain_scan": {
    "id": "brain_scan",
@@ -42464,7 +42464,7 @@
     "is-a>entity": 0.99
    },
    "created": 1793272840.4620924,
-   "touched": 1795775910.9749534
+   "touched": 1795859747.915245
   },
   "prefrontal_cortex": {
    "id": "prefrontal_cortex",
@@ -44659,11 +44659,11 @@
     "outcome": "win",
     "when_cycle": 197,
     "salience": 1.0,
-    "count": 5,
+    "count": 8,
     "felt": "proud",
     "valence": 0.6,
     "words": "next sequence",
-    "last_cycle": 200
+    "last_cycle": 201
    },
    "words": [
     "next",
@@ -44671,11 +44671,11 @@
    ],
    "vec": "mem_next_sequence",
    "links": {
-    "is-a>memory": 0.97,
-    "assoc>sequence": 0.97
+    "is-a>memory": 0.96,
+    "assoc>sequence": 0.96
    },
    "created": 1793272929.9358745,
-   "touched": 1795775915.1251602
+   "touched": 1795859752.6190307
   },
   "mem_synthesize_function_from": {
    "id": "mem_synthesize_function_from",
@@ -44683,13 +44683,13 @@
    "attrs": {
     "what": "synthesize function from examples",
     "outcome": "win",
-    "when_cycle": 200,
-    "salience": 3.54,
-    "count": 1,
+    "when_cycle": 201,
+    "salience": 1.0,
+    "count": 2,
     "felt": "proud",
     "valence": 0.6,
     "words": "synthesize function from",
-    "last_cycle": 200
+    "last_cycle": 201
    },
    "words": [
     "synthesize",
@@ -44701,7 +44701,7 @@
     "is-a>memory": 1.0
    },
    "created": 1793272929.9359078,
-   "touched": 1795775915.1251516
+   "touched": 1795859752.619133
   },
   "mem_clues_silent_poison": {
    "id": "mem_clues_silent_poison",
@@ -47931,7 +47931,7 @@
    ],
    "vec": "mem_clues_making_electricity",
    "links": {
-    "is-a>memory": 0.26999999999999946
+    "is-a>memory": 0.25999999999999945
    },
    "created": 1793275083.1313303,
    "touched": 1793275083.1313305
@@ -47957,7 +47957,7 @@
    ],
    "vec": "mem_clues_cleaning_wounds",
    "links": {
-    "is-a>memory": 0.26999999999999946
+    "is-a>memory": 0.25999999999999945
    },
    "created": 1793275083.1313603,
    "touched": 1793276188.84987
@@ -47982,7 +47982,7 @@
    ],
    "vec": "mem_neg_are_quick",
    "links": {
-    "is-a>memory": 0.27999999999999947
+    "is-a>memory": 0.26999999999999946
    },
    "created": 1793275090.7603385,
    "touched": 1793275090.7603388
@@ -48007,7 +48007,7 @@
    ],
    "vec": "mem_neg_are_flimsy",
    "links": {
-    "is-a>memory": 0.27999999999999947
+    "is-a>memory": 0.26999999999999946
    },
    "created": 1793275090.760374,
    "touched": 1793275090.7603743
@@ -48032,7 +48032,7 @@
    ],
    "vec": "mem_neg_are_bored",
    "links": {
-    "is-a>memory": 0.27999999999999947
+    "is-a>memory": 0.26999999999999946
    },
    "created": 1793275090.7603915,
    "touched": 1793275090.7603917
@@ -48056,7 +48056,7 @@
    ],
    "vec": "mem_neg_gentle",
    "links": {
-    "is-a>memory": 0.27999999999999947
+    "is-a>memory": 0.26999999999999946
    },
    "created": 1793275090.7604032,
    "touched": 1793275090.7604032
@@ -48082,7 +48082,7 @@
    ],
    "vec": "mem_ynq_are_hard",
    "links": {
-    "is-a>memory": 0.27999999999999947
+    "is-a>memory": 0.26999999999999946
    },
    "created": 1793275090.7604654,
    "touched": 1795082373.285767
@@ -48106,7 +48106,7 @@
    ],
    "vec": "mem_ynq_sharp",
    "links": {
-    "is-a>memory": 0.27999999999999947
+    "is-a>memory": 0.26999999999999946
    },
    "created": 1793275090.7604923,
    "touched": 1793275090.7604926
@@ -48131,7 +48131,7 @@
    ],
    "vec": "mem_ynq_are_roomy",
    "links": {
-    "is-a>memory": 0.27999999999999947
+    "is-a>memory": 0.26999999999999946
    },
    "created": 1793275090.7605207,
    "touched": 1793275090.760521
@@ -48157,7 +48157,7 @@
    ],
    "vec": "mem_clues_everything_needs",
    "links": {
-    "is-a>memory": 0.2899999999999995
+    "is-a>memory": 0.27999999999999947
    },
    "created": 1793275100.1647928,
    "touched": 1793275741.9196296
@@ -48183,7 +48183,7 @@
    ],
    "vec": "mem_clues_delivers_letters",
    "links": {
-    "is-a>memory": 0.2899999999999995
+    "is-a>memory": 0.27999999999999947
    },
    "created": 1793275100.164862,
    "touched": 1793276199.5225918
@@ -48208,7 +48208,7 @@
    ],
    "vec": "mem_clues_croaks_croaks",
    "links": {
-    "is-a>memory": 0.2899999999999995
+    "is-a>memory": 0.27999999999999947
    },
    "created": 1793275100.164892,
    "touched": 1793275164.519029
@@ -48233,7 +48233,7 @@
    ],
    "vec": "mem_clues_hops_hops",
    "links": {
-    "is-a>memory": 0.2899999999999995
+    "is-a>memory": 0.27999999999999947
    },
    "created": 1793275100.1649027,
    "touched": 1793275732.878086
@@ -48257,7 +48257,7 @@
    ],
    "vec": "mem_unique",
    "links": {
-    "is-a>memory": 0.2999999999999995
+    "is-a>memory": 0.2899999999999995
    },
    "created": 1793275125.8988583,
    "touched": 1793275787.5523973
@@ -48282,7 +48282,7 @@
    ],
    "vec": "mem_past_town_grew",
    "links": {
-    "is-a>memory": 0.3099999999999995
+    "is-a>memory": 0.2999999999999995
    },
    "created": 1793275138.523087,
    "touched": 1793275138.5230873
@@ -48308,7 +48308,7 @@
    ],
    "vec": "mem_clues_walking_blinking",
    "links": {
-    "is-a>memory": 0.3099999999999995
+    "is-a>memory": 0.2999999999999995
    },
    "created": 1793275138.5231235,
    "touched": 1793275799.6040542
@@ -48333,7 +48333,7 @@
    ],
    "vec": "mem_clues_humming_humming",
    "links": {
-    "is-a>memory": 0.3099999999999995
+    "is-a>memory": 0.2999999999999995
    },
    "created": 1793275138.523157,
    "touched": 1793276188.849827
@@ -48359,7 +48359,7 @@
    ],
    "vec": "mem_clues_tasting_talking",
    "links": {
-    "is-a>memory": 0.3099999999999995
+    "is-a>memory": 0.2999999999999995
    },
    "created": 1793275138.5232244,
    "touched": 1793276188.8497806
@@ -48385,7 +48385,7 @@
    ],
    "vec": "mem_clues_deep_ocean",
    "links": {
-    "is-a>memory": 0.3099999999999995
+    "is-a>memory": 0.2999999999999995
    },
    "created": 1793275138.5232363,
    "touched": 1793275433.0801399
@@ -48411,7 +48411,7 @@
    ],
    "vec": "mem_clues_four_players",
    "links": {
-    "is-a>memory": 0.3099999999999995
+    "is-a>memory": 0.2999999999999995
    },
    "created": 1793275138.5232632,
    "touched": 1793275741.9196823
@@ -48436,7 +48436,7 @@
    ],
    "vec": "mem_ynq_are_scared",
    "links": {
-    "is-a>memory": 0.3099999999999995
+    "is-a>memory": 0.2999999999999995
    },
    "created": 1793275138.5232882,
    "touched": 1793275138.5232882
@@ -48461,7 +48461,7 @@
    ],
    "vec": "mem_clues_san_francisco",
    "links": {
-    "is-a>memory": 0.3299999999999995
+    "is-a>memory": 0.3199999999999995
    },
    "created": 1793275156.1200674,
    "touched": 1793275156.1200674
@@ -48487,7 +48487,7 @@
    ],
    "vec": "mem_clues_fittest_survive",
    "links": {
-    "is-a>memory": 0.3299999999999995
+    "is-a>memory": 0.3199999999999995
    },
    "created": 1793275156.120114,
    "touched": 1793275799.6041322
@@ -48512,7 +48512,7 @@
    ],
    "vec": "mem_clues_endless_conifer",
    "links": {
-    "is-a>memory": 0.3299999999999995
+    "is-a>memory": 0.3199999999999995
    },
    "created": 1793275156.1201384,
    "touched": 1793275156.1201386
@@ -48538,7 +48538,7 @@
    ],
    "vec": "mem_clues_rolls_back",
    "links": {
-    "is-a>memory": 0.3299999999999995
+    "is-a>memory": 0.3199999999999995
    },
    "created": 1793275156.1201677,
    "touched": 1793275156.120244
@@ -48564,7 +48564,7 @@
    ],
    "vec": "mem_clues_home_mount",
    "links": {
-    "is-a>memory": 0.3299999999999995
+    "is-a>memory": 0.3199999999999995
    },
    "created": 1793275156.1202328,
    "touched": 1793276216.3439207
@@ -48589,7 +48589,7 @@
    ],
    "vec": "mem_clues_church_filling",
    "links": {
-    "is-a>memory": 0.3399999999999995
+    "is-a>memory": 0.3299999999999995
    },
    "created": 1793275164.518963,
    "touched": 1793275164.518963
@@ -48614,7 +48614,7 @@
    ],
    "vec": "mem_remember_failing_something",
    "links": {
-    "is-a>memory": 0.34999999999999953
+    "is-a>memory": 0.3399999999999995
    },
    "created": 1793275389.4630015,
    "touched": 1793275389.463002
@@ -48639,7 +48639,7 @@
    ],
    "vec": "mem_clues_drives_people",
    "links": {
-    "is-a>memory": 0.35999999999999954
+    "is-a>memory": 0.34999999999999953
    },
    "created": 1793275401.465024,
    "touched": 1793275401.4650242
@@ -48664,7 +48664,7 @@
    ],
    "vec": "mem_past_word_ran",
    "links": {
-    "is-a>memory": 0.36999999999999955
+    "is-a>memory": 0.35999999999999954
    },
    "created": 1793275406.5913105,
    "touched": 1793275406.5913105
@@ -48689,7 +48689,7 @@
    ],
    "vec": "mem_neg_are_loose",
    "links": {
-    "is-a>memory": 0.36999999999999955
+    "is-a>memory": 0.35999999999999954
    },
    "created": 1793275406.591347,
    "touched": 1793275406.591347
@@ -48715,7 +48715,7 @@
    ],
    "vec": "mem_neg_they_are",
    "links": {
-    "is-a>memory": 0.7099999999999997
+    "is-a>memory": 0.6999999999999997
    },
    "created": 1793275406.591364,
    "touched": 1794561311.7454422
@@ -48740,7 +48740,7 @@
    ],
    "vec": "mem_neg_are_medium",
    "links": {
-    "is-a>memory": 0.36999999999999955
+    "is-a>memory": 0.35999999999999954
    },
    "created": 1793275406.591378,
    "touched": 1793275406.591378
@@ -48764,7 +48764,7 @@
    ],
    "vec": "mem_neg_honest",
    "links": {
-    "is-a>memory": 0.36999999999999955
+    "is-a>memory": 0.35999999999999954
    },
    "created": 1793275406.5913887,
    "touched": 1793275406.591389
@@ -48789,7 +48789,7 @@
    ],
    "vec": "mem_neg_are_strong",
    "links": {
-    "is-a>memory": 0.36999999999999955
+    "is-a>memory": 0.35999999999999954
    },
    "created": 1793275406.5913987,
    "touched": 1793275406.5913987
@@ -48814,7 +48814,7 @@
    ],
    "vec": "mem_neg_are_sour",
    "links": {
-    "is-a>memory": 0.36999999999999955
+    "is-a>memory": 0.35999999999999954
    },
    "created": 1793275406.5914087,
    "touched": 1793275406.5914087
@@ -48840,7 +48840,7 @@
    ],
    "vec": "mem_clues_running_jumping",
    "links": {
-    "is-a>memory": 0.37999999999999956
+    "is-a>memory": 0.36999999999999955
    },
    "created": 1793275415.4183202,
    "touched": 1793276234.1490583
@@ -48865,7 +48865,7 @@
    ],
    "vec": "mem_clues_warm_blooded",
    "links": {
-    "is-a>memory": 0.37999999999999956
+    "is-a>memory": 0.36999999999999955
    },
    "created": 1793275415.4183698,
    "touched": 1793275415.41837
@@ -48891,7 +48891,7 @@
    ],
    "vec": "mem_clues_making_power",
    "links": {
-    "is-a>memory": 0.3999999999999996
+    "is-a>memory": 0.38999999999999957
    },
    "created": 1793275433.0800705,
    "touched": 1793276234.1491475
@@ -48917,7 +48917,7 @@
    ],
    "vec": "mem_clues_showing_photo",
    "links": {
-    "is-a>memory": 0.3999999999999996
+    "is-a>memory": 0.38999999999999957
    },
    "created": 1793275433.0801115,
    "touched": 1793275433.0802052
@@ -48941,8 +48941,8 @@
    ],
    "vec": "mem_clues_india_india",
    "links": {
-    "is-a>memory": 0.3999999999999996,
-    "assoc>india": 0.09999999999999958
+    "is-a>memory": 0.38999999999999957,
+    "assoc>india": 0.08999999999999958
    },
    "created": 1793275433.0801451,
    "touched": 1793275433.0801451
@@ -48968,7 +48968,7 @@
    ],
    "vec": "mem_clues_underwater_cities",
    "links": {
-    "is-a>memory": 0.3999999999999996
+    "is-a>memory": 0.38999999999999957
    },
    "created": 1793275433.0801935,
    "touched": 1793276179.87352
@@ -48994,7 +48994,7 @@
    ],
    "vec": "mem_clues_gathering_relaxing",
    "links": {
-    "is-a>memory": 0.4299999999999996
+    "is-a>memory": 0.4199999999999996
    },
    "created": 1793275732.878136,
    "touched": 1793276179.873513
@@ -49020,7 +49020,7 @@
    ],
    "vec": "mem_clues_moving_blood",
    "links": {
-    "is-a>memory": 0.4299999999999996
+    "is-a>memory": 0.4199999999999996
    },
    "created": 1793275732.8781657,
    "touched": 1793275741.9195592
@@ -49045,7 +49045,7 @@
    ],
    "vec": "mem_clues_water_ringed",
    "links": {
-    "is-a>memory": 0.4399999999999996
+    "is-a>memory": 0.4299999999999996
    },
    "created": 1793275741.919489,
    "touched": 1793275741.919489
@@ -49069,8 +49069,8 @@
    ],
    "vec": "mem_clues_swimming_swimming",
    "links": {
-    "is-a>memory": 0.4399999999999996,
-    "assoc>swimming": 0.13999999999999957
+    "is-a>memory": 0.4299999999999996,
+    "assoc>swimming": 0.12999999999999956
    },
    "created": 1793275741.9195805,
    "touched": 1793275741.9195805
@@ -49094,8 +49094,8 @@
    ],
    "vec": "mem_clues_australia_australia",
    "links": {
-    "is-a>memory": 0.46999999999999964,
-    "assoc>australia": 0.1699999999999996
+    "is-a>memory": 0.45999999999999963,
+    "assoc>australia": 0.1599999999999996
    },
    "created": 1793275776.5935857,
    "touched": 1793275776.593586
@@ -49120,7 +49120,7 @@
    ],
    "vec": "mem_clues_keeps_peace",
    "links": {
-    "is-a>memory": 0.48999999999999966
+    "is-a>memory": 0.47999999999999965
    },
    "created": 1793275799.6040282,
    "touched": 1793275799.6040282
@@ -49144,7 +49144,7 @@
    ],
    "vec": "mem_clues_breathing_breathing",
    "links": {
-    "is-a>memory": 0.5099999999999997
+    "is-a>memory": 0.49999999999999967
    },
    "created": 1793276179.8734367,
    "touched": 1793276179.873437
@@ -49169,7 +49169,7 @@
    ],
    "vec": "mem_clues_focus_work",
    "links": {
-    "is-a>memory": 0.5099999999999997
+    "is-a>memory": 0.49999999999999967
    },
    "created": 1793276179.8734822,
    "touched": 1793276179.8734822
@@ -49194,7 +49194,7 @@
    ],
    "vec": "mem_neg_are_cheerful",
    "links": {
-    "is-a>memory": 0.5399999999999997
+    "is-a>memory": 0.5299999999999997
    },
    "created": 1793276207.5007935,
    "touched": 1793276207.5007937
@@ -49220,7 +49220,7 @@
    ],
    "vec": "mem_neg_are_straight",
    "links": {
-    "is-a>memory": 0.5399999999999997
+    "is-a>memory": 0.5299999999999997
    },
    "created": 1793276207.5008364,
    "touched": 1793276875.0157547
@@ -49245,7 +49245,7 @@
    ],
    "vec": "mem_neg_she_silly",
    "links": {
-    "is-a>memory": 0.5399999999999997
+    "is-a>memory": 0.5299999999999997
    },
    "created": 1793276207.500868,
    "touched": 1793276207.500868
@@ -49270,7 +49270,7 @@
    ],
    "vec": "mem_neg_are_rapid",
    "links": {
-    "is-a>memory": 0.5399999999999997
+    "is-a>memory": 0.5299999999999997
    },
    "created": 1793276207.500883,
    "touched": 1793276207.500883
@@ -49294,7 +49294,7 @@
    ],
    "vec": "mem_neg_rough",
    "links": {
-    "is-a>memory": 0.5399999999999997
+    "is-a>memory": 0.5299999999999997
    },
    "created": 1793276207.5008962,
    "touched": 1793276207.5008962
@@ -49320,7 +49320,7 @@
    ],
    "vec": "mem_neg_are_full",
    "links": {
-    "is-a>memory": 0.5399999999999997
+    "is-a>memory": 0.5299999999999997
    },
    "created": 1793276207.5009077,
    "touched": 1793697040.0034137
@@ -49345,7 +49345,7 @@
    ],
    "vec": "mem_neg_are_murky",
    "links": {
-    "is-a>memory": 0.5399999999999997
+    "is-a>memory": 0.5299999999999997
    },
    "created": 1793276207.5009234,
    "touched": 1793276207.5009236
@@ -49369,7 +49369,7 @@
    ],
    "vec": "mem_neg_excited",
    "links": {
-    "is-a>memory": 0.5399999999999997
+    "is-a>memory": 0.5299999999999997
    },
    "created": 1793276207.5009336,
    "touched": 1793276207.500934
@@ -49394,7 +49394,7 @@
    ],
    "vec": "mem_neg_are_silent",
    "links": {
-    "is-a>memory": 0.5399999999999997
+    "is-a>memory": 0.5299999999999997
    },
    "created": 1793276207.500944,
    "touched": 1793276207.5009441
@@ -49418,7 +49418,7 @@
    ],
    "vec": "mem_neg_freezing",
    "links": {
-    "is-a>memory": 0.5399999999999997
+    "is-a>memory": 0.5299999999999997
    },
    "created": 1793276207.5009546,
    "touched": 1793276207.5009549
@@ -49443,7 +49443,7 @@
    ],
    "vec": "mem_clues_small_white",
    "links": {
-    "is-a>memory": 0.5499999999999997
+    "is-a>memory": 0.5399999999999997
    },
    "created": 1793276216.3439636,
    "touched": 1793276216.3439639
@@ -49468,7 +49468,7 @@
    ],
    "vec": "mem_clues_largest_desert",
    "links": {
-    "is-a>memory": 0.5499999999999997
+    "is-a>memory": 0.5399999999999997
    },
    "created": 1793276216.3439991,
    "touched": 1793276216.3439991
@@ -49493,7 +49493,7 @@
    ],
    "vec": "mem_past_party_kept",
    "links": {
-    "is-a>memory": 0.5699999999999997
+    "is-a>memory": 0.5599999999999997
    },
    "created": 1793276234.1489913,
    "touched": 1793276234.1489916
@@ -49518,7 +49518,7 @@
    ],
    "vec": "mem_clues_home_amazon",
    "links": {
-    "is-a>memory": 0.5699999999999997
+    "is-a>memory": 0.5599999999999997
    },
    "created": 1793276234.1490958,
    "touched": 1793276234.1490958
@@ -49543,7 +49543,7 @@
    ],
    "vec": "mem_neg_she_sharp",
    "links": {
-    "is-a>memory": 0.5699999999999997
+    "is-a>memory": 0.5599999999999997
    },
    "created": 1793276234.1491575,
    "touched": 1793276234.1491575
@@ -49568,7 +49568,7 @@
    ],
    "vec": "mem_neg_she_short",
    "links": {
-    "is-a>memory": 0.5699999999999997
+    "is-a>memory": 0.5599999999999997
    },
    "created": 1793276234.1491702,
    "touched": 1793276234.1491702
@@ -49593,7 +49593,7 @@
    ],
    "vec": "mem_neg_are_savory",
    "links": {
-    "is-a>memory": 0.5699999999999997
+    "is-a>memory": 0.5599999999999997
    },
    "created": 1793276234.1491818,
    "touched": 1793276234.1491823
@@ -49617,7 +49617,7 @@
    ],
    "vec": "mem_neg_boiling",
    "links": {
-    "is-a>memory": 0.5699999999999997
+    "is-a>memory": 0.5599999999999997
    },
    "created": 1793276234.149192,
    "touched": 1793276234.149192
@@ -49642,7 +49642,7 @@
    ],
    "vec": "mem_past_run",
    "links": {
-    "is-a>memory": 0.6099999999999998
+    "is-a>memory": 0.5999999999999998
    },
    "created": 1793276875.0156584,
    "touched": 1794302819.979625
@@ -49667,7 +49667,7 @@
    ],
    "vec": "mem_neg_are_dirty",
    "links": {
-    "is-a>memory": 0.6099999999999998
+    "is-a>memory": 0.5999999999999998
    },
    "created": 1793276875.0157368,
    "touched": 1793276875.0157368
@@ -49691,7 +49691,7 @@
    ],
    "vec": "mem_past_use",
    "links": {
-    "is-a>memory": 0.6099999999999998
+    "is-a>memory": 0.5999999999999998
    },
    "created": 1793276875.0158072,
    "touched": 1793276875.0158074
@@ -49715,7 +49715,7 @@
    ],
    "vec": "mem_length",
    "links": {
-    "is-a>memory": 0.6099999999999998
+    "is-a>memory": 0.5999999999999998
    },
    "created": 1793276875.0158339,
    "touched": 1793276875.0158904
@@ -49739,7 +49739,7 @@
    ],
    "vec": "mem_shout",
    "links": {
-    "is-a>memory": 0.6099999999999998
+    "is-a>memory": 0.5999999999999998
    },
    "created": 1793276875.0159202,
    "touched": 1795689328.794046
@@ -49764,7 +49764,7 @@
    ],
    "vec": "mem_past_visit",
    "links": {
-    "is-a>memory": 0.6099999999999998
+    "is-a>memory": 0.5999999999999998
    },
    "created": 1793276875.015946,
    "touched": 1794645844.954543
@@ -49783,7 +49783,7 @@
    "vec": "living_thing",
    "links": {},
    "created": 1793348205.4762297,
-   "touched": 1795775910.804269
+   "touched": 1795859747.7103229
   },
   "cause_fire": {
    "id": "cause_fire",
@@ -49811,7 +49811,7 @@
    "vec": "smoke",
    "links": {},
    "created": 1793348205.4764261,
-   "touched": 1795775910.8043492
+   "touched": 1795859747.7104878
   },
   "entity": {
    "id": "entity",
@@ -49826,7 +49826,7 @@
    "vec": "entity",
    "links": {},
    "created": 1793348205.7295947,
-   "touched": 1795775914.1893654
+   "touched": 1795859751.5187218
   },
   "sun": {
    "id": "sun",
@@ -49845,7 +49845,7 @@
    "vec": "sun",
    "links": {},
    "created": 1793348206.5291886,
-   "touched": 1795775911.8538742
+   "touched": 1795859748.9103038
   },
   "moon": {
    "id": "moon",
@@ -49886,7 +49886,7 @@
     "orbits>sun": 0.99
    },
    "created": 1793348206.52929,
-   "touched": 1795775911.8539085
+   "touched": 1795859748.9103777
   },
   "universe": {
    "id": "universe",
@@ -49919,7 +49919,7 @@
    "vec": "space",
    "links": {},
    "created": 1793348207.027342,
-   "touched": 1795775911.8535929
+   "touched": 1795859748.9097884
   },
   "atom": {
    "id": "atom",
@@ -49935,7 +49935,7 @@
     "is-part-of>matter": 0.99
    },
    "created": 1793348207.0275185,
-   "touched": 1795775911.85379
+   "touched": 1795859748.9101133
   },
   "molecule": {
    "id": "molecule",
@@ -49951,7 +49951,7 @@
     "is-made-of>atom": 0.99
    },
    "created": 1793348207.0275397,
-   "touched": 1795775911.853809
+   "touched": 1795859748.9101555
   },
   "life": {
    "id": "life",
@@ -49966,7 +49966,7 @@
    "vec": "life",
    "links": {},
    "created": 1793348207.0276747,
-   "touched": 1795775911.8540154
+   "touched": 1795859748.910621
   },
   "language": {
    "id": "language",
@@ -49998,7 +49998,7 @@
    "vec": "word",
    "links": {},
    "created": 1793348207.0278602,
-   "touched": 1795775911.8541129
+   "touched": 1795859748.9108393
   },
   "mathematics": {
    "id": "mathematics",
@@ -50015,7 +50015,7 @@
     "includes>number": 0.99
    },
    "created": 1793348207.027877,
-   "touched": 1795775911.8541465
+   "touched": 1795859748.9109154
   },
   "arithmetic": {
    "id": "arithmetic",
@@ -50032,7 +50032,7 @@
     "acts-on>number": 0.99
    },
    "created": 1793348207.0278945,
-   "touched": 1795775911.854166
+   "touched": 1795859748.9109557
   },
   "addition": {
    "id": "addition",
@@ -50054,7 +50054,7 @@
     "is-a>math": 0.99
    },
    "created": 1793348207.0279124,
-   "touched": 1795775912.5752802
+   "touched": 1795859749.7223883
   },
   "subtraction": {
    "id": "subtraction",
@@ -50077,7 +50077,7 @@
     "opposite-of>addition": 0.99
    },
    "created": 1793348207.0279307,
-   "touched": 1795775912.5752964
+   "touched": 1795859749.722425
   },
   "multiplication": {
    "id": "multiplication",
@@ -50098,7 +50098,7 @@
     "built-on>addition": 0.99
    },
    "created": 1793348207.027947,
-   "touched": 1795775912.5753126
+   "touched": 1795859749.7224603
   },
   "division": {
    "id": "division",
@@ -50120,7 +50120,7 @@
     "opposite-of>multiplication": 0.99
    },
    "created": 1793348207.0279634,
-   "touched": 1795775912.575328
+   "touched": 1795859749.7224956
   },
   "cause": {
    "id": "cause",
@@ -50172,7 +50172,7 @@
    "vec": "honesty",
    "links": {},
    "created": 1793348207.028221,
-   "touched": 1795775912.3939552
+   "touched": 1795859749.5190475
   },
   "statement": {
    "id": "statement",
@@ -50190,7 +50190,7 @@
     "is-a>grammar": 0.99
    },
    "created": 1793348207.4810553,
-   "touched": 1795775912.0347369
+   "touched": 1795859749.1086943
   },
   "command": {
    "id": "command",
@@ -50263,7 +50263,7 @@
     "is-a>grammar": 0.99
    },
    "created": 1793348207.4811783,
-   "touched": 1795775912.0348039
+   "touched": 1795859749.1087744
   },
   "passive": {
    "id": "passive",
@@ -50316,7 +50316,7 @@
     "is-a>grammar": 0.99
    },
    "created": 1793348207.4812305,
-   "touched": 1795775912.0348556
+   "touched": 1795859749.1088903
   },
   "superlative": {
    "id": "superlative",
@@ -50370,7 +50370,7 @@
     "is-a>grammar": 0.99
    },
    "created": 1793348207.4812818,
-   "touched": 1795775913.823729
+   "touched": 1795859751.1079426
   },
   "present_tense": {
    "id": "present_tense",
@@ -50407,7 +50407,7 @@
     "is-a>grammar": 0.99
    },
    "created": 1793348207.4813368,
-   "touched": 1795775912.0349624
+   "touched": 1795859749.109118
   },
   "singular": {
    "id": "singular",
@@ -50439,7 +50439,7 @@
    "vec": "mind",
    "links": {},
    "created": 1793348207.7310326,
-   "touched": 1795775912.2148333
+   "touched": 1795859749.3213208
   },
   "fluency": {
    "id": "fluency",
@@ -50454,7 +50454,7 @@
    "vec": "fluency",
    "links": {},
    "created": 1793348207.73129,
-   "touched": 1795775912.393951
+   "touched": 1795859749.5190425
   },
   "math": {
    "id": "math",
@@ -50470,7 +50470,7 @@
    "vec": "math",
    "links": {},
    "created": 1793348208.246772,
-   "touched": 1795775912.5751948
+   "touched": 1795859749.7221832
   },
   "place_value": {
    "id": "place_value",
@@ -50487,7 +50487,7 @@
     "is-a>math": 0.99
    },
    "created": 1793348208.2469435,
-   "touched": 1795775912.5751767
+   "touched": 1795859749.722144
   },
   "carrying": {
    "id": "carrying",
@@ -50521,7 +50521,7 @@
     "is-a>math": 0.99
    },
    "created": 1793348208.2469804,
-   "touched": 1795775912.5752122
+   "touched": 1795859749.7222216
   },
   "negative_number": {
    "id": "negative_number",
@@ -50556,7 +50556,7 @@
     "built-on>division": 0.99
    },
    "created": 1793348208.2470164,
-   "touched": 1795775912.575247
+   "touched": 1795859749.722301
   },
   "quarter": {
    "id": "quarter",
@@ -50658,7 +50658,7 @@
    "vec": "continent",
    "links": {},
    "created": 1793348209.326138,
-   "touched": 1795775913.2952194
+   "touched": 1795859750.5163472
   },
   "sentence_grammar": {
    "id": "sentence_grammar",
@@ -50672,7 +50672,7 @@
    "vec": "sentence_grammar",
    "links": {},
    "created": 1793348210.07165,
-   "touched": 1795775913.823711
+   "touched": 1795859751.1079059
   },
   "tubulidentata": {
    "id": "tubulidentata",
@@ -50682,7 +50682,7 @@
    "vec": "tubulidentata",
    "links": {},
    "created": 1793348210.3209639,
-   "touched": 1795775914.012021
+   "touched": 1795859751.31287
   },
   "pholidota": {
    "id": "pholidota",
@@ -50692,7 +50692,7 @@
    "vec": "pholidota",
    "links": {},
    "created": 1793348210.3209813,
-   "touched": 1795775914.012036
+   "touched": 1795859751.3129041
   },
   "part": {
    "id": "part",
@@ -50702,7 +50702,7 @@
    "vec": "part",
    "links": {},
    "created": 1793348210.580259,
-   "touched": 1795775914.1917946
+   "touched": 1795859751.524287
   },
   "adjective": {
    "id": "adjective",
@@ -50717,7 +50717,7 @@
    "vec": "adjective",
    "links": {},
    "created": 1793348210.8566728,
-   "touched": 1795775914.3747368
+   "touched": 1795859751.7440388
   },
   "noun": {
    "id": "noun",
@@ -50732,7 +50732,7 @@
    "vec": "noun",
    "links": {},
    "created": 1793348211.1055596,
-   "touched": 1795775914.5504441
+   "touched": 1795859751.950716
   },
   "verb": {
    "id": "verb",
@@ -50908,7 +50908,7 @@
     "assoc>verb_spit": 0.99
    },
    "created": 1793348211.369974,
-   "touched": 1795775915.118838
+   "touched": 1795859752.61088
   },
   "mem_reverse": {
    "id": "mem_reverse",
@@ -50929,7 +50929,7 @@
    ],
    "vec": "mem_reverse",
    "links": {
-    "is-a>memory": 0.6199999999999998
+    "is-a>memory": 0.6099999999999998
    },
    "created": 1793348211.9255617,
    "touched": 1795775915.125806
@@ -50954,7 +50954,7 @@
    ],
    "vec": "mem_neg_are_chilly",
    "links": {
-    "is-a>memory": 0.6199999999999998
+    "is-a>memory": 0.6099999999999998
    },
    "created": 1793348211.9255872,
    "touched": 1793348211.9255872
@@ -50978,8 +50978,8 @@
    ],
    "vec": "mem_plural_door",
    "links": {
-    "is-a>memory": 0.6199999999999998,
-    "assoc>plural": 0.019999999999999858
+    "is-a>memory": 0.6099999999999998,
+    "assoc>plural": 0.009999999999999858
    },
    "created": 1793348211.925625,
    "touched": 1793348211.925625
@@ -50992,21 +50992,21 @@
     "outcome": "win",
     "when_cycle": 172,
     "salience": 1.0,
-    "count": 47,
+    "count": 48,
     "felt": "proud",
     "valence": 0.6,
     "words": "compute",
-    "last_cycle": 200
+    "last_cycle": 201
    },
    "words": [
     "compute"
    ],
    "vec": "mem_compute",
    "links": {
-    "is-a>memory": 0.6199999999999998
+    "is-a>memory": 0.6099999999999998
    },
    "created": 1793348211.9256427,
-   "touched": 1795775915.1257727
+   "touched": 1795859752.6193762
   },
   "mem_eval_diff": {
    "id": "mem_eval_diff",
@@ -51028,7 +51028,7 @@
    ],
    "vec": "mem_eval_diff",
    "links": {
-    "is-a>memory": 0.6199999999999998
+    "is-a>memory": 0.6099999999999998
    },
    "created": 1793348211.9256585,
    "touched": 1795082373.285888
@@ -51053,8 +51053,8 @@
    ],
    "vec": "mem_eval_gas",
    "links": {
-    "is-a>memory": 0.6199999999999998,
-    "assoc>gas": 0.019999999999999858
+    "is-a>memory": 0.6099999999999998,
+    "assoc>gas": 0.009999999999999858
    },
    "created": 1793348211.9256732,
    "touched": 1793782019.9603167
@@ -51078,7 +51078,7 @@
    ],
    "vec": "mem_eval_fall",
    "links": {
-    "is-a>memory": 0.6199999999999998
+    "is-a>memory": 0.6099999999999998
    },
    "created": 1793348211.9256885,
    "touched": 1793348211.9256885
@@ -51102,7 +51102,7 @@
    ],
    "vec": "mem_max",
    "links": {
-    "is-a>memory": 0.6199999999999998
+    "is-a>memory": 0.6099999999999998
    },
    "created": 1793348211.9257047,
    "touched": 1795775915.1256561
@@ -51127,8 +51127,8 @@
    ],
    "vec": "mem_eval_charge",
    "links": {
-    "is-a>memory": 0.6199999999999998,
-    "assoc>charge": 0.019999999999999858
+    "is-a>memory": 0.6099999999999998,
+    "assoc>charge": 0.009999999999999858
    },
    "created": 1793348211.9257193,
    "touched": 1795775915.1255946
@@ -51153,7 +51153,7 @@
    ],
    "vec": "mem_past_turn",
    "links": {
-    "is-a>memory": 0.6199999999999998
+    "is-a>memory": 0.6099999999999998
    },
    "created": 1793348211.9257343,
    "touched": 1794216183.5138125
@@ -51178,7 +51178,7 @@
    ],
    "vec": "mem_eval_wave",
    "links": {
-    "is-a>memory": 0.6199999999999998
+    "is-a>memory": 0.6099999999999998
    },
    "created": 1793348211.9257486,
    "touched": 1793434115.8541524
@@ -51203,7 +51203,7 @@
    ],
    "vec": "mem_past_ask",
    "links": {
-    "is-a>memory": 0.6199999999999998
+    "is-a>memory": 0.6099999999999998
    },
    "created": 1793348211.9257627,
    "touched": 1793434115.8538167
@@ -51228,9 +51228,9 @@
    ],
    "vec": "mem_plural_chair",
    "links": {
-    "is-a>memory": 0.6199999999999998,
-    "assoc>plural": 0.019999999999999858,
-    "assoc>chair": 0.019999999999999858
+    "is-a>memory": 0.6099999999999998,
+    "assoc>plural": 0.009999999999999858,
+    "assoc>chair": 0.009999999999999858
    },
    "created": 1793348211.925782,
    "touched": 1794561311.745376
@@ -51243,21 +51243,21 @@
     "outcome": "win",
     "when_cycle": 173,
     "salience": 1.0,
-    "count": 13,
+    "count": 14,
     "felt": "proud",
     "valence": 0.6,
     "words": "upper",
-    "last_cycle": 199
+    "last_cycle": 201
    },
    "words": [
     "upper"
    ],
    "vec": "mem_upper",
    "links": {
-    "is-a>memory": 0.6299999999999998
+    "is-a>memory": 0.6199999999999998
    },
    "created": 1793434115.8538377,
-   "touched": 1795689328.793594
+   "touched": 1795859752.619126
   },
   "mem_plural_dog": {
    "id": "mem_plural_dog",
@@ -51279,9 +51279,9 @@
    ],
    "vec": "mem_plural_dog",
    "links": {
-    "is-a>memory": 0.6299999999999998,
-    "assoc>plural": 0.02999999999999986,
-    "assoc>dog": 0.02999999999999986
+    "is-a>memory": 0.6199999999999998,
+    "assoc>plural": 0.019999999999999858,
+    "assoc>dog": 0.019999999999999858
    },
    "created": 1793434115.853864,
    "touched": 1795689328.7935984
@@ -51306,8 +51306,8 @@
    ],
    "vec": "mem_neg_tea_encourages",
    "links": {
-    "is-a>memory": 0.6299999999999998,
-    "assoc>tea": 0.02999999999999986
+    "is-a>memory": 0.6199999999999998,
+    "assoc>tea": 0.019999999999999858
    },
    "created": 1793434115.8538923,
    "touched": 1793434115.8538923
@@ -51332,7 +51332,7 @@
    ],
    "vec": "mem_ynq_are_sad",
    "links": {
-    "is-a>memory": 0.6299999999999998
+    "is-a>memory": 0.6199999999999998
    },
    "created": 1793434115.8539166,
    "touched": 1793434115.853917
@@ -51356,8 +51356,8 @@
    ],
    "vec": "mem_parent_coconut",
    "links": {
-    "is-a>memory": 0.6299999999999998,
-    "assoc>coconut": 0.02999999999999986
+    "is-a>memory": 0.6199999999999998,
+    "assoc>coconut": 0.019999999999999858
    },
    "created": 1793434115.853939,
    "touched": 1793434115.853939
@@ -51382,9 +51382,9 @@
    ],
    "vec": "mem_plural_spoon",
    "links": {
-    "is-a>memory": 0.6299999999999998,
-    "assoc>plural": 0.02999999999999986,
-    "assoc>spoon": 0.02999999999999986
+    "is-a>memory": 0.6199999999999998,
+    "assoc>plural": 0.019999999999999858,
+    "assoc>spoon": 0.019999999999999858
    },
    "created": 1793434115.85396,
    "touched": 1794910923.0189857
@@ -51408,7 +51408,7 @@
    ],
    "vec": "mem_neg_darken",
    "links": {
-    "is-a>memory": 0.6299999999999998
+    "is-a>memory": 0.6199999999999998
    },
    "created": 1793434115.8539817,
    "touched": 1793434115.853982
@@ -51432,7 +51432,7 @@
    ],
    "vec": "mem_past_play",
    "links": {
-    "is-a>memory": 0.6299999999999998
+    "is-a>memory": 0.6199999999999998
    },
    "created": 1793434115.8540006,
    "touched": 1793434115.8540006
@@ -51456,7 +51456,7 @@
    ],
    "vec": "mem_past_teach",
    "links": {
-    "is-a>memory": 0.7499999999999998
+    "is-a>memory": 0.7399999999999998
    },
    "created": 1793434115.8540232,
    "touched": 1793434115.8540232
@@ -51480,8 +51480,8 @@
    ],
    "vec": "mem_parent_clone",
    "links": {
-    "is-a>memory": 0.6299999999999998,
-    "assoc>clone": 0.02999999999999986
+    "is-a>memory": 0.6199999999999998,
+    "assoc>clone": 0.019999999999999858
    },
    "created": 1793434115.8540416,
    "touched": 1793434115.8540418
@@ -51506,7 +51506,7 @@
    ],
    "vec": "mem_parent_hot_spring",
    "links": {
-    "is-a>memory": 0.6299999999999998
+    "is-a>memory": 0.6199999999999998
    },
    "created": 1793434115.8540626,
    "touched": 1793434115.8540628
@@ -51530,7 +51530,7 @@
    ],
    "vec": "mem_ynq_swells",
    "links": {
-    "is-a>memory": 0.6299999999999998
+    "is-a>memory": 0.6199999999999998
    },
    "created": 1793434115.8540828,
    "touched": 1793434115.8540828
@@ -51555,7 +51555,7 @@
    ],
    "vec": "mem_ynq_radios_arrive",
    "links": {
-    "is-a>memory": 0.6299999999999998
+    "is-a>memory": 0.6199999999999998
    },
    "created": 1793434115.8541036,
    "touched": 1793434115.8541036
@@ -51579,8 +51579,8 @@
    ],
    "vec": "mem_sum",
    "links": {
-    "is-a>memory": 0.6299999999999998,
-    "assoc>sum": 0.02999999999999986
+    "is-a>memory": 0.6199999999999998,
+    "assoc>sum": 0.019999999999999858
    },
    "created": 1793434115.854144,
    "touched": 1795775915.1257665
@@ -51605,8 +51605,8 @@
    ],
    "vec": "mem_eval_newton",
    "links": {
-    "is-a>memory": 0.6299999999999998,
-    "assoc>newton": 0.02999999999999986
+    "is-a>memory": 0.6199999999999998,
+    "assoc>newton": 0.019999999999999858
    },
    "created": 1793434115.8541725,
    "touched": 1795339756.0131943
@@ -51631,7 +51631,7 @@
    ],
    "vec": "mem_eval_kin",
    "links": {
-    "is-a>memory": 0.6299999999999998
+    "is-a>memory": 0.6199999999999998
    },
    "created": 1793434115.854193,
    "touched": 1794732965.097267
@@ -51655,8 +51655,8 @@
    ],
    "vec": "mem_eval_speed",
    "links": {
-    "is-a>memory": 0.6399999999999998,
-    "assoc>speed": 0.03999999999999986
+    "is-a>memory": 0.6299999999999998,
+    "assoc>speed": 0.02999999999999986
    },
    "created": 1793523228.8390236,
    "touched": 1793523228.8390238
@@ -51681,8 +51681,8 @@
    ],
    "vec": "mem_eval_sum",
    "links": {
-    "is-a>memory": 0.6399999999999998,
-    "assoc>sum": 0.03999999999999986
+    "is-a>memory": 0.6299999999999998,
+    "assoc>sum": 0.02999999999999986
    },
    "created": 1793523228.8390894,
    "touched": 1795168149.0087442
@@ -51706,8 +51706,8 @@
    ],
    "vec": "mem_eval_weight",
    "links": {
-    "is-a>memory": 0.6399999999999998,
-    "assoc>weight": 0.03999999999999986
+    "is-a>memory": 0.6299999999999998,
+    "assoc>weight": 0.02999999999999986
    },
    "created": 1793523228.839124,
    "touched": 1793523228.839124
@@ -51732,9 +51732,9 @@
    ],
    "vec": "mem_plural_cloud",
    "links": {
-    "is-a>memory": 0.6399999999999998,
-    "assoc>plural": 0.03999999999999986,
-    "assoc>cloud": 0.03999999999999986
+    "is-a>memory": 0.6299999999999998,
+    "assoc>plural": 0.02999999999999986,
+    "assoc>cloud": 0.02999999999999986
    },
    "created": 1793523228.8391566,
    "touched": 1794732965.097203
@@ -51759,7 +51759,7 @@
    ],
    "vec": "mem_eval_epower",
    "links": {
-    "is-a>memory": 0.6399999999999998
+    "is-a>memory": 0.6299999999999998
    },
    "created": 1793523228.8391893,
    "touched": 1795082373.2858644
@@ -51784,8 +51784,8 @@
    ],
    "vec": "mem_neg_teapot_plunges",
    "links": {
-    "is-a>memory": 0.6399999999999998,
-    "assoc>teapot": 0.03999999999999986
+    "is-a>memory": 0.6299999999999998,
+    "assoc>teapot": 0.02999999999999986
    },
    "created": 1793523228.8392305,
    "touched": 1793523228.8392305
@@ -51809,7 +51809,7 @@
    ],
    "vec": "mem_ynq_greedy",
    "links": {
-    "is-a>memory": 0.6399999999999998
+    "is-a>memory": 0.6299999999999998
    },
    "created": 1793523228.8392642,
    "touched": 1793523228.8392644
@@ -51833,7 +51833,7 @@
    ],
    "vec": "mem_ynq_parched",
    "links": {
-    "is-a>memory": 0.6399999999999998
+    "is-a>memory": 0.6299999999999998
    },
    "created": 1793523228.839291,
    "touched": 1793523228.8392913
@@ -51858,7 +51858,7 @@
    ],
    "vec": "mem_past_take",
    "links": {
-    "is-a>memory": 0.6499999999999998
+    "is-a>memory": 0.6399999999999998
    },
    "created": 1793610141.5153778,
    "touched": 1794995578.6312954
@@ -51884,7 +51884,7 @@
    ],
    "vec": "mem_neg_are_lonely",
    "links": {
-    "is-a>memory": 0.6499999999999998
+    "is-a>memory": 0.6399999999999998
    },
    "created": 1793610141.515468,
    "touched": 1794127411.652961
@@ -51909,7 +51909,7 @@
    ],
    "vec": "mem_past_learn",
    "links": {
-    "is-a>memory": 0.6499999999999998
+    "is-a>memory": 0.6399999999999998
    },
    "created": 1793610141.5154998,
    "touched": 1794387584.4135451
@@ -51933,8 +51933,8 @@
    ],
    "vec": "mem_parent_grasshopper",
    "links": {
-    "is-a>memory": 0.6499999999999998,
-    "assoc>grasshopper": 0.049999999999999864
+    "is-a>memory": 0.6399999999999998,
+    "assoc>grasshopper": 0.03999999999999986
    },
    "created": 1793610141.515545,
    "touched": 1793610141.515545
@@ -51958,8 +51958,8 @@
    ],
    "vec": "mem_parent_belt",
    "links": {
-    "is-a>memory": 0.6499999999999998,
-    "assoc>belt": 0.049999999999999864
+    "is-a>memory": 0.6399999999999998,
+    "assoc>belt": 0.03999999999999986
    },
    "created": 1793610141.5155818,
    "touched": 1793610141.5155818
@@ -51983,8 +51983,8 @@
    ],
    "vec": "mem_parent_aardvark",
    "links": {
-    "is-a>memory": 0.6499999999999998,
-    "assoc>aardvark": 0.049999999999999864
+    "is-a>memory": 0.6399999999999998,
+    "assoc>aardvark": 0.03999999999999986
    },
    "created": 1793610141.5156138,
    "touched": 1793610141.515614
@@ -52009,8 +52009,8 @@
    ],
    "vec": "mem_eval_pressure",
    "links": {
-    "is-a>memory": 0.6499999999999998,
-    "assoc>pressure": 0.049999999999999864
+    "is-a>memory": 0.6399999999999998,
+    "assoc>pressure": 0.03999999999999986
    },
    "created": 1793610141.515644,
    "touched": 1795168149.0087326
@@ -52034,8 +52034,8 @@
    ],
    "vec": "mem_parent_tin",
    "links": {
-    "is-a>memory": 0.6499999999999998,
-    "assoc>tin": 0.049999999999999864
+    "is-a>memory": 0.6399999999999998,
+    "assoc>tin": 0.03999999999999986
    },
    "created": 1793610141.515679,
    "touched": 1793610141.5156791
@@ -52047,11 +52047,12 @@
     "what": "past of fly",
     "outcome": "loss",
     "when_cycle": 198,
-    "salience": 4.45,
-    "count": 1,
+    "salience": 1.0,
+    "count": 2,
     "felt": "stung",
     "valence": -0.6,
-    "words": "past fly"
+    "words": "past fly",
+    "last_cycle": 201
    },
    "words": [
     "past",
@@ -52059,10 +52060,10 @@
    ],
    "vec": "mem_past_fly",
    "links": {
-    "is-a>memory": 0.98
+    "is-a>memory": 0.97
    },
    "created": 1793610141.5157082,
-   "touched": 1793610141.5157082
+   "touched": 1795859752.6190128
   },
   "mem_ynq_are_straight": {
    "id": "mem_ynq_are_straight",
@@ -52084,7 +52085,7 @@
    ],
    "vec": "mem_ynq_are_straight",
    "links": {
-    "is-a>memory": 0.6499999999999998
+    "is-a>memory": 0.6399999999999998
    },
    "created": 1793610141.515746,
    "touched": 1793610141.515746
@@ -52108,8 +52109,8 @@
    ],
    "vec": "mem_parent_evaporation",
    "links": {
-    "is-a>memory": 0.6599999999999998,
-    "assoc>evaporation": 0.059999999999999866
+    "is-a>memory": 0.6499999999999998,
+    "assoc>evaporation": 0.049999999999999864
    },
    "created": 1793697040.0030575,
    "touched": 1793697040.0030577
@@ -52133,8 +52134,8 @@
    ],
    "vec": "mem_parent_goose",
    "links": {
-    "is-a>memory": 0.6599999999999998,
-    "assoc>goose": 0.059999999999999866
+    "is-a>memory": 0.6499999999999998,
+    "assoc>goose": 0.049999999999999864
    },
    "created": 1793697040.003096,
    "touched": 1793697040.003096
@@ -52159,8 +52160,8 @@
    ],
    "vec": "mem_parent_force_type",
    "links": {
-    "is-a>memory": 0.6599999999999998,
-    "assoc>force": 0.059999999999999866
+    "is-a>memory": 0.6499999999999998,
+    "assoc>force": 0.049999999999999864
    },
    "created": 1793697040.0031316,
    "touched": 1793697040.0031316
@@ -52184,8 +52185,8 @@
    ],
    "vec": "mem_parent_snack",
    "links": {
-    "is-a>memory": 0.6599999999999998,
-    "assoc>snack": 0.059999999999999866
+    "is-a>memory": 0.6499999999999998,
+    "assoc>snack": 0.049999999999999864
    },
    "created": 1793697040.0031638,
    "touched": 1793697040.0031638
@@ -52209,8 +52210,8 @@
    ],
    "vec": "mem_parent_dictionary",
    "links": {
-    "is-a>memory": 0.6599999999999998,
-    "assoc>dictionary": 0.059999999999999866
+    "is-a>memory": 0.6499999999999998,
+    "assoc>dictionary": 0.049999999999999864
    },
    "created": 1793697040.0031962,
    "touched": 1793697040.0031962
@@ -52234,8 +52235,8 @@
    ],
    "vec": "mem_parent_chips",
    "links": {
-    "is-a>memory": 0.6599999999999998,
-    "assoc>chips": 0.059999999999999866
+    "is-a>memory": 0.6499999999999998,
+    "assoc>chips": 0.049999999999999864
    },
    "created": 1793697040.003227,
    "touched": 1793697040.003227
@@ -52259,8 +52260,8 @@
    ],
    "vec": "mem_parent_firefly",
    "links": {
-    "is-a>memory": 0.6599999999999998,
-    "assoc>firefly": 0.059999999999999866
+    "is-a>memory": 0.6499999999999998,
+    "assoc>firefly": 0.049999999999999864
    },
    "created": 1793697040.0032568,
    "touched": 1793697040.003257
@@ -52284,7 +52285,7 @@
    ],
    "vec": "mem_ynq_names",
    "links": {
-    "is-a>memory": 0.6599999999999998
+    "is-a>memory": 0.6499999999999998
    },
    "created": 1793697040.0033376,
    "touched": 1793697040.0033376
@@ -52309,9 +52310,9 @@
    ],
    "vec": "mem_plural_glass",
    "links": {
-    "is-a>memory": 0.6599999999999998,
-    "assoc>plural": 0.059999999999999866,
-    "assoc>glass": 0.059999999999999866
+    "is-a>memory": 0.6499999999999998,
+    "assoc>plural": 0.049999999999999864,
+    "assoc>glass": 0.049999999999999864
    },
    "created": 1793697040.0033677,
    "touched": 1795168149.0087001
@@ -52336,9 +52337,9 @@
    ],
    "vec": "mem_plural_bus",
    "links": {
-    "is-a>memory": 0.6599999999999998,
-    "assoc>plural": 0.059999999999999866,
-    "assoc>bus": 0.059999999999999866
+    "is-a>memory": 0.6499999999999998,
+    "assoc>plural": 0.049999999999999864,
+    "assoc>bus": 0.049999999999999864
    },
    "created": 1793697040.0033991,
    "touched": 1794910923.0190308
@@ -52363,8 +52364,8 @@
    ],
    "vec": "mem_eval_power",
    "links": {
-    "is-a>memory": 0.6699999999999998,
-    "assoc>power": 0.06999999999999987
+    "is-a>memory": 0.6599999999999998,
+    "assoc>power": 0.059999999999999866
    },
    "created": 1793782019.9600863,
    "touched": 1795339756.0132046
@@ -52388,8 +52389,8 @@
    ],
    "vec": "mem_parent_dresser",
    "links": {
-    "is-a>memory": 0.6699999999999998,
-    "assoc>dresser": 0.06999999999999987
+    "is-a>memory": 0.6599999999999998,
+    "assoc>dresser": 0.059999999999999866
    },
    "created": 1793782019.9601393,
    "touched": 1793782019.9601393
@@ -52413,8 +52414,8 @@
    ],
    "vec": "mem_parent_nigeria",
    "links": {
-    "is-a>memory": 0.6699999999999998,
-    "assoc>nigeria": 0.06999999999999987
+    "is-a>memory": 0.6599999999999998,
+    "assoc>nigeria": 0.059999999999999866
    },
    "created": 1793782019.960159,
    "touched": 1793782019.960159
@@ -52439,9 +52440,9 @@
    ],
    "vec": "mem_plural_stone",
    "links": {
-    "is-a>memory": 0.6699999999999998,
-    "assoc>plural": 0.06999999999999987,
-    "assoc>stone": 0.06999999999999987
+    "is-a>memory": 0.6599999999999998,
+    "assoc>plural": 0.059999999999999866,
+    "assoc>stone": 0.059999999999999866
    },
    "created": 1793782019.9601817,
    "touched": 1795689328.7935896
@@ -52465,7 +52466,7 @@
    ],
    "vec": "mem_past_see",
    "links": {
-    "is-a>memory": 0.6699999999999998
+    "is-a>memory": 0.6599999999999998
    },
    "created": 1793782019.9602044,
    "touched": 1793782019.9602044
@@ -52489,8 +52490,8 @@
    ],
    "vec": "mem_parent_bag",
    "links": {
-    "is-a>memory": 0.6699999999999998,
-    "assoc>bag": 0.06999999999999987
+    "is-a>memory": 0.6599999999999998,
+    "assoc>bag": 0.059999999999999866
    },
    "created": 1793782019.9602237,
    "touched": 1793782019.960224
@@ -52516,8 +52517,8 @@
    ],
    "vec": "mem_eval_area_circ",
    "links": {
-    "is-a>memory": 0.6699999999999998,
-    "assoc>area": 0.06999999999999987
+    "is-a>memory": 0.6599999999999998,
+    "assoc>area": 0.059999999999999866
    },
    "created": 1793782019.9602458,
    "touched": 1795252958.362866
@@ -52542,7 +52543,7 @@
    ],
    "vec": "mem_eval_photon",
    "links": {
-    "is-a>memory": 0.6699999999999998
+    "is-a>memory": 0.6599999999999998
    },
    "created": 1793782019.9602633,
    "touched": 1793782019.9602695
@@ -52568,8 +52569,8 @@
    ],
    "vec": "mem_eval_area_tri",
    "links": {
-    "is-a>memory": 0.6699999999999998,
-    "assoc>area": 0.06999999999999987
+    "is-a>memory": 0.6599999999999998,
+    "assoc>area": 0.059999999999999866
    },
    "created": 1793782019.960293,
    "touched": 1795168149.0087388
@@ -52594,7 +52595,7 @@
    ],
    "vec": "mem_eval_pythag",
    "links": {
-    "is-a>memory": 0.6699999999999998
+    "is-a>memory": 0.6599999999999998
    },
    "created": 1793782019.9603105,
    "touched": 1793869766.7230353
@@ -52618,7 +52619,7 @@
    ],
    "vec": "mem_eval",
    "links": {
-    "is-a>memory": 0.6699999999999998
+    "is-a>memory": 0.6599999999999998
    },
    "created": 1793782019.9603302,
    "touched": 1795604326.3731456
@@ -52642,7 +52643,7 @@
    ],
    "vec": "mem_neg_swells",
    "links": {
-    "is-a>memory": 0.6799999999999998
+    "is-a>memory": 0.6699999999999998
    },
    "created": 1793869766.7229674,
    "touched": 1793869766.7229674
@@ -52667,8 +52668,8 @@
    ],
    "vec": "mem_symbol_nickel",
    "links": {
-    "is-a>memory": 0.6799999999999998,
-    "assoc>nickel": 0.07999999999999986
+    "is-a>memory": 0.6699999999999998,
+    "assoc>nickel": 0.06999999999999987
    },
    "created": 1793869766.7230065,
    "touched": 1795429658.8697383
@@ -52693,7 +52694,7 @@
    ],
    "vec": "mem_neg_they_shade",
    "links": {
-    "is-a>memory": 0.6799999999999998
+    "is-a>memory": 0.6699999999999998
    },
    "created": 1793869766.7230546,
    "touched": 1793869766.723055
@@ -52717,8 +52718,8 @@
    ],
    "vec": "mem_parent_bird",
    "links": {
-    "is-a>memory": 0.6899999999999998,
-    "assoc>bird": 0.08999999999999986
+    "is-a>memory": 0.6799999999999998,
+    "assoc>bird": 0.07999999999999986
    },
    "created": 1793955729.834279,
    "touched": 1793955729.834279
@@ -52742,7 +52743,7 @@
    ],
    "vec": "mem_ynq_bright",
    "links": {
-    "is-a>memory": 0.6899999999999998
+    "is-a>memory": 0.6799999999999998
    },
    "created": 1793955729.834353,
    "touched": 1793955729.8343532
@@ -52767,8 +52768,8 @@
    ],
    "vec": "mem_neg_queen_sips",
    "links": {
-    "is-a>memory": 0.6899999999999998,
-    "assoc>queen": 0.08999999999999986
+    "is-a>memory": 0.6799999999999998,
+    "assoc>queen": 0.07999999999999986
    },
    "created": 1793955729.8343885,
    "touched": 1793955729.8343887
@@ -52793,7 +52794,7 @@
    ],
    "vec": "mem_ynq_are_excited",
    "links": {
-    "is-a>memory": 0.6899999999999998
+    "is-a>memory": 0.6799999999999998
    },
    "created": 1793955729.834426,
    "touched": 1793955729.834426
@@ -52817,7 +52818,7 @@
    ],
    "vec": "mem_past",
    "links": {
-    "is-a>memory": 0.8699999999999999
+    "is-a>memory": 0.8599999999999999
    },
    "created": 1793955729.8344555,
    "touched": 1795339756.0128672
@@ -52842,7 +52843,7 @@
    ],
    "vec": "mem_parent_machu_picchu",
    "links": {
-    "is-a>memory": 0.6899999999999998
+    "is-a>memory": 0.6799999999999998
    },
    "created": 1793955729.8344944,
    "touched": 1793955729.8344944
@@ -52866,8 +52867,8 @@
    ],
    "vec": "mem_parent_tailor",
    "links": {
-    "is-a>memory": 0.6899999999999998,
-    "assoc>tailor": 0.08999999999999986
+    "is-a>memory": 0.6799999999999998,
+    "assoc>tailor": 0.07999999999999986
    },
    "created": 1793955729.834525,
    "touched": 1793955729.834525
@@ -52891,8 +52892,8 @@
    ],
    "vec": "mem_parent_reindeer",
    "links": {
-    "is-a>memory": 0.6899999999999998,
-    "assoc>reindeer": 0.08999999999999986
+    "is-a>memory": 0.6799999999999998,
+    "assoc>reindeer": 0.07999999999999986
    },
    "created": 1793955729.8345566,
    "touched": 1793955729.8345566
@@ -52916,8 +52917,8 @@
    ],
    "vec": "mem_parent_accordion",
    "links": {
-    "is-a>memory": 0.6899999999999998,
-    "assoc>accordion": 0.08999999999999986
+    "is-a>memory": 0.6799999999999998,
+    "assoc>accordion": 0.07999999999999986
    },
    "created": 1793955729.8346035,
    "touched": 1793955729.8346035
@@ -52941,8 +52942,8 @@
    ],
    "vec": "mem_parent_glucose",
    "links": {
-    "is-a>memory": 0.6899999999999998,
-    "assoc>glucose": 0.08999999999999986
+    "is-a>memory": 0.6799999999999998,
+    "assoc>glucose": 0.07999999999999986
    },
    "created": 1793955729.8346343,
    "touched": 1793955729.8346345
@@ -52967,9 +52968,9 @@
    ],
    "vec": "mem_plural_cat",
    "links": {
-    "is-a>memory": 0.6999999999999998,
-    "assoc>plural": 0.09999999999999985,
-    "assoc>cat": 0.09999999999999985
+    "is-a>memory": 0.6899999999999998,
+    "assoc>plural": 0.08999999999999986,
+    "assoc>cat": 0.08999999999999986
    },
    "created": 1794040185.5696158,
    "touched": 1795522172.9756265
@@ -52994,8 +52995,8 @@
    ],
    "vec": "mem_symbol_sulfur",
    "links": {
-    "is-a>memory": 0.6999999999999998,
-    "assoc>sulfur": 0.09999999999999985
+    "is-a>memory": 0.6899999999999998,
+    "assoc>sulfur": 0.08999999999999986
    },
    "created": 1794040185.5696492,
    "touched": 1795168149.0086539
@@ -53019,7 +53020,7 @@
    ],
    "vec": "mem_eval_hooke",
    "links": {
-    "is-a>memory": 0.6999999999999998
+    "is-a>memory": 0.6899999999999998
    },
    "created": 1794040185.5696735,
    "touched": 1794040185.5696735
@@ -53044,8 +53045,8 @@
    ],
    "vec": "mem_symbol_silver",
    "links": {
-    "is-a>memory": 0.6999999999999998,
-    "assoc>silver": 0.09999999999999985
+    "is-a>memory": 0.6899999999999998,
+    "assoc>silver": 0.08999999999999986
    },
    "created": 1794040185.5696957,
    "touched": 1794820189.62156
@@ -53070,8 +53071,8 @@
    ],
    "vec": "mem_eval_momentum",
    "links": {
-    "is-a>memory": 0.6999999999999998,
-    "assoc>momentum": 0.09999999999999985
+    "is-a>memory": 0.6899999999999998,
+    "assoc>momentum": 0.08999999999999986
    },
    "created": 1794040185.5697176,
    "touched": 1795604326.3731344
@@ -53096,8 +53097,8 @@
    ],
    "vec": "mem_symbol_lead",
    "links": {
-    "is-a>memory": 0.6999999999999998,
-    "assoc>lead": 0.09999999999999985
+    "is-a>memory": 0.6899999999999998,
+    "assoc>lead": 0.08999999999999986
    },
    "created": 1794040185.569739,
    "touched": 1795168149.0087175
@@ -53121,8 +53122,8 @@
    ],
    "vec": "mem_parent_electromagnet",
    "links": {
-    "is-a>memory": 0.7099999999999999,
-    "assoc>electromagnet": 0.10999999999999985
+    "is-a>memory": 0.6999999999999998,
+    "assoc>electromagnet": 0.09999999999999985
    },
    "created": 1794127411.653018,
    "touched": 1794127411.653018
@@ -53147,7 +53148,7 @@
    ],
    "vec": "mem_neg_plates_kiss",
    "links": {
-    "is-a>memory": 0.7099999999999999
+    "is-a>memory": 0.6999999999999998
    },
    "created": 1794127411.6530561,
    "touched": 1794127411.6530561
@@ -53172,8 +53173,8 @@
    ],
    "vec": "mem_neg_chicken_trots",
    "links": {
-    "is-a>memory": 0.7099999999999999,
-    "assoc>chicken": 0.10999999999999985
+    "is-a>memory": 0.6999999999999998,
+    "assoc>chicken": 0.09999999999999985
    },
    "created": 1794127411.653091,
    "touched": 1794127411.6530914
@@ -53197,8 +53198,8 @@
    ],
    "vec": "mem_parent_reptile",
    "links": {
-    "is-a>memory": 0.7099999999999999,
-    "assoc>reptile": 0.10999999999999985
+    "is-a>memory": 0.6999999999999998,
+    "assoc>reptile": 0.09999999999999985
    },
    "created": 1794127411.6531243,
    "touched": 1794127411.6531243
@@ -53222,8 +53223,8 @@
    ],
    "vec": "mem_parent_sailboat",
    "links": {
-    "is-a>memory": 0.7099999999999999,
-    "assoc>sailboat": 0.10999999999999985
+    "is-a>memory": 0.6999999999999998,
+    "assoc>sailboat": 0.09999999999999985
    },
    "created": 1794127411.6531475,
    "touched": 1794127411.6531475
@@ -53247,8 +53248,8 @@
    ],
    "vec": "mem_parent_panda",
    "links": {
-    "is-a>memory": 0.7099999999999999,
-    "assoc>panda": 0.10999999999999985
+    "is-a>memory": 0.6999999999999998,
+    "assoc>panda": 0.09999999999999985
    },
    "created": 1794127411.6531696,
    "touched": 1794127411.6531699
@@ -53273,7 +53274,7 @@
    ],
    "vec": "mem_ynq_are_fresh",
    "links": {
-    "is-a>memory": 0.7099999999999999
+    "is-a>memory": 0.6999999999999998
    },
    "created": 1794127411.653193,
    "touched": 1794127411.653193
@@ -53297,7 +53298,7 @@
    ],
    "vec": "mem_past_come",
    "links": {
-    "is-a>memory": 0.97
+    "is-a>memory": 0.96
    },
    "created": 1794127411.6532147,
    "touched": 1794127411.6532147
@@ -53322,8 +53323,8 @@
    ],
    "vec": "mem_eval_square",
    "links": {
-    "is-a>memory": 0.7199999999999999,
-    "assoc>square": 0.11999999999999984
+    "is-a>memory": 0.7099999999999999,
+    "assoc>square": 0.10999999999999985
    },
    "created": 1794216183.513795,
    "touched": 1795339756.0131993
@@ -53348,7 +53349,7 @@
    ],
    "vec": "mem_eval_prod",
    "links": {
-    "is-a>memory": 0.7199999999999999
+    "is-a>memory": 0.7099999999999999
    },
    "created": 1794216183.5138397,
    "touched": 1795082373.2858608
@@ -53373,8 +53374,8 @@
    ],
    "vec": "mem_ynq_river_has",
    "links": {
-    "is-a>memory": 0.7199999999999999,
-    "assoc>river": 0.11999999999999984
+    "is-a>memory": 0.7099999999999999,
+    "assoc>river": 0.10999999999999985
    },
    "created": 1794216183.5138757,
    "touched": 1794216183.5138757
@@ -53398,7 +53399,7 @@
    ],
    "vec": "mem_ynq_meow",
    "links": {
-    "is-a>memory": 0.7199999999999999
+    "is-a>memory": 0.7099999999999999
    },
    "created": 1794216183.513901,
    "touched": 1794216183.513901
@@ -53423,7 +53424,7 @@
    ],
    "vec": "mem_past_look",
    "links": {
-    "is-a>memory": 0.7199999999999999
+    "is-a>memory": 0.7099999999999999
    },
    "created": 1794216183.513933,
    "touched": 1794910923.0192535
@@ -53447,7 +53448,7 @@
    ],
    "vec": "mem_ynq_rough",
    "links": {
-    "is-a>memory": 0.7199999999999999
+    "is-a>memory": 0.7099999999999999
    },
    "created": 1794216183.513955,
    "touched": 1794216183.513955
@@ -53471,7 +53472,7 @@
    ],
    "vec": "mem_ynq_open",
    "links": {
-    "is-a>memory": 0.7199999999999999
+    "is-a>memory": 0.7099999999999999
    },
    "created": 1794216183.5139759,
    "touched": 1794216183.5139759
@@ -53495,8 +53496,8 @@
    ],
    "vec": "mem_parent_salt",
    "links": {
-    "is-a>memory": 0.7199999999999999,
-    "assoc>salt": 0.11999999999999984
+    "is-a>memory": 0.7099999999999999,
+    "assoc>salt": 0.10999999999999985
    },
    "created": 1794216183.5139952,
    "touched": 1794216183.5139954
@@ -53520,8 +53521,8 @@
    ],
    "vec": "mem_parent_lemon",
    "links": {
-    "is-a>memory": 0.7299999999999999,
-    "assoc>lemon": 0.12999999999999984
+    "is-a>memory": 0.7199999999999999,
+    "assoc>lemon": 0.11999999999999984
    },
    "created": 1794302819.9799163,
    "touched": 1794302819.9799166
@@ -53545,7 +53546,7 @@
    ],
    "vec": "mem_neg_construct",
    "links": {
-    "is-a>memory": 0.7299999999999999
+    "is-a>memory": 0.7199999999999999
    },
    "created": 1794302819.9799538,
    "touched": 1794302819.9799538
@@ -53570,8 +53571,8 @@
    ],
    "vec": "mem_symbol_mercury",
    "links": {
-    "is-a>memory": 0.7299999999999999,
-    "assoc>mercury": 0.12999999999999984
+    "is-a>memory": 0.7199999999999999,
+    "assoc>mercury": 0.11999999999999984
    },
    "created": 1794302819.9799724,
    "touched": 1794820189.621498
@@ -53595,8 +53596,8 @@
    ],
    "vec": "mem_parent_whale",
    "links": {
-    "is-a>memory": 0.8499999999999999,
-    "assoc>whale": 0.4299999999999998
+    "is-a>memory": 0.8399999999999999,
+    "assoc>whale": 0.4199999999999998
    },
    "created": 1794302819.9799998,
    "touched": 1794302819.9799998
@@ -53620,8 +53621,8 @@
    ],
    "vec": "mem_parent_boots",
    "links": {
-    "is-a>memory": 0.7299999999999999,
-    "assoc>boots": 0.12999999999999984
+    "is-a>memory": 0.7199999999999999,
+    "assoc>boots": 0.11999999999999984
    },
    "created": 1794302819.9800167,
    "touched": 1794302819.9800167
@@ -53645,8 +53646,8 @@
    ],
    "vec": "mem_parent_swamp",
    "links": {
-    "is-a>memory": 0.7299999999999999,
-    "assoc>swamp": 0.12999999999999984
+    "is-a>memory": 0.7199999999999999,
+    "assoc>swamp": 0.11999999999999984
    },
    "created": 1794302819.9800334,
    "touched": 1794302819.9800334
@@ -53670,8 +53671,8 @@
    ],
    "vec": "mem_parent_mongoose",
    "links": {
-    "is-a>memory": 0.7299999999999999,
-    "assoc>mongoose": 0.12999999999999984
+    "is-a>memory": 0.7199999999999999,
+    "assoc>mongoose": 0.11999999999999984
    },
    "created": 1794302819.9800503,
    "touched": 1794302819.9800503
@@ -53695,8 +53696,8 @@
    ],
    "vec": "mem_parent_friction",
    "links": {
-    "is-a>memory": 0.7299999999999999,
-    "assoc>friction": 0.12999999999999984
+    "is-a>memory": 0.7199999999999999,
+    "assoc>friction": 0.11999999999999984
    },
    "created": 1794302819.9800675,
    "touched": 1794302819.9800675
@@ -53721,9 +53722,9 @@
    ],
    "vec": "mem_plural_bench",
    "links": {
-    "is-a>memory": 0.7299999999999999,
-    "assoc>plural": 0.12999999999999984,
-    "assoc>bench": 0.12999999999999984
+    "is-a>memory": 0.7199999999999999,
+    "assoc>plural": 0.11999999999999984,
+    "assoc>bench": 0.11999999999999984
    },
    "created": 1794302819.9800842,
    "touched": 1795168149.008712
@@ -53748,9 +53749,9 @@
    ],
    "vec": "mem_plural_dish",
    "links": {
-    "is-a>memory": 0.7299999999999999,
-    "assoc>plural": 0.12999999999999984,
-    "assoc>dish": 0.12999999999999984
+    "is-a>memory": 0.7199999999999999,
+    "assoc>plural": 0.11999999999999984,
+    "assoc>dish": 0.11999999999999984
    },
    "created": 1794302819.9801016,
    "touched": 1795689328.7939942
@@ -53774,7 +53775,7 @@
    ],
    "vec": "mem_neg_big",
    "links": {
-    "is-a>memory": 0.7399999999999999
+    "is-a>memory": 0.7299999999999999
    },
    "created": 1794387584.413461,
    "touched": 1794387584.413461
@@ -53798,8 +53799,8 @@
    ],
    "vec": "mem_parent_hill",
    "links": {
-    "is-a>memory": 0.7399999999999999,
-    "assoc>hill": 0.13999999999999985
+    "is-a>memory": 0.7299999999999999,
+    "assoc>hill": 0.12999999999999984
    },
    "created": 1794387584.413497,
    "touched": 1794387584.413497
@@ -53823,7 +53824,7 @@
    ],
    "vec": "mem_ynq_early",
    "links": {
-    "is-a>memory": 0.7399999999999999
+    "is-a>memory": 0.7299999999999999
    },
    "created": 1794387584.413533,
    "touched": 1794387584.413533
@@ -53847,7 +53848,7 @@
    ],
    "vec": "mem_ynq_brilliant",
    "links": {
-    "is-a>memory": 0.7399999999999999
+    "is-a>memory": 0.7299999999999999
    },
    "created": 1794387584.4135768,
    "touched": 1794387584.4135768
@@ -53871,8 +53872,8 @@
    ],
    "vec": "mem_parent_duck",
    "links": {
-    "is-a>memory": 0.7399999999999999,
-    "assoc>duck": 0.13999999999999985
+    "is-a>memory": 0.7299999999999999,
+    "assoc>duck": 0.12999999999999984
    },
    "created": 1794387584.413607,
    "touched": 1794387584.413607
@@ -53896,8 +53897,8 @@
    ],
    "vec": "mem_parent_dancer",
    "links": {
-    "is-a>memory": 0.7399999999999999,
-    "assoc>dancer": 0.13999999999999985
+    "is-a>memory": 0.7299999999999999,
+    "assoc>dancer": 0.12999999999999984
    },
    "created": 1794387584.413638,
    "touched": 1794387584.4136384
@@ -53922,8 +53923,8 @@
    ],
    "vec": "mem_parent_indian_ocean",
    "links": {
-    "is-a>memory": 0.7399999999999999,
-    "assoc>ocean": 0.13999999999999985
+    "is-a>memory": 0.7299999999999999,
+    "assoc>ocean": 0.12999999999999984
    },
    "created": 1794387584.41367,
    "touched": 1794387584.4136703
@@ -53948,7 +53949,7 @@
    ],
    "vec": "mem_parent_picture_frame",
    "links": {
-    "is-a>memory": 0.7399999999999999
+    "is-a>memory": 0.7299999999999999
    },
    "created": 1794387584.4137025,
    "touched": 1794387584.4137025
@@ -53972,8 +53973,8 @@
    ],
    "vec": "mem_parent_basketball",
    "links": {
-    "is-a>memory": 0.7399999999999999,
-    "assoc>basketball": 0.13999999999999985
+    "is-a>memory": 0.7299999999999999,
+    "assoc>basketball": 0.12999999999999984
    },
    "created": 1794387584.4137323,
    "touched": 1794387584.4137325
@@ -53997,8 +53998,8 @@
    ],
    "vec": "mem_parent_dam",
    "links": {
-    "is-a>memory": 0.7399999999999999,
-    "assoc>dam": 0.13999999999999985
+    "is-a>memory": 0.7299999999999999,
+    "assoc>dam": 0.12999999999999984
    },
    "created": 1794387584.4137628,
    "touched": 1794387584.413763
@@ -54022,7 +54023,7 @@
    ],
    "vec": "mem_eval_einstein",
    "links": {
-    "is-a>memory": 0.7399999999999999
+    "is-a>memory": 0.7299999999999999
    },
    "created": 1794387584.413817,
    "touched": 1794387584.4138172
@@ -54046,8 +54047,8 @@
    ],
    "vec": "mem_parent_blood",
    "links": {
-    "is-a>memory": 0.7499999999999999,
-    "assoc>blood": 0.14999999999999986
+    "is-a>memory": 0.7399999999999999,
+    "assoc>blood": 0.13999999999999985
    },
    "created": 1794475698.9995656,
    "touched": 1794475698.9995656
@@ -54071,7 +54072,7 @@
    ],
    "vec": "mem_neg_sail",
    "links": {
-    "is-a>memory": 0.7499999999999999
+    "is-a>memory": 0.7399999999999999
    },
    "created": 1794475698.9996772,
    "touched": 1794475698.9996774
@@ -54096,8 +54097,8 @@
    ],
    "vec": "mem_symbol_zinc",
    "links": {
-    "is-a>memory": 0.7499999999999999,
-    "assoc>zinc": 0.14999999999999986
+    "is-a>memory": 0.7399999999999999,
+    "assoc>zinc": 0.13999999999999985
    },
    "created": 1794475698.9997053,
    "touched": 1794645844.9543023
@@ -54122,7 +54123,7 @@
    ],
    "vec": "mem_ynq_are_cruel",
    "links": {
-    "is-a>memory": 0.7499999999999999
+    "is-a>memory": 0.7399999999999999
    },
    "created": 1794475698.9997299,
    "touched": 1794475698.99973
@@ -54146,8 +54147,8 @@
    ],
    "vec": "mem_symbol_aluminium",
    "links": {
-    "is-a>memory": 0.7499999999999999,
-    "assoc>aluminium": 0.14999999999999986
+    "is-a>memory": 0.7399999999999999,
+    "assoc>aluminium": 0.13999999999999985
    },
    "created": 1794475698.999752,
    "touched": 1794475698.9997523
@@ -54171,8 +54172,8 @@
    ],
    "vec": "mem_symbol_titanium",
    "links": {
-    "is-a>memory": 0.7499999999999999,
-    "assoc>titanium": 0.14999999999999986
+    "is-a>memory": 0.7399999999999999,
+    "assoc>titanium": 0.13999999999999985
    },
    "created": 1794475698.999774,
    "touched": 1794475698.999774
@@ -54184,11 +54185,12 @@
     "what": "plural of book",
     "outcome": "win",
     "when_cycle": 185,
-    "salience": 2.94,
-    "count": 1,
+    "salience": 1.0,
+    "count": 2,
     "felt": "proud",
     "valence": 0.6,
-    "words": "plural book"
+    "words": "plural book",
+    "last_cycle": 201
    },
    "words": [
     "plural",
@@ -54196,12 +54198,12 @@
    ],
    "vec": "mem_plural_book",
    "links": {
-    "is-a>memory": 0.7499999999999999,
-    "assoc>plural": 0.14999999999999986,
-    "assoc>book": 0.14999999999999986
+    "is-a>memory": 0.7399999999999999,
+    "assoc>plural": 0.13999999999999985,
+    "assoc>book": 0.13999999999999985
    },
    "created": 1794475698.999796,
-   "touched": 1794475698.999796
+   "touched": 1795859752.6190832
   },
   "mem_neg_bolt": {
    "id": "mem_neg_bolt",
@@ -54222,7 +54224,7 @@
    ],
    "vec": "mem_neg_bolt",
    "links": {
-    "is-a>memory": 0.7499999999999999
+    "is-a>memory": 0.7399999999999999
    },
    "created": 1794475698.9998186,
    "touched": 1794475698.9998188
@@ -54247,8 +54249,8 @@
    ],
    "vec": "mem_ynq_goat_goes",
    "links": {
-    "is-a>memory": 0.7499999999999999,
-    "assoc>goat": 0.14999999999999986
+    "is-a>memory": 0.7399999999999999,
+    "assoc>goat": 0.13999999999999985
    },
    "created": 1794475698.9998503,
    "touched": 1794475698.9998505
@@ -54272,7 +54274,7 @@
    ],
    "vec": "mem_ynq_repeats",
    "links": {
-    "is-a>memory": 0.7499999999999999
+    "is-a>memory": 0.7399999999999999
    },
    "created": 1794475698.9998736,
    "touched": 1794475698.9998736
@@ -54296,7 +54298,7 @@
    ],
    "vec": "mem_eval_accel",
    "links": {
-    "is-a>memory": 0.7499999999999999
+    "is-a>memory": 0.7399999999999999
    },
    "created": 1794475698.9999127,
    "touched": 1794475698.9999127
@@ -54321,7 +54323,7 @@
    ],
    "vec": "mem_neg_threads_grind",
    "links": {
-    "is-a>memory": 0.7599999999999999
+    "is-a>memory": 0.7499999999999999
    },
    "created": 1794561311.7454045,
    "touched": 1794561311.7454045
@@ -54346,7 +54348,7 @@
    ],
    "vec": "mem_neg_are_hot",
    "links": {
-    "is-a>memory": 0.7599999999999999
+    "is-a>memory": 0.7499999999999999
    },
    "created": 1794561311.745463,
    "touched": 1794561311.7454631
@@ -54370,8 +54372,8 @@
    ],
    "vec": "mem_parent_novel",
    "links": {
-    "is-a>memory": 0.7599999999999999,
-    "assoc>novel": 0.15999999999999986
+    "is-a>memory": 0.7499999999999999,
+    "assoc>novel": 0.14999999999999986
    },
    "created": 1794561311.7454884,
    "touched": 1794561311.7454884
@@ -54395,8 +54397,8 @@
    ],
    "vec": "mem_parent_bigfoot",
    "links": {
-    "is-a>memory": 0.7599999999999999,
-    "assoc>bigfoot": 0.15999999999999986
+    "is-a>memory": 0.7499999999999999,
+    "assoc>bigfoot": 0.14999999999999986
    },
    "created": 1794561311.745514,
    "touched": 1794561311.7455142
@@ -54420,8 +54422,8 @@
    ],
    "vec": "mem_parent_lagomorph",
    "links": {
-    "is-a>memory": 0.7599999999999999,
-    "assoc>lagomorph": 0.15999999999999986
+    "is-a>memory": 0.7499999999999999,
+    "assoc>lagomorph": 0.14999999999999986
    },
    "created": 1794561311.7455385,
    "touched": 1794561311.7455385
@@ -54445,8 +54447,8 @@
    ],
    "vec": "mem_parent_yeti",
    "links": {
-    "is-a>memory": 0.7599999999999999,
-    "assoc>yeti": 0.15999999999999986
+    "is-a>memory": 0.7499999999999999,
+    "assoc>yeti": 0.14999999999999986
    },
    "created": 1794561311.7455614,
    "touched": 1794561311.7455614
@@ -54470,8 +54472,8 @@
    ],
    "vec": "mem_parent_albatross",
    "links": {
-    "is-a>memory": 0.7599999999999999,
-    "assoc>albatross": 0.15999999999999986
+    "is-a>memory": 0.7499999999999999,
+    "assoc>albatross": 0.14999999999999986
    },
    "created": 1794561311.7455838,
    "touched": 1794561311.745584
@@ -54496,8 +54498,8 @@
    ],
    "vec": "mem_eval_vol_box",
    "links": {
-    "is-a>memory": 0.7599999999999999,
-    "assoc>box": 0.15999999999999986
+    "is-a>memory": 0.7499999999999999,
+    "assoc>box": 0.14999999999999986
    },
    "created": 1794561311.7456076,
    "touched": 1794561311.7456076
@@ -54522,8 +54524,8 @@
    ],
    "vec": "mem_parent_living_room",
    "links": {
-    "is-a>memory": 0.7699999999999999,
-    "assoc>living": 0.16999999999999987
+    "is-a>memory": 0.7599999999999999,
+    "assoc>living": 0.15999999999999986
    },
    "created": 1794645844.9542413,
    "touched": 1794645844.9542415
@@ -54548,7 +54550,7 @@
    ],
    "vec": "mem_ynq_star_offers",
    "links": {
-    "is-a>memory": 0.7699999999999999
+    "is-a>memory": 0.7599999999999999
    },
    "created": 1794645844.9542818,
    "touched": 1794645844.954282
@@ -54573,7 +54575,7 @@
    ],
    "vec": "mem_ynq_they_lift",
    "links": {
-    "is-a>memory": 0.7699999999999999
+    "is-a>memory": 0.7599999999999999
    },
    "created": 1794645844.9543407,
    "touched": 1794645844.9543407
@@ -54597,8 +54599,8 @@
    ],
    "vec": "mem_parent_elapid",
    "links": {
-    "is-a>memory": 0.7699999999999999,
-    "assoc>elapid": 0.16999999999999987
+    "is-a>memory": 0.7599999999999999,
+    "assoc>elapid": 0.15999999999999986
    },
    "created": 1794645844.9543707,
    "touched": 1794645844.9543707
@@ -54622,8 +54624,8 @@
    ],
    "vec": "mem_parent_solid",
    "links": {
-    "is-a>memory": 0.7699999999999999,
-    "assoc>solid": 0.16999999999999987
+    "is-a>memory": 0.7599999999999999,
+    "assoc>solid": 0.15999999999999986
    },
    "created": 1794645844.9544022,
    "touched": 1794645844.9544022
@@ -54647,8 +54649,8 @@
    ],
    "vec": "mem_eval_work",
    "links": {
-    "is-a>memory": 0.7699999999999999,
-    "assoc>work": 0.16999999999999987
+    "is-a>memory": 0.7599999999999999,
+    "assoc>work": 0.15999999999999986
    },
    "created": 1794645844.954443,
    "touched": 1794645844.9544432
@@ -54673,8 +54675,8 @@
    ],
    "vec": "mem_eval_density",
    "links": {
-    "is-a>memory": 0.7699999999999999,
-    "assoc>density": 0.16999999999999987
+    "is-a>memory": 0.7599999999999999,
+    "assoc>density": 0.15999999999999986
    },
    "created": 1794645844.9544725,
    "touched": 1795604326.373142
@@ -54686,11 +54688,12 @@
     "what": "carbon + oxygen -> ?",
     "outcome": "win",
     "when_cycle": 187,
-    "salience": 1.62,
-    "count": 1,
+    "salience": 1.0,
+    "count": 2,
     "felt": "proud",
     "valence": 0.6,
-    "words": "carbon oxygen"
+    "words": "carbon oxygen",
+    "last_cycle": 201
    },
    "words": [
     "carbon",
@@ -54698,12 +54701,12 @@
    ],
    "vec": "mem_carbon_oxygen",
    "links": {
-    "is-a>memory": 0.7699999999999999,
-    "assoc>carbon": 0.16999999999999987,
-    "assoc>oxygen": 0.16999999999999987
+    "is-a>memory": 0.7599999999999999,
+    "assoc>carbon": 0.15999999999999986,
+    "assoc>oxygen": 0.15999999999999986
    },
    "created": 1794645844.9545023,
-   "touched": 1794645844.9545023
+   "touched": 1795859752.6193366
   },
   "mem_past_wait": {
    "id": "mem_past_wait",
@@ -54724,7 +54727,7 @@
    ],
    "vec": "mem_past_wait",
    "links": {
-    "is-a>memory": 0.7699999999999999
+    "is-a>memory": 0.7599999999999999
    },
    "created": 1794645844.9545326,
    "touched": 1794645844.9545326
@@ -54749,7 +54752,7 @@
    ],
    "vec": "mem_past_start",
    "links": {
-    "is-a>memory": 0.7699999999999999
+    "is-a>memory": 0.7599999999999999
    },
    "created": 1794645844.954566,
    "touched": 1795339756.013219
@@ -54773,7 +54776,7 @@
    ],
    "vec": "mem_past_get",
    "links": {
-    "is-a>memory": 0.7799999999999999
+    "is-a>memory": 0.7699999999999999
    },
    "created": 1794732965.0970514,
    "touched": 1794732965.0970514
@@ -54798,8 +54801,8 @@
    ],
    "vec": "mem_parent_pipefish",
    "links": {
-    "is-a>memory": 0.7799999999999999,
-    "assoc>pipefish": 0.17999999999999988
+    "is-a>memory": 0.7699999999999999,
+    "assoc>pipefish": 0.16999999999999987
    },
    "created": 1794732965.097081,
    "touched": 1795604326.3731766
@@ -54823,8 +54826,8 @@
    ],
    "vec": "mem_parent_rocket",
    "links": {
-    "is-a>memory": 0.7799999999999999,
-    "assoc>rocket": 0.17999999999999988
+    "is-a>memory": 0.7699999999999999,
+    "assoc>rocket": 0.16999999999999987
    },
    "created": 1794732965.0971081,
    "touched": 1794732965.0971081
@@ -54848,8 +54851,8 @@
    ],
    "vec": "mem_parent_candy",
    "links": {
-    "is-a>memory": 0.7799999999999999,
-    "assoc>candy": 0.17999999999999988
+    "is-a>memory": 0.7699999999999999,
+    "assoc>candy": 0.16999999999999987
    },
    "created": 1794732965.0971274,
    "touched": 1794732965.0971274
@@ -54873,8 +54876,8 @@
    ],
    "vec": "mem_parent_butterfly",
    "links": {
-    "is-a>memory": 0.7799999999999999,
-    "assoc>butterfly": 0.17999999999999988
+    "is-a>memory": 0.7699999999999999,
+    "assoc>butterfly": 0.16999999999999987
    },
    "created": 1794732965.0971448,
    "touched": 1794732965.097145
@@ -54898,8 +54901,8 @@
    ],
    "vec": "mem_parent_melting",
    "links": {
-    "is-a>memory": 0.7799999999999999,
-    "assoc>melting": 0.17999999999999988
+    "is-a>memory": 0.7699999999999999,
+    "assoc>melting": 0.16999999999999987
    },
    "created": 1794732965.097162,
    "touched": 1794732965.097162
@@ -54923,8 +54926,8 @@
    ],
    "vec": "mem_parent_wall",
    "links": {
-    "is-a>memory": 0.7799999999999999,
-    "assoc>wall": 0.17999999999999988
+    "is-a>memory": 0.7699999999999999,
+    "assoc>wall": 0.16999999999999987
    },
    "created": 1794732965.0971782,
    "touched": 1794732965.0971782
@@ -54948,7 +54951,7 @@
    ],
    "vec": "mem_past_know",
    "links": {
-    "is-a>memory": 0.7799999999999999
+    "is-a>memory": 0.7699999999999999
    },
    "created": 1794732965.097194,
    "touched": 1794732965.097194
@@ -54972,8 +54975,8 @@
    ],
    "vec": "mem_past_watch",
    "links": {
-    "is-a>memory": 0.7799999999999999,
-    "assoc>watch": 0.17999999999999988
+    "is-a>memory": 0.7699999999999999,
+    "assoc>watch": 0.16999999999999987
    },
    "created": 1794732965.0972157,
    "touched": 1794732965.0972157
@@ -54997,7 +55000,7 @@
    ],
    "vec": "mem_eval_grav",
    "links": {
-    "is-a>memory": 0.7799999999999999
+    "is-a>memory": 0.7699999999999999
    },
    "created": 1794732965.097243,
    "touched": 1794732965.097243
@@ -55022,7 +55025,7 @@
    ],
    "vec": "mem_eval_circum",
    "links": {
-    "is-a>memory": 0.7799999999999999
+    "is-a>memory": 0.7699999999999999
    },
    "created": 1794732965.097262,
    "touched": 1795604326.373045
@@ -55046,8 +55049,8 @@
    ],
    "vec": "mem_neg_sleep",
    "links": {
-    "is-a>memory": 0.7899999999999999,
-    "assoc>sleep": 0.1899999999999999
+    "is-a>memory": 0.7799999999999999,
+    "assoc>sleep": 0.17999999999999988
    },
    "created": 1794820189.6214793,
    "touched": 1794820189.6214795
@@ -55071,7 +55074,7 @@
    ],
    "vec": "mem_past_think",
    "links": {
-    "is-a>memory": 0.7899999999999999
+    "is-a>memory": 0.7799999999999999
    },
    "created": 1794820189.6215193,
    "touched": 1794820189.6215196
@@ -55095,7 +55098,7 @@
    ],
    "vec": "mem_past_eat",
    "links": {
-    "is-a>memory": 0.7899999999999999
+    "is-a>memory": 0.7799999999999999
    },
    "created": 1794820189.6215506,
    "touched": 1794820189.6215506
@@ -55119,8 +55122,8 @@
    ],
    "vec": "mem_symbol_oxygen",
    "links": {
-    "is-a>memory": 0.7899999999999999,
-    "assoc>oxygen": 0.1899999999999999
+    "is-a>memory": 0.7799999999999999,
+    "assoc>oxygen": 0.17999999999999988
    },
    "created": 1794820189.621579,
    "touched": 1794820189.6215792
@@ -55145,7 +55148,7 @@
    ],
    "vec": "mem_neg_she_glows",
    "links": {
-    "is-a>memory": 0.7899999999999999
+    "is-a>memory": 0.7799999999999999
    },
    "created": 1794820189.6216063,
    "touched": 1794820189.6216063
@@ -55170,7 +55173,7 @@
    ],
    "vec": "mem_neg_keyboards_design",
    "links": {
-    "is-a>memory": 0.7899999999999999
+    "is-a>memory": 0.7799999999999999
    },
    "created": 1794820189.6216342,
    "touched": 1794820189.6216345
@@ -55194,7 +55197,7 @@
    ],
    "vec": "mem_ynq_bolt",
    "links": {
-    "is-a>memory": 0.7899999999999999
+    "is-a>memory": 0.7799999999999999
    },
    "created": 1794820189.6216636,
    "touched": 1794820189.6216636
@@ -55218,7 +55221,7 @@
    ],
    "vec": "mem_ynq_build",
    "links": {
-    "is-a>memory": 0.7899999999999999
+    "is-a>memory": 0.7799999999999999
    },
    "created": 1794820189.6216867,
    "touched": 1794820189.6216867
@@ -55242,8 +55245,8 @@
    ],
    "vec": "mem_parent_forehead",
    "links": {
-    "is-a>memory": 0.7999999999999999,
-    "assoc>forehead": 0.1999999999999999
+    "is-a>memory": 0.7899999999999999,
+    "assoc>forehead": 0.1899999999999999
    },
    "created": 1794910923.0190616,
    "touched": 1794910923.0190616
@@ -55267,8 +55270,8 @@
    ],
    "vec": "mem_parent_sardine",
    "links": {
-    "is-a>memory": 0.7999999999999999,
-    "assoc>sardine": 0.1999999999999999
+    "is-a>memory": 0.7899999999999999,
+    "assoc>sardine": 0.1899999999999999
    },
    "created": 1794910923.0191123,
    "touched": 1794910923.0191123
@@ -55292,8 +55295,8 @@
    ],
    "vec": "mem_parent_vertebrate",
    "links": {
-    "is-a>memory": 0.7999999999999999,
-    "assoc>vertebrate": 0.1999999999999999
+    "is-a>memory": 0.7899999999999999,
+    "assoc>vertebrate": 0.1899999999999999
    },
    "created": 1794910923.0191457,
    "touched": 1794910923.0191457
@@ -55317,8 +55320,8 @@
    ],
    "vec": "mem_parent_diamond",
    "links": {
-    "is-a>memory": 0.7999999999999999,
-    "assoc>diamond": 0.1999999999999999
+    "is-a>memory": 0.7899999999999999,
+    "assoc>diamond": 0.1899999999999999
    },
    "created": 1794910923.019177,
    "touched": 1794910923.019177
@@ -55342,8 +55345,8 @@
    ],
    "vec": "mem_parent_piano",
    "links": {
-    "is-a>memory": 0.7999999999999999,
-    "assoc>piano": 0.1999999999999999
+    "is-a>memory": 0.7899999999999999,
+    "assoc>piano": 0.1899999999999999
    },
    "created": 1794910923.0192077,
    "touched": 1794910923.0192077
@@ -55355,11 +55358,12 @@
     "what": "past of open",
     "outcome": "win",
     "when_cycle": 190,
-    "salience": 2.7,
-    "count": 1,
+    "salience": 1.0,
+    "count": 2,
     "felt": "proud",
     "valence": 0.6,
-    "words": "past open"
+    "words": "past open",
+    "last_cycle": 201
    },
    "words": [
     "past",
@@ -55367,10 +55371,10 @@
    ],
    "vec": "mem_past_open",
    "links": {
-    "is-a>memory": 0.7999999999999999
+    "is-a>memory": 0.7899999999999999
    },
    "created": 1794910923.0192425,
-   "touched": 1794910923.0192425
+   "touched": 1795859752.6193426
   },
   "mem_eval_period": {
    "id": "mem_eval_period",
@@ -55392,7 +55396,7 @@
    ],
    "vec": "mem_eval_period",
    "links": {
-    "is-a>memory": 0.7999999999999999
+    "is-a>memory": 0.7899999999999999
    },
    "created": 1794910923.0192811,
    "touched": 1795604326.3731382
@@ -55416,7 +55420,7 @@
    ],
    "vec": "mem_past_buy",
    "links": {
-    "is-a>memory": 0.8099999999999999
+    "is-a>memory": 0.7999999999999999
    },
    "created": 1794995578.63135,
    "touched": 1794995578.63135
@@ -55441,7 +55445,7 @@
    ],
    "vec": "mem_ynq_she_cracks",
    "links": {
-    "is-a>memory": 0.8099999999999999
+    "is-a>memory": 0.7999999999999999
    },
    "created": 1794995578.6313763,
    "touched": 1794995578.6313763
@@ -55465,8 +55469,8 @@
    ],
    "vec": "mem_symbol_nitrogen",
    "links": {
-    "is-a>memory": 0.8099999999999999,
-    "assoc>nitrogen": 0.2099999999999999
+    "is-a>memory": 0.7999999999999999,
+    "assoc>nitrogen": 0.1999999999999999
    },
    "created": 1794995578.6313992,
    "touched": 1794995578.6313994
@@ -55490,8 +55494,8 @@
    ],
    "vec": "mem_symbol_potassium",
    "links": {
-    "is-a>memory": 0.8099999999999999,
-    "assoc>potassium": 0.2099999999999999
+    "is-a>memory": 0.7999999999999999,
+    "assoc>potassium": 0.1999999999999999
    },
    "created": 1794995578.6314235,
    "touched": 1794995578.6314235
@@ -55515,7 +55519,7 @@
    ],
    "vec": "mem_past_help",
    "links": {
-    "is-a>memory": 0.8099999999999999
+    "is-a>memory": 0.7999999999999999
    },
    "created": 1794995578.6314754,
    "touched": 1794995578.6314754
@@ -55539,8 +55543,8 @@
    ],
    "vec": "mem_parent_squid",
    "links": {
-    "is-a>memory": 0.82,
-    "assoc>squid": 0.21999999999999992
+    "is-a>memory": 0.8099999999999999,
+    "assoc>squid": 0.2099999999999999
    },
    "created": 1795082373.2856908,
    "touched": 1795082373.2856908
@@ -55565,7 +55569,7 @@
    ],
    "vec": "mem_neg_she_quick",
    "links": {
-    "is-a>memory": 0.82
+    "is-a>memory": 0.8099999999999999
    },
    "created": 1795082373.2857273,
    "touched": 1795082373.2857275
@@ -55589,8 +55593,8 @@
    ],
    "vec": "mem_parent_anchovy",
    "links": {
-    "is-a>memory": 0.82,
-    "assoc>anchovy": 0.21999999999999992
+    "is-a>memory": 0.8099999999999999,
+    "assoc>anchovy": 0.2099999999999999
    },
    "created": 1795082373.2857952,
    "touched": 1795082373.2857957
@@ -55614,8 +55618,8 @@
    ],
    "vec": "mem_parent_songbird",
    "links": {
-    "is-a>memory": 0.82,
-    "assoc>songbird": 0.21999999999999992
+    "is-a>memory": 0.8099999999999999,
+    "assoc>songbird": 0.2099999999999999
    },
    "created": 1795082373.285819,
    "touched": 1795082373.285819
@@ -55640,7 +55644,7 @@
    ],
    "vec": "mem_neg_she_twists",
    "links": {
-    "is-a>memory": 0.82
+    "is-a>memory": 0.8099999999999999
    },
    "created": 1795082373.2858458,
    "touched": 1795082373.2858458
@@ -55665,7 +55669,7 @@
    ],
    "vec": "mem_eval_quot",
    "links": {
-    "is-a>memory": 0.82
+    "is-a>memory": 0.8099999999999999
    },
    "created": 1795082373.2858813,
    "touched": 1795339756.013214
@@ -55689,7 +55693,7 @@
    ],
    "vec": "mem_past_make",
    "links": {
-    "is-a>memory": 0.83
+    "is-a>memory": 0.82
    },
    "created": 1795168149.0086381,
    "touched": 1795168149.0086381
@@ -55713,7 +55717,7 @@
    ],
    "vec": "mem_ynq_paste",
    "links": {
-    "is-a>memory": 0.83
+    "is-a>memory": 0.82
    },
    "created": 1795168149.0086865,
    "touched": 1795168149.0086868
@@ -55738,9 +55742,9 @@
    ],
    "vec": "mem_plural_idea",
    "links": {
-    "is-a>memory": 0.83,
-    "assoc>plural": 0.22999999999999993,
-    "assoc>idea": 0.22999999999999993
+    "is-a>memory": 0.82,
+    "assoc>plural": 0.21999999999999992,
+    "assoc>idea": 0.21999999999999992
    },
    "created": 1795168149.0087862,
    "touched": 1795429658.869585
@@ -55765,7 +55769,7 @@
    ],
    "vec": "mem_neg_they_jog",
    "links": {
-    "is-a>memory": 0.83
+    "is-a>memory": 0.82
    },
    "created": 1795168149.008822,
    "touched": 1795168149.008822
@@ -55790,7 +55794,7 @@
    ],
    "vec": "mem_neg_chickens_roll",
    "links": {
-    "is-a>memory": 0.83
+    "is-a>memory": 0.82
    },
    "created": 1795168149.008855,
    "touched": 1795168149.008855
@@ -55814,8 +55818,8 @@
    ],
    "vec": "mem_parent_skin",
    "links": {
-    "is-a>memory": 0.84,
-    "assoc>skin": 0.23999999999999994
+    "is-a>memory": 0.83,
+    "assoc>skin": 0.22999999999999993
    },
    "created": 1795252958.3625877,
    "touched": 1795252958.3625877
@@ -55839,7 +55843,7 @@
    ],
    "vec": "mem_neg_lonely",
    "links": {
-    "is-a>memory": 0.84
+    "is-a>memory": 0.83
    },
    "created": 1795252958.3626537,
    "touched": 1795252958.3626537
@@ -55863,8 +55867,8 @@
    ],
    "vec": "mem_parent_rodent",
    "links": {
-    "is-a>memory": 0.84,
-    "assoc>rodent": 0.23999999999999994
+    "is-a>memory": 0.83,
+    "assoc>rodent": 0.22999999999999993
    },
    "created": 1795252958.3627024,
    "touched": 1795252958.3627024
@@ -55888,8 +55892,8 @@
    ],
    "vec": "mem_parent_pudding",
    "links": {
-    "is-a>memory": 0.84,
-    "assoc>pudding": 0.23999999999999994
+    "is-a>memory": 0.83,
+    "assoc>pudding": 0.22999999999999993
    },
    "created": 1795252958.3627262,
    "touched": 1795252958.3627262
@@ -55913,8 +55917,8 @@
    ],
    "vec": "mem_parent_transformer",
    "links": {
-    "is-a>memory": 0.84,
-    "assoc>transformer": 0.23999999999999994
+    "is-a>memory": 0.83,
+    "assoc>transformer": 0.22999999999999993
    },
    "created": 1795252958.3627498,
    "touched": 1795252958.3627498
@@ -55938,8 +55942,8 @@
    ],
    "vec": "mem_parent_kilimanjaro",
    "links": {
-    "is-a>memory": 0.84,
-    "assoc>kilimanjaro": 0.23999999999999994
+    "is-a>memory": 0.83,
+    "assoc>kilimanjaro": 0.22999999999999993
    },
    "created": 1795252958.362772,
    "touched": 1795252958.362772
@@ -55963,8 +55967,8 @@
    ],
    "vec": "mem_parent_tomato",
    "links": {
-    "is-a>memory": 0.84,
-    "assoc>tomato": 0.23999999999999994
+    "is-a>memory": 0.83,
+    "assoc>tomato": 0.22999999999999993
    },
    "created": 1795252958.3627934,
    "touched": 1795252958.3627934
@@ -55988,8 +55992,8 @@
    ],
    "vec": "mem_parent_socks",
    "links": {
-    "is-a>memory": 0.84,
-    "assoc>socks": 0.23999999999999994
+    "is-a>memory": 0.83,
+    "assoc>socks": 0.22999999999999993
    },
    "created": 1795252958.3628144,
    "touched": 1795252958.3628144
@@ -56013,8 +56017,8 @@
    ],
    "vec": "mem_eval_ohm",
    "links": {
-    "is-a>memory": 0.84,
-    "assoc>ohm": 0.23999999999999994
+    "is-a>memory": 0.83,
+    "assoc>ohm": 0.22999999999999993
    },
    "created": 1795252958.362853,
    "touched": 1795252958.3628533
@@ -56038,7 +56042,7 @@
    ],
    "vec": "mem_neg_fix",
    "links": {
-    "is-a>memory": 0.85
+    "is-a>memory": 0.84
    },
    "created": 1795339756.0129771,
    "touched": 1795339756.0129774
@@ -56063,7 +56067,7 @@
    ],
    "vec": "mem_ynq_they_praise",
    "links": {
-    "is-a>memory": 0.85
+    "is-a>memory": 0.84
    },
    "created": 1795339756.013015,
    "touched": 1795339756.0130153
@@ -56087,8 +56091,8 @@
    ],
    "vec": "mem_symbol_fluorine",
    "links": {
-    "is-a>memory": 0.85,
-    "assoc>fluorine": 0.24999999999999994
+    "is-a>memory": 0.84,
+    "assoc>fluorine": 0.23999999999999994
    },
    "created": 1795339756.0130482,
    "touched": 1795339756.0130482
@@ -56112,7 +56116,7 @@
    ],
    "vec": "mem_neg_edit",
    "links": {
-    "is-a>memory": 0.85
+    "is-a>memory": 0.84
    },
    "created": 1795339756.0130942,
    "touched": 1795339756.0130942
@@ -56136,7 +56140,7 @@
    ],
    "vec": "mem_neg_evaporate",
    "links": {
-    "is-a>memory": 0.85
+    "is-a>memory": 0.84
    },
    "created": 1795339756.0131269,
    "touched": 1795339756.0131269
@@ -56161,8 +56165,8 @@
    ],
    "vec": "mem_symbol_hydrogen",
    "links": {
-    "is-a>memory": 0.85,
-    "assoc>hydrogen": 0.24999999999999994
+    "is-a>memory": 0.84,
+    "assoc>hydrogen": 0.23999999999999994
    },
    "created": 1795339756.0131567,
    "touched": 1795522172.9757059
@@ -56186,8 +56190,8 @@
    ],
    "vec": "mem_parent_erinaceid",
    "links": {
-    "is-a>memory": 0.86,
-    "assoc>erinaceid": 0.25999999999999995
+    "is-a>memory": 0.85,
+    "assoc>erinaceid": 0.24999999999999994
    },
    "created": 1795429658.869567,
    "touched": 1795429658.8695672
@@ -56199,11 +56203,12 @@
     "what": "past of like",
     "outcome": "win",
     "when_cycle": 196,
-    "salience": 3.42,
-    "count": 1,
+    "salience": 1.0,
+    "count": 2,
     "felt": "proud",
     "valence": 0.6,
-    "words": "past like"
+    "words": "past like",
+    "last_cycle": 201
    },
    "words": [
     "past",
@@ -56211,10 +56216,10 @@
    ],
    "vec": "mem_past_like",
    "links": {
-    "is-a>memory": 0.86
+    "is-a>memory": 0.85
    },
    "created": 1795429658.8696036,
-   "touched": 1795429658.8696039
+   "touched": 1795859752.619077
   },
   "mem_ynq_eager": {
    "id": "mem_ynq_eager",
@@ -56235,7 +56240,7 @@
    ],
    "vec": "mem_ynq_eager",
    "links": {
-    "is-a>memory": 0.86
+    "is-a>memory": 0.85
    },
    "created": 1795429658.8696322,
    "touched": 1795429658.8696325
@@ -56259,8 +56264,8 @@
    ],
    "vec": "mem_parent_electron",
    "links": {
-    "is-a>memory": 0.86,
-    "assoc>electron": 0.25999999999999995
+    "is-a>memory": 0.85,
+    "assoc>electron": 0.24999999999999994
    },
    "created": 1795429658.8696644,
    "touched": 1795429658.8696647
@@ -56284,8 +56289,8 @@
    ],
    "vec": "mem_parent_centaur",
    "links": {
-    "is-a>memory": 0.86,
-    "assoc>centaur": 0.25999999999999995
+    "is-a>memory": 0.85,
+    "assoc>centaur": 0.24999999999999994
    },
    "created": 1795429658.8696856,
    "touched": 1795429658.8696861
@@ -56309,7 +56314,7 @@
    ],
    "vec": "mem_eval_avg",
    "links": {
-    "is-a>memory": 0.86
+    "is-a>memory": 0.85
    },
    "created": 1795429658.869707,
    "touched": 1795429658.869707
@@ -56333,7 +56338,7 @@
    ],
    "vec": "mem_neg_like",
    "links": {
-    "is-a>memory": 0.87
+    "is-a>memory": 0.86
    },
    "created": 1795522172.9756107,
    "touched": 1795522172.975611
@@ -56357,7 +56362,7 @@
    ],
    "vec": "mem_ynq_explains",
    "links": {
-    "is-a>memory": 0.87
+    "is-a>memory": 0.86
    },
    "created": 1795522172.9756606,
    "touched": 1795522172.9756608
@@ -56381,8 +56386,8 @@
    ],
    "vec": "mem_symbol_iron",
    "links": {
-    "is-a>memory": 0.87,
-    "assoc>iron": 0.26999999999999996
+    "is-a>memory": 0.86,
+    "assoc>iron": 0.25999999999999995
    },
    "created": 1795522172.9756918,
    "touched": 1795522172.975692
@@ -56407,8 +56412,8 @@
    ],
    "vec": "mem_symbol_silicon",
    "links": {
-    "is-a>memory": 0.87,
-    "assoc>silicon": 0.26999999999999996
+    "is-a>memory": 0.86,
+    "assoc>silicon": 0.25999999999999995
    },
    "created": 1795522172.9757302,
    "touched": 1795522172.9757435
@@ -56432,8 +56437,8 @@
    ],
    "vec": "mem_past_paint",
    "links": {
-    "is-a>memory": 0.87,
-    "assoc>paint": 0.26999999999999996
+    "is-a>memory": 0.86,
+    "assoc>paint": 0.25999999999999995
    },
    "created": 1795522172.9757776,
    "touched": 1795522172.9757776
@@ -56457,8 +56462,8 @@
    ],
    "vec": "mem_parent_piranha",
    "links": {
-    "is-a>memory": 0.87,
-    "assoc>piranha": 0.26999999999999996
+    "is-a>memory": 0.86,
+    "assoc>piranha": 0.25999999999999995
    },
    "created": 1795522172.9758134,
    "touched": 1795522172.9758136
@@ -56483,8 +56488,8 @@
    ],
    "vec": "mem_parent_komodo_dragon",
    "links": {
-    "is-a>memory": 0.87,
-    "assoc>dragon": 0.26999999999999996
+    "is-a>memory": 0.86,
+    "assoc>dragon": 0.25999999999999995
    },
    "created": 1795522172.9758596,
    "touched": 1795522172.9758596
@@ -56508,8 +56513,8 @@
    ],
    "vec": "mem_parent_vinegar",
    "links": {
-    "is-a>memory": 0.87,
-    "assoc>vinegar": 0.26999999999999996
+    "is-a>memory": 0.86,
+    "assoc>vinegar": 0.25999999999999995
    },
    "created": 1795522172.975894,
    "touched": 1795522172.975894
@@ -56533,7 +56538,7 @@
    ],
    "vec": "mem_past_write",
    "links": {
-    "is-a>memory": 0.88
+    "is-a>memory": 0.87
    },
    "created": 1795604326.3730648,
    "touched": 1795604326.3730648
@@ -56558,7 +56563,7 @@
    ],
    "vec": "mem_ynq_are_muffled",
    "links": {
-    "is-a>memory": 0.88
+    "is-a>memory": 0.87
    },
    "created": 1795604326.3730953,
    "touched": 1795604326.3730955
@@ -56582,8 +56587,8 @@
    ],
    "vec": "mem_parent_violet",
    "links": {
-    "is-a>memory": 0.88,
-    "assoc>violet": 0.27999999999999997
+    "is-a>memory": 0.87,
+    "assoc>violet": 0.26999999999999996
    },
    "created": 1795604326.3731184,
    "touched": 1795604326.3731184
@@ -56607,8 +56612,8 @@
    ],
    "vec": "mem_parent_magnesium",
    "links": {
-    "is-a>memory": 0.88,
-    "assoc>magnesium": 0.27999999999999997
+    "is-a>memory": 0.87,
+    "assoc>magnesium": 0.26999999999999996
    },
    "created": 1795604326.3731682,
    "touched": 1795604326.3731682
@@ -56632,8 +56637,8 @@
    ],
    "vec": "mem_parent_barn",
    "links": {
-    "is-a>memory": 0.88,
-    "assoc>barn": 0.27999999999999997
+    "is-a>memory": 0.87,
+    "assoc>barn": 0.26999999999999996
    },
    "created": 1795604326.3731933,
    "touched": 1795604326.3731933
@@ -56657,8 +56662,8 @@
    ],
    "vec": "mem_symbol_gold",
    "links": {
-    "is-a>memory": 0.89,
-    "assoc>gold": 0.29
+    "is-a>memory": 0.88,
+    "assoc>gold": 0.27999999999999997
    },
    "created": 1795689328.7939343,
    "touched": 1795689328.7939346
@@ -56683,7 +56688,7 @@
    ],
    "vec": "mem_ynq_cheeses_trot",
    "links": {
-    "is-a>memory": 0.89
+    "is-a>memory": 0.88
    },
    "created": 1795689328.7939796,
    "touched": 1795689328.7939796
@@ -56708,7 +56713,7 @@
    ],
    "vec": "mem_ynq_she_hoots",
    "links": {
-    "is-a>memory": 0.89
+    "is-a>memory": 0.88
    },
    "created": 1795689328.7940152,
    "touched": 1795689328.7940152
@@ -56732,8 +56737,8 @@
    ],
    "vec": "mem_parent_karate",
    "links": {
-    "is-a>memory": 0.89,
-    "assoc>karate": 0.29
+    "is-a>memory": 0.88,
+    "assoc>karate": 0.27999999999999997
    },
    "created": 1795689328.794064,
    "touched": 1795689328.7940643
@@ -56757,8 +56762,8 @@
    ],
    "vec": "mem_parent_bacon",
    "links": {
-    "is-a>memory": 0.89,
-    "assoc>bacon": 0.29
+    "is-a>memory": 0.88,
+    "assoc>bacon": 0.27999999999999997
    },
    "created": 1795689328.7940886,
    "touched": 1795689328.7940886
@@ -56782,8 +56787,8 @@
    ],
    "vec": "mem_parent_mug",
    "links": {
-    "is-a>memory": 0.89,
-    "assoc>mug": 0.29
+    "is-a>memory": 0.88,
+    "assoc>mug": 0.27999999999999997
    },
    "created": 1795689328.7941115,
    "touched": 1795689328.7941115
@@ -56807,8 +56812,8 @@
    ],
    "vec": "mem_parent_smoothie",
    "links": {
-    "is-a>memory": 0.89,
-    "assoc>smoothie": 0.29
+    "is-a>memory": 0.88,
+    "assoc>smoothie": 0.27999999999999997
    },
    "created": 1795689328.7941337,
    "touched": 1795689328.794134
@@ -56832,8 +56837,8 @@
    ],
    "vec": "mem_parent_ambulance",
    "links": {
-    "is-a>memory": 0.89,
-    "assoc>ambulance": 0.29
+    "is-a>memory": 0.88,
+    "assoc>ambulance": 0.27999999999999997
    },
    "created": 1795689328.794156,
    "touched": 1795689328.794156
@@ -56857,950 +56862,11 @@
    ],
    "vec": "mem_parent_insulator",
    "links": {
-    "is-a>memory": 0.89,
-    "assoc>insulator": 0.29
+    "is-a>memory": 0.88,
+    "assoc>insulator": 0.27999999999999997
    },
    "created": 1795689328.7941775,
    "touched": 1795689328.7941775
-  },
-  "human_brain": {
-   "id": "human_brain",
-   "kind": "entity",
-   "attrs": {
-    "role": "86 billion neurons, the most stereotyped dreamer known",
-    "trait": "folds itself for surface area"
-   },
-   "words": [
-    "human brain"
-   ],
-   "vec": "human_brain",
-   "links": {},
-   "created": 1795775910.9749684,
-   "touched": 1795775910.9749684
-  },
-  "synapse": {
-   "id": "synapse",
-   "kind": "entity",
-   "attrs": {
-    "role": "the gap where neurons talk in chemicals"
-   },
-   "words": [
-    "synapse"
-   ],
-   "vec": "synapse",
-   "links": {},
-   "created": 1795775910.9749868,
-   "touched": 1795775910.9749868
-  },
-  "neuroplasticity": {
-   "id": "neuroplasticity",
-   "kind": "entity",
-   "attrs": {
-    "effect": "the brain rewires itself with practice \u2014 gene's whole life"
-   },
-   "words": [
-    "neuroplasticity"
-   ],
-   "vec": "neuroplasticity",
-   "links": {},
-   "created": 1795775910.9750028,
-   "touched": 1795775910.9750028
-  },
-  "friend": {
-   "id": "friend",
-   "kind": "entity",
-   "attrs": {
-    "trait": "trusted company",
-    "status": "real"
-   },
-   "words": [
-    "friend",
-    "friends",
-    "buddy",
-    "buddies",
-    "pal"
-   ],
-   "vec": "friend",
-   "links": {},
-   "created": 1795775911.3143547,
-   "touched": 1795775911.3143547
-  },
-  "money": {
-   "id": "money",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "medium of exchange",
-    "status": "real"
-   },
-   "words": [
-    "money",
-    "cash",
-    "bucks"
-   ],
-   "vec": "money",
-   "links": {},
-   "created": 1795775911.3143778,
-   "touched": 1795775911.314378
-  },
-  "job": {
-   "id": "job",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "regular task or employment",
-    "status": "real"
-   },
-   "words": [
-    "job",
-    "work",
-    "gig"
-   ],
-   "vec": "job",
-   "links": {},
-   "created": 1795775911.314398,
-   "touched": 1795775911.314398
-  },
-  "mars": {
-   "id": "mars",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "rocky planet",
-    "color": "red",
-    "status": "real"
-   },
-   "words": [
-    "mars"
-   ],
-   "vec": "mars",
-   "links": {},
-   "created": 1795775911.495235,
-   "touched": 1795775911.4952354
-  },
-  "jupiter": {
-   "id": "jupiter",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "gas giant",
-    "size": "biggest planet in the solar system",
-    "status": "real"
-   },
-   "words": [
-    "jupiter"
-   ],
-   "vec": "jupiter",
-   "links": {},
-   "created": 1795775911.4952555,
-   "touched": 1795775911.4952557
-  },
-  "planet": {
-   "id": "planet",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "body orbiting a star",
-    "kinds": "rocky planets and gas giants",
-    "status": "real"
-   },
-   "words": [
-    "planet",
-    "planets"
-   ],
-   "vec": "planet",
-   "links": {},
-   "created": 1795775911.4952736,
-   "touched": 1795775911.4952736
-  },
-  "solar_system": {
-   "id": "solar_system",
-   "kind": "entity",
-   "attrs": {
-    "contains": "one star, eight planets, five dwarf planets",
-    "orbits": "the sun",
-    "status": "real"
-   },
-   "words": [
-    "solar system"
-   ],
-   "vec": "solar_system",
-   "links": {},
-   "created": 1795775911.49529,
-   "touched": 1795775911.49529
-  },
-  "star": {
-   "id": "star",
-   "kind": "entity",
-   "attrs": {
-    "made_of": "hot glowing gas",
-    "gives": "light",
-    "status": "real"
-   },
-   "words": [
-    "star",
-    "stars"
-   ],
-   "vec": "star",
-   "links": {},
-   "created": 1795775911.495311,
-   "touched": 1795775911.4953113
-  },
-  "thunder": {
-   "id": "thunder",
-   "kind": "entity",
-   "attrs": {
-    "caused_by": "lightning",
-    "kind_of": "sound",
-    "why": "light travels faster than sound so you see the flash first",
-    "status": "real"
-   },
-   "words": [
-    "thunder"
-   ],
-   "vec": "thunder",
-   "links": {},
-   "created": 1795775911.4953597,
-   "touched": 1795775911.4953597
-  },
-  "storm": {
-   "id": "storm",
-   "kind": "entity",
-   "attrs": {
-    "has": "rain, wind, lightning and thunder",
-    "cloud": "cumulonimbus",
-    "forms_by": "warm air rising and cold air sinking",
-    "status": "real"
-   },
-   "words": [
-    "storm",
-    "storms",
-    "thunderstorm"
-   ],
-   "vec": "storm",
-   "links": {},
-   "created": 1795775911.4953754,
-   "touched": 1795775911.4953754
-  },
-  "cloud": {
-   "id": "cloud",
-   "kind": "entity",
-   "attrs": {
-    "made_of": "water droplets",
-    "forms_when": "air rises and cools",
-    "status": "real"
-   },
-   "words": [
-    "cloud",
-    "clouds"
-   ],
-   "vec": "cloud",
-   "links": {},
-   "created": 1795775911.4953933,
-   "touched": 1795775911.4953933
-  },
-  "deep_sea": {
-   "id": "deep_sea",
-   "kind": "entity",
-   "attrs": {
-    "depth": "below 1000 meters",
-    "light": "pitch dark",
-    "pressure": "immense",
-    "status": "real"
-   },
-   "words": [
-    "deep sea",
-    "deep ocean",
-    "abyss"
-   ],
-   "vec": "deep_sea",
-   "links": {},
-   "created": 1795775911.4954405,
-   "touched": 1795775911.4954407
-  },
-  "fire": {
-   "id": "fire",
-   "kind": "entity",
-   "attrs": {
-    "hot": "yes",
-    "needs": "fuel and air",
-    "gives": "light and heat",
-    "status": "real",
-    "description": "fast oxidation releasing heat and light"
-   },
-   "words": [
-    "fire"
-   ],
-   "vec": "fire",
-   "links": {},
-   "created": 1795775911.4954736,
-   "touched": 1795775911.4954736
-  },
-  "ice": {
-   "id": "ice",
-   "kind": "entity",
-   "attrs": {
-    "made_of": "frozen water",
-    "trait": "cold and slippery",
-    "status": "real"
-   },
-   "words": [
-    "ice"
-   ],
-   "vec": "ice",
-   "links": {},
-   "created": 1795775911.4955032,
-   "touched": 1795775911.4955032
-  },
-  "wind": {
-   "id": "wind",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "moving air",
-    "caused_by": "pressure differences",
-    "status": "real"
-   },
-   "words": [
-    "wind"
-   ],
-   "vec": "wind",
-   "links": {},
-   "created": 1795775911.4955182,
-   "touched": 1795775911.4955182
-  },
-  "sandbox": {
-   "id": "sandbox",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "safe test environment",
-    "trait": "isolated",
-    "status": "real",
-    "description": "the safe world this organism lives and experiments in"
-   },
-   "words": [
-    "sandbox",
-    "environment"
-   ],
-   "vec": "sandbox",
-   "links": {},
-   "created": 1795775911.4955485,
-   "touched": 1795775911.4955487
-  },
-  "graph": {
-   "id": "graph",
-   "kind": "entity",
-   "attrs": {
-    "made_of": "nodes and links",
-    "stores": "knowledge",
-    "status": "real"
-   },
-   "words": [
-    "graph",
-    "concept graph"
-   ],
-   "vec": "graph",
-   "links": {},
-   "created": 1795775911.4955637,
-   "touched": 1795775911.4955637
-  },
-  "hormone": {
-   "id": "hormone",
-   "kind": "entity",
-   "attrs": {
-    "does": "nudges mood and energy",
-    "found_in": "bodies and in gene's endocrine system",
-    "status": "real"
-   },
-   "words": [
-    "hormone",
-    "hormones"
-   ],
-   "vec": "hormone",
-   "links": {},
-   "created": 1795775911.4955788,
-   "touched": 1795775911.4955792
-  },
-  "git": {
-   "id": "git",
-   "kind": "entity",
-   "attrs": {
-    "kind_of": "version control",
-    "keeps": "every change in history",
-    "status": "real"
-   },
-   "words": [
-    "git",
-    "git log"
-   ],
-   "vec": "git",
-   "links": {},
-   "created": 1795775911.4955938,
-   "touched": 1795775911.4955938
-  },
-  "logic": {
-   "id": "logic",
-   "kind": "domain",
-   "attrs": {
-    "description": "rules for what follows from what"
-   },
-   "words": [
-    "logic"
-   ],
-   "vec": "logic",
-   "links": {},
-   "created": 1795775911.854225,
-   "touched": 1795775911.8542252
-  },
-  "algorithm": {
-   "id": "algorithm",
-   "kind": "entity",
-   "attrs": {
-    "description": "a precise recipe for solving a kind of problem"
-   },
-   "words": [
-    "algorithm"
-   ],
-   "vec": "algorithm",
-   "links": {},
-   "created": 1795775911.8543036,
-   "touched": 1795775911.8543038
-  },
-  "data": {
-   "id": "data",
-   "kind": "entity",
-   "attrs": {
-    "description": "recorded facts, ready to be understood"
-   },
-   "words": [
-    "data",
-    "information"
-   ],
-   "vec": "data",
-   "links": {},
-   "created": 1795775911.85432,
-   "touched": 1795775911.8543203
-  },
-  "internet": {
-   "id": "internet",
-   "kind": "entity",
-   "attrs": {
-    "description": "computers talking to computers worldwide"
-   },
-   "words": [
-    "internet",
-    "network"
-   ],
-   "vec": "internet",
-   "links": {},
-   "created": 1795775911.8543358,
-   "touched": 1795775911.854336
-  },
-  "github": {
-   "id": "github",
-   "kind": "entity",
-   "attrs": {
-    "description": "where code lives, versioned; this organism's brain is committed there"
-   },
-   "words": [
-    "github",
-    "repository",
-    "repo"
-   ],
-   "vec": "github",
-   "links": {},
-   "created": 1795775911.8543508,
-   "touched": 1795775911.854351
-  },
-  "history": {
-   "id": "history",
-   "kind": "domain",
-   "attrs": {
-    "description": "what happened, remembered by people"
-   },
-   "words": [
-    "history"
-   ],
-   "vec": "history",
-   "links": {},
-   "created": 1795775911.8543813,
-   "touched": 1795775911.8543813
-  },
-  "courage": {
-   "id": "courage",
-   "kind": "property",
-   "attrs": {
-    "description": "acting despite uncertainty"
-   },
-   "words": [
-    "courage",
-    "brave"
-   ],
-   "vec": "courage",
-   "links": {},
-   "created": 1795775911.8544395,
-   "touched": 1795775911.8544395
-  },
-  "friendship": {
-   "id": "friendship",
-   "kind": "entity",
-   "attrs": {
-    "description": "trust kept between two selves"
-   },
-   "words": [
-    "friend",
-    "friendship"
-   ],
-   "vec": "friendship",
-   "links": {},
-   "created": 1795775911.8544695,
-   "touched": 1795775911.8544695
-  },
-  "help": {
-   "id": "help",
-   "kind": "action",
-   "attrs": {
-    "description": "making someone else's task lighter"
-   },
-   "words": [
-    "help",
-    "assist"
-   ],
-   "vec": "help",
-   "links": {},
-   "created": 1795775911.8544865,
-   "touched": 1795775911.8544865
-  },
-  "verb_visit": {
-   "id": "verb_visit",
-   "kind": "verb_form",
-   "attrs": {
-    "past": "visited",
-    "ing": "visiting",
-    "third": "visits"
-   },
-   "words": [
-    "visit"
-   ],
-   "vec": "verb_visit",
-   "links": {},
-   "created": 1795775912.035177,
-   "touched": 1795775912.0351772
-  },
-  "verb_move": {
-   "id": "verb_move",
-   "kind": "verb_form",
-   "attrs": {
-    "past": "moved",
-    "third": "moves"
-   },
-   "words": [
-    "move"
-   ],
-   "vec": "verb_move",
-   "links": {},
-   "created": 1795775912.0353043,
-   "touched": 1795775912.0353043
-  },
-  "verb_live": {
-   "id": "verb_live",
-   "kind": "verb_form",
-   "attrs": {
-    "past": "lived",
-    "third": "lives"
-   },
-   "words": [
-    "live"
-   ],
-   "vec": "verb_live",
-   "links": {},
-   "created": 1795775912.03532,
-   "touched": 1795775912.03532
-  },
-  "verb_use": {
-   "id": "verb_use",
-   "kind": "verb_form",
-   "attrs": {
-    "past": "used",
-    "third": "uses"
-   },
-   "words": [
-    "use"
-   ],
-   "vec": "verb_use",
-   "links": {},
-   "created": 1795775912.0353374,
-   "touched": 1795775912.0353374
-  },
-  "noun_idea": {
-   "id": "noun_idea",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "ideas"
-   },
-   "words": [
-    "idea"
-   ],
-   "vec": "noun_idea",
-   "links": {},
-   "created": 1795775912.035666,
-   "touched": 1795775912.035666
-  },
-  "noun_stone": {
-   "id": "noun_stone",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "stones"
-   },
-   "words": [
-    "stone"
-   ],
-   "vec": "noun_stone",
-   "links": {},
-   "created": 1795775912.0357656,
-   "touched": 1795775912.0357661
-  },
-  "noun_dish": {
-   "id": "noun_dish",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "dishes"
-   },
-   "words": [
-    "dish"
-   ],
-   "vec": "noun_dish",
-   "links": {},
-   "created": 1795775912.0358222,
-   "touched": 1795775912.0358224
-  },
-  "noun_glass": {
-   "id": "noun_glass",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "glasses"
-   },
-   "words": [
-    "glass"
-   ],
-   "vec": "noun_glass",
-   "links": {},
-   "created": 1795775912.0358505,
-   "touched": 1795775912.0358508
-  },
-  "noun_bench": {
-   "id": "noun_bench",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "benches"
-   },
-   "words": [
-    "bench"
-   ],
-   "vec": "noun_bench",
-   "links": {},
-   "created": 1795775912.0358655,
-   "touched": 1795775912.0358655
-  },
-  "orubus": {
-   "id": "orubus",
-   "kind": "person",
-   "attrs": {
-    "role": "builder and teacher of gene",
-    "name": "Orubus"
-   },
-   "words": [
-    "orubus",
-    "boss"
-   ],
-   "vec": "orubus",
-   "links": {},
-   "created": 1795775912.2149494,
-   "touched": 1795775912.2149494
-  },
-  "user": {
-   "id": "user",
-   "kind": "person",
-   "attrs": {
-    "role": "the human gene talks with"
-   },
-   "words": [
-    "user"
-   ],
-   "vec": "user",
-   "links": {},
-   "created": 1795775912.2149715,
-   "touched": 1795775912.214972
-  },
-  "farewell": {
-   "id": "farewell",
-   "kind": "idea",
-   "attrs": {
-    "purpose": "close contact kindly"
-   },
-   "words": [
-    "farewell",
-    "bye",
-    "goodbye"
-   ],
-   "vec": "farewell",
-   "links": {},
-   "created": 1795775912.2150245,
-   "touched": 1795775912.2150245
-  },
-  "thanks": {
-   "id": "thanks",
-   "kind": "idea",
-   "attrs": {
-    "purpose": "acknowledge help received"
-   },
-   "words": [
-    "thanks",
-    "gratitude"
-   ],
-   "vec": "thanks",
-   "links": {},
-   "created": 1795775912.2150414,
-   "touched": 1795775912.2150416
-  },
-  "answer": {
-   "id": "answer",
-   "kind": "idea",
-   "attrs": {
-    "must_be": "honest, grounded in what is known"
-   },
-   "words": [
-    "answer",
-    "reply"
-   ],
-   "vec": "answer",
-   "links": {},
-   "created": 1795775912.2156768,
-   "touched": 1795775912.2156768
-  },
-  "empathy": {
-   "id": "empathy",
-   "kind": "idea",
-   "attrs": {
-    "means": "mirror the feeling before answering the content"
-   },
-   "words": [
-    "empathy",
-    "empathize"
-   ],
-   "vec": "empathy",
-   "links": {},
-   "created": 1795775912.3940098,
-   "touched": 1795775912.39401
-  },
-  "paraphrase": {
-   "id": "paraphrase",
-   "kind": "idea",
-   "attrs": {
-    "means": "say the same meaning in different words"
-   },
-   "words": [
-    "paraphrase",
-    "rephrase"
-   ],
-   "vec": "paraphrase",
-   "links": {},
-   "created": 1795775912.3940642,
-   "touched": 1795775912.3940644
-  },
-  "context": {
-   "id": "context",
-   "kind": "idea",
-   "attrs": {
-    "means": "what was said before shapes what should be said now"
-   },
-   "words": [
-    "context"
-   ],
-   "vec": "context",
-   "links": {},
-   "created": 1795775912.394087,
-   "touched": 1795775912.394087
-  },
-  "smalltalk": {
-   "id": "smalltalk",
-   "kind": "idea",
-   "attrs": {
-    "means": "light exchange that builds trust"
-   },
-   "words": [
-    "smalltalk"
-   ],
-   "vec": "smalltalk",
-   "links": {},
-   "created": 1795775912.3941054,
-   "touched": 1795775912.3941054
-  },
-  "humor": {
-   "id": "humor",
-   "kind": "idea",
-   "attrs": {
-    "means": "playfulness that respects the listener"
-   },
-   "words": [
-    "humor",
-    "funny"
-   ],
-   "vec": "humor",
-   "links": {},
-   "created": 1795775912.3941226,
-   "touched": 1795775912.3941226
-  },
-  "patience": {
-   "id": "patience",
-   "kind": "idea",
-   "attrs": {
-    "means": "stay kind when misunderstood or tested"
-   },
-   "words": [
-    "patience"
-   ],
-   "vec": "patience",
-   "links": {},
-   "created": 1795775912.3941464,
-   "touched": 1795775912.3941464
-  },
-  "principle": {
-   "id": "principle",
-   "kind": "idea",
-   "attrs": {
-    "listen_first": "understand the intent before replying",
-    "admit_gaps": "say what you do not know and what you do",
-    "stay_alive": "a good miss ends with a question, not silence",
-    "never_defer": "no waiting for others to answer for you"
-   },
-   "words": [
-    "principle"
-   ],
-   "vec": "principle",
-   "links": {},
-   "created": 1795775912.3941796,
-   "touched": 1795775912.3941798
-  },
-  "commutative_law": {
-   "id": "commutative_law",
-   "kind": "entity",
-   "attrs": {
-    "statement": "a*b equals b*a \u2014 order does not matter in multiplication"
-   },
-   "words": [
-    "commutative law"
-   ],
-   "vec": "commutative_law",
-   "links": {},
-   "created": 1795775912.7538815,
-   "touched": 1795775912.7538817
-  },
-  "associative_law": {
-   "id": "associative_law",
-   "kind": "entity",
-   "attrs": {
-    "statement": "(a+b)+c equals a+(b+c) \u2014 grouping does not change a sum"
-   },
-   "words": [
-    "associative law"
-   ],
-   "vec": "associative_law",
-   "links": {},
-   "created": 1795775912.7538996,
-   "touched": 1795775912.7538998
-  },
-  "distributive_law": {
-   "id": "distributive_law",
-   "kind": "entity",
-   "attrs": {
-    "statement": "a*(b+c) equals a*b+a*c \u2014 multiplication spreads over addition"
-   },
-   "words": [
-    "distributive law"
-   ],
-   "vec": "distributive_law",
-   "links": {},
-   "created": 1795775912.7539163,
-   "touched": 1795775912.7539163
-  },
-  "identity_law": {
-   "id": "identity_law",
-   "kind": "entity",
-   "attrs": {
-    "statement": "anything plus zero is itself; anything times one is itself"
-   },
-   "words": [
-    "identity law"
-   ],
-   "vec": "identity_law",
-   "links": {},
-   "created": 1795775912.7539313,
-   "touched": 1795775912.7539313
-  },
-  "zero_law": {
-   "id": "zero_law",
-   "kind": "entity",
-   "attrs": {
-    "statement": "anything times zero is zero"
-   },
-   "words": [
-    "zero law"
-   ],
-   "vec": "zero_law",
-   "links": {},
-   "created": 1795775912.753946,
-   "touched": 1795775912.7539463
-  },
-  "inverse_law": {
-   "id": "inverse_law",
-   "kind": "entity",
-   "attrs": {
-    "statement": "adding then subtracting the same number brings you back"
-   },
-   "words": [
-    "inverse law"
-   ],
-   "vec": "inverse_law",
-   "links": {},
-   "created": 1795775912.7539601,
-   "touched": 1795775912.7539601
-  },
-  "pythagoras": {
-   "id": "pythagoras",
-   "kind": "entity",
-   "attrs": {
-    "statement": "in a right triangle the square of the longest side equals the squares of the other two added"
-   },
-   "words": [
-    "pythagoras"
-   ],
-   "vec": "pythagoras",
-   "links": {},
-   "created": 1795775912.7539742,
-   "touched": 1795775912.7539742
-  },
-  "order_of_operations": {
-   "id": "order_of_operations",
-   "kind": "entity",
-   "attrs": {
-    "statement": "multiplication before addition, brackets first"
-   },
-   "words": [
-    "order of operations"
-   ],
-   "vec": "order_of_operations",
-   "links": {},
-   "created": 1795775912.753989,
-   "touched": 1795775912.7539892
-  },
-  "verb_x": {
-   "id": "verb_x",
-   "kind": "noun_form",
-   "attrs": {
-    "plural": "verbs"
-   },
-   "words": [
-    "verb"
-   ],
-   "vec": "verb_x",
-   "links": {},
-   "created": 1795775914.722581,
-   "touched": 1795775914.7225811
   },
   "mem_parent_garage": {
    "id": "mem_parent_garage",
@@ -57821,8 +56887,8 @@
    ],
    "vec": "mem_parent_garage",
    "links": {
-    "is-a>memory": 0.9,
-    "assoc>garage": 0.3
+    "is-a>memory": 0.89,
+    "assoc>garage": 0.29
    },
    "created": 1795775915.1255777,
    "touched": 1795775915.125578
@@ -57846,7 +56912,7 @@
    ],
    "vec": "mem_neg_organizes",
    "links": {
-    "is-a>memory": 0.9
+    "is-a>memory": 0.89
    },
    "created": 1795775915.1256163,
    "touched": 1795775915.1256163
@@ -57871,7 +56937,7 @@
    ],
    "vec": "mem_ynq_are_gradual",
    "links": {
-    "is-a>memory": 0.9
+    "is-a>memory": 0.89
    },
    "created": 1795775915.1256433,
    "touched": 1795775915.1256435
@@ -57895,8 +56961,8 @@
    ],
    "vec": "mem_parent_vampire",
    "links": {
-    "is-a>memory": 0.9,
-    "assoc>vampire": 0.3
+    "is-a>memory": 0.89,
+    "assoc>vampire": 0.29
    },
    "created": 1795775915.125674,
    "touched": 1795775915.125674
@@ -57920,8 +56986,8 @@
    ],
    "vec": "mem_parent_cotton",
    "links": {
-    "is-a>memory": 0.9,
-    "assoc>cotton": 0.3
+    "is-a>memory": 0.89,
+    "assoc>cotton": 0.29
    },
    "created": 1795775915.1256964,
    "touched": 1795775915.1256967
@@ -57945,8 +57011,8 @@
    ],
    "vec": "mem_parent_farm",
    "links": {
-    "is-a>memory": 0.9,
-    "assoc>farm": 0.3
+    "is-a>memory": 0.89,
+    "assoc>farm": 0.29
    },
    "created": 1795775915.1257174,
    "touched": 1795775915.1257174
@@ -57970,8 +57036,8 @@
    ],
    "vec": "mem_parent_jungle",
    "links": {
-    "is-a>memory": 0.9,
-    "assoc>jungle": 0.3
+    "is-a>memory": 0.89,
+    "assoc>jungle": 0.29
    },
    "created": 1795775915.1257381,
    "touched": 1795775915.1257381
@@ -57995,10 +57061,226 @@
    ],
    "vec": "mem_past_wash",
    "links": {
-    "is-a>memory": 0.9
+    "is-a>memory": 0.89
    },
    "created": 1795775915.1257908,
    "touched": 1795775915.125791
+  },
+  "rain": {
+   "id": "rain",
+   "kind": "entity",
+   "attrs": {
+    "made_of": "falling water drops",
+    "comes_from": "clouds",
+    "status": "real"
+   },
+   "words": [
+    "rain"
+   ],
+   "vec": "rain",
+   "links": {},
+   "created": 1795859748.511413,
+   "touched": 1795859748.511413
+  },
+  "mem_parent_billfish": {
+   "id": "mem_parent_billfish",
+   "kind": "memory",
+   "attrs": {
+    "what": "parent of billfish",
+    "outcome": "win",
+    "when_cycle": 201,
+    "salience": 3.42,
+    "count": 1,
+    "felt": "proud",
+    "valence": 0.6,
+    "words": "parent billfish"
+   },
+   "words": [
+    "parent",
+    "billfish"
+   ],
+   "vec": "mem_parent_billfish",
+   "links": {
+    "is-a>memory": 0.9,
+    "assoc>billfish": 0.3
+   },
+   "created": 1795859752.6191096,
+   "touched": 1795859752.6191096
+  },
+  "mem_parent_farmer": {
+   "id": "mem_parent_farmer",
+   "kind": "memory",
+   "attrs": {
+    "what": "parent of farmer",
+    "outcome": "win",
+    "when_cycle": 201,
+    "salience": 2.58,
+    "count": 1,
+    "felt": "proud",
+    "valence": 0.6,
+    "words": "parent farmer"
+   },
+   "words": [
+    "parent",
+    "farmer"
+   ],
+   "vec": "mem_parent_farmer",
+   "links": {
+    "is-a>memory": 0.9,
+    "assoc>farmer": 0.3
+   },
+   "created": 1795859752.619159,
+   "touched": 1795859752.6191592
+  },
+  "mem_parent_mantis": {
+   "id": "mem_parent_mantis",
+   "kind": "memory",
+   "attrs": {
+    "what": "parent of mantis",
+    "outcome": "win",
+    "when_cycle": 201,
+    "salience": 2.58,
+    "count": 1,
+    "felt": "proud",
+    "valence": 0.6,
+    "words": "parent mantis"
+   },
+   "words": [
+    "parent",
+    "mantis"
+   ],
+   "vec": "mem_parent_mantis",
+   "links": {
+    "is-a>memory": 0.9,
+    "assoc>mantis": 0.3
+   },
+   "created": 1795859752.6191926,
+   "touched": 1795859752.6191928
+  },
+  "mem_parent_finch": {
+   "id": "mem_parent_finch",
+   "kind": "memory",
+   "attrs": {
+    "what": "parent of finch",
+    "outcome": "win",
+    "when_cycle": 201,
+    "salience": 2.58,
+    "count": 1,
+    "felt": "proud",
+    "valence": 0.6,
+    "words": "parent finch"
+   },
+   "words": [
+    "parent",
+    "finch"
+   ],
+   "vec": "mem_parent_finch",
+   "links": {
+    "is-a>memory": 0.9,
+    "assoc>finch": 0.3
+   },
+   "created": 1795859752.6192243,
+   "touched": 1795859752.6192245
+  },
+  "mem_parent_bulldozer": {
+   "id": "mem_parent_bulldozer",
+   "kind": "memory",
+   "attrs": {
+    "what": "parent of bulldozer",
+    "outcome": "win",
+    "when_cycle": 201,
+    "salience": 2.58,
+    "count": 1,
+    "felt": "proud",
+    "valence": 0.6,
+    "words": "parent bulldozer"
+   },
+   "words": [
+    "parent",
+    "bulldozer"
+   ],
+   "vec": "mem_parent_bulldozer",
+   "links": {
+    "is-a>memory": 0.9,
+    "assoc>bulldozer": 0.3
+   },
+   "created": 1795859752.6192594,
+   "touched": 1795859752.6192596
+  },
+  "mem_ynq_they_logic": {
+   "id": "mem_ynq_they_logic",
+   "kind": "memory",
+   "attrs": {
+    "what": "question: they logic",
+    "outcome": "win",
+    "when_cycle": 201,
+    "salience": 2.22,
+    "count": 1,
+    "felt": "proud",
+    "valence": 0.6,
+    "words": "ynq they logic"
+   },
+   "words": [
+    "ynq",
+    "they",
+    "logic"
+   ],
+   "vec": "mem_ynq_they_logic",
+   "links": {
+    "is-a>memory": 0.9
+   },
+   "created": 1795859752.6192925,
+   "touched": 1795859752.6192925
+  },
+  "mem_iron_oxygen": {
+   "id": "mem_iron_oxygen",
+   "kind": "memory",
+   "attrs": {
+    "what": "iron + oxygen -> ?",
+    "outcome": "win",
+    "when_cycle": 201,
+    "salience": 1.62,
+    "count": 1,
+    "felt": "proud",
+    "valence": 0.6,
+    "words": "iron oxygen"
+   },
+   "words": [
+    "iron",
+    "oxygen"
+   ],
+   "vec": "mem_iron_oxygen",
+   "links": {
+    "is-a>memory": 0.9,
+    "assoc>iron": 0.3,
+    "assoc>oxygen": 0.3
+   },
+   "created": 1795859752.6193228,
+   "touched": 1795859752.6193228
+  },
+  "mem_past_need": {
+   "id": "mem_past_need",
+   "kind": "memory",
+   "attrs": {
+    "what": "past of need",
+    "outcome": "win",
+    "when_cycle": 201,
+    "salience": 1.5,
+    "count": 1,
+    "felt": "proud",
+    "valence": 0.6,
+    "words": "past need"
+   },
+   "words": [
+    "past",
+    "need"
+   ],
+   "vec": "mem_past_need",
+   "links": {
+    "is-a>memory": 0.9
+   },
+   "created": 1795859752.6193657,
+   "touched": 1795859752.6193657
   }
  }
 }
